@@ -1,0 +1,115 @@
+{
+  "action": "cheer",
+  "frame_count": 10,
+  "unique_cels": 9,
+  "duration_ms": 1390,
+  "cell_size": [
+    96,
+    112
+  ],
+  "feet_baseline_y": 100,
+  "binary_alpha": true,
+  "shared_palette": true,
+  "frames": [
+    {
+      "path": "00.png",
+      "bbox": [
+        27,
+        10,
+        69,
+        100
+      ],
+      "sha256": "fc4c600819448d623bdc8288a1360f05422fb8816a05260809a223741bdd0423"
+    },
+    {
+      "path": "01.png",
+      "bbox": [
+        26,
+        12,
+        68,
+        100
+      ],
+      "sha256": "aba12df007f01eadb38bf6be9566b706d0c75878ece0f56a708e4241fc16d8a3"
+    },
+    {
+      "path": "02.png",
+      "bbox": [
+        26,
+        15,
+        69,
+        100
+      ],
+      "sha256": "0bee2f9b21cbb2ac444f02ef04f62b1cb3359d3418e6a5ebf32dea10c34c584e"
+    },
+    {
+      "path": "03.png",
+      "bbox": [
+        23,
+        11,
+        82,
+        100
+      ],
+      "sha256": "d411f72356b14e6636b28fe36b6dabada816c936ff6cd6e910b149a5969e60ac"
+    },
+    {
+      "path": "04.png",
+      "bbox": [
+        18,
+        4,
+        87,
+        100
+      ],
+      "sha256": "82e164fdd78bae5d6460f1f895a68244c0fce47b12e520676e5b3c7a9a0aca0f"
+    },
+    {
+      "path": "05.png",
+      "bbox": [
+        19,
+        2,
+        91,
+        100
+      ],
+      "sha256": "4e37609e6c98bbbbcdcb0b306c722b6330c2fae0ea493beec1a51bce1cc164a4"
+    },
+    {
+      "path": "06.png",
+      "bbox": [
+        17,
+        7,
+        94,
+        100
+      ],
+      "sha256": "e57374a5952f581bd44286a1cd18cd30d527f464032223010eb52c4539b26cdd"
+    },
+    {
+      "path": "07.png",
+      "bbox": [
+        15,
+        9,
+        94,
+        100
+      ],
+      "sha256": "7fe76fdd694533ecdd26f61590f6e39ac76733326061a9680bc23ad6d3c1cbda"
+    },
+    {
+      "path": "08.png",
+      "bbox": [
+        27,
+        11,
+        83,
+        100
+      ],
+      "sha256": "4139791c1bac5b8619578f8a5546fbd914b42b65cd4535c7fc5c9c32a7c9256f"
+    },
+    {
+      "path": "09.png",
+      "bbox": [
+        27,
+        10,
+        69,
+        100
+      ],
+      "sha256": "fc4c600819448d623bdc8288a1360f05422fb8816a05260809a223741bdd0423"
+    }
+  ]
+}

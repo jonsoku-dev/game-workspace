@@ -1,0 +1,45 @@
+{
+  "loop": false,
+  "frames": [
+    {
+      "path": "00.png",
+      "duration_ms": 220
+    },
+    {
+      "path": "01.png",
+      "duration_ms": 110
+    },
+    {
+      "path": "02.png",
+      "duration_ms": 90
+    },
+    {
+      "path": "03.png",
+      "duration_ms": 120
+    },
+    {
+      "path": "04.png",
+      "duration_ms": 100
+    },
+    {
+      "path": "05.png",
+      "duration_ms": 100
+    },
+    {
+      "path": "06.png",
+      "duration_ms": 150
+    },
+    {
+      "path": "07.png",
+      "duration_ms": 100
+    },
+    {
+      "path": "08.png",
+      "duration_ms": 120
+    },
+    {
+      "path": "09.png",
+      "duration_ms": 300
+    }
+  ]
+}

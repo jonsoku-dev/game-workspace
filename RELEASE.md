@@ -54,3 +54,7 @@ Game Studio 0.7.1과 Pixel Asset Pipeline 0.5.0의 새 제작 경로다. [첫 �
 ## Rive 캐릭터 플레이어
 
 Pixel Asset Pipeline 0.6.0으로 원화 한 장과 명시적인 관절 마스크에서 74포즈를 생성한다. `pixel-asset rive`는 이를 이미지가 내장된 `.riv`와 입력값 목록으로 내보낸다. [프로젝트와 재현 명령](examples/rive-character/README.md) · [공식 런타임을 동봉한 로컬 플레이어](release/rive-player/README.md) · [실제 캔버스 재생 GIF](examples/rive-character/evidence/runtime-preview.gif)
+
+## 개별 작화 셀의 플레이어
+
+0.7.0 `pixel-asset character`와 0.8.1 Studio `tools/character.py`가 동작별 PNG·재생시간·선택 순서를 받아 Rive 파일과 독립 HTML로 출력한다. [라일락 우편배달부의 입력·재현·검증](examples/storybook-cels/README.md)

@@ -1,0 +1,102 @@
+{
+  "native_size": [
+    96,
+    112
+  ],
+  "alpha": "binary",
+  "palette": "../../art/palette.json",
+  "unique_poses": 8,
+  "duration_ms": 820,
+  "loop": false,
+  "frames": [
+    {
+      "path": "00.png",
+      "bbox": [
+        26,
+        10,
+        66,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "bd2afc6ddea02fa56c5bb3e453a7bb7a2ac893eec9f70fc1f4a90f9ceda0ad08"
+    },
+    {
+      "path": "01.png",
+      "bbox": [
+        15,
+        15,
+        70,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "8cbe28fa9ee01b493d20c60bbe48aaedee7f73dc781e1947fe186a843b02e715"
+    },
+    {
+      "path": "02.png",
+      "bbox": [
+        7,
+        18,
+        73,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "2effb287c69e0fa3d9fc1c661e22d54cae545b0a2996853000b8acb7691c61a7"
+    },
+    {
+      "path": "03.png",
+      "bbox": [
+        17,
+        14,
+        90,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "1b5f1d8220a26e23bab48ab0e61436afc8fc02776558e81b2364a79f4cd8d829"
+    },
+    {
+      "path": "04.png",
+      "bbox": [
+        11,
+        15,
+        95,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "f2ad2cfad4e7ade7b639654f28aa93297d8b8645d893ff545c61e48cd5b9ebfd"
+    },
+    {
+      "path": "05.png",
+      "bbox": [
+        21,
+        16,
+        83,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "665248df32f30e485d7a5035043501c9e827eee036b99f89d02560fc4c7042b8"
+    },
+    {
+      "path": "06.png",
+      "bbox": [
+        22,
+        13,
+        71,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "d8932cf5fb1482543e538f9a66fd768a8af0a4c2a4954a8d8ff94cfa358c84ed"
+    },
+    {
+      "path": "07.png",
+      "bbox": [
+        27,
+        10,
+        66,
+        100
+      ],
+      "connected_silhouette": true,
+      "sha256": "4f7606c2693735631f1816e0f1e6f72c4d6df48a391629386f6938b25b366460"
+    }
+  ],
+  "evidence": "Local raster assertions; source rerender and static sheet inspection. Timed player review is separate."
+}

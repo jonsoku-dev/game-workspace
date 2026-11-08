@@ -9,7 +9,8 @@
     "assets/examples/production/clockwork-beetle",
     "examples/first-strike",
     "examples/moonshot-fx",
-    "examples/rive-character"
+    "examples/rive-character",
+    "examples/storybook-cels"
   ],
   "links": [
     {
@@ -67,6 +68,18 @@
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export",
       "observed": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:drawn-character-release",
+      "observed": "urn:game-studio:fdde84ae-447c-429b-825e-d88a491028c4:work:collect-cels"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:drawn-character-release",
+      "observed": "urn:game-studio:fdde84ae-447c-429b-825e-d88a491028c4:work:5b51f95ba0ab4ebaa6cae90457e477bb"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:drawn-character-release",
+      "observed": "urn:game-studio:fdde84ae-447c-429b-825e-d88a491028c4:work:actual-rive-cel-playback"
     }
   ],
   "playtests": [

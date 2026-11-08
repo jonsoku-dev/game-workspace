@@ -1,0 +1,21 @@
+{
+  "loop": true,
+  "frames": [
+    {
+      "path": "00.png",
+      "duration_ms": 600
+    },
+    {
+      "path": "01.png",
+      "duration_ms": 260
+    },
+    {
+      "path": "02.png",
+      "duration_ms": 100
+    },
+    {
+      "path": "03.png",
+      "duration_ms": 420
+    }
+  ]
+}

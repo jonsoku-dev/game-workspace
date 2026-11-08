@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "size": [
+    96,
+    112
+  ],
+  "actions": {
+    "wave": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-000.png",
+          "duration_ms": 220
+        },
+        {
+          "path": "cel-001.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cel-002.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "cel-003.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "cel-004.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-005.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-006.png",
+          "duration_ms": 150
+        },
+        {
+          "path": "cel-007.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-008.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "cel-009.png",
+          "duration_ms": 300
+        }
+      ]
+    },
+    "walk": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cel-010.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-011.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "cel-012.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "cel-013.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "cel-014.png",
+          "duration_ms": 70
+        },
+        {
+          "path": "cel-015.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "cel-016.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-017.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "cel-018.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "cel-019.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "cel-020.png",
+          "duration_ms": 70
+        },
+        {
+          "path": "cel-021.png",
+          "duration_ms": 80
+        }
+      ]
+    },
+    "cheer": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-022.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "cel-023.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-024.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "cel-025.png",
+          "duration_ms": 70
+        },
+        {
+          "path": "cel-026.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "cel-027.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "cel-028.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cel-029.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-030.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "cel-031.png",
+          "duration_ms": 350
+        }
+      ]
+    },
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cel-032.png",
+          "duration_ms": 600
+        },
+        {
+          "path": "cel-033.png",
+          "duration_ms": 260
+        },
+        {
+          "path": "cel-034.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-035.png",
+          "duration_ms": 420
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cel-036.png",
+          "duration_ms": 70
+        },
+        {
+          "path": "cel-037.png",
+          "duration_ms": 60
+        },
+        {
+          "path": "cel-038.png",
+          "duration_ms": 60
+        },
+        {
+          "path": "cel-039.png",
+          "duration_ms": 50
+        },
+        {
+          "path": "cel-040.png",
+          "duration_ms": 60
+        },
+        {
+          "path": "cel-041.png",
+          "duration_ms": 70
+        },
+        {
+          "path": "cel-042.png",
+          "duration_ms": 70
+        },
+        {
+          "path": "cel-043.png",
+          "duration_ms": 60
+        },
+        {
+          "path": "cel-044.png",
+          "duration_ms": 60
+        },
+        {
+          "path": "cel-045.png",
+          "duration_ms": 50
+        },
+        {
+          "path": "cel-046.png",
+          "duration_ms": 60
+        },
+        {
+          "path": "cel-047.png",
+          "duration_ms": 70
+        }
+      ]
+    },
+    "attack": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-048.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "cel-049.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-050.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cel-051.png",
+          "duration_ms": 60
+        },
+        {
+          "path": "cel-052.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-053.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "cel-054.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cel-055.png",
+          "duration_ms": 160
+        }
+      ]
+    },
+    "jump": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-056.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cel-057.png",
+          "duration_ms": 70
+        },
+        {
+          "path": "cel-058.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "cel-059.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "cel-060.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-061.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-062.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "cel-063.png",
+          "duration_ms": 150
+        }
+      ]
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-064.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "cel-065.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "cel-066.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "cel-067.png",
+          "duration_ms": 190
+        }
+      ]
+    }
+  }
+}

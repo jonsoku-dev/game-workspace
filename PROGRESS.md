@@ -70,3 +70,7 @@ Game Studio 0.7.1과 Pixel Asset Pipeline 0.5.0을 로컬 Codex에 설치했다.
 ## 단일 원화와 Rive 상태 머신
 
 Pixel Asset Pipeline 0.6.0의 실제 설치본에서 96×96 정찰대원 원화 한 장과 11개 부위 마스크로 8동작·74포즈를 만들었다. 관절을 보충하고 보행·조깅·착지를 다시 설계했다. 최초 버전의 공격 프레임은 연결 영역이 5개였고 수정한 74프레임은 각각 1개다. 최종 Rive 파일 107,312바이트에는 PNG 포즈, 밀리초 타임라인과 숫자 상태 입력이 들어 있다. 공식 Canvas 2.49.4의 버튼 조작과 실제 WASM 438개 시점을 확인했다. 사람의 작품 수락은 기록하지 않았다. [재생](http://127.0.0.1:8876/?v=2feafcf7) · [실제 렌더 미리보기](examples/rive-character/evidence/runtime-preview.gif) · [프로젝트와 증거](examples/rive-character/README.md)
+
+## 개별 작화와 휴대용 Rive 플레이어
+
+2026-11-09 Pixel Asset Pipeline 0.7.0, Game Studio 0.8.1. Polymation의 단축·윤곽 재작화와 첨부 GIF의 원본 보존 요구를 다시 대조했다. 새 캐릭터는 동작별 완성 셀을 새로 그린 뒤 그 픽셀 그대로 내보낸다. 공식 Rive 웹 런타임에서 선택 순서, 프레임별 유지 시간, 반복과 마지막 포즈, 파일로 직접 열기와 화면 버튼을 확인했다. 전체 테스트는 자산 125개·스튜디오 125개 통과다. 미술 승인은 기록하지 않았다. [직접 비교](examples/storybook-cels/README.md) · [8동작 재생](http://127.0.0.1:52991/player.html)

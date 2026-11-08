@@ -1,0 +1,104 @@
+{
+  "rive_sha256": "ad3c9baca35e04b8b88bce7971b68a5e870eafc2bace12d67aecf4786cd09d56",
+  "viewports": [
+    {
+      "selected": [
+        {
+          "name": "점프",
+          "changed": true
+        },
+        {
+          "name": "걷기",
+          "changed": true
+        },
+        {
+          "name": "달리기",
+          "changed": true
+        },
+        {
+          "name": "손 흔들기",
+          "changed": true
+        },
+        {
+          "name": "환호",
+          "changed": false
+        },
+        {
+          "name": "공격",
+          "changed": true
+        },
+        {
+          "name": "피격",
+          "changed": true
+        },
+        {
+          "name": "대기",
+          "changed": false
+        }
+      ],
+      "paused": true,
+      "ui": {
+        "local": "http:",
+        "lang": "ko",
+        "title": "라일락 우편배달부",
+        "native": [
+          96,
+          112
+        ],
+        "overflow": false,
+        "external": [],
+        "embeddedDownload": true
+      }
+    },
+    {
+      "selected": [
+        {
+          "name": "점프",
+          "changed": true
+        },
+        {
+          "name": "걷기",
+          "changed": true
+        },
+        {
+          "name": "달리기",
+          "changed": true
+        },
+        {
+          "name": "손 흔들기",
+          "changed": false
+        },
+        {
+          "name": "환호",
+          "changed": false
+        },
+        {
+          "name": "공격",
+          "changed": true
+        },
+        {
+          "name": "피격",
+          "changed": true
+        },
+        {
+          "name": "대기",
+          "changed": false
+        }
+      ],
+      "paused": true,
+      "ui": {
+        "local": "file:",
+        "lang": "ko",
+        "title": "라일락 우편배달부",
+        "native": [
+          96,
+          112
+        ],
+        "overflow": false,
+        "external": [],
+        "embeddedDownload": true
+      }
+    }
+  ],
+  "scope": "Browser controls, local HTTP + file URL, reference artwork not approved by user."
+}

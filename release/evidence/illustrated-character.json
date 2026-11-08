@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "installed": {
+    "pixel": {
+      "version": "0.7.0",
+      "commit": "27c2473"
+    },
+    "studio": {
+      "version": "0.8.1",
+      "commit": "35083a8"
+    }
+  },
+  "mode": "drawn-frames",
+  "project": "examples/storybook-cels",
+  "activity": "urn:game-studio:fdde84ae-447c-429b-825e-d88a491028c4:work:5b51f95ba0ab4ebaa6cae90457e477bb",
+  "review": "urn:game-studio:fdde84ae-447c-429b-825e-d88a491028c4:work:actual-rive-cel-playback",
+  "runtime": "@rive-app/canvas 2.49.4",
+  "riv_sha256": "ad3c9baca35e04b8b88bce7971b68a5e870eafc2bace12d67aecf4786cd09d56",
+  "selected_actions": [
+    "wave",
+    "walk",
+    "cheer",
+    "idle",
+    "run",
+    "attack",
+    "jump",
+    "hurt"
+  ],
+  "frame_count": 68,
+  "evidence": "examples/storybook-cels/evidence/runtime-proof.json",
+  "user_art_acceptance": "pending"
+}

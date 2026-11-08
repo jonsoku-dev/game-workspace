@@ -1,0 +1,76 @@
+{
+  "observed_at": "2026-11-08T15:21:35.414448+00:00",
+  "scope": "source PNG/GIF preview only, independent Stagehand browser session",
+  "input_pins": {
+    "walk/00.png": "21c319452d78650f7ae5b5b76ab70312cb36b91d49a9c76a55f5dc956bdb5f5d",
+    "walk/01.png": "d7676e4db0835f9ec6b96e13feb5105375284695868971ea8b7d9ac9ff0046b2",
+    "walk/02.png": "720e66a7e31f9e8a93c98bd8189ab1584f88aa27d3487dc1c0d1c6303dee9bd2",
+    "walk/03.png": "268235dbe78933e39a122a604c6e7e163f7389853623d3c2fa586cc84fe7cf90",
+    "walk/04.png": "040b3c51000e13ce472e4545825e91983f50d0419a895dc665bc8f7c98a66b61",
+    "walk/05.png": "17d6dae2fe1c707df262d47d195173a8cc314dec3d568ecf15919b0a85be4f14",
+    "walk/06.png": "e202650ea007f5fcd430c00c8468d164abd60b7bcee27e4e658f9b03f764c3ee",
+    "walk/07.png": "df9d99c4307fb44fd69b486dafb841c097bbcc87f7ff43e07ad727d96527774f",
+    "walk/08.png": "a7e64f9a837c73536b0c7fcc10c63f1588dc1a44c600c14c550e529db09a5c1d",
+    "walk/09.png": "5431633e67c932c8ef2984519f8d3e633252273ecb11a951a2764115cbb945e7",
+    "walk/10.png": "bc256da6a8b94c7906389349abca1ece0d2c868fd35cc2889e6b78223956a008",
+    "walk/11.png": "1361603850d91ac150826cac6ba28616227100161a03112f2fc271f106e65f30",
+    "run/00.png": "df8c452c5a8dd5c17baf000e23a60e4d5b304adaabe1e68eb4e078a51b8f5f2a",
+    "run/01.png": "c2c1aeb9319f8cfad5cd7fbd9338b7e11bd467931780e55a12434e13b3eae805",
+    "run/02.png": "53bebc8d9a1d1e97e5d504b4c017a79c28db6ac58bb9ea496a301b0822783e75",
+    "run/03.png": "a4f972f3a15b7097661cb437b7afd0f1e7d4914f64b21c94fb0aa4582fca888d",
+    "run/04.png": "e459135078cbec45d30ec7f10bb7cba345463cb750ac7db4266edd1267bc335d",
+    "run/05.png": "379832d2ff53f08b3fd4f367ff156f203574802f0b03a5442b0927284ec19e99",
+    "run/06.png": "b7e401c26923124212abeb370c286895892b6d619ca90f7c1d384af16a5d3146",
+    "run/07.png": "605d85590e0a5025fb018598dc6b5ed005e0b58321206267b02366c754d75cdb",
+    "run/08.png": "00b125221f02e4cc9669907e16e3cfb9b1502e216eff315a982d35a2fca92869",
+    "run/09.png": "0031ea61517e0a7131ca652d4831a272cc3a45a3beb2fdc7184a144801705e13",
+    "run/10.png": "ea5d0fc2dd9da380d00f515ae90a9c2525f126543d84f6dc2600d04add908dc1",
+    "run/11.png": "6bcb53ef86df7ed07fe051a3d0ab5f5a51815a9857bc2b40e21fb46b73cd40cf",
+    "walk/timing.json": "597c19616fd0b2f6c17738c6fb87b44dcdcdec49a826709d9c391f27a2705311",
+    "run/timing.json": "7f1a4cc86d67b9a7ace34d1aec97dc19667a83a2fed88e0bf6e9713d3c361c7f"
+  },
+  "actual_browser_observations": {
+    "page": "walk/review.html",
+    "loaded_images": 2,
+    "source_gif_dimensions": [
+      384,
+      448
+    ],
+    "samples": [
+      "walk/browser-00.png",
+      "walk/browser-01.png",
+      "walk/browser-02.png",
+      "walk/browser-03.png",
+      "walk/browser-04.png",
+      "walk/browser-05.png"
+    ],
+    "sample_wait_ms": 270,
+    "visually_inspected_samples": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "observed": "different contact/passing and run flight poses rendered at 4x on baseline",
+    "limits": "timed screenshots sample playback; they do not prove continuous motion comfort or Rive runtime"
+  },
+  "static_review": {
+    "sheets": [
+      "walk/contact-sheet.png",
+      "run/contact-sheet.png"
+    ],
+    "repairs": [
+      "raised boot shafts with individual contours",
+      "covered neck with cream/ochre scarf",
+      "removed extra long rear locks",
+      "opened run 02/08 folded knee/heel silhouette"
+    ],
+    "independent_recheck": "cel_crit sampled master,walk00/03,run00/02/08; no further static blocker in sampled poses"
+  },
+  "unverified": [
+    "human art acceptance",
+    "full-speed continuous visual acceptance",
+    "Rive state machine/runtime",
+    "moving ground foot slide"
+  ]
+}

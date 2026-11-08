@@ -1,0 +1,193 @@
+{
+  "walk": {
+    "frames": 12,
+    "distinct_frames": 12,
+    "duration_ms": 1000,
+    "bounds": [
+      [
+        21,
+        10,
+        73,
+        100
+      ],
+      [
+        19,
+        12,
+        69,
+        100
+      ],
+      [
+        18,
+        11,
+        61,
+        100
+      ],
+      [
+        19,
+        9,
+        60,
+        100
+      ],
+      [
+        20,
+        9,
+        66,
+        100
+      ],
+      [
+        22,
+        10,
+        70,
+        100
+      ],
+      [
+        21,
+        10,
+        66,
+        100
+      ],
+      [
+        19,
+        12,
+        61,
+        100
+      ],
+      [
+        18,
+        11,
+        60,
+        100
+      ],
+      [
+        19,
+        9,
+        68,
+        100
+      ],
+      [
+        20,
+        9,
+        73,
+        100
+      ],
+      [
+        22,
+        10,
+        74,
+        100
+      ]
+    ],
+    "airborne_silhouette_frames": [],
+    "checks": [
+      "96x112",
+      "binary alpha",
+      "shared palette",
+      "unclipped",
+      "12 unique PNGs",
+      "12 GIF cels"
+    ],
+    "not_proven": [
+      "art acceptance",
+      "native Rive runtime",
+      "semantic foot contact"
+    ]
+  },
+  "run": {
+    "frames": 12,
+    "distinct_frames": 12,
+    "duration_ms": 740,
+    "bounds": [
+      [
+        18,
+        8,
+        72,
+        100
+      ],
+      [
+        16,
+        11,
+        68,
+        100
+      ],
+      [
+        24,
+        9,
+        69,
+        100
+      ],
+      [
+        25,
+        6,
+        65,
+        100
+      ],
+      [
+        20,
+        4,
+        71,
+        93
+      ],
+      [
+        20,
+        6,
+        74,
+        98
+      ],
+      [
+        22,
+        8,
+        69,
+        100
+      ],
+      [
+        19,
+        11,
+        66,
+        100
+      ],
+      [
+        24,
+        9,
+        72,
+        100
+      ],
+      [
+        25,
+        6,
+        68,
+        100
+      ],
+      [
+        17,
+        4,
+        74,
+        93
+      ],
+      [
+        17,
+        6,
+        78,
+        98
+      ]
+    ],
+    "airborne_silhouette_frames": [
+      4,
+      5,
+      10,
+      11
+    ],
+    "checks": [
+      "96x112",
+      "binary alpha",
+      "shared palette",
+      "unclipped",
+      "12 unique PNGs",
+      "12 GIF cels"
+    ],
+    "not_proven": [
+      "art acceptance",
+      "native Rive runtime",
+      "semantic foot contact"
+    ]
+  }
+}

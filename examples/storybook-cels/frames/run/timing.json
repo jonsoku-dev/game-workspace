@@ -1,0 +1,53 @@
+{
+  "loop": true,
+  "frames": [
+    {
+      "path": "00.png",
+      "duration_ms": 70
+    },
+    {
+      "path": "01.png",
+      "duration_ms": 60
+    },
+    {
+      "path": "02.png",
+      "duration_ms": 60
+    },
+    {
+      "path": "03.png",
+      "duration_ms": 50
+    },
+    {
+      "path": "04.png",
+      "duration_ms": 60
+    },
+    {
+      "path": "05.png",
+      "duration_ms": 70
+    },
+    {
+      "path": "06.png",
+      "duration_ms": 70
+    },
+    {
+      "path": "07.png",
+      "duration_ms": 60
+    },
+    {
+      "path": "08.png",
+      "duration_ms": 60
+    },
+    {
+      "path": "09.png",
+      "duration_ms": 50
+    },
+    {
+      "path": "10.png",
+      "duration_ms": 60
+    },
+    {
+      "path": "11.png",
+      "duration_ms": 70
+    }
+  ]
+}

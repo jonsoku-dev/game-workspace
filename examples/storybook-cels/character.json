@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "frames": "drawings.json",
+  "reference": "art/master.png",
+  "title": "라일락 우편배달부",
+  "language": "ko",
+  "actions": [
+    "wave",
+    "walk",
+    "cheer",
+    "idle",
+    "run",
+    "attack",
+    "jump",
+    "hurt"
+  ]
+}

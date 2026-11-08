@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Wave and cheer cel review</title>
+<style>body{background:#dad0bf;color:#302536;font:16px system-ui;margin:28px}section{display:inline-block;vertical-align:top;margin-right:32px}img{image-rendering:pixelated;vertical-align:bottom}button{padding:8px;margin:8px}</style>
+<h1>Wave / cheer · native cels</h1><button id="pause">Pause</button><button id="restart">Restart</button><main></main>
+<script type="module">
+const actions=await Promise.all(['wave','cheer'].map(async name=>{
+ const data=await fetch(`../${name}/timing.json`).then(r=>r.json());
+ const section=document.createElement('section');
+ section.innerHTML=`<h2>${name}</h2><img width="96" height="112" alt="${name} at native size"><img width="384" height="448" alt="${name} at four times size"><p></p>`;
+ document.querySelector('main').append(section);
+ await Promise.all(data.frames.map(frame=>new Promise((resolve,reject)=>{const image=new Image();image.onload=resolve;image.onerror=reject;image.src=`../${name}/${frame.path}`;})));
+ return {name,data,section,total:data.frames.reduce((s,f)=>s+f.duration_ms,0)};
+}));
+let start=performance.now(),paused=false,pausedAt=0;
+document.querySelector('#pause').onclick=()=>{paused=!paused;if(paused)pausedAt=performance.now();else start+=performance.now()-pausedAt;document.querySelector('#pause').textContent=paused?'Play':'Pause';};
+document.querySelector('#restart').onclick=()=>{start=performance.now();pausedAt=start;};
+function tick(now){
+ for(const a of actions){let elapsed=((paused?pausedAt:now)-start)%(a.total+600),i=0;while(i<a.data.frames.length-1&&elapsed>=a.data.frames[i].duration_ms){elapsed-=a.data.frames[i++].duration_ms;}
+ const src=`../${a.name}/${a.data.frames[i].path}`;for(const img of a.section.querySelectorAll('img'))if(img.getAttribute('src')!==src)img.src=src;
+ a.section.querySelector('p').textContent=`Cel ${i+1} / ${a.data.frames.length} · ${a.data.frames[i].duration_ms} ms`;
+ }requestAnimationFrame(tick);
+}requestAnimationFrame(tick);
+</script></html>

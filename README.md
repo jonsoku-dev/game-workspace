@@ -2,6 +2,8 @@
 
 [솔바람 정찰대 · 실제 Rive 플레이어](http://127.0.0.1:8876/?v=2feafcf7)에서 한 장의 캐릭터 원화를 손 흔들기·걷기·달리기·환호로 전환할 수 있다. [다운로드할 .riv](examples/rive-character/build/rive/character.riv) · [제작과 관절 수정 기록](examples/rive-character/README.md)
 
+[라일락 우편배달부 · 프레임별 작화 플레이어](http://127.0.0.1:52991/player.html)는 같은 기준 원화를 보고 걷기·인사·점프 등의 윤곽을 동작별로 그린 사례다. 각 PNG 또는 유지 시간을 개별 수정할 수 있다. [레퍼런스 재대조와 재현 방법](examples/storybook-cels/README.md)
+
 ## 처음 열 때
 
 Codex에서 “로봇이 표적을 세 번 맞히는 게임을 만들고, 공격 준비를 조금 늘린 버전과 비교해 줘”라고 요청한다. **달빛 아래 첫 일격**은 이 흐름으로 만든 로컬 게임이다. 작업실의 시계를 280ms에 두면 A는 이미 주먹을 뻗었고 B는 준비 중이다. 양쪽 게임을 직접 플레이한 뒤 채팅에서 채택하거나 다시 고칠 수 있다. [한국어 A/B 작업실](http://127.0.0.1:52980/?view=compare&lang=ko) · [日本語](http://127.0.0.1:52980/?view=compare&lang=ja) · [실행·재현 안내](examples/first-strike/COMPARE.md)

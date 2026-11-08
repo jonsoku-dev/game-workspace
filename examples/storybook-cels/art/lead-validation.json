@@ -1,0 +1,70 @@
+{
+  "idle": {
+    "frames": 4,
+    "duration_ms": 1380,
+    "bounds": [
+      [
+        30,
+        10,
+        66,
+        100
+      ],
+      [
+        30,
+        9,
+        67,
+        100
+      ],
+      [
+        30,
+        10,
+        66,
+        100
+      ],
+      [
+        30,
+        11,
+        65,
+        100
+      ]
+    ],
+    "distinct_rgba": 4,
+    "distinct_silhouettes": 3,
+    "native_and_3x_stills_observed": true,
+    "timed_playback_observed": false
+  },
+  "hurt": {
+    "frames": 4,
+    "duration_ms": 530,
+    "bounds": [
+      [
+        24,
+        12,
+        70,
+        100
+      ],
+      [
+        17,
+        15,
+        68,
+        100
+      ],
+      [
+        23,
+        13,
+        74,
+        100
+      ],
+      [
+        29,
+        10,
+        67,
+        100
+      ]
+    ],
+    "distinct_rgba": 4,
+    "distinct_silhouettes": 4,
+    "native_and_3x_stills_observed": true,
+    "timed_playback_observed": false
+  }
+}
