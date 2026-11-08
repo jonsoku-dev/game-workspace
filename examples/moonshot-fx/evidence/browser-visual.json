@@ -1,0 +1,65 @@
+{
+  "desktop": {
+    "title": "달빛 탄환",
+    "hits": 1,
+    "x": 626,
+    "elapsed": 328.22666666666686,
+    "effects": [
+      {
+        "frame": "8",
+        "elapsed": 328.22666666666686
+      }
+    ],
+    "contacts": [
+      {
+        "start_ms": 240,
+        "observed_ms": 245.77666666666673,
+        "point": {
+          "x": 662,
+          "y": 314
+        },
+        "contact": true
+      }
+    ]
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "buttons": [
+      {
+        "text": "← Left",
+        "rect": {
+          "x": 14,
+          "width": 83
+        },
+        "label": "Move left"
+      },
+      {
+        "text": "Right →",
+        "rect": {
+          "x": 107,
+          "width": 83
+        },
+        "label": "Move right"
+      },
+      {
+        "text": "Strike · Space",
+        "rect": {
+          "x": 200,
+          "width": 83
+        },
+        "label": null
+      },
+      {
+        "text": "Restart · R",
+        "rect": {
+          "x": 293,
+          "width": 83
+        },
+        "label": null
+      }
+    ],
+    "status": "0 / 3 · Move to the amber marker."
+  },
+  "errors": []
+}

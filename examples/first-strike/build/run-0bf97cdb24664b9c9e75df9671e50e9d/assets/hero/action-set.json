@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "origin": "local-authored-poses",
+  "cell_size": [
+    40,
+    40
+  ],
+  "pivot_px_from_top_left": [
+    20,
+    34
+  ],
+  "actions": {
+    "idle": {
+      "loop": true,
+      "duration_ms": 640,
+      "frames": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 160,
+          "source": {
+            "path": "idle-00.png",
+            "sha256": "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+          }
+        },
+        {
+          "rect": {
+            "x": 40,
+            "y": 0,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 160,
+          "source": {
+            "path": "idle-01.png",
+            "sha256": "aecb8baf4afb4cc1d8db2cf1122b4ab10c4be31897212cbcda375f8212734cde"
+          }
+        },
+        {
+          "rect": {
+            "x": 80,
+            "y": 0,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 160,
+          "source": {
+            "path": "idle-02.png",
+            "sha256": "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+          }
+        },
+        {
+          "rect": {
+            "x": 120,
+            "y": 0,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 160,
+          "source": {
+            "path": "idle-03.png",
+            "sha256": "b7dd20340aadda79ba5e35504bb89359277cc50519e620bc4b0a9f3e1d831f24"
+          }
+        }
+      ]
+    },
+    "walk": {
+      "loop": true,
+      "duration_ms": 480,
+      "frames": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 40,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "walk-00.png",
+            "sha256": "41474bbbd7c812af62608225388d719c96c9eebed58ef5b899c43c6476c2150b"
+          }
+        },
+        {
+          "rect": {
+            "x": 40,
+            "y": 40,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "walk-01.png",
+            "sha256": "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+          }
+        },
+        {
+          "rect": {
+            "x": 80,
+            "y": 40,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "walk-02.png",
+            "sha256": "b78c740ea39fac3992cbbf36cf9929654dc11746148c208265a98caca5e519bd"
+          }
+        },
+        {
+          "rect": {
+            "x": 120,
+            "y": 40,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "walk-03.png",
+            "sha256": "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+          }
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "duration_ms": 360,
+      "frames": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 80,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 90,
+          "source": {
+            "path": "run-00.png",
+            "sha256": "530ae57bbeb6a5c7bc21ebcd7f9c333142199578fdcccd46ef6df7f26188133f"
+          }
+        },
+        {
+          "rect": {
+            "x": 40,
+            "y": 80,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 90,
+          "source": {
+            "path": "run-01.png",
+            "sha256": "1aac97daea7978942c8997aae5ed67499bffa9e4e404fb92c63b2f131d68853c"
+          }
+        },
+        {
+          "rect": {
+            "x": 80,
+            "y": 80,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 90,
+          "source": {
+            "path": "run-02.png",
+            "sha256": "0def623d1caec31c16beb7e3cf07c49a5f3653a10e3b85ac1d6f9e55a2c47b40"
+          }
+        },
+        {
+          "rect": {
+            "x": 120,
+            "y": 80,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 90,
+          "source": {
+            "path": "run-03.png",
+            "sha256": "856b06cc3dba0a9933bdac0a506337971c91cc1f5498a3a616c69b5e79beb18d"
+          }
+        }
+      ]
+    },
+    "attack": {
+      "loop": false,
+      "duration_ms": 600,
+      "frames": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 120,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "attack-00.png",
+            "sha256": "42f70fca33c04d48c6bd8ca99418c134a1908ea4c680b2fe3544d404e9655d66"
+          }
+        },
+        {
+          "rect": {
+            "x": 40,
+            "y": 120,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "attack-01.png",
+            "sha256": "4202713d18aee46bf46fa90fe28dbb9267a2ed367779c4cde9fccf272452a8cf"
+          }
+        },
+        {
+          "rect": {
+            "x": 80,
+            "y": 120,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "attack-02.png",
+            "sha256": "7b92c21e3d42c2c0aed4a4080a3ecc82315d3da9f32462db537a360876704d5f"
+          }
+        },
+        {
+          "rect": {
+            "x": 120,
+            "y": 120,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "attack-03.png",
+            "sha256": "50394d0b73f3d69e22006a1ddcb760c86c49f38834e326bf2f06834f293835b2"
+          }
+        },
+        {
+          "rect": {
+            "x": 160,
+            "y": 120,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "attack-04.png",
+            "sha256": "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+          }
+        }
+      ]
+    },
+    "jump": {
+      "loop": false,
+      "duration_ms": 600,
+      "frames": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 160,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "jump-00.png",
+            "sha256": "72e38b078a38dbc624b5cf9e4d9893b01583c5678e388d62515ad859103eff60"
+          }
+        },
+        {
+          "rect": {
+            "x": 40,
+            "y": 160,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "jump-01.png",
+            "sha256": "0b442c2ce9002e3d32ec0b19e819e3acb3245a4e86c7dc82748fbdbc5ed5a937"
+          }
+        },
+        {
+          "rect": {
+            "x": 80,
+            "y": 160,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "jump-02.png",
+            "sha256": "998d30992ccddb9547b4b34e8db1302dd52004a8f7456a14b015a32f4b87a843"
+          }
+        },
+        {
+          "rect": {
+            "x": 120,
+            "y": 160,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "jump-03.png",
+            "sha256": "61e3bfd0ae940f06a0d0570bd77c81c7a3f92bd6433104b0c666d2f64a3c120b"
+          }
+        },
+        {
+          "rect": {
+            "x": 160,
+            "y": 160,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "jump-04.png",
+            "sha256": "ec768e8bbd60d5e3762c287d8eb2ec2bce1f1db5415fd2b42914a4c40c419b68"
+          }
+        }
+      ]
+    },
+    "hurt": {
+      "loop": false,
+      "duration_ms": 480,
+      "frames": [
+        {
+          "rect": {
+            "x": 0,
+            "y": 200,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "hurt-00.png",
+            "sha256": "5df0c231a9c6977468e7a5e4e365915c85d8c0868788d19177a274188d687175"
+          }
+        },
+        {
+          "rect": {
+            "x": 40,
+            "y": 200,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "hurt-01.png",
+            "sha256": "581363631752917e23226d04eb2ee48ef1209af401ee5b0610363984e7fdc06f"
+          }
+        },
+        {
+          "rect": {
+            "x": 80,
+            "y": 200,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "hurt-02.png",
+            "sha256": "79c3fe190955a109371ce90578cc55acfaac1dae4f12746ceae6e0932d39fbd5"
+          }
+        },
+        {
+          "rect": {
+            "x": 120,
+            "y": 200,
+            "w": 40,
+            "h": 40
+          },
+          "duration_ms": 120,
+          "source": {
+            "path": "hurt-03.png",
+            "sha256": "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+          }
+        }
+      ]
+    }
+  },
+  "events": [],
+  "preview": {
+    "timing": "GIF centiseconds rounded; exact milliseconds in metadata",
+    "effects": "composited; newest contact replaces prior instance",
+    "scope": "one action traversal plus initial effect tail; loops retrigger within that window",
+    "visual_review": "pending"
+  }
+}

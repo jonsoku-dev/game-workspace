@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "effects": [
+    {
+      "event": 0,
+      "license": "effect-0-LICENSE",
+      "notice": "effect-0-NOTICE",
+      "attribution": "pixelfx impacts/hit-spark; Patch and Hugo Duprez, MIT. Charge/travel are explicitly synthetic cropped/scaled/translated adaptations. Original exact notices retained.",
+      "source": {
+        "sheet": {
+          "path": "effect/sheet.png",
+          "sha256": "f27cde6b6ae07a0e9bec118eb98f21374f967e4d0247f98f5daf6c0b2dd1e3f9"
+        },
+        "metadata": {
+          "path": "effect/sheet.json",
+          "sha256": "fdb58503923ababe73bca8644389d6744f2d80ddb7b2f1d76667205ded535cf8"
+        },
+        "license": {
+          "path": "effect/LICENSE",
+          "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e"
+        },
+        "notice": {
+          "path": "effect/NOTICE",
+          "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b"
+        }
+      }
+    }
+  ]
+}

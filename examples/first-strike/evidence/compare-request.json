@@ -1,0 +1,25 @@
+{
+  "a": "45b73b4465c74c728050d68cd6962377",
+  "b": "5536a7d73c41468e829e5ef79621613d",
+  "review_id": "anticipation-80ms",
+  "criteria": [
+    {
+      "id": "controlled-timing",
+      "kind": "technical",
+      "required": true,
+      "description": "설치된 제작기로 실제 빌드하며 A의 공격 600ms·접촉240ms, B의 공격680ms·접촉320ms를 확인한다. 공격 예비 동작만80ms 늘리고 모든 PNG와 다른 다섯 동작·게임 규칙을 보존한다."
+    },
+    {
+      "id": "normal-controls",
+      "kind": "gameplay",
+      "required": true,
+      "description": "실제 브라우저의 화면 버튼으로 거리 밖 공격·반대 방향 공격은 실패하고, 접촉 시점에만 점수가 올라3회 명중에서 승리하며 초기화된다."
+    },
+    {
+      "id": "human-motion",
+      "kind": "visual",
+      "required": true,
+      "description": "사람이 A/B를 직접 플레이·관찰하여 80ms 예비 동작 차이, 접촉감, 반복 동작과 발 고정을 판단하고 채택 이유를 남긴다."
+    }
+  ]
+}

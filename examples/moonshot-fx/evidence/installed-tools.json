@@ -1,0 +1,17 @@
+{
+  "version": "0.5.0",
+  "module": "/Users/jongseoklee/.local/share/uv/tools/pixel-asset-pipeline/lib/python3.13/site-packages/pixel_asset_pipeline/__init__.py",
+  "launcher": "/Users/jongseoklee/.local/bin/pixel-asset",
+  "studio": "/Users/jongseoklee/.codex/plugins/cache/game-studio/game-studio/0.7.1",
+  "studio_version": "0.7.1",
+  "hashes": {
+    "/Users/jongseoklee/.local/share/uv/tools/pixel-asset-pipeline/lib/python3.13/site-packages/pixel_asset_pipeline/snap.py": "8cec5a94c285b960ebc91731e5f87aebe4ae301d8ae7eaa030248c9c94602a69",
+    "/Users/jongseoklee/.local/share/uv/tools/pixel-asset-pipeline/lib/python3.13/site-packages/pixel_asset_pipeline/motion.py": "75fc4dadb34a642a47769ae334994dcb14f172664f62ea7141dedce4ec6b09c9",
+    "/Users/jongseoklee/.local/share/uv/tools/pixel-asset-pipeline/lib/python3.13/site-packages/pixel_asset_pipeline/effect_clip.py": "b97203bc83364818e810c87aef868493fbcceb47f2bf624fd661aac0c3ce845f",
+    "/Users/jongseoklee/.local/share/uv/tools/pixel-asset-pipeline/lib/python3.13/site-packages/pixel_asset_pipeline/action_set.py": "c434c5204ff83c4bf8f2da11a74d0a51ceee655d52876efdb178a0146c7772a6",
+    "/Users/jongseoklee/.codex/plugins/cache/game-studio/game-studio/0.7.1/tools/scene.py": "5698ae6c347c5fdb3308107a7f3895ec219adf8ee086a03f13e8268e5e7a5e96",
+    "/Users/jongseoklee/.codex/plugins/cache/game-studio/game-studio/0.7.1/tools/export_game.py": "8861a656f60a9658a87a6389d8014bd6cdf8e9ea7d477bf37f090993ea5a7be1",
+    "/Users/jongseoklee/.codex/plugins/cache/game-studio/game-studio/0.7.1/tools/playcheck_browser.py": "dc0cd49f8691d808b7869f4eaedce338c2210fe154b18c738c95e14bb41db3b1",
+    "/Users/jongseoklee/.codex/plugins/cache/game-studio/game-studio/0.7.1/engines/web/phaser/game.mjs": "bf626f8f975a3fe9d6269518c5b803cfc9ba934c3e4e8a844420dbe4e1c22b8e"
+  }
+}

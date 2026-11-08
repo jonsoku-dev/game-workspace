@@ -1,0 +1,1233 @@
+{
+  "schema_version": 1,
+  "visual_acceptance": "unreviewed",
+  "actions": {
+    "idle": {
+      "before": {
+        "durations_ms": [
+          160,
+          160,
+          160,
+          160
+        ],
+        "total_ms": 640,
+        "sha256": [
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264",
+          "aecb8baf4afb4cc1d8db2cf1122b4ab10c4be31897212cbcda375f8212734cde",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264",
+          "b7dd20340aadda79ba5e35504bb89359277cc50519e620bc4b0a9f3e1d831f24"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              15,
+              22,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              11,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              17,
+              24,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": [
+          -1,
+          -1,
+          0
+        ]
+      },
+      "after": {
+        "durations_ms": [
+          160,
+          160,
+          160,
+          160
+        ],
+        "total_ms": 640,
+        "sha256": [
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264",
+          "aecb8baf4afb4cc1d8db2cf1122b4ab10c4be31897212cbcda375f8212734cde",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264",
+          "b7dd20340aadda79ba5e35504bb89359277cc50519e620bc4b0a9f3e1d831f24"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              15,
+              22,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              11,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              17,
+              24,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": [
+          -1,
+          -1,
+          0
+        ]
+      },
+      "changed": false,
+      "mapping": null
+    },
+    "walk": {
+      "before": {
+        "durations_ms": [
+          120,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 480,
+        "sha256": [
+          "41474bbbd7c812af62608225388d719c96c9eebed58ef5b899c43c6476c2150b",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264",
+          "b78c740ea39fac3992cbbf36cf9929654dc11746148c208265a98caca5e519bd",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              9,
+              9,
+              31,
+              34
+            ],
+            "bottom_opaque_span": [
+              19,
+              20,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              24,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            -3,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": [
+          3,
+          -3,
+          0
+        ]
+      },
+      "after": {
+        "durations_ms": [
+          120,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 480,
+        "sha256": [
+          "41474bbbd7c812af62608225388d719c96c9eebed58ef5b899c43c6476c2150b",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264",
+          "b78c740ea39fac3992cbbf36cf9929654dc11746148c208265a98caca5e519bd",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              9,
+              9,
+              31,
+              34
+            ],
+            "bottom_opaque_span": [
+              19,
+              20,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              24,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            -3,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": [
+          3,
+          -3,
+          0
+        ]
+      },
+      "changed": false,
+      "mapping": null
+    },
+    "run": {
+      "before": {
+        "durations_ms": [
+          90,
+          90,
+          90,
+          90
+        ],
+        "total_ms": 360,
+        "sha256": [
+          "530ae57bbeb6a5c7bc21ebcd7f9c333142199578fdcccd46ef6df7f26188133f",
+          "1aac97daea7978942c8997aae5ed67499bffa9e4e404fb92c63b2f131d68853c",
+          "0def623d1caec31c16beb7e3cf07c49a5f3653a10e3b85ac1d6f9e55a2c47b40",
+          "856b06cc3dba0a9933bdac0a506337971c91cc1f5498a3a616c69b5e79beb18d"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              8,
+              8,
+              32,
+              33
+            ],
+            "bottom_opaque_span": [
+              19,
+              19,
+              32
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              7,
+              28,
+              32
+            ],
+            "bottom_opaque_span": [
+              18,
+              21,
+              31
+            ]
+          },
+          {
+            "alpha_bounds": [
+              10,
+              8,
+              28,
+              33
+            ],
+            "bottom_opaque_span": [
+              23,
+              24,
+              32
+            ]
+          },
+          {
+            "alpha_bounds": [
+              10,
+              7,
+              28,
+              32
+            ],
+            "bottom_opaque_span": [
+              18,
+              18,
+              31
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            -1,
+            2,
+            -1
+          ],
+          [
+            5,
+            3,
+            1
+          ],
+          [
+            -5,
+            -6,
+            -1
+          ]
+        ],
+        "loop_bottom_span_step_px": [
+          1,
+          1,
+          1
+        ]
+      },
+      "after": {
+        "durations_ms": [
+          90,
+          90,
+          90,
+          90
+        ],
+        "total_ms": 360,
+        "sha256": [
+          "530ae57bbeb6a5c7bc21ebcd7f9c333142199578fdcccd46ef6df7f26188133f",
+          "1aac97daea7978942c8997aae5ed67499bffa9e4e404fb92c63b2f131d68853c",
+          "0def623d1caec31c16beb7e3cf07c49a5f3653a10e3b85ac1d6f9e55a2c47b40",
+          "856b06cc3dba0a9933bdac0a506337971c91cc1f5498a3a616c69b5e79beb18d"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              8,
+              8,
+              32,
+              33
+            ],
+            "bottom_opaque_span": [
+              19,
+              19,
+              32
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              7,
+              28,
+              32
+            ],
+            "bottom_opaque_span": [
+              18,
+              21,
+              31
+            ]
+          },
+          {
+            "alpha_bounds": [
+              10,
+              8,
+              28,
+              33
+            ],
+            "bottom_opaque_span": [
+              23,
+              24,
+              32
+            ]
+          },
+          {
+            "alpha_bounds": [
+              10,
+              7,
+              28,
+              32
+            ],
+            "bottom_opaque_span": [
+              18,
+              18,
+              31
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            -1,
+            2,
+            -1
+          ],
+          [
+            5,
+            3,
+            1
+          ],
+          [
+            -5,
+            -6,
+            -1
+          ]
+        ],
+        "loop_bottom_span_step_px": [
+          1,
+          1,
+          1
+        ]
+      },
+      "changed": false,
+      "mapping": null
+    },
+    "attack": {
+      "before": {
+        "durations_ms": [
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 600,
+        "sha256": [
+          "42f70fca33c04d48c6bd8ca99418c134a1908ea4c680b2fe3544d404e9655d66",
+          "4202713d18aee46bf46fa90fe28dbb9267a2ed367779c4cde9fccf272452a8cf",
+          "7b92c21e3d42c2c0aed4a4080a3ecc82315d3da9f32462db537a360876704d5f",
+          "50394d0b73f3d69e22006a1ddcb760c86c49f38834e326bf2f06834f293835b2",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              11,
+              9,
+              28,
+              35
+            ],
+            "bottom_opaque_span": [
+              18,
+              18,
+              34
+            ]
+          },
+          {
+            "alpha_bounds": [
+              9,
+              9,
+              27,
+              35
+            ],
+            "bottom_opaque_span": [
+              20,
+              20,
+              34
+            ]
+          },
+          {
+            "alpha_bounds": [
+              13,
+              9,
+              33,
+              34
+            ],
+            "bottom_opaque_span": [
+              17,
+              19,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              32,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              21,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            -3,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": null
+      },
+      "after": {
+        "durations_ms": [
+          120,
+          200,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 680,
+        "sha256": [
+          "42f70fca33c04d48c6bd8ca99418c134a1908ea4c680b2fe3544d404e9655d66",
+          "4202713d18aee46bf46fa90fe28dbb9267a2ed367779c4cde9fccf272452a8cf",
+          "7b92c21e3d42c2c0aed4a4080a3ecc82315d3da9f32462db537a360876704d5f",
+          "50394d0b73f3d69e22006a1ddcb760c86c49f38834e326bf2f06834f293835b2",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              11,
+              9,
+              28,
+              35
+            ],
+            "bottom_opaque_span": [
+              18,
+              18,
+              34
+            ]
+          },
+          {
+            "alpha_bounds": [
+              9,
+              9,
+              27,
+              35
+            ],
+            "bottom_opaque_span": [
+              20,
+              20,
+              34
+            ]
+          },
+          {
+            "alpha_bounds": [
+              13,
+              9,
+              33,
+              34
+            ],
+            "bottom_opaque_span": [
+              17,
+              19,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              32,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              21,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            -3,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": null
+      },
+      "changed": true,
+      "mapping": [
+        {
+          "source": 0
+        },
+        {
+          "source": 1,
+          "duration_ms": 200
+        },
+        {
+          "source": 2
+        },
+        {
+          "source": 3
+        },
+        {
+          "source": 4
+        }
+      ]
+    },
+    "jump": {
+      "before": {
+        "durations_ms": [
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 600,
+        "sha256": [
+          "72e38b078a38dbc624b5cf9e4d9893b01583c5678e388d62515ad859103eff60",
+          "0b442c2ce9002e3d32ec0b19e819e3acb3245a4e86c7dc82748fbdbc5ed5a937",
+          "998d30992ccddb9547b4b34e8db1302dd52004a8f7456a14b015a32f4b87a843",
+          "61e3bfd0ae940f06a0d0570bd77c81c7a3f92bd6433104b0c666d2f64a3c120b",
+          "ec768e8bbd60d5e3762c287d8eb2ec2bce1f1db5415fd2b42914a4c40c419b68"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              12,
+              10,
+              30,
+              35
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              34
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              6,
+              31,
+              31
+            ],
+            "bottom_opaque_span": [
+              20,
+              20,
+              30
+            ]
+          },
+          {
+            "alpha_bounds": [
+              11,
+              3,
+              32,
+              27
+            ],
+            "bottom_opaque_span": [
+              18,
+              19,
+              26
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              6,
+              29,
+              31
+            ],
+            "bottom_opaque_span": [
+              19,
+              20,
+              30
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              10,
+              28,
+              35
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              34
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            4,
+            -3,
+            -4
+          ],
+          [
+            -2,
+            -1,
+            -4
+          ],
+          [
+            1,
+            1,
+            4
+          ],
+          [
+            -3,
+            3,
+            4
+          ]
+        ],
+        "loop_bottom_span_step_px": null
+      },
+      "after": {
+        "durations_ms": [
+          120,
+          120,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 600,
+        "sha256": [
+          "72e38b078a38dbc624b5cf9e4d9893b01583c5678e388d62515ad859103eff60",
+          "0b442c2ce9002e3d32ec0b19e819e3acb3245a4e86c7dc82748fbdbc5ed5a937",
+          "998d30992ccddb9547b4b34e8db1302dd52004a8f7456a14b015a32f4b87a843",
+          "61e3bfd0ae940f06a0d0570bd77c81c7a3f92bd6433104b0c666d2f64a3c120b",
+          "ec768e8bbd60d5e3762c287d8eb2ec2bce1f1db5415fd2b42914a4c40c419b68"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              12,
+              10,
+              30,
+              35
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              34
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              6,
+              31,
+              31
+            ],
+            "bottom_opaque_span": [
+              20,
+              20,
+              30
+            ]
+          },
+          {
+            "alpha_bounds": [
+              11,
+              3,
+              32,
+              27
+            ],
+            "bottom_opaque_span": [
+              18,
+              19,
+              26
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              6,
+              29,
+              31
+            ],
+            "bottom_opaque_span": [
+              19,
+              20,
+              30
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              10,
+              28,
+              35
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              34
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            4,
+            -3,
+            -4
+          ],
+          [
+            -2,
+            -1,
+            -4
+          ],
+          [
+            1,
+            1,
+            4
+          ],
+          [
+            -3,
+            3,
+            4
+          ]
+        ],
+        "loop_bottom_span_step_px": null
+      },
+      "changed": false,
+      "mapping": null
+    },
+    "hurt": {
+      "before": {
+        "durations_ms": [
+          120,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 480,
+        "sha256": [
+          "5df0c231a9c6977468e7a5e4e365915c85d8c0868788d19177a274188d687175",
+          "581363631752917e23226d04eb2ee48ef1209af401ee5b0610363984e7fdc06f",
+          "79c3fe190955a109371ce90578cc55acfaac1dae4f12746ceae6e0932d39fbd5",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              31,
+              34
+            ],
+            "bottom_opaque_span": [
+              18,
+              21,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              31,
+              34
+            ],
+            "bottom_opaque_span": [
+              18,
+              21,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              30,
+              34
+            ],
+            "bottom_opaque_span": [
+              17,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": null
+      },
+      "after": {
+        "durations_ms": [
+          120,
+          120,
+          120,
+          120
+        ],
+        "total_ms": 480,
+        "sha256": [
+          "5df0c231a9c6977468e7a5e4e365915c85d8c0868788d19177a274188d687175",
+          "581363631752917e23226d04eb2ee48ef1209af401ee5b0610363984e7fdc06f",
+          "79c3fe190955a109371ce90578cc55acfaac1dae4f12746ceae6e0932d39fbd5",
+          "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+        ],
+        "frames": [
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              31,
+              34
+            ],
+            "bottom_opaque_span": [
+              18,
+              21,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              31,
+              34
+            ],
+            "bottom_opaque_span": [
+              18,
+              21,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              30,
+              34
+            ],
+            "bottom_opaque_span": [
+              17,
+              23,
+              33
+            ]
+          },
+          {
+            "alpha_bounds": [
+              12,
+              9,
+              28,
+              34
+            ],
+            "bottom_opaque_span": [
+              16,
+              23,
+              33
+            ]
+          }
+        ],
+        "contacts": [],
+        "bottom_span_steps_px": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "loop_bottom_span_step_px": null
+      },
+      "changed": false,
+      "mapping": null
+    }
+  },
+  "measurement_limits": "Alpha bounds and bottommost opaque pixels are silhouette measures, not anatomical feet. GIF timing rounds to 10ms; JSON durations are authoritative. GIFs show actor poses, not composite effects. Native 1x PNGs retain source colors; GIF uses a palette.",
+  "base_run": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377",
+  "asset": "hero",
+  "patch_sha256": "dd2db44b3352ad78ef33835323c131bfea9ba65a44b26e7bad91e0fd628e6bdd",
+  "playtest_before": {
+    "at_px": [
+      32,
+      20
+    ],
+    "contact_frame": 2,
+    "hits_to_win": 3,
+    "mode": "land_hits",
+    "target_x": 650,
+    "target_y": 300
+  },
+  "playtest_after": {
+    "at_px": [
+      32,
+      20
+    ],
+    "contact_frame": 2,
+    "hits_to_win": 3,
+    "mode": "land_hits",
+    "target_x": 650,
+    "target_y": 300
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "review_id": "anticipation-80ms",
+  "check_id": "browser-confirmed-b",
+  "run_id": "5536a7d73c41468e829e5ef79621613d",
+  "actor": "codex-demo-reviewer",
+  "results": [
+    {
+      "criterion": "controlled-timing",
+      "status": "pass",
+      "reason": "실제 설치 CLI로 빌드·내보냈으며 원본 PNG와 다른 다섯 동작을 보존한 채 공격 예비 동작·접촉·전체 길이만80ms 증가했다.",
+      "evidence": [
+        "evidence/timing-comparison.json",
+        "candidates/anticipation-b/review.json"
+      ]
+    },
+    {
+      "criterion": "normal-controls",
+      "status": "pass",
+      "reason": "Stagehand가 실제 화면 버튼으로 거리 밖·반대 방향 빗나감, 접촉 시점,3회 승리·2회 미완료,초기화를 확인했다. 브라우저가 받은 전체 파일의 SHA-256을 내보내기와 대조했다.",
+      "evidence": [
+        "checks/browser-f8424c0cc8714eb88ac607c313375f4a.json"
+      ]
+    },
+    {
+      "criterion": "human-motion",
+      "status": "pending",
+      "reason": "사람의 실제 플레이·관찰 및 채택 판단을 기다린다. 기술 검사로 시각 승인을 대신하지 않는다.",
+      "evidence": [
+        "candidates/anticipation-b/attack-contact.png",
+        "candidates/anticipation-b/attack-before-1x.gif",
+        "candidates/anticipation-b/attack-after-1x.gif"
+      ]
+    }
+  ],
+  "supersedes": [
+    "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:review:evidence:initial-b"
+  ],
+  "resolution_reason": "정확한 내보내기 해시를 고정한 설치 Stagehand 브라우저 실행이 끝나 대기 중인 실제 조작 검사를 결과로 교체한다. 사람의 시각 판단은 계속 보류한다."
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "first-slice",
+  "brief": {
+    "title": "달빛 아래 첫 일격",
+    "idea": "달빛 아래 훈련 로봇이 표적을 향해 다가가 세 번 정확하게 내리친다. 공격 전 몸을 모으는 예비 동작의 길이를 비교하여 손맛을 다듬는다.",
+    "goal": "표적을 향해 이동한 뒤 유효한 공격을 3회 명중시키세요.",
+    "controls": "←/→ 또는 A/D: 이동 · Space: 공격 · R: 다시 시작. 화면 버튼도 사용 가능합니다."
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "playtest": {
+    "mode": "land_hits",
+    "hits_to_win": 3,
+    "target_x": 650,
+    "target_y": 300,
+    "contact_frame": 2,
+    "at_px": [
+      32,
+      20
+    ]
+  },
+  "assets": [
+    {
+      "id": "hero",
+      "producer": "pixel-action-set",
+      "request": "requests/motion/action-set.request.json"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hero",
+      "asset": "hero",
+      "action": "attack",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1
+    }
+  ]
+}

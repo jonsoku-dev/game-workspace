@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-11-08",
+  "plugins": {
+    "game-studio": {
+      "version": "0.7.1",
+      "enabled": true,
+      "source_commit": "dd915e39d0abef1975a748caebc883dbc4801e17"
+    },
+    "pixel-asset-pipeline": {
+      "version": "0.5.0",
+      "enabled": true,
+      "source_commit": "cad2416e048fa42f334063359c4bbb2687565bda"
+    }
+  },
+  "source_checks": {
+    "pixel_python_warning_strict": 95,
+    "studio_python_with_real_offline_install": 109,
+    "unity_export_and_logic": 6
+  },
+  "pixel_example": {
+    "input_size": [
+      384,
+      384
+    ],
+    "visible_source_colors": 3579,
+    "native_grid": [
+      40,
+      40
+    ],
+    "output_colors": 16,
+    "output_opaque_pixels": 288
+  },
+  "stagehand": {
+    "first_strike": "release/evidence/first-strike/compare-browser.json",
+    "moonshot": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:work:browser-1385f1d7619b4ea98d4837761e8f16d4",
+    "moonshot_criteria": [
+      "out_of_range_miss",
+      "contact_timing",
+      "win",
+      "reset",
+      "fx_before_damage",
+      "fx_frame_at_contact",
+      "facing_away",
+      "before_win"
+    ],
+    "controls_observed": "normal screen controls"
+  },
+  "fresh_installed_japanese_starter": {
+    "hits": 5,
+    "title": "月の訓練場",
+    "inspect": "playable_export",
+    "runtime_sha256": "96d99d27e434817ca1f0169bfa5d7374469bcdf626af821fd7633865d7a75c16",
+    "scope": "Installed current versions, creation/build/resume; gameplay attestation is separate."
+  },
+  "limits": [
+    "Final customer artwork, logo and gameplay selection pending.",
+    "Rive file authoring/runtime and licensed Unity Editor play were not exercised.",
+    "Desktop and simulated 390px browser viewport; no physical mobile device.",
+    "Source screenshots supplied the case details. The specific public reels and their original inputs were not verified."
+  ]
+}

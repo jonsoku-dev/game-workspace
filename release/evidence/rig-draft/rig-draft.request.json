@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "master": "master.png",
+  "approved": false,
+  "pivot_px_from_top_left": [
+    31,
+    59
+  ],
+  "rig": {
+    "parts": [
+      {
+        "id": "torso",
+        "role": "torso",
+        "parent": null,
+        "anchor_px": [
+          31,
+          44
+        ],
+        "mask": "torso-mask.png"
+      },
+      {
+        "id": "head",
+        "role": "head",
+        "parent": "torso",
+        "anchor_px": [
+          31,
+          22
+        ],
+        "mask": "head-mask.png"
+      },
+      {
+        "id": "arm_left",
+        "role": "arm_left",
+        "parent": "torso",
+        "anchor_px": [
+          25,
+          24
+        ],
+        "mask": "arm_left-mask.png"
+      },
+      {
+        "id": "arm_right",
+        "role": "arm_right",
+        "parent": "torso",
+        "anchor_px": [
+          38,
+          24
+        ],
+        "mask": "arm_right-mask.png"
+      },
+      {
+        "id": "leg_left",
+        "role": "leg_left",
+        "parent": "torso",
+        "anchor_px": [
+          28,
+          44
+        ],
+        "mask": "leg_left-mask.png",
+        "contact_px": [
+          27,
+          58
+        ]
+      },
+      {
+        "id": "leg_right",
+        "role": "leg_right",
+        "parent": "torso",
+        "anchor_px": [
+          34,
+          44
+        ],
+        "mask": "leg_right-mask.png",
+        "contact_px": [
+          35,
+          58
+        ]
+      }
+    ]
+  }
+}

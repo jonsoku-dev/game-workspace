@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "cell_size": [
+    40,
+    40
+  ],
+  "pivot_px_from_top_left": [
+    20,
+    34
+  ],
+  "actions": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "idle-00.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "idle-01.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "idle-02.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "idle-03.png",
+          "duration_ms": 160
+        }
+      ]
+    },
+    "walk": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "walk-00.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "walk-01.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "walk-02.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "walk-03.png",
+          "duration_ms": 120
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "run-00.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "run-01.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "run-02.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "run-03.png",
+          "duration_ms": 90
+        }
+      ]
+    },
+    "attack": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "attack-00.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "attack-01.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "attack-02.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "attack-03.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "attack-04.png",
+          "duration_ms": 120
+        }
+      ]
+    },
+    "jump": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "jump-00.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "jump-01.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "jump-02.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "jump-03.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "jump-04.png",
+          "duration_ms": 120
+        }
+      ]
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "hurt-00.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "hurt-01.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "hurt-02.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "hurt-03.png",
+          "duration_ms": 120
+        }
+      ]
+    }
+  },
+  "events": []
+}

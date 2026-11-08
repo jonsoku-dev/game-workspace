@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "versions": {
+    "pixel": "0.4.0",
+    "pillow": "12.0.0",
+    "studio": "0.7.0"
+  },
+  "a": {
+    "run_id": "45b73b4465c74c728050d68cd6962377",
+    "runtime": {
+      "@id": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377:runtime",
+      "@type": [
+        "Entity",
+        "RuntimeProduct"
+      ],
+      "byteCount": 1752,
+      "path": "build/run-0bf97cdb24664b9c9e75df9671e50e9d/scene.runtime.json",
+      "sha256": "1dff3af6bf94ad3b57abdcaffcb8d92abed2b34b6eef7716b12c9c95a0843413",
+      "wasDerivedFrom": [
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:scene:dba65dacd7c5cc06dab68677535a657b724aba532f2c473ac1ed051321f82489",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377:artifact:a4fb5f84466ba0cf204822ee592b6c3fd10f35ab2c904a5e22524acc40f46b01",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377:artifact:c13bd2bf0d54d4e82f2c8bc31fe6986c786f9acdbfb43cf61d67dda3f6ed8f37",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377:artifact:7b5909f172ba9e330a0f4c450e8196a1f11e25031c1ff6be2c0a583ed6bcd46e",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377:artifact:903d4d057c5637b1adcee2316a04c357333553dbf9be07df336e6ed80dd05c58"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377"
+      ]
+    },
+    "durations_ms": [
+      120,
+      120,
+      120,
+      120,
+      120
+    ],
+    "total_ms": 600,
+    "contact_frame": 2,
+    "contact_ms": 240,
+    "source_sha256": [
+      "42f70fca33c04d48c6bd8ca99418c134a1908ea4c680b2fe3544d404e9655d66",
+      "4202713d18aee46bf46fa90fe28dbb9267a2ed367779c4cde9fccf272452a8cf",
+      "7b92c21e3d42c2c0aed4a4080a3ecc82315d3da9f32462db537a360876704d5f",
+      "50394d0b73f3d69e22006a1ddcb760c86c49f38834e326bf2f06834f293835b2",
+      "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+    ]
+  },
+  "b": {
+    "run_id": "5536a7d73c41468e829e5ef79621613d",
+    "runtime": {
+      "@id": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:runtime",
+      "@type": [
+        "Entity",
+        "RuntimeProduct"
+      ],
+      "byteCount": 1746,
+      "path": "candidates/anticipation-b/build/candidate/scene.runtime.json",
+      "sha256": "9b606fd302d2bf6fe92aa294080951b005645876489faa4360928002a2dc46e4",
+      "wasDerivedFrom": [
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:scene:333696b4beb8339d1959e679b65efd4c221460fcdc5cd6cc3d255b19bc989d58",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:artifact:fb84c6e1df07eda84c8e43a0f2c9255051cadda8579bf75990a6a3fd6e2dc1b6",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:artifact:7461700528863ba77aca10ad3252f9ea943989e93af04f547bbacf5d19c26818",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:artifact:908a4458281f1412e2ebfa033f69b706a7b13d56c1c0bc79d8ffb8041871c17f",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:artifact:94a858268802832f67eb60ea1e2926b69ff0980e22bea5aa00cb5c6759fd3cf8"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d"
+      ]
+    },
+    "durations_ms": [
+      120,
+      200,
+      120,
+      120,
+      120
+    ],
+    "total_ms": 680,
+    "contact_frame": 2,
+    "contact_ms": 320,
+    "source_sha256": [
+      "42f70fca33c04d48c6bd8ca99418c134a1908ea4c680b2fe3544d404e9655d66",
+      "4202713d18aee46bf46fa90fe28dbb9267a2ed367779c4cde9fccf272452a8cf",
+      "7b92c21e3d42c2c0aed4a4080a3ecc82315d3da9f32462db537a360876704d5f",
+      "50394d0b73f3d69e22006a1ddcb760c86c49f38834e326bf2f06834f293835b2",
+      "02d71b5003ce48e4df6e850da13cc1f82ee6616343d5b5aa05808bc9a94b4264"
+    ]
+  },
+  "checks": {
+    "anticipation_plus_80ms": true,
+    "contact_plus_80ms": true,
+    "total_plus_80ms": true,
+    "all_attack_png_bytes_unchanged": true,
+    "five_other_actions_unchanged": true,
+    "gameplay_rules_unchanged": true,
+    "self_contained_exports": true
+  },
+  "visual_acceptance": "pending human review",
+  "note": "Timing, byte identity and graph/output integrity do not establish visual quality or enjoyment."
+}

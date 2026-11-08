@@ -1,0 +1,68 @@
+{
+  "products/0/hero/atlas.png": {
+    "source": "builds/final-v2/assets/hero/atlas.png",
+    "sha256": "1865d51b41a608e96fbbfb0066fa3bb80ab3d6c1f25529b5bf6e73a7115781db",
+    "artifact": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:50b74a646b8e42eb91183b4df9b75b5e:artifact:51094cd374255d182842054e12c15504e37fb11c75de6a10e83c97f28cbd3b09"
+  },
+  "products/0/hero/action-set.json": {
+    "source": "builds/final-v2/assets/hero/action-set.json",
+    "sha256": "52e93f4cf24788c14743c1abd5fd7d47d241a4919d86b616b9da6c279ef66c1d",
+    "artifact": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:50b74a646b8e42eb91183b4df9b75b5e:artifact:bc7c1b8e827294b122852325604533ff8d4a307e81c7249ea21c397e1c3481ec"
+  },
+  "products/0/hero/credits.json": {
+    "source": "builds/final-v2/assets/hero/credits.json",
+    "sha256": "7112da422522377eee508783b2a0b2d6443bf6bf6e5c42b96252c65be0248bd0",
+    "artifact": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:50b74a646b8e42eb91183b4df9b75b5e:artifact:09fd83ac4bd312536369dd01d57dfd4e6bcb15d85c29b8facb3ccdd455bbd08c"
+  },
+  "products/0/hero/effect-0.png": {
+    "source": "builds/final-v2/assets/hero/effect-0.png",
+    "sha256": "f27cde6b6ae07a0e9bec118eb98f21374f967e4d0247f98f5daf6c0b2dd1e3f9",
+    "artifact": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:50b74a646b8e42eb91183b4df9b75b5e:artifact:734cc988c1a035ed2e0536021329638bd4d76db07c648f27dd5d6c7f079759b2"
+  },
+  "products/0/hero/effect-0.json": {
+    "source": "builds/final-v2/assets/hero/effect-0.json",
+    "sha256": "1ffde182344bf08a9594b7aeeb16d1c30014c6cd854c985c4f32c0486e45aa8a",
+    "artifact": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:50b74a646b8e42eb91183b4df9b75b5e:artifact:b36334e261d5d05e06af161abd06e024cddd28f489cf935c710dce5a76a8a93d"
+  },
+  "products/0/hero/effect-0-LICENSE": {
+    "source": "builds/final-v2/assets/hero/effect-0-LICENSE",
+    "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+    "artifact": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:50b74a646b8e42eb91183b4df9b75b5e:artifact:9eb2ca6b4699f957ee878bae5bb836b7a8b248fa3b8b63d6b21657ec1058ad58"
+  },
+  "products/0/hero/effect-0-NOTICE": {
+    "source": "builds/final-v2/assets/hero/effect-0-NOTICE",
+    "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+    "artifact": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:50b74a646b8e42eb91183b4df9b75b5e:artifact:c989790228b0eaec247af0fab86326956cc3a65038dfa4cdf77f9d81c011477d"
+  },
+  "vendor/PHASER-BUNDLED-NOTICES.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "source_files": {
+      "dist/phaser.js": "d6e0eb3b99525f01af5adea38747c311a0a48f8af157e6d1f5aa93159bdd0858",
+      "src/physics/matter-js/lib/license.js": "a82f87b8b4abb02dff997984672070d3b73c4022373d530af5a2d9dae033f7bc"
+    }
+  },
+  "vendor/phaser.min.js": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7",
+    "license": "MIT"
+  },
+  "vendor/PHASER-LICENSE.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "license": "MIT"
+  },
+  "vendor/EVENTEMITTER3-LICENSE.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "license": "MIT"
+  }
+}

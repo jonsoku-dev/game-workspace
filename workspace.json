@@ -6,7 +6,9 @@
     "examples/forest-camp",
     "examples/scout-actions",
     "assets/examples/model-production",
-    "assets/examples/production/clockwork-beetle"
+    "assets/examples/production/clockwork-beetle",
+    "examples/first-strike",
+    "examples/moonshot-fx"
   ],
   "links": [
     {
@@ -36,6 +38,22 @@
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:workstation-redesign",
       "observed": "urn:game-studio:ad677040-5ff2-49b8-8f20-06af103e6f7b:run:d2ddc8369af94646a49ceeebb7d7ead2"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-production-verification",
+      "observed": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:review:comparison:anticipation-80ms"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-production-verification",
+      "observed": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:review:decision:anticipation-b-technical-pass"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-production-verification",
+      "observed": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:moonlit-symbol-candidates"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-production-verification",
+      "observed": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:work:browser-1385f1d7619b4ea98d4837761e8f16d4"
     }
   ],
   "playtests": [
@@ -46,6 +64,18 @@
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:export-5ef4d6bd9349450ca911b8a2394b3393",
       "url": "http://127.0.0.1:59765/phaser/"
+    },
+    {
+      "activity": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:export-a18e858cb5e443128aa47414f45bd4d7",
+      "url": "http://127.0.0.1:52981/"
+    },
+    {
+      "activity": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:export-5701b80cd8d14492b6e4be9b3451149c",
+      "url": "http://127.0.0.1:52982/"
+    },
+    {
+      "activity": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:work:export-d7787574791f4fcc8826078d6e904af6",
+      "url": "http://127.0.0.1:52983/"
     }
   ]
 }

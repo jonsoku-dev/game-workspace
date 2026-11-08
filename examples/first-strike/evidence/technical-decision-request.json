@@ -1,0 +1,9 @@
+{
+  "review_id": "anticipation-80ms",
+  "decision_id": "anticipation-b-technical-pass",
+  "run_id": "5536a7d73c41468e829e5ef79621613d",
+  "actor": "codex-demo-reviewer",
+  "reason": "B는 실제 제작·내보내기·브라우저 조작 검사를 통과했다. 원본 A와 모든 PNG·다른 다섯 동작·규칙을 보존하고 공격 예비 동작을80ms 늘렸다. 사람의 시각적 품질과 손맛 판단이 없어 채택하지 않는다.",
+  "outcome": "technical-pass",
+  "expected_decision": null
+}

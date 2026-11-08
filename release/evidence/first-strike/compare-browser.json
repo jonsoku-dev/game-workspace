@@ -1,0 +1,543 @@
+{
+  "url": "http://127.0.0.1:52980/?lang=ko&view=compare",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "samples": [
+    {
+      "requested_ms": 0,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 0,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 0,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 23449,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 0,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 0,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 23449,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 239,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 239,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 1,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22899,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 239,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 1,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22899,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 240,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 240,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 2,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22889,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 240,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 1,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22899,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 280,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 280,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 2,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22889,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 280,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 1,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22899,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 319,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 319,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 2,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22889,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 319,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 1,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22899,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 320,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 320,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 2,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22889,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 320,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 2,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 22889,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 600,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 600,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 4,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 25190,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 600,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 4,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 25190,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 680,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 680,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 4,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 25190,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 680,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 4,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 25190,
+          "effects": 0
+        }
+      ]
+    },
+    {
+      "requested_ms": 1400,
+      "rendered": [
+        {
+          "side": "a",
+          "rendered_elapsed_ms": 1400,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 4,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 25190,
+          "effects": 0
+        },
+        {
+          "side": "b",
+          "rendered_elapsed_ms": 1400,
+          "paused": true,
+          "state": "paused",
+          "backend": "WebGL",
+          "frame": 4,
+          "pivot": [
+            20,
+            34
+          ],
+          "contribution_pixels": 25190,
+          "effects": 0
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "text": "A 게임 직접 열기",
+      "url": "http://127.0.0.1:52981/",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "text": "B 게임 직접 열기",
+      "url": "http://127.0.0.1:52982/",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    }
+  ],
+  "playback": {
+    "after_ms": 1200,
+    "rendered": [
+      {
+        "side": "a",
+        "time": 1563,
+        "frame": 4,
+        "framesDrawn": 187
+      },
+      {
+        "side": "b",
+        "time": 1563,
+        "frame": 4,
+        "framesDrawn": 187
+      }
+    ]
+  },
+  "history": [
+    {
+      "url": "http://127.0.0.1:52980/?lang=ko&view=compare",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+    },
+    {
+      "url": "/?lang=ja&view=compare",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at setLocale (http://127.0.0.1:52980/i18n.mjs:59:25)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:52980/shell-i18n.mjs:59:80)"
+    },
+    {
+      "url": "http://127.0.0.1:52980/?lang=ja",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+    },
+    {
+      "url": "http://127.0.0.1:52980/?lang=ja&view=compare",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+    },
+    {
+      "url": "http://127.0.0.1:52980/?lang=ja",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+    },
+    {
+      "url": "http://127.0.0.1:52980/?lang=ja&view=compare",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+    },
+    {
+      "url": "/?lang=ko&view=compare",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at setLocale (http://127.0.0.1:52980/i18n.mjs:59:25)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:52980/shell-i18n.mjs:59:80)"
+    },
+    {
+      "url": "/?lang=ja&view=compare",
+      "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at setLocale (http://127.0.0.1:52980/i18n.mjs:59:25)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:52980/shell-i18n.mjs:59:80)"
+    }
+  ],
+  "openedGames": [
+    {
+      "side": "a",
+      "url": "http://127.0.0.1:52981/",
+      "title": "Scout · Training clearing",
+      "canvasCount": 1
+    },
+    {
+      "side": "b",
+      "url": "http://127.0.0.1:52982/",
+      "title": "Scout · Training clearing",
+      "canvasCount": 1
+    }
+  ],
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "locale": "ja",
+    "url": "http://127.0.0.1:52980/?lang=ja&view=compare",
+    "bodyWidth": 375,
+    "documentWidth": 375,
+    "rootState": "ready",
+    "tab": "A/B 比較",
+    "play": "同時に再生",
+    "action": "攻撃",
+    "rendered": [
+      {
+        "side": "a",
+        "time": 280,
+        "frame": 2,
+        "pivot": [
+          20,
+          34
+        ],
+        "contribution_pixels": 8759
+      },
+      {
+        "side": "b",
+        "time": 280,
+        "frame": 1,
+        "pivot": [
+          20,
+          34
+        ],
+        "contribution_pixels": 8770
+      }
+    ],
+    "history": [
+      {
+        "url": "http://127.0.0.1:52980/?lang=ko&view=compare",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+      },
+      {
+        "url": "/?lang=ja&view=compare",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at setLocale (http://127.0.0.1:52980/i18n.mjs:59:25)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:52980/shell-i18n.mjs:59:80)"
+      },
+      {
+        "url": "http://127.0.0.1:52980/?lang=ja",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+      },
+      {
+        "url": "http://127.0.0.1:52980/?lang=ja&view=compare",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+      },
+      {
+        "url": "http://127.0.0.1:52980/?lang=ja",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+      },
+      {
+        "url": "http://127.0.0.1:52980/?lang=ja&view=compare",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at switchTab (http://127.0.0.1:52980/app.mjs:173:11)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:52980/app.mjs:176:49)"
+      },
+      {
+        "url": "/?lang=ko&view=compare",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at setLocale (http://127.0.0.1:52980/i18n.mjs:59:25)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:52980/shell-i18n.mjs:59:80)"
+      },
+      {
+        "url": "/?lang=ja&view=compare",
+        "stack": "Error\n    at history.replaceState (<anonymous>:1:179)\n    at setLocale (http://127.0.0.1:52980/i18n.mjs:59:25)\n    at HTMLSelectElement.<anonymous> (http://127.0.0.1:52980/shell-i18n.mjs:59:80)"
+      }
+    ]
+  },
+  "hiddenDisposal": {
+    "panelHidden": true,
+    "oldStates": [
+      "disposed",
+      "disposed"
+    ],
+    "newCanvasStates": [
+      null,
+      null
+    ]
+  },
+  "step": {
+    "requested_before_ms": 280,
+    "displayed_ms": 297,
+    "rendered": [
+      297,
+      297
+    ]
+  },
+  "mobileKO": {
+    "locale": "ko",
+    "tab": "A/B 비교",
+    "play": "함께 재생",
+    "overflow": false
+  },
+  "desktopJA": {
+    "locale": "ja",
+    "tab": "A/B 比較",
+    "play": "同時に再生",
+    "overflow": false,
+    "view": "compare"
+  },
+  "errors": [],
+  "mediaPreference": {
+    "observedReducedMotion": false,
+    "emulationUnavailable": "Stagehand facade does not implement page.emulateMedia; browser reduced-motion preference transition was not tested."
+  },
+  "evidenceLink": {
+    "count": 12,
+    "firstPath": "/artifact",
+    "pinnedSha": "cee984ca18bfad50dd106a01e07ac02713d649d4a6b7ff5c879e208d123679c7",
+    "status": 200
+  },
+  "accessibility": {
+    "tabRole": "tab",
+    "selected": "true",
+    "controls": "panel-compare",
+    "sliderLabel": "共有タイムライン（ミリ秒）297 ms · 同じ時刻",
+    "authoringButtons": [
+      "同時に再生",
+      "−1/60秒",
+      "+1/60秒"
+    ]
+  },
+  "reviewState": {
+    "text": "記録されたレビューの決定\n\n技術検査のみ合格 · 製品の採用ではありません\n\nB는 실제 제작·내보내기·브라우저 조작 검사를 통과했다. 원본 A와 모든 PNG·다른 다섯 동작·규칙을 보존하고 공격 예비 동작을80ms 늘렸다. 사람의 시각적 품질과 손맛 판단이 없어 채택하지 않는다.\n\ncodex-demo-reviewer · 2026-11-08T13:49:53.817205+00:00 · urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d\n\n現在採用されている実行: 採用された実行なし",
+    "criteria": [
+      {
+        "text": "技術検査\n설치된 제작기로 실제 빌드하며 A의 공격 600ms·접촉240ms, B의 공격680ms·접촉320ms를 확인한다. 공격 예비 동작만80ms 늘리고 모든 PNG와 다른 다섯 동작·게임 규칙을 보존한다.\n\ncontrolled-timing · 必須\n\nA · 合格\n\n실제 설치 CLI로 빌드·내보냈으며 원본 PNG와 다른 다섯 동작을 보존한 채 공격 예비 동작·접촉·전체 길이만80ms 증가했다.\n\ncodex-demo-reviewer · 2026-11-08T13:49:53.682034+00:00\n\n以前の根拠を置き換えた理由: 정확한 내보내기 해시를 고정한 설치 Stagehand 브라우저 실행이 끝나 대기 중인 실제 조작 검사를 결과로 교체한다. 사람의 시각 판단은 계속 보류한다.\n\n根拠 1 を開く\n\n根拠 2 を開く\n\nB · 合格\n\n실제 설치 CLI로 빌드·내보냈으며 원본 PNG와 다른 다섯 동작을 보존한 채 공격 예비 동작·접촉·전체 길이만80ms 증가했다.\n\ncodex-demo-reviewer · 2026-11-08T13:49:53.750883+00:00\n\n以前の根拠を置き換えた理由: 정확한 내보내기 해시를 고정한 설치 Stagehand 브라우저 실행이 끝나 대기 중인 실제 조작 검사를 결과로 교체한다. 사람의 시각 판단은 계속 보류한다.\n\n根拠 1 を開く\n\n根拠 2 を開く",
+        "statuses": [
+          "A · 合格",
+          "B · 合格"
+        ]
+      },
+      {
+        "text": "ゲームプレイ評価\n실제 브라우저의 화면 버튼으로 거리 밖 공격·반대 방향 공격은 실패하고, 접촉 시점에만 점수가 올라3회 명중에서 승리하며 초기화된다.\n\nnormal-controls · 必須\n\nA · 合格\n\nStagehand가 실제 화면 버튼으로 거리 밖·반대 방향 빗나감, 접촉 시점,3회 승리·2회 미완료,초기화를 확인했다. 브라우저가 받은 전체 파일의 SHA-256을 내보내기와 대조했다.\n\ncodex-demo-reviewer · 2026-11-08T13:49:53.682034+00:00\n\n以前の根拠を置き換えた理由: 정확한 내보내기 해시를 고정한 설치 Stagehand 브라우저 실행이 끝나 대기 중인 실제 조작 검사를 결과로 교체한다. 사람의 시각 판단은 계속 보류한다.\n\n根拠 1 を開く\n\nB · 合格\n\nStagehand가 실제 화면 버튼으로 거리 밖·반대 방향 빗나감, 접촉 시점,3회 승리·2회 미완료,초기화를 확인했다. 브라우저가 받은 전체 파일의 SHA-256을 내보내기와 대조했다.\n\ncodex-demo-reviewer · 2026-11-08T13:49:53.750883+00:00\n\n以前の根拠を置き換えた理由: 정확한 내보내기 해시를 고정한 설치 Stagehand 브라우저 실행이 끝나 대기 중인 실제 조작 검사를 결과로 교체한다. 사람의 시각 판단은 계속 보류한다.\n\n根拠 1 を開く",
+        "statuses": [
+          "A · 合格",
+          "B · 合格"
+        ]
+      },
+      {
+        "text": "視覚 · 芸術評価\n사람이 A/B를 직접 플레이·관찰하여 80ms 예비 동작 차이, 접촉감, 반복 동작과 발 고정을 판단하고 채택 이유를 남긴다.\n\nhuman-motion · 必須\n\nA · 未確認\n\n사람의 실제 플레이·관찰 및 채택 판단을 기다린다. 기술 검사로 시각 승인을 대신하지 않는다.\n\ncodex-demo-reviewer · 2026-11-08T13:49:53.682034+00:00\n\n以前の根拠を置き換えた理由: 정확한 내보내기 해시를 고정한 설치 Stagehand 브라우저 실행이 끝나 대기 중인 실제 조작 검사를 결과로 교체한다. 사람의 시각 판단은 계속 보류한다.\n\n根拠 1 を開く\n\n根拠 2 を開く\n\n根拠 3 を開く\n\nB · 未確認\n\n사람의 실제 플레이·관찰 및 채택 판단을 기다린다. 기술 검사로 시각 승인을 대신하지 않는다.\n\ncodex-demo-reviewer · 2026-11-08T13:49:53.750883+00:00\n\n以前の根拠を置き換えた理由: 정확한 내보내기 해시를 고정한 설치 Stagehand 브라우저 실행이 끝나 대기 중인 실제 조작 검사를 결과로 교체한다. 사람의 시각 판단은 계속 보류한다.\n\n根拠 1 を開く\n\n根拠 2 を開く\n\n根拠 3 を開く",
+        "statuses": [
+          "A · 未確認",
+          "B · 未確認"
+        ]
+      }
+    ],
+    "collapsedEvidenceHistory": true
+  },
+  "verifiedAt": "2026-11-08T13:52:21.065Z",
+  "limitations": [
+    "Actual demo has no FX events; no FX browser acceptance inferred.",
+    "The test verifies authored frame transitions and shared-clock rendering, not artistic quality, human feel, or product adoption.",
+    "Reduced-motion preference transition could not be exercised because the Stagehand facade does not implement page.emulateMedia.",
+    "Two tool-level evaluations failed during setup; no application error or reproducible view-navigation bug was observed after History API tracing."
+  ]
+}

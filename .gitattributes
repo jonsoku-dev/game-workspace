@@ -8,3 +8,4 @@ examples/** -text
 *.gif binary
 *.jpg binary
 release/web/**/vendor/** -text -diff -whitespace
+examples/**/play/**/vendor/** -text -diff -whitespace

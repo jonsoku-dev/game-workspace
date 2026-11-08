@@ -1,0 +1,55 @@
+{
+  "assets": [
+    {
+      "id": "hero",
+      "producer": "pixel-action-set",
+      "request": "production/actor.request.json"
+    }
+  ],
+  "brief": {
+    "controls": "A/D 또는 ←/→ 이동 · Space 공격 · R 다시 시작. 화면 버튼도 사용할 수 있습니다.",
+    "goal": "표적을 보고 공격해 세 번 명중하세요.",
+    "title": "달빛 탄환"
+  },
+  "coordinates": {
+    "handedness": "right",
+    "units": "meters",
+    "up": "+Y"
+  },
+  "id": "moonshot-fx",
+  "nodes": [
+    {
+      "action": "attack",
+      "asset": "hero",
+      "id": "hero",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1
+    }
+  ],
+  "playtest": {
+    "at_px": [
+      32,
+      20
+    ],
+    "contact_frame": 2,
+    "hits_to_win": 3,
+    "mode": "land_hits",
+    "target_x": 650,
+    "target_y": 300
+  },
+  "schema_version": 1
+}

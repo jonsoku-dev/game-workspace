@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "producer": "local-gif-repurpose",
+  "source": {
+    "source": {
+      "path": "sources/spark-phases-synthetic.gif",
+      "sha256": "d9e51ee42b49fa7dd157aee184b299d254a6ffdaa24959eeac1050c057bf7067"
+    },
+    "license": {
+      "path": "sources/FX-LICENSE.txt",
+      "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e"
+    },
+    "notice": {
+      "path": "sources/FX-NOTICE.md",
+      "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b"
+    }
+  },
+  "request_sha256": "958786c2518150f20da3c445a0acd72f3eee87d7c3447a4d2ee484c8cd01127e",
+  "source_size": [
+    136,
+    80
+  ],
+  "source_frames": [
+    {
+      "frame": 0,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 1,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 2,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 3,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 4,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 5,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 6,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 7,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 8,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 9,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 10,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 11,
+      "duration_ms": 40,
+      "disposal": 2
+    },
+    {
+      "frame": 12,
+      "duration_ms": 80,
+      "disposal": 2
+    },
+    {
+      "frame": 13,
+      "duration_ms": 80,
+      "disposal": 2
+    },
+    {
+      "frame": 14,
+      "duration_ms": 80,
+      "disposal": 2
+    },
+    {
+      "frame": 15,
+      "duration_ms": 80,
+      "disposal": 2
+    },
+    {
+      "frame": 16,
+      "duration_ms": 80,
+      "disposal": 2
+    },
+    {
+      "frame": 17,
+      "duration_ms": 80,
+      "disposal": 2
+    }
+  ],
+  "background": {
+    "mode": "preserve"
+  },
+  "actor_cell_size": [
+    40,
+    40
+  ],
+  "effect_size": [
+    136,
+    80
+  ],
+  "scale_relative_to_actor": [
+    3.4,
+    2.0
+  ],
+  "resampling": "nearest",
+  "selection": [
+    {
+      "phase": "charge",
+      "frame": 12,
+      "duration_ms": 40
+    },
+    {
+      "phase": "charge",
+      "frame": 13,
+      "duration_ms": 40
+    },
+    {
+      "phase": "charge",
+      "frame": 14,
+      "duration_ms": 40
+    },
+    {
+      "phase": "travel",
+      "frame": 15,
+      "duration_ms": 40
+    },
+    {
+      "phase": "travel",
+      "frame": 16,
+      "duration_ms": 40
+    },
+    {
+      "phase": "travel",
+      "frame": 17,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 0,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 1,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 2,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 3,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 4,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 5,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 6,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 7,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 8,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 9,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 10,
+      "duration_ms": 40
+    },
+    {
+      "phase": "impact",
+      "frame": 11,
+      "duration_ms": 40
+    }
+  ],
+  "pivot_px_from_top_left": [
+    44,
+    44
+  ],
+  "artifacts": {
+    "sheet": {
+      "path": "sheet.png",
+      "sha256": "f27cde6b6ae07a0e9bec118eb98f21374f967e4d0247f98f5daf6c0b2dd1e3f9"
+    },
+    "metadata": {
+      "path": "sheet.json",
+      "sha256": "fdb58503923ababe73bca8644389d6744f2d80ddb7b2f1d76667205ded535cf8"
+    },
+    "preview": {
+      "path": "preview.gif",
+      "sha256": "b7fc8073c11e02ff5ae5e87a056e66b366756a433e23ac543c36b04c8c69e6fc"
+    },
+    "license": {
+      "path": "LICENSE",
+      "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e"
+    },
+    "notice": {
+      "path": "NOTICE",
+      "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b"
+    }
+  },
+  "review": {
+    "status": "pending",
+    "preview": "preview.gif",
+    "limits": "No redraw or semantic matting; exact edge-color removal may retain halos. GIF preview rounds timing; sheet metadata is exact. Engine acceptance is separate."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "change": {
+    "part": "leg_left",
+    "anchor_px_before": [
+      18,
+      26
+    ],
+    "anchor_px_after": [
+      19,
+      26
+    ]
+  },
+  "target_px": [
+    21,
+    33
+  ],
+  "before": {
+    "target_px": [
+      21,
+      33
+    ],
+    "measured_px": [
+      20.622,
+      32.49
+    ],
+    "delta_px": [
+      -0.378,
+      -0.51
+    ],
+    "distance_px": 0.635,
+    "landmark": "contact_px"
+  },
+  "after": {
+    "target_px": [
+      21,
+      33
+    ],
+    "measured_px": [
+      20.695,
+      32.865
+    ],
+    "delta_px": [
+      -0.305,
+      -0.135
+    ],
+    "distance_px": 0.334,
+    "landmark": "contact_px"
+  },
+  "outputs": [
+    "before",
+    "after",
+    "clipping"
+  ],
+  "technical_status": [
+    "passed",
+    "passed"
+  ],
+  "master_unchanged": true,
+  "neutral_unchanged": true,
+  "artistic_acceptance": "unverified",
+  "source_code_sha256": "75fc4dadb34a642a47769ae334994dcb14f172664f62ea7141dedce4ec6b09c9"
+}

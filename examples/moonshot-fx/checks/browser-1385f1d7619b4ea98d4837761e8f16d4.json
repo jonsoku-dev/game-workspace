@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "run_id": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:run:df65b9bdea154d36bf8507f6bbe698fc",
+  "runtime_sha256": "0da59e0127eac7dfa86a42585dfc224c40a5e9a902892ba0b1fd3ba7f44bb548",
+  "export_dir": "play/final-v3",
+  "export_hashes": {
+    "engine-export.json": "d9fa45402e8602d3a8e07e360c7da93c672f20594102453c6f4c848d1762ad3d",
+    "game.json": "ae53b1979379b9d9cecaeafccbe37cd45cd46ec477a8587fbfeb5b4f60fd1865",
+    "game.mjs": "bf626f8f975a3fe9d6269518c5b803cfc9ba934c3e4e8a844420dbe4e1c22b8e",
+    "index.html": "a05b6aa3d2fa9a70be77cc4f30f142f9e395794127ad6f2ff71600b6ad435434",
+    "products/0/hero/action-set.json": "52e93f4cf24788c14743c1abd5fd7d47d241a4919d86b616b9da6c279ef66c1d",
+    "products/0/hero/atlas.png": "1865d51b41a608e96fbbfb0066fa3bb80ab3d6c1f25529b5bf6e73a7115781db",
+    "products/0/hero/credits.json": "7112da422522377eee508783b2a0b2d6443bf6bf6e5c42b96252c65be0248bd0",
+    "products/0/hero/effect-0-LICENSE": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+    "products/0/hero/effect-0-NOTICE": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+    "products/0/hero/effect-0.json": "1ffde182344bf08a9594b7aeeb16d1c30014c6cd854c985c4f32c0486e45aa8a",
+    "products/0/hero/effect-0.png": "f27cde6b6ae07a0e9bec118eb98f21374f967e4d0247f98f5daf6c0b2dd1e3f9",
+    "provenance.json": "9a195290a285dce135269477d8e56cd622e095b433472b680bb9c5a5c359683d",
+    "style.css": "276675982d8d3386f8df766ba0bdf12630547ffacbb7fe1bd54c4772f6cbc78c",
+    "timing.mjs": "04d429d3450104c52f6e01cfa0f0383f4993d1b040ea2bf91961b446494d4abe",
+    "vendor/EVENTEMITTER3-LICENSE.txt": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "vendor/PHASER-BUNDLED-NOTICES.txt": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "vendor/PHASER-LICENSE.txt": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "vendor/phaser.min.js": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7"
+  },
+  "driver": "stagehand-mcp",
+  "criteria": {
+    "out_of_range_miss": {
+      "pass": true
+    },
+    "contact_timing": {
+      "pass": true
+    },
+    "win": {
+      "pass": true
+    },
+    "reset": {
+      "pass": true
+    },
+    "fx_before_damage": {
+      "pass": true
+    },
+    "fx_frame_at_contact": {
+      "pass": true
+    },
+    "facing_away": {
+      "pass": true
+    },
+    "before_win": {
+      "pass": true
+    }
+  },
+  "observations": {
+    "miss": {
+      "hits": 0,
+      "finished": false,
+      "x": 210,
+      "facing": 1,
+      "actor_elapsed_ms": 335.573333237966,
+      "effects": [
+        {
+          "start_ms": 0,
+          "elapsed_ms": 335.573333237966,
+          "frame": "8"
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 240,
+          "observed_ms": 254.7999999046326,
+          "point": {
+            "x": 246,
+            "y": 314
+          },
+          "contact": false
+        }
+      ],
+      "status": "0 / 3 \u00b7 Miss. Face the marker and move closer."
+    },
+    "win": {
+      "hits": 3,
+      "finished": true,
+      "x": 626,
+      "facing": 1,
+      "actor_elapsed_ms": 399.40999999999997,
+      "effects": [],
+      "contactEvents": [
+        {
+          "start_ms": 240,
+          "observed_ms": 249.91000000000005,
+          "point": {
+            "x": 662,
+            "y": 314
+          },
+          "contact": true
+        },
+        {
+          "start_ms": 240,
+          "observed_ms": 249.94,
+          "point": {
+            "x": 662,
+            "y": 314
+          },
+          "contact": true
+        },
+        {
+          "start_ms": 240,
+          "observed_ms": 250.15,
+          "point": {
+            "x": 662,
+            "y": 314
+          },
+          "contact": true
+        }
+      ],
+      "status": "Clearing complete \u00b7 3 clean strikes. Restart to play again."
+    },
+    "reset": {
+      "hits": 0,
+      "finished": false,
+      "x": 210,
+      "facing": 1,
+      "actor_elapsed_ms": 33.639999999999965,
+      "effects": [],
+      "contactEvents": [],
+      "status": "0 / 3 \u00b7 Move to the amber marker."
+    },
+    "before_win": {
+      "hits": 2,
+      "finished": false,
+      "x": 626,
+      "facing": 1,
+      "actor_elapsed_ms": 333.40000000000003,
+      "effects": [
+        {
+          "start_ms": 0,
+          "elapsed_ms": 333.40000000000003,
+          "frame": "8"
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 240,
+          "observed_ms": 249.91000000000005,
+          "point": {
+            "x": 662,
+            "y": 314
+          },
+          "contact": true
+        },
+        {
+          "start_ms": 240,
+          "observed_ms": 249.94,
+          "point": {
+            "x": 662,
+            "y": 314
+          },
+          "contact": true
+        }
+      ],
+      "status": "2 / 3 \u00b7 Hit! Keep your stance and strike again."
+    },
+    "facing_away": {
+      "hits": 0,
+      "finished": false,
+      "x": 626,
+      "facing": -1,
+      "actor_elapsed_ms": 323.08333333333314,
+      "effects": [
+        {
+          "start_ms": 0,
+          "elapsed_ms": 323.08333333333314,
+          "frame": "8"
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 240,
+          "observed_ms": 254.7999999046326,
+          "point": {
+            "x": 246,
+            "y": 314
+          },
+          "contact": false
+        },
+        {
+          "start_ms": 240,
+          "observed_ms": 242.01666666666657,
+          "point": {
+            "x": 590,
+            "y": 314
+          },
+          "contact": false
+        }
+      ],
+      "status": "0 / 3 \u00b7 Miss. Face the marker and move closer."
+    },
+    "fx_onset": {
+      "hits": 0,
+      "finished": false,
+      "x": 210,
+      "facing": 1,
+      "actor_elapsed_ms": 15.959999990463254,
+      "effects": [
+        {
+          "start_ms": 0,
+          "elapsed_ms": 15.959999990463254,
+          "frame": "0"
+        }
+      ],
+      "contactEvents": [],
+      "status": "0 / 3 \u00b7 Move to the amber marker."
+    },
+    "impact": {
+      "hits": 1,
+      "finished": false,
+      "x": 626,
+      "facing": 1,
+      "actor_elapsed_ms": 316.68,
+      "effects": [
+        {
+          "start_ms": 0,
+          "elapsed_ms": 316.68,
+          "frame": "7"
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 240,
+          "observed_ms": 249.91000000000005,
+          "point": {
+            "x": 662,
+            "y": 314
+          },
+          "contact": true
+        }
+      ],
+      "status": "1 / 3 \u00b7 Hit! Keep your stance and strike again."
+    }
+  },
+  "passed": true,
+  "browser_observed_hashes": {
+    "engine-export.json": "d9fa45402e8602d3a8e07e360c7da93c672f20594102453c6f4c848d1762ad3d",
+    "game.json": "ae53b1979379b9d9cecaeafccbe37cd45cd46ec477a8587fbfeb5b4f60fd1865",
+    "game.mjs": "bf626f8f975a3fe9d6269518c5b803cfc9ba934c3e4e8a844420dbe4e1c22b8e",
+    "index.html": "a05b6aa3d2fa9a70be77cc4f30f142f9e395794127ad6f2ff71600b6ad435434",
+    "products/0/hero/action-set.json": "52e93f4cf24788c14743c1abd5fd7d47d241a4919d86b616b9da6c279ef66c1d",
+    "products/0/hero/atlas.png": "1865d51b41a608e96fbbfb0066fa3bb80ab3d6c1f25529b5bf6e73a7115781db",
+    "products/0/hero/credits.json": "7112da422522377eee508783b2a0b2d6443bf6bf6e5c42b96252c65be0248bd0",
+    "products/0/hero/effect-0-LICENSE": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+    "products/0/hero/effect-0-NOTICE": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+    "products/0/hero/effect-0.json": "1ffde182344bf08a9594b7aeeb16d1c30014c6cd854c985c4f32c0486e45aa8a",
+    "products/0/hero/effect-0.png": "f27cde6b6ae07a0e9bec118eb98f21374f967e4d0247f98f5daf6c0b2dd1e3f9",
+    "provenance.json": "9a195290a285dce135269477d8e56cd622e095b433472b680bb9c5a5c359683d",
+    "style.css": "276675982d8d3386f8df766ba0bdf12630547ffacbb7fe1bd54c4772f6cbc78c",
+    "timing.mjs": "04d429d3450104c52f6e01cfa0f0383f4993d1b040ea2bf91961b446494d4abe",
+    "vendor/EVENTEMITTER3-LICENSE.txt": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "vendor/PHASER-BUNDLED-NOTICES.txt": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "vendor/PHASER-LICENSE.txt": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "vendor/phaser.min.js": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7"
+  },
+  "export_activity": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:work:export-d7787574791f4fcc8826078d6e904af6",
+  "browser_activity": "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921:work:browser-1385f1d7619b4ea98d4837761e8f16d4"
+}

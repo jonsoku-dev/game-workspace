@@ -1,0 +1,49 @@
+{
+  "renderer": "resvg-py",
+  "renderer_version": "0.5.0",
+  "checks": [
+    {
+      "path": "a-moon-strike.svg",
+      "sha256": "026e3e8c01abaaa1e000c9be97e89ff7ed789aa82d893ebbaedd08d616732a7b",
+      "xml_allowlist": true,
+      "raster_sizes": [
+        16,
+        32,
+        128
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ]
+    },
+    {
+      "path": "b-target-cut.svg",
+      "sha256": "a2e90e0312e9971e1101b7fa50b4ba1e2cf799696a02ccf3ab88afbc2485dc87",
+      "xml_allowlist": true,
+      "raster_sizes": [
+        16,
+        32,
+        128
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ]
+    },
+    {
+      "path": "c-robot-guard.svg",
+      "sha256": "766d5b8bef8f9b636fe7a10ac5c4220af3f8d8867503bb145ad1b42cd72c638b",
+      "xml_allowlist": true,
+      "raster_sizes": [
+        16,
+        32,
+        128
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ]
+    }
+  ],
+  "scope": "Static XML allowlist and real raster output; no trademark/acceptance claim"
+}

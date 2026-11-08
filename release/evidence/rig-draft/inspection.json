@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "approved": false,
+  "visual_review": "required",
+  "artistic_acceptance": "unverified",
+  "anatomical_review": "required",
+  "source": {
+    "path": "relaxed-sprite.png",
+    "sha256": "a521184f619366c23bacf3ac6d1adced47446d32a6c56700588096be24f66a26",
+    "request_sha256": "f563d4a5ebed9bd876b8787b6cd746fbb8104f2d51539e2bc6d093c3ab302965",
+    "size_px": [
+      64,
+      64
+    ]
+  },
+  "method": "restricted-frontal-row-separation-six-part-proposal",
+  "supplied_guides": {},
+  "proposed_guides": {
+    "neck_y": 22,
+    "shoulder_y": 24,
+    "hip_y": 44
+  },
+  "geometry": {
+    "bbox_xywh": [
+      18,
+      8,
+      28,
+      51
+    ],
+    "bilateral_iou": 1.0,
+    "arm_separation_rows": [
+      27,
+      39
+    ],
+    "leg_separation_y": 44,
+    "torso_span_x": [
+      26,
+      38
+    ],
+    "center_x": 31
+  },
+  "exact_partition": true,
+  "neutral_exact_visible_reconstruction": true,
+  "parts": [
+    {
+      "id": "torso",
+      "pixel_count": 238,
+      "anchor_px": [
+        31,
+        44
+      ],
+      "mask_sha256": "45b128f5bbe1857eddb362b6b735320527249b462b54200ced76c7936a7fd91c"
+    },
+    {
+      "id": "head",
+      "pixel_count": 234,
+      "anchor_px": [
+        31,
+        22
+      ],
+      "mask_sha256": "ac003dcb4b5990c9d715828dccd7b76a147cdc5785b43fa013b3098a40431f66"
+    },
+    {
+      "id": "arm_left",
+      "pixel_count": 91,
+      "anchor_px": [
+        25,
+        24
+      ],
+      "mask_sha256": "758efdfd2dd18dc2245b2917486aef59ac6d19408683f08205d5d5513797aac3"
+    },
+    {
+      "id": "arm_right",
+      "pixel_count": 91,
+      "anchor_px": [
+        38,
+        24
+      ],
+      "mask_sha256": "79817efbd7dad49f58cb9675293d90f7e523d205b3255eb24e431499b0332a81"
+    },
+    {
+      "id": "leg_left",
+      "pixel_count": 64,
+      "anchor_px": [
+        28,
+        44
+      ],
+      "mask_sha256": "6faace5b24b210b4975c2d7bd2dd656082d3b3ac8d6e849b608c92d3bd627712"
+    },
+    {
+      "id": "leg_right",
+      "pixel_count": 64,
+      "anchor_px": [
+        34,
+        44
+      ],
+      "mask_sha256": "66f3eaa1cd6912f29df0e787685ddc299c627551722e86671921d25999e33184"
+    }
+  ],
+  "limitations": [
+    "Six visible cutout parts only; no 17-bone rig or automatic approval.",
+    "Image-left/image-right labels are not anatomical handedness.",
+    "Bilateral silhouette and row gaps do not prove anatomy; inspect every proposed mask and joint.",
+    "No hidden anatomy, equipment extraction, or replacement pixels are generated.",
+    "Edit masks/joints and explicitly review the master before changing approved:false."
+  ]
+}

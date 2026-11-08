@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "id": "moonshot-fx",
+  "brief": {
+    "title": "Moonshot FX · synthetic source reconstruction",
+    "goal": "Land three training hits. Observe imported charge → travel → impact FX, triggered on the attack contact frame.",
+    "controls": "A/D or ←/→ move; Space attacks; R restarts. On-screen buttons are supported."
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "hero",
+      "producer": "pixel-action-set",
+      "request": "builds/final/inputs/hero/request.json",
+      "files": {
+        "atlas": "builds/final/assets/hero/atlas.png",
+        "metadata": "builds/final/assets/hero/action-set.json",
+        "preview": "builds/final/assets/hero/preview.gif",
+        "credits": "builds/final/assets/hero/credits.json",
+        "effect_0_sheet": "builds/final/assets/hero/effect-0.png",
+        "effect_0_metadata": "builds/final/assets/hero/effect-0.json",
+        "effect_0_license": "builds/final/assets/hero/effect-0-LICENSE",
+        "effect_0_notice": "builds/final/assets/hero/effect-0-NOTICE"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hero",
+      "asset": "hero",
+      "action": "attack",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1
+    }
+  ],
+  "input_scene": "builds/final/inputs/scene.json",
+  "playtest": {
+    "mode": "land_hits",
+    "hits_to_win": 3,
+    "target_x": 650,
+    "target_y": 300,
+    "contact_frame": 2,
+    "at_px": [
+      32,
+      20
+    ]
+  }
+}

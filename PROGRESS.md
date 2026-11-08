@@ -60,3 +60,9 @@ Game Studio 0.5.1은 같은 그래프의 성공 RuntimeProduct와 사용된 파�
 정찰병 입력의 독립 복사본에서 공격 준비 프레임을 80ms 늘렸다. 0부터 세는 접촉 프레임 3은 그대로 두고 시작 시각은 320→400ms로 이동했다. 캐릭터 아틀라스와 pixelfx 시트의 SHA-256은 각각 이전과 일치했다. 변경본도 실제 Phaser에서 타격 3회·완료·재시작을 통과했다. 원본 게임은 기존 타이밍을 유지한다. [350ms 비교 이미지](release/evidence/attack-timing-comparison.png) · [측정값](release/evidence/attack-timing-comparison.json).
 
 0.6.1에서는 실행이 없는 홈에서 그림 타일과 제품 사용 안내가 첫 화면에 온다. 설치본의 한·일 전체 흐름을 다시 검증했다. [일본어 시작 화면](release/evidence/bilingual/entry-ja.jpg) · [설치본 검사](release/evidence/bilingual/0.6.1-browser.json)
+
+## 원본에서 플레이 가능한 버전을 비교하는 제작 흐름
+
+Game Studio 0.7.1과 Pixel Asset Pipeline 0.5.0을 로컬 Codex에 설치했다. Studio는 텍스트 브리프에서 새 프로젝트를 만들고, 특정 공격만 수정해 Phaser 게임 A/B를 납품한다. 한국어·일본어 작업실은 같은 시각의 두 실제 장면과 플레이 링크, 검수 결과를 보여 준다. 시각 판단과 채택을 기록하는 채팅 경로는 기술 통과와 분리된다. [비교 프로젝트](examples/first-strike/COMPARE.md) · [설치본과 검증 범위](release/evidence/reference-release.json)
+
+첨부 레퍼런스에서 격자 보정·관절 초안과 수동 조정·GIF 프레임 편집·SVG 심벌의 실제 크기 검토를 적용했다. 설치된 제작기로 만든 ‘달빛 탄환’에서 효과 시작, 접촉 전 무득점, 충돌 단계의 명중, 세 번째 명중 후 완료와 재시작을 실제 브라우저로 확인했다. A/B의 게임성과 로고 후보는 사용자 선택 전이다. [원문과 사례](release/REFERENCE-WORKFLOWS.md) · [원화와 효과 비교](examples/moonshot-fx/evidence/final-sheet.png) · [실제 게임](http://127.0.0.1:52983/)

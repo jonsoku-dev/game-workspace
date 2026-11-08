@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "technical_status": "passed",
+  "passed": true,
+  "visual_review": "required",
+  "artistic_acceptance": "unverified",
+  "source": {
+    "path": "sources/robot-soft-synthetic.png",
+    "sha256": "5fb9bfcb02412f29b850d64c3ec4232c80d85e76320a4e543921ee49591c4675",
+    "size_px": [
+      384,
+      384
+    ],
+    "rgba_color_count": 4396,
+    "visible_rgb_color_count": 3579,
+    "partial_alpha_pixel_count": 8030
+  },
+  "geometry": {
+    "crop_xywh": [
+      32,
+      32,
+      320,
+      320
+    ],
+    "grid_size": [
+      40,
+      40
+    ],
+    "cell_size_source_px": [
+      8.0,
+      8.0
+    ],
+    "sample_position": "floor((2*cell+1)*crop_extent/(2*grid_extent))",
+    "sampling": "cell-centre-nearest-no-interpolation"
+  },
+  "alpha_cutoff": 128,
+  "max_colors": 16,
+  "palette_mode": "median-cut-with-darkest-sample",
+  "palette": [
+    "#213943",
+    "#2b404a",
+    "#345366",
+    "#3c616a",
+    "#477a72",
+    "#477d74",
+    "#487c73",
+    "#568273",
+    "#badeab",
+    "#c68d54",
+    "#d3a060",
+    "#e5c477",
+    "#e9c77b",
+    "#ebc97b",
+    "#ecca7c",
+    "#f0cd7e"
+  ],
+  "sampled_visible_color_count": 105,
+  "output_visible_color_count": 16,
+  "output_opaque_pixels": 288,
+  "output_transparent_pixels": 1312,
+  "recolored_cells": 223,
+  "output_sha256": "6eaaab1f7a53d0c8a2722fef25e0ca9175c32170331826df37f9df69588b19a4",
+  "comparison": {
+    "left": "source crop (native: centre samples before palette reduction)",
+    "right": "snapped output",
+    "scale": 8,
+    "resampling": "nearest"
+  },
+  "limitations": [
+    "Caller supplies the grid and crop; no automatic grid or anatomy detection.",
+    "No background removal, outline synthesis, or speck deletion.",
+    "Details smaller than a grid cell can be lost; inspect outlines and transparency before rigging.",
+    "Review and approve the new master before setting motion approved:true."
+  ]
+}

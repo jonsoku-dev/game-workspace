@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "workspace_id": "34232594-3622-4287-9eea-6b0a03342e97",
+  "projects": [
+    "."
+  ],
+  "playtests": [
+    {
+      "activity": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:export-a18e858cb5e443128aa47414f45bd4d7",
+      "url": "http://127.0.0.1:52981/"
+    },
+    {
+      "activity": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:export-5701b80cd8d14492b6e4be9b3451149c",
+      "url": "http://127.0.0.1:52982/"
+    }
+  ]
+}

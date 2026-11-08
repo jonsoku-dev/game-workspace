@@ -1,0 +1,28 @@
+{
+  "id": "controlled-timing-measurement",
+  "label": "Measure installed A/B timing and preserve original pose bytes",
+  "agent": "studio-demo-measurement",
+  "status": "complete",
+  "used": [
+    "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:45b73b4465c74c728050d68cd6962377:runtime",
+    "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:runtime"
+  ],
+  "generated": [
+    {
+      "path": "evidence/timing-comparison.json",
+      "sha256": "cee984ca18bfad50dd106a01e07ac02713d649d4a6b7ff5c879e208d123679c7"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "checks": [
+      "anticipation_plus_80ms",
+      "contact_plus_80ms",
+      "total_plus_80ms",
+      "all_attack_png_bytes_unchanged",
+      "five_other_actions_unchanged",
+      "gameplay_rules_unchanged",
+      "self_contained_exports"
+    ]
+  }
+}

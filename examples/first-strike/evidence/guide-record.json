@@ -1,0 +1,69 @@
+{
+  "id": "demo-inputs-and-play-guide",
+  "label": "Preserve local CLI input records, registered game URLs and play guide",
+  "agent": "studio-demo-curation",
+  "status": "complete",
+  "used": [
+    "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:review:comparison:anticipation-80ms",
+    "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:review:decision:anticipation-b-technical-pass",
+    "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:browser-dbfd8f01ea3d4fdcb58818ef423fd012:artifact:caf3b5eb3b5a02a0c92f30c1a090cbea11a17b36230efe54adc8c75bbb2a6823",
+    "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:browser-f8424c0cc8714eb88ac607c313375f4a:artifact:44f73a426fc93b334af8faec07302b8d5cc84c65dc217a7e9c8c68bc7e7709e6"
+  ],
+  "generated": [
+    {
+      "path": "COMPARE.md",
+      "sha256": "85a1c7685c01d149173c8f20ce797e3a47c4b791690f45c9d936fde90a40d414",
+      "wasDerivedFrom": [
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:review:comparison:anticipation-80ms",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:review:decision:anticipation-b-technical-pass",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:browser-dbfd8f01ea3d4fdcb58818ef423fd012:artifact:caf3b5eb3b5a02a0c92f30c1a090cbea11a17b36230efe54adc8c75bbb2a6823",
+        "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:browser-f8424c0cc8714eb88ac607c313375f4a:artifact:44f73a426fc93b334af8faec07302b8d5cc84c65dc217a7e9c8c68bc7e7709e6"
+      ]
+    },
+    {
+      "path": "workspace.json",
+      "sha256": "77d1b059de969c1d0ddd0d5d8483a41a69143e7b9ffd8c1acefc52eeb4aed3e6"
+    },
+    {
+      "path": "patches/anticipation-plus-80ms.json",
+      "sha256": "dd2db44b3352ad78ef33835323c131bfea9ba65a44b26e7bad91e0fd628e6bdd"
+    },
+    {
+      "path": "evidence/compare-request.json",
+      "sha256": "85175a5bab7d9888cfa3790514f75be9e417f678f815c9b98f5b6bb1a30feeb4"
+    },
+    {
+      "path": "evidence/technical-decision-request.json",
+      "sha256": "a288f7dc22888553315aec78d137d08ce540e68129239bad71bcb9da3d9838b0"
+    },
+    {
+      "path": "evidence/check-browser-a.json",
+      "sha256": "0c352a0495f15ff8b8a23cebd969f4b20ec942861b6e631bf96f0e4552dc250b"
+    },
+    {
+      "path": "evidence/check-browser-b.json",
+      "sha256": "87d93dc6b22e3b58fe063eb8734aa098f303b11c2105cfc944c4bae40c3d0ad3"
+    },
+    {
+      "path": "evidence/check-initial-a.json",
+      "sha256": "6b137ab83f88e3c3ded94ce260509cd8d9989ec78f5783fecd08b5364854997c"
+    },
+    {
+      "path": "evidence/check-initial-b.json",
+      "sha256": "2f85f7e757c04cf44bda4857a231232a88502a339e3937cfd7502e6ee5844947"
+    },
+    {
+      "path": "evidence/measurement-record.json",
+      "sha256": "ffc51427bc38d55a87d600f96083321bf960ddbe920ca4421d4680b616fb0c5b"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "checks": [
+      "Installed Studio 0.7.0 and pixel 0.4.0 without PYTHONPATH",
+      "A and B normal CLI builds and exports",
+      "A and B independently executed Stagehand browser six criteria pass",
+      "Technical pass recorded; human visual pending; no adopted run"
+    ]
+  }
+}

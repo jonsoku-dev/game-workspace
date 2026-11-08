@@ -1,0 +1,48 @@
+{
+  "products/0/hero/atlas.png": {
+    "source": "candidates/anticipation-b/build/candidate/assets/hero/atlas.png",
+    "sha256": "b91d06b9d9ee6aaa6018bc08c59560b74a5fff667fe9c901f807e5dabf8963ac",
+    "artifact": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:artifact:fb84c6e1df07eda84c8e43a0f2c9255051cadda8579bf75990a6a3fd6e2dc1b6"
+  },
+  "products/0/hero/action-set.json": {
+    "source": "candidates/anticipation-b/build/candidate/assets/hero/action-set.json",
+    "sha256": "61cac916c7bbe6a73a3657632d8fc5d78b3455df308b7b1d5c279173973dd4a8",
+    "artifact": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:artifact:7461700528863ba77aca10ad3252f9ea943989e93af04f547bbacf5d19c26818"
+  },
+  "products/0/hero/credits.json": {
+    "source": "candidates/anticipation-b/build/candidate/assets/hero/credits.json",
+    "sha256": "efb8b81be3dfc4a33b32ab5eb317b473ce6d37a1f9e520514b7d022981bf62fd",
+    "artifact": "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:run:5536a7d73c41468e829e5ef79621613d:artifact:94a858268802832f67eb60ea1e2926b69ff0980e22bea5aa00cb5c6759fd3cf8"
+  },
+  "vendor/PHASER-BUNDLED-NOTICES.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "source_files": {
+      "dist/phaser.js": "d6e0eb3b99525f01af5adea38747c311a0a48f8af157e6d1f5aa93159bdd0858",
+      "src/physics/matter-js/lib/license.js": "a82f87b8b4abb02dff997984672070d3b73c4022373d530af5a2d9dae033f7bc"
+    }
+  },
+  "vendor/phaser.min.js": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7",
+    "license": "MIT"
+  },
+  "vendor/PHASER-LICENSE.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "license": "MIT"
+  },
+  "vendor/EVENTEMITTER3-LICENSE.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "license": "MIT"
+  }
+}

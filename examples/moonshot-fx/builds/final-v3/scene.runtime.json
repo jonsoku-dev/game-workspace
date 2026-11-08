@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "id": "moonshot-fx",
+  "brief": {
+    "title": "달빛 탄환",
+    "goal": "표적을 보고 공격해 세 번 명중하세요.",
+    "controls": "A/D 또는 ←/→ 이동 · Space 공격 · R 다시 시작. 화면 버튼도 사용할 수 있습니다."
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "hero",
+      "producer": "pixel-action-set",
+      "request": "builds/final-v3/inputs/hero/request.json",
+      "files": {
+        "atlas": "builds/final-v3/assets/hero/atlas.png",
+        "metadata": "builds/final-v3/assets/hero/action-set.json",
+        "preview": "builds/final-v3/assets/hero/preview.gif",
+        "credits": "builds/final-v3/assets/hero/credits.json",
+        "effect_0_sheet": "builds/final-v3/assets/hero/effect-0.png",
+        "effect_0_metadata": "builds/final-v3/assets/hero/effect-0.json",
+        "effect_0_license": "builds/final-v3/assets/hero/effect-0-LICENSE",
+        "effect_0_notice": "builds/final-v3/assets/hero/effect-0-NOTICE"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hero",
+      "asset": "hero",
+      "action": "attack",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1
+    }
+  ],
+  "input_scene": "builds/final-v3/inputs/scene.json",
+  "playtest": {
+    "mode": "land_hits",
+    "hits_to_win": 3,
+    "target_x": 650,
+    "target_y": 300,
+    "contact_frame": 2,
+    "at_px": [
+      32,
+      20
+    ]
+  }
+}

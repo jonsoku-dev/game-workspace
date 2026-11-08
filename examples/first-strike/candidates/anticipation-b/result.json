@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "prepared",
+  "candidate_project": "/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/first-strike",
+  "candidate_folder": "/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/first-strike/candidates/anticipation-b",
+  "scene": "/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/first-strike/candidates/anticipation-b/scene.json",
+  "review": "/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/first-strike/candidates/anticipation-b/review.json",
+  "next_command": "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/first-strike-install-8280yrgr/venv/bin/python /private/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/first-strike-install-8280yrgr/studio-current/tools/scene.py build --project /Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/first-strike --scene candidates/anticipation-b/scene.json --source-artifact urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f:work:revise-cb503726e04842b4bb7d72509f862748:artifact:f38b1f4c4f18fb53530d62e9d3711bef4be8eaaac7bdced24ab73ddd834f0ef7 --out candidates/anticipation-b/build/candidate",
+  "visual_acceptance": "unreviewed"
+}
