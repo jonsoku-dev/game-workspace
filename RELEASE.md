@@ -31,3 +31,5 @@ PYTHON=/absolute/path/to/python3.13
 같은 인수 명령이 Godot·Three·Phaser·Unity 결과를 `game/`, `web-3d/`, `web-2d/`, `unity/`에 각각 내보내고 사용한 파일을 샤드에 연결한다. 웹 결과 폴더는 로컬 HTTP 서버로 제공한다. 예를 들어 `python3 -m http.server --bind 127.0.0.1 --directory /new/path/acceptance/web-3d 8765`로 실행한다. 준비 단계에서 Phaser npm 입력도 [설치 문서](studio/INSTALL.md)대로 준비한다.
 
 Unity 에디터 실제 검사에는 기존 라이선스의 실행 파일을 `--unity-editor /path/to/Unity`로 추가한다. 미지정 시 내보내기와 Blender 변환을 검증하고 `unity_editor.status`를 `not_run`으로 기록한다. 다른 HTML 타깃 선택 근거는 [엔진 비교](studio/engines/HTML-ENGINES.md)에 있다.
+
+웹 게임 인수는 웹 프로젝트 둘을 같은 로컬 HTTP 서버로 연 후 `python3 release/game_browser_check.py --three-url http://127.0.0.1:59765/woods-alight/ --phaser-url http://127.0.0.1:59765/phaser/ --out /new/path/browser-proof`로 실행한다. 이 검사는 설정된 로컬 Stagehand MCP와 실제 페이지의 방향·타격·재시작 버튼을 사용한다. visualizer는 별도로 `release/browser_check.py`를 사용한다. Unity 순수 C# 상태 검사는 준비한 `DOTNET` 실행 파일로 진행할 수 있고, Unity 엔진 검증을 대체하지 않는다.

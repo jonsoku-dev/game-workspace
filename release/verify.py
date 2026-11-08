@@ -91,7 +91,8 @@ def verify(work, godot, unity_editor=None):
     ]:
         response = execute([sys.executable, studio / "tools/export_game.py", "--engine", engine,
                             "--project", ".", "--workspace", workspace, *sources, "--out", folder])
-        result["engine_exports"][engine] = json.loads(response)
+        exported = json.loads(response)
+        result["engine_exports"][engine] = {**exported, "output": folder}
     result["unity_editor"] = {"status": "not_run", "reason": "No licensed editor supplied"}
     if unity_editor:
         unity = work / "unity"
