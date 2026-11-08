@@ -1,0 +1,117 @@
+{
+  "state": "playing",
+  "metrics": {
+    "state": "playing",
+    "node_count": 2,
+    "positions": [
+      {
+        "id": "camp-lantern",
+        "asset": "lantern",
+        "position": [
+          1,
+          0,
+          -2
+        ],
+        "rotation_degrees": [
+          0,
+          30,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "id": "camp-reward",
+        "asset": "reward",
+        "position": [
+          1,
+          0.45,
+          -2
+        ],
+        "rotation_degrees": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "frame_count": 804,
+    "rendered_model_triangles": 46320,
+    "model_non_background_pixels": 5194,
+    "effects": [
+      {
+        "node": "camp-reward",
+        "frame_index": 4,
+        "observed_frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "frame_changes": 49,
+        "frame_rect": {
+          "x": 128,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "pivot_px_from_top_left": [
+          16,
+          16
+        ],
+        "authored_loop": false,
+        "inspection_gap_ms": 1000
+      }
+    ],
+    "review_playback": "Authored frame durations; one-shots replay after a 1000ms hidden inspection gap. No game controls.",
+    "backend": "WebGL",
+    "webgl_version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "bounds": {
+      "min": [
+        0.75,
+        5.6398746783870024e-11,
+        -2.077176405516833
+      ],
+      "max": [
+        1.25,
+        0.7,
+        -1.922823597754867
+      ]
+    },
+    "effect_non_background_pixels": 275,
+    "drawn_scene_triangles": 69488,
+    "elapsed_ms": 6680
+  },
+  "canvasBounds": [
+    304,
+    574.9375
+  ],
+  "errors": [],
+  "images": [
+    [
+      "reward 스프라이트 시트",
+      320
+    ],
+    [
+      "lantern 원본 제작 미리보기",
+      640
+    ]
+  ],
+  "origins": [
+    "http://127.0.0.1:59763"
+  ]
+}

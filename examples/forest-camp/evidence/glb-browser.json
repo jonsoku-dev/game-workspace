@@ -1,0 +1,81 @@
+{
+  "before": {
+    "passed": true,
+    "three_version": "0.187.0",
+    "scene_count": 1,
+    "mesh_count": 5,
+    "vertex_count": 5257,
+    "triangle_count": 2872,
+    "material_count": 4,
+    "texture_count": 0,
+    "texture_scope": "embedded-png-jpeg",
+    "bounds": {
+      "min": [
+        -0.08137254601950739,
+        -5.22884668896495e-9,
+        -0.08137254601950739
+      ],
+      "max": [
+        0.08137254601950739,
+        0.29999999474777894,
+        0.08137254601950739
+      ],
+      "size": [
+        0.16274509203901477,
+        0.29999999997662563,
+        0.16274509203901477
+      ]
+    },
+    "state": "complete",
+    "drawn_triangles": 2872,
+    "non_background_pixels": 91324,
+    "canvas": {
+      "width": 960,
+      "height": 640
+    },
+    "backend": "WebGL",
+    "webgl_version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "WebKit WebGL"
+  },
+  "rotated": {
+    "passed": true,
+    "three_version": "0.187.0",
+    "scene_count": 1,
+    "mesh_count": 5,
+    "vertex_count": 5257,
+    "triangle_count": 2872,
+    "material_count": 4,
+    "texture_count": 0,
+    "texture_scope": "embedded-png-jpeg",
+    "bounds": {
+      "min": [
+        -0.08137254601950739,
+        -5.22884668896495e-9,
+        -0.08137254601950739
+      ],
+      "max": [
+        0.08137254601950739,
+        0.29999999474777894,
+        0.08137254601950739
+      ],
+      "size": [
+        0.16274509203901477,
+        0.29999999997662563,
+        0.16274509203901477
+      ]
+    },
+    "state": "complete",
+    "drawn_triangles": 2872,
+    "non_background_pixels": 80905,
+    "canvas": {
+      "width": 960,
+      "height": 640
+    },
+    "backend": "WebGL",
+    "webgl_version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "WebKit WebGL"
+  },
+  "resource_origins": [
+    "http://127.0.0.1:54509"
+  ]
+}

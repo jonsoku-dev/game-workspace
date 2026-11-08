@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "workspace_id": "fa361f61-ab51-4ee7-8539-49daee605c9d",
+  "projects": [
+    ".",
+    "examples/forest-camp",
+    "examples/scout-actions",
+    "assets/examples/model-production",
+    "assets/examples/production/clockwork-beetle"
+  ],
+  "links": [
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-031",
+      "observed": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:work:attack-review"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:action-set-032",
+      "observed": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:work:attack-review"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-031",
+      "observed": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:work:native-embers-review"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:lantern-and-mesh-embers",
+      "observed": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:work:native-embers-review"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:textured-prop",
+      "observed": "urn:game-studio:5eec133b-1d8d-442e-a3df-930741c110a2:run:4f5419936050483fa1b287fb88650f08"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:production-lineage",
+      "observed": "urn:game-studio:5eec133b-1d8d-442e-a3df-930741c110a2:run:4f5419936050483fa1b287fb88650f08"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:workstation-redesign",
+      "observed": "urn:game-studio:ad677040-5ff2-49b8-8f20-06af103e6f7b:run:d2ddc8369af94646a49ceeebb7d7ead2"
+    }
+  ]
+}

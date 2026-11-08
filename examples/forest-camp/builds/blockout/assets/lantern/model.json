@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "name": "Camp lantern",
+  "blender_version": "5.2.1 LTS",
+  "scope": "selected static meshes; untextured direct Principled PBR",
+  "original": {
+    "meshes": 24,
+    "triangles": 2872,
+    "bounds_min": [
+      -0.08137254416942596,
+      -0.08137254416942596,
+      0.0
+    ],
+    "bounds_max": [
+      0.08137254416942596,
+      0.08137254416942596,
+      0.29999998211860657
+    ],
+    "dimensions_m": [
+      0.16274508833885193,
+      0.16274508833885193,
+      0.29999998211860657
+    ],
+    "materials": [
+      "Aged bronze",
+      "Brass trim",
+      "Jade enamel",
+      "Warm pane"
+    ],
+    "units": "meters",
+    "up_axis": "+Z"
+  },
+  "reimported": {
+    "meshes": 24,
+    "triangles": 2872,
+    "bounds_min": [
+      -0.08137254416942596,
+      -0.08137254416942596,
+      0.0
+    ],
+    "bounds_max": [
+      0.08137254416942596,
+      0.08137254416942596,
+      0.29999998211860657
+    ],
+    "dimensions_m": [
+      0.16274508833885193,
+      0.16274508833885193,
+      0.29999998211860657
+    ],
+    "materials": [
+      "Aged bronze",
+      "Brass trim",
+      "Jade enamel",
+      "Warm pane"
+    ],
+    "units": "meters",
+    "up_axis": "+Z"
+  },
+  "checks": {
+    "triangles_match": true,
+    "materials_match": true,
+    "bounds_match": true,
+    "mesh_count_match": true
+  },
+  "bounds_tolerance_m": 2.9999998211860658e-06,
+  "glb_up_axis": "+Y",
+  "flags": {
+    "roundtrip_verified": true,
+    "source_self_contained": true,
+    "preview_dressing_exported": false,
+    "engine_integration_verified": false
+  }
+}

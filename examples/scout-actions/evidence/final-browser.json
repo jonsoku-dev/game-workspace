@@ -1,0 +1,313 @@
+{
+  "state": "playing",
+  "metrics": {
+    "state": "playing",
+    "node_count": 1,
+    "positions": [
+      {
+        "id": "scout-attack",
+        "asset": "scout",
+        "parent": null,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation_degrees": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "world_origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "frame_count": 427,
+    "rendered_model_triangles": 0,
+    "model_non_background_pixels": 0,
+    "effects": [
+      {
+        "node": "scout-attack",
+        "kind": "action-contact-effect",
+        "action": "attack",
+        "contact_frame": 3,
+        "start_ms": 320,
+        "at_px": [
+          46,
+          25
+        ],
+        "effect_anchor_px": [
+          44,
+          44
+        ],
+        "original_pivot_px_from_top_left": [
+          44,
+          64
+        ],
+        "frame_index": -1,
+        "observed_frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "frame_changes": 30,
+        "contact_observations": 2,
+        "contact_started_ms": 2200,
+        "retrigger_policy": "newest contact replaces previous instance; actor loop boundaries preserve active effect",
+        "samples": [
+          {
+            "elapsed_ms": 328,
+            "frame_index": 0,
+            "frame_rect": {
+              "x": 0,
+              "y": 0,
+              "w": 136,
+              "h": 80
+            },
+            "contribution_pixels": 30972
+          },
+          {
+            "elapsed_ms": 678,
+            "frame_index": 8,
+            "frame_rect": {
+              "x": 272,
+              "y": 160,
+              "w": 136,
+              "h": 80
+            },
+            "contribution_pixels": 825
+          },
+          {
+            "elapsed_ms": 2203,
+            "frame_index": 0,
+            "frame_rect": {
+              "x": 0,
+              "y": 0,
+              "w": 136,
+              "h": 80
+            },
+            "contribution_pixels": 30972
+          },
+          {
+            "elapsed_ms": 2677,
+            "frame_index": 11,
+            "frame_rect": {
+              "x": 272,
+              "y": 240,
+              "w": 136,
+              "h": 80
+            },
+            "contribution_pixels": 45
+          }
+        ],
+        "actor_frame_index": 5,
+        "contribution_pixels": 0,
+        "drawn_triangles": 0,
+        "frame_rect": {
+          "x": 136,
+          "y": 320,
+          "w": 136,
+          "h": 80
+        }
+      }
+    ],
+    "actions": [
+      {
+        "node": "scout-attack",
+        "action": "attack",
+        "frame_index": 5,
+        "observed_frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "frame_changes": 14,
+        "pivot_px_from_top_left": [
+          24,
+          46
+        ],
+        "samples": [
+          {
+            "elapsed_ms": 0,
+            "frame_index": 0,
+            "frame_rect": {
+              "x": 0,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          },
+          {
+            "elapsed_ms": 0,
+            "frame_index": 0,
+            "frame_rect": {
+              "x": 0,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          },
+          {
+            "elapsed_ms": 328,
+            "frame_index": 3,
+            "frame_rect": {
+              "x": 144,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9561
+          },
+          {
+            "elapsed_ms": 678,
+            "frame_index": 5,
+            "frame_rect": {
+              "x": 240,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          },
+          {
+            "elapsed_ms": 1179,
+            "frame_index": 5,
+            "frame_rect": {
+              "x": 240,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          },
+          {
+            "elapsed_ms": 1679,
+            "frame_index": 5,
+            "frame_rect": {
+              "x": 240,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          },
+          {
+            "elapsed_ms": 2178,
+            "frame_index": 2,
+            "frame_rect": {
+              "x": 96,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 10002
+          },
+          {
+            "elapsed_ms": 2203,
+            "frame_index": 3,
+            "frame_rect": {
+              "x": 144,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9561
+          },
+          {
+            "elapsed_ms": 2677,
+            "frame_index": 5,
+            "frame_rect": {
+              "x": 240,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          },
+          {
+            "elapsed_ms": 3177,
+            "frame_index": 5,
+            "frame_rect": {
+              "x": 240,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          },
+          {
+            "elapsed_ms": 3678,
+            "frame_index": 5,
+            "frame_rect": {
+              "x": 240,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "contribution_pixels": 9387
+          }
+        ],
+        "review_playback": "hold final pose; replay after effect tail and 1000ms review gap",
+        "frame_rect": {
+          "x": 240,
+          "y": 144,
+          "w": 48,
+          "h": 48
+        },
+        "elapsed_ms": 3728,
+        "contribution_pixels": 9387,
+        "drawn_triangles": 4
+      }
+    ],
+    "review_playback": "Native mesh particles loop at authored duration; historic sprite one-shots replay after a 1000ms hidden inspection gap. No game controls.",
+    "camera": "orthographic-front",
+    "studio_floor": false,
+    "backend": "WebGL",
+    "webgl_version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "bounds": {
+      "min": [
+        -0.5,
+        -0.3124999999999998,
+        0
+      ],
+      "max": [
+        2.375,
+        1.3541666666666665,
+        0.001
+      ]
+    },
+    "effect_non_background_pixels": 9387,
+    "elapsed_ms": 3728,
+    "drawn_scene_triangles": 4
+  },
+  "message": "\u25c7\uc7a5\uba74\uc744 \ubd88\ub7ec\uc624\ub294 \uc911\uadf8\ub798\ud504\uc5d0 \uace0\uc815\ub41c \ub7f0\ud0c0\uc784\uacfc \uc5d0\uc14b\uc744 \ud655\uc778\ud558\uace0 \uc788\uc5b4\uc694.",
+  "origins": [
+    "http://127.0.0.1:59764"
+  ],
+  "http_errors": [],
+  "title": "Scout action set + local pixelfx hit"
+}

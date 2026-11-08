@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "id": "scout-actions",
+  "brief": {
+    "title": "Scout action set + local pixelfx hit",
+    "goal": "Observe six authored 48px actions; attack emits the local pixelfx hit spark on contact at 320ms.",
+    "controls": "Read-only playback of the authored attack; the asset preview shows all six actions."
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "scout",
+      "producer": "pixel-action-set",
+      "request": "builds/attack-contact/inputs/scout/request.json",
+      "files": {
+        "atlas": "builds/attack-contact/assets/scout/atlas.png",
+        "metadata": "builds/attack-contact/assets/scout/action-set.json",
+        "preview": "builds/attack-contact/assets/scout/preview.gif",
+        "credits": "builds/attack-contact/assets/scout/credits.json",
+        "effect_0_sheet": "builds/attack-contact/assets/scout/effect-0.png",
+        "effect_0_metadata": "builds/attack-contact/assets/scout/effect-0.json",
+        "effect_0_license": "builds/attack-contact/assets/scout/effect-0-LICENSE",
+        "effect_0_notice": "builds/attack-contact/assets/scout/effect-0-NOTICE"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "scout-attack",
+      "asset": "scout",
+      "action": "attack",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1.0
+    }
+  ],
+  "input_scene": "builds/attack-contact/inputs/scene.json"
+}

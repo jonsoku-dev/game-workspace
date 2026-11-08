@@ -1,0 +1,40 @@
+{
+  "actions": [
+    "idle",
+    "walk",
+    "run",
+    "attack",
+    "jump",
+    "hurt"
+  ],
+  "frames_reconstructed": 27,
+  "atlas_size": [
+    288,
+    288
+  ],
+  "pivot": [
+    24,
+    46
+  ],
+  "action": "attack",
+  "contact_frame_zero_based": 3,
+  "start_ms": 320,
+  "weapon_tip_px": [
+    46,
+    25
+  ],
+  "effect_contact_px": [
+    44,
+    44
+  ],
+  "original_fx_pivot_px": [
+    44,
+    64
+  ],
+  "effect_frames": 14,
+  "license_notice_sheet_byte_match": true,
+  "preview_frames": 36,
+  "output": "builds/six-actions",
+  "input_pose_files": 21,
+  "unique_pose_file_hashes": 17
+}

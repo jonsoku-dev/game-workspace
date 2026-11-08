@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "source_commit": "a84159688af3ca37a4be05a0d422b94451b2e24e",
+  "source_url": "https://github.com/patch-gg/pixelfx",
+  "effect": "impacts/hit-spark",
+  "render": {
+    "fps": 25,
+    "seed": 4,
+    "height": 20,
+    "actor": false
+  },
+  "authored_pose_origin": "Own existing assets/examples/codex-scout-styled/asset.png and production/walk/frames/*.png; manual native-grid authoring for idle/run/attack/jump/hurt in the temporary offline proof. Not an Agent Sprite Forge generated action set.",
+  "original_input_sha256": {
+    "codex-scout-styled/asset.png": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300",
+    "production/walk/frames/01.png": "be734724c811b7b40b0ec7f52c2c48e45cad6d1c88bdbc2e69e478850e9f829e",
+    "production/walk/frames/02.png": "fc7e7cba9594fce91cc08a4ccd42e5a6a99a35ae80041754e5563f37d8c56d4f",
+    "production/walk/frames/03.png": "f6d3f52903f176f305c5cc83a6652be227868991404d983623cb314161f4cf8e",
+    "production/walk/frames/04.png": "21e398f51bb8907820f7a2e91f2b135d782d4d9bca2436569a2d455c23e18018"
+  },
+  "action_frame_counts": {
+    "idle": 3,
+    "walk": 4,
+    "run": 4,
+    "attack": 6,
+    "jump": 6,
+    "hurt": 4
+  },
+  "action_unique_poses": {
+    "idle": 2,
+    "walk": 4,
+    "run": 4,
+    "attack": 4,
+    "jump": 4,
+    "hurt": 3
+  },
+  "contact": {
+    "action_frame": 3,
+    "start_ms": 320,
+    "at_px": [
+      46,
+      25
+    ],
+    "effect_anchor_px": [
+      44,
+      44
+    ],
+    "exported_effect_ground_pivot_px": [
+      44,
+      64
+    ],
+    "height_px": 20,
+    "alignment_error_px": 0
+  },
+  "files_sha256": {
+    "poses/attack-0.png": "b873cfce0f5ee97b38d86d53d884c1970616e6b7790c0c150ce0e81dba7055fc",
+    "poses/attack-1.png": "0f1327d6a8169a76c3f415e9430ee856847bf98a0c94a3bd86bcbbebb022e672",
+    "poses/attack-3.png": "ad21e00b1f47986621ab6efcf8d4d0077c49be778ac31b7a55e142ff701b3fd0",
+    "poses/attack-4.png": "719ce0dcac561c908ad6a03024e05921faffe089f5a52ab13b941213156d86ff",
+    "poses/hurt-0.png": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300",
+    "poses/hurt-1.png": "6062a4019749a31408386b3f5877445ff3a2f4eccf18383368be6e938f6cea46",
+    "poses/hurt-2.png": "838cfb7ae0f10e5d8c3706cf9ed0eb24cc7e97ff9c1d8891bf170d6ba696b265",
+    "poses/idle-0.png": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300",
+    "poses/idle-1.png": "36f185ddbc04090b6ff50ef2455c9f6e29cd8a72a21f41f1eb58242563e26bd0",
+    "poses/jump-0.png": "bb4c7be5b7dee983c4e6e6251cb4043eb058ae4357a6bde61bbdc75fe294a0c0",
+    "poses/jump-1.png": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad",
+    "poses/jump-2.png": "e14da6f0dfdd98c34123000ff456662a015a54bd2966810323e1a3f40f7da0ba",
+    "poses/jump-5.png": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300",
+    "poses/run-0.png": "e06fe1203bfb821d1c00e57864b445e503236d1752726c451813e6d661bc33ee",
+    "poses/run-1.png": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad",
+    "poses/run-2.png": "e7988d4bf02231d569f5f87aa95a6557534c566e6a4c88698e7d0a71687806cd",
+    "poses/run-3.png": "e14da6f0dfdd98c34123000ff456662a015a54bd2966810323e1a3f40f7da0ba",
+    "poses/walk-0.png": "be734724c811b7b40b0ec7f52c2c48e45cad6d1c88bdbc2e69e478850e9f829e",
+    "poses/walk-1.png": "fc7e7cba9594fce91cc08a4ccd42e5a6a99a35ae80041754e5563f37d8c56d4f",
+    "poses/walk-2.png": "f6d3f52903f176f305c5cc83a6652be227868991404d983623cb314161f4cf8e",
+    "poses/walk-3.png": "21e398f51bb8907820f7a2e91f2b135d782d4d9bca2436569a2d455c23e18018",
+    "fx/LICENSE.txt": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+    "fx/NOTICE.md": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+    "fx/hit-spark.json": "eb3a17b46adeb3a6f5a931047df77dda0cf88966b3fd3a6f5c814b1b3158aef6",
+    "fx/hit-spark.png": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "assets": [
+    {
+      "id": "scout",
+      "producer": "pixel-action-set",
+      "request": "request.json"
+    }
+  ],
+  "brief": {
+    "controls": "Read-only playback of the authored attack; the asset preview shows all six actions.",
+    "goal": "Observe six authored 48px actions; attack emits the local pixelfx hit spark on contact at 320ms.",
+    "title": "Scout action set + local pixelfx hit"
+  },
+  "coordinates": {
+    "handedness": "right",
+    "units": "meters",
+    "up": "+Y"
+  },
+  "id": "scout-actions",
+  "nodes": [
+    {
+      "action": "attack",
+      "asset": "scout",
+      "id": "scout-attack",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1.0
+    }
+  ],
+  "schema_version": 1
+}

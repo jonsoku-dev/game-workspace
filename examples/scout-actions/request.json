@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "cell_size": [
+    48,
+    48
+  ],
+  "pivot_px_from_top_left": [
+    24,
+    46
+  ],
+  "actions": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "poses/idle-0.png",
+          "duration_ms": 320
+        },
+        {
+          "path": "poses/idle-1.png",
+          "duration_ms": 320
+        },
+        {
+          "path": "poses/idle-0.png",
+          "duration_ms": 320
+        }
+      ]
+    },
+    "walk": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "poses/walk-0.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "poses/walk-1.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "poses/walk-2.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "poses/walk-3.png",
+          "duration_ms": 110
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "poses/run-0.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "poses/run-1.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "poses/run-2.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "poses/run-3.png",
+          "duration_ms": 80
+        }
+      ]
+    },
+    "attack": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "poses/attack-0.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/attack-1.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/attack-1.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "poses/attack-3.png",
+          "duration_ms": 80
+        },
+        {
+          "path": "poses/attack-4.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "poses/attack-0.png",
+          "duration_ms": 240
+        }
+      ]
+    },
+    "jump": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "poses/jump-0.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/jump-1.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/jump-2.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "poses/jump-1.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/jump-0.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/jump-5.png",
+          "duration_ms": 160
+        }
+      ]
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "poses/hurt-0.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/hurt-1.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "poses/hurt-2.png",
+          "duration_ms": 160
+        },
+        {
+          "path": "poses/hurt-0.png",
+          "duration_ms": 240
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "action": "attack",
+      "frame": 3,
+      "sheet": "fx/hit-spark.png",
+      "metadata": "fx/hit-spark.json",
+      "license": "fx/LICENSE.txt",
+      "notice": "fx/NOTICE.md",
+      "at_px": [
+        46,
+        25
+      ],
+      "effect_anchor_px": [
+        44,
+        44
+      ],
+      "attribution": "pixelfx impacts/hit-spark; Patch and Hugo Duprez (MIT). Spark spray/light pop adapt Sprite Fusion impact by Hugo Duprez. Source a84159688af3ca37a4be05a0d422b94451b2e24e."
+    }
+  ]
+}

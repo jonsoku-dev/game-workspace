@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "name": "Camp lantern",
+  "blender_version": "5.2.1 LTS",
+  "scope": "selected static meshes; untextured direct Principled PBR",
+  "original": {
+    "meshes": 54,
+    "triangles": 23160,
+    "bounds_min": [
+      -0.0660431981086731,
+      -0.05098557472229004,
+      0.0
+    ],
+    "bounds_max": [
+      0.06604320555925369,
+      0.05098557472229004,
+      0.29999998211860657
+    ],
+    "dimensions_m": [
+      0.1320864036679268,
+      0.10197114944458008,
+      0.29999998211860657
+    ],
+    "materials": [
+      "Charred woven wick",
+      "Clear chimney glass",
+      "Deep petrol vitreous enamel",
+      "Flame amber mantle",
+      "Flame golden core",
+      "Graphite blackened steel",
+      "Warm satin brass"
+    ],
+    "units": "meters",
+    "up_axis": "+Z"
+  },
+  "reimported": {
+    "meshes": 54,
+    "triangles": 23160,
+    "bounds_min": [
+      -0.0660431981086731,
+      -0.05098557472229004,
+      0.0
+    ],
+    "bounds_max": [
+      0.06604320555925369,
+      0.05098557472229004,
+      0.29999998211860657
+    ],
+    "dimensions_m": [
+      0.1320864036679268,
+      0.10197114944458008,
+      0.29999998211860657
+    ],
+    "materials": [
+      "Charred woven wick",
+      "Clear chimney glass",
+      "Deep petrol vitreous enamel",
+      "Flame amber mantle",
+      "Flame golden core",
+      "Graphite blackened steel",
+      "Warm satin brass"
+    ],
+    "units": "meters",
+    "up_axis": "+Z"
+  },
+  "checks": {
+    "triangles_match": true,
+    "materials_match": true,
+    "bounds_match": true,
+    "mesh_count_match": true
+  },
+  "bounds_tolerance_m": 2.9999998211860658e-06,
+  "glb_up_axis": "+Y",
+  "flags": {
+    "roundtrip_verified": true,
+    "source_self_contained": true,
+    "preview_dressing_exported": false,
+    "engine_integration_verified": false
+  },
+  "review": {
+    "file": "review.png",
+    "columns_left_to_right": [
+      "front",
+      "side",
+      "rear"
+    ],
+    "upper_row_px": 384,
+    "lower_row_px": 128,
+    "lower_row_independently_rendered": true,
+    "art_approval": "not established"
+  }
+}

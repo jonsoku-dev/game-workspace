@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "name": "Lantern embers",
+  "blender_version": "5.2.1 LTS",
+  "scope": "selected static meshes; untextured direct Principled PBR",
+  "original": {
+    "meshes": 1,
+    "triangles": 8,
+    "bounds_min": [
+      -0.0010000000474974513,
+      -0.0007999999797903001,
+      -0.0017999999690800905
+    ],
+    "bounds_max": [
+      0.0010000000474974513,
+      0.0007999999797903001,
+      0.0017999999690800905
+    ],
+    "dimensions_m": [
+      0.0020000000949949026,
+      0.0015999999595806003,
+      0.003599999938160181
+    ],
+    "materials": [
+      "Hot amber coal"
+    ],
+    "units": "meters",
+    "up_axis": "+Z"
+  },
+  "reimported": {
+    "meshes": 1,
+    "triangles": 8,
+    "bounds_min": [
+      -0.0010000000474974513,
+      -0.0007999999797903001,
+      -0.0017999999690800905
+    ],
+    "bounds_max": [
+      0.0010000000474974513,
+      0.0007999999797903001,
+      0.0017999999690800905
+    ],
+    "dimensions_m": [
+      0.0020000000949949026,
+      0.0015999999595806003,
+      0.003599999938160181
+    ],
+    "materials": [
+      "Hot amber coal"
+    ],
+    "units": "meters",
+    "up_axis": "+Z"
+  },
+  "checks": {
+    "triangles_match": true,
+    "materials_match": true,
+    "bounds_match": true,
+    "mesh_count_match": true
+  },
+  "bounds_tolerance_m": 1e-06,
+  "glb_up_axis": "+Y",
+  "flags": {
+    "roundtrip_verified": true,
+    "source_self_contained": true,
+    "preview_dressing_exported": false,
+    "engine_integration_verified": false
+  },
+  "effect": {
+    "file": "effect.json",
+    "seed": 23,
+    "up_axis": "+Y",
+    "base_mesh_dimensions_m": [
+      0.0020000000949949026,
+      0.003599999938160181,
+      0.0015999999595806003
+    ],
+    "motion_contract": "tools/ember.py module docstring; opaque native mesh with scale envelope"
+  },
+  "review": {
+    "file": "review.png",
+    "columns_left_to_right": [
+      "front",
+      "side",
+      "rear"
+    ],
+    "upper_row_px": 384,
+    "lower_row_px": 128,
+    "lower_row_independently_rendered": true,
+    "art_approval": "not established"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "id": "forest-camp",
+  "brief": {
+    "title": "Forest Camp",
+    "goal": "Reach the camp lantern and collect its reward.",
+    "controls": "Move with arrow keys; trigger reward when reaching the lantern."
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "reward",
+      "producer": "pixel-effect",
+      "request": "builds/field-lantern/inputs/reward.request.json",
+      "files": {
+        "sheet": "builds/field-lantern/assets/reward/sheet.png",
+        "metadata": "builds/field-lantern/assets/reward/sheet.json",
+        "preview": "builds/field-lantern/assets/reward/preview.gif",
+        "effect": "builds/field-lantern/assets/reward/effect.json"
+      }
+    },
+    {
+      "id": "lantern",
+      "producer": "model-assets",
+      "request": "builds/field-lantern/inputs/lantern.request.json",
+      "files": {
+        "model": "builds/field-lantern/assets/lantern/model.web.glb",
+        "metadata": "builds/field-lantern/assets/lantern/model.json",
+        "validation": "builds/field-lantern/assets/lantern/three-validation.json",
+        "source": "builds/field-lantern/assets/lantern/source.blend",
+        "raw": "builds/field-lantern/assets/lantern/model.glb",
+        "preview": "builds/field-lantern/assets/lantern/preview.png",
+        "review": "builds/field-lantern/assets/lantern/review.png",
+        "receipt": "builds/field-lantern/assets/lantern/model.web.glb.webstage.json"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "camp-lantern",
+      "asset": "lantern",
+      "position": [
+        1,
+        0,
+        -2
+      ],
+      "rotation_degrees": [
+        0,
+        30,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "camp-reward",
+      "asset": "reward",
+      "position": [
+        1,
+        0.45,
+        -2
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 0.5
+    }
+  ],
+  "input_scene": "builds/field-lantern/inputs/scene.json"
+}

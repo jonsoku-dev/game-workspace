@@ -1,0 +1,67 @@
+{
+  "assets": [
+    {
+      "id": "reward",
+      "producer": "pixel-effect",
+      "request": "requests/reward.json"
+    },
+    {
+      "id": "lantern",
+      "producer": "model-assets",
+      "request": "requests/lantern.json"
+    }
+  ],
+  "brief": {
+    "controls": "Move with arrow keys; trigger reward when reaching the lantern.",
+    "goal": "Reach the camp lantern and collect its reward.",
+    "title": "Forest Camp"
+  },
+  "coordinates": {
+    "handedness": "right",
+    "units": "meters",
+    "up": "+Y"
+  },
+  "id": "forest-camp",
+  "nodes": [
+    {
+      "asset": "lantern",
+      "id": "camp-lantern",
+      "position": [
+        1,
+        0,
+        -2
+      ],
+      "rotation_degrees": [
+        0,
+        30,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "asset": "reward",
+      "id": "camp-reward",
+      "position": [
+        1,
+        0.45,
+        -2
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 0.5
+    }
+  ],
+  "schema_version": 1
+}

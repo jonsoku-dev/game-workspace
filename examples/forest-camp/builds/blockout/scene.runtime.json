@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "id": "forest-camp",
+  "brief": {
+    "title": "Forest Camp",
+    "goal": "Reach the camp lantern and collect its reward.",
+    "controls": "Move with arrow keys; trigger reward when reaching the lantern."
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "reward",
+      "producer": "pixel-effect",
+      "request": "builds/blockout/inputs/reward.request.json",
+      "files": {
+        "sheet": "builds/blockout/assets/reward/sheet.png",
+        "metadata": "builds/blockout/assets/reward/sheet.json",
+        "preview": "builds/blockout/assets/reward/preview.gif",
+        "effect": "builds/blockout/assets/reward/effect.json"
+      }
+    },
+    {
+      "id": "lantern",
+      "producer": "model-assets",
+      "request": "builds/blockout/inputs/lantern.request.json",
+      "files": {
+        "model": "builds/blockout/assets/lantern/model.web.glb",
+        "metadata": "builds/blockout/assets/lantern/model.json",
+        "validation": "builds/blockout/assets/lantern/three-validation.json",
+        "source": "builds/blockout/assets/lantern/source.blend",
+        "raw": "builds/blockout/assets/lantern/model.glb",
+        "preview": "builds/blockout/assets/lantern/preview.png",
+        "receipt": "builds/blockout/assets/lantern/model.web.glb.webstage.json"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "camp-lantern",
+      "asset": "lantern",
+      "position": [
+        1,
+        0,
+        -2
+      ],
+      "rotation_degrees": [
+        0,
+        30,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "camp-reward",
+      "asset": "reward",
+      "position": [
+        1,
+        0.45,
+        -2
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 0.5
+    }
+  ],
+  "input_scene": "builds/blockout/inputs/scene.json"
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "id": "forest-camp",
+  "brief": {
+    "title": "Lantern Embers",
+    "goal": "Observe a 3D camp lantern with gently rising embers above its cap.",
+    "controls": "Inspect the scene by orbiting and zooming the camera."
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "lantern",
+      "producer": "model-assets",
+      "request": "builds/mesh-embers/inputs/lantern.request.json",
+      "files": {
+        "model": "builds/mesh-embers/assets/lantern/model.web.glb",
+        "metadata": "builds/mesh-embers/assets/lantern/model.json",
+        "validation": "builds/mesh-embers/assets/lantern/three-validation.json",
+        "source": "builds/mesh-embers/assets/lantern/source.blend",
+        "raw": "builds/mesh-embers/assets/lantern/model.glb",
+        "preview": "builds/mesh-embers/assets/lantern/preview.png",
+        "review": "builds/mesh-embers/assets/lantern/review.png",
+        "receipt": "builds/mesh-embers/assets/lantern/model.web.glb.webstage.json"
+      }
+    },
+    {
+      "id": "embers",
+      "producer": "model-assets",
+      "request": "builds/mesh-embers/inputs/embers.request.json",
+      "files": {
+        "model": "builds/mesh-embers/assets/embers/model.web.glb",
+        "metadata": "builds/mesh-embers/assets/embers/model.json",
+        "validation": "builds/mesh-embers/assets/embers/three-validation.json",
+        "source": "builds/mesh-embers/assets/embers/source.blend",
+        "raw": "builds/mesh-embers/assets/embers/model.glb",
+        "preview": "builds/mesh-embers/assets/embers/preview.png",
+        "review": "builds/mesh-embers/assets/embers/review.png",
+        "receipt": "builds/mesh-embers/assets/embers/model.web.glb.webstage.json",
+        "effect": "builds/mesh-embers/assets/embers/effect.json"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "camp-lantern",
+      "asset": "lantern",
+      "position": [
+        1,
+        0,
+        -2
+      ],
+      "rotation_degrees": [
+        0,
+        30,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "camp-embers",
+      "asset": "embers",
+      "parent": "camp-lantern",
+      "position": [
+        0,
+        0.239,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "input_scene": "builds/mesh-embers/inputs/scene.json"
+}
