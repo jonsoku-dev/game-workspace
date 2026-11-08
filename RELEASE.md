@@ -25,3 +25,9 @@ PYTHON=/absolute/path/to/python3.13
 독립 설치가 끝나면 `python3 "$STUDIO_ROOT/tools/visualize.py" --project "$PWD/examples/forest-camp" --workspace "$PWD/workspace.json"`으로 검수 화면을 연다. 원본 에셋·씬·그래프와 같은 리비전을 함께 보관한다. 복귀할 때는 이전 checkout과 그 설치의 `env.sh`를 사용한다.
 
 검증 환경에서 Webstage 실행기는 로컬 webstage-compiler 1.0.0 커밋 `5ad9509de4b83839a5d0df420d34b3656e58d006`을 사용했다. 원본 저장소를 제공받는 환경에서는 그 리비전의 pnpm 잠금 파일과 의존성 저장소를 준비한 뒤 `pnpm install --offline --frozen-lockfile` 및 `pnpm build`로 CLI를 빌드한다. 이 릴리스가 공개 Webstage 패키지나 Blender 실행 파일을 대신 제공하지 않는다.
+
+## 웹과 Unity
+
+같은 인수 명령이 Godot·Three·Phaser·Unity 결과를 `game/`, `web-3d/`, `web-2d/`, `unity/`에 각각 내보내고 사용한 파일을 샤드에 연결한다. 웹 결과 폴더는 로컬 HTTP 서버로 제공한다. 예를 들어 `python3 -m http.server --bind 127.0.0.1 --directory /new/path/acceptance/web-3d 8765`로 실행한다. 준비 단계에서 Phaser npm 입력도 [설치 문서](studio/INSTALL.md)대로 준비한다.
+
+Unity 에디터 실제 검사에는 기존 라이선스의 실행 파일을 `--unity-editor /path/to/Unity`로 추가한다. 미지정 시 내보내기와 Blender 변환을 검증하고 `unity_editor.status`를 `not_run`으로 기록한다. 다른 HTML 타깃 선택 근거는 [엔진 비교](studio/engines/HTML-ENGINES.md)에 있다.

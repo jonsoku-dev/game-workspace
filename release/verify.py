@@ -7,6 +7,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import uuid
 
 
 def execute(command, *, env=None, timeout=300):
@@ -37,7 +38,7 @@ def copy_inputs(source, target, inputs):
             shutil.copyfile(source / name, target / name)
 
 
-def verify(work, godot):
+def verify(work, godot, unity_editor=None):
     root = Path(__file__).resolve().parents[1]
     studio = Path(os.environ["STUDIO_ROOT"]).resolve()
     work.mkdir(parents=True, exist_ok=False)
@@ -72,10 +73,35 @@ def verify(work, godot):
     if [a["files"] for a in first["assets"]] != [a["files"] for a in second["assets"]]:
         raise ValueError("reuse changed asset paths")
 
+    workspace = work / "workspace.json"
+    workspace.write_text(json.dumps({"schema_version": 1, "workspace_id": str(uuid.uuid4()),
+                                     "projects": [".", *examples]}))
+    record = work / "verification-work.json"
+    record.write_text(json.dumps({"id": "acceptance", "agent": "operator", "status": "complete",
+                                  "label": "Prepare clean engine acceptance"}))
+    execute([sys.executable, studio / "tools/graph.py", "record", "--project", work, "--record", record])
+    forest_source = ["--source", "forest", reused["files"]["scene"]]
+    scout_source = ["--source", "scout", result["scout"]["runtime"]]
+    result["engine_exports"] = {}
+    for engine, sources, folder in [
+        ("godot", forest_source + scout_source, "game"),
+        ("three", forest_source, "web-3d"),
+        ("phaser", scout_source, "web-2d"),
+        ("unity", forest_source + scout_source, "unity"),
+    ]:
+        response = execute([sys.executable, studio / "tools/export_game.py", "--engine", engine,
+                            "--project", ".", "--workspace", workspace, *sources, "--out", folder])
+        result["engine_exports"][engine] = json.loads(response)
+    result["unity_editor"] = {"status": "not_run", "reason": "No licensed editor supplied"}
+    if unity_editor:
+        unity = work / "unity"
+        execute([unity_editor, "-batchmode", "-nographics", "-projectPath", unity,
+                 "-executeMethod", "StudioBatch.Verify", "-logFile", work / "unity.log"], timeout=600)
+        verification = load(unity / "Assets/StreamingAssets/Studio/unity-verification.json")
+        if verification.get("passed") is not True:
+            raise ValueError("Unity editor did not produce a passing runtime receipt")
+        result["unity_editor"] = {"status": "verified", **verification}
     game = work / "game"
-    execute([sys.executable, studio / "engines/godot/export.py",
-             "--source", forest, reused["files"]["scene"],
-             "--source", work / "scout", result["scout"]["runtime"], "--output", game])
     # Isolate engine settings, editor caches and logs from the operator.
     isolated = {**os.environ, "HOME": str(work / "godot-home"), "XDG_DATA_HOME": str(work / "godot-data")}
     Path(isolated["HOME"]).mkdir()
@@ -107,8 +133,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, required=True, help="New folder for the independent test projects")
     parser.add_argument("--godot", type=Path, required=True, help="Local Godot 4 executable")
+    parser.add_argument("--unity-editor", type=Path, help="Existing licensed Unity 6 editor (optional)")
     args = parser.parse_args()
     try:
-        print(json.dumps(verify(args.out.resolve(), args.godot.resolve()), indent=2))
+        print(json.dumps(verify(args.out.resolve(), args.godot.resolve(), args.unity_editor), indent=2))
     except (KeyError, OSError, ValueError, RuntimeError, subprocess.TimeoutExpired) as exc:
         parser.exit(1, f"{exc}\n")
