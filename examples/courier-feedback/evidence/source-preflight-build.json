@@ -1,0 +1,6 @@
+{
+  "temporary_project": "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/courier-source-smoke-w2fapgp_/demo",
+  "exit_code": 0,
+  "stdout": "{\"schema_version\": 1, \"status\": \"ready\", \"run_id\": \"327c4039576647429f8aabe0c1549e2a\", \"files\": {\"scene\": \"build/preflight/scene.runtime.json\"}}\n",
+  "stderr": ""
+}

@@ -1,0 +1,4999 @@
+{
+  "sound_opt_in": true,
+  "denied": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 300,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 300,
+    "fx": true,
+    "cues": 2,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "denied",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "miss": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 749.9999999999997,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 433.3333333333335,
+    "fx": true,
+    "cues": 1,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      }
+    ],
+    "lastFeedback": {
+      "name": "miss",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "pause": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": true,
+    "clock": 1199.9999999999998,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 50,
+    "fx": true,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "pause",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "move_stop": {
+    "x": 318,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 2166.6666666666692,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 1983.3333333333367,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 33.333333333333336,
+    "fx": true,
+    "cues": 3,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "stop",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "jump": {
+    "x": 470,
+    "y": 328.77777777777766,
+    "vy": 0.5766666666666665,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 3033.333333333328,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 1983.3333333333367,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "jump",
+    "elapsed": 666.6666666666665,
+    "fx": true,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      }
+    ],
+    "lastFeedback": {
+      "name": "stop",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "land": {
+    "x": 470,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 3166.66666666666,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 1983.3333333333367,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 100.00000000000001,
+    "fx": true,
+    "cues": 2,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 3083.3333333333276,
+        "x": 470,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "land",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "collect": {
+    "x": 550,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": true,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 3599.9999999999895,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 3583.333333333323,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 16.666666666666668,
+    "fx": true,
+    "cues": 6,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 3083.3333333333276,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 3233.333333333326,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3333.3333333333253,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3349.999999999992,
+        "x": 502,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3399.9999999999914,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3449.999999999991,
+        "x": 522,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3483.333333333324,
+        "x": 526,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3583.333333333323,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3599.9999999999895,
+        "x": 550,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "stop",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편 획득! 앞의 장벽을 SPACE로 타격하세요."
+  },
+  "facing_away_miss": {
+    "x": 584,
+    "y": 356,
+    "vy": 0,
+    "facing": -1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": true,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 4416.666666666658,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 3966.666666666653,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 416.6666666666668,
+    "fx": true,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 3083.3333333333276,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 3233.333333333326,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3333.3333333333253,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3349.999999999992,
+        "x": 502,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3399.9999999999914,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3449.999999999991,
+        "x": 522,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3483.333333333324,
+        "x": 526,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3583.333333333323,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3599.9999999999895,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3649.999999999989,
+        "x": 554,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3749.999999999988,
+        "x": 574,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3899.999999999987,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3916.6666666666533,
+        "x": 596,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3966.666666666653,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3983.3333333333194,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 3999.999999999986,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 4366.666666666657,
+        "x": 521,
+        "y": 299
+      }
+    ],
+    "lastFeedback": {
+      "name": "miss",
+      "detail": {
+        "combo": 0,
+        "facing": -1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 521,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편 획득! 앞의 장벽을 SPACE로 타격하세요."
+  },
+  "hit_1": {
+    "x": 600,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 20,
+    "lastDamage": 10,
+    "package": true,
+    "hits": 1,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 5466.666666666677,
+    "cooldown": 0,
+    "freeze": 16.66666666666666,
+    "combo": 1,
+    "lastHit": 5466.666666666677,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 4950.000000000001,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 366.66666666666674,
+    "fx": true,
+    "cues": 3,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 3083.3333333333276,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 3233.333333333326,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3333.3333333333253,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3349.999999999992,
+        "x": 502,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3399.9999999999914,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3449.999999999991,
+        "x": 522,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3483.333333333324,
+        "x": 526,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3583.333333333323,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3599.9999999999895,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3649.999999999989,
+        "x": 554,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3749.999999999988,
+        "x": 574,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3899.999999999987,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3916.6666666666533,
+        "x": 596,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3966.666666666653,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3983.3333333333194,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 3999.999999999986,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 4366.666666666657,
+        "x": 521,
+        "y": 299
+      },
+      {
+        "event": "move",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 5016.666666666669,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 5100.000000000004,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "hit",
+        "clock": 5466.666666666677,
+        "x": 650,
+        "y": 330
+      }
+    ],
+    "lastFeedback": {
+      "name": "hit",
+      "detail": {
+        "combo": 1,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled",
+      "combo": 1
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "targetKickSign": 1,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 521,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      }
+    ],
+    "status": "우편 획득! 앞의 장벽을 SPACE로 타격하세요."
+  },
+  "hit_2": {
+    "x": 600,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 5,
+    "lastDamage": 15,
+    "package": true,
+    "hits": 2,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 6350.000000000026,
+    "cooldown": 0,
+    "freeze": 16.66666666666666,
+    "combo": 2,
+    "lastHit": 6350.000000000026,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 4950.000000000001,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 366.66666666666674,
+    "fx": true,
+    "cues": 2,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 3083.3333333333276,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 3233.333333333326,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3333.3333333333253,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3349.999999999992,
+        "x": 502,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3399.9999999999914,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3449.999999999991,
+        "x": 522,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3483.333333333324,
+        "x": 526,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3583.333333333323,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3599.9999999999895,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3649.999999999989,
+        "x": 554,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3749.999999999988,
+        "x": 574,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3899.999999999987,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3916.6666666666533,
+        "x": 596,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3966.666666666653,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3983.3333333333194,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 3999.999999999986,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 4366.666666666657,
+        "x": 521,
+        "y": 299
+      },
+      {
+        "event": "move",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 5016.666666666669,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 5100.000000000004,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "hit",
+        "clock": 5466.666666666677,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 5983.333333333353,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "crit",
+        "clock": 6350.000000000026,
+        "x": 650,
+        "y": 330
+      }
+    ],
+    "lastFeedback": {
+      "name": "crit",
+      "detail": {
+        "combo": 2,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled",
+      "combo": 2
+    },
+    "trail": 3,
+    "targetTrail": 20.33583599945333,
+    "targetKickSign": 1,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 521,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      }
+    ],
+    "status": "우편 획득! 앞의 장벽을 SPACE로 타격하세요."
+  },
+  "hit_3": {
+    "x": 600,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 0,
+    "lastDamage": 5,
+    "package": true,
+    "hits": 3,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 7216.666666666709,
+    "cooldown": 0,
+    "freeze": 16.66666666666666,
+    "combo": 3,
+    "lastHit": 7216.666666666709,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 4950.000000000001,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 366.66666666666674,
+    "fx": true,
+    "cues": 2,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 3083.3333333333276,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 3233.333333333326,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3333.3333333333253,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3349.999999999992,
+        "x": 502,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3399.9999999999914,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3449.999999999991,
+        "x": 522,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3483.333333333324,
+        "x": 526,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3583.333333333323,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3599.9999999999895,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3649.999999999989,
+        "x": 554,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3749.999999999988,
+        "x": 574,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3899.999999999987,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3916.6666666666533,
+        "x": 596,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3966.666666666653,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3983.3333333333194,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 3999.999999999986,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 4366.666666666657,
+        "x": 521,
+        "y": 299
+      },
+      {
+        "event": "move",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 5016.666666666669,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 5100.000000000004,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "hit",
+        "clock": 5466.666666666677,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 5983.333333333353,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "crit",
+        "clock": 6350.000000000026,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 6850.0000000000355,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "finisher",
+        "clock": 7216.666666666709,
+        "x": 650,
+        "y": 330
+      }
+    ],
+    "lastFeedback": {
+      "name": "finish",
+      "detail": {
+        "combo": 3,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 5.612051380144939,
+    "targetKickSign": 1,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 521,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      }
+    ],
+    "status": "길이 열렸어요! 오른쪽 우체통에 E로 배송하세요."
+  },
+  "win": {
+    "x": 852,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 0,
+    "lastDamage": 5,
+    "package": true,
+    "hits": 3,
+    "finished": true,
+    "lost": false,
+    "paused": false,
+    "clock": 8633.333333333378,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 3,
+    "lastHit": 7216.666666666709,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 8533.333333333381,
+    "interactHeld": true,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 50,
+    "fx": true,
+    "cues": 6,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 283.3333333333333,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 316.6666666666667,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 683.3333333333331,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1350.0000000000005,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1383.333333333334,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1483.3333333333344,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1516.6666666666679,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1750.0000000000023,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1783.3333333333358,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1883.3333333333362,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1916.6666666666697,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2016.6666666666702,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2050.0000000000036,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2150.0000000000027,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2383.333333333334,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 3033.333333333328,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 3083.3333333333276,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3216.6666666666597,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 3233.333333333326,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3333.3333333333253,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3349.999999999992,
+        "x": 502,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3399.9999999999914,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3449.999999999991,
+        "x": 522,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3483.333333333324,
+        "x": 526,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3583.333333333323,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3599.9999999999895,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3649.999999999989,
+        "x": 554,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3749.999999999988,
+        "x": 574,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3783.333333333321,
+        "x": 578,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3899.999999999987,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3916.6666666666533,
+        "x": 596,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3966.666666666653,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3983.3333333333194,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 3999.999999999986,
+        "x": 584,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 4366.666666666657,
+        "x": 521,
+        "y": 299
+      },
+      {
+        "event": "move",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 4950.000000000001,
+        "x": 588,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 5016.666666666669,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 5100.000000000004,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "hit",
+        "clock": 5466.666666666677,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 5983.333333333353,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "crit",
+        "clock": 6350.000000000026,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 6850.0000000000355,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "finisher",
+        "clock": 7216.666666666709,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "move",
+        "clock": 7416.666666666712,
+        "x": 604,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 7416.666666666712,
+        "x": 604,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 7533.333333333381,
+        "x": 628,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 7550.000000000048,
+        "x": 632,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 7600.000000000049,
+        "x": 644,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 7666.666666666717,
+        "x": 656,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 7683.333333333384,
+        "x": 660,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 7783.333333333386,
+        "x": 684,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 7800.000000000053,
+        "x": 684,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 7816.66666666672,
+        "x": 688,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 7933.3333333333885,
+        "x": 712,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 7950.0000000000555,
+        "x": 716,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 7966.666666666722,
+        "x": 720,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 8066.666666666724,
+        "x": 740,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 8083.333333333391,
+        "x": 744,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 8150.000000000059,
+        "x": 760,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 8200.00000000006,
+        "x": 768,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 8216.666666666726,
+        "x": 772,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 8333.333333333389,
+        "x": 796,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 8350.000000000055,
+        "x": 800,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 8350.000000000055,
+        "x": 800,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 8466.666666666717,
+        "x": 824,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 8483.333333333383,
+        "x": 828,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 8533.333333333381,
+        "x": 840,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 8600.000000000045,
+        "x": 852,
+        "y": 356
+      },
+      {
+        "event": "interact",
+        "clock": 8633.333333333378,
+        "x": 852,
+        "y": 356
+      },
+      {
+        "event": "win",
+        "clock": 8633.333333333378,
+        "x": 852,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "win",
+      "detail": {
+        "combo": 3,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 0.010670342648744231,
+    "targetKickSign": 1,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 521,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      }
+    ],
+    "status": "배송 완료! R로 다시 시작할 수 있어요."
+  },
+  "restart": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 16.666666666666668,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 16.666666666666668,
+    "fx": true,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "restart",
+        "clock": 0,
+        "x": 150,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "restart",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "targetKickSign": 1,
+    "contactEvents": [],
+    "status": "틈을 뛰어넘고 → 우편 수집 → 나무 장벽 타격 → 우체통에 E"
+  },
+  "off": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 66.66666666666667,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 66.66666666666667,
+    "fx": false,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "restart",
+        "clock": 0,
+        "x": 150,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "restart",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "targetKickSign": 1,
+    "contactEvents": [],
+    "status": "틈을 뛰어넘고 → 우편 수집 → 나무 장벽 타격 → 우체통에 E"
+  },
+  "off_miss": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 616.6666666666666,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 416.6666666666668,
+    "fx": false,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "restart",
+        "clock": 0,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "denied",
+        "clock": 183.33333333333331,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 199.99999999999997,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 566.6666666666667,
+        "x": 213,
+        "y": 299
+      }
+    ],
+    "lastFeedback": {
+      "name": "restart",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "targetKickSign": 1,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "off_finisher": {
+    "x": 600,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 0,
+    "lastDamage": 5,
+    "package": true,
+    "hits": 3,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 5650.000000000014,
+    "cooldown": 0,
+    "freeze": 16.66666666666666,
+    "combo": 3,
+    "lastHit": 5650.000000000014,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 3283.3333333333258,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 366.66666666666674,
+    "fx": false,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "restart",
+        "clock": 0,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "denied",
+        "clock": 183.33333333333331,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 199.99999999999997,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 566.6666666666667,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "move",
+        "clock": 1133.3333333333328,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1133.3333333333328,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1250,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1266.6666666666667,
+        "x": 182,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1316.666666666667,
+        "x": 194,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1383.333333333334,
+        "x": 206,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1400.0000000000007,
+        "x": 210,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1500.0000000000011,
+        "x": 234,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1516.6666666666679,
+        "x": 234,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1533.3333333333346,
+        "x": 238,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1650.0000000000018,
+        "x": 262,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 266,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1683.3333333333353,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1783.3333333333358,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1800.0000000000025,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1866.6666666666695,
+        "x": 310,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1916.6666666666697,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 1950.0000000000032,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 1966.66666666667,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 2599.9999999999986,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 2649.999999999998,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2733.3333333333308,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 2733.3333333333308,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 2749.9999999999973,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2833.33333333333,
+        "x": 494,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2883.3333333333294,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 2916.6666666666624,
+        "x": 506,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2966.666666666662,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2999.999999999995,
+        "x": 518,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3099.999999999994,
+        "x": 542,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3116.6666666666606,
+        "x": 542,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3149.9999999999936,
+        "x": 546,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3233.333333333326,
+        "x": 562,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3266.6666666666592,
+        "x": 566,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3283.3333333333258,
+        "x": 570,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3366.6666666666583,
+        "x": 586,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3399.9999999999914,
+        "x": 590,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3466.6666666666574,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 3549.99999999999,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "hit",
+        "clock": 3916.6666666666533,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 4416.666666666658,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "crit",
+        "clock": 4783.333333333331,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 5283.33333333334,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "finisher",
+        "clock": 5650.000000000014,
+        "x": 650,
+        "y": 330
+      }
+    ],
+    "lastFeedback": {
+      "name": "restart",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 3.6120952887647193,
+    "targetKickSign": 1,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      }
+    ],
+    "status": "길이 열렸어요! 오른쪽 우체통에 E로 배송하세요."
+  },
+  "off_win": {
+    "x": 844,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 0,
+    "lastDamage": 5,
+    "package": true,
+    "hits": 3,
+    "finished": true,
+    "lost": false,
+    "paused": false,
+    "clock": 6933.33333333337,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 3,
+    "lastHit": 5650.000000000014,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 6850.0000000000355,
+    "interactHeld": true,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 50,
+    "fx": false,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "restart",
+        "clock": 0,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "denied",
+        "clock": 183.33333333333331,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 199.99999999999997,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 566.6666666666667,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "move",
+        "clock": 1133.3333333333328,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1133.3333333333328,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1250,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1266.6666666666667,
+        "x": 182,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1316.666666666667,
+        "x": 194,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1383.333333333334,
+        "x": 206,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1400.0000000000007,
+        "x": 210,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1500.0000000000011,
+        "x": 234,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1516.6666666666679,
+        "x": 234,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1533.3333333333346,
+        "x": 238,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1650.0000000000018,
+        "x": 262,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 266,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1683.3333333333353,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1783.3333333333358,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1800.0000000000025,
+        "x": 294,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1866.6666666666695,
+        "x": 310,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1916.6666666666697,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 1950.0000000000032,
+        "x": 318,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 1966.66666666667,
+        "x": 322,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "stop",
+        "clock": 2599.9999999999986,
+        "x": 470,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "land",
+        "clock": 2649.999999999998,
+        "x": 470,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2733.3333333333308,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 2733.3333333333308,
+        "x": 474,
+        "y": 356
+      },
+      {
+        "event": "collect",
+        "clock": 2749.9999999999973,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2833.33333333333,
+        "x": 494,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2883.3333333333294,
+        "x": 498,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 2916.6666666666624,
+        "x": 506,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2966.666666666662,
+        "x": 514,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2999.999999999995,
+        "x": 518,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3099.999999999994,
+        "x": 542,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3116.6666666666606,
+        "x": 542,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3149.9999999999936,
+        "x": 546,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3233.333333333326,
+        "x": 562,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3266.6666666666592,
+        "x": 566,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3283.3333333333258,
+        "x": 570,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3366.6666666666583,
+        "x": 586,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3399.9999999999914,
+        "x": 590,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3466.6666666666574,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 3549.99999999999,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "hit",
+        "clock": 3916.6666666666533,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 4416.666666666658,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "crit",
+        "clock": 4783.333333333331,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "attack",
+        "clock": 5283.33333333334,
+        "x": 600,
+        "y": 356
+      },
+      {
+        "event": "finisher",
+        "clock": 5650.000000000014,
+        "x": 650,
+        "y": 330
+      },
+      {
+        "event": "move",
+        "clock": 5733.3333333333485,
+        "x": 604,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 5733.3333333333485,
+        "x": 604,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 5850.000000000017,
+        "x": 628,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 5866.666666666684,
+        "x": 632,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 5916.666666666685,
+        "x": 644,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 5983.333333333353,
+        "x": 656,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 6000.00000000002,
+        "x": 660,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 6100.000000000022,
+        "x": 684,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 6116.666666666689,
+        "x": 684,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 6133.333333333356,
+        "x": 688,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 6250.000000000025,
+        "x": 712,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 6266.6666666666915,
+        "x": 716,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 6283.3333333333585,
+        "x": 720,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 6366.666666666693,
+        "x": 736,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 6400.000000000027,
+        "x": 740,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 6466.666666666695,
+        "x": 756,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 6516.666666666696,
+        "x": 764,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 6533.333333333363,
+        "x": 768,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 6650.000000000032,
+        "x": 792,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 6666.666666666699,
+        "x": 796,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 6666.666666666699,
+        "x": 796,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 6783.333333333368,
+        "x": 820,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 6800.000000000035,
+        "x": 824,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 6850.0000000000355,
+        "x": 836,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 6900.000000000036,
+        "x": 844,
+        "y": 356
+      },
+      {
+        "event": "interact",
+        "clock": 6933.33333333337,
+        "x": 844,
+        "y": 356
+      },
+      {
+        "event": "win",
+        "clock": 6933.33333333337,
+        "x": 844,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "restart",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 0.003739058425974891,
+    "targetKickSign": 1,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 663,
+          "y": 299
+        },
+        "contact": true
+      }
+    ],
+    "status": "배송 완료! R로 다시 시작할 수 있어요."
+  },
+  "hurt": {
+    "x": 358,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 2,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 1233.3333333333333,
+    "cooldown": 1100,
+    "freeze": 16.66666666666666,
+    "combo": 0,
+    "lastHit": null,
+    "knock": -0.48,
+    "walking": true,
+    "lastStep": 1166.6666666666663,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "hurt",
+    "elapsed": 16.666666666666668,
+    "fx": true,
+    "cues": 5,
+    "cueEvents": [
+      {
+        "event": "restart",
+        "clock": 0,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 100.00000000000001,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 183.33333333333331,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 199.99999999999997,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 233.3333333333333,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 333.33333333333337,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 366.66666666666674,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 366.66666666666674,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 466.66666666666686,
+        "x": 222,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 500.0000000000002,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 550.0000000000001,
+        "x": 238,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 583.3333333333334,
+        "x": 242,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 633.3333333333333,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 733.333333333333,
+        "x": 266,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 766.6666666666663,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 766.6666666666663,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 849.9999999999994,
+        "x": 286,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 883.3333333333327,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 949.9999999999992,
+        "x": 306,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 999.9999999999991,
+        "x": 314,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1033.3333333333323,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1133.3333333333328,
+        "x": 338,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1166.6666666666663,
+        "x": 342,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1166.6666666666663,
+        "x": 342,
+        "y": 356
+      },
+      {
+        "event": "hurt",
+        "clock": 1233.3333333333333,
+        "x": 358,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "hurt",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "targetKickSign": 1,
+    "contactEvents": [],
+    "status": "가시에 닿았어요 · 체력 2/3 · W로 도약"
+  },
+  "lose": {
+    "x": 357.2727273531816,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 0,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": true,
+    "paused": false,
+    "clock": 3999.999999999986,
+    "cooldown": 1100,
+    "freeze": 66.66666666666667,
+    "combo": 0,
+    "lastHit": null,
+    "knock": -0.48,
+    "walking": true,
+    "lastStep": 3999.999999999986,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "hurt",
+    "elapsed": 116.66666666666669,
+    "fx": true,
+    "cues": 6,
+    "cueEvents": [
+      {
+        "event": "restart",
+        "clock": 0,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 100.00000000000001,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 183.33333333333331,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 199.99999999999997,
+        "x": 174,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 233.3333333333333,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 333.33333333333337,
+        "x": 198,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 366.66666666666674,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 366.66666666666674,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 466.66666666666686,
+        "x": 222,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 500.0000000000002,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 550.0000000000001,
+        "x": 238,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 583.3333333333334,
+        "x": 242,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 633.3333333333333,
+        "x": 246,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 733.333333333333,
+        "x": 266,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 766.6666666666663,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 766.6666666666663,
+        "x": 270,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 849.9999999999994,
+        "x": 286,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 883.3333333333327,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 949.9999999999992,
+        "x": 306,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 999.9999999999991,
+        "x": 314,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1033.3333333333323,
+        "x": 318,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1133.3333333333328,
+        "x": 338,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1166.6666666666663,
+        "x": 342,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1166.6666666666663,
+        "x": 342,
+        "y": 356
+      },
+      {
+        "event": "hurt",
+        "clock": 1233.3333333333333,
+        "x": 358,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1250,
+        "x": 350,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2433.3333333333335,
+        "x": 325.63636425506155,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 2433.3333333333335,
+        "x": 325.63636425506155,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2533.3333333333326,
+        "x": 345.6363637756942,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2583.333333333332,
+        "x": 349.6363637024832,
+        "y": 356
+      },
+      {
+        "event": "hurt",
+        "clock": 2616.666666666665,
+        "x": 357.6363636765908,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 2616.666666666665,
+        "x": 357.6363636765908,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2633.3333333333317,
+        "x": 349.6363636765908,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3816.6666666666542,
+        "x": 325.27272793165235,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3816.6666666666542,
+        "x": 325.27272793165235,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3916.6666666666533,
+        "x": 345.272727452285,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3966.666666666653,
+        "x": 349.272727379074,
+        "y": 356
+      },
+      {
+        "event": "hurt",
+        "clock": 3999.999999999986,
+        "x": 357.2727273531816,
+        "y": 356
+      },
+      {
+        "event": "lose",
+        "clock": 3999.999999999986,
+        "x": 357.2727273531816,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3999.999999999986,
+        "x": 357.2727273531816,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "step",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 1.0024721092080588,
+    "targetTrail": 30,
+    "targetKickSign": 1,
+    "contactEvents": [],
+    "status": "배송 실패 · R로 다시 도전하세요."
+  },
+  "mobile": {
+    "client": 390,
+    "scroll": 390,
+    "buttons": [
+      {
+        "id": "left",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "right",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "attack",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "jump",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "interact",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "pause",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "feel",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "sound",
+        "w": 116,
+        "h": 48
+      },
+      {
+        "id": "restart",
+        "w": 116,
+        "h": 48
+      }
+    ]
+  },
+  "resources": [],
+  "status": "pass",
+  "export_files": {
+    "index.html": "08f3d67c7f530809db629fa8680cdd1a0732a36d02223ca99954651cb69c8308",
+    "provenance.json": "a058fcd5a73a25e00de43f02622495178484642a69f2cc3d77fe25cd5a901504",
+    "engine-export.json": "4e9021a469f27e2c23682e39c7be89484b772b1334ab339ba6c905759a18b62d",
+    "game.json": "42e843d7227d242d0efc622eba3a6e6970d7d534f65441d4ac58b87010eabc0a",
+    "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+    "timing.mjs": "04d429d3450104c52f6e01cfa0f0383f4993d1b040ea2bf91961b446494d4abe",
+    "style.css": "98179ad842492f107f2050811062f5a4feded8f1b28b26e752154e1a27b12722",
+    "game.mjs": "17635004017c922d1f046704ddd877db9fd4fc74785e7c0b15fb8e8932e4e370",
+    "trial.mjs": "ba023c0d40511b74581138876c201b9d84d91288f545ebfcf527e1ab0ba56450",
+    "cue-sheets.mjs": "211f8938337f3d928ffa3390ef04b0aa28baf2a6d39546c2a55e00740020d067",
+    "vendor/PHASER-BUNDLED-NOTICES.txt": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "vendor/EVENTEMITTER3-LICENSE.txt": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "vendor/phaser.min.js": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7",
+    "vendor/PHASER-LICENSE.txt": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "products/0/fx_impact/sheet.json": "a20617efb404cd3722f25dd03b9b73996ffbd5771f365603dcbef5bef1aef316",
+    "products/0/fx_impact/sheet.png": "869d2c3e7b5b00b23b4755798ebf4cf77b0b00d58a3f2a39c80bba2a1c5d5220",
+    "products/0/fx_impact/effect.json": "ab0c0d3f9a5fdee35485b5fc5a7bdcb88f7e02b2817f5a023d1940cf329bfc44",
+    "products/0/fx_land/sheet.json": "aa274daee0e32abdbdfd43d1721b93129b8e6535f61c8b93ad44f47f7fcd7abb",
+    "products/0/fx_land/sheet.png": "a6a802401110bde4c2f92ca3c3a2c885789fd0609e1b30ce9d16cc1de67edfb0",
+    "products/0/fx_land/effect.json": "5d71692d2cd7a78cc954f3349f2459c6c7a7d480e6cd34f5ddc1e3a6563a0076",
+    "products/0/fx_slash/sheet.json": "36824cd75af56a80beaa8f51ed8d86d426c0c241812bfedf3d3e275859365a2e",
+    "products/0/fx_slash/sheet.png": "edd1f9668cb83f8ea4789bec07eb1d5ca592855d83d77d1293a348c56662ca1a",
+    "products/0/fx_slash/effect.json": "25a57b5989750eb5e70aae414fe9e2625066cd3e473f85c184d214fa382b39af",
+    "products/0/fx_step/sheet.json": "40a75595bd957240bbd8720c7ea5b5cb8a800a19f39eed035f47764d689759a2",
+    "products/0/fx_step/sheet.png": "9f1cb479499c41b059f4930f4330b27ed9425a41e4f95c46fdc8a54ff5998f38",
+    "products/0/fx_step/effect.json": "60a94a7736c6c76c206a2863143a942052b41785e6e14f4a4e3e0630a455c145",
+    "products/0/fx_confirm/sheet.json": "773a02afd59d10364fc548195f2e86436c433de6addd0173f7b9fe8053e4ca2c",
+    "products/0/fx_confirm/sheet.png": "561e1b1c4679b5b5497a8eded1954ee1c1b1bb3af73776f7215b30e59daacec5",
+    "products/0/fx_confirm/effect.json": "5259059564a698373d4d37147b42a1bae829cdd0cb851a175b3ba0c53d1f50be",
+    "products/0/fx_pickup/sheet.json": "3826f9c49fb6002ed3cb066c695282f301f9cba27431da50e01c77b640fa839f",
+    "products/0/fx_pickup/sheet.png": "73a9e655b854d548c92715cc183a8563bb5e76ff1717a32c9171968151d0e0a9",
+    "products/0/fx_pickup/effect.json": "0f784457842fb311ecb9af2549640a9865139df01c84246d6ad0c92ea258d7f4",
+    "products/0/fx_deny/sheet.json": "2e646621e5511676ddffe479413b235a7eb35ce87b22a5f9054cb62cc7e062cf",
+    "products/0/fx_deny/sheet.png": "7975ad2deca45f2c0d96179ad2418f629c45a80abb57ef0c0355b3b629f2f168",
+    "products/0/fx_deny/effect.json": "6cbd4f136a1cd245f189b0f1d95b30b4426c7339a15d3b53ff4d8f261111dcbf",
+    "products/0/hero/credits.json": "efb8b81be3dfc4a33b32ab5eb317b473ce6d37a1f9e520514b7d022981bf62fd",
+    "products/0/hero/action-set.json": "226752f339ecf5cc41e2010d204b63a7c4d25d383b6165cca810e79dbfc0b616",
+    "products/0/hero/atlas.png": "5a5fc5064a240d9ebaf24ec462bde98984d504c47087fa3497217dc0352b48a3"
+  }
+}

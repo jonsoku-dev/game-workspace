@@ -1,0 +1,1189 @@
+{
+  "sound_opt_in": true,
+  "denied": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 316.6666666666667,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 316.6666666666667,
+    "fx": true,
+    "cues": 2,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 300,
+        "x": 150,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "denied",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "miss": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 766.6666666666663,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "attack",
+    "elapsed": 416.6666666666668,
+    "fx": true,
+    "cues": 1,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 300,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 350.00000000000006,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 716.6666666666664,
+        "x": 213,
+        "y": 299
+      }
+    ],
+    "lastFeedback": {
+      "name": "miss",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "pause": {
+    "x": 150,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": true,
+    "clock": 1199.9999999999998,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 0,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 16.666666666666668,
+    "fx": true,
+    "cues": 0,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 300,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 350.00000000000006,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 716.6666666666664,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "pause",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "move_stop": {
+    "x": 322,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": false,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 2183.3333333333358,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 1983.3333333333367,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 33.333333333333336,
+    "fx": true,
+    "cues": 3,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 300,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 350.00000000000006,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 716.6666666666664,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1366.6666666666672,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1400.0000000000007,
+        "x": 182,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1500.0000000000011,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1533.3333333333346,
+        "x": 206,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1766.666666666669,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1900.000000000003,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1933.3333333333364,
+        "x": 278,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2033.333333333337,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2066.66666666667,
+        "x": 302,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2166.6666666666692,
+        "x": 322,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "stop",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편과 장벽 제거가 필요해요. 우체통 가까이에서 E를 누르세요."
+  },
+  "jump": {
+    "x": 478,
+    "y": 338.9166666666666,
+    "vy": 0.6083333333333332,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": true,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 3066.666666666661,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 1983.3333333333367,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "jump",
+    "elapsed": 683.3333333333331,
+    "fx": true,
+    "cues": 3,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 300,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 350.00000000000006,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 716.6666666666664,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1366.6666666666672,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1400.0000000000007,
+        "x": 182,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1500.0000000000011,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1533.3333333333346,
+        "x": 206,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1766.666666666669,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1900.000000000003,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1933.3333333333364,
+        "x": 278,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2033.333333333337,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2066.66666666667,
+        "x": 302,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2166.6666666666692,
+        "x": 322,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2416.666666666667,
+        "x": 326,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "collect",
+        "clock": 3049.9999999999945,
+        "x": 478,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "stop",
+        "clock": 3066.666666666661,
+        "x": 478,
+        "y": 338.9166666666666
+      }
+    ],
+    "lastFeedback": {
+      "name": "stop",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편 획득! 앞의 장벽을 SPACE로 타격하세요."
+  },
+  "land": {
+    "x": 478,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": true,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 3216.6666666666597,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 1983.3333333333367,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 133.33333333333334,
+    "fx": true,
+    "cues": 5,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 300,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 350.00000000000006,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 716.6666666666664,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1366.6666666666672,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1400.0000000000007,
+        "x": 182,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1500.0000000000011,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1533.3333333333346,
+        "x": 206,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1766.666666666669,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1900.000000000003,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1933.3333333333364,
+        "x": 278,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2033.333333333337,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2066.66666666667,
+        "x": 302,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2166.6666666666692,
+        "x": 322,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2416.666666666667,
+        "x": 326,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "collect",
+        "clock": 3049.9999999999945,
+        "x": 478,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "stop",
+        "clock": 3066.666666666661,
+        "x": 478,
+        "y": 338.9166666666666
+      },
+      {
+        "event": "land",
+        "clock": 3099.999999999994,
+        "x": 478,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "land",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편 획득! 앞의 장벽을 SPACE로 타격하세요."
+  },
+  "collect": {
+    "x": 550,
+    "y": 356,
+    "vy": 0,
+    "facing": 1,
+    "hp": 3,
+    "targetMaxHP": 30,
+    "targetHP": 30,
+    "lastDamage": 0,
+    "package": true,
+    "hits": 0,
+    "finished": false,
+    "lost": false,
+    "paused": false,
+    "clock": 3666.6666666666556,
+    "cooldown": 0,
+    "freeze": 0,
+    "combo": 0,
+    "lastHit": null,
+    "knock": 0,
+    "walking": false,
+    "lastStep": 3633.3333333333226,
+    "interactHeld": false,
+    "jumpHeld": false,
+    "action": "idle",
+    "elapsed": 33.333333333333336,
+    "fx": true,
+    "cues": 4,
+    "cueEvents": [
+      {
+        "event": "denied",
+        "clock": 300,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "attack",
+        "clock": 350.00000000000006,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "miss",
+        "clock": 716.6666666666664,
+        "x": 213,
+        "y": 299
+      },
+      {
+        "event": "pause",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "resume",
+        "clock": 1199.9999999999998,
+        "x": 150,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1250,
+        "x": 154,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1366.6666666666672,
+        "x": 178,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1400.0000000000007,
+        "x": 182,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1433.3333333333342,
+        "x": 190,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1500.0000000000011,
+        "x": 202,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1533.3333333333346,
+        "x": 206,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1616.6666666666683,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1633.333333333335,
+        "x": 226,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1666.6666666666686,
+        "x": 230,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1766.666666666669,
+        "x": 250,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1800.0000000000025,
+        "x": 254,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 1900.000000000003,
+        "x": 274,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 1933.3333333333364,
+        "x": 278,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 1983.3333333333367,
+        "x": 290,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2033.333333333337,
+        "x": 298,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 2066.66666666667,
+        "x": 302,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 2166.6666666666692,
+        "x": 322,
+        "y": 356
+      },
+      {
+        "event": "jump",
+        "clock": 2400.0000000000005,
+        "x": 322,
+        "y": 345.02777777777777
+      },
+      {
+        "event": "move",
+        "clock": 2416.666666666667,
+        "x": 326,
+        "y": 334.5833333333333
+      },
+      {
+        "event": "collect",
+        "clock": 3049.9999999999945,
+        "x": 478,
+        "y": 328.77777777777766
+      },
+      {
+        "event": "stop",
+        "clock": 3066.666666666661,
+        "x": 478,
+        "y": 338.9166666666666
+      },
+      {
+        "event": "land",
+        "clock": 3099.999999999994,
+        "x": 478,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3266.6666666666592,
+        "x": 482,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3266.6666666666592,
+        "x": 482,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3366.6666666666583,
+        "x": 502,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3399.9999999999914,
+        "x": 506,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3449.999999999991,
+        "x": 518,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3499.9999999999905,
+        "x": 526,
+        "y": 356
+      },
+      {
+        "event": "move",
+        "clock": 3549.99999999999,
+        "x": 530,
+        "y": 356
+      },
+      {
+        "event": "step",
+        "clock": 3633.3333333333226,
+        "x": 550,
+        "y": 356
+      },
+      {
+        "event": "stop",
+        "clock": 3649.999999999989,
+        "x": 550,
+        "y": 356
+      }
+    ],
+    "lastFeedback": {
+      "name": "stop",
+      "detail": {
+        "combo": 0,
+        "facing": 1
+      },
+      "enabled": true,
+      "sound": true,
+      "reducedMotion": false,
+      "audioStatus": "scheduled"
+    },
+    "trail": 3,
+    "targetTrail": 30,
+    "contactEvents": [
+      {
+        "start_ms": 360,
+        "observed_ms": 366.66666666666674,
+        "point": {
+          "x": 213,
+          "y": 299
+        },
+        "contact": false
+      }
+    ],
+    "status": "우편 획득! 앞의 장벽을 SPACE로 타격하세요."
+  },
+  "status": "fail",
+  "error": "Could not reach 590: {'x': 554, 'y': 356, 'vy': 0, 'facing': 1, 'hp': 3, 'targetMaxHP': 30, 'targetHP': 30, 'lastDamage': 0, 'package': True, 'hits': 0, 'finished': False, 'lost': False, 'paused': True, 'clock': 3733.3333333333217, 'cooldown': 0, 'freeze': 0, 'combo': 0, 'lastHit': None, 'knock': 0, 'walking': True, 'lastStep': 3633.3333333333226, 'interactHeld': False, 'jumpHeld': False, 'action': 'walk', 'elapsed': 16.666666666666668, 'fx': True, 'cues': 0, 'cueEvents': [{'event': 'denied', 'clock': 300, 'x': 150, 'y': 356}, {'event': 'attack', 'clock': 350.00000000000006, 'x': 150, 'y': 356}, {'event': 'miss', 'clock': 716.6666666666664, 'x': 213, 'y': 299}, {'event': 'pause', 'clock': 1199.9999999999998, 'x': 150, 'y': 356}, {'event': 'resume', 'clock': 1199.9999999999998, 'x': 150, 'y': 356}, {'event': 'move', 'clock': 1250, 'x': 154, 'y': 356}, {'event': 'step', 'clock': 1250, 'x': 154, 'y': 356}, {'event': 'stop', 'clock': 1366.6666666666672, 'x': 178, 'y': 356}, {'event': 'move', 'clock': 1400.0000000000007, 'x': 182, 'y': 356}, {'event': 'step', 'clock': 1433.3333333333342, 'x': 190, 'y': 356}, {'event': 'stop', 'clock': 1500.0000000000011, 'x': 202, 'y': 356}, {'event': 'move', 'clock': 1533.3333333333346, 'x': 206, 'y': 356}, {'event': 'step', 'clock': 1616.6666666666683, 'x': 226, 'y': 356}, {'event': 'stop', 'clock': 1633.333333333335, 'x': 226, 'y': 356}, {'event': 'move', 'clock': 1666.6666666666686, 'x': 230, 'y': 356}, {'event': 'stop', 'clock': 1766.666666666669, 'x': 250, 'y': 356}, {'event': 'move', 'clock': 1800.0000000000025, 'x': 254, 'y': 356}, {'event': 'step', 'clock': 1800.0000000000025, 'x': 254, 'y': 356}, {'event': 'stop', 'clock': 1900.000000000003, 'x': 274, 'y': 356}, {'event': 'move', 'clock': 1933.3333333333364, 'x': 278, 'y': 356}, {'event': 'step', 'clock': 1983.3333333333367, 'x': 290, 'y': 356}, {'event': 'stop', 'clock': 2033.333333333337, 'x': 298, 'y': 356}, {'event': 'move', 'clock': 2066.66666666667, 'x': 302, 'y': 356}, {'event': 'stop', 'clock': 2166.6666666666692, 'x': 322, 'y': 356}, {'event': 'jump', 'clock': 2400.0000000000005, 'x': 322, 'y': 345.02777777777777}, {'event': 'move', 'clock': 2416.666666666667, 'x': 326, 'y': 334.5833333333333}, {'event': 'collect', 'clock': 3049.9999999999945, 'x': 478, 'y': 328.77777777777766}, {'event': 'stop', 'clock': 3066.666666666661, 'x': 478, 'y': 338.9166666666666}, {'event': 'land', 'clock': 3099.999999999994, 'x': 478, 'y': 356}, {'event': 'move', 'clock': 3266.6666666666592, 'x': 482, 'y': 356}, {'event': 'step', 'clock': 3266.6666666666592, 'x': 482, 'y': 356}, {'event': 'stop', 'clock': 3366.6666666666583, 'x': 502, 'y': 356}, {'event': 'move', 'clock': 3399.9999999999914, 'x': 506, 'y': 356}, {'event': 'step', 'clock': 3449.999999999991, 'x': 518, 'y': 356}, {'event': 'stop', 'clock': 3499.9999999999905, 'x': 526, 'y': 356}, {'event': 'move', 'clock': 3549.99999999999, 'x': 530, 'y': 356}, {'event': 'step', 'clock': 3633.3333333333226, 'x': 550, 'y': 356}, {'event': 'stop', 'clock': 3649.999999999989, 'x': 550, 'y': 356}, {'event': 'move', 'clock': 3733.3333333333217, 'x': 554, 'y': 356}, {'event': 'pause', 'clock': 3733.3333333333217, 'x': 554, 'y': 356}], 'lastFeedback': {'name': 'pause', 'detail': {'combo': 0, 'facing': 1}, 'enabled': True, 'sound': True, 'reducedMotion': False, 'audioStatus': 'suspended'}, 'trail': 3, 'targetTrail': 30, 'contactEvents': [{'start_ms': 360, 'observed_ms': 366.66666666666674, 'point': {'x': 213, 'y': 299}, 'contact': False}], 'status': '우편 획득! 앞의 장벽을 SPACE로 타격하세요.'}",
+  "export_files": {
+    "index.html": "08f3d67c7f530809db629fa8680cdd1a0732a36d02223ca99954651cb69c8308",
+    "provenance.json": "a058fcd5a73a25e00de43f02622495178484642a69f2cc3d77fe25cd5a901504",
+    "engine-export.json": "4e9021a469f27e2c23682e39c7be89484b772b1334ab339ba6c905759a18b62d",
+    "game.json": "42e843d7227d242d0efc622eba3a6e6970d7d534f65441d4ac58b87010eabc0a",
+    "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+    "timing.mjs": "04d429d3450104c52f6e01cfa0f0383f4993d1b040ea2bf91961b446494d4abe",
+    "style.css": "98179ad842492f107f2050811062f5a4feded8f1b28b26e752154e1a27b12722",
+    "game.mjs": "17635004017c922d1f046704ddd877db9fd4fc74785e7c0b15fb8e8932e4e370",
+    "trial.mjs": "ba023c0d40511b74581138876c201b9d84d91288f545ebfcf527e1ab0ba56450",
+    "cue-sheets.mjs": "211f8938337f3d928ffa3390ef04b0aa28baf2a6d39546c2a55e00740020d067",
+    "vendor/PHASER-BUNDLED-NOTICES.txt": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "vendor/EVENTEMITTER3-LICENSE.txt": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "vendor/phaser.min.js": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7",
+    "vendor/PHASER-LICENSE.txt": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "products/0/fx_impact/sheet.json": "a20617efb404cd3722f25dd03b9b73996ffbd5771f365603dcbef5bef1aef316",
+    "products/0/fx_impact/sheet.png": "869d2c3e7b5b00b23b4755798ebf4cf77b0b00d58a3f2a39c80bba2a1c5d5220",
+    "products/0/fx_impact/effect.json": "ab0c0d3f9a5fdee35485b5fc5a7bdcb88f7e02b2817f5a023d1940cf329bfc44",
+    "products/0/fx_land/sheet.json": "aa274daee0e32abdbdfd43d1721b93129b8e6535f61c8b93ad44f47f7fcd7abb",
+    "products/0/fx_land/sheet.png": "a6a802401110bde4c2f92ca3c3a2c885789fd0609e1b30ce9d16cc1de67edfb0",
+    "products/0/fx_land/effect.json": "5d71692d2cd7a78cc954f3349f2459c6c7a7d480e6cd34f5ddc1e3a6563a0076",
+    "products/0/fx_slash/sheet.json": "36824cd75af56a80beaa8f51ed8d86d426c0c241812bfedf3d3e275859365a2e",
+    "products/0/fx_slash/sheet.png": "edd1f9668cb83f8ea4789bec07eb1d5ca592855d83d77d1293a348c56662ca1a",
+    "products/0/fx_slash/effect.json": "25a57b5989750eb5e70aae414fe9e2625066cd3e473f85c184d214fa382b39af",
+    "products/0/fx_step/sheet.json": "40a75595bd957240bbd8720c7ea5b5cb8a800a19f39eed035f47764d689759a2",
+    "products/0/fx_step/sheet.png": "9f1cb479499c41b059f4930f4330b27ed9425a41e4f95c46fdc8a54ff5998f38",
+    "products/0/fx_step/effect.json": "60a94a7736c6c76c206a2863143a942052b41785e6e14f4a4e3e0630a455c145",
+    "products/0/fx_confirm/sheet.json": "773a02afd59d10364fc548195f2e86436c433de6addd0173f7b9fe8053e4ca2c",
+    "products/0/fx_confirm/sheet.png": "561e1b1c4679b5b5497a8eded1954ee1c1b1bb3af73776f7215b30e59daacec5",
+    "products/0/fx_confirm/effect.json": "5259059564a698373d4d37147b42a1bae829cdd0cb851a175b3ba0c53d1f50be",
+    "products/0/fx_pickup/sheet.json": "3826f9c49fb6002ed3cb066c695282f301f9cba27431da50e01c77b640fa839f",
+    "products/0/fx_pickup/sheet.png": "73a9e655b854d548c92715cc183a8563bb5e76ff1717a32c9171968151d0e0a9",
+    "products/0/fx_pickup/effect.json": "0f784457842fb311ecb9af2549640a9865139df01c84246d6ad0c92ea258d7f4",
+    "products/0/fx_deny/sheet.json": "2e646621e5511676ddffe479413b235a7eb35ce87b22a5f9054cb62cc7e062cf",
+    "products/0/fx_deny/sheet.png": "7975ad2deca45f2c0d96179ad2418f629c45a80abb57ef0c0355b3b629f2f168",
+    "products/0/fx_deny/effect.json": "6cbd4f136a1cd245f189b0f1d95b30b4426c7339a15d3b53ff4d8f261111dcbf",
+    "products/0/hero/credits.json": "efb8b81be3dfc4a33b32ab5eb317b473ce6d37a1f9e520514b7d022981bf62fd",
+    "products/0/hero/action-set.json": "226752f339ecf5cc41e2010d204b63a7c4d25d383b6165cca810e79dbfc0b616",
+    "products/0/hero/atlas.png": "5a5fc5064a240d9ebaf24ec462bde98984d504c47087fa3497217dc0352b48a3"
+  }
+}

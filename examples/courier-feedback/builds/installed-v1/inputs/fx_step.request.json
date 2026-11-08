@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "preset": "step",
+  "size": 48,
+  "palette": [
+    "#977654",
+    "#e6bf85",
+    "#fff0b9"
+  ],
+  "seed": 81
+}

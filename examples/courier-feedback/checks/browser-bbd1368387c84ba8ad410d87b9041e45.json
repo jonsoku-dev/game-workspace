@@ -1,0 +1,3483 @@
+{
+  "schema_version": 1,
+  "run_id": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:run:6b1ed8e11881401aa1025317b9a121cf",
+  "runtime_sha256": "f13ee3d0a34c73513f81a91e9dd8258d328c44016d7aeab6aece5e7e40aed39d",
+  "export_dir": "play/installed-v1",
+  "export_hashes": {
+    "cue-sheets.mjs": "211f8938337f3d928ffa3390ef04b0aa28baf2a6d39546c2a55e00740020d067",
+    "engine-export.json": "4e9021a469f27e2c23682e39c7be89484b772b1334ab339ba6c905759a18b62d",
+    "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+    "game.json": "42e843d7227d242d0efc622eba3a6e6970d7d534f65441d4ac58b87010eabc0a",
+    "game.mjs": "17635004017c922d1f046704ddd877db9fd4fc74785e7c0b15fb8e8932e4e370",
+    "index.html": "08f3d67c7f530809db629fa8680cdd1a0732a36d02223ca99954651cb69c8308",
+    "products/0/fx_confirm/effect.json": "5259059564a698373d4d37147b42a1bae829cdd0cb851a175b3ba0c53d1f50be",
+    "products/0/fx_confirm/sheet.json": "773a02afd59d10364fc548195f2e86436c433de6addd0173f7b9fe8053e4ca2c",
+    "products/0/fx_confirm/sheet.png": "561e1b1c4679b5b5497a8eded1954ee1c1b1bb3af73776f7215b30e59daacec5",
+    "products/0/fx_deny/effect.json": "6cbd4f136a1cd245f189b0f1d95b30b4426c7339a15d3b53ff4d8f261111dcbf",
+    "products/0/fx_deny/sheet.json": "2e646621e5511676ddffe479413b235a7eb35ce87b22a5f9054cb62cc7e062cf",
+    "products/0/fx_deny/sheet.png": "7975ad2deca45f2c0d96179ad2418f629c45a80abb57ef0c0355b3b629f2f168",
+    "products/0/fx_impact/effect.json": "ab0c0d3f9a5fdee35485b5fc5a7bdcb88f7e02b2817f5a023d1940cf329bfc44",
+    "products/0/fx_impact/sheet.json": "a20617efb404cd3722f25dd03b9b73996ffbd5771f365603dcbef5bef1aef316",
+    "products/0/fx_impact/sheet.png": "869d2c3e7b5b00b23b4755798ebf4cf77b0b00d58a3f2a39c80bba2a1c5d5220",
+    "products/0/fx_land/effect.json": "5d71692d2cd7a78cc954f3349f2459c6c7a7d480e6cd34f5ddc1e3a6563a0076",
+    "products/0/fx_land/sheet.json": "aa274daee0e32abdbdfd43d1721b93129b8e6535f61c8b93ad44f47f7fcd7abb",
+    "products/0/fx_land/sheet.png": "a6a802401110bde4c2f92ca3c3a2c885789fd0609e1b30ce9d16cc1de67edfb0",
+    "products/0/fx_pickup/effect.json": "0f784457842fb311ecb9af2549640a9865139df01c84246d6ad0c92ea258d7f4",
+    "products/0/fx_pickup/sheet.json": "3826f9c49fb6002ed3cb066c695282f301f9cba27431da50e01c77b640fa839f",
+    "products/0/fx_pickup/sheet.png": "73a9e655b854d548c92715cc183a8563bb5e76ff1717a32c9171968151d0e0a9",
+    "products/0/fx_slash/effect.json": "25a57b5989750eb5e70aae414fe9e2625066cd3e473f85c184d214fa382b39af",
+    "products/0/fx_slash/sheet.json": "36824cd75af56a80beaa8f51ed8d86d426c0c241812bfedf3d3e275859365a2e",
+    "products/0/fx_slash/sheet.png": "edd1f9668cb83f8ea4789bec07eb1d5ca592855d83d77d1293a348c56662ca1a",
+    "products/0/fx_step/effect.json": "60a94a7736c6c76c206a2863143a942052b41785e6e14f4a4e3e0630a455c145",
+    "products/0/fx_step/sheet.json": "40a75595bd957240bbd8720c7ea5b5cb8a800a19f39eed035f47764d689759a2",
+    "products/0/fx_step/sheet.png": "9f1cb479499c41b059f4930f4330b27ed9425a41e4f95c46fdc8a54ff5998f38",
+    "products/0/hero/action-set.json": "226752f339ecf5cc41e2010d204b63a7c4d25d383b6165cca810e79dbfc0b616",
+    "products/0/hero/atlas.png": "5a5fc5064a240d9ebaf24ec462bde98984d504c47087fa3497217dc0352b48a3",
+    "products/0/hero/credits.json": "efb8b81be3dfc4a33b32ab5eb317b473ce6d37a1f9e520514b7d022981bf62fd",
+    "provenance.json": "a058fcd5a73a25e00de43f02622495178484642a69f2cc3d77fe25cd5a901504",
+    "style.css": "98179ad842492f107f2050811062f5a4feded8f1b28b26e752154e1a27b12722",
+    "timing.mjs": "04d429d3450104c52f6e01cfa0f0383f4993d1b040ea2bf91961b446494d4abe",
+    "trial.mjs": "ba023c0d40511b74581138876c201b9d84d91288f545ebfcf527e1ab0ba56450",
+    "vendor/EVENTEMITTER3-LICENSE.txt": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "vendor/PHASER-BUNDLED-NOTICES.txt": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "vendor/PHASER-LICENSE.txt": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "vendor/phaser.min.js": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7"
+  },
+  "driver": "stagehand-mcp",
+  "criteria": {
+    "move_stop": {
+      "pass": true
+    },
+    "jump_land": {
+      "pass": true
+    },
+    "collect_once": {
+      "pass": true
+    },
+    "denied": {
+      "pass": true
+    },
+    "out_of_range_miss": {
+      "pass": true
+    },
+    "contact_timing": {
+      "pass": true
+    },
+    "target_hp": {
+      "pass": true
+    },
+    "finisher": {
+      "pass": true
+    },
+    "win": {
+      "pass": true
+    },
+    "reset": {
+      "pass": true
+    },
+    "pause": {
+      "pass": true
+    }
+  },
+  "observations": {
+    "start": {
+      "x": 150,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 199.99999999999997,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 0,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 199.99999999999997,
+      "cueEvents": [],
+      "contactEvents": [],
+      "status": "\ud2c8\uc744 \ub6f0\uc5b4\ub118\uace0 \u2192 \uc6b0\ud3b8 \uc218\uc9d1 \u2192 \ub098\ubb34 \uc7a5\ubcbd \ud0c0\uaca9 \u2192 \uc6b0\uccb4\ud1b5\uc5d0 E"
+    },
+    "denied": {
+      "x": 150,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 249.99999999999994,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 0,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 249.99999999999994,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        }
+      ],
+      "contactEvents": [],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "miss": {
+      "x": 150,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 716.6666666666664,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 0,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "attack",
+      "actor_elapsed_ms": 433.3333333333335,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "pause": {
+      "x": 150,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": true,
+      "clock": 1166.6666666666663,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 0,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 50,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "paused_later": {
+      "x": 150,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": true,
+      "clock": 1166.6666666666663,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 0,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 50,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "resumed": {
+      "x": 150,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 1183.333333333333,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 0,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 66.66666666666667,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "move": {
+      "x": 310,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 2100.000000000003,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 2000.0000000000034,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 16.666666666666668,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1333.3333333333337,
+          "x": 174,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1366.6666666666672,
+          "x": 178,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1416.6666666666674,
+          "x": 190,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1466.6666666666677,
+          "x": 198,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1500.0000000000011,
+          "x": 202,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1600.0000000000016,
+          "x": 222,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1750.0000000000023,
+          "x": 250,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1783.3333333333358,
+          "x": 254,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1816.6666666666692,
+          "x": 262,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1883.3333333333362,
+          "x": 274,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1916.6666666666697,
+          "x": 278,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 2000.0000000000034,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2016.6666666666702,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 2050.0000000000036,
+          "x": 302,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2100.000000000003,
+          "x": 310,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "stop": {
+      "x": 310,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 2266.6666666666683,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 2000.0000000000034,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 183.33333333333331,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1333.3333333333337,
+          "x": 174,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1366.6666666666672,
+          "x": 178,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1416.6666666666674,
+          "x": 190,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1466.6666666666677,
+          "x": 198,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1500.0000000000011,
+          "x": 202,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1600.0000000000016,
+          "x": 222,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1750.0000000000023,
+          "x": 250,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1783.3333333333358,
+          "x": 254,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1816.6666666666692,
+          "x": 262,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1883.3333333333362,
+          "x": 274,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1916.6666666666697,
+          "x": 278,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 2000.0000000000034,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2016.6666666666702,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 2050.0000000000036,
+          "x": 302,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2100.000000000003,
+          "x": 310,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "jump": {
+      "x": 310,
+      "y": 345.02777777777777,
+      "vy": -0.6583333333333333,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 2316.666666666668,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 2000.0000000000034,
+      "interactHeld": false,
+      "jumpHeld": true,
+      "action": "jump",
+      "actor_elapsed_ms": 16.666666666666668,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1333.3333333333337,
+          "x": 174,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1366.6666666666672,
+          "x": 178,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1416.6666666666674,
+          "x": 190,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1466.6666666666677,
+          "x": 198,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1500.0000000000011,
+          "x": 202,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1600.0000000000016,
+          "x": 222,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1750.0000000000023,
+          "x": 250,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1783.3333333333358,
+          "x": 254,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1816.6666666666692,
+          "x": 262,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1883.3333333333362,
+          "x": 274,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1916.6666666666697,
+          "x": 278,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 2000.0000000000034,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2016.6666666666702,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 2050.0000000000036,
+          "x": 302,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2100.000000000003,
+          "x": 310,
+          "y": 356
+        },
+        {
+          "event": "jump",
+          "clock": 2316.666666666668,
+          "x": 310,
+          "y": 345.02777777777777
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "land": {
+      "x": 470,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 3083.3333333333276,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 3033.333333333328,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 33.333333333333336,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1333.3333333333337,
+          "x": 174,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1366.6666666666672,
+          "x": 178,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1416.6666666666674,
+          "x": 190,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1466.6666666666677,
+          "x": 198,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1500.0000000000011,
+          "x": 202,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1600.0000000000016,
+          "x": 222,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1750.0000000000023,
+          "x": 250,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1783.3333333333358,
+          "x": 254,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1816.6666666666692,
+          "x": 262,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1883.3333333333362,
+          "x": 274,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1916.6666666666697,
+          "x": 278,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 2000.0000000000034,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2016.6666666666702,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 2050.0000000000036,
+          "x": 302,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2100.000000000003,
+          "x": 310,
+          "y": 356
+        },
+        {
+          "event": "jump",
+          "clock": 2316.666666666668,
+          "x": 310,
+          "y": 345.02777777777777
+        },
+        {
+          "event": "move",
+          "clock": 2366.6666666666674,
+          "x": 314,
+          "y": 315.2777777777777
+        },
+        {
+          "event": "stop",
+          "clock": 2999.999999999995,
+          "x": 462,
+          "y": 349.58333333333326
+        },
+        {
+          "event": "land",
+          "clock": 3016.6666666666615,
+          "x": 462,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3066.666666666661,
+          "x": 470,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8\uacfc \uc7a5\ubcbd \uc81c\uac70\uac00 \ud544\uc694\ud574\uc694. \uc6b0\uccb4\ud1b5 \uac00\uae4c\uc774\uc5d0\uc11c E\ub97c \ub204\ub974\uc138\uc694."
+    },
+    "collect": {
+      "x": 514,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": true,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 3349.999999999992,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 3216.6666666666597,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 33.333333333333336,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1333.3333333333337,
+          "x": 174,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1366.6666666666672,
+          "x": 178,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1416.6666666666674,
+          "x": 190,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1466.6666666666677,
+          "x": 198,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1500.0000000000011,
+          "x": 202,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1600.0000000000016,
+          "x": 222,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1750.0000000000023,
+          "x": 250,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1783.3333333333358,
+          "x": 254,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1816.6666666666692,
+          "x": 262,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1883.3333333333362,
+          "x": 274,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1916.6666666666697,
+          "x": 278,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 2000.0000000000034,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2016.6666666666702,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 2050.0000000000036,
+          "x": 302,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2100.000000000003,
+          "x": 310,
+          "y": 356
+        },
+        {
+          "event": "jump",
+          "clock": 2316.666666666668,
+          "x": 310,
+          "y": 345.02777777777777
+        },
+        {
+          "event": "move",
+          "clock": 2366.6666666666674,
+          "x": 314,
+          "y": 315.2777777777777
+        },
+        {
+          "event": "stop",
+          "clock": 2999.999999999995,
+          "x": 462,
+          "y": 349.58333333333326
+        },
+        {
+          "event": "land",
+          "clock": 3016.6666666666615,
+          "x": 462,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3066.666666666661,
+          "x": 470,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3133.333333333327,
+          "x": 474,
+          "y": 356
+        },
+        {
+          "event": "collect",
+          "clock": 3149.9999999999936,
+          "x": 478,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3216.6666666666597,
+          "x": 494,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3249.9999999999927,
+          "x": 498,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3266.6666666666592,
+          "x": 502,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3333.3333333333253,
+          "x": 514,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        }
+      ],
+      "status": "\uc6b0\ud3b8 \ud68d\ub4dd! \uc55e\uc758 \uc7a5\ubcbd\uc744 SPACE\ub85c \ud0c0\uaca9\ud558\uc138\uc694."
+    },
+    "hits": [
+      {
+        "x": 562,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 20,
+        "lastDamage": 10,
+        "package": true,
+        "hits": 1,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 4066.666666666652,
+        "cooldown": 0,
+        "freeze": 66.66666666666667,
+        "combo": 1,
+        "lastHit": 4066.666666666652,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 3583.333333333323,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "attack",
+        "actor_elapsed_ms": 366.66666666666674,
+        "cueEvents": [
+          {
+            "event": "denied",
+            "clock": 233.3333333333333,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 283.3333333333333,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "miss",
+            "clock": 649.9999999999999,
+            "x": 213,
+            "y": 299
+          },
+          {
+            "event": "pause",
+            "clock": 1166.6666666666663,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "resume",
+            "clock": 1166.6666666666663,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1233.3333333333333,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1233.3333333333333,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1333.3333333333337,
+            "x": 174,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1366.6666666666672,
+            "x": 178,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1416.6666666666674,
+            "x": 190,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1466.6666666666677,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1500.0000000000011,
+            "x": 202,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1600.0000000000016,
+            "x": 222,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1633.333333333335,
+            "x": 226,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1633.333333333335,
+            "x": 226,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1750.0000000000023,
+            "x": 250,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1783.3333333333358,
+            "x": 254,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1816.6666666666692,
+            "x": 262,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1883.3333333333362,
+            "x": 274,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1916.6666666666697,
+            "x": 278,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 2000.0000000000034,
+            "x": 298,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 2016.6666666666702,
+            "x": 298,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 2050.0000000000036,
+            "x": 302,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 2100.000000000003,
+            "x": 310,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 2316.666666666668,
+            "x": 310,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 2366.6666666666674,
+            "x": 314,
+            "y": 315.2777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 2999.999999999995,
+            "x": 462,
+            "y": 349.58333333333326
+          },
+          {
+            "event": "land",
+            "clock": 3016.6666666666615,
+            "x": 462,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3033.333333333328,
+            "x": 466,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3033.333333333328,
+            "x": 466,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3066.666666666661,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3133.333333333327,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 3149.9999999999936,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3216.6666666666597,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3249.9999999999927,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3266.6666666666592,
+            "x": 502,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3333.3333333333253,
+            "x": 514,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3399.9999999999914,
+            "x": 518,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3399.9999999999914,
+            "x": 518,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3499.9999999999905,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3533.3333333333235,
+            "x": 542,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3583.333333333323,
+            "x": 554,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3633.3333333333226,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 3699.9999999999886,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "hit",
+            "clock": 4066.666666666652,
+            "x": 650,
+            "y": 330
+          }
+        ],
+        "contactEvents": [
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 213,
+              "y": 299
+            },
+            "contact": false
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 625,
+              "y": 299
+            },
+            "contact": true
+          }
+        ],
+        "status": "\uc6b0\ud3b8 \ud68d\ub4dd! \uc55e\uc758 \uc7a5\ubcbd\uc744 SPACE\ub85c \ud0c0\uaca9\ud558\uc138\uc694."
+      },
+      {
+        "x": 562,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 5,
+        "lastDamage": 15,
+        "package": true,
+        "hits": 2,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 5000.000000000002,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 2,
+        "lastHit": 5000.000000000002,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 3583.333333333323,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "attack",
+        "actor_elapsed_ms": 366.66666666666674,
+        "cueEvents": [
+          {
+            "event": "denied",
+            "clock": 233.3333333333333,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 283.3333333333333,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "miss",
+            "clock": 649.9999999999999,
+            "x": 213,
+            "y": 299
+          },
+          {
+            "event": "pause",
+            "clock": 1166.6666666666663,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "resume",
+            "clock": 1166.6666666666663,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1233.3333333333333,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1233.3333333333333,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1333.3333333333337,
+            "x": 174,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1366.6666666666672,
+            "x": 178,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1416.6666666666674,
+            "x": 190,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1466.6666666666677,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1500.0000000000011,
+            "x": 202,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1600.0000000000016,
+            "x": 222,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1633.333333333335,
+            "x": 226,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1633.333333333335,
+            "x": 226,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1750.0000000000023,
+            "x": 250,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1783.3333333333358,
+            "x": 254,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1816.6666666666692,
+            "x": 262,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1883.3333333333362,
+            "x": 274,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1916.6666666666697,
+            "x": 278,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 2000.0000000000034,
+            "x": 298,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 2016.6666666666702,
+            "x": 298,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 2050.0000000000036,
+            "x": 302,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 2100.000000000003,
+            "x": 310,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 2316.666666666668,
+            "x": 310,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 2366.6666666666674,
+            "x": 314,
+            "y": 315.2777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 2999.999999999995,
+            "x": 462,
+            "y": 349.58333333333326
+          },
+          {
+            "event": "land",
+            "clock": 3016.6666666666615,
+            "x": 462,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3033.333333333328,
+            "x": 466,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3033.333333333328,
+            "x": 466,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3066.666666666661,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3133.333333333327,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 3149.9999999999936,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3216.6666666666597,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3249.9999999999927,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3266.6666666666592,
+            "x": 502,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3333.3333333333253,
+            "x": 514,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3399.9999999999914,
+            "x": 518,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3399.9999999999914,
+            "x": 518,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3499.9999999999905,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3533.3333333333235,
+            "x": 542,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3583.333333333323,
+            "x": 554,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3633.3333333333226,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 3699.9999999999886,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "hit",
+            "clock": 4066.666666666652,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 4633.3333333333285,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "crit",
+            "clock": 5000.000000000002,
+            "x": 650,
+            "y": 330
+          }
+        ],
+        "contactEvents": [
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 213,
+              "y": 299
+            },
+            "contact": false
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 625,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 625,
+              "y": 299
+            },
+            "contact": true
+          }
+        ],
+        "status": "\uc6b0\ud3b8 \ud68d\ub4dd! \uc55e\uc758 \uc7a5\ubcbd\uc744 SPACE\ub85c \ud0c0\uaca9\ud558\uc138\uc694."
+      },
+      {
+        "x": 562,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 0,
+        "lastDamage": 5,
+        "package": true,
+        "hits": 3,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 5866.666666666684,
+        "cooldown": 0,
+        "freeze": 16.66666666666666,
+        "combo": 3,
+        "lastHit": 5866.666666666684,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 3583.333333333323,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "attack",
+        "actor_elapsed_ms": 366.66666666666674,
+        "cueEvents": [
+          {
+            "event": "denied",
+            "clock": 233.3333333333333,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 283.3333333333333,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "miss",
+            "clock": 649.9999999999999,
+            "x": 213,
+            "y": 299
+          },
+          {
+            "event": "pause",
+            "clock": 1166.6666666666663,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "resume",
+            "clock": 1166.6666666666663,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1233.3333333333333,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1233.3333333333333,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1333.3333333333337,
+            "x": 174,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1366.6666666666672,
+            "x": 178,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1416.6666666666674,
+            "x": 190,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1466.6666666666677,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1500.0000000000011,
+            "x": 202,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1600.0000000000016,
+            "x": 222,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1633.333333333335,
+            "x": 226,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1633.333333333335,
+            "x": 226,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1750.0000000000023,
+            "x": 250,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1783.3333333333358,
+            "x": 254,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 1816.6666666666692,
+            "x": 262,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 1883.3333333333362,
+            "x": 274,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 1916.6666666666697,
+            "x": 278,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 2000.0000000000034,
+            "x": 298,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 2016.6666666666702,
+            "x": 298,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 2050.0000000000036,
+            "x": 302,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 2100.000000000003,
+            "x": 310,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 2316.666666666668,
+            "x": 310,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 2366.6666666666674,
+            "x": 314,
+            "y": 315.2777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 2999.999999999995,
+            "x": 462,
+            "y": 349.58333333333326
+          },
+          {
+            "event": "land",
+            "clock": 3016.6666666666615,
+            "x": 462,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3033.333333333328,
+            "x": 466,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3033.333333333328,
+            "x": 466,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3066.666666666661,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3133.333333333327,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 3149.9999999999936,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3216.6666666666597,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3249.9999999999927,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3266.6666666666592,
+            "x": 502,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3333.3333333333253,
+            "x": 514,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3399.9999999999914,
+            "x": 518,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3399.9999999999914,
+            "x": 518,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3499.9999999999905,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3533.3333333333235,
+            "x": 542,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3583.333333333323,
+            "x": 554,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3633.3333333333226,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 3699.9999999999886,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "hit",
+            "clock": 4066.666666666652,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 4633.3333333333285,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "crit",
+            "clock": 5000.000000000002,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 5500.000000000011,
+            "x": 562,
+            "y": 356
+          },
+          {
+            "event": "finisher",
+            "clock": 5866.666666666684,
+            "x": 650,
+            "y": 330
+          }
+        ],
+        "contactEvents": [
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 213,
+              "y": 299
+            },
+            "contact": false
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 625,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 625,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 625,
+              "y": 299
+            },
+            "contact": true
+          }
+        ],
+        "status": "\uae38\uc774 \uc5f4\ub838\uc5b4\uc694! \uc624\ub978\ucabd \uc6b0\uccb4\ud1b5\uc5d0 E\ub85c \ubc30\uc1a1\ud558\uc138\uc694."
+      }
+    ],
+    "finisher": {
+      "x": 562,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 0,
+      "lastDamage": 5,
+      "package": true,
+      "hits": 3,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 6400.000000000027,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 3,
+      "lastHit": 5866.666666666684,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 3583.333333333323,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 66.66666666666667,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1333.3333333333337,
+          "x": 174,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1366.6666666666672,
+          "x": 178,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1416.6666666666674,
+          "x": 190,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1466.6666666666677,
+          "x": 198,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1500.0000000000011,
+          "x": 202,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1600.0000000000016,
+          "x": 222,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1750.0000000000023,
+          "x": 250,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1783.3333333333358,
+          "x": 254,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1816.6666666666692,
+          "x": 262,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1883.3333333333362,
+          "x": 274,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1916.6666666666697,
+          "x": 278,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 2000.0000000000034,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2016.6666666666702,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 2050.0000000000036,
+          "x": 302,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2100.000000000003,
+          "x": 310,
+          "y": 356
+        },
+        {
+          "event": "jump",
+          "clock": 2316.666666666668,
+          "x": 310,
+          "y": 345.02777777777777
+        },
+        {
+          "event": "move",
+          "clock": 2366.6666666666674,
+          "x": 314,
+          "y": 315.2777777777777
+        },
+        {
+          "event": "stop",
+          "clock": 2999.999999999995,
+          "x": 462,
+          "y": 349.58333333333326
+        },
+        {
+          "event": "land",
+          "clock": 3016.6666666666615,
+          "x": 462,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3066.666666666661,
+          "x": 470,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3133.333333333327,
+          "x": 474,
+          "y": 356
+        },
+        {
+          "event": "collect",
+          "clock": 3149.9999999999936,
+          "x": 478,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3216.6666666666597,
+          "x": 494,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3249.9999999999927,
+          "x": 498,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3266.6666666666592,
+          "x": 502,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3333.3333333333253,
+          "x": 514,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3399.9999999999914,
+          "x": 518,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3399.9999999999914,
+          "x": 518,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3499.9999999999905,
+          "x": 538,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3533.3333333333235,
+          "x": 542,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3583.333333333323,
+          "x": 554,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3633.3333333333226,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 3699.9999999999886,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "hit",
+          "clock": 4066.666666666652,
+          "x": 650,
+          "y": 330
+        },
+        {
+          "event": "attack",
+          "clock": 4633.3333333333285,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "crit",
+          "clock": 5000.000000000002,
+          "x": 650,
+          "y": 330
+        },
+        {
+          "event": "attack",
+          "clock": 5500.000000000011,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "finisher",
+          "clock": 5866.666666666684,
+          "x": 650,
+          "y": 330
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        },
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 625,
+            "y": 299
+          },
+          "contact": true
+        },
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 625,
+            "y": 299
+          },
+          "contact": true
+        },
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 625,
+            "y": 299
+          },
+          "contact": true
+        }
+      ],
+      "status": "\uae38\uc774 \uc5f4\ub838\uc5b4\uc694! \uc624\ub978\ucabd \uc6b0\uccb4\ud1b5\uc5d0 E\ub85c \ubc30\uc1a1\ud558\uc138\uc694."
+    },
+    "win": {
+      "x": 838,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 0,
+      "lastDamage": 5,
+      "package": true,
+      "hits": 3,
+      "finished": true,
+      "lost": false,
+      "paused": false,
+      "clock": 7983.333333333389,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 3,
+      "lastHit": 5866.666666666684,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 7750.000000000052,
+      "interactHeld": true,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 66.66666666666667,
+      "cueEvents": [
+        {
+          "event": "denied",
+          "clock": 233.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 283.3333333333333,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "miss",
+          "clock": 649.9999999999999,
+          "x": 213,
+          "y": 299
+        },
+        {
+          "event": "pause",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "resume",
+          "clock": 1166.6666666666663,
+          "x": 150,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1233.3333333333333,
+          "x": 154,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1333.3333333333337,
+          "x": 174,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1366.6666666666672,
+          "x": 178,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1416.6666666666674,
+          "x": 190,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1466.6666666666677,
+          "x": 198,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1500.0000000000011,
+          "x": 202,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1600.0000000000016,
+          "x": 222,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1633.333333333335,
+          "x": 226,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1750.0000000000023,
+          "x": 250,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1783.3333333333358,
+          "x": 254,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 1816.6666666666692,
+          "x": 262,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 1883.3333333333362,
+          "x": 274,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 1916.6666666666697,
+          "x": 278,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 2000.0000000000034,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2016.6666666666702,
+          "x": 298,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 2050.0000000000036,
+          "x": 302,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 2100.000000000003,
+          "x": 310,
+          "y": 356
+        },
+        {
+          "event": "jump",
+          "clock": 2316.666666666668,
+          "x": 310,
+          "y": 345.02777777777777
+        },
+        {
+          "event": "move",
+          "clock": 2366.6666666666674,
+          "x": 314,
+          "y": 315.2777777777777
+        },
+        {
+          "event": "stop",
+          "clock": 2999.999999999995,
+          "x": 462,
+          "y": 349.58333333333326
+        },
+        {
+          "event": "land",
+          "clock": 3016.6666666666615,
+          "x": 462,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3033.333333333328,
+          "x": 466,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3066.666666666661,
+          "x": 470,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3133.333333333327,
+          "x": 474,
+          "y": 356
+        },
+        {
+          "event": "collect",
+          "clock": 3149.9999999999936,
+          "x": 478,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3216.6666666666597,
+          "x": 494,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3249.9999999999927,
+          "x": 498,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3266.6666666666592,
+          "x": 502,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3333.3333333333253,
+          "x": 514,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3399.9999999999914,
+          "x": 518,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3399.9999999999914,
+          "x": 518,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3499.9999999999905,
+          "x": 538,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 3533.3333333333235,
+          "x": 542,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 3583.333333333323,
+          "x": 554,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 3633.3333333333226,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "attack",
+          "clock": 3699.9999999999886,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "hit",
+          "clock": 4066.666666666652,
+          "x": 650,
+          "y": 330
+        },
+        {
+          "event": "attack",
+          "clock": 4633.3333333333285,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "crit",
+          "clock": 5000.000000000002,
+          "x": 650,
+          "y": 330
+        },
+        {
+          "event": "attack",
+          "clock": 5500.000000000011,
+          "x": 562,
+          "y": 356
+        },
+        {
+          "event": "finisher",
+          "clock": 5866.666666666684,
+          "x": 650,
+          "y": 330
+        },
+        {
+          "event": "move",
+          "clock": 6433.333333333361,
+          "x": 566,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 6433.333333333361,
+          "x": 566,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 6550.00000000003,
+          "x": 590,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 6583.333333333364,
+          "x": 594,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 6616.666666666698,
+          "x": 602,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 6683.333333333366,
+          "x": 614,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 6716.6666666667,
+          "x": 618,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 6800.000000000035,
+          "x": 638,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 6816.6666666667015,
+          "x": 638,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 6850.0000000000355,
+          "x": 642,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 6950.000000000037,
+          "x": 662,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 6983.333333333371,
+          "x": 666,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 6983.333333333371,
+          "x": 666,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 7083.333333333373,
+          "x": 686,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 7116.666666666707,
+          "x": 690,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 7166.666666666708,
+          "x": 702,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 7216.666666666709,
+          "x": 710,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 7250.000000000043,
+          "x": 714,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 7350.000000000045,
+          "x": 734,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 7383.3333333333785,
+          "x": 738,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 7383.3333333333785,
+          "x": 738,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 7500.000000000047,
+          "x": 762,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 7550.000000000048,
+          "x": 766,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 7566.666666666715,
+          "x": 770,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 7650.00000000005,
+          "x": 786,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 7683.333333333384,
+          "x": 790,
+          "y": 356
+        },
+        {
+          "event": "step",
+          "clock": 7750.000000000052,
+          "x": 806,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 7800.000000000053,
+          "x": 814,
+          "y": 356
+        },
+        {
+          "event": "move",
+          "clock": 7833.333333333387,
+          "x": 818,
+          "y": 356
+        },
+        {
+          "event": "stop",
+          "clock": 7933.3333333333885,
+          "x": 838,
+          "y": 356
+        },
+        {
+          "event": "interact",
+          "clock": 7983.333333333389,
+          "x": 838,
+          "y": 356
+        },
+        {
+          "event": "win",
+          "clock": 7983.333333333389,
+          "x": 838,
+          "y": 356
+        }
+      ],
+      "contactEvents": [
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 213,
+            "y": 299
+          },
+          "contact": false
+        },
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 625,
+            "y": 299
+          },
+          "contact": true
+        },
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 625,
+            "y": 299
+          },
+          "contact": true
+        },
+        {
+          "start_ms": 360,
+          "observed_ms": 366.66666666666674,
+          "point": {
+            "x": 625,
+            "y": 299
+          },
+          "contact": true
+        }
+      ],
+      "status": "\ubc30\uc1a1 \uc644\ub8cc! R\ub85c \ub2e4\uc2dc \uc2dc\uc791\ud560 \uc218 \uc788\uc5b4\uc694."
+    },
+    "reset": {
+      "x": 150,
+      "y": 356,
+      "vy": 0,
+      "facing": 1,
+      "hp": 3,
+      "targetMaxHP": 30,
+      "targetHP": 30,
+      "lastDamage": 0,
+      "package": false,
+      "hits": 0,
+      "finished": false,
+      "lost": false,
+      "paused": false,
+      "clock": 16.666666666666668,
+      "cooldown": 0,
+      "freeze": 0,
+      "combo": 0,
+      "lastHit": null,
+      "knock": 0,
+      "walking": false,
+      "lastStep": 0,
+      "interactHeld": false,
+      "jumpHeld": false,
+      "action": "idle",
+      "actor_elapsed_ms": 16.666666666666668,
+      "cueEvents": [
+        {
+          "event": "restart",
+          "clock": 0,
+          "x": 150,
+          "y": 356
+        }
+      ],
+      "contactEvents": [],
+      "status": "\ud2c8\uc744 \ub6f0\uc5b4\ub118\uace0 \u2192 \uc6b0\ud3b8 \uc218\uc9d1 \u2192 \ub098\ubb34 \uc7a5\ubcbd \ud0c0\uaca9 \u2192 \uc6b0\uccb4\ud1b5\uc5d0 E"
+    }
+  },
+  "passed": true,
+  "browser_observed_hashes": {
+    "cue-sheets.mjs": "211f8938337f3d928ffa3390ef04b0aa28baf2a6d39546c2a55e00740020d067",
+    "engine-export.json": "4e9021a469f27e2c23682e39c7be89484b772b1334ab339ba6c905759a18b62d",
+    "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+    "game.json": "42e843d7227d242d0efc622eba3a6e6970d7d534f65441d4ac58b87010eabc0a",
+    "game.mjs": "17635004017c922d1f046704ddd877db9fd4fc74785e7c0b15fb8e8932e4e370",
+    "index.html": "08f3d67c7f530809db629fa8680cdd1a0732a36d02223ca99954651cb69c8308",
+    "products/0/fx_confirm/effect.json": "5259059564a698373d4d37147b42a1bae829cdd0cb851a175b3ba0c53d1f50be",
+    "products/0/fx_confirm/sheet.json": "773a02afd59d10364fc548195f2e86436c433de6addd0173f7b9fe8053e4ca2c",
+    "products/0/fx_confirm/sheet.png": "561e1b1c4679b5b5497a8eded1954ee1c1b1bb3af73776f7215b30e59daacec5",
+    "products/0/fx_deny/effect.json": "6cbd4f136a1cd245f189b0f1d95b30b4426c7339a15d3b53ff4d8f261111dcbf",
+    "products/0/fx_deny/sheet.json": "2e646621e5511676ddffe479413b235a7eb35ce87b22a5f9054cb62cc7e062cf",
+    "products/0/fx_deny/sheet.png": "7975ad2deca45f2c0d96179ad2418f629c45a80abb57ef0c0355b3b629f2f168",
+    "products/0/fx_impact/effect.json": "ab0c0d3f9a5fdee35485b5fc5a7bdcb88f7e02b2817f5a023d1940cf329bfc44",
+    "products/0/fx_impact/sheet.json": "a20617efb404cd3722f25dd03b9b73996ffbd5771f365603dcbef5bef1aef316",
+    "products/0/fx_impact/sheet.png": "869d2c3e7b5b00b23b4755798ebf4cf77b0b00d58a3f2a39c80bba2a1c5d5220",
+    "products/0/fx_land/effect.json": "5d71692d2cd7a78cc954f3349f2459c6c7a7d480e6cd34f5ddc1e3a6563a0076",
+    "products/0/fx_land/sheet.json": "aa274daee0e32abdbdfd43d1721b93129b8e6535f61c8b93ad44f47f7fcd7abb",
+    "products/0/fx_land/sheet.png": "a6a802401110bde4c2f92ca3c3a2c885789fd0609e1b30ce9d16cc1de67edfb0",
+    "products/0/fx_pickup/effect.json": "0f784457842fb311ecb9af2549640a9865139df01c84246d6ad0c92ea258d7f4",
+    "products/0/fx_pickup/sheet.json": "3826f9c49fb6002ed3cb066c695282f301f9cba27431da50e01c77b640fa839f",
+    "products/0/fx_pickup/sheet.png": "73a9e655b854d548c92715cc183a8563bb5e76ff1717a32c9171968151d0e0a9",
+    "products/0/fx_slash/effect.json": "25a57b5989750eb5e70aae414fe9e2625066cd3e473f85c184d214fa382b39af",
+    "products/0/fx_slash/sheet.json": "36824cd75af56a80beaa8f51ed8d86d426c0c241812bfedf3d3e275859365a2e",
+    "products/0/fx_slash/sheet.png": "edd1f9668cb83f8ea4789bec07eb1d5ca592855d83d77d1293a348c56662ca1a",
+    "products/0/fx_step/effect.json": "60a94a7736c6c76c206a2863143a942052b41785e6e14f4a4e3e0630a455c145",
+    "products/0/fx_step/sheet.json": "40a75595bd957240bbd8720c7ea5b5cb8a800a19f39eed035f47764d689759a2",
+    "products/0/fx_step/sheet.png": "9f1cb479499c41b059f4930f4330b27ed9425a41e4f95c46fdc8a54ff5998f38",
+    "products/0/hero/action-set.json": "226752f339ecf5cc41e2010d204b63a7c4d25d383b6165cca810e79dbfc0b616",
+    "products/0/hero/atlas.png": "5a5fc5064a240d9ebaf24ec462bde98984d504c47087fa3497217dc0352b48a3",
+    "products/0/hero/credits.json": "efb8b81be3dfc4a33b32ab5eb317b473ce6d37a1f9e520514b7d022981bf62fd",
+    "provenance.json": "a058fcd5a73a25e00de43f02622495178484642a69f2cc3d77fe25cd5a901504",
+    "style.css": "98179ad842492f107f2050811062f5a4feded8f1b28b26e752154e1a27b12722",
+    "timing.mjs": "04d429d3450104c52f6e01cfa0f0383f4993d1b040ea2bf91961b446494d4abe",
+    "trial.mjs": "ba023c0d40511b74581138876c201b9d84d91288f545ebfcf527e1ab0ba56450",
+    "vendor/EVENTEMITTER3-LICENSE.txt": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "vendor/PHASER-BUNDLED-NOTICES.txt": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "vendor/PHASER-LICENSE.txt": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "vendor/phaser.min.js": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7"
+  },
+  "export_activity": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:export-ae8e5307313441bbbc2f9ed69292743f",
+  "browser_activity": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:browser-bbd1368387c84ba8ad410d87b9041e45"
+}

@@ -1,0 +1,19 @@
+{
+  "installed_studio": "0.9.0",
+  "installed_pixel": "0.8.0",
+  "run_id": "6b1ed8e11881401aa1025317b9a121cf",
+  "normal_report": "checks/browser-bbd1368387c84ba8ad410d87b9041e45.json",
+  "normal_reverified": true,
+  "custom_report": "evidence/browser-installed-v2/browser.json",
+  "custom_passed": true,
+  "preview_url": "http://127.0.0.1:52993/",
+  "runtime_sha256": "f13ee3d0a34c73513f81a91e9dd8258d328c44016d7aeab6aece5e7e40aed39d",
+  "receipt_sha256": "4e9021a469f27e2c23682e39c7be89484b772b1334ab339ba6c905759a18b62d",
+  "source_only_reports": "browser-source-preflight*",
+  "initial_installed_qa": "browser-installed-v1 interrupted by real blur auto-pause during concurrent browser driving",
+  "limits": [
+    "No separate sprint/run mechanic",
+    "No output-device listening acceptance",
+    "User art and game-feel acceptance pending"
+  ]
+}

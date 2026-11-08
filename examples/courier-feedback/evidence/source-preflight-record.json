@@ -1,0 +1,78 @@
+{
+  "id": "source-browser-preflight",
+  "label": "Isolated source build, export and Stagehand trial preflight",
+  "agent": "stagehand-browser",
+  "status": "complete",
+  "used": [],
+  "generated": [
+    {
+      "path": "evidence/source-preflight-build.json",
+      "sha256": "09903f6b6567696249be59f066b8e689e6fa5f500f238aa27f5dac6bfe64a2e8"
+    },
+    {
+      "path": "evidence/source-preflight-export.json",
+      "sha256": "24bf7773134eba42760916f99ce80bc0290125fc538818524d5f3f8323032632"
+    },
+    {
+      "path": "evidence/browser-source-preflight/browser.json",
+      "sha256": "796b3386540a4dd6f23fc4037d0442cc951da4f1e0ec4373ebc7851b2c24b7ec"
+    },
+    {
+      "path": "evidence/browser-source-preflight-2/start-on.jpg",
+      "sha256": "42c661b481b73f15c873978d74b227d0e7cdf784ed26e31fb85612fd2e4fa2ae"
+    },
+    {
+      "path": "evidence/browser-source-preflight-2/browser.json",
+      "sha256": "e55d3113ba188f9759b8a0917aca076802bdd6ed7646e4c9c0cca385f8a011a2"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/lose-on.jpg",
+      "sha256": "769e8987984a51014f4267753040e13f6cdc2c81fef75a8e0d7d919ba6ae8c59"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/start-off.jpg",
+      "sha256": "1e98f4471ca8b124e949de92e8447ae21ac4676b9f07021466d0a585111737cf"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/jump-on.jpg",
+      "sha256": "a90a3ed3a199c39bb169a19e7e1ae0f6c0beb8e1b6ea5dd05865ccfdc048723c"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/hurt-on.jpg",
+      "sha256": "87007c986b618bfd59d289dbdcaf1301ffe65766cad7c66ad3d2d1fa528e87fa"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/finisher-on.jpg",
+      "sha256": "66ae5eac6f078c339bfb32f8c774d71683ec248a9531e9b60bca2e5e019429f2"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/mobile.jpg",
+      "sha256": "b2226327b699609f6c7697ed62de11d6ec1b38f1f2430e804912bf2b18f440a2"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/start-on.jpg",
+      "sha256": "42c661b481b73f15c873978d74b227d0e7cdf784ed26e31fb85612fd2e4fa2ae"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/hit-on.jpg",
+      "sha256": "7d326149f984ec52d45c879add2b70bb941d7553672fb57404759d0a0aa38843"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/win-on.jpg",
+      "sha256": "83ed595f03e2a310740d9b8c6917ef871e9826121b4341f173338a85b3a066dd"
+    },
+    {
+      "path": "evidence/browser-source-preflight-3/browser.json",
+      "sha256": "a06ff1265dd1fbc6250f441af92c95070d15151e32499673645fd70ad2ead1e4"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "checks": [
+      "Source-only temporary project built and exported normally",
+      "Initial QA harness failures retained separately from successful attempt3",
+      "Attempt3 actual normal controls pass on/off win, miss, denied, collect-once, crit, finisher, pause, restart, hurt/lose and mobile",
+      "Source-only evidence; does not prove installed0.9.0 or listening acceptance"
+    ]
+  }
+}

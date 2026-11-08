@@ -1,0 +1,235 @@
+[
+  {
+    "scene": {
+      "schema_version": 1,
+      "status": "ready",
+      "id": "forest-camp",
+      "brief": {
+        "title": "Lantern Embers",
+        "goal": "Observe a 3D camp lantern with gently rising embers above its cap.",
+        "controls": "Automatically observe the lantern and rising embers; no interactive controls."
+      },
+      "coordinates": {
+        "units": "meters",
+        "up": "+Y",
+        "handedness": "right"
+      },
+      "assets": [
+        {
+          "id": "lantern",
+          "producer": "model-assets",
+          "request": "builds/lantern-embers-final/inputs/lantern.request.json",
+          "files": {
+            "model": "builds/lantern-embers-final/assets/lantern/model.web.glb",
+            "metadata": "builds/lantern-embers-final/assets/lantern/model.json",
+            "validation": "builds/lantern-embers-final/assets/lantern/three-validation.json",
+            "source": "builds/lantern-embers-final/assets/lantern/source.blend",
+            "raw": "builds/lantern-embers-final/assets/lantern/model.glb",
+            "preview": "builds/lantern-embers-final/assets/lantern/preview.png",
+            "review": "builds/lantern-embers-final/assets/lantern/review.png",
+            "receipt": "builds/lantern-embers-final/assets/lantern/model.web.glb.webstage.json"
+          }
+        },
+        {
+          "id": "embers",
+          "producer": "model-assets",
+          "request": "builds/lantern-embers-final/inputs/embers.request.json",
+          "files": {
+            "model": "builds/lantern-embers-final/assets/embers/model.web.glb",
+            "metadata": "builds/lantern-embers-final/assets/embers/model.json",
+            "validation": "builds/lantern-embers-final/assets/embers/three-validation.json",
+            "source": "builds/lantern-embers-final/assets/embers/source.blend",
+            "raw": "builds/lantern-embers-final/assets/embers/model.glb",
+            "preview": "builds/lantern-embers-final/assets/embers/preview.png",
+            "review": "builds/lantern-embers-final/assets/embers/review.png",
+            "receipt": "builds/lantern-embers-final/assets/embers/model.web.glb.webstage.json",
+            "effect": "builds/lantern-embers-final/assets/embers/effect.json"
+          }
+        }
+      ],
+      "nodes": [
+        {
+          "id": "camp-lantern",
+          "asset": "lantern",
+          "position": [
+            1,
+            0,
+            -2
+          ],
+          "rotation_degrees": [
+            0,
+            30,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "camp-embers",
+          "asset": "embers",
+          "parent": "camp-lantern",
+          "position": [
+            0,
+            0.239,
+            0
+          ],
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "input_scene": "builds/lantern-embers-final/inputs/scene.json"
+    },
+    "assets": {
+      "lantern": {
+        "model": "res://products/0/lantern/model.web.glb.bytes",
+        "raw": "res://products/0/lantern/model.glb.bytes",
+        "validation": "res://products/0/lantern/three-validation.json",
+        "receipt": "res://products/0/lantern/model.web.glb.webstage.json"
+      },
+      "embers": {
+        "model": "res://products/0/embers/model.web.glb.bytes",
+        "raw": "res://products/0/embers/model.glb.bytes",
+        "effect": "res://products/0/embers/effect.json",
+        "validation": "res://products/0/embers/three-validation.json",
+        "receipt": "res://products/0/embers/model.web.glb.webstage.json"
+      }
+    },
+    "runtime_pin": {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:runtime",
+      "@type": [
+        "Entity",
+        "RuntimeProduct"
+      ],
+      "byteCount": 2710,
+      "path": "builds/lantern-embers-final/scene.runtime.json",
+      "sha256": "690a663bb39a5a78551706be7458859f45685210636a1eddbd4edbfd276d2ebd",
+      "wasDerivedFrom": [
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:scene:078bab6dcd2ec3bdd7eed6c4a3294784a625c1255188b69238ff73127257af1a",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d11dac8f3d0bf0dcb5998b23cc1bd20f801970374263ec33519e4b7e20eba61c",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:1e9f123908c9352f47db037420433b3d764480d8a7e285b762471c019e587b94",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:cd4531d4e65728d138465dea402e86dcea77cc8158efb5f199af2cd717f114ef",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:c57e18ddcdcf9a077995b12328f9e816776112ff5eb2fb93d5dff16685102828",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:c84d2069e36990c6c2ddcf97de5f52547d7e9b5f5b05868f31a57825938a6c81",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:e3d26e7ccc205c23a5c8c3428e2080134fb896dc3befc9164a0ea7e8e2c5a32c",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:fc0f4053ee37ad9157f8385ca1230ce10077e2dd224e769f71dd569b9cda0013",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:7b2a46a97bb5e6e31ed94bf3d3e0f09e6aa7bc6d6c424efc1e8c91677734e7fc",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ecb9e8bfadb366d80ea8489daaed0cd5d0e0d872e788087d61267b55f8c4d96f",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:fb9bd16223ecd6efdcd467a4695a9a205d7009b7fd41ba5a3b6013cc3c280faf",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:1a8819beac61bdf4accb8fde2bb66d74d64bc9c87c8965f5860e38be3e0ab270",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:e47516f13d5cea4178cff69a9aba66ea2f311f0c3a59c6226397629a08e3e6dd",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:4eb6c2d5498b191f889762d8ed6d17409b05b3da5da5c6a9f13f5bf208d7f251",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:f6da283f8e47fc5082b8fbfb64dd444093eea31cb39142497a91acc51c6c00d4",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:54b52f939e2542ac92da84322ba7c715d804f2d4cd5b3c54772583f76fe81272",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ee764c5a6f08c48154d0371d32b25cd00d7744443e5a7605aff76cfa288f1cde",
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d31414fb5e4569e8c73c898cf5f0212cd7ac3e89350e37bf2469f305566a6ae8"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787"
+      ]
+    }
+  },
+  {
+    "scene": {
+      "schema_version": 1,
+      "status": "ready",
+      "id": "scout-actions",
+      "brief": {
+        "title": "Scout action set + local pixelfx hit",
+        "goal": "Observe six authored 48px actions; attack emits the local pixelfx hit spark on contact at 320ms.",
+        "controls": "Read-only playback of the authored attack; the asset preview shows all six actions."
+      },
+      "coordinates": {
+        "units": "meters",
+        "up": "+Y",
+        "handedness": "right"
+      },
+      "assets": [
+        {
+          "id": "scout",
+          "producer": "pixel-action-set",
+          "request": "builds/attack-contact/inputs/scout/request.json",
+          "files": {
+            "atlas": "builds/attack-contact/assets/scout/atlas.png",
+            "metadata": "builds/attack-contact/assets/scout/action-set.json",
+            "preview": "builds/attack-contact/assets/scout/preview.gif",
+            "credits": "builds/attack-contact/assets/scout/credits.json",
+            "effect_0_sheet": "builds/attack-contact/assets/scout/effect-0.png",
+            "effect_0_metadata": "builds/attack-contact/assets/scout/effect-0.json",
+            "effect_0_license": "builds/attack-contact/assets/scout/effect-0-LICENSE",
+            "effect_0_notice": "builds/attack-contact/assets/scout/effect-0-NOTICE"
+          }
+        }
+      ],
+      "nodes": [
+        {
+          "id": "scout-attack",
+          "asset": "scout",
+          "action": "attack",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "size_m": 1.0
+        }
+      ],
+      "input_scene": "builds/attack-contact/inputs/scene.json"
+    },
+    "assets": {
+      "scout": {
+        "atlas": "res://products/1/scout/atlas.png",
+        "metadata": "res://products/1/scout/action-set.json",
+        "credits": "res://products/1/scout/credits.json",
+        "effect_0_sheet": "res://products/1/scout/effect-0.png",
+        "effect_0_metadata": "res://products/1/scout/effect-0.json",
+        "effect_0_license": "res://products/1/scout/effect-0-LICENSE",
+        "effect_0_notice": "res://products/1/scout/effect-0-NOTICE"
+      }
+    },
+    "runtime_pin": {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:runtime",
+      "@type": [
+        "Entity",
+        "RuntimeProduct"
+      ],
+      "byteCount": 1604,
+      "path": "builds/attack-contact/scene.runtime.json",
+      "sha256": "344d072a5df7225daa7f6612b566b64c07eaa30ae86e9cd79771942dae52b15e",
+      "wasDerivedFrom": [
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:scene:2e05944aa0aaa7d25f761908372dc36a700a25f9bcf2de345696cf1994028a73",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:270b6107700733234cac966fe983316813f5f7b176a44c496f91413296311a8e",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:05da49887b45e284ab49c4f011d312951c85a4f83d0c96b7bad2871a608ccc72",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:30c84f2d584b912e9b0696e9175bf6a8a43e9db30583090de20fd6a6c0a9a0ae",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:aff9d321f8598b726fce45685fdd4c8dc5c3d59b111d911b6b654f52161d6904",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:ad1c1352adc56e25ad19081fe66da3054c727f53f5989e765a8a884f2848c0ab",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:1707032c95dee8a0a389d3cb39a72570d2991ef168622def406e85d3beed93f7",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:5fc944557c3a0e39ea5a20df9967a3876f5d256f9ef7f5064d6319054073c21c",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f:artifact:637f0acc2ec5123d2bc4dd42528c250b98ca7c3d843e46fd05e5e1243473a267"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:8342f0e7bc684318afe7fb1c039d0b4f"
+      ]
+    }
+  }
+]

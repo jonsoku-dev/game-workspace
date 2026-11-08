@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "producer": "local-procedural",
+  "preset": "land",
+  "size": 48,
+  "seed": 82,
+  "frame_count": 8,
+  "duration_ms": 520,
+  "loop": false,
+  "timing_ms": [
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "pivot_px_from_top_left": [
+    24,
+    39
+  ],
+  "anchor": "ground",
+  "trigger_intent": "airborne actor contacts ground",
+  "reduced_motion_frame": 1,
+  "palette": [
+    "#977654",
+    "#e6bf85",
+    "#fff0b9"
+  ],
+  "frame_checks": [
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": false
+    },
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": false
+    },
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": false
+    },
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": false
+    },
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": false
+    },
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": false
+    },
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": false
+    },
+    {
+      "rgba": true,
+      "binary_alpha": true,
+      "palette": true,
+      "blank": true
+    }
+  ],
+  "terminal_blank": true,
+  "review": "Original procedural art; visual and engine acceptance are separate from format checks.",
+  "passed": true
+}

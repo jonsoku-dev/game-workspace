@@ -1,0 +1,940 @@
+{
+  "url": "http://127.0.0.1:52994/",
+  "method": "configured isolated Stagehand MCP; normal controls; read-only woodsAlight telemetry",
+  "checks": {
+    "initial": {
+      "ready": true,
+      "x": 0,
+      "z": 4,
+      "collected": [
+        false,
+        false,
+        false
+      ],
+      "charge": 0,
+      "won": false,
+      "attackAt": null,
+      "message": "Collect the three blue crystals.",
+      "paused": false,
+      "feedback": {
+        "enabled": true,
+        "sound": false,
+        "reducedMotion": false,
+        "cues": {},
+        "activeShards": 0
+      },
+      "modelLoaded": true,
+      "meshParticleCount": 24,
+      "depthWriting": true,
+      "frames": 54,
+      "drawCalls": 180,
+      "triangles": 73940
+    },
+    "pause": {
+      "before": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {},
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 56,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "held": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": true,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 73,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "resumed": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 74,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "unchanged": true
+    },
+    "far_denied_and_spam": {
+      "first": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": 1.3955,
+        "message": "Too far away. Move closer to the lantern.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 1
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 76,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "after": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": 1.3955,
+        "message": "Too far away. Move closer to the lantern.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 1
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 79,
+        "drawCalls": 180,
+        "triangles": 73940
+      }
+    },
+    "locked_near_goal": {
+      "ready": true,
+      "x": 0.8999999999999999,
+      "z": -1.8500000000000003,
+      "collected": [
+        false,
+        false,
+        false
+      ],
+      "charge": 0,
+      "won": false,
+      "attackAt": 2.4145,
+      "message": "The lantern needs all three crystals first.",
+      "paused": false,
+      "feedback": {
+        "enabled": true,
+        "sound": false,
+        "reducedMotion": false,
+        "cues": {
+          "pause": 1,
+          "resume": 1,
+          "denied": 2,
+          "move": 14,
+          "stop": 14
+        },
+        "activeShards": 0
+      },
+      "modelLoaded": true,
+      "meshParticleCount": 24,
+      "depthWriting": true,
+      "frames": 137,
+      "drawCalls": 180,
+      "triangles": 73940
+    },
+    "crystals": [
+      {
+        "ready": true,
+        "x": -3.1500000000000004,
+        "z": 2.1999999999999993,
+        "collected": [
+          true,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": 2.4145,
+        "message": "Crystal collected. Find the remaining blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 2,
+            "move": 32,
+            "stop": 30,
+            "pickup": 1
+          },
+          "activeShards": 12
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 155,
+        "drawCalls": 201,
+        "triangles": 74108
+      },
+      {
+        "ready": true,
+        "x": 3.1499999999999995,
+        "z": 0.8499999999999994,
+        "collected": [
+          true,
+          true,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": 2.4145,
+        "message": "Crystal collected. Find the remaining blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 2,
+            "move": 47,
+            "stop": 44,
+            "pickup": 2
+          },
+          "activeShards": 24
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 169,
+        "drawCalls": 222,
+        "triangles": 74276
+      },
+      {
+        "ready": true,
+        "x": -1.8521999999999994,
+        "z": -3.2,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": 2.4145,
+        "message": "Return to the lantern. Attack three times to restore its light.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 2,
+            "move": 65,
+            "stop": 62,
+            "pickup": 3
+          },
+          "activeShards": 36
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 189,
+        "drawCalls": 243,
+        "triangles": 74444
+      }
+    ],
+    "collection_idempotent": {
+      "before": {
+        "ready": true,
+        "x": -1.8521999999999994,
+        "z": -3.2,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": 2.4145,
+        "message": "Return to the lantern. Attack three times to restore its light.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 2,
+            "move": 65,
+            "stop": 62,
+            "pickup": 3
+          },
+          "activeShards": 24
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 198,
+        "drawCalls": 219,
+        "triangles": 74252
+      },
+      "after": {
+        "ready": true,
+        "x": -1.8521999999999994,
+        "z": -3.2,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": 2.4145,
+        "message": "Return to the lantern. Attack three times to restore its light.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 2,
+            "move": 65,
+            "stop": 62,
+            "pickup": 3
+          },
+          "activeShards": 12
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 222,
+        "drawCalls": 195,
+        "triangles": 74060
+      }
+    },
+    "restore_cooldown": {
+      "accepted": {
+        "ready": true,
+        "x": 0.8478000000000003,
+        "z": -1.8499999999999999,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 1,
+        "won": false,
+        "attackAt": 4.453600000023842,
+        "message": "Light restored: 1/3. Strike again.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 2,
+            "move": 73,
+            "stop": 69,
+            "pickup": 3,
+            "progress": 1
+          },
+          "activeShards": 12
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 260,
+        "drawCalls": 197,
+        "triangles": 74444
+      },
+      "cooldown": {
+        "ready": true,
+        "x": 0.8478000000000003,
+        "z": -1.8499999999999999,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 1,
+        "won": false,
+        "attackAt": 4.453600000023842,
+        "message": "Light restored: 1/3. Strike again.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 3,
+            "move": 73,
+            "stop": 69,
+            "pickup": 3,
+            "progress": 1
+          },
+          "activeShards": 12
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 261,
+        "drawCalls": 197,
+        "triangles": 74444
+      }
+    },
+    "win": {
+      "second": {
+        "ready": true,
+        "x": 0.8478000000000003,
+        "z": -1.8499999999999999,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 2,
+        "won": false,
+        "attackAt": 4.969899999976158,
+        "message": "Light restored: 2/3. Strike again.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 3,
+            "move": 73,
+            "stop": 69,
+            "pickup": 3,
+            "progress": 2
+          },
+          "activeShards": 24
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 290,
+        "drawCalls": 221,
+        "triangles": 74636
+      },
+      "won": {
+        "ready": true,
+        "x": 0.8478000000000003,
+        "z": -1.8499999999999999,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 3,
+        "won": true,
+        "attackAt": 5.441600000023842,
+        "message": "The woods are alight again. You restored the lantern!",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 3,
+            "move": 73,
+            "stop": 69,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1
+          },
+          "activeShards": 48
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 324,
+        "drawCalls": 269,
+        "triangles": 75020
+      }
+    },
+    "excess_restore": {
+      "ready": true,
+      "x": 0.8478000000000003,
+      "z": -1.8499999999999999,
+      "collected": [
+        true,
+        true,
+        true
+      ],
+      "charge": 3,
+      "won": true,
+      "attackAt": 5.441600000023842,
+      "message": "The woods are alight again. You restored the lantern!",
+      "paused": false,
+      "feedback": {
+        "enabled": true,
+        "sound": false,
+        "reducedMotion": false,
+        "cues": {
+          "pause": 1,
+          "resume": 1,
+          "denied": 4,
+          "move": 73,
+          "stop": 69,
+          "pickup": 3,
+          "progress": 2,
+          "win": 1
+        },
+        "activeShards": 36
+      },
+      "modelLoaded": true,
+      "meshParticleCount": 24,
+      "depthWriting": true,
+      "frames": 368,
+      "drawCalls": 245,
+      "triangles": 74828
+    },
+    "ab_and_audio": {
+      "off": {
+        "ready": true,
+        "x": 0.8478000000000003,
+        "z": -1.8499999999999999,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 3,
+        "won": true,
+        "attackAt": 5.441600000023842,
+        "message": "The woods are alight again. You restored the lantern!",
+        "paused": false,
+        "feedback": {
+          "enabled": false,
+          "sound": true,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 4,
+            "move": 73,
+            "stop": 69,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1,
+            "select": 1
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 374,
+        "drawCalls": 173,
+        "triangles": 74252
+      },
+      "offMoved": {
+        "ready": true,
+        "x": -0.44999999999999996,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": false,
+          "sound": true,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 4,
+            "move": 73,
+            "stop": 69,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1,
+            "select": 1
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 375,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "on": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": true,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 4,
+            "move": 74,
+            "stop": 69,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1,
+            "select": 2
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 377,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "soundOff": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 4,
+            "move": 74,
+            "stop": 70,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1,
+            "select": 3
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 378,
+        "drawCalls": 180,
+        "triangles": 73940
+      }
+    },
+    "wall": {
+      "before": {
+        "ready": true,
+        "x": 5,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 4,
+            "move": 85,
+            "stop": 80,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1,
+            "select": 3
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 396,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "blocked": {
+        "ready": true,
+        "x": 5,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "pause": 1,
+            "resume": 1,
+            "denied": 4,
+            "move": 85,
+            "stop": 80,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1,
+            "select": 3
+          },
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 405,
+        "drawCalls": 180,
+        "triangles": 73940
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 375,
+      "buttons": [
+        {
+          "label": "\u2191",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "\u2190",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "\u2193",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "\u2192",
+          "width": 48,
+          "height": 48
+        },
+        {
+          "label": "Restore lantern",
+          "width": 136.25,
+          "height": 48
+        },
+        {
+          "label": "Restart",
+          "width": 78.171875,
+          "height": 48
+        },
+        {
+          "label": "Pause",
+          "width": 69.96875,
+          "height": 48
+        },
+        {
+          "label": "Feel: on (B)",
+          "width": 109.015625,
+          "height": 48
+        },
+        {
+          "label": "Sound: off",
+          "width": 101.3125,
+          "height": 48
+        }
+      ]
+    },
+    "reduced_motion": {
+      "initial": {
+        "ready": true,
+        "x": 0,
+        "z": 4,
+        "collected": [
+          false,
+          false,
+          false
+        ],
+        "charge": 0,
+        "won": false,
+        "attackAt": null,
+        "message": "Collect the three blue crystals.",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {},
+          "activeShards": 0
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 20,
+        "drawCalls": 180,
+        "triangles": 73940
+      },
+      "won": {
+        "ready": true,
+        "x": 0.8999999999999992,
+        "z": -1.8499999999999999,
+        "collected": [
+          true,
+          true,
+          true
+        ],
+        "charge": 3,
+        "won": true,
+        "attackAt": 2.6682000000476838,
+        "message": "The woods are alight again. You restored the lantern!",
+        "paused": false,
+        "feedback": {
+          "enabled": true,
+          "sound": false,
+          "reducedMotion": false,
+          "cues": {
+            "move": 50,
+            "stop": 47,
+            "pickup": 3,
+            "progress": 2,
+            "win": 1
+          },
+          "activeShards": 36
+        },
+        "modelLoaded": true,
+        "meshParticleCount": 24,
+        "depthWriting": true,
+        "frames": 163,
+        "drawCalls": 245,
+        "triangles": 74828
+      }
+    },
+    "errors": []
+  },
+  "assertions": "PASS: pause, denial throttle, locked lantern, once-only pickups, cooldown, win, excess input, baseline gating, sound toggle, blocked displacement, mobile overflow, browser errors"
+}

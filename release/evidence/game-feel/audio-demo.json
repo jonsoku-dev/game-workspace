@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "sampleRate": 24000,
+  "channels": 1,
+  "bitsPerSample": 16,
+  "durationSeconds": 6.3,
+  "peak": 0.2598710358142853,
+  "rms": 0.012352585478950852,
+  "clippingSamples": 0,
+  "events": [
+    {
+      "name": "move",
+      "timeSeconds": 0.1,
+      "audioStatus": "scheduled",
+      "peak": 0.0231730118393898,
+      "rmsOver600ms": 0.0017412277865593035
+    },
+    {
+      "name": "step",
+      "timeSeconds": 0.25,
+      "audioStatus": "scheduled",
+      "peak": 0.044169798493385315,
+      "rmsOver600ms": 0.003338359359454459
+    },
+    {
+      "name": "step",
+      "timeSeconds": 0.55,
+      "audioStatus": "scheduled",
+      "peak": 0.044169798493385315,
+      "rmsOver600ms": 0.003338359359454459
+    },
+    {
+      "name": "step",
+      "timeSeconds": 0.85,
+      "audioStatus": "scheduled",
+      "peak": 0.044169798493385315,
+      "rmsOver600ms": 0.003338359359454459
+    },
+    {
+      "name": "land",
+      "timeSeconds": 1.2,
+      "audioStatus": "scheduled",
+      "peak": 0.10962207615375519,
+      "rmsOver600ms": 0.009481275058312874
+    },
+    {
+      "name": "pickup",
+      "timeSeconds": 1.7,
+      "audioStatus": "scheduled",
+      "peak": 0.06790034472942352,
+      "rmsOver600ms": 0.007847572048611652
+    },
+    {
+      "name": "denied",
+      "timeSeconds": 2.3,
+      "audioStatus": "scheduled",
+      "peak": 0.05768980085849762,
+      "rmsOver600ms": 0.007082137579425905
+    },
+    {
+      "name": "hit",
+      "timeSeconds": 2.9,
+      "combo": 1,
+      "audioStatus": "scheduled",
+      "peak": 0.20486068725585938,
+      "rmsOver600ms": 0.015059794683005862
+    },
+    {
+      "name": "crit",
+      "timeSeconds": 3.4,
+      "combo": 2,
+      "audioStatus": "scheduled",
+      "peak": 0.2598710358142853,
+      "rmsOver600ms": 0.01887261645696881
+    },
+    {
+      "name": "hit",
+      "timeSeconds": 3.9,
+      "combo": 3,
+      "audioStatus": "scheduled",
+      "peak": 0.19184496998786926,
+      "rmsOver600ms": 0.014848416738802722
+    },
+    {
+      "name": "finish",
+      "timeSeconds": 4.6,
+      "audioStatus": "scheduled",
+      "peak": 0.21926596760749817,
+      "rmsOver600ms": 0.021342491166282476
+    },
+    {
+      "name": "win",
+      "timeSeconds": 5.4,
+      "audioStatus": "scheduled",
+      "peak": 0.06635170429944992,
+      "rmsOver600ms": 0.01025207038458121
+    }
+  ],
+  "scope": "Actual feedback.mjs synthesis rendered with real browser OfflineAudioContext through an AudioContext adapter; PCM sequence for audition. No output-device playback or human listening is claimed.",
+  "source": {
+    "path": "studio/engines/web/feedback.mjs",
+    "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33"
+  },
+  "wav": {
+    "path": "release/evidence/game-feel/audio-demo.wav",
+    "sha256": "5c0254dab1dc503344a9abfb07f565ebaab43e13f7f9a15d45c617513a3fc611",
+    "bytes": 302444
+  },
+  "bounds": {
+    "sampleMagnitudeMax": 1,
+    "observedNoClipping": true,
+    "perCueRmsWindowSeconds": 0.6,
+    "comboRange": [
+      1,
+      8
+    ],
+    "stepMinimumIntervalSeconds": 0.14
+  }
+}

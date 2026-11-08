@@ -58,3 +58,7 @@ Pixel Asset Pipeline 0.6.0으로 원화 한 장과 명시적인 관절 마스크
 ## 개별 작화 셀의 플레이어
 
 0.7.0 `pixel-asset character`와 0.8.1 Studio `tools/character.py`가 동작별 PNG·재생시간·선택 순서를 받아 Rive 파일과 독립 HTML로 출력한다. [라일락 우편배달부의 입력·재현·검증](examples/storybook-cels/README.md)
+
+## 게임 전체의 피드백
+
+Pixel Asset Pipeline 0.8.0과 Game Studio 0.9.1. 이동·착지·소포 획득·거절·배달·피해·결과를 포함한 [2D 플레이와 A/B 검수](examples/courier-feedback/README.md), [Three.js 내보내기](release/web/woods-feedback/), [Godot 실행 PCK](release/ember-feedback.pck)를 포함한다. [엔진별 확인 범위](release/evidence/game-feel/acceptance.json)

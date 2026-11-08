@@ -74,3 +74,9 @@ Pixel Asset Pipeline 0.6.0의 실제 설치본에서 96×96 정찰대원 원화 
 ## 개별 작화와 휴대용 Rive 플레이어
 
 2026-11-09 Pixel Asset Pipeline 0.7.0, Game Studio 0.8.1. Polymation의 단축·윤곽 재작화와 첨부 GIF의 원본 보존 요구를 다시 대조했다. 새 캐릭터는 동작별 완성 셀을 새로 그린 뒤 그 픽셀 그대로 내보낸다. 공식 Rive 웹 런타임에서 선택 순서, 프레임별 유지 시간, 반복과 마지막 포즈, 파일로 직접 열기와 화면 버튼을 확인했다. 전체 테스트는 자산 125개·스튜디오 125개 통과다. 미술 승인은 기록하지 않았다. [직접 비교](examples/storybook-cels/README.md) · [8동작 재생](http://127.0.0.1:52991/player.html)
+
+## 게임 피드백을 전투 밖으로 확장
+
+Pixel Asset Pipeline 0.8.0·Game Studio 0.9.1. 기획과 제작 지침은 모든 실제 조작·상태 전환의 입력, 확정 결과, 거절, 복구를 함께 다룬다. 새 픽셀 효과를 Phaser 씬의 이벤트에 바인딩하고, Web Audio와 3D·네이티브 엔진에는 해당 게임에 맞는 반응을 적용했다. 설치본에서 2D 배달의 이동·점프·소포 획득·빈손 거절·피격·승패·재시작을 실제 조작했다. 손맛 A/B 두 판의 목표와 체력 규칙이 같았다. 장벽 HP 30→20→5→0의 순간을 실제 브라우저 오디오가 포함된 영상으로 보존했다. [플레이](http://127.0.0.1:52993/) · [실제 녹화](examples/courier-feedback/evidence/preview-final/preview-gameplay.mp4)
+
+Three.js 내보내기에서는 크리스털 3회 획득, 복원 거절·진행·완료와 완료 후 중복 입력을 검증했다. Godot는 4.5.1 실행 PCK를 헤드리스로 검증했고, Unity는 익스포터와 실제 C# 상태 로직까지 확인했다. 전체 범위와 미확인 항목은 [인수 기록](release/evidence/game-feel/acceptance.json)에 있다.

@@ -1,0 +1,1598 @@
+{
+  "recording": {
+    "width": 960,
+    "height": 540,
+    "audioTracks": 1,
+    "mime": "video/webm;codecs=vp9,opus"
+  },
+  "marks": [
+    {
+      "name": "intro",
+      "caption": "실제 브라우저 플레이 · 이동과 배달 피드백",
+      "seconds": 0,
+      "state": {
+        "x": 150,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 30,
+        "lastDamage": 0,
+        "package": false,
+        "hits": 0,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 300,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 0,
+        "lastHit": null,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 0,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "idle",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          }
+        ],
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "denied",
+      "caption": "빈손으로 배송하면 거절 안내",
+      "seconds": 1.422,
+      "state": {
+        "x": 150,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 30,
+        "lastDamage": 0,
+        "package": false,
+        "hits": 0,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 1716.6666666666688,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 0,
+        "lastHit": null,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 0,
+        "interactHeld": true,
+        "jumpHeld": false,
+        "action": "idle",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          }
+        ],
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "move",
+      "caption": "걷고 멈추기 · 발걸음과 정지",
+      "seconds": 2.927,
+      "state": {
+        "x": 150,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 30,
+        "lastDamage": 0,
+        "package": false,
+        "hits": 0,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 3216.6666666666597,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 0,
+        "lastHit": null,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 0,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "idle",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          }
+        ],
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "jump",
+      "caption": "가시 틈 위로 점프 · 착지 피드백",
+      "seconds": 4.357,
+      "state": {
+        "x": 314,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 30,
+        "lastDamage": 0,
+        "package": false,
+        "hits": 0,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 4649.999999999995,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 0,
+        "lastHit": null,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 3783.333333333321,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "idle",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3416.666666666658,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3599.9999999999895,
+            "x": 242,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3783.333333333321,
+            "x": 286,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3916.6666666666533,
+            "x": 314,
+            "y": 356
+          }
+        ],
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "land",
+      "caption": "안전하게 착지",
+      "seconds": 5.121,
+      "state": {
+        "x": 470,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 30,
+        "lastDamage": 0,
+        "package": false,
+        "hits": 0,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 5416.666666666676,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 0,
+        "lastHit": null,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 3783.333333333321,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "idle",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3416.666666666658,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3599.9999999999895,
+            "x": 242,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3783.333333333321,
+            "x": 286,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3916.6666666666533,
+            "x": 314,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 5333.333333333341,
+            "x": 470,
+            "y": 328.77777777777766
+          },
+          {
+            "event": "land",
+            "clock": 5383.333333333342,
+            "x": 470,
+            "y": 356
+          }
+        ],
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "pickup",
+      "caption": "소포를 챙겼어요 · 다음은 장벽",
+      "seconds": 6.203,
+      "state": {
+        "x": 534,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 30,
+        "lastDamage": 0,
+        "package": true,
+        "hits": 0,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 6500.000000000029,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 0,
+        "lastHit": null,
+        "knock": 0,
+        "walking": true,
+        "lastStep": 6416.666666666694,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "walk",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3416.666666666658,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3599.9999999999895,
+            "x": 242,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3783.333333333321,
+            "x": 286,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3916.6666666666533,
+            "x": 314,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 5333.333333333341,
+            "x": 470,
+            "y": 328.77777777777766
+          },
+          {
+            "event": "land",
+            "clock": 5383.333333333342,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 6250.000000000025,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6333.333333333359,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6350.000000000026,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6416.666666666694,
+            "x": 514,
+            "y": 356
+          }
+        ],
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "barrier",
+      "caption": "막힌 길을 열기 · 접촉과 파괴 피드백",
+      "seconds": 7.952,
+      "state": {
+        "x": 594,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 30,
+        "lastDamage": 0,
+        "package": true,
+        "hits": 0,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 8250.000000000058,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 0,
+        "lastHit": null,
+        "knock": 0,
+        "walking": true,
+        "lastStep": 8200.00000000006,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "walk",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3416.666666666658,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3599.9999999999895,
+            "x": 242,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3783.333333333321,
+            "x": 286,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3916.6666666666533,
+            "x": 314,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 5333.333333333341,
+            "x": 470,
+            "y": 328.77777777777766
+          },
+          {
+            "event": "land",
+            "clock": 5383.333333333342,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 6250.000000000025,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6333.333333333359,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6350.000000000026,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6416.666666666694,
+            "x": 514,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6516.666666666696,
+            "x": 534,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8200.00000000006,
+            "x": 582,
+            "y": 356
+          }
+        ],
+        "contactEvents": []
+      }
+    },
+    {
+      "name": "opened",
+      "caption": "길이 열렸어요",
+      "seconds": 10.585,
+      "state": {
+        "x": 594,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 0,
+        "lastDamage": 5,
+        "package": true,
+        "hits": 3,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 10683.333333333303,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 3,
+        "lastHit": 10333.333333333316,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 8200.00000000006,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "attack",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3416.666666666658,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3599.9999999999895,
+            "x": 242,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3783.333333333321,
+            "x": 286,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3916.6666666666533,
+            "x": 314,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 5333.333333333341,
+            "x": 470,
+            "y": 328.77777777777766
+          },
+          {
+            "event": "land",
+            "clock": 5383.333333333342,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 6250.000000000025,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6333.333333333359,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6350.000000000026,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6416.666666666694,
+            "x": 514,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6516.666666666696,
+            "x": 534,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8200.00000000006,
+            "x": 582,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 8250.000000000058,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 8266.666666666724,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "hit",
+            "clock": 8616.666666666712,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 9116.666666666693,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "crit",
+            "clock": 9483.333333333347,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 9966.666666666662,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "finisher",
+            "clock": 10333.333333333316,
+            "x": 650,
+            "y": 330
+          }
+        ],
+        "contactEvents": [
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "delivery_walk",
+      "caption": "소포를 들고 도착지로 이동",
+      "seconds": 11.192,
+      "state": {
+        "x": 594,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 0,
+        "lastDamage": 5,
+        "package": true,
+        "hits": 3,
+        "finished": false,
+        "lost": false,
+        "paused": false,
+        "clock": 11283.333333333281,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 3,
+        "lastHit": 10333.333333333316,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 8200.00000000006,
+        "interactHeld": false,
+        "jumpHeld": false,
+        "action": "idle",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3416.666666666658,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3599.9999999999895,
+            "x": 242,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3783.333333333321,
+            "x": 286,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3916.6666666666533,
+            "x": 314,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 5333.333333333341,
+            "x": 470,
+            "y": 328.77777777777766
+          },
+          {
+            "event": "land",
+            "clock": 5383.333333333342,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 6250.000000000025,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6333.333333333359,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6350.000000000026,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6416.666666666694,
+            "x": 514,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6516.666666666696,
+            "x": 534,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8200.00000000006,
+            "x": 582,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 8250.000000000058,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 8266.666666666724,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "hit",
+            "clock": 8616.666666666712,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 9116.666666666693,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "crit",
+            "clock": 9483.333333333347,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 9966.666666666662,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "finisher",
+            "clock": 10333.333333333316,
+            "x": 650,
+            "y": 330
+          }
+        ],
+        "contactEvents": [
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "delivery",
+      "caption": "배송 완료!",
+      "seconds": 12.235,
+      "state": {
+        "x": 842,
+        "y": 356,
+        "vy": 0,
+        "facing": 1,
+        "hp": 3,
+        "targetMaxHP": 30,
+        "targetHP": 0,
+        "lastDamage": 5,
+        "package": true,
+        "hits": 3,
+        "finished": true,
+        "lost": false,
+        "paused": false,
+        "clock": 12333.333333333243,
+        "cooldown": 0,
+        "freeze": 0,
+        "combo": 3,
+        "lastHit": 10333.333333333316,
+        "knock": 0,
+        "walking": false,
+        "lastStep": 12216.66666666658,
+        "interactHeld": true,
+        "jumpHeld": false,
+        "action": "idle",
+        "cueEvents": [
+          {
+            "event": "restart",
+            "clock": 0,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "denied",
+            "clock": 1716.6666666666688,
+            "x": 150,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3233.333333333326,
+            "x": 154,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3416.666666666658,
+            "x": 198,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3599.9999999999895,
+            "x": 242,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 3783.333333333321,
+            "x": 286,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 3916.6666666666533,
+            "x": 314,
+            "y": 356
+          },
+          {
+            "event": "jump",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "move",
+            "clock": 4683.333333333329,
+            "x": 318,
+            "y": 345.02777777777777
+          },
+          {
+            "event": "stop",
+            "clock": 5333.333333333341,
+            "x": 470,
+            "y": 328.77777777777766
+          },
+          {
+            "event": "land",
+            "clock": 5383.333333333342,
+            "x": 470,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6233.333333333358,
+            "x": 474,
+            "y": 356
+          },
+          {
+            "event": "collect",
+            "clock": 6250.000000000025,
+            "x": 478,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6333.333333333359,
+            "x": 494,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 6350.000000000026,
+            "x": 498,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 6416.666666666694,
+            "x": 514,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 6516.666666666696,
+            "x": 534,
+            "y": 356
+          },
+          {
+            "event": "move",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8016.666666666723,
+            "x": 538,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 8200.00000000006,
+            "x": 582,
+            "y": 356
+          },
+          {
+            "event": "attack",
+            "clock": 8250.000000000058,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 8266.666666666724,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "hit",
+            "clock": 8616.666666666712,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 9116.666666666693,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "crit",
+            "clock": 9483.333333333347,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "attack",
+            "clock": 9966.666666666662,
+            "x": 594,
+            "y": 356
+          },
+          {
+            "event": "finisher",
+            "clock": 10333.333333333316,
+            "x": 650,
+            "y": 330
+          },
+          {
+            "event": "move",
+            "clock": 11299.999999999947,
+            "x": 598,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 11299.999999999947,
+            "x": 598,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 11483.333333333274,
+            "x": 642,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 11666.6666666666,
+            "x": 686,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 11849.999999999927,
+            "x": 730,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 12033.333333333254,
+            "x": 774,
+            "y": 356
+          },
+          {
+            "event": "step",
+            "clock": 12216.66666666658,
+            "x": 818,
+            "y": 356
+          },
+          {
+            "event": "stop",
+            "clock": 12333.333333333243,
+            "x": 842,
+            "y": 356
+          },
+          {
+            "event": "interact",
+            "clock": 12333.333333333243,
+            "x": 842,
+            "y": 356
+          },
+          {
+            "event": "win",
+            "clock": 12333.333333333243,
+            "x": 842,
+            "y": 356
+          }
+        ],
+        "contactEvents": [
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          },
+          {
+            "start_ms": 360,
+            "observed_ms": 366.66666666666674,
+            "point": {
+              "x": 657,
+              "y": 299
+            },
+            "contact": true
+          }
+        ]
+      }
+    }
+  ],
+  "durationSeconds": 14.295,
+  "url": "http://127.0.0.1:52993",
+  "browser_observed_hashes": {
+    "cue-sheets.mjs": "211f8938337f3d928ffa3390ef04b0aa28baf2a6d39546c2a55e00740020d067",
+    "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+    "game.json": "42e843d7227d242d0efc622eba3a6e6970d7d534f65441d4ac58b87010eabc0a",
+    "game.mjs": "17635004017c922d1f046704ddd877db9fd4fc74785e7c0b15fb8e8932e4e370",
+    "index.html": "08f3d67c7f530809db629fa8680cdd1a0732a36d02223ca99954651cb69c8308",
+    "products/0/fx_confirm/effect.json": "5259059564a698373d4d37147b42a1bae829cdd0cb851a175b3ba0c53d1f50be",
+    "products/0/fx_confirm/sheet.json": "773a02afd59d10364fc548195f2e86436c433de6addd0173f7b9fe8053e4ca2c",
+    "products/0/fx_confirm/sheet.png": "561e1b1c4679b5b5497a8eded1954ee1c1b1bb3af73776f7215b30e59daacec5",
+    "products/0/fx_deny/effect.json": "6cbd4f136a1cd245f189b0f1d95b30b4426c7339a15d3b53ff4d8f261111dcbf",
+    "products/0/fx_deny/sheet.json": "2e646621e5511676ddffe479413b235a7eb35ce87b22a5f9054cb62cc7e062cf",
+    "products/0/fx_deny/sheet.png": "7975ad2deca45f2c0d96179ad2418f629c45a80abb57ef0c0355b3b629f2f168",
+    "products/0/fx_impact/effect.json": "ab0c0d3f9a5fdee35485b5fc5a7bdcb88f7e02b2817f5a023d1940cf329bfc44",
+    "products/0/fx_impact/sheet.json": "a20617efb404cd3722f25dd03b9b73996ffbd5771f365603dcbef5bef1aef316",
+    "products/0/fx_impact/sheet.png": "869d2c3e7b5b00b23b4755798ebf4cf77b0b00d58a3f2a39c80bba2a1c5d5220",
+    "products/0/fx_land/effect.json": "5d71692d2cd7a78cc954f3349f2459c6c7a7d480e6cd34f5ddc1e3a6563a0076",
+    "products/0/fx_land/sheet.json": "aa274daee0e32abdbdfd43d1721b93129b8e6535f61c8b93ad44f47f7fcd7abb",
+    "products/0/fx_land/sheet.png": "a6a802401110bde4c2f92ca3c3a2c885789fd0609e1b30ce9d16cc1de67edfb0",
+    "products/0/fx_pickup/effect.json": "0f784457842fb311ecb9af2549640a9865139df01c84246d6ad0c92ea258d7f4",
+    "products/0/fx_pickup/sheet.json": "3826f9c49fb6002ed3cb066c695282f301f9cba27431da50e01c77b640fa839f",
+    "products/0/fx_pickup/sheet.png": "73a9e655b854d548c92715cc183a8563bb5e76ff1717a32c9171968151d0e0a9",
+    "products/0/fx_slash/effect.json": "25a57b5989750eb5e70aae414fe9e2625066cd3e473f85c184d214fa382b39af",
+    "products/0/fx_slash/sheet.json": "36824cd75af56a80beaa8f51ed8d86d426c0c241812bfedf3d3e275859365a2e",
+    "products/0/fx_slash/sheet.png": "edd1f9668cb83f8ea4789bec07eb1d5ca592855d83d77d1293a348c56662ca1a",
+    "products/0/fx_step/effect.json": "60a94a7736c6c76c206a2863143a942052b41785e6e14f4a4e3e0630a455c145",
+    "products/0/fx_step/sheet.json": "40a75595bd957240bbd8720c7ea5b5cb8a800a19f39eed035f47764d689759a2",
+    "products/0/fx_step/sheet.png": "9f1cb479499c41b059f4930f4330b27ed9425a41e4f95c46fdc8a54ff5998f38",
+    "products/0/hero/action-set.json": "226752f339ecf5cc41e2010d204b63a7c4d25d383b6165cca810e79dbfc0b616",
+    "products/0/hero/atlas.png": "5a5fc5064a240d9ebaf24ec462bde98984d504c47087fa3497217dc0352b48a3",
+    "products/0/hero/credits.json": "efb8b81be3dfc4a33b32ab5eb317b473ce6d37a1f9e520514b7d022981bf62fd",
+    "provenance.json": "a058fcd5a73a25e00de43f02622495178484642a69f2cc3d77fe25cd5a901504",
+    "style.css": "98179ad842492f107f2050811062f5a4feded8f1b28b26e752154e1a27b12722",
+    "timing.mjs": "04d429d3450104c52f6e01cfa0f0383f4993d1b040ea2bf91961b446494d4abe",
+    "trial.mjs": "15df25be1e6deb0e589f2ffe6be05f8a6c3991146b8173e4cc13178c540ee941",
+    "vendor/EVENTEMITTER3-LICENSE.txt": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "vendor/PHASER-BUNDLED-NOTICES.txt": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "vendor/PHASER-LICENSE.txt": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "vendor/phaser.min.js": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7"
+  },
+  "receipt_sha256": "502ea6ed1ca7928d710d170888a3446ca3dcdb6441121463f59a1f9c72027f72",
+  "capture": "Actual browser canvas.captureStream; normal controls; no state injection",
+  "audio": "Real game output tapped at AudioDestinationNode",
+  "ffprobe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 960,
+        "height": 604,
+        "coded_width": 960,
+        "coded_height": 604,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "240:151",
+        "pix_fmt": "yuv420p",
+        "level": 32,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "1708/57",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 218624,
+        "duration": "14.233333",
+        "bit_rate": "199561",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "427",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc61.19.101 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 686160,
+        "duration": "14.295000",
+        "bit_rate": "47003",
+        "nb_frames": "672",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "examples/courier-feedback/evidence/preview-final/preview-gameplay.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "14.295000",
+      "size": "457522",
+      "bit_rate": "256045",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.100"
+      }
+    }
+  },
+  "audio_timing": "Timestamp gaps filled with silence by aresample; genuine game effects preserved",
+  "audio_volume": [
+    "[Parsed_volumedetect_0 @ 0xb150446c0] mean_volume: -41.6 dB",
+    "[Parsed_volumedetect_0 @ 0xb150446c0] max_volume: -11.6 dB"
+  ]
+}

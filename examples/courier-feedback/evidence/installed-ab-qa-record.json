@@ -1,0 +1,93 @@
+{
+  "id": "installed-ab-qa",
+  "label": "Installed courier feedback A/B browser verification",
+  "agent": "stagehand-browser",
+  "status": "complete",
+  "used": [
+    "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:run:6b1ed8e11881401aa1025317b9a121cf:runtime",
+    "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:export-ae8e5307313441bbbc2f9ed69292743f:artifact:df2e04fff444b052085d005be7ed62f0bd4e59820a7fd8a99e4a78bb4064a3c6",
+    "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:browser-bbd1368387c84ba8ad410d87b9041e45:artifact:8c09abdd8152b7878ada3845724ee0fb8f3939384287124ba534678759f18744"
+  ],
+  "generated": [
+    {
+      "path": "README.md",
+      "sha256": "07e9801e567bcc61e17f44e92803c11db2e17b60a6f8d38f8d14c0fda62e0901"
+    },
+    {
+      "path": "tools/browser_check.py",
+      "sha256": "6e69c9638d13d255884e95a49bcd6a151e09f5b306cdfee9c93b39939db3de4a"
+    },
+    {
+      "path": "scene.json",
+      "sha256": "33b646faca99909838dada9b351a8f36541642fb39677e27409b2aeda0c75631"
+    },
+    {
+      "path": "evidence/installed-verification.json",
+      "sha256": "f51c26a4d861b3775605e059b707185ca27391ebe1e85cb2ef4064dd1ed799d5"
+    },
+    {
+      "path": "evidence/browser-installed-v1/jump-on.jpg",
+      "sha256": "2d01dac93f451a5ade032481aebb184c88b324ebe6d33c950a998fb966d1c8e2"
+    },
+    {
+      "path": "evidence/browser-installed-v1/start-on.jpg",
+      "sha256": "3de74dcfad7aeedd649c168a3c6fda92a3b8ab26c505b7542229ab269b12f395"
+    },
+    {
+      "path": "evidence/browser-installed-v1/browser.json",
+      "sha256": "d1a42daad476ccd1abdc73f13e132b26cc84f2fd10fcb1a3fb937a8aad459fd8"
+    },
+    {
+      "path": "evidence/browser-installed-v2/lose-on.jpg",
+      "sha256": "6125d4474a1b31ff167d7a9d22c891abfc024b6def243f95acef9ed9b4d74e0f"
+    },
+    {
+      "path": "evidence/browser-installed-v2/start-off.jpg",
+      "sha256": "4b8119962948c992b2447bd6472fee6622f714d9aa9a46cc79beb9bb3fd1e331"
+    },
+    {
+      "path": "evidence/browser-installed-v2/jump-on.jpg",
+      "sha256": "8f6cc693d9a63a57acc333823dd7693fd095d1b7cb013235e77a56e2ce50a6b7"
+    },
+    {
+      "path": "evidence/browser-installed-v2/hurt-on.jpg",
+      "sha256": "89588d2c5daf182b3e3b12ba987613dd0a5f78825b814fcac845b8fb2295c2df"
+    },
+    {
+      "path": "evidence/browser-installed-v2/finisher-on.jpg",
+      "sha256": "27caffbbc2a09e69a111e21f46e93042e32c59b64d6a88ae1abe11535a65ce2c"
+    },
+    {
+      "path": "evidence/browser-installed-v2/mobile.jpg",
+      "sha256": "698257db6cbc958e7e42c914c600d0c15a0348f93fef8911f7e0ecbfd082b135"
+    },
+    {
+      "path": "evidence/browser-installed-v2/start-on.jpg",
+      "sha256": "3de74dcfad7aeedd649c168a3c6fda92a3b8ab26c505b7542229ab269b12f395"
+    },
+    {
+      "path": "evidence/browser-installed-v2/hit-on.jpg",
+      "sha256": "06fa959638baf6ad0fc90eeb045de0c8b46fc755a1426686d809a9d99c0035d4"
+    },
+    {
+      "path": "evidence/browser-installed-v2/win-on.jpg",
+      "sha256": "1995b9a059599b14ca686701df33c50737583bfe715c3cb5dcc777ea78f35cb4"
+    },
+    {
+      "path": "evidence/browser-installed-v2/browser.json",
+      "sha256": "2f1c674eacb0a3bf1e4e16cf10564727a381270bb71c2880f5f7fbd825bf99dc"
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "checks": [
+      "Installed Studio0.9.0 + Pixel0.8.0 normal production and Phaser export",
+      "Normal playcheck11courier criteria and independent verify recomputation pass",
+      "Custom installed-v2 normal controls A/B both parcel+3hits+delivery win; HP30→20→5→0, damage10/15/5",
+      "Facing-away and out-of-range misses, contact360→366.7ms, signed target recoil and delayed HP trail pass",
+      "Denied, collect once, jump/land, stop, pause, restart, hurt/lose,390px no overflow and nine48px controls pass",
+      "Installed-v1 interrupted by focus auto-pause while concurrent browser drives; preserved separately",
+      "Source-only preflight distinct; art and listening acceptance pending"
+    ]
+  }
+}

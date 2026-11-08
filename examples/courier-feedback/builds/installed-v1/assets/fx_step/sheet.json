@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "frames": [
+    {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "duration_ms": 30
+    },
+    {
+      "rect": {
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "duration_ms": 40
+    },
+    {
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "duration_ms": 50
+    },
+    {
+      "rect": {
+        "x": 144,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "duration_ms": 60
+    },
+    {
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "duration_ms": 60
+    },
+    {
+      "rect": {
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "duration_ms": 80
+    }
+  ],
+  "pivot_px_from_top_left": [
+    24,
+    39
+  ],
+  "loop": false
+}

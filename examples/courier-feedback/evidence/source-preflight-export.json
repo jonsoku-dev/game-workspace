@@ -1,0 +1,6 @@
+{
+  "temporary_project": "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/courier-source-smoke-w2fapgp_/demo",
+  "exit_code": 0,
+  "stdout": "{\"output\": \"/private/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/courier-source-smoke-w2fapgp_/demo/play/preflight\", \"activity\": \"urn:game-studio:54c76795-c519-4312-b316-1d9d6075773f:work:export-b774c2957b84476a86010d4f95e61d1c\", \"engine\": \"phaser\"}\n",
+  "stderr": ""
+}

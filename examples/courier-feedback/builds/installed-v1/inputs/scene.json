@@ -1,0 +1,102 @@
+{
+  "assets": [
+    {
+      "id": "hero",
+      "producer": "pixel-action-set",
+      "request": "requests/hero.json"
+    },
+    {
+      "id": "fx_step",
+      "producer": "pixel-effect",
+      "request": "requests/step.json"
+    },
+    {
+      "id": "fx_land",
+      "producer": "pixel-effect",
+      "request": "requests/land.json"
+    },
+    {
+      "id": "fx_pickup",
+      "producer": "pixel-effect",
+      "request": "requests/pickup.json"
+    },
+    {
+      "id": "fx_impact",
+      "producer": "pixel-effect",
+      "request": "requests/impact.json"
+    },
+    {
+      "id": "fx_slash",
+      "producer": "pixel-effect",
+      "request": "requests/slash.json"
+    },
+    {
+      "id": "fx_confirm",
+      "producer": "pixel-effect",
+      "request": "requests/confirm.json"
+    },
+    {
+      "id": "fx_deny",
+      "producer": "pixel-effect",
+      "request": "requests/deny.json"
+    }
+  ],
+  "brief": {
+    "controls": "A/D 또는 ←/→ 이동 · Space 공격 · W/↑ 점프 · E 상호작용 · P/Esc 일시정지 · R 재시작",
+    "goal": "소포를 모아 우편함에 전달하고 표적을 세 번 맞히세요.",
+    "title": "라일락 배달 연습"
+  },
+  "coordinates": {
+    "handedness": "right",
+    "units": "meters",
+    "up": "+Y"
+  },
+  "feedback": {
+    "effects": {
+      "attack": "fx_slash",
+      "denied": "fx_deny",
+      "hit": "fx_impact",
+      "interact": "fx_confirm",
+      "land": "fx_land",
+      "pickup": "fx_pickup",
+      "step": "fx_step"
+    },
+    "schema_version": 1
+  },
+  "id": "courier-feedback",
+  "nodes": [
+    {
+      "action": "idle",
+      "asset": "hero",
+      "id": "hero",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1
+    }
+  ],
+  "playtest": {
+    "at_px": [
+      90,
+      62
+    ],
+    "contact_frame": 4,
+    "hits_to_win": 3,
+    "mode": "courier_trial",
+    "target_x": 650,
+    "target_y": 300
+  },
+  "schema_version": 1
+}

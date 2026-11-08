@@ -37,3 +37,7 @@ workspace Git 저장소는 `assets`, `studio`, `examples/forest-inventory-demo`�
 ## 실행 결과
 
 [그래프 작업실](http://127.0.0.1:59763/)에서 등록한 프로젝트를 선택한다. 웹 게임은 [Three.js Woods Alight](http://127.0.0.1:59765/woods-alight/)와 [Phaser Training Clearing](http://127.0.0.1:59765/phaser/)이다. Godot는 [PCK](release/ember-run.pck)로 실행하고, Unity는 [프로젝트](release/unity/)를 라이선스가 있는 Unity 6 에디터에서 열어 검증한다. [HTML 엔진 비교](studio/engines/HTML-ENGINES.md) · [릴리스 증거](release/evidence/receipt.json)
+
+## 조작 피드백을 비교하는 게임
+
+[라일락 배달 연습](http://127.0.0.1:52993/)에서 이동·착지·획득·빈손 거절·배달·실패·재시작과 장벽 타격을 같은 규칙으로 비교한다. 연출 A/B와 소리는 각각 전환할 수 있다. [실제 플레이 녹화](examples/courier-feedback/evidence/preview-final/preview-gameplay.mp4) · [3D 숲에서 수집과 복원](http://127.0.0.1:52995/) · [게임 전반에 적용하는 제작 지침](studio/FEEDBACK.md)

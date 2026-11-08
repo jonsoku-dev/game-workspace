@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "id": "courier-feedback",
+  "brief": {
+    "title": "라일락 배달 연습",
+    "goal": "소포를 모아 우편함에 전달하고 표적을 세 번 맞히세요.",
+    "controls": "A/D 또는 ←/→ 이동 · Space 공격 · W/↑ 점프 · E 상호작용 · P/Esc 일시정지 · R 재시작"
+  },
+  "coordinates": {
+    "units": "meters",
+    "up": "+Y",
+    "handedness": "right"
+  },
+  "assets": [
+    {
+      "id": "hero",
+      "producer": "pixel-action-set",
+      "request": "builds/installed-v1/inputs/hero/request.json",
+      "files": {
+        "atlas": "builds/installed-v1/assets/hero/atlas.png",
+        "metadata": "builds/installed-v1/assets/hero/action-set.json",
+        "preview": "builds/installed-v1/assets/hero/preview.gif",
+        "credits": "builds/installed-v1/assets/hero/credits.json"
+      }
+    },
+    {
+      "id": "fx_step",
+      "producer": "pixel-effect",
+      "request": "builds/installed-v1/inputs/fx_step.request.json",
+      "files": {
+        "sheet": "builds/installed-v1/assets/fx_step/sheet.png",
+        "metadata": "builds/installed-v1/assets/fx_step/sheet.json",
+        "preview": "builds/installed-v1/assets/fx_step/preview.gif",
+        "effect": "builds/installed-v1/assets/fx_step/effect.json"
+      }
+    },
+    {
+      "id": "fx_land",
+      "producer": "pixel-effect",
+      "request": "builds/installed-v1/inputs/fx_land.request.json",
+      "files": {
+        "sheet": "builds/installed-v1/assets/fx_land/sheet.png",
+        "metadata": "builds/installed-v1/assets/fx_land/sheet.json",
+        "preview": "builds/installed-v1/assets/fx_land/preview.gif",
+        "effect": "builds/installed-v1/assets/fx_land/effect.json"
+      }
+    },
+    {
+      "id": "fx_pickup",
+      "producer": "pixel-effect",
+      "request": "builds/installed-v1/inputs/fx_pickup.request.json",
+      "files": {
+        "sheet": "builds/installed-v1/assets/fx_pickup/sheet.png",
+        "metadata": "builds/installed-v1/assets/fx_pickup/sheet.json",
+        "preview": "builds/installed-v1/assets/fx_pickup/preview.gif",
+        "effect": "builds/installed-v1/assets/fx_pickup/effect.json"
+      }
+    },
+    {
+      "id": "fx_impact",
+      "producer": "pixel-effect",
+      "request": "builds/installed-v1/inputs/fx_impact.request.json",
+      "files": {
+        "sheet": "builds/installed-v1/assets/fx_impact/sheet.png",
+        "metadata": "builds/installed-v1/assets/fx_impact/sheet.json",
+        "preview": "builds/installed-v1/assets/fx_impact/preview.gif",
+        "effect": "builds/installed-v1/assets/fx_impact/effect.json"
+      }
+    },
+    {
+      "id": "fx_slash",
+      "producer": "pixel-effect",
+      "request": "builds/installed-v1/inputs/fx_slash.request.json",
+      "files": {
+        "sheet": "builds/installed-v1/assets/fx_slash/sheet.png",
+        "metadata": "builds/installed-v1/assets/fx_slash/sheet.json",
+        "preview": "builds/installed-v1/assets/fx_slash/preview.gif",
+        "effect": "builds/installed-v1/assets/fx_slash/effect.json"
+      }
+    },
+    {
+      "id": "fx_confirm",
+      "producer": "pixel-effect",
+      "request": "builds/installed-v1/inputs/fx_confirm.request.json",
+      "files": {
+        "sheet": "builds/installed-v1/assets/fx_confirm/sheet.png",
+        "metadata": "builds/installed-v1/assets/fx_confirm/sheet.json",
+        "preview": "builds/installed-v1/assets/fx_confirm/preview.gif",
+        "effect": "builds/installed-v1/assets/fx_confirm/effect.json"
+      }
+    },
+    {
+      "id": "fx_deny",
+      "producer": "pixel-effect",
+      "request": "builds/installed-v1/inputs/fx_deny.request.json",
+      "files": {
+        "sheet": "builds/installed-v1/assets/fx_deny/sheet.png",
+        "metadata": "builds/installed-v1/assets/fx_deny/sheet.json",
+        "preview": "builds/installed-v1/assets/fx_deny/preview.gif",
+        "effect": "builds/installed-v1/assets/fx_deny/effect.json"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hero",
+      "asset": "hero",
+      "action": "idle",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size_m": 1
+    }
+  ],
+  "input_scene": "builds/installed-v1/inputs/scene.json",
+  "playtest": {
+    "mode": "courier_trial",
+    "hits_to_win": 3,
+    "target_x": 650,
+    "target_y": 300,
+    "contact_frame": 4,
+    "at_px": [
+      90,
+      62
+    ]
+  },
+  "feedback": {
+    "schema_version": 1,
+    "effects": {
+      "step": "fx_step",
+      "land": "fx_land",
+      "pickup": "fx_pickup",
+      "hit": "fx_impact",
+      "attack": "fx_slash",
+      "interact": "fx_confirm",
+      "denied": "fx_deny"
+    }
+  }
+}

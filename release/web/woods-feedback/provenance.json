@@ -1,0 +1,37 @@
+{
+  "products/0/lantern/model.web.glb.webstage.json": {
+    "source": "builds/lantern-embers-final/assets/lantern/model.web.glb.webstage.json",
+    "sha256": "f3b7ecc0ebfeccf8e150a15c72ece1236674d938dee6d71ca400904edc96ef93",
+    "artifact": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:7b2a46a97bb5e6e31ed94bf3d3e0f09e6aa7bc6d6c424efc1e8c91677734e7fc"
+  },
+  "products/0/embers/model.web.glb": {
+    "source": "builds/lantern-embers-final/assets/embers/model.web.glb",
+    "sha256": "402e44a0bdea8a3d6f9799ccb7ad1ec193bbb19c520179b121aa3527908101f6",
+    "artifact": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ecb9e8bfadb366d80ea8489daaed0cd5d0e0d872e788087d61267b55f8c4d96f"
+  },
+  "products/0/lantern/model.web.glb": {
+    "source": "builds/lantern-embers-final/assets/lantern/model.web.glb",
+    "sha256": "d36d490665a33b4bdd0b2f796436e8eca4c2844643f26ea78cfb0233af226db0",
+    "artifact": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d11dac8f3d0bf0dcb5998b23cc1bd20f801970374263ec33519e4b7e20eba61c"
+  },
+  "products/0/lantern/three-validation.json": {
+    "source": "builds/lantern-embers-final/assets/lantern/three-validation.json",
+    "sha256": "c21a7f65a4febb22964f90cffe53075c9093ae278d387165c1786a0d2f3c8f1c",
+    "artifact": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:cd4531d4e65728d138465dea402e86dcea77cc8158efb5f199af2cd717f114ef"
+  },
+  "products/0/embers/effect.json": {
+    "source": "builds/lantern-embers-final/assets/embers/effect.json",
+    "sha256": "6f8309ca7e9d606af9a531b04e8b83f802aa1e96e3674d9ab185bf5d80501de1",
+    "artifact": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d31414fb5e4569e8c73c898cf5f0212cd7ac3e89350e37bf2469f305566a6ae8"
+  },
+  "products/0/embers/model.web.glb.webstage.json": {
+    "source": "builds/lantern-embers-final/assets/embers/model.web.glb.webstage.json",
+    "sha256": "023c13e3cf0e0b037a271543373a7c5d9cd6dccc86b404c8a1ce2fdcf874a954",
+    "artifact": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ee764c5a6f08c48154d0371d32b25cd00d7744443e5a7605aff76cfa288f1cde"
+  },
+  "products/0/embers/three-validation.json": {
+    "source": "builds/lantern-embers-final/assets/embers/three-validation.json",
+    "sha256": "946524bfbe627239e33f61733ef538c8c875b178a17e82269d7bb745855e288b",
+    "artifact": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:1a8819beac61bdf4accb8fde2bb66d74d64bc9c87c8965f5860e38be3e0ab270"
+  }
+}

@@ -10,7 +10,8 @@
     "examples/first-strike",
     "examples/moonshot-fx",
     "examples/rive-character",
-    "examples/storybook-cels"
+    "examples/storybook-cels",
+    "examples/courier-feedback"
   ],
   "links": [
     {
@@ -80,9 +81,29 @@
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:drawn-character-release",
       "observed": "urn:game-studio:fdde84ae-447c-429b-825e-d88a491028c4:work:actual-rive-cel-playback"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:actions-and-feedback-review",
+      "observed": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:final-courier-feedback"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:actions-and-feedback-review",
+      "observed": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:export-750f9c795b7c4ce8ae54c322b0daeb8d"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:actions-and-feedback-review",
+      "observed": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:browser-6b5dd87108a54f7f8f38d78b8697bccb"
     }
   ],
   "playtests": [
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:export-bbd23ed6eef34ab6b470a1a66e9b6c22",
+      "url": "http://127.0.0.1:52995/"
+    },
+    {
+      "activity": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:export-750f9c795b7c4ce8ae54c322b0daeb8d",
+      "url": "http://127.0.0.1:52993/"
+    },
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:export-ae849277dd964d7daea9328a0d5ea08d",
       "url": "http://127.0.0.1:59765/woods-alight/"

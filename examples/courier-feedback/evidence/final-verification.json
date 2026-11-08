@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "installed_game_studio": "0.9.1",
+  "installed_pixel_asset": "0.8.0",
+  "demo": "http://127.0.0.1:52993/",
+  "feedback_comparison": "same fixed simulation, optional presentation toggled",
+  "run_id": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:run:6b1ed8e11881401aa1025317b9a121cf",
+  "activity": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:export-750f9c795b7c4ce8ae54c322b0daeb8d",
+  "export_dir": "play/final",
+  "export_sha256": "502ea6ed1ca7928d710d170888a3446ca3dcdb6441121463f59a1f9c72027f72",
+  "runtime_sha256": "f13ee3d0a34c73513f81a91e9dd8258d328c44016d7aeab6aece5e7e40aed39d",
+  "browser_report": "checks/browser-6b5dd87108a54f7f8f38d78b8697bccb.json",
+  "browser_activity": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:browser-6b5dd87108a54f7f8f38d78b8697bccb",
+  "criteria": [
+    "move_stop",
+    "jump_land",
+    "collect_once",
+    "denied",
+    "out_of_range_miss",
+    "contact_timing",
+    "target_hp",
+    "finisher",
+    "win",
+    "reset",
+    "pause"
+  ],
+  "AB": "evidence/browser-final/browser.json",
+  "audio": "Playback recorded from game audio nodes; physical output not evaluated",
+  "source_cels": 48,
+  "observed_damage": [
+    10,
+    15,
+    5
+  ],
+  "capture": {
+    "file": "evidence/preview-final/preview-gameplay.mp4",
+    "sha256": "4b8878f943ed329239a016da6c8b1e6bd3674aa6101a334a8c58a9421b2aa873",
+    "receipt_sha256": "502ea6ed1ca7928d710d170888a3446ca3dcdb6441121463f59a1f9c72027f72"
+  },
+  "artistic_acceptance": "pending"
+}

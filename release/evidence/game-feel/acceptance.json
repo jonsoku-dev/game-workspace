@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "plugins": {
+    "game-studio": {
+      "version": "0.9.1",
+      "source_commit": "3fef679049092a0718105061959f0caac7a12f3d"
+    },
+    "pixel-asset-pipeline": {
+      "version": "0.8.0",
+      "source_commit": "cd7616bea405146b211e707d1bbc4ba16ff1106f"
+    }
+  },
+  "project": "examples/courier-feedback",
+  "feedback_authoring": "studio/FEEDBACK.md",
+  "pixel_effects": [
+    "step",
+    "land",
+    "pickup",
+    "slash",
+    "impact",
+    "confirm",
+    "deny",
+    "flame"
+  ],
+  "phaser": {
+    "url": "http://127.0.0.1:52993/",
+    "activity": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:export-750f9c795b7c4ce8ae54c322b0daeb8d",
+    "receipt_sha256": "502ea6ed1ca7928d710d170888a3446ca3dcdb6441121463f59a1f9c72027f72",
+    "runtime_sha256": "f13ee3d0a34c73513f81a91e9dd8258d328c44016d7aeab6aece5e7e40aed39d",
+    "browser_activity": "urn:game-studio:d1236093-c719-45d0-bbb6-0fd3f4b2828a:work:browser-6b5dd87108a54f7f8f38d78b8697bccb",
+    "automatic_criteria": [
+      "move_stop",
+      "jump_land",
+      "collect_once",
+      "denied",
+      "out_of_range_miss",
+      "contact_timing",
+      "target_hp",
+      "finisher",
+      "win",
+      "reset",
+      "pause"
+    ],
+    "independent_ab": "evidence/browser-final/browser.json",
+    "actual_damage": [
+      10,
+      15,
+      5
+    ],
+    "capture": {
+      "file": "evidence/preview-final/preview-gameplay.mp4",
+      "sha256": "4b8878f943ed329239a016da6c8b1e6bd3674aa6101a334a8c58a9421b2aa873",
+      "receipt_sha256": "502ea6ed1ca7928d710d170888a3446ca3dcdb6441121463f59a1f9c72027f72"
+    },
+    "hits_template_smoke": [
+      3,
+      5
+    ]
+  },
+  "three": {
+    "url": "http://127.0.0.1:52995/",
+    "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:export-bbd23ed6eef34ab6b470a1a66e9b6c22",
+    "observations": "release/evidence/game-feel/three-browser.json",
+    "sha256": "8e97940ab7d9933124331d2ecdd4e1bf3f51be2cbec3a46a1a13c7eeda8aed52",
+    "state_checks": [
+      "initial",
+      "pause",
+      "far_denied_and_spam",
+      "locked_near_goal",
+      "crystals",
+      "collection_idempotent",
+      "restore_cooldown",
+      "win",
+      "excess_restore",
+      "ab_and_audio",
+      "wall",
+      "mobile",
+      "reduced_motion",
+      "served_manifest",
+      "errors"
+    ],
+    "limitations": [
+      "Synthetic audio opt-in state observed; no listening or hardware latency measurement.",
+      "Source-prepared export exercised; final installed bytes must be compared by primary.",
+      "Reduced motion unverified: emulateMedia unsupported and newContext options did not activate the preference (observed false).",
+      "Real mesh depth confirmed by source and rendered screenshots; no camera occlusion sweep."
+    ]
+  },
+  "godot": {
+    "version": "4.5.1",
+    "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:export-4f2488df932f42478950676807f51c55",
+    "pack": "release/ember-feedback.pck",
+    "pack_sha256": "4001bba8a70c409d8fbe310637963ed6ca079e888cb83a01fa077fd6338d8940",
+    "headless": {
+      "accents_ab": true,
+      "audio_default_muted": true,
+      "events": {
+        "attack": 5,
+        "denied": 4,
+        "pause": 2,
+        "pickup": 2,
+        "reset": 1,
+        "step": 9,
+        "win": 1
+      },
+      "native_audio_dispatch": true,
+      "pause_freezes_gameplay": true,
+      "reduced_motion": true
+    },
+    "real_clock_headless_pass": true,
+    "fixed_fps_note": "One fast --fixed-fps 60 headless verification emitted ObjectDB warnings for a WAV and its playback at process exit. A real-clock verbose PCK check passed and emitted no leak warning. Windowed listening and visual play were not tested."
+  },
+  "unity": {
+    "target": "Unity 6 project",
+    "verified": "Adapter exports, Blender conversion and actual .NET state + cue observer suite",
+    "editor_play": "unverified",
+    "audio": "not in existing module set; feedback is visual"
+  },
+  "audio": {
+    "source": "release/evidence/game-feel/audio-demo.json",
+    "capture": "release/evidence/game-feel/audio-demo.wav",
+    "sha256": "5c0254dab1dc503344a9abfb07f565ebaab43e13f7f9a15d45c617513a3fc611",
+    "seconds": 6.3,
+    "human_listening": "unverified"
+  },
+  "limits": [
+    "Game feel and art selection remain subjective and unapproved",
+    "Web checks use a desktop browser and a simulated mobile viewport. Actual mobile hardware and reduced-motion browser setting change were not verified.",
+    "Examples implement events reachable in their respective game. New games must connect their own state transitions."
+  ]
+}
