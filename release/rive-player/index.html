@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>솔바람 정찰대 · Rive</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./vendor/rive.js"></script>
+  <script defer src="./player.js"></script>
+</head>
+<body>
+  <main>
+    <header><h1>솔바람 정찰대</h1><p class="intro">동작을 선택하고, 다시 보기로 처음부터 재생하세요.</p></header>
+    <section class="stage" aria-label="탐험가 애니메이션">
+      <span class="stage-label">LIVE · RIVE</span>
+      <canvas id="character" width="640" height="640" role="img" aria-label="솔바람 정찰대 캐릭터의 대기 동작"></canvas>
+      <p id="status" role="status">캐릭터를 불러오는 중…</p>
+    </section>
+    <section class="controls" aria-label="동작 선택">
+      <div id="actions" class="actions">
+        <button data-action="0" aria-pressed="true" disabled>대기</button><button data-action="1" aria-pressed="false" disabled>걷기</button><button data-action="2" aria-pressed="false" disabled>달리기</button><button data-action="3" aria-pressed="false" disabled>공격</button><button data-action="4" aria-pressed="false" disabled>점프</button><button data-action="5" aria-pressed="false" disabled>피격</button><button data-action="6" aria-pressed="false" disabled>손 흔들기</button><button data-action="7" aria-pressed="false" disabled>환호</button>
+      </div>
+      <div class="transport"><button id="pause" disabled>일시 정지</button><button id="replay" disabled>동작 다시 보기 ↻</button></div>
+    </section>
+    <footer><span>96 × 96 픽셀 캐릭터 · 8가지 동작</span><a href="./hero.riv?v=2feafcf7a4898caf" download="hero.riv">Rive 파일 다운로드 ↓</a></footer>
+  </main>
+</body>
+</html>

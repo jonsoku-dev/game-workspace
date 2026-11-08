@@ -1,0 +1,173 @@
+{
+  "upper_left": {
+    "parent_px": [
+      40,
+      43
+    ],
+    "child_px": [
+      36,
+      44
+    ],
+    "radius_px": 3,
+    "source_px": [
+      37,
+      44
+    ],
+    "edge_px": [
+      33,
+      44
+    ]
+  },
+  "upper_right": {
+    "parent_px": [
+      56,
+      43
+    ],
+    "child_px": [
+      60,
+      44
+    ],
+    "radius_px": 3,
+    "source_px": [
+      59,
+      44
+    ],
+    "edge_px": [
+      63,
+      43
+    ]
+  },
+  "fore_left": {
+    "parent_px": [
+      36,
+      48
+    ],
+    "child_px": [
+      36,
+      55
+    ],
+    "radius_px": 3,
+    "source_px": [
+      36,
+      53
+    ],
+    "edge_px": [
+      34,
+      52
+    ]
+  },
+  "fore_right": {
+    "parent_px": [
+      60,
+      46
+    ],
+    "child_px": [
+      60,
+      55
+    ],
+    "radius_px": 3,
+    "source_px": [
+      60,
+      53
+    ],
+    "edge_px": [
+      58,
+      52
+    ]
+  },
+  "leg_left": {
+    "parent_px": [
+      45,
+      60
+    ],
+    "child_px": [
+      45,
+      65
+    ],
+    "radius_px": 3,
+    "source_px": [
+      45,
+      65
+    ],
+    "edge_px": [
+      42,
+      65
+    ]
+  },
+  "leg_right": {
+    "parent_px": [
+      53,
+      60
+    ],
+    "child_px": [
+      53,
+      65
+    ],
+    "radius_px": 3,
+    "source_px": [
+      53,
+      65
+    ],
+    "edge_px": [
+      50,
+      65
+    ]
+  },
+  "calf_left": {
+    "parent_px": [
+      45,
+      69
+    ],
+    "child_px": [
+      45,
+      74
+    ],
+    "radius_px": 2,
+    "source_px": [
+      45,
+      69
+    ],
+    "edge_px": [
+      42,
+      70
+    ]
+  },
+  "calf_right": {
+    "parent_px": [
+      53,
+      69
+    ],
+    "child_px": [
+      53,
+      74
+    ],
+    "radius_px": 2,
+    "source_px": [
+      53,
+      69
+    ],
+    "edge_px": [
+      50,
+      70
+    ]
+  },
+  "head": {
+    "parent_px": [
+      48,
+      41
+    ],
+    "child_px": [
+      48,
+      36
+    ],
+    "radius_px": 3,
+    "source_px": [
+      48,
+      35
+    ],
+    "edge_px": [
+      43,
+      38
+    ]
+  }
+}

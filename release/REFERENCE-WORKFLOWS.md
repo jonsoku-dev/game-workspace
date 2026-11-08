@@ -30,3 +30,7 @@ Polymation은 픽셀처럼 보이는 확대 그림을 1× 격자로 정리하고
 | 한 장의 리그 초안 | 분리된 정면 인물 원화에서 여섯 부위를 제안했다. 각 부위의 편집 가능한 마스크와 부모·관절이 있고 초안은 승인 대기 상태다. [실제 관절 오버레이](evidence/rig-draft/joint-preview.png) · [요청](evidence/rig-draft/rig-draft.request.json) |
 | 모으기·비행·충돌 | ‘달빛 탄환’에서 공격을 누르면 FX가 시작된다. 충돌 단계 첫 프레임과 점수 판정은 240ms로 설정했고, 실제 첫 명중은 약 250ms에서 관찰했다. 원거리·등진 공격, 승리 직전·승리·재시작도 검사했다. [게임 열기](http://127.0.0.1:52983/) · [실제 플레이 기록](../examples/moonshot-fx/checks/browser-1385f1d7619b4ea98d4837761e8f16d4.json) |
 | 수정 전후 손맛 | A/B의 첫 명중 시각은 각각 240·320ms다. 동일한 재생 시각 280ms에서 두 자세가 달라지고 각 버전을 플레이할 수 있다. 기술 통과만 기록했고 사람의 채택은 남겨 두었다. [KO 작업실](http://127.0.0.1:52980/?view=compare&lang=ko) · [日本語](http://127.0.0.1:52980/?view=compare&lang=ja) · [브라우저 계측](evidence/first-strike/compare-browser.json) |
+
+## 후속 적용 — 한 장의 캐릭터에서 실제 Rive 재생까지
+
+위 표의 Phaser 검증 이후에 Rive 내보내기와 공식 웹 플레이어를 추가했다. 솔바람 정찰대는 프레임을 구워 넣은 단일 파일이다. 초기 예제는 Rive 재생이 원본 PNG와 일치했는데도 공격·인사에서 팔다리가 분리되어 있었다. 원본의 연결 영역과 관절 안쪽을 고치고 지지발·반대 팔·착지 타이밍을 다시 만든 뒤, 수정본의 입력과 실제 재생을 다시 대조했다. 라이브 본 편집은 별도 범위다. [수정 전후 비교](../examples/rive-character/evidence/joint-comparison.png) · [Rive 플레이어](http://127.0.0.1:8876/?v=2feafcf7) · [최종 파일](../examples/rive-character/build/rive/character.riv)

@@ -1,0 +1,293 @@
+{
+  "parts": [
+    {
+      "id": "body",
+      "role": "torso",
+      "parent": null,
+      "anchor_px": [
+        48,
+        52
+      ],
+      "mask": "mask-body.png"
+    },
+    {
+      "id": "leg_left",
+      "role": "leg_left",
+      "parent": "body",
+      "anchor_px": [
+        45,
+        61
+      ],
+      "mask": "mask-leg_left.png",
+      "joint_underlap": {
+        "parent_px": [
+          45,
+          60
+        ],
+        "child_px": [
+          45,
+          65
+        ],
+        "radius_px": 3,
+        "source_px": [
+          45,
+          65
+        ],
+        "edge_px": [
+          42,
+          65
+        ]
+      }
+    },
+    {
+      "id": "calf_left",
+      "role": "leg_left",
+      "parent": "leg_left",
+      "anchor_px": [
+        45,
+        71
+      ],
+      "mask": "mask-calf_left.png",
+      "contact_px": [
+        48,
+        83
+      ],
+      "joint_underlap": {
+        "parent_px": [
+          45,
+          69
+        ],
+        "child_px": [
+          45,
+          74
+        ],
+        "radius_px": 2,
+        "source_px": [
+          45,
+          69
+        ],
+        "edge_px": [
+          42,
+          70
+        ]
+      }
+    },
+    {
+      "id": "leg_right",
+      "role": "leg_right",
+      "parent": "body",
+      "anchor_px": [
+        53,
+        61
+      ],
+      "mask": "mask-leg_right.png",
+      "joint_underlap": {
+        "parent_px": [
+          53,
+          60
+        ],
+        "child_px": [
+          53,
+          65
+        ],
+        "radius_px": 3,
+        "source_px": [
+          53,
+          65
+        ],
+        "edge_px": [
+          50,
+          65
+        ]
+      }
+    },
+    {
+      "id": "calf_right",
+      "role": "leg_right",
+      "parent": "leg_right",
+      "anchor_px": [
+        53,
+        71
+      ],
+      "mask": "mask-calf_right.png",
+      "contact_px": [
+        56,
+        83
+      ],
+      "joint_underlap": {
+        "parent_px": [
+          53,
+          69
+        ],
+        "child_px": [
+          53,
+          74
+        ],
+        "radius_px": 2,
+        "source_px": [
+          53,
+          69
+        ],
+        "edge_px": [
+          50,
+          70
+        ]
+      }
+    },
+    {
+      "id": "upper_left",
+      "role": "arm_left",
+      "parent": "body",
+      "anchor_px": [
+        36,
+        41
+      ],
+      "mask": "mask-upper_left.png",
+      "joint_underlap": {
+        "parent_px": [
+          40,
+          43
+        ],
+        "child_px": [
+          36,
+          44
+        ],
+        "radius_px": 3,
+        "source_px": [
+          37,
+          44
+        ],
+        "edge_px": [
+          33,
+          44
+        ]
+      }
+    },
+    {
+      "id": "fore_left",
+      "role": "arm_left",
+      "parent": "upper_left",
+      "anchor_px": [
+        36,
+        51
+      ],
+      "mask": "mask-fore_left.png",
+      "joint_underlap": {
+        "parent_px": [
+          36,
+          48
+        ],
+        "child_px": [
+          36,
+          55
+        ],
+        "radius_px": 3,
+        "source_px": [
+          36,
+          53
+        ],
+        "edge_px": [
+          34,
+          52
+        ]
+      }
+    },
+    {
+      "id": "upper_right",
+      "role": "arm_right",
+      "parent": "body",
+      "anchor_px": [
+        60,
+        41
+      ],
+      "mask": "mask-upper_right.png",
+      "joint_underlap": {
+        "parent_px": [
+          56,
+          43
+        ],
+        "child_px": [
+          60,
+          44
+        ],
+        "radius_px": 3,
+        "source_px": [
+          59,
+          44
+        ],
+        "edge_px": [
+          63,
+          43
+        ]
+      }
+    },
+    {
+      "id": "fore_right",
+      "role": "arm_right",
+      "parent": "upper_right",
+      "anchor_px": [
+        60,
+        51
+      ],
+      "mask": "mask-fore_right.png",
+      "joint_underlap": {
+        "parent_px": [
+          60,
+          46
+        ],
+        "child_px": [
+          60,
+          55
+        ],
+        "radius_px": 3,
+        "source_px": [
+          60,
+          53
+        ],
+        "edge_px": [
+          58,
+          52
+        ]
+      }
+    },
+    {
+      "id": "scarf",
+      "role": "accessory",
+      "parent": "body",
+      "anchor_px": [
+        48,
+        40
+      ],
+      "mask": "mask-scarf.png"
+    },
+    {
+      "id": "head",
+      "role": "head",
+      "parent": "body",
+      "anchor_px": [
+        48,
+        37
+      ],
+      "mask": "mask-head.png",
+      "joint_underlap": {
+        "parent_px": [
+          48,
+          41
+        ],
+        "child_px": [
+          48,
+          36
+        ],
+        "radius_px": 3,
+        "source_px": [
+          48,
+          35
+        ],
+        "edge_px": [
+          43,
+          38
+        ]
+      }
+    }
+  ]
+}

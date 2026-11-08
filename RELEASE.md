@@ -50,3 +50,7 @@ python3 -m http.server 59765 --bind 127.0.0.1 --directory release/web
 ## 원본에서 첫 게임과 A/B 수정까지
 
 Game Studio 0.7.1과 Pixel Asset Pipeline 0.5.0의 새 제작 경로다. [첫 슬라이스 설치와 실행](studio/INSTALL.md), [A와 B 재생](examples/first-strike/COMPARE.md), [원화·GIF·SVG 원문 대조](release/REFERENCE-WORKFLOWS.md)에서 입력과 재현 명령을 확인할 수 있다.
+
+## Rive 캐릭터 플레이어
+
+Pixel Asset Pipeline 0.6.0으로 원화 한 장과 명시적인 관절 마스크에서 74포즈를 생성한다. `pixel-asset rive`는 이를 이미지가 내장된 `.riv`와 입력값 목록으로 내보낸다. [프로젝트와 재현 명령](examples/rive-character/README.md) · [공식 런타임을 동봉한 로컬 플레이어](release/rive-player/README.md) · [실제 캔버스 재생 GIF](examples/rive-character/evidence/runtime-preview.gif)

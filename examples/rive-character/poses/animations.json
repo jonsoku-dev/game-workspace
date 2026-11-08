@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "size": [
+    96,
+    96
+  ],
+  "actions": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "idle-0.png",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-1.png",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-2.png",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-3.png",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-4.png",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-5.png",
+          "duration_ms": 180
+        }
+      ]
+    },
+    "walk": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "walk-0.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-1.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-2.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-3.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-4.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-5.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-6.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-7.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-8.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-9.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-10.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-11.png",
+          "duration_ms": 90
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "run-0.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-1.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-2.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-3.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-4.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-5.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-6.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-7.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-8.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-9.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-10.png",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-11.png",
+          "duration_ms": 65
+        }
+      ]
+    },
+    "attack": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "attack-0.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-1.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-2.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-3.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-4.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-5.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-6.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-7.png",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-8.png",
+          "duration_ms": 90
+        }
+      ]
+    },
+    "jump": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "jump-0.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-1.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-2.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-3.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-4.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-5.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-6.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-7.png",
+          "duration_ms": 140
+        },
+        {
+          "path": "jump-8.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "jump-9.png",
+          "duration_ms": 120
+        },
+        {
+          "path": "jump-10.png",
+          "duration_ms": 160
+        }
+      ]
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "hurt-0.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-1.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-2.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-3.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-4.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-5.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-6.png",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-7.png",
+          "duration_ms": 100
+        }
+      ]
+    },
+    "wave": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "wave-0.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-1.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-2.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-3.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-4.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-5.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-6.png",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-7.png",
+          "duration_ms": 130
+        }
+      ]
+    },
+    "cheer": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cheer-0.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-1.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-2.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-3.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-4.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-5.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-6.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-7.png",
+          "duration_ms": 110
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1676 @@
+{
+  "status": "runtime-verified-artwork-not-human-approved",
+  "sha256": "2feafcf7a4898cafbd3eaf421135941939c1c8ffa1a2e6c5c64e9495fd5f2af2",
+  "bytes": 107312,
+  "url": "http://127.0.0.1:8876/?v=2feafcf7",
+  "driver": "configured Stagehand MCP independent stdio",
+  "identity": {
+    "source": "./hero.riv?v=2feafcf7a4898caf",
+    "bounds": {
+      "minX": 0,
+      "minY": 0,
+      "maxX": 96,
+      "maxY": 96
+    },
+    "contents": {
+      "artboards": [
+        {
+          "name": "Character",
+          "animations": [
+            "idle",
+            "walk",
+            "run",
+            "attack",
+            "jump",
+            "hurt",
+            "wave",
+            "cheer"
+          ],
+          "stateMachines": [
+            {
+              "name": "Character Actions",
+              "inputs": [
+                {
+                  "name": "action",
+                  "type": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "downloadURL": "http://127.0.0.1:8876/hero.riv?v=2feafcf7a4898caf",
+    "downloadName": "hero.riv",
+    "fetchedSHA": "2feafcf7a4898cafbd3eaf421135941939c1c8ffa1a2e6c5c64e9495fd5f2af2"
+  },
+  "results": {
+    "desktop": {
+      "actions": [
+        {
+          "action": 7,
+          "input": 7,
+          "states": [
+            "cheer"
+          ],
+          "samples": [
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "7c78ac90",
+              "opaque": 1652,
+              "edge": 0
+            },
+            {
+              "hash": "4b3cb689",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "6a8094ca",
+              "opaque": 1648,
+              "edge": 0
+            },
+            {
+              "hash": "327e5e89",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "327e5e89",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "77701a90",
+              "opaque": 1652,
+              "edge": 0
+            },
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "7c78ac90",
+              "opaque": 1652,
+              "edge": 0
+            },
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "7c78ac90",
+              "opaque": 1652,
+              "edge": 0
+            }
+          ],
+          "unique": 6
+        },
+        {
+          "action": 2,
+          "input": 2,
+          "states": [
+            "run"
+          ],
+          "samples": [
+            {
+              "hash": "26abc88b",
+              "opaque": 1489,
+              "edge": 0
+            },
+            {
+              "hash": "c6d501a9",
+              "opaque": 1459,
+              "edge": 0
+            },
+            {
+              "hash": "f11c326a",
+              "opaque": 1450,
+              "edge": 0
+            },
+            {
+              "hash": "26abc88b",
+              "opaque": 1489,
+              "edge": 0
+            },
+            {
+              "hash": "c1367cde",
+              "opaque": 1502,
+              "edge": 0
+            },
+            {
+              "hash": "916f5d25",
+              "opaque": 1490,
+              "edge": 0
+            },
+            {
+              "hash": "fe648769",
+              "opaque": 1472,
+              "edge": 0
+            },
+            {
+              "hash": "6e7d02ff",
+              "opaque": 1476,
+              "edge": 0
+            },
+            {
+              "hash": "c1367cde",
+              "opaque": 1502,
+              "edge": 0
+            },
+            {
+              "hash": "26abc88b",
+              "opaque": 1489,
+              "edge": 0
+            },
+            {
+              "hash": "c6d501a9",
+              "opaque": 1459,
+              "edge": 0
+            },
+            {
+              "hash": "f11c326a",
+              "opaque": 1450,
+              "edge": 0
+            }
+          ],
+          "unique": 7
+        },
+        {
+          "action": 5,
+          "input": 5,
+          "states": [
+            "hurt"
+          ],
+          "samples": [
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "7ed5280e",
+              "opaque": 1569,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "91697996",
+              "opaque": 1568,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "7d57dfc2",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "7d57dfc2",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "9fa8db7d",
+              "opaque": 1564,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            }
+          ],
+          "unique": 6
+        },
+        {
+          "action": 1,
+          "input": 1,
+          "states": [
+            "walk"
+          ],
+          "samples": [
+            {
+              "hash": "3ef51a20",
+              "opaque": 1570,
+              "edge": 0
+            },
+            {
+              "hash": "7b1f9cc3",
+              "opaque": 1551,
+              "edge": 0
+            },
+            {
+              "hash": "2e746e92",
+              "opaque": 1525,
+              "edge": 0
+            },
+            {
+              "hash": "b2e988b0",
+              "opaque": 1509,
+              "edge": 0
+            },
+            {
+              "hash": "2e746e92",
+              "opaque": 1525,
+              "edge": 0
+            },
+            {
+              "hash": "7b1f9cc3",
+              "opaque": 1551,
+              "edge": 0
+            },
+            {
+              "hash": "3ef51a20",
+              "opaque": 1570,
+              "edge": 0
+            },
+            {
+              "hash": "8bb2193",
+              "opaque": 1545,
+              "edge": 0
+            },
+            {
+              "hash": "a8b1a07e",
+              "opaque": 1520,
+              "edge": 0
+            },
+            {
+              "hash": "4f56df96",
+              "opaque": 1512,
+              "edge": 0
+            },
+            {
+              "hash": "a8b1a07e",
+              "opaque": 1520,
+              "edge": 0
+            },
+            {
+              "hash": "686220ae",
+              "opaque": 1536,
+              "edge": 0
+            }
+          ],
+          "unique": 8
+        },
+        {
+          "action": 6,
+          "input": 6,
+          "states": [
+            "wave"
+          ],
+          "samples": [
+            {
+              "hash": "6474c1cb",
+              "opaque": 1636,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "5d887062",
+              "opaque": 1631,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "6474c1cb",
+              "opaque": 1636,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "5d887062",
+              "opaque": 1631,
+              "edge": 0
+            },
+            {
+              "hash": "5d887062",
+              "opaque": 1631,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            }
+          ],
+          "unique": 3
+        },
+        {
+          "action": 4,
+          "input": 4,
+          "states": [
+            "jump"
+          ],
+          "samples": [
+            {
+              "hash": "e5eaf644",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "df7c83f1",
+              "opaque": 1593,
+              "edge": 0
+            },
+            {
+              "hash": "793858bd",
+              "opaque": 1633,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "955a910",
+              "opaque": 1648,
+              "edge": 0
+            },
+            {
+              "hash": "7ec492f7",
+              "opaque": 1638,
+              "edge": 0
+            },
+            {
+              "hash": "aec85e9b",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "aec85e9b",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "707e93c5",
+              "opaque": 1582,
+              "edge": 0
+            },
+            {
+              "hash": "6cad23ad",
+              "opaque": 1575,
+              "edge": 0
+            },
+            {
+              "hash": "6cad23ad",
+              "opaque": 1575,
+              "edge": 0
+            }
+          ],
+          "unique": 9
+        },
+        {
+          "action": 3,
+          "input": 3,
+          "states": [
+            "attack"
+          ],
+          "samples": [
+            {
+              "hash": "520b6559",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "30576a56",
+              "opaque": 1584,
+              "edge": 0
+            },
+            {
+              "hash": "174da963",
+              "opaque": 1599,
+              "edge": 0
+            },
+            {
+              "hash": "bfcb4f89",
+              "opaque": 1627,
+              "edge": 0
+            },
+            {
+              "hash": "9b84a4c3",
+              "opaque": 1621,
+              "edge": 0
+            },
+            {
+              "hash": "992a032",
+              "opaque": 1628,
+              "edge": 0
+            },
+            {
+              "hash": "b4fbfa0f",
+              "opaque": 1620,
+              "edge": 0
+            },
+            {
+              "hash": "50f113cf",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            }
+          ],
+          "unique": 9
+        },
+        {
+          "action": 0,
+          "input": 0,
+          "states": [
+            "idle"
+          ],
+          "samples": [
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "bb2572b7",
+              "opaque": 1587,
+              "edge": 0
+            },
+            {
+              "hash": "bb2572b7",
+              "opaque": 1587,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            }
+          ],
+          "unique": 2
+        }
+      ],
+      "replay": [
+        {
+          "action": 3,
+          "held": {
+            "hash": "61b904d3",
+            "opaque": 1586,
+            "edge": 0
+          },
+          "samples": [
+            {
+              "hash": "520b6559",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "30576a56",
+              "opaque": 1584,
+              "edge": 0
+            },
+            {
+              "hash": "174da963",
+              "opaque": 1599,
+              "edge": 0
+            },
+            {
+              "hash": "bfcb4f89",
+              "opaque": 1627,
+              "edge": 0
+            },
+            {
+              "hash": "9b84a4c3",
+              "opaque": 1621,
+              "edge": 0
+            },
+            {
+              "hash": "992a032",
+              "opaque": 1628,
+              "edge": 0
+            },
+            {
+              "hash": "b4fbfa0f",
+              "opaque": 1620,
+              "edge": 0
+            },
+            {
+              "hash": "50f113cf",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            }
+          ],
+          "unique": 9,
+          "input": 3
+        },
+        {
+          "action": 4,
+          "held": {
+            "hash": "61b904d3",
+            "opaque": 1586,
+            "edge": 0
+          },
+          "samples": [
+            {
+              "hash": "e5eaf644",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "df7c83f1",
+              "opaque": 1593,
+              "edge": 0
+            },
+            {
+              "hash": "793858bd",
+              "opaque": 1633,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "955a910",
+              "opaque": 1648,
+              "edge": 0
+            },
+            {
+              "hash": "7ec492f7",
+              "opaque": 1638,
+              "edge": 0
+            },
+            {
+              "hash": "aec85e9b",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "aec85e9b",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "707e93c5",
+              "opaque": 1582,
+              "edge": 0
+            }
+          ],
+          "unique": 8,
+          "input": 4
+        },
+        {
+          "action": 5,
+          "held": {
+            "hash": "32484c35",
+            "opaque": 1566,
+            "edge": 0
+          },
+          "samples": [
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "7ed5280e",
+              "opaque": 1569,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "91697996",
+              "opaque": 1568,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "7d57dfc2",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "9fa8db7d",
+              "opaque": 1564,
+              "edge": 0
+            },
+            {
+              "hash": "9fa8db7d",
+              "opaque": 1564,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            }
+          ],
+          "unique": 6,
+          "input": 5
+        }
+      ],
+      "pause": {
+        "before": "c6d501a9",
+        "after": "c6d501a9",
+        "stable": true
+      },
+      "resume": {
+        "unique": 5,
+        "samples": [
+          "c6d501a9",
+          "26abc88b",
+          "c1367cde",
+          "916f5d25",
+          "fe648769"
+        ]
+      },
+      "errors": [],
+      "layout": {
+        "viewport": [
+          1280,
+          1000
+        ],
+        "backing": [
+          96,
+          96
+        ],
+        "rect": {
+          "x": 352,
+          "y": 160,
+          "width": 576,
+          "height": 576,
+          "top": 160,
+          "right": 928,
+          "bottom": 736,
+          "left": 352
+        },
+        "overflow": false
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:8876/style.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/vendor/rive.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/player.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/vendor/rive.wasm",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/hero.riv?v=2feafcf7a4898caf",
+          "status": 200
+        }
+      ]
+    },
+    "mobile": {
+      "actions": [
+        {
+          "action": 7,
+          "input": 7,
+          "states": [
+            "cheer"
+          ],
+          "samples": [
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "7c78ac90",
+              "opaque": 1652,
+              "edge": 0
+            },
+            {
+              "hash": "4b3cb689",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "6a8094ca",
+              "opaque": 1648,
+              "edge": 0
+            },
+            {
+              "hash": "6a8094ca",
+              "opaque": 1648,
+              "edge": 0
+            },
+            {
+              "hash": "327e5e89",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "77701a90",
+              "opaque": 1652,
+              "edge": 0
+            },
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "7c78ac90",
+              "opaque": 1652,
+              "edge": 0
+            },
+            {
+              "hash": "887106f5",
+              "opaque": 1647,
+              "edge": 0
+            },
+            {
+              "hash": "7c78ac90",
+              "opaque": 1652,
+              "edge": 0
+            }
+          ],
+          "unique": 6
+        },
+        {
+          "action": 2,
+          "input": 2,
+          "states": [
+            "run"
+          ],
+          "samples": [
+            {
+              "hash": "26abc88b",
+              "opaque": 1489,
+              "edge": 0
+            },
+            {
+              "hash": "c6d501a9",
+              "opaque": 1459,
+              "edge": 0
+            },
+            {
+              "hash": "f11c326a",
+              "opaque": 1450,
+              "edge": 0
+            },
+            {
+              "hash": "26abc88b",
+              "opaque": 1489,
+              "edge": 0
+            },
+            {
+              "hash": "c1367cde",
+              "opaque": 1502,
+              "edge": 0
+            },
+            {
+              "hash": "916f5d25",
+              "opaque": 1490,
+              "edge": 0
+            },
+            {
+              "hash": "fe648769",
+              "opaque": 1472,
+              "edge": 0
+            },
+            {
+              "hash": "6e7d02ff",
+              "opaque": 1476,
+              "edge": 0
+            },
+            {
+              "hash": "622a885",
+              "opaque": 1490,
+              "edge": 0
+            },
+            {
+              "hash": "26abc88b",
+              "opaque": 1489,
+              "edge": 0
+            },
+            {
+              "hash": "c6d501a9",
+              "opaque": 1459,
+              "edge": 0
+            },
+            {
+              "hash": "f11c326a",
+              "opaque": 1450,
+              "edge": 0
+            }
+          ],
+          "unique": 8
+        },
+        {
+          "action": 5,
+          "input": 5,
+          "states": [
+            "hurt"
+          ],
+          "samples": [
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "7ed5280e",
+              "opaque": 1569,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "91697996",
+              "opaque": 1568,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "7d57dfc2",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "7d57dfc2",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "9fa8db7d",
+              "opaque": 1564,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            }
+          ],
+          "unique": 6
+        },
+        {
+          "action": 1,
+          "input": 1,
+          "states": [
+            "walk"
+          ],
+          "samples": [
+            {
+              "hash": "3ef51a20",
+              "opaque": 1570,
+              "edge": 0
+            },
+            {
+              "hash": "7b1f9cc3",
+              "opaque": 1551,
+              "edge": 0
+            },
+            {
+              "hash": "2e746e92",
+              "opaque": 1525,
+              "edge": 0
+            },
+            {
+              "hash": "b2e988b0",
+              "opaque": 1509,
+              "edge": 0
+            },
+            {
+              "hash": "2e746e92",
+              "opaque": 1525,
+              "edge": 0
+            },
+            {
+              "hash": "7b1f9cc3",
+              "opaque": 1551,
+              "edge": 0
+            },
+            {
+              "hash": "3ef51a20",
+              "opaque": 1570,
+              "edge": 0
+            },
+            {
+              "hash": "8bb2193",
+              "opaque": 1545,
+              "edge": 0
+            },
+            {
+              "hash": "a8b1a07e",
+              "opaque": 1520,
+              "edge": 0
+            },
+            {
+              "hash": "4f56df96",
+              "opaque": 1512,
+              "edge": 0
+            },
+            {
+              "hash": "a8b1a07e",
+              "opaque": 1520,
+              "edge": 0
+            },
+            {
+              "hash": "686220ae",
+              "opaque": 1536,
+              "edge": 0
+            }
+          ],
+          "unique": 8
+        },
+        {
+          "action": 6,
+          "input": 6,
+          "states": [
+            "wave"
+          ],
+          "samples": [
+            {
+              "hash": "6474c1cb",
+              "opaque": 1636,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "5d887062",
+              "opaque": 1631,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "6474c1cb",
+              "opaque": 1636,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "5d887062",
+              "opaque": 1631,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            },
+            {
+              "hash": "30440a6e",
+              "opaque": 1634,
+              "edge": 0
+            }
+          ],
+          "unique": 3
+        },
+        {
+          "action": 4,
+          "input": 4,
+          "states": [
+            "jump"
+          ],
+          "samples": [
+            {
+              "hash": "e5eaf644",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "df7c83f1",
+              "opaque": 1593,
+              "edge": 0
+            },
+            {
+              "hash": "793858bd",
+              "opaque": 1633,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "955a910",
+              "opaque": 1648,
+              "edge": 0
+            },
+            {
+              "hash": "7ec492f7",
+              "opaque": 1638,
+              "edge": 0
+            },
+            {
+              "hash": "aec85e9b",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "707e93c5",
+              "opaque": 1582,
+              "edge": 0
+            },
+            {
+              "hash": "707e93c5",
+              "opaque": 1582,
+              "edge": 0
+            },
+            {
+              "hash": "6cad23ad",
+              "opaque": 1575,
+              "edge": 0
+            },
+            {
+              "hash": "6cad23ad",
+              "opaque": 1575,
+              "edge": 0
+            }
+          ],
+          "unique": 9
+        },
+        {
+          "action": 3,
+          "input": 3,
+          "states": [
+            "attack"
+          ],
+          "samples": [
+            {
+              "hash": "520b6559",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "30576a56",
+              "opaque": 1584,
+              "edge": 0
+            },
+            {
+              "hash": "174da963",
+              "opaque": 1599,
+              "edge": 0
+            },
+            {
+              "hash": "bfcb4f89",
+              "opaque": 1627,
+              "edge": 0
+            },
+            {
+              "hash": "9b84a4c3",
+              "opaque": 1621,
+              "edge": 0
+            },
+            {
+              "hash": "992a032",
+              "opaque": 1628,
+              "edge": 0
+            },
+            {
+              "hash": "b4fbfa0f",
+              "opaque": 1620,
+              "edge": 0
+            },
+            {
+              "hash": "50f113cf",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            }
+          ],
+          "unique": 9
+        },
+        {
+          "action": 0,
+          "input": 0,
+          "states": [
+            "idle"
+          ],
+          "samples": [
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "bb2572b7",
+              "opaque": 1587,
+              "edge": 0
+            },
+            {
+              "hash": "bb2572b7",
+              "opaque": 1587,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            }
+          ],
+          "unique": 2
+        }
+      ],
+      "replay": [
+        {
+          "action": 3,
+          "held": {
+            "hash": "61b904d3",
+            "opaque": 1586,
+            "edge": 0
+          },
+          "samples": [
+            {
+              "hash": "520b6559",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "30576a56",
+              "opaque": 1584,
+              "edge": 0
+            },
+            {
+              "hash": "174da963",
+              "opaque": 1599,
+              "edge": 0
+            },
+            {
+              "hash": "bfcb4f89",
+              "opaque": 1627,
+              "edge": 0
+            },
+            {
+              "hash": "9b84a4c3",
+              "opaque": 1621,
+              "edge": 0
+            },
+            {
+              "hash": "992a032",
+              "opaque": 1628,
+              "edge": 0
+            },
+            {
+              "hash": "b4fbfa0f",
+              "opaque": 1620,
+              "edge": 0
+            },
+            {
+              "hash": "50f113cf",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            },
+            {
+              "hash": "61b904d3",
+              "opaque": 1586,
+              "edge": 0
+            }
+          ],
+          "unique": 9,
+          "input": 3
+        },
+        {
+          "action": 4,
+          "held": {
+            "hash": "61b904d3",
+            "opaque": 1586,
+            "edge": 0
+          },
+          "samples": [
+            {
+              "hash": "e5eaf644",
+              "opaque": 1591,
+              "edge": 0
+            },
+            {
+              "hash": "df7c83f1",
+              "opaque": 1593,
+              "edge": 0
+            },
+            {
+              "hash": "793858bd",
+              "opaque": 1633,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "6a77a8d0",
+              "opaque": 1649,
+              "edge": 0
+            },
+            {
+              "hash": "955a910",
+              "opaque": 1648,
+              "edge": 0
+            },
+            {
+              "hash": "7ec492f7",
+              "opaque": 1638,
+              "edge": 0
+            },
+            {
+              "hash": "aec85e9b",
+              "opaque": 1645,
+              "edge": 0
+            },
+            {
+              "hash": "707e93c5",
+              "opaque": 1582,
+              "edge": 0
+            },
+            {
+              "hash": "707e93c5",
+              "opaque": 1582,
+              "edge": 0
+            }
+          ],
+          "unique": 8,
+          "input": 4
+        },
+        {
+          "action": 5,
+          "held": {
+            "hash": "32484c35",
+            "opaque": 1566,
+            "edge": 0
+          },
+          "samples": [
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "7ed5280e",
+              "opaque": 1569,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "91697996",
+              "opaque": 1568,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "3272dbef",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "7d57dfc2",
+              "opaque": 1571,
+              "edge": 0
+            },
+            {
+              "hash": "9fa8db7d",
+              "opaque": 1564,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            },
+            {
+              "hash": "32484c35",
+              "opaque": 1566,
+              "edge": 0
+            }
+          ],
+          "unique": 6,
+          "input": 5
+        }
+      ],
+      "pause": {
+        "before": "c6d501a9",
+        "after": "c6d501a9",
+        "stable": true
+      },
+      "resume": {
+        "unique": 5,
+        "samples": [
+          "c6d501a9",
+          "26abc88b",
+          "c1367cde",
+          "916f5d25",
+          "fe648769"
+        ]
+      },
+      "errors": [],
+      "layout": {
+        "viewport": [
+          390,
+          844
+        ],
+        "backing": [
+          96,
+          96
+        ],
+        "rect": {
+          "x": 51,
+          "y": 125,
+          "width": 288,
+          "height": 288,
+          "top": 125,
+          "right": 339,
+          "bottom": 413,
+          "left": 51
+        },
+        "overflow": false
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:8876/style.css",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/vendor/rive.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/player.js",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/vendor/rive.wasm",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:8876/hero.riv?v=2feafcf7a4898caf",
+          "status": 200
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Actual mobile hardware not tested.",
+    "Reduced-motion media emulation unavailable in Stagehand facade; source behavior not browser verified.",
+    "Runtime frame changes do not imply user visual acceptance."
+  ]
+}

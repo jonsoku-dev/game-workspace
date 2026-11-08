@@ -1,6 +1,8 @@
 # These files are content-addressed and must retain their original bytes.
 release/** -text
 examples/** -text
+*.riv binary
+*.wasm binary
 *.pck binary
 *.glb binary
 *.blend binary
@@ -9,3 +11,4 @@ examples/** -text
 *.jpg binary
 release/web/**/vendor/** -text -diff -whitespace
 examples/**/play/**/vendor/** -text -diff -whitespace
+release/rive-player/vendor/** -text -diff -whitespace

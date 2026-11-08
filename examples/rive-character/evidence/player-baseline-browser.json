@@ -1,0 +1,774 @@
+{
+  "schema_version": 1,
+  "file": "release/rive-player/hero.riv",
+  "sha256": "3bd1cb92274ada4418f0f0f7da28b8726c518df10ab7025eec74c95f9ddeccde",
+  "url": "http://127.0.0.1:8876",
+  "method": "Stagehand MCP browser, real canvas ImageData FNV-1a hash samples, UI button interaction and official Rive StateChange events",
+  "contract": {
+    "artboard": "Character",
+    "stateMachine": "Character Actions",
+    "input": "action",
+    "type": 56,
+    "native": [
+      96,
+      96
+    ]
+  },
+  "desktop": {
+    "viewport": [
+      1280,
+      1000
+    ],
+    "canvas": {
+      "x": 352,
+      "y": 160,
+      "width": 576,
+      "height": 576,
+      "top": 160,
+      "right": 928,
+      "bottom": 736,
+      "left": 352
+    },
+    "backing": [
+      96,
+      96
+    ],
+    "overflow": false,
+    "actionOrder": [
+      7,
+      2,
+      5,
+      1,
+      6,
+      4,
+      3,
+      0
+    ],
+    "states": [
+      "cheer",
+      "run",
+      "hurt",
+      "walk",
+      "wave",
+      "jump",
+      "attack",
+      "idle"
+    ],
+    "uniqueFrames": [
+      2,
+      4,
+      3,
+      4,
+      3,
+      5,
+      3,
+      3
+    ],
+    "consoleErrors": [],
+    "pageErrors": [],
+    "externalNetworkRequests": 0,
+    "sampling": "14 samples per action, 100ms spacing"
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "canvas": {
+      "x": 51,
+      "y": 125,
+      "width": 288,
+      "height": 288,
+      "top": 125,
+      "right": 339,
+      "bottom": 413,
+      "left": 51
+    },
+    "backing": [
+      96,
+      96
+    ],
+    "overflow": false,
+    "buttons": [
+      {
+        "text": "대기",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "걷기",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "달리기",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "공격",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "점프",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "피격",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "손 흔들기",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "환호",
+        "width": 84.25,
+        "height": 43
+      },
+      {
+        "text": "계속 재생",
+        "width": 74.859375,
+        "height": 33
+      },
+      {
+        "text": "동작 다시 보기 ↻",
+        "width": 109.515625,
+        "height": 33
+      }
+    ]
+  },
+  "mobileActions": [
+    {
+      "action": 7,
+      "input": 7,
+      "states": [
+        "cheer"
+      ],
+      "unique": 2,
+      "samples": [
+        {
+          "hash": "f03a0f49",
+          "opaque": 1602,
+          "edges": 0
+        },
+        {
+          "hash": "8620445a",
+          "opaque": 1606,
+          "edges": 0
+        },
+        {
+          "hash": "8620445a",
+          "opaque": 1606,
+          "edges": 0
+        },
+        {
+          "hash": "f03a0f49",
+          "opaque": 1602,
+          "edges": 0
+        },
+        {
+          "hash": "f03a0f49",
+          "opaque": 1602,
+          "edges": 0
+        },
+        {
+          "hash": "8620445a",
+          "opaque": 1606,
+          "edges": 0
+        },
+        {
+          "hash": "f03a0f49",
+          "opaque": 1602,
+          "edges": 0
+        },
+        {
+          "hash": "f03a0f49",
+          "opaque": 1602,
+          "edges": 0
+        },
+        {
+          "hash": "8620445a",
+          "opaque": 1606,
+          "edges": 0
+        },
+        {
+          "hash": "8620445a",
+          "opaque": 1606,
+          "edges": 0
+        }
+      ]
+    },
+    {
+      "action": 2,
+      "input": 2,
+      "states": [
+        "run"
+      ],
+      "unique": 4,
+      "samples": [
+        {
+          "hash": "f8ebc028",
+          "opaque": 1388,
+          "edges": 0
+        },
+        {
+          "hash": "5092cc24",
+          "opaque": 1478,
+          "edges": 0
+        },
+        {
+          "hash": "71e8c87b",
+          "opaque": 1545,
+          "edges": 0
+        },
+        {
+          "hash": "f8ebc028",
+          "opaque": 1388,
+          "edges": 0
+        },
+        {
+          "hash": "5092cc24",
+          "opaque": 1478,
+          "edges": 0
+        },
+        {
+          "hash": "71e8c87b",
+          "opaque": 1545,
+          "edges": 0
+        },
+        {
+          "hash": "a912e873",
+          "opaque": 1558,
+          "edges": 0
+        },
+        {
+          "hash": "f8ebc028",
+          "opaque": 1388,
+          "edges": 0
+        },
+        {
+          "hash": "5092cc24",
+          "opaque": 1478,
+          "edges": 0
+        },
+        {
+          "hash": "a912e873",
+          "opaque": 1558,
+          "edges": 0
+        }
+      ]
+    },
+    {
+      "action": 5,
+      "input": 5,
+      "states": [
+        "hurt"
+      ],
+      "unique": 4,
+      "samples": [
+        {
+          "hash": "49fd68c1",
+          "opaque": 1557,
+          "edges": 0
+        },
+        {
+          "hash": "d333b9ed",
+          "opaque": 1519,
+          "edges": 0
+        },
+        {
+          "hash": "d4f141ec",
+          "opaque": 1607,
+          "edges": 0
+        },
+        {
+          "hash": "d4f141ec",
+          "opaque": 1607,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        }
+      ]
+    },
+    {
+      "action": 1,
+      "input": 1,
+      "states": [
+        "walk"
+      ],
+      "unique": 4,
+      "samples": [
+        {
+          "hash": "3d072804",
+          "opaque": 1467,
+          "edges": 0
+        },
+        {
+          "hash": "767e70e8",
+          "opaque": 1595,
+          "edges": 0
+        },
+        {
+          "hash": "ba2d1135",
+          "opaque": 1573,
+          "edges": 0
+        },
+        {
+          "hash": "df3ae97d",
+          "opaque": 1596,
+          "edges": 0
+        },
+        {
+          "hash": "3d072804",
+          "opaque": 1467,
+          "edges": 0
+        },
+        {
+          "hash": "3d072804",
+          "opaque": 1467,
+          "edges": 0
+        },
+        {
+          "hash": "767e70e8",
+          "opaque": 1595,
+          "edges": 0
+        },
+        {
+          "hash": "ba2d1135",
+          "opaque": 1573,
+          "edges": 0
+        },
+        {
+          "hash": "df3ae97d",
+          "opaque": 1596,
+          "edges": 0
+        },
+        {
+          "hash": "3d072804",
+          "opaque": 1467,
+          "edges": 0
+        }
+      ]
+    },
+    {
+      "action": 6,
+      "input": 6,
+      "states": [
+        "wave"
+      ],
+      "unique": 3,
+      "samples": [
+        {
+          "hash": "b4e1f298",
+          "opaque": 1606,
+          "edges": 0
+        },
+        {
+          "hash": "b4e1f298",
+          "opaque": 1606,
+          "edges": 0
+        },
+        {
+          "hash": "4f927ef8",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "da706691",
+          "opaque": 1607,
+          "edges": 0
+        },
+        {
+          "hash": "da706691",
+          "opaque": 1607,
+          "edges": 0
+        },
+        {
+          "hash": "4f927ef8",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "da706691",
+          "opaque": 1607,
+          "edges": 0
+        },
+        {
+          "hash": "da706691",
+          "opaque": 1607,
+          "edges": 0
+        },
+        {
+          "hash": "b4e1f298",
+          "opaque": 1606,
+          "edges": 0
+        },
+        {
+          "hash": "b4e1f298",
+          "opaque": 1606,
+          "edges": 0
+        }
+      ]
+    },
+    {
+      "action": 4,
+      "input": 4,
+      "states": [
+        "jump"
+      ],
+      "unique": 5,
+      "samples": [
+        {
+          "hash": "ac9fba3c",
+          "opaque": 1475,
+          "edges": 0
+        },
+        {
+          "hash": "d4d96bb2",
+          "opaque": 1595,
+          "edges": 0
+        },
+        {
+          "hash": "5158c60",
+          "opaque": 1596,
+          "edges": 0
+        },
+        {
+          "hash": "5158c60",
+          "opaque": 1596,
+          "edges": 0
+        },
+        {
+          "hash": "7a3a93e3",
+          "opaque": 1604,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        }
+      ]
+    },
+    {
+      "action": 3,
+      "input": 3,
+      "states": [
+        "attack"
+      ],
+      "unique": 4,
+      "samples": [
+        {
+          "hash": "a270700b",
+          "opaque": 1598,
+          "edges": 0
+        },
+        {
+          "hash": "6ef139ff",
+          "opaque": 1557,
+          "edges": 0
+        },
+        {
+          "hash": "6ac76f84",
+          "opaque": 1594,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        }
+      ]
+    },
+    {
+      "action": 0,
+      "input": 0,
+      "states": [
+        "idle"
+      ],
+      "unique": 3,
+      "samples": [
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "da919187",
+          "opaque": 1598,
+          "edges": 0
+        },
+        {
+          "hash": "da919187",
+          "opaque": 1598,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "8ea116fc",
+          "opaque": 1609,
+          "edges": 0
+        },
+        {
+          "hash": "61e2c94e",
+          "opaque": 1601,
+          "edges": 0
+        },
+        {
+          "hash": "61e2c94e",
+          "opaque": 1601,
+          "edges": 0
+        }
+      ]
+    }
+  ],
+  "viewport": [
+    390,
+    844
+  ],
+  "replay": [
+    {
+      "action": 3,
+      "before": {
+        "hash": "8ea116fc",
+        "opaque": 1609
+      },
+      "uniqueAfterReset": 4,
+      "input": 3,
+      "samples": [
+        "a270700b",
+        "6ef139ff",
+        "6ac76f84",
+        "6ac76f84",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc"
+      ]
+    },
+    {
+      "action": 4,
+      "before": {
+        "hash": "8ea116fc",
+        "opaque": 1609
+      },
+      "uniqueAfterReset": 5,
+      "input": 4,
+      "samples": [
+        "ac9fba3c",
+        "d4d96bb2",
+        "5158c60",
+        "5158c60",
+        "7a3a93e3",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc"
+      ]
+    },
+    {
+      "action": 5,
+      "before": {
+        "hash": "8ea116fc",
+        "opaque": 1609
+      },
+      "uniqueAfterReset": 4,
+      "input": 5,
+      "samples": [
+        "49fd68c1",
+        "d333b9ed",
+        "d4f141ec",
+        "d4f141ec",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc",
+        "8ea116fc"
+      ]
+    },
+    {
+      "action": 6,
+      "before": {
+        "hash": "b4e1f298",
+        "opaque": 1606
+      },
+      "uniqueAfterReset": 3,
+      "input": 6,
+      "samples": [
+        "b4e1f298",
+        "b4e1f298",
+        "4f927ef8",
+        "da706691",
+        "da706691",
+        "4f927ef8",
+        "4f927ef8",
+        "da706691",
+        "b4e1f298",
+        "b4e1f298",
+        "b4e1f298",
+        "b4e1f298"
+      ]
+    },
+    {
+      "action": 7,
+      "before": {
+        "hash": "8620445a",
+        "opaque": 1606
+      },
+      "uniqueAfterReset": 2,
+      "input": 7,
+      "samples": [
+        "f03a0f49",
+        "8620445a",
+        "8620445a",
+        "f03a0f49",
+        "f03a0f49",
+        "8620445a",
+        "f03a0f49",
+        "f03a0f49",
+        "8620445a",
+        "8620445a",
+        "f03a0f49",
+        "8620445a"
+      ]
+    }
+  ],
+  "pause": {
+    "before": "71e8c87b",
+    "after": "71e8c87b",
+    "unchanged": true
+  },
+  "resume": {
+    "hashes": [
+      "a912e873",
+      "f8ebc028",
+      "5092cc24",
+      "71e8c87b",
+      "a912e873"
+    ],
+    "unique": 4
+  },
+  "screenshots": [
+    "player-baseline-desktop.png",
+    "player-baseline-mobile.png"
+  ],
+  "limitations": [
+    "Desktop and mobile viewport emulation use same installed browser; actual mobile hardware not tested.",
+    "Reduced-motion media emulation unavailable in Stagehand compatibility facade; the source handles preference but the reduced-motion flow was not browser-verified.",
+    "Canvas changes and named state events prove runtime operation, not user acceptance of animation quality.",
+    "User rejected art tearing; runtime behavior checks do not approve this baseline artwork."
+  ],
+  "status": "baseline-rejected-art-tearing"
+}

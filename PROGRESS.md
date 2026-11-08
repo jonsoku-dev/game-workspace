@@ -66,3 +66,7 @@ Game Studio 0.5.1은 같은 그래프의 성공 RuntimeProduct와 사용된 파�
 Game Studio 0.7.1과 Pixel Asset Pipeline 0.5.0을 로컬 Codex에 설치했다. Studio는 텍스트 브리프에서 새 프로젝트를 만들고, 특정 공격만 수정해 Phaser 게임 A/B를 납품한다. 한국어·일본어 작업실은 같은 시각의 두 실제 장면과 플레이 링크, 검수 결과를 보여 준다. 시각 판단과 채택을 기록하는 채팅 경로는 기술 통과와 분리된다. [비교 프로젝트](examples/first-strike/COMPARE.md) · [설치본과 검증 범위](release/evidence/reference-release.json)
 
 첨부 레퍼런스에서 격자 보정·관절 초안과 수동 조정·GIF 프레임 편집·SVG 심벌의 실제 크기 검토를 적용했다. 설치된 제작기로 만든 ‘달빛 탄환’에서 효과 시작, 접촉 전 무득점, 충돌 단계의 명중, 세 번째 명중 후 완료와 재시작을 실제 브라우저로 확인했다. A/B의 게임성과 로고 후보는 사용자 선택 전이다. [원문과 사례](release/REFERENCE-WORKFLOWS.md) · [원화와 효과 비교](examples/moonshot-fx/evidence/final-sheet.png) · [실제 게임](http://127.0.0.1:52983/)
+
+## 단일 원화와 Rive 상태 머신
+
+Pixel Asset Pipeline 0.6.0의 실제 설치본에서 96×96 정찰대원 원화 한 장과 11개 부위 마스크로 8동작·74포즈를 만들었다. 관절을 보충하고 보행·조깅·착지를 다시 설계했다. 최초 버전의 공격 프레임은 연결 영역이 5개였고 수정한 74프레임은 각각 1개다. 최종 Rive 파일 107,312바이트에는 PNG 포즈, 밀리초 타임라인과 숫자 상태 입력이 들어 있다. 공식 Canvas 2.49.4의 버튼 조작과 실제 WASM 438개 시점을 확인했다. 사람의 작품 수락은 기록하지 않았다. [재생](http://127.0.0.1:8876/?v=2feafcf7) · [실제 렌더 미리보기](examples/rive-character/evidence/runtime-preview.gif) · [프로젝트와 증거](examples/rive-character/README.md)

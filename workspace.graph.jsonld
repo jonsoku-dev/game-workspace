@@ -27,38 +27,18 @@
       "@id": "https://game-studio.local/ns/v1#implementation",
       "@type": "@json"
     },
-    "placementOf": {
-      "@id": "https://game-studio.local/ns/v1#placementOf",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "revisionOf": {
-      "@id": "https://game-studio.local/ns/v1#revisionOf",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "used": {
-      "@id": "http://www.w3.org/ns/prov#used",
-      "@type": "@id",
-      "@container": "@set"
-    },
     "partOf": {
       "@id": "https://game-studio.local/ns/v1#partOf",
       "@type": "@id",
       "@container": "@set"
     },
-    "wasDerivedFrom": {
-      "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "dependsOn": {
-      "@id": "https://game-studio.local/ns/v1#dependsOn",
-      "@type": "@id",
-      "@container": "@set"
-    },
     "wasAssociatedWith": {
       "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "wasGeneratedBy": {
+      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
       "@type": "@id",
       "@container": "@set"
     },
@@ -72,8 +52,28 @@
       "@type": "@id",
       "@container": "@set"
     },
-    "wasGeneratedBy": {
-      "@id": "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "revisionOf": {
+      "@id": "https://game-studio.local/ns/v1#revisionOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "dependsOn": {
+      "@id": "https://game-studio.local/ns/v1#dependsOn",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "wasDerivedFrom": {
+      "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "used": {
+      "@id": "http://www.w3.org/ns/prov#used",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "placementOf": {
+      "@id": "https://game-studio.local/ns/v1#placementOf",
       "@type": "@id",
       "@container": "@set"
     },
@@ -19575,6 +19575,175 @@
       ]
     },
     {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Rive 작성·연결 보강과 로컬 플레이어 검증",
+      "observed": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-08T14:46:50.586961+00:00",
+      "references": [
+        "https://github.com/rive-app/rive-runtime/tree/9afebeb046659cc3ffed906825023012e4d3cd48/include/rive/generated",
+        "https://github.com/rive-app/rive-wasm",
+        "https://polymation.stunning.gg/docs/pixel-characters"
+      ],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:0f3c77e441e5b3880d657f3439e8bc5399ff61035b48269f0235b4b336b5de99",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 891,
+      "path": "release/rive-player/runtime-lock.json",
+      "sha256": "90797431657570ffae7d971d9405385ba9dd81109bd24f2bb005b9a0340781f4",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:54c63e84ca0a5a7741ab87385dafe1ba4832a80f9a8da69748dffb4449408f99",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 107312,
+      "path": "release/rive-player/hero.riv",
+      "sha256": "2feafcf7a4898cafbd3eaf421135941939c1c8ffa1a2e6c5c64e9495fd5f2af2",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:6918a98e473ed79fc58685aade280839d9d0d176b7c8baf3fe030bf4a278aa17",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6427,
+      "path": "assets/src/pixel_asset_pipeline/rive_binary.py",
+      "sha256": "5d7e82f550cf3f2e67bc291b25103b5e88321ab13007878177f9df7a715c3bda",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:6cc1162dab83ebfecd674d0fb3a062d825f03187927db9c7f3b8c62e18efed3a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 33640,
+      "path": "assets/src/pixel_asset_pipeline/motion.py",
+      "sha256": "1f5280290e0897699773866f924d9474e67b729274684d570c9348b58fa97247",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:c7d51aa1329755418286759011897cf66ff48beae69f209e82aafcefa7c20e4f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1866,
+      "path": "release/rive-player/index.html",
+      "sha256": "9affe2bfeb95a6f1854b9d4c65e5f01aec2e7398f92aa1cdf008d4015d20fdb1",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:d3812e936da31ea7a89aa5f6222f678f67bbe463d89ed15e686bd9cf11904bb8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 3235,
+      "path": "release/rive-player/player.js",
+      "sha256": "b57c6288dfce12f5e7179641b4b8dacf2fe0796bc84f985d80040cf2c783137d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:e795c9d44751234f8a7e321b01a353eca22448f6236c42834a5248cc5eacd722",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4438,
+      "path": "assets/src/pixel_asset_pipeline/rive.py",
+      "sha256": "74c63dab0de8ca5fff92300c2473f3079960acf3fd48bab696735bf2d9f0f349",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Installed Pixel Asset Pipeline 0.6.0 and reproduced the published local binary",
+        "Offline Rive Canvas 2.49.4 loaded the embedded file",
+        "110 warning-strict asset tests passed"
+      ],
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:6cc1162dab83ebfecd674d0fb3a062d825f03187927db9c7f3b8c62e18efed3a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:e795c9d44751234f8a7e321b01a353eca22448f6236c42834a5248cc5eacd722",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:6918a98e473ed79fc58685aade280839d9d0d176b7c8baf3fe030bf4a278aa17",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:54c63e84ca0a5a7741ab87385dafe1ba4832a80f9a8da69748dffb4449408f99",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:c7d51aa1329755418286759011897cf66ff48beae69f209e82aafcefa7c20e4f",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:d3812e936da31ea7a89aa5f6222f678f67bbe463d89ed15e686bd9cf11904bb8",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:artifact:0f3c77e441e5b3880d657f3439e8bc5399ff61035b48269f0235b4b336b5de99"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Installed Pixel Asset Pipeline 0.6.0 and reproduced the published local binary",
+          "Offline Rive Canvas 2.49.4 loaded the embedded file",
+          "110 warning-strict asset tests passed"
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:validation"
+      ]
+    },
+    {
       "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:sprite-reference",
       "@type": [
         "Activity",
@@ -22454,6 +22623,2221 @@
       },
       "wasGeneratedBy": [
         "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:work:attack-review:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1",
+      "@type": [
+        "Entity",
+        "Project"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:codex-motion-review",
+      "@type": [
+        "Agent"
+      ],
+      "label": "codex-motion-review"
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:codex-pixel-artist",
+      "@type": [
+        "Agent"
+      ],
+      "label": "codex-pixel-artist"
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:pixel-asset-0-6-0",
+      "@type": [
+        "Agent"
+      ],
+      "label": "pixel-asset-0-6-0"
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:stagehand-browser",
+      "@type": [
+        "Agent"
+      ],
+      "label": "stagehand-browser"
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "한 원화에서 관절·보행·착지 수정",
+      "observed": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1"
+      ],
+      "recordedAt": "2026-11-08T14:46:50.264158+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:codex-pixel-artist"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:0254719e433ae101cfd5023ee5a3ce5d4261a7b7552c7a5ea4d389ea7b550cd5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 139,
+      "path": "art/mask-fore_left.png",
+      "sha256": "c75f8dca73d07091ac1ec6cccf7f032cb7abf9859fa423c0ce1d9f5e7bbf0f3b",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:02d3c6d5c7491537aaa3ed4f5826d9e394a6e98f22d85721f6a7e52c8fee402b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16081,
+      "path": "art/recipe.py",
+      "sha256": "1f853bb67c2aa90add4961337caf2d9cd636e5e5129048697c178701f0a455df",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:1b9c661b3def19ee18154b52d5e5291dfa52868ede50fca6a51a46b8350fec3d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 164,
+      "path": "art/mask-body.png",
+      "sha256": "de19388980dbccd85c293062d7d33ce63a8d1ceebef082f03ee36e7282795a3f",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:23f6ae2ca006c63457d2eeb0e547012eda34a5ee824f40ed395c9b2538b16010",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 130,
+      "path": "art/mask-upper_right.png",
+      "sha256": "3d2563ca965e0a1f9ff2fbeec4cd3a9ff1fb81a08e608e8d69da82f7d416cded",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:352b5a943c57c918bb8e639d6ab6f974199ec5276c8b415907870cfdf4a065d9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 141,
+      "path": "art/mask-calf_left.png",
+      "sha256": "9bad613e9b848f9ca45a6b84a1f533f77900d496c2164d0b221bcfc9039a1aee",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:3835efa82a0705e6be7a3419b95fc05388f629f80911eb02f2e5a791681ceb86",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 49983,
+      "path": "art/choreography.json",
+      "sha256": "a217620cb6b51492c2fcad029b55cb62e9ac86aa27cd78907a04660a7c8e5167",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:493db742f4c2a5ae6774645273b66d505ba5bd0b75af486591769f9be0f20f56",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "art/master.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:54b8ea5d7aff6c01bdb68d2e74e8800d2010e926a7e9ee16a67ce1231d31dccb",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 66784,
+      "path": "art/motion.request.json",
+      "sha256": "3412f1654535c585f5e70b14cbccb494f8da30f1c028086ee76cc6bfd0b1975c",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:5c812b5b8508ae7245017689fd5dfdb10c616f43b9eeb99d5392d9fd82432dd1",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 72530,
+      "path": "art/montage-2x.png",
+      "sha256": "4f3daad1c7809c73b64ae557bfa4b42522aef4d5806a7184ddf25a55db2907f6",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:659381e22268b44fd81f3e7d12f98d3eca1db85678337abaf6c5a874a7d59b86",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 131,
+      "path": "art/mask-upper_left.png",
+      "sha256": "21c386343724de605b422a02bf1102aeb696e69e3bba2c923b3bdee0f6291976",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:7105ad7bf4881bf3031f22d0bc12459d9ec9273b25269ef0e6e9452f20cd2c35",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 119,
+      "path": "art/mask-leg_left.png",
+      "sha256": "8047627b682dd9b3fa550b5d67f3089d1082b15842890e1683191ee99c59c437",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:7b17a0134127b309ffd7f6f44db92d06e3f43cf74774850c82cb8b61de86b6e0",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 186,
+      "path": "art/mask-scarf.png",
+      "sha256": "0d796c624ce705d63e3223d1d885505826d5ce91ace6c4a132288e3fd206986c",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:7d2752732a8bdebce44193f4bd875722a3c2083273b72fcb48fb5415a677524a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 23285,
+      "path": "art/critical-pose-review.png",
+      "sha256": "5408ebce0c649dbb035603e7b245e102685cb703914c10bf06f916592099e6b5",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:9025dfc0836bf6e61bb2cdc6c7ea33f848b52abaaefb69e2b2d00934a9629e99",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 52606,
+      "path": "art/montage-1x.png",
+      "sha256": "68e457cba5f427c82bfe74fa77b141c0bb03698fbb7855c806361bf64fda1ae1",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:95f81d199d72a4568d9896b1ec5a87a6c6f436ea97a30e195283d48d5caffb53",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4753,
+      "path": "art/rig.json",
+      "sha256": "a2e283b5534685df30454b2b2ee75e0f58615ccc2e0c1cbf05204a49663a91f7",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:a15b737f00d09b27bf42099813f217d9978bae717887c90c8b62646572a99184",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 141,
+      "path": "art/mask-calf_right.png",
+      "sha256": "e2ad9d239fb8875600d177aed88795c6d4f2009c43a04bcf256f6d0cb5ec91c5",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:c9a9b4c84b3c001bb0f0bd7e72b11cb3a5be7b5a35953f8210f312c320777b90",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 124,
+      "path": "art/mask-leg_right.png",
+      "sha256": "fe333570c075a25a84dfdfa8e393f0d12404fc318447ac15c56e43566a48bc93",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:cfe070f4a6ebbc3de15dcdf07a96db72058c55d4aa5b779fe6c19eab6f48c6fc",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1964,
+      "path": "art/joint-supports.json",
+      "sha256": "c90fa21d9c586f4e06f9c3403b70677b78420ffef79e435f509359561aed5c6d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:d382c64d8e99af98dbbd8c48a9cefc131d5286e6ef77fb996a20d0a2841a8c6c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 141,
+      "path": "art/mask-fore_right.png",
+      "sha256": "83f6c2cdd1903a361c750215bc7d760ab0cac53ac3af0fe58aaf069b6f417cf2",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:d99323de9cffab26c34cb5cceb10bdf66e7b4d1102eb1fa85fe8529aac4c6044",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 3651,
+      "path": "art/PROVENANCE.md",
+      "sha256": "21e69cde43fd889245d912bdfc0192182dc19d162705e3c178b62229feb5fce3",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:de0d8939607f103dec451eda10bc86d760aded9d7bf8ff3fa08df0692a1f5af6",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6182,
+      "path": "art/master-review.png",
+      "sha256": "8497c8d58f01948096aec52291dc77a0cfaec4fe3c11fc458c916eafbeace880",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:f62f71a6fc816f218accf3660a3aaacc7b74db3474207e10d241ae23bc9dea19",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 742406,
+      "path": "art/inspection.json",
+      "sha256": "c10236e570344c55bad9a654cd58cdf208d93f2dc2102d816a473a518b5beab5",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:f720efceea6dc65a210a00b13644d54536a54b8d3f9af2018ec65115c57aaed8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 209,
+      "path": "art/mask-head.png",
+      "sha256": "8c10657e2cc2dc6957136716efc52c197e69f62bfab384095e2e931be29c783a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "내장된 이미지·타임라인·상태 머신으로 파일 내보내기",
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1"
+      ],
+      "recordedAt": "2026-11-08T14:46:50.564861+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:594920276e25498982d064fdbf609ef0de6175e74d5430107053c6a02ff867e0",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:0f8b963ffd3ddfd9c83fa54a87703a83d1eba6ae4ca1cee4dfb0c986576e0692",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d8d8e789542b5bfd40a4aac19487503d94ed4d059a67ff1783952336c452de5a",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:433760cf3b7f7a1dcfc51b23f7d80d895949a1ed7c813f44180b96c3f084cbc0",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:eaa6e81c04490e4f8ccfca01d07b1acb1db4491f085b18299a6e7a775c3e65d4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f2bcb24d8056464e0e7d68c591d9c280a158e44b737c356acefdbf2e88645175",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a962574e88eeee535a0a89c493c2c6c44cd0a8efa20cceec57da2b2f62a83f7c",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a27cbf0529bf845a715b4d83d0e3ce4d8d12064e46aecbde326fcd3895b691b7",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:20ec18b497b9c8b27cb5a642f997a0fff9db04e19e1a79f9cbff2d46d21255c4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:bd34ec30edc14a863ae506345541df21919638ca8ebf645f2ef5776f2e460f1d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:cedf5c689b95f7936bfc8360c9b499d1e9b066f5aab1c7e1678f579f1e3994c1",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:7839ffc8bcd3c213e377519003a3c70bee63459f55845a897e2fbb71a19890c3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:abb4dc4c1f4ceb1107deb4d68a936dd6bf11446221bce8a365e2b23b53121dc0",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:06eb511040661eaf8a7f5b0bbeb044913e1358ffe836bf0b3db79f6fbeaa93f3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f1848f8edb8e2a883d760443e198acb54d253d998ac6257aee509d9f24fa997d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:06534dd379e40bedf34956ff2d40977ac832d409080b6846883ad8d254c70119",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a2c742b9af85a6626ca8d179989dafdaea8cf45ba3ca7eac5d9f3eecab816954",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:e620f9a109db1e2759be7d40dca1a01eef7300104b707b1fde627e5e6e5f04bd",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:2e8233345ba9a1fe505be6b1dfa0e14601dcb259e120f8b377f584f007d76351",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:cb98b24bcd439a3b0bc420071e20d11313c56e0309dc83ec43a2c581431c529f",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:47bf46b6dbd2a5c8f9fb07a7eae9a2b13bd117b768c3e8d93f466051a0ae51d5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0f7cb71dd493cf4029ed00efbfb33dee6e7e9f00dd0514825924b81f4a9e7b5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:ab32fa997466d60c356fa6a1dfe28f78c50ec2f49efbaca5420ebcad7f0696ab",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:663d4f8e9e047481ae6d61c9072d979782a8df388f80f8faaef47eddb1cee96d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:01e0ff778fbe76f0b922b929d5fc1a040f0020a34a34e5be4460f77b690c27dc",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:00b07923db93adfc9345264356dee2e3b7308d1054a7dd0b25a02b3448e62bc7",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:08aaaf547bb5f68495236941d6458cfaa8e92b7738a54e01df4a0929e233a805",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4c3181f5be1c669bd960b7e33c38b47647417b5f7312f8395e18903d4d4c03b3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:282ebb182ee296a516403d6dde72073d6479d2c9980d8ca3fbd277b812d22531",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:2348b405f1e1fd80a3c6ad9ae9ae59877c947abb8efbaca063e1d6348e91b97c",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:44c37303e65c3a1fc1252499168a19bc45d5e5897bb13c9922a9bf34e530c916",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d7ffa9519cfb223969ca97664f32becd833a36b4da6099765b5b7c1942e3b5b2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:80f101524027eaf74f62932cbd128ee69ef55aeed450d878ad4acf22880ecdf2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:bfde7295dd54eef1fcbeda10a6763b7b4acec5929c4c95f0f83dcbacf5e4d006",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9438ba05402ba0891abfb2ad57b6c39b3c0faa6f4d6340ac54e3ade8defda321",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6a834d714703d5cc0c398c6210fabc76b3cdbe52d360735ab0612e32c0c225e2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f1ca0f6b19cc98e852e3e53105ad5da9716ca1f6c012a901b38f3b64b2b67db6",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f7f0b170158541eb47772d0c5352d1c67f1f3c247df42799bb2b9c6036b80cae",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:63c83da4a98918954aa17f6fed3031bc5025f24b1e61cf2fa950cf0fb2cb7631",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:479d756eff08e6c00646c0568c93e85febc1dfe6d4c38d04b258f246b1294427",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:39ae90b263f0a9f4a73ab7886c8dff7595610c0d75d3c06506f335069ffe1cc2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0496b55807ea1236269d9c4fd8ec349c3ba7033e5b298c83bcd03c466866792",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:49c41731e279bda02c900e6d0558bcc908080b461d8c25625fc7325426698cc8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6b147e91aa4c2c110cc6ec99c9ca990bd6c947d9bd02d50c3b06b3b1c468d42c",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6e35c607f25d3f4f09c6ec774d8575985a56e87dc9c0ec11e4b5d1f8351228a5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:0193f28cfde386dd15c7b55d77d070fdf779eef167f483021ef16d7c2f8737e4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a330125559d8038ee763a4a57f61827580726302812e52be4bc7d616675ad9fb",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:b9421187cc4548d497a215becb2e973d7f81ade78c32549fb811f71934c17c3a",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:70c9ce9e5266d16b749452ca9b0a45cb9773b081a496d702ee54f46a68b2b497",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:8ffc43db3a10c25281c9a4ad3310d7aa7260edf8afa1f4261fd9d8e5087f076b",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4aaabb60300d85e829c06733f672640eb6b63f6164b656e89a9a97741b459a37",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4ecab12a4b5538f21d26cb5a6494d0a5e5f247090450fddd8ed67e6ab3bfca29",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:1158b1328b551223a69857504c7f81253b89a5ec4300fd84c996545bd84c4066",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:453da827131606600706fab4c13977078526ba767f552d6e4fa6a40b51a31f8d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:125c6858348a137e421e566e22172bd6b6cbf47148f29933cfc062c51829b804",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d165a7faaebe5e09d2df4d2a79690a7b217dc17aae4a47772346fde809b594a8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:994394a90aabdc10fd4dfd80763ef27643f487b5794d0917912a591857facf36",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a33b4da6de219d8e14587516e70de096550a3264f763230dabddc5a0758f4e00",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f699d9806a324f87d19ea499554b2f6af88bcdf77e8312aa458ee97ad4069922",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d4c8caf7724392a3c199092977c9770a2492d0db88fbd2a21bae20ce10d1553b",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:dd7abcb02bbf5b181ea650024058f83f94ddced8e2d6800ae29a789ae14ecec7",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9471d9fa40a68ccdff82069ed87244a71b83ee8cbbc69eb8d26a2579cb4b396e",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0f50266f0fea0929d42337038c0c5e4f759f5f00dffdeccb60e1e3eaee85763",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:45cb2f02b3b7e079b04f545c2daa06cd6b6b361c6f5f90608e68c0b09165cbe8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:004215b4cfa312039520a4121e90d7f59928da712b29110e794f779432299f15",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:54d04968710675c75c95be16bd34835a977ced51de1443879a5b70ccfca46850",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:c482c73dfbd09410694bbab7bdc0b71f2ad29c35f4d5ac7b3a4ddaeeb5a434d1",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6c3df63670f72fec9b6ed7f5ef246d0e14cb47f094e8f16ab0fc498dc11956f4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:308a292e1352d5b7145477c805a9b4861adb34bdf4c7d614d619527e4393b429",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:41111e451c38be13a0b6e0309e6ea1cb0bfb73a53b09f834e7aa116318ad504f",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9fc8c4c7dc4780018ab896932b148c016c5b8b255c04ebeec2bff653e669bedc",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d9b28d3c134ee96586ce32a75c66711d89cbf69110e8365cc563deaae75bb074",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:7d40e46a64208ffd789c0fce4117776471c071af9e5e13a72a20a10ade3df1d3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6bdd7ff01cd8affdcfc56f745e0de2a93b53061f0052c230072c8064e0c773cb",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:b3f35ceaac9df6380b392e8dc6b348eeaf3fa2c796a40f8d3407a864bc6bb137"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:pixel-asset-0-6-0"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character:artifact:5edf32d82b4e4549d394fc7d563e0fd98f6c7597ea82b1bc165c07134de626bb",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 14041,
+      "path": "build/rive/rive.json",
+      "sha256": "3584d75800e5e279c1220550eca4e74de8d202f48c61d26edfcaca70a266bbff",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character:artifact:6b1b3b7405be2c58f7eeb55976e60e52cb1c486f7d425bd62a1af51a9f91e14d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 107312,
+      "path": "build/rive/character.riv",
+      "sha256": "2feafcf7a4898cafbd3eaf421135941939c1c8ffa1a2e6c5c64e9495fd5f2af2",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "초기 포즈 분리와 사용자 수정 요청",
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1"
+      ],
+      "recordedAt": "2026-11-08T14:46:50.249758+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:codex-motion-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:01a076256057d120e048f7648305f0723183fa634b1f0745d30a7a14a4af64cd",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 125087,
+      "path": "evidence/frame-proof-baseline-rejected.json",
+      "sha256": "cec3df30bd12de4b4bbf2f2b0ea23937bbdc271255c9ed32461b96f4028e2c74",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:033dfbab75b31121a30e5138607956d271f298054025b56dc5496510c8640429",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1947,
+      "path": "evidence/before/run-2.png",
+      "sha256": "ee4457e1c0c6fd07bb4652b57da32b830b6bb2ed9d8b060f059c73b08488f5f6",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:13eabda4e19664f8abdb446dfb2ae4a08f05e3f0c3cf77e4241520c418419762",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1763,
+      "path": "evidence/before/wave-1.png",
+      "sha256": "c365e1fa77b8a4c2628789d8baa2e0158e448e2b8310046edd9e41347f1a2009",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:24efd97b19c68449e23a8fecf059caae3eaf7e23a7669d2028096af5dace2710",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 89010,
+      "path": "evidence/player-baseline-mobile.png",
+      "sha256": "d4789032c9ecfea04c0487d009d878a63d54bd8ff6991f077a04a365a852a4a2",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:2937b015836667e39e5f0b27d9ef82fc9704bddd99026531e2164fe3e7bbcea8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2004,
+      "path": "evidence/before/jump-1.png",
+      "sha256": "5f9bce5ae2eb924ad9e900a523b4d26fa382c537c29183279bb5bd4fd92f3b0b",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:4c0c136b40449afe5d4c91f9bd9085b49c5b0556e62070008735f4e9594b04a9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 149275,
+      "path": "evidence/frame-proof-baseline-rejected.png",
+      "sha256": "a1042da063f156d74700ba8d06f3f3ff609dea1dcf4fa029f75efc62212b6c5a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:704d8fb5df4605a6544a584e36d7cf89e9f1fc561f8d933b5148fc416864f1e9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 7353,
+      "path": "evidence/before/export/rive.json",
+      "sha256": "9fbe748988eb8c9867fea46871cbdd33f707ed3b5379edf4a65ec7b47453f38f",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:73e4947672c1ccc0602b494b715ba365ea5658cae39cbd2f98b0e964190aedca",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 305276,
+      "path": "evidence/player-baseline-desktop.png",
+      "sha256": "3bd6c2718ae56aaac9de78bebacac5387fb39b3d201faeb5417556f695f0b794",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:8a582fe548f921bd25c43ebc632ee7a520e97caf34bac33db35e6c4f804b780f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1246,
+      "path": "evidence/before/review.json",
+      "sha256": "3ddffdeefe2f19c936f840e03d152a1603c8985f01008cc8bea1a0570c8ed3ea",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:93fcac8bd78240f67e90cf5c91336ba6d2bd0418e3fa5082809588f445d8b7d5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 54696,
+      "path": "evidence/before/export/character.riv",
+      "sha256": "3bd1cb92274ada4418f0f0f7da28b8726c518df10ab7025eec74c95f9ddeccde",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:b26bccc779365d8e5af9852266bb5da05fad052ff34fcade6cea2c8c109ca6b2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1887,
+      "path": "evidence/before/cheer-1.png",
+      "sha256": "f96b3a176e61813ac5dc5d6e5d56fb526f7f5137677bda685f845fae547cb1cd",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:e2393aae852608f671fe300acb6be84b79795db5b60153b82dd6a6d46888f115",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 14532,
+      "path": "evidence/player-baseline-browser.json",
+      "sha256": "ea1bc9256c6f21a1ba0df874a734e6d70f3ebbf2fe1426399ee315cb7ef41868",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:f60c1dba158b03b3131a32b26a6c2dc9329991c80e4ee22b003f7c65896bea15",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2070,
+      "path": "evidence/before/attack-1.png",
+      "sha256": "a8e41ac84b77d79b531f509573c7be4dd94c5248505abb11c146a037c803a444",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "User observed unnatural animation and separated body parts",
+        "Attack sample contained detached components of 161, 87 and 39 pixels",
+        "Runtime reproduced the source motion defect"
+      ],
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ],
+      "passed": false,
+      "used": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:f60c1dba158b03b3131a32b26a6c2dc9329991c80e4ee22b003f7c65896bea15",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:b26bccc779365d8e5af9852266bb5da05fad052ff34fcade6cea2c8c109ca6b2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:93fcac8bd78240f67e90cf5c91336ba6d2bd0418e3fa5082809588f445d8b7d5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:704d8fb5df4605a6544a584e36d7cf89e9f1fc561f8d933b5148fc416864f1e9",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:2937b015836667e39e5f0b27d9ef82fc9704bddd99026531e2164fe3e7bbcea8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:8a582fe548f921bd25c43ebc632ee7a520e97caf34bac33db35e6c4f804b780f",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:033dfbab75b31121a30e5138607956d271f298054025b56dc5496510c8640429",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:13eabda4e19664f8abdb446dfb2ae4a08f05e3f0c3cf77e4241520c418419762",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:01a076256057d120e048f7648305f0723183fa634b1f0745d30a7a14a4af64cd",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:4c0c136b40449afe5d4c91f9bd9085b49c5b0556e62070008735f4e9594b04a9",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:e2393aae852608f671fe300acb6be84b79795db5b60153b82dd6a6d46888f115",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:73e4947672c1ccc0602b494b715ba365ea5658cae39cbd2f98b0e964190aedca",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:artifact:24efd97b19c68449e23a8fecf059caae3eaf7e23a7669d2028096af5dace2710"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "User observed unnatural animation and separated body parts",
+          "Attack sample contained detached components of 161, 87 and 39 pixels",
+          "Runtime reproduced the source motion defect"
+        ],
+        "passed": false
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "공식 Rive 웹 런타임에서 상태 선택과 실제 포즈 검증",
+      "observed": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1"
+      ],
+      "recordedAt": "2026-11-08T14:46:50.571447+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character:artifact:6b1b3b7405be2c58f7eeb55976e60e52cb1c486f7d425bd62a1af51a9f91e14d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:bake-rive-character:artifact:5edf32d82b4e4549d394fc7d563e0fd98f6c7597ea82b1bc165c07134de626bb"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:stagehand-browser"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:04bed1d1625390c8fe5c2e28f7afe5898b148aa3d70064ae1580fee6b1eea932",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 37807,
+      "path": "evidence/player-browser.json",
+      "sha256": "d67b2494e6ac3206031aeebe73d865c33c1e818b0293de4c34ff8bb08aba3a08",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:2afbf50a64b98da652fcc3aaf5bb8c57b74d86e292730a72a31812935e29798f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 332140,
+      "path": "evidence/frame-proof.json",
+      "sha256": "a0132f367d36c3561f1ff9595725f4eb4620399569471353d14db70bf9369589",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:38a5f6d097bf91096eb3271898e5fe368df60a09fe11692c43d376823a3cb883",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 439059,
+      "path": "evidence/runtime-preview.gif",
+      "sha256": "d1c47f890d9c0b982eec4f936993b420bd5c7a632ab7fce1c314f15e44d9e2db",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:6542090bb1f2a937a0cd2b8160d674a9afe3f2cd42ba2ee44ff731cbc96dcebd",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 264336,
+      "path": "evidence/frame-proof.png",
+      "sha256": "80e4a812bfc10440f8e22dd767ffdfb0701a6b62f594ad4b840c97e3a5a40f04",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:7802b8b51c8ecc04c9d595c40594e6254ae36ea0ba8f868697d2b8a7a03c20bf",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 88659,
+      "path": "evidence/player-mobile.png",
+      "sha256": "2740f35a42f3bf97ae4ae41663b5e4f2100054245adcf0fcc4bf425b8097b07b",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:7f07fd098db721c6ba33e7fa3ad85f40babe145bf957dbfba751887acaa665b1",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 304636,
+      "path": "evidence/player-desktop.png",
+      "sha256": "8d58e3cc92a301c5f2685c18052d51f32fb8dd707d9a906d28cb0748371b8436",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:b2b946d49243bb39054713ee989d270b9ff257b92947385ccc891df0d1a8a9fe",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 23180,
+      "path": "evidence/joint-comparison.png",
+      "sha256": "ef66296db064e3a6a5d3b5aa9c431c3ec040f38f63698933057955dce5802488",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "438 actual Rive WASM canvas samples; all non-boundary RGBA and silhouettes exactly matched authored poses",
+        "All eight states repeatedly selected on one runtime instance",
+        "Actual desktop and mobile viewport controls, replay, pause and resume",
+        "Corrected walk and run were sampled at real playback speed; no claim of user artistic acceptance"
+      ],
+      "observed": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:initial-cutout-review"
+      ],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:2afbf50a64b98da652fcc3aaf5bb8c57b74d86e292730a72a31812935e29798f",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:6542090bb1f2a937a0cd2b8160d674a9afe3f2cd42ba2ee44ff731cbc96dcebd",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:b2b946d49243bb39054713ee989d270b9ff257b92947385ccc891df0d1a8a9fe",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:04bed1d1625390c8fe5c2e28f7afe5898b148aa3d70064ae1580fee6b1eea932",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:7f07fd098db721c6ba33e7fa3ad85f40babe145bf957dbfba751887acaa665b1",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:7802b8b51c8ecc04c9d595c40594e6254ae36ea0ba8f868697d2b8a7a03c20bf",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:artifact:38a5f6d097bf91096eb3271898e5fe368df60a09fe11692c43d376823a3cb883"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "438 actual Rive WASM canvas samples; all non-boundary RGBA and silhouettes exactly matched authored poses",
+          "All eight states repeatedly selected on one runtime instance",
+          "Actual desktop and mobile viewport controls, replay, pause and resume",
+          "Corrected walk and run were sampled at real playback speed; no claim of user artistic acceptance"
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:play-repaired-rive:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "설치된 픽셀 제작기에서 8동작 생성",
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1"
+      ],
+      "recordedAt": "2026-11-08T14:46:50.297717+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:d99323de9cffab26c34cb5cceb10bdf66e7b4d1102eb1fa85fe8529aac4c6044",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:3835efa82a0705e6be7a3419b95fc05388f629f80911eb02f2e5a791681ceb86",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:7d2752732a8bdebce44193f4bd875722a3c2083273b72fcb48fb5415a677524a",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:f62f71a6fc816f218accf3660a3aaacc7b74db3474207e10d241ae23bc9dea19",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:cfe070f4a6ebbc3de15dcdf07a96db72058c55d4aa5b779fe6c19eab6f48c6fc",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:1b9c661b3def19ee18154b52d5e5291dfa52868ede50fca6a51a46b8350fec3d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:352b5a943c57c918bb8e639d6ab6f974199ec5276c8b415907870cfdf4a065d9",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:a15b737f00d09b27bf42099813f217d9978bae717887c90c8b62646572a99184",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:0254719e433ae101cfd5023ee5a3ce5d4261a7b7552c7a5ea4d389ea7b550cd5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:d382c64d8e99af98dbbd8c48a9cefc131d5286e6ef77fb996a20d0a2841a8c6c",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:f720efceea6dc65a210a00b13644d54536a54b8d3f9af2018ec65115c57aaed8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:7105ad7bf4881bf3031f22d0bc12459d9ec9273b25269ef0e6e9452f20cd2c35",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:c9a9b4c84b3c001bb0f0bd7e72b11cb3a5be7b5a35953f8210f312c320777b90",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:7b17a0134127b309ffd7f6f44db92d06e3f43cf74774850c82cb8b61de86b6e0",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:659381e22268b44fd81f3e7d12f98d3eca1db85678337abaf6c5a874a7d59b86",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:23f6ae2ca006c63457d2eeb0e547012eda34a5ee824f40ed395c9b2538b16010",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:de0d8939607f103dec451eda10bc86d760aded9d7bf8ff3fa08df0692a1f5af6",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:493db742f4c2a5ae6774645273b66d505ba5bd0b75af486591769f9be0f20f56",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:9025dfc0836bf6e61bb2cdc6c7ea33f848b52abaaefb69e2b2d00934a9629e99",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:5c812b5b8508ae7245017689fd5dfdb10c616f43b9eeb99d5392d9fd82432dd1",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:54b8ea5d7aff6c01bdb68d2e74e8800d2010e926a7e9ee16a67ce1231d31dccb",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:02d3c6d5c7491537aaa3ed4f5826d9e394a6e98f22d85721f6a7e52c8fee402b",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:author-connected-scout:artifact:95f81d199d72a4568d9896b1ec5a87a6c6f436ea97a30e195283d48d5caffb53"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:agent:pixel-asset-0-6-0"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:004215b4cfa312039520a4121e90d7f59928da712b29110e794f779432299f15",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1772,
+      "path": "build/motion/wave-05.png",
+      "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:006525f5d4f7ce362541d510383c4f4b7469ea89c647c491974cfe3e318f12a4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/master.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:00b07923db93adfc9345264356dee2e3b7308d1054a7dd0b25a02b3448e62bc7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1781,
+      "path": "build/motion/run-06.png",
+      "sha256": "e051a893a600a501b7caa0df58719714faa41f94ed1a7da38afe404c7b21ac97",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:00ce0a861f790881e06d4078a15a815b16de36432fdbbc8484d7c74ca880e4fa",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 39917,
+      "path": "build/motion/rig.png",
+      "sha256": "f74ecc9f3296c12a9fb7c4194906e6ddd05e0e1f51c059fda717b75db9fcf725",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:0193f28cfde386dd15c7b55d77d070fdf779eef167f483021ef16d7c2f8737e4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1986,
+      "path": "build/motion/jump-05.png",
+      "sha256": "84d7d02a6b24e37304dd61c4c53b046237a6e060f3f10bf32b384dfc9b3a728d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:01e0ff778fbe76f0b922b929d5fc1a040f0020a34a34e5be4460f77b690c27dc",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1849,
+      "path": "build/motion/run-05.png",
+      "sha256": "6624de8776608581dfd518d12e0aac076bc955e8064b892f217cbbc4c9a8843c",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:06534dd379e40bedf34956ff2d40977ac832d409080b6846883ad8d254c70119",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1827,
+      "path": "build/motion/walk-08.png",
+      "sha256": "e328583a0b39cf60e013bd96e3320b59a79de2181d992e2ed30dfe0b9604f39d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:06eb511040661eaf8a7f5b0bbeb044913e1358ffe836bf0b3db79f6fbeaa93f3",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1633,
+      "path": "build/motion/walk-06.png",
+      "sha256": "1a96a763dfe7f7a171296da0f92f80ca2187abdbbb99732ad74fd8115a2eabf0",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:08aaaf547bb5f68495236941d6458cfaa8e92b7738a54e01df4a0929e233a805",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1847,
+      "path": "build/motion/run-07.png",
+      "sha256": "5a8a2a74c31ac4ee1e18779319f452e098faba88872f9210d72b777683beda0b",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:0f8b963ffd3ddfd9c83fa54a87703a83d1eba6ae4ca1cee4dfb0c986576e0692",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/idle-00.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:1158b1328b551223a69857504c7f81253b89a5ec4300fd84c996545bd84c4066",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1793,
+      "path": "build/motion/hurt-01.png",
+      "sha256": "d343ab7c72750d06c4715550499dbb3cfb1110475fd58733c1982b26263dc47c",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:125c6858348a137e421e566e22172bd6b6cbf47148f29933cfc062c51829b804",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1955,
+      "path": "build/motion/hurt-03.png",
+      "sha256": "3f2e9d846c2703ceb14d4437f3329630e4e6c9e496634aad658acc3d292d42c7",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:20ec18b497b9c8b27cb5a642f997a0fff9db04e19e1a79f9cbff2d46d21255c4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1767,
+      "path": "build/motion/walk-01.png",
+      "sha256": "c4e01e43471995eaff8b55f301e281a169652966be0795d900911f248e674adc",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:2348b405f1e1fd80a3c6ad9ae9ae59877c947abb8efbaca063e1d6348e91b97c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1904,
+      "path": "build/motion/run-10.png",
+      "sha256": "c1b21f77bc0d000b63425981411ab13703e737fbb51379941031c63b2dfb0b51",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:282ebb182ee296a516403d6dde72073d6479d2c9980d8ca3fbd277b812d22531",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1879,
+      "path": "build/motion/run-09.png",
+      "sha256": "e9aaf431d9346ce1b2dde36fc3e679ef5673bc93f7bb234d9f165646b7d68316",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:2e8233345ba9a1fe505be6b1dfa0e14601dcb259e120f8b377f584f007d76351",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1761,
+      "path": "build/motion/walk-11.png",
+      "sha256": "9cfa0c1d43506086fe1dee80490632bc0cc592775f2dd6794d184655008adaeb",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:308a292e1352d5b7145477c805a9b4861adb34bdf4c7d614d619527e4393b429",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1837,
+      "path": "build/motion/cheer-01.png",
+      "sha256": "23196f90967476c06362405091d50a336ea286ae28298c1ba3799f2cd47d19d8",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:39ae90b263f0a9f4a73ab7886c8dff7595610c0d75d3c06506f335069ffe1cc2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1852,
+      "path": "build/motion/jump-00.png",
+      "sha256": "349a00d2e4b6ea552b089b48d0f3f3e4c4c864521a2b0c5df43534de69a83028",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:41111e451c38be13a0b6e0309e6ea1cb0bfb73a53b09f834e7aa116318ad504f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1864,
+      "path": "build/motion/cheer-02.png",
+      "sha256": "79c83dd7ff8b62e445754c48e66a84a11434c1f4c81fb8ebfb6f9b5b8a4f7f23",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4306a2ad3e6fef4511000c2950e9b73fa0c6b3c711ab6d2e3fbf8d806aefd9ee",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/neutral.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:433760cf3b7f7a1dcfc51b23f7d80d895949a1ed7c813f44180b96c3f084cbc0",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1621,
+      "path": "build/motion/idle-02.png",
+      "sha256": "47757fe272a33ee7c9acf5a546cc90352dca22a2e1c7110a48ad09146ca9ee74",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:44c37303e65c3a1fc1252499168a19bc45d5e5897bb13c9922a9bf34e530c916",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1839,
+      "path": "build/motion/run-11.png",
+      "sha256": "5397d99e32e5b2e9eeda125b7e13a567b9a1010ac75f2b292a5156a120b1b40d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:453da827131606600706fab4c13977078526ba767f552d6e4fa6a40b51a31f8d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1876,
+      "path": "build/motion/hurt-02.png",
+      "sha256": "68e6a577b6460613a89542e5083d0df7d77e03840fc8ba2353ea6b2954574ced",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:45cb2f02b3b7e079b04f545c2daa06cd6b6b361c6f5f90608e68c0b09165cbe8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1762,
+      "path": "build/motion/wave-04.png",
+      "sha256": "507768420b3c5524e41da62baf6e980cb346db8d9ff481200dd9111dd61a2de5",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:479d756eff08e6c00646c0568c93e85febc1dfe6d4c38d04b258f246b1294427",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/attack-08.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:47bf46b6dbd2a5c8f9fb07a7eae9a2b13bd117b768c3e8d93f466051a0ae51d5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1849,
+      "path": "build/motion/run-01.png",
+      "sha256": "6624de8776608581dfd518d12e0aac076bc955e8064b892f217cbbc4c9a8843c",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:49c41731e279bda02c900e6d0558bcc908080b461d8c25625fc7325426698cc8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1957,
+      "path": "build/motion/jump-02.png",
+      "sha256": "f8eadee68322443e2f4ec4857b17e53744081f465c90a2718d82f4a07cf8335b",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4aaabb60300d85e829c06733f672640eb6b63f6164b656e89a9a97741b459a37",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/jump-10.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4c3181f5be1c669bd960b7e33c38b47647417b5f7312f8395e18903d4d4c03b3",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1904,
+      "path": "build/motion/run-08.png",
+      "sha256": "c1b21f77bc0d000b63425981411ab13703e737fbb51379941031c63b2dfb0b51",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4ecab12a4b5538f21d26cb5a6494d0a5e5f247090450fddd8ed67e6ab3bfca29",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1712,
+      "path": "build/motion/hurt-00.png",
+      "sha256": "9d62ca6340f979fdc6139bff06ef2023d5c27c35110dfc100062446afd379188",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:54d04968710675c75c95be16bd34835a977ced51de1443879a5b70ccfca46850",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1757,
+      "path": "build/motion/wave-06.png",
+      "sha256": "3f9f7e84bd75644873f35a6013a5fc96100f948f2aea2e94d9976bbf4a706a37",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:594920276e25498982d064fdbf609ef0de6175e74d5430107053c6a02ff867e0",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6804,
+      "path": "build/motion/rive-poses.json",
+      "sha256": "8477f4d43a5eaf7f9fe1a5584a8f0e5c4413d66083cbaf1e4e8bce14fda612d8",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:63c83da4a98918954aa17f6fed3031bc5025f24b1e61cf2fa950cf0fb2cb7631",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1721,
+      "path": "build/motion/attack-07.png",
+      "sha256": "d85524951325e57b19f67fa0436b2b44e59b037245dac12f3abac45ab5e66e51",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:663d4f8e9e047481ae6d61c9072d979782a8df388f80f8faaef47eddb1cee96d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1838,
+      "path": "build/motion/run-04.png",
+      "sha256": "f23fe226d6b95995e7c495d7a61c6dd58eb3e74f49750a5318f11401e738c64d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6a834d714703d5cc0c398c6210fabc76b3cdbe52d360735ab0612e32c0c225e2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2051,
+      "path": "build/motion/attack-04.png",
+      "sha256": "1a1e6efd52697f31aef287926d6704a18a7bc8023ea001828e93c5cbd5aed543",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6b147e91aa4c2c110cc6ec99c9ca990bd6c947d9bd02d50c3b06b3b1c468d42c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1935,
+      "path": "build/motion/jump-03.png",
+      "sha256": "a8718b851e399badc289b06193028bf59474bca8b5a9d40e8a2edcb71a5d5175",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6bdd7ff01cd8affdcfc56f745e0de2a93b53061f0052c230072c8064e0c773cb",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1832,
+      "path": "build/motion/cheer-06.png",
+      "sha256": "d9c497b70c27f689b6752c69027fcd908cbfc63fb6b796416b576128714f79ce",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6c3df63670f72fec9b6ed7f5ef246d0e14cb47f094e8f16ab0fc498dc11956f4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1832,
+      "path": "build/motion/cheer-00.png",
+      "sha256": "d9c497b70c27f689b6752c69027fcd908cbfc63fb6b796416b576128714f79ce",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6e35c607f25d3f4f09c6ec774d8575985a56e87dc9c0ec11e4b5d1f8351228a5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1983,
+      "path": "build/motion/jump-04.png",
+      "sha256": "e24e573bbd6652e89257c17981ac2109a6c3665b78d6b2352878f6fe6cf6fa33",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:70c9ce9e5266d16b749452ca9b0a45cb9773b081a496d702ee54f46a68b2b497",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1993,
+      "path": "build/motion/jump-08.png",
+      "sha256": "be8ed737ac16c0bbeec2639ef31b70bd6e8d78be0c1ac75e541665d45b9374d4",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:7839ffc8bcd3c213e377519003a3c70bee63459f55845a897e2fbb71a19890c3",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1813,
+      "path": "build/motion/walk-04.png",
+      "sha256": "dc2ed1495969e7345bbc5ae120d0bdd4c84cac4bb7af97a577f194a12b118013",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:7d40e46a64208ffd789c0fce4117776471c071af9e5e13a72a20a10ade3df1d3",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1838,
+      "path": "build/motion/cheer-05.png",
+      "sha256": "b7344664004931a493366bab07c8e75c93665c435c55a6c1f8dcecb8b295a189",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:80f101524027eaf74f62932cbd128ee69ef55aeed450d878ad4acf22880ecdf2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1847,
+      "path": "build/motion/attack-01.png",
+      "sha256": "213dda1539dc89e342e8920005c5c6924bf9b744eb0bb0f193de6dc52b36e9ff",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:8ffc43db3a10c25281c9a4ad3310d7aa7260edf8afa1f4261fd9d8e5087f076b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1854,
+      "path": "build/motion/jump-09.png",
+      "sha256": "2efb184bc416b5cef99ef664843b84098d47070b41e609640240ae49cd3a41da",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9243ad364e685b0aea8a0d6dbe5624afa16545e07600dd4c8d68154323f44c2b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 177321,
+      "path": "build/motion/motion-qa.png",
+      "sha256": "d44ae96e700ab77665a216bc2537091343995cb839938c49eaa81d510a2eaa77",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9438ba05402ba0891abfb2ad57b6c39b3c0faa6f4d6340ac54e3ade8defda321",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1935,
+      "path": "build/motion/attack-03.png",
+      "sha256": "7e94c01fa124272ec270600f3560b7d5fd2a2018f09be30c01d31a7997e33468",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9471d9fa40a68ccdff82069ed87244a71b83ee8cbbc69eb8d26a2579cb4b396e",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1757,
+      "path": "build/motion/wave-02.png",
+      "sha256": "3f9f7e84bd75644873f35a6013a5fc96100f948f2aea2e94d9976bbf4a706a37",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:994394a90aabdc10fd4dfd80763ef27643f487b5794d0917912a591857facf36",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1854,
+      "path": "build/motion/hurt-05.png",
+      "sha256": "2e63ae51f28e3507a32ee38ceec907462e3c516f65b5928d50aebfbb4ec25d26",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9fc8c4c7dc4780018ab896932b148c016c5b8b255c04ebeec2bff653e669bedc",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1857,
+      "path": "build/motion/cheer-03.png",
+      "sha256": "e09d6f280fc56618b7f66f1fe6baceb77e3f7dd5194baa2f47d848fcb4e5f496",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0496b55807ea1236269d9c4fd8ec349c3ba7033e5b298c83bcd03c466866792",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1915,
+      "path": "build/motion/jump-01.png",
+      "sha256": "1c03dea69be6b56944c0ad899f1b6242086bcf4570c04625ddac76b212d12bd4",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0f50266f0fea0929d42337038c0c5e4f759f5f00dffdeccb60e1e3eaee85763",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1772,
+      "path": "build/motion/wave-03.png",
+      "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0f7cb71dd493cf4029ed00efbfb33dee6e7e9f00dd0514825924b81f4a9e7b5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1838,
+      "path": "build/motion/run-02.png",
+      "sha256": "f23fe226d6b95995e7c495d7a61c6dd58eb3e74f49750a5318f11401e738c64d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a27cbf0529bf845a715b4d83d0e3ce4d8d12064e46aecbde326fcd3895b691b7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1633,
+      "path": "build/motion/walk-00.png",
+      "sha256": "1a96a763dfe7f7a171296da0f92f80ca2187abdbbb99732ad74fd8115a2eabf0",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a2c742b9af85a6626ca8d179989dafdaea8cf45ba3ca7eac5d9f3eecab816954",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1824,
+      "path": "build/motion/walk-09.png",
+      "sha256": "17dc3954e80cbd88f2049f66fa659aaf189a8ca10bcd9a271b43e0a80bf58610",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a330125559d8038ee763a4a57f61827580726302812e52be4bc7d616675ad9fb",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1959,
+      "path": "build/motion/jump-06.png",
+      "sha256": "69165ddf11dad63e68a26b97aa2d95b5af7edee64836bb89ef995c806809f947",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a33b4da6de219d8e14587516e70de096550a3264f763230dabddc5a0758f4e00",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1782,
+      "path": "build/motion/hurt-06.png",
+      "sha256": "db2b0f9dd6c5076c52e1e3b389cb72453f1b8659ec9144c35ca08c54602f7b48",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a962574e88eeee535a0a89c493c2c6c44cd0a8efa20cceec57da2b2f62a83f7c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/idle-05.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:ab32fa997466d60c356fa6a1dfe28f78c50ec2f49efbaca5420ebcad7f0696ab",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1890,
+      "path": "build/motion/run-03.png",
+      "sha256": "29342c0f2b545367ff323e98140bad278050ed3ea9ff9e7d87fb1aab745718b1",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:abb4dc4c1f4ceb1107deb4d68a936dd6bf11446221bce8a365e2b23b53121dc0",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1767,
+      "path": "build/motion/walk-05.png",
+      "sha256": "c4e01e43471995eaff8b55f301e281a169652966be0795d900911f248e674adc",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:b3f35ceaac9df6380b392e8dc6b348eeaf3fa2c796a40f8d3407a864bc6bb137",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1837,
+      "path": "build/motion/cheer-07.png",
+      "sha256": "23196f90967476c06362405091d50a336ea286ae28298c1ba3799f2cd47d19d8",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:b9421187cc4548d497a215becb2e973d7f81ade78c32549fb811f71934c17c3a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2013,
+      "path": "build/motion/jump-07.png",
+      "sha256": "038ed185f96f1601e812e96020370d9deed94ac4792710f27a1555bc231534f5",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:bd34ec30edc14a863ae506345541df21919638ca8ebf645f2ef5776f2e460f1d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1813,
+      "path": "build/motion/walk-02.png",
+      "sha256": "dc2ed1495969e7345bbc5ae120d0bdd4c84cac4bb7af97a577f194a12b118013",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:bfde7295dd54eef1fcbeda10a6763b7b4acec5929c4c95f0f83dcbacf5e4d006",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1955,
+      "path": "build/motion/attack-02.png",
+      "sha256": "a3db59f0060dfefd76b99422d2ac5f96f31992ea892219af378520606c5046c4",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:c482c73dfbd09410694bbab7bdc0b71f2ad29c35f4d5ac7b3a4ddaeeb5a434d1",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1772,
+      "path": "build/motion/wave-07.png",
+      "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:cb98b24bcd439a3b0bc420071e20d11313c56e0309dc83ec43a2c581431c529f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1781,
+      "path": "build/motion/run-00.png",
+      "sha256": "e051a893a600a501b7caa0df58719714faa41f94ed1a7da38afe404c7b21ac97",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:cedf5c689b95f7936bfc8360c9b499d1e9b066f5aab1c7e1678f579f1e3994c1",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1864,
+      "path": "build/motion/walk-03.png",
+      "sha256": "d97b3d754e8145e9af645887e1fe022fb81fdd379bd90261f890e72c5ff6939f",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d165a7faaebe5e09d2df4d2a79690a7b217dc17aae4a47772346fde809b594a8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1876,
+      "path": "build/motion/hurt-04.png",
+      "sha256": "68e6a577b6460613a89542e5083d0df7d77e03840fc8ba2353ea6b2954574ced",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d4c8caf7724392a3c199092977c9770a2492d0db88fbd2a21bae20ce10d1553b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1762,
+      "path": "build/motion/wave-00.png",
+      "sha256": "507768420b3c5524e41da62baf6e980cb346db8d9ff481200dd9111dd61a2de5",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d7ffa9519cfb223969ca97664f32becd833a36b4da6099765b5b7c1942e3b5b2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1652,
+      "path": "build/motion/attack-00.png",
+      "sha256": "e549df5b5b1989164f5e15eedb1615e80d6f5e4f5988811bdec7ba292d240cd6",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d8d8e789542b5bfd40a4aac19487503d94ed4d059a67ff1783952336c452de5a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/idle-01.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d9b28d3c134ee96586ce32a75c66711d89cbf69110e8365cc563deaae75bb074",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1863,
+      "path": "build/motion/cheer-04.png",
+      "sha256": "dd7417c168a949fa3224cf89e6594e0d38677cadb79f9a2ac6fc8a288a27a4fb",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:dd7abcb02bbf5b181ea650024058f83f94ddced8e2d6800ae29a789ae14ecec7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1772,
+      "path": "build/motion/wave-01.png",
+      "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:e620f9a109db1e2759be7d40dca1a01eef7300104b707b1fde627e5e6e5f04bd",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1827,
+      "path": "build/motion/walk-10.png",
+      "sha256": "e328583a0b39cf60e013bd96e3320b59a79de2181d992e2ed30dfe0b9604f39d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:e67e71ea231b6896b75bb871e590efa725a85249a9ae1df4fab73b46565fe000",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 5335,
+      "path": "build/motion/action-set.request.json",
+      "sha256": "72aea41329fb95c39fad308e6e78f84a563e1072ddf4a8cb64734d8e437b407e",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:eaa6e81c04490e4f8ccfca01d07b1acb1db4491f085b18299a6e7a775c3e65d4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/idle-03.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:eb802919f768fb4d910f578c7eb90dc9e5804663edc6efafcf54ed1b1c715709",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 910322,
+      "path": "build/motion/inspection.json",
+      "sha256": "4b51e851fde62b517dd04061457dfb2ee5e01b6286b67832e69c1323f938e41b",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f1848f8edb8e2a883d760443e198acb54d253d998ac6257aee509d9f24fa997d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1754,
+      "path": "build/motion/walk-07.png",
+      "sha256": "ed362616b2808626db574b5ded4f956428423f191a4f4374cf70f951ea3ae56b",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f1ca0f6b19cc98e852e3e53105ad5da9716ca1f6c012a901b38f3b64b2b67db6",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1934,
+      "path": "build/motion/attack-05.png",
+      "sha256": "d9cbbc626c7cdb48178a39ad32534c3458d4f918f914796ba24a01d4916e4ea3",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f2bcb24d8056464e0e7d68c591d9c280a158e44b737c356acefdbf2e88645175",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1615,
+      "path": "build/motion/idle-04.png",
+      "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f699d9806a324f87d19ea499554b2f6af88bcdf77e8312aa458ee97ad4069922",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1712,
+      "path": "build/motion/hurt-07.png",
+      "sha256": "9d62ca6340f979fdc6139bff06ef2023d5c27c35110dfc100062446afd379188",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f7f0b170158541eb47772d0c5352d1c67f1f3c247df42799bb2b9c6036b80cae",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1889,
+      "path": "build/motion/attack-06.png",
+      "sha256": "2f82a4f593ca447e0b61c652dfe894f90e02234f788ac91ac3a2e9ab98e48d32",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Identical neutral reconstruction, no clipped pixels, exactly one connected alpha silhouette on every one of 74 poses",
+        "Playback source frames byte-identical to independent pose manifest"
+      ],
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:e67e71ea231b6896b75bb871e590efa725a85249a9ae1df4fab73b46565fe000",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d7ffa9519cfb223969ca97664f32becd833a36b4da6099765b5b7c1942e3b5b2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:80f101524027eaf74f62932cbd128ee69ef55aeed450d878ad4acf22880ecdf2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:bfde7295dd54eef1fcbeda10a6763b7b4acec5929c4c95f0f83dcbacf5e4d006",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9438ba05402ba0891abfb2ad57b6c39b3c0faa6f4d6340ac54e3ade8defda321",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6a834d714703d5cc0c398c6210fabc76b3cdbe52d360735ab0612e32c0c225e2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f1ca0f6b19cc98e852e3e53105ad5da9716ca1f6c012a901b38f3b64b2b67db6",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f7f0b170158541eb47772d0c5352d1c67f1f3c247df42799bb2b9c6036b80cae",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:63c83da4a98918954aa17f6fed3031bc5025f24b1e61cf2fa950cf0fb2cb7631",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:479d756eff08e6c00646c0568c93e85febc1dfe6d4c38d04b258f246b1294427",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6c3df63670f72fec9b6ed7f5ef246d0e14cb47f094e8f16ab0fc498dc11956f4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:308a292e1352d5b7145477c805a9b4861adb34bdf4c7d614d619527e4393b429",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:41111e451c38be13a0b6e0309e6ea1cb0bfb73a53b09f834e7aa116318ad504f",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9fc8c4c7dc4780018ab896932b148c016c5b8b255c04ebeec2bff653e669bedc",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d9b28d3c134ee96586ce32a75c66711d89cbf69110e8365cc563deaae75bb074",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:7d40e46a64208ffd789c0fce4117776471c071af9e5e13a72a20a10ade3df1d3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6bdd7ff01cd8affdcfc56f745e0de2a93b53061f0052c230072c8064e0c773cb",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:b3f35ceaac9df6380b392e8dc6b348eeaf3fa2c796a40f8d3407a864bc6bb137",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4ecab12a4b5538f21d26cb5a6494d0a5e5f247090450fddd8ed67e6ab3bfca29",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:1158b1328b551223a69857504c7f81253b89a5ec4300fd84c996545bd84c4066",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:453da827131606600706fab4c13977078526ba767f552d6e4fa6a40b51a31f8d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:125c6858348a137e421e566e22172bd6b6cbf47148f29933cfc062c51829b804",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d165a7faaebe5e09d2df4d2a79690a7b217dc17aae4a47772346fde809b594a8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:994394a90aabdc10fd4dfd80763ef27643f487b5794d0917912a591857facf36",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a33b4da6de219d8e14587516e70de096550a3264f763230dabddc5a0758f4e00",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f699d9806a324f87d19ea499554b2f6af88bcdf77e8312aa458ee97ad4069922",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:0f8b963ffd3ddfd9c83fa54a87703a83d1eba6ae4ca1cee4dfb0c986576e0692",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d8d8e789542b5bfd40a4aac19487503d94ed4d059a67ff1783952336c452de5a",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:433760cf3b7f7a1dcfc51b23f7d80d895949a1ed7c813f44180b96c3f084cbc0",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:eaa6e81c04490e4f8ccfca01d07b1acb1db4491f085b18299a6e7a775c3e65d4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f2bcb24d8056464e0e7d68c591d9c280a158e44b737c356acefdbf2e88645175",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a962574e88eeee535a0a89c493c2c6c44cd0a8efa20cceec57da2b2f62a83f7c",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:eb802919f768fb4d910f578c7eb90dc9e5804663edc6efafcf54ed1b1c715709",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:39ae90b263f0a9f4a73ab7886c8dff7595610c0d75d3c06506f335069ffe1cc2",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0496b55807ea1236269d9c4fd8ec349c3ba7033e5b298c83bcd03c466866792",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:49c41731e279bda02c900e6d0558bcc908080b461d8c25625fc7325426698cc8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6b147e91aa4c2c110cc6ec99c9ca990bd6c947d9bd02d50c3b06b3b1c468d42c",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:6e35c607f25d3f4f09c6ec774d8575985a56e87dc9c0ec11e4b5d1f8351228a5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:0193f28cfde386dd15c7b55d77d070fdf779eef167f483021ef16d7c2f8737e4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a330125559d8038ee763a4a57f61827580726302812e52be4bc7d616675ad9fb",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:b9421187cc4548d497a215becb2e973d7f81ade78c32549fb811f71934c17c3a",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:70c9ce9e5266d16b749452ca9b0a45cb9773b081a496d702ee54f46a68b2b497",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:8ffc43db3a10c25281c9a4ad3310d7aa7260edf8afa1f4261fd9d8e5087f076b",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4aaabb60300d85e829c06733f672640eb6b63f6164b656e89a9a97741b459a37",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:006525f5d4f7ce362541d510383c4f4b7469ea89c647c491974cfe3e318f12a4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9243ad364e685b0aea8a0d6dbe5624afa16545e07600dd4c8d68154323f44c2b",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4306a2ad3e6fef4511000c2950e9b73fa0c6b3c711ab6d2e3fbf8d806aefd9ee",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:00ce0a861f790881e06d4078a15a815b16de36432fdbbc8484d7c74ca880e4fa",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:594920276e25498982d064fdbf609ef0de6175e74d5430107053c6a02ff867e0",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:cb98b24bcd439a3b0bc420071e20d11313c56e0309dc83ec43a2c581431c529f",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:47bf46b6dbd2a5c8f9fb07a7eae9a2b13bd117b768c3e8d93f466051a0ae51d5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0f7cb71dd493cf4029ed00efbfb33dee6e7e9f00dd0514825924b81f4a9e7b5",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:ab32fa997466d60c356fa6a1dfe28f78c50ec2f49efbaca5420ebcad7f0696ab",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:663d4f8e9e047481ae6d61c9072d979782a8df388f80f8faaef47eddb1cee96d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:01e0ff778fbe76f0b922b929d5fc1a040f0020a34a34e5be4460f77b690c27dc",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:00b07923db93adfc9345264356dee2e3b7308d1054a7dd0b25a02b3448e62bc7",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:08aaaf547bb5f68495236941d6458cfaa8e92b7738a54e01df4a0929e233a805",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:4c3181f5be1c669bd960b7e33c38b47647417b5f7312f8395e18903d4d4c03b3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:282ebb182ee296a516403d6dde72073d6479d2c9980d8ca3fbd277b812d22531",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:2348b405f1e1fd80a3c6ad9ae9ae59877c947abb8efbaca063e1d6348e91b97c",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:44c37303e65c3a1fc1252499168a19bc45d5e5897bb13c9922a9bf34e530c916",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a27cbf0529bf845a715b4d83d0e3ce4d8d12064e46aecbde326fcd3895b691b7",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:20ec18b497b9c8b27cb5a642f997a0fff9db04e19e1a79f9cbff2d46d21255c4",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:bd34ec30edc14a863ae506345541df21919638ca8ebf645f2ef5776f2e460f1d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:cedf5c689b95f7936bfc8360c9b499d1e9b066f5aab1c7e1678f579f1e3994c1",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:7839ffc8bcd3c213e377519003a3c70bee63459f55845a897e2fbb71a19890c3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:abb4dc4c1f4ceb1107deb4d68a936dd6bf11446221bce8a365e2b23b53121dc0",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:06eb511040661eaf8a7f5b0bbeb044913e1358ffe836bf0b3db79f6fbeaa93f3",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:f1848f8edb8e2a883d760443e198acb54d253d998ac6257aee509d9f24fa997d",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:06534dd379e40bedf34956ff2d40977ac832d409080b6846883ad8d254c70119",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a2c742b9af85a6626ca8d179989dafdaea8cf45ba3ca7eac5d9f3eecab816954",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:e620f9a109db1e2759be7d40dca1a01eef7300104b707b1fde627e5e6e5f04bd",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:2e8233345ba9a1fe505be6b1dfa0e14601dcb259e120f8b377f584f007d76351",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:d4c8caf7724392a3c199092977c9770a2492d0db88fbd2a21bae20ce10d1553b",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:dd7abcb02bbf5b181ea650024058f83f94ddced8e2d6800ae29a789ae14ecec7",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:9471d9fa40a68ccdff82069ed87244a71b83ee8cbbc69eb8d26a2579cb4b396e",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:a0f50266f0fea0929d42337038c0c5e4f759f5f00dffdeccb60e1e3eaee85763",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:45cb2f02b3b7e079b04f545c2daa06cd6b6b361c6f5f90608e68c0b09165cbe8",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:004215b4cfa312039520a4121e90d7f59928da712b29110e794f779432299f15",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:54d04968710675c75c95be16bd34835a977ced51de1443879a5b70ccfca46850",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:artifact:c482c73dfbd09410694bbab7bdc0b71f2ad29c35f4d5ac7b3a4ddaeeb5a434d1"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Identical neutral reconstruction, no clipped pixels, exactly one connected alpha silhouette on every one of 74 poses",
+          "Playback source frames byte-identical to independent pose manifest"
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1:work:render-connected-motion:validation"
       ]
     },
     {
@@ -31291,7 +33675,8 @@
         "urn:game-studio:5eec133b-1d8d-442e-a3df-930741c110a2",
         "urn:game-studio:ad677040-5ff2-49b8-8f20-06af103e6f7b",
         "urn:game-studio:44866087-25af-4833-8d50-2627fd9bf49f",
-        "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921"
+        "urn:game-studio:229893fa-9557-4448-b682-40aaf8aa1921",
+        "urn:game-studio:9fd6f0ac-0be4-4ed9-8cb5-9bae3d00f5d1"
       ]
     }
   ]

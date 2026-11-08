@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "format": "rive",
+  "artboard": "Character",
+  "state_machine": "Character Actions",
+  "number_input": "action",
+  "size": [
+    96,
+    96
+  ],
+  "request_sha256": "8477f4d43a5eaf7f9fe1a5584a8f0e5c4413d66083cbaf1e4e8bce14fda612d8",
+  "states": [
+    {
+      "name": "idle",
+      "value": 0,
+      "loop": true,
+      "duration_ms": 1080,
+      "frames": [
+        {
+          "path": "idle-00.png",
+          "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-01.png",
+          "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-02.png",
+          "sha256": "47757fe272a33ee7c9acf5a546cc90352dca22a2e1c7110a48ad09146ca9ee74",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-03.png",
+          "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-04.png",
+          "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+          "duration_ms": 180
+        },
+        {
+          "path": "idle-05.png",
+          "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+          "duration_ms": 180
+        }
+      ]
+    },
+    {
+      "name": "walk",
+      "value": 1,
+      "loop": true,
+      "duration_ms": 1080,
+      "frames": [
+        {
+          "path": "walk-00.png",
+          "sha256": "1a96a763dfe7f7a171296da0f92f80ca2187abdbbb99732ad74fd8115a2eabf0",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-01.png",
+          "sha256": "c4e01e43471995eaff8b55f301e281a169652966be0795d900911f248e674adc",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-02.png",
+          "sha256": "dc2ed1495969e7345bbc5ae120d0bdd4c84cac4bb7af97a577f194a12b118013",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-03.png",
+          "sha256": "d97b3d754e8145e9af645887e1fe022fb81fdd379bd90261f890e72c5ff6939f",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-04.png",
+          "sha256": "dc2ed1495969e7345bbc5ae120d0bdd4c84cac4bb7af97a577f194a12b118013",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-05.png",
+          "sha256": "c4e01e43471995eaff8b55f301e281a169652966be0795d900911f248e674adc",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-06.png",
+          "sha256": "1a96a763dfe7f7a171296da0f92f80ca2187abdbbb99732ad74fd8115a2eabf0",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-07.png",
+          "sha256": "ed362616b2808626db574b5ded4f956428423f191a4f4374cf70f951ea3ae56b",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-08.png",
+          "sha256": "e328583a0b39cf60e013bd96e3320b59a79de2181d992e2ed30dfe0b9604f39d",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-09.png",
+          "sha256": "17dc3954e80cbd88f2049f66fa659aaf189a8ca10bcd9a271b43e0a80bf58610",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-10.png",
+          "sha256": "e328583a0b39cf60e013bd96e3320b59a79de2181d992e2ed30dfe0b9604f39d",
+          "duration_ms": 90
+        },
+        {
+          "path": "walk-11.png",
+          "sha256": "9cfa0c1d43506086fe1dee80490632bc0cc592775f2dd6794d184655008adaeb",
+          "duration_ms": 90
+        }
+      ]
+    },
+    {
+      "name": "run",
+      "value": 2,
+      "loop": true,
+      "duration_ms": 780,
+      "frames": [
+        {
+          "path": "run-00.png",
+          "sha256": "e051a893a600a501b7caa0df58719714faa41f94ed1a7da38afe404c7b21ac97",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-01.png",
+          "sha256": "6624de8776608581dfd518d12e0aac076bc955e8064b892f217cbbc4c9a8843c",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-02.png",
+          "sha256": "f23fe226d6b95995e7c495d7a61c6dd58eb3e74f49750a5318f11401e738c64d",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-03.png",
+          "sha256": "29342c0f2b545367ff323e98140bad278050ed3ea9ff9e7d87fb1aab745718b1",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-04.png",
+          "sha256": "f23fe226d6b95995e7c495d7a61c6dd58eb3e74f49750a5318f11401e738c64d",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-05.png",
+          "sha256": "6624de8776608581dfd518d12e0aac076bc955e8064b892f217cbbc4c9a8843c",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-06.png",
+          "sha256": "e051a893a600a501b7caa0df58719714faa41f94ed1a7da38afe404c7b21ac97",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-07.png",
+          "sha256": "5a8a2a74c31ac4ee1e18779319f452e098faba88872f9210d72b777683beda0b",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-08.png",
+          "sha256": "c1b21f77bc0d000b63425981411ab13703e737fbb51379941031c63b2dfb0b51",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-09.png",
+          "sha256": "e9aaf431d9346ce1b2dde36fc3e679ef5673bc93f7bb234d9f165646b7d68316",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-10.png",
+          "sha256": "c1b21f77bc0d000b63425981411ab13703e737fbb51379941031c63b2dfb0b51",
+          "duration_ms": 65
+        },
+        {
+          "path": "run-11.png",
+          "sha256": "5397d99e32e5b2e9eeda125b7e13a567b9a1010ac75f2b292a5156a120b1b40d",
+          "duration_ms": 65
+        }
+      ]
+    },
+    {
+      "name": "attack",
+      "value": 3,
+      "loop": false,
+      "duration_ms": 810,
+      "frames": [
+        {
+          "path": "attack-00.png",
+          "sha256": "e549df5b5b1989164f5e15eedb1615e80d6f5e4f5988811bdec7ba292d240cd6",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-01.png",
+          "sha256": "213dda1539dc89e342e8920005c5c6924bf9b744eb0bb0f193de6dc52b36e9ff",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-02.png",
+          "sha256": "a3db59f0060dfefd76b99422d2ac5f96f31992ea892219af378520606c5046c4",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-03.png",
+          "sha256": "7e94c01fa124272ec270600f3560b7d5fd2a2018f09be30c01d31a7997e33468",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-04.png",
+          "sha256": "1a1e6efd52697f31aef287926d6704a18a7bc8023ea001828e93c5cbd5aed543",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-05.png",
+          "sha256": "d9cbbc626c7cdb48178a39ad32534c3458d4f918f914796ba24a01d4916e4ea3",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-06.png",
+          "sha256": "2f82a4f593ca447e0b61c652dfe894f90e02234f788ac91ac3a2e9ab98e48d32",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-07.png",
+          "sha256": "d85524951325e57b19f67fa0436b2b44e59b037245dac12f3abac45ab5e66e51",
+          "duration_ms": 90
+        },
+        {
+          "path": "attack-08.png",
+          "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+          "duration_ms": 90
+        }
+      ]
+    },
+    {
+      "name": "jump",
+      "value": 4,
+      "loop": false,
+      "duration_ms": 1320,
+      "frames": [
+        {
+          "path": "jump-00.png",
+          "sha256": "349a00d2e4b6ea552b089b48d0f3f3e4c4c864521a2b0c5df43534de69a83028",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-01.png",
+          "sha256": "1c03dea69be6b56944c0ad899f1b6242086bcf4570c04625ddac76b212d12bd4",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-02.png",
+          "sha256": "f8eadee68322443e2f4ec4857b17e53744081f465c90a2718d82f4a07cf8335b",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-03.png",
+          "sha256": "a8718b851e399badc289b06193028bf59474bca8b5a9d40e8a2edcb71a5d5175",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-04.png",
+          "sha256": "e24e573bbd6652e89257c17981ac2109a6c3665b78d6b2352878f6fe6cf6fa33",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-05.png",
+          "sha256": "84d7d02a6b24e37304dd61c4c53b046237a6e060f3f10bf32b384dfc9b3a728d",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-06.png",
+          "sha256": "69165ddf11dad63e68a26b97aa2d95b5af7edee64836bb89ef995c806809f947",
+          "duration_ms": 110
+        },
+        {
+          "path": "jump-07.png",
+          "sha256": "038ed185f96f1601e812e96020370d9deed94ac4792710f27a1555bc231534f5",
+          "duration_ms": 140
+        },
+        {
+          "path": "jump-08.png",
+          "sha256": "be8ed737ac16c0bbeec2639ef31b70bd6e8d78be0c1ac75e541665d45b9374d4",
+          "duration_ms": 130
+        },
+        {
+          "path": "jump-09.png",
+          "sha256": "2efb184bc416b5cef99ef664843b84098d47070b41e609640240ae49cd3a41da",
+          "duration_ms": 120
+        },
+        {
+          "path": "jump-10.png",
+          "sha256": "51c9c5a61d90b270fd14447f9f422faf4b715f195d0cb8a3b3d8911eb9784f7a",
+          "duration_ms": 160
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "value": 5,
+      "loop": false,
+      "duration_ms": 800,
+      "frames": [
+        {
+          "path": "hurt-00.png",
+          "sha256": "9d62ca6340f979fdc6139bff06ef2023d5c27c35110dfc100062446afd379188",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-01.png",
+          "sha256": "d343ab7c72750d06c4715550499dbb3cfb1110475fd58733c1982b26263dc47c",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-02.png",
+          "sha256": "68e6a577b6460613a89542e5083d0df7d77e03840fc8ba2353ea6b2954574ced",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-03.png",
+          "sha256": "3f2e9d846c2703ceb14d4437f3329630e4e6c9e496634aad658acc3d292d42c7",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-04.png",
+          "sha256": "68e6a577b6460613a89542e5083d0df7d77e03840fc8ba2353ea6b2954574ced",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-05.png",
+          "sha256": "2e63ae51f28e3507a32ee38ceec907462e3c516f65b5928d50aebfbb4ec25d26",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-06.png",
+          "sha256": "db2b0f9dd6c5076c52e1e3b389cb72453f1b8659ec9144c35ca08c54602f7b48",
+          "duration_ms": 100
+        },
+        {
+          "path": "hurt-07.png",
+          "sha256": "9d62ca6340f979fdc6139bff06ef2023d5c27c35110dfc100062446afd379188",
+          "duration_ms": 100
+        }
+      ]
+    },
+    {
+      "name": "wave",
+      "value": 6,
+      "loop": true,
+      "duration_ms": 1040,
+      "frames": [
+        {
+          "path": "wave-00.png",
+          "sha256": "507768420b3c5524e41da62baf6e980cb346db8d9ff481200dd9111dd61a2de5",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-01.png",
+          "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-02.png",
+          "sha256": "3f9f7e84bd75644873f35a6013a5fc96100f948f2aea2e94d9976bbf4a706a37",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-03.png",
+          "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-04.png",
+          "sha256": "507768420b3c5524e41da62baf6e980cb346db8d9ff481200dd9111dd61a2de5",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-05.png",
+          "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-06.png",
+          "sha256": "3f9f7e84bd75644873f35a6013a5fc96100f948f2aea2e94d9976bbf4a706a37",
+          "duration_ms": 130
+        },
+        {
+          "path": "wave-07.png",
+          "sha256": "d4abfa63066091e3ac101180816824e8d74c3e3fb1878e48ac27e77089b22cf6",
+          "duration_ms": 130
+        }
+      ]
+    },
+    {
+      "name": "cheer",
+      "value": 7,
+      "loop": true,
+      "duration_ms": 880,
+      "frames": [
+        {
+          "path": "cheer-00.png",
+          "sha256": "d9c497b70c27f689b6752c69027fcd908cbfc63fb6b796416b576128714f79ce",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-01.png",
+          "sha256": "23196f90967476c06362405091d50a336ea286ae28298c1ba3799f2cd47d19d8",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-02.png",
+          "sha256": "79c83dd7ff8b62e445754c48e66a84a11434c1f4c81fb8ebfb6f9b5b8a4f7f23",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-03.png",
+          "sha256": "e09d6f280fc56618b7f66f1fe6baceb77e3f7dd5194baa2f47d848fcb4e5f496",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-04.png",
+          "sha256": "dd7417c168a949fa3224cf89e6594e0d38677cadb79f9a2ac6fc8a288a27a4fb",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-05.png",
+          "sha256": "b7344664004931a493366bab07c8e75c93665c435c55a6c1f8dcecb8b295a189",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-06.png",
+          "sha256": "d9c497b70c27f689b6752c69027fcd908cbfc63fb6b796416b576128714f79ce",
+          "duration_ms": 110
+        },
+        {
+          "path": "cheer-07.png",
+          "sha256": "23196f90967476c06362405091d50a336ea286ae28298c1ba3799f2cd47d19d8",
+          "duration_ms": 110
+        }
+      ]
+    }
+  ],
+  "file": "character.riv",
+  "bytes": 107312,
+  "sha256": "2feafcf7a4898cafbd3eaf421135941939c1c8ffa1a2e6c5c64e9495fd5f2af2"
+}

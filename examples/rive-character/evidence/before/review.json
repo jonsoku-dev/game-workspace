@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "status": "user_requested_revision",
+  "reported": "캐릭터가 부위별로 찢어지고 움직임이 부자연스럽다.",
+  "baseline_riv_sha256": "3bd1cb92274ada4418f0f0f7da28b8726c518df10ab7025eec74c95f9ddeccde",
+  "sampled_frames": {
+    "attack-1.png": {
+      "alpha_component_pixels": [
+        1269,
+        161,
+        87,
+        39,
+        1
+      ],
+      "sha256": "a8e41ac84b77d79b531f509573c7be4dd94c5248505abb11c146a037c803a444"
+    },
+    "cheer-1.png": {
+      "alpha_component_pixels": [
+        1521,
+        84,
+        1
+      ],
+      "sha256": "f96b3a176e61813ac5dc5d6e5d56fb526f7f5137677bda685f845fae547cb1cd"
+    },
+    "jump-1.png": {
+      "alpha_component_pixels": [
+        1473,
+        85,
+        35,
+        2
+      ],
+      "sha256": "5f9bce5ae2eb924ad9e900a523b4d26fa382c537c29183279bb5bd4fd92f3b0b"
+    },
+    "run-2.png": {
+      "alpha_component_pixels": [
+        1545
+      ],
+      "sha256": "ee4457e1c0c6fd07bb4652b57da32b830b6bb2ed9d8b060f059c73b08488f5f6"
+    },
+    "wave-1.png": {
+      "alpha_component_pixels": [
+        1485,
+        87,
+        35,
+        2
+      ],
+      "sha256": "c365e1fa77b8a4c2628789d8baa2e0158e448e2b8310046edd9e41347f1a2009"
+    }
+  }
+}
