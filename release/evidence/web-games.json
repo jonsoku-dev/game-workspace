@@ -1,0 +1,68 @@
+{
+  "three": {
+    "collected": [
+      true,
+      true,
+      true
+    ],
+    "charge": 3,
+    "native_particles": 24,
+    "depth_write": true,
+    "won": true,
+    "reset": true,
+    "external": [],
+    "errors": [],
+    "width": 960,
+    "client": 945,
+    "scroll": 945
+  },
+  "phaser": {
+    "version": "3.90.0",
+    "hits": 3,
+    "won": true,
+    "events": [
+      {
+        "start_ms": 320,
+        "observed_ms": 330.48826666666673,
+        "point": {
+          "x": 276,
+          "y": 293
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 320,
+        "observed_ms": 324.3233333333336,
+        "point": {
+          "x": 660,
+          "y": 293
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 320,
+        "observed_ms": 333.81999999999994,
+        "point": {
+          "x": 660,
+          "y": 293
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 320,
+        "observed_ms": 332.85,
+        "point": {
+          "x": 660,
+          "y": 293
+        },
+        "contact": true
+      }
+    ],
+    "reset": true,
+    "external": [],
+    "errors": [],
+    "width": 960,
+    "client": 945,
+    "scroll": 945
+  }
+}

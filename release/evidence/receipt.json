@@ -1,0 +1,59 @@
+{
+  "scope": "Internal macOS arm64 release for authored pixel action sets, supported static PBR assets, verified Godot 4.5.1 & self-hosted Three/Phaser gameplay. Unity 6000.0.60f1 source project and batch command only.",
+  "source_commit": "e9d3dd20944873bde1856154aae0b78762563825",
+  "gitlinks": {
+    "assets": "81bfb960c777822caf90be69797572707d473b2c",
+    "studio": "e87c8752a6b2c5611799c5d0ee21360c02eb87ea",
+    "examples/forest-inventory-demo": "8824b5eda089456319923e11c082daa306338653"
+  },
+  "plugins": {
+    "game-studio": "0.5.1",
+    "model-assets": "0.3.0",
+    "pixel-asset-pipeline": "0.3.2"
+  },
+  "verification": {
+    "python_suites": {
+      "pixel": 67,
+      "model": 11,
+      "studio": 69,
+      "godot_exporter": 5,
+      "three_exporter": 6,
+      "phaser_exporter": 5,
+      "unity_exporter_and_standalone_csharp_logic": 6
+    },
+    "clean_checkout_pck": "6a9aa70c8f03a0b226802d5bbca581418ebcc10dc0c3196d6a06a83645d47e7a",
+    "independent_checkout_pck": "abbc6956367a76d761ba3e24089adc259e1c8ec3d036001f897ef432650a9573",
+    "independent_conditions": "Fresh recursive clone of e9d3dd20944873bde1856154aae0b78762563825, empty install home, original workspace reads and IP denied (Unix IPC allowed) for installation, builds and Godot/PCK. Local Chromium served separately for web gameplay.",
+    "viewer": "Four installed-plugin projects rendered on desktop and 390 px layouts; pause, 100 ms seek, named-action inspection/restore, project switching, read-only graph and 304 verified.",
+    "codex_text_smoke": {
+      "status": "ready",
+      "step": "reused",
+      "asset": "builds/textured-prop/assets/rescue-crate/model.web.glb",
+      "run_id": "7784f57eb00346e6894f2c9ef21f3d3e"
+    }
+  },
+  "delivery": {
+    "path": "release/ember-run.pck",
+    "bytes": 1138792,
+    "sha256": "1541fece3ec3364f5fde2917332abed8d987af0ca989b810080ad5b8ae1d8970",
+    "requires": "compatible Godot executable",
+    "smoke": "STUDIO_PLAYABLE_PASS, 14 packaged byte pins"
+  },
+  "limits": [
+    "Unity Editor acceptance was explicitly deferred; no public store publication, signing, cross-OS or long-term operational/human art signoff is implied.",
+    "Godot requires pinned raw GLB fallback for required meshopt; the Three runtime has its own verified local meshopt decoder.",
+    "Rebuilt PCKs contain per-run graph IDs and may differ at the byte level."
+  ],
+  "runtime_acceptance": {
+    "godot": "Project + portable PCK native gameplay; movement, distant miss, contact, 3 collections, win, reset.",
+    "three": "Self-hosted Three r187 WebGL gameplay win/reset. Separate required-Meshopt GLB decoded/rendered; hash-locked decoder + MIT notice.",
+    "phaser": "Self-hosted Phaser 3.90.0 WebGL; 320 ms authored contact, actual frame observations in web-games.json, hit/miss/win/reset. Full bundled notices.",
+    "unity": "Prepared 6000.0.60f1 project, reverified pins, Blender native mesh conversion + independently executed C# state. No licensed Unity Editor; engine import, compile and play unverified per requested scope."
+  },
+  "deliverables": {
+    "godot": "release/godot",
+    "three": "release/web/woods-alight",
+    "phaser": "release/web/phaser",
+    "unity": "release/unity"
+  }
+}

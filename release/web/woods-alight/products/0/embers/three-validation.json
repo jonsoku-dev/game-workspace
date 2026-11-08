@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "three_version": "0.187.0",
+  "scene_count": 1,
+  "mesh_count": 1,
+  "vertex_count": 24,
+  "triangle_count": 8,
+  "material_count": 1,
+  "texture_count": 0,
+  "texture_scope": "untextured-only",
+  "bounds": {
+    "min": [
+      -0.0010000000474974513,
+      -0.0017999999690800905,
+      -0.0007999999797903001
+    ],
+    "max": [
+      0.0010000000474974513,
+      0.0017999999690800905,
+      0.0007999999797903001
+    ],
+    "size": [
+      0.0020000000949949026,
+      0.003599999938160181,
+      0.0015999999595806003
+    ]
+  },
+  "receipt": {
+    "contract": {
+      "id": "webstage-asset",
+      "version": "1.0"
+    },
+    "ok": true,
+    "budget": "hero"
+  },
+  "compiled_comparison": {
+    "checks": {
+      "drawable": true,
+      "y_up_bounds_and_dimensions_match": true,
+      "triangles_positive_and_not_increased": true
+    },
+    "bounds_tolerance_m": 3.599999938160181e-06,
+    "expected_y_up_bounds": {
+      "min": [
+        -0.0010000000474974513,
+        -0.0017999999690800905,
+        -0.0007999999797903001
+      ],
+      "max": [
+        0.0010000000474974513,
+        0.0017999999690800905,
+        0.0007999999797903001
+      ],
+      "size": [
+        0.0020000000949949026,
+        0.003599999938160181,
+        0.0015999999595806003
+      ]
+    },
+    "source_triangles": 8,
+    "compiled_triangles": 8,
+    "triangle_retention_ratio": 1.0,
+    "scope": "Webstage may simplify triangles and merge meshes; topology/material equivalence is not asserted"
+  },
+  "schema_version": 1
+}

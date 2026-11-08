@@ -1,0 +1,65 @@
+{
+  "unchanged_state_http": 304,
+  "projects": {
+    "forest-camp": {
+      "state": "playing",
+      "title": "Lantern Embers",
+      "nodes": 2,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "history": "false"
+      },
+      "graph": {
+        "svg": true,
+        "selected": "builds/lantern-embers-final"
+      }
+    },
+    "scout-actions": {
+      "state": "playing",
+      "title": "Scout action set + local pixelfx hit",
+      "nodes": 1,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "history": "false"
+      },
+      "graph": {
+        "svg": true,
+        "selected": "builds/six-actions"
+      }
+    },
+    "model-production": {
+      "state": "playing",
+      "title": "Workshop Crate · placement revision",
+      "nodes": 1,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "history": "false"
+      },
+      "graph": {
+        "svg": true,
+        "selected": "builds/placement-revision"
+      }
+    },
+    "clockwork-beetle": {
+      "state": "playing",
+      "title": "Clockwork beetle",
+      "nodes": 1,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "history": "false"
+      },
+      "graph": {
+        "svg": true,
+        "selected": "builds/native"
+      }
+    }
+  }
+}

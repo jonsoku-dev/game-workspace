@@ -1,0 +1,68 @@
+{
+  "products/0/scout/atlas.png": {
+    "source": "builds/six-actions/assets/scout/atlas.png",
+    "sha256": "0a1638d5f6f9dc20abe0fdc95058b934253e6d3907d2df0d93ab641b4d8b453b",
+    "artifact": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:6f9097035d0b9f474a7188c7173ce727543f5c0eb7ad1fb1b2d1c20a098d3686"
+  },
+  "products/0/scout/action-set.json": {
+    "source": "builds/six-actions/assets/scout/action-set.json",
+    "sha256": "a67a867d38c40339a6b5cd5b3d64324160215620c2e9e8b2838160d4c18c20cc",
+    "artifact": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:79eadb903089c8b4ab2c7f1f2d6e20a64326738f6667bad9170fa0b154ed46d4"
+  },
+  "products/0/scout/credits.json": {
+    "source": "builds/six-actions/assets/scout/credits.json",
+    "sha256": "bb6ca42ee6c628fb53687ce146c623cbb723381b5ebe2243f8d71670d45a15b2",
+    "artifact": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:dfa5cedc62c3c3983201d33a707d9cc957c452bc6bd8e1b86e5b3196c441c1eb"
+  },
+  "products/0/scout/effect-0.png": {
+    "source": "builds/six-actions/assets/scout/effect-0.png",
+    "sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547",
+    "artifact": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa"
+  },
+  "products/0/scout/effect-0.json": {
+    "source": "builds/six-actions/assets/scout/effect-0.json",
+    "sha256": "fe4ddad0539e910ec6a30e977bb8868c922a2cffa9d7010ad5583fece44e8c58",
+    "artifact": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:59cfb702a3e5482e7c6d2c86baac9e80655c3ed69ffa572bb72dfe6825910d43"
+  },
+  "products/0/scout/effect-0-LICENSE": {
+    "source": "builds/six-actions/assets/scout/effect-0-LICENSE",
+    "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+    "artifact": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:40922b1938f9861be54d103f9af20a3a229111d26debe8680ed1e6fb7d54adbb"
+  },
+  "products/0/scout/effect-0-NOTICE": {
+    "source": "builds/six-actions/assets/scout/effect-0-NOTICE",
+    "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+    "artifact": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:d28ba5914c62d01ffc519a5f2d3394b0670881165e7bcbdfd1ff04e3dfda438e"
+  },
+  "vendor/PHASER-BUNDLED-NOTICES.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "2050713860766ab84cad4db9d1850aada2c48537874041ec060c4bd41209b2e3",
+    "source_files": {
+      "dist/phaser.js": "d6e0eb3b99525f01af5adea38747c311a0a48f8af157e6d1f5aa93159bdd0858",
+      "src/physics/matter-js/lib/license.js": "a82f87b8b4abb02dff997984672070d3b73c4022373d530af5a2d9dae033f7bc"
+    }
+  },
+  "vendor/phaser.min.js": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "e92ddef111ba42e92d316979c732311757093688ea1810591cb7aa2858eba7a7",
+    "license": "MIT"
+  },
+  "vendor/PHASER-LICENSE.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "080f3d5539e766bb556df5b8e86c4f5d581ece35c692b80956ca352b84d29134",
+    "license": "MIT"
+  },
+  "vendor/EVENTEMITTER3-LICENSE.txt": {
+    "package": "phaser",
+    "version": "3.90.0",
+    "source": "https://registry.npmjs.org/phaser/-/phaser-3.90.0.tgz",
+    "sha256": "3aecc12b1cb28832b5f65ab64291de96568c3f236a74d646281b4491f7bcadbf",
+    "license": "MIT"
+  }
+}

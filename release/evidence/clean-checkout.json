@@ -1,0 +1,158 @@
+{
+  "forest": {
+    "run_id": "f739c992c8194199980b9720829e2f6a",
+    "runtime": "builds/original/scene.runtime.json",
+    "sha256": "532ccff0d931ec7c3ba88757d93f19cf7944bd583a57acc48af3e707d9212f4f"
+  },
+  "scout": {
+    "run_id": "eee3caa7d67b4546a9181b5a7764e702",
+    "runtime": "builds/original/scene.runtime.json",
+    "sha256": "a1f2945a32a487a043f96dfe44021d491cc524d827e9bd35eb95ac522e66c759"
+  },
+  "crate": {
+    "run_id": "28afd75d3ddc47b1a82f54e898c3579b",
+    "runtime": "builds/original/scene.runtime.json",
+    "sha256": "f40b9e0b90cf78567316a25fa566596de38f86078bf67a06d497b347cf7f572b"
+  },
+  "beetle": {
+    "run_id": "082cb5867f4e4e5fa4e4a607369d73e0",
+    "runtime": "builds/original/scene.runtime.json",
+    "sha256": "4f4aa9bb08c7b948e3bf3b5635bf3ebc7ce2ecbe302fadb9249054351a06d83a"
+  },
+  "reuse": {
+    "schema_version": 1,
+    "status": "ready",
+    "run_id": "1a9bf52fbd1f42fe882889b0a900add5",
+    "files": {
+      "scene": "builds/reused/scene.runtime.json"
+    }
+  },
+  "engine_exports": {
+    "godot": {
+      "output": "game",
+      "activity": "urn:game-studio:efc640d2-bfa7-4c84-a82d-cc0c3fd2586f:work:export-b0bf504fb6f740f4aad5569e3c0c7469",
+      "engine": "godot"
+    },
+    "three": {
+      "output": "web-3d",
+      "activity": "urn:game-studio:efc640d2-bfa7-4c84-a82d-cc0c3fd2586f:work:export-bfbaa3f73663486b84e887b27119758f",
+      "engine": "three"
+    },
+    "phaser": {
+      "output": "web-2d",
+      "activity": "urn:game-studio:efc640d2-bfa7-4c84-a82d-cc0c3fd2586f:work:export-079569ecab9d493db4b43cb078620f32",
+      "engine": "phaser"
+    },
+    "unity": {
+      "output": "unity",
+      "activity": "urn:game-studio:efc640d2-bfa7-4c84-a82d-cc0c3fd2586f:work:export-6ddd63e8db0440c898eea0152bb6703a",
+      "engine": "unity"
+    }
+  },
+  "unity_editor": {
+    "status": "not_run",
+    "reason": "No licensed editor supplied"
+  },
+  "pck": {
+    "sha256": "6a9aa70c8f03a0b226802d5bbca581418ebcc10dc0c3196d6a06a83645d47e7a",
+    "bytes": 1143640,
+    "gameplay": {
+      "collected": 3,
+      "completed": true,
+      "distant_miss": true,
+      "engine": {
+        "build": "official",
+        "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+        "hex": 263425,
+        "major": 4,
+        "minor": 5,
+        "patch": 1,
+        "status": "stable",
+        "string": "4.5.1-stable (official)",
+        "timestamp": 0
+      },
+      "imports": [
+        {
+          "asset": "lantern",
+          "compiled": true,
+          "compiled_geometry": {
+            "meshes": 9,
+            "triangles": 23160
+          },
+          "raw": true,
+          "raw_geometry": {
+            "meshes": 54,
+            "triangles": 23160
+          }
+        },
+        {
+          "asset": "embers",
+          "compiled": true,
+          "compiled_geometry": {
+            "meshes": 1,
+            "triangles": 8
+          },
+          "raw": true,
+          "raw_geometry": {
+            "meshes": 1,
+            "triangles": 8
+          }
+        }
+      ],
+      "movement": true,
+      "native_mesh_particles": 24,
+      "packaged_byte_pins": 14,
+      "reset": true,
+      "trigger_320ms": true
+    }
+  },
+  "godot": {
+    "collected": 3,
+    "completed": true,
+    "distant_miss": true,
+    "engine": {
+      "build": "official",
+      "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+      "hex": 263425,
+      "major": 4,
+      "minor": 5,
+      "patch": 1,
+      "status": "stable",
+      "string": "4.5.1-stable (official)",
+      "timestamp": 0
+    },
+    "imports": [
+      {
+        "asset": "lantern",
+        "compiled": true,
+        "compiled_geometry": {
+          "meshes": 9,
+          "triangles": 23160
+        },
+        "raw": true,
+        "raw_geometry": {
+          "meshes": 54,
+          "triangles": 23160
+        }
+      },
+      {
+        "asset": "embers",
+        "compiled": true,
+        "compiled_geometry": {
+          "meshes": 1,
+          "triangles": 8
+        },
+        "raw": true,
+        "raw_geometry": {
+          "meshes": 1,
+          "triangles": 8
+        }
+      }
+    ],
+    "movement": true,
+    "native_mesh_particles": 24,
+    "packaged_byte_pins": 14,
+    "reset": true,
+    "trigger_320ms": true
+  }
+}

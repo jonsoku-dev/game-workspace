@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "engine": "godot",
+  "work_id": "export-74b720268d69417cba876afd6a20a31d",
+  "inputs": [
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa",
+      "sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547",
+      "byteCount": 19068
+    },
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:40922b1938f9861be54d103f9af20a3a229111d26debe8680ed1e6fb7d54adbb",
+      "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+      "byteCount": 1093
+    },
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:59cfb702a3e5482e7c6d2c86baac9e80655c3ed69ffa572bb72dfe6825910d43",
+      "sha256": "fe4ddad0539e910ec6a30e977bb8868c922a2cffa9d7010ad5583fece44e8c58",
+      "byteCount": 5926
+    },
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:6f9097035d0b9f474a7188c7173ce727543f5c0eb7ad1fb1b2d1c20a098d3686",
+      "sha256": "0a1638d5f6f9dc20abe0fdc95058b934253e6d3907d2df0d93ab641b4d8b453b",
+      "byteCount": 12819
+    },
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:79eadb903089c8b4ab2c7f1f2d6e20a64326738f6667bad9170fa0b154ed46d4",
+      "sha256": "a67a867d38c40339a6b5cd5b3d64324160215620c2e9e8b2838160d4c18c20cc",
+      "byteCount": 13386
+    },
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:d28ba5914c62d01ffc519a5f2d3394b0670881165e7bcbdfd1ff04e3dfda438e",
+      "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+      "byteCount": 620
+    },
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:dfa5cedc62c3c3983201d33a707d9cc957c452bc6bd8e1b86e5b3196c441c1eb",
+      "sha256": "bb6ca42ee6c628fb53687ce146c623cbb723381b5ebe2243f8d71670d45a15b2",
+      "byteCount": 988
+    },
+    {
+      "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:runtime",
+      "sha256": "2c644ef473351d40f970e7cde9238218c91e1278e51ea5fa2228504fe734333a",
+      "byteCount": 1574
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:1a8819beac61bdf4accb8fde2bb66d74d64bc9c87c8965f5860e38be3e0ab270",
+      "sha256": "946524bfbe627239e33f61733ef538c8c875b178a17e82269d7bb745855e288b",
+      "byteCount": 1533
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:4eb6c2d5498b191f889762d8ed6d17409b05b3da5da5c6a9f13f5bf208d7f251",
+      "sha256": "0116b22d42e7c84311d949862279ba81940123ea03ec02ba275fb008098c6517",
+      "byteCount": 1972
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:7b2a46a97bb5e6e31ed94bf3d3e0f09e6aa7bc6d6c424efc1e8c91677734e7fc",
+      "sha256": "f3b7ecc0ebfeccf8e150a15c72ece1236674d938dee6d71ca400904edc96ef93",
+      "byteCount": 547
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:c84d2069e36990c6c2ddcf97de5f52547d7e9b5f5b05868f31a57825938a6c81",
+      "sha256": "982be0ed983df17ccf4ebfec2d3942d69aa9c107522f8965439d79eae571a425",
+      "byteCount": 523360
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:cd4531d4e65728d138465dea402e86dcea77cc8158efb5f199af2cd717f114ef",
+      "sha256": "c21a7f65a4febb22964f90cffe53075c9093ae278d387165c1786a0d2f3c8f1c",
+      "byteCount": 1497
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d11dac8f3d0bf0dcb5998b23cc1bd20f801970374263ec33519e4b7e20eba61c",
+      "sha256": "d36d490665a33b4bdd0b2f796436e8eca4c2844643f26ea78cfb0233af226db0",
+      "byteCount": 476000
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d31414fb5e4569e8c73c898cf5f0212cd7ac3e89350e37bf2469f305566a6ae8",
+      "sha256": "6f8309ca7e9d606af9a531b04e8b83f802aa1e96e3674d9ab185bf5d80501de1",
+      "byteCount": 11221
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ecb9e8bfadb366d80ea8489daaed0cd5d0e0d872e788087d61267b55f8c4d96f",
+      "sha256": "402e44a0bdea8a3d6f9799ccb7ad1ec193bbb19c520179b121aa3527908101f6",
+      "byteCount": 1968
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ee764c5a6f08c48154d0371d32b25cd00d7744443e5a7605aff76cfa288f1cde",
+      "sha256": "023c13e3cf0e0b037a271543373a7c5d9cd6dccc86b404c8a1ce2fdcf874a954",
+      "byteCount": 537
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:runtime",
+      "sha256": "690a663bb39a5a78551706be7458859f45685210636a1eddbd4edbfd276d2ebd",
+      "byteCount": 2710
+    }
+  ],
+  "files": [
+    {
+      "path": "export_presets.cfg",
+      "sha256": "55fb94b522a391b3622698978d21cf1999053ffec385140bf69279aae0075a1e",
+      "byteCount": 337
+    },
+    {
+      "path": "main.gd",
+      "sha256": "76375e549d2961e0c75c8c779744058d83e072d3c8b3eba8a215b94adf4f2628",
+      "byteCount": 9670
+    },
+    {
+      "path": "main.tscn",
+      "sha256": "f7cc52ea3e355be615a5a3d84e609e38caebe3ae3823b5dc1422d31b4314b1b4",
+      "byteCount": 153
+    },
+    {
+      "path": "probe.gd",
+      "sha256": "b20586208a901e014a63d92e43b14f824b8921c8c073eed368413a14936ff29f",
+      "byteCount": 886
+    },
+    {
+      "path": "products/0/embers/effect.json",
+      "sha256": "6f8309ca7e9d606af9a531b04e8b83f802aa1e96e3674d9ab185bf5d80501de1",
+      "byteCount": 11221
+    },
+    {
+      "path": "products/0/embers/model.glb.bytes",
+      "sha256": "0116b22d42e7c84311d949862279ba81940123ea03ec02ba275fb008098c6517",
+      "byteCount": 1972
+    },
+    {
+      "path": "products/0/embers/model.web.glb.bytes",
+      "sha256": "402e44a0bdea8a3d6f9799ccb7ad1ec193bbb19c520179b121aa3527908101f6",
+      "byteCount": 1968
+    },
+    {
+      "path": "products/0/embers/model.web.glb.webstage.json",
+      "sha256": "023c13e3cf0e0b037a271543373a7c5d9cd6dccc86b404c8a1ce2fdcf874a954",
+      "byteCount": 537
+    },
+    {
+      "path": "products/0/embers/three-validation.json",
+      "sha256": "946524bfbe627239e33f61733ef538c8c875b178a17e82269d7bb745855e288b",
+      "byteCount": 1533
+    },
+    {
+      "path": "products/0/lantern/model.glb.bytes",
+      "sha256": "982be0ed983df17ccf4ebfec2d3942d69aa9c107522f8965439d79eae571a425",
+      "byteCount": 523360
+    },
+    {
+      "path": "products/0/lantern/model.web.glb.bytes",
+      "sha256": "d36d490665a33b4bdd0b2f796436e8eca4c2844643f26ea78cfb0233af226db0",
+      "byteCount": 476000
+    },
+    {
+      "path": "products/0/lantern/model.web.glb.webstage.json",
+      "sha256": "f3b7ecc0ebfeccf8e150a15c72ece1236674d938dee6d71ca400904edc96ef93",
+      "byteCount": 547
+    },
+    {
+      "path": "products/0/lantern/three-validation.json",
+      "sha256": "c21a7f65a4febb22964f90cffe53075c9093ae278d387165c1786a0d2f3c8f1c",
+      "byteCount": 1497
+    },
+    {
+      "path": "products/1/scout/action-set.json",
+      "sha256": "a67a867d38c40339a6b5cd5b3d64324160215620c2e9e8b2838160d4c18c20cc",
+      "byteCount": 13386
+    },
+    {
+      "path": "products/1/scout/atlas.png",
+      "sha256": "0a1638d5f6f9dc20abe0fdc95058b934253e6d3907d2df0d93ab641b4d8b453b",
+      "byteCount": 12819
+    },
+    {
+      "path": "products/1/scout/credits.json",
+      "sha256": "bb6ca42ee6c628fb53687ce146c623cbb723381b5ebe2243f8d71670d45a15b2",
+      "byteCount": 988
+    },
+    {
+      "path": "products/1/scout/effect-0-LICENSE",
+      "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e",
+      "byteCount": 1093
+    },
+    {
+      "path": "products/1/scout/effect-0-NOTICE",
+      "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b",
+      "byteCount": 620
+    },
+    {
+      "path": "products/1/scout/effect-0.json",
+      "sha256": "fe4ddad0539e910ec6a30e977bb8868c922a2cffa9d7010ad5583fece44e8c58",
+      "byteCount": 5926
+    },
+    {
+      "path": "products/1/scout/effect-0.png",
+      "sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547",
+      "byteCount": 19068
+    },
+    {
+      "path": "products.json",
+      "sha256": "c3f154877db0c0d8f1935092efb504044b2781195c35ba4fe311e434787d36dd",
+      "byteCount": 11810
+    },
+    {
+      "path": "project.godot",
+      "sha256": "561efbf6eb3efcecbbc86a6d3178ad004baacf99373078cb8d6364d2e6347c29",
+      "byteCount": 296
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "9e5c8bb0bb64d1b2cb252b4ee9dd557e77a3207884c8057504c2c1fd0dc3d682",
+      "byteCount": 6123
+    },
+    {
+      "path": "studio_runtime.gd",
+      "sha256": "6cc4c459b5cf623caa73029f0858c7f7fb100bf33f3b8fe436ba694cebdfb25f",
+      "byteCount": 3491
+    }
+  ]
+}

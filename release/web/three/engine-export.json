@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "engine": "three",
+  "work_id": "export-a72084cdc7744da0a01f613e87f0ac46",
+  "inputs": [
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:1a8819beac61bdf4accb8fde2bb66d74d64bc9c87c8965f5860e38be3e0ab270",
+      "sha256": "946524bfbe627239e33f61733ef538c8c875b178a17e82269d7bb745855e288b",
+      "byteCount": 1533
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:7b2a46a97bb5e6e31ed94bf3d3e0f09e6aa7bc6d6c424efc1e8c91677734e7fc",
+      "sha256": "f3b7ecc0ebfeccf8e150a15c72ece1236674d938dee6d71ca400904edc96ef93",
+      "byteCount": 547
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:cd4531d4e65728d138465dea402e86dcea77cc8158efb5f199af2cd717f114ef",
+      "sha256": "c21a7f65a4febb22964f90cffe53075c9093ae278d387165c1786a0d2f3c8f1c",
+      "byteCount": 1497
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d11dac8f3d0bf0dcb5998b23cc1bd20f801970374263ec33519e4b7e20eba61c",
+      "sha256": "d36d490665a33b4bdd0b2f796436e8eca4c2844643f26ea78cfb0233af226db0",
+      "byteCount": 476000
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d31414fb5e4569e8c73c898cf5f0212cd7ac3e89350e37bf2469f305566a6ae8",
+      "sha256": "6f8309ca7e9d606af9a531b04e8b83f802aa1e96e3674d9ab185bf5d80501de1",
+      "byteCount": 11221
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ecb9e8bfadb366d80ea8489daaed0cd5d0e0d872e788087d61267b55f8c4d96f",
+      "sha256": "402e44a0bdea8a3d6f9799ccb7ad1ec193bbb19c520179b121aa3527908101f6",
+      "byteCount": 1968
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ee764c5a6f08c48154d0371d32b25cd00d7744443e5a7605aff76cfa288f1cde",
+      "sha256": "023c13e3cf0e0b037a271543373a7c5d9cd6dccc86b404c8a1ce2fdcf874a954",
+      "byteCount": 537
+    },
+    {
+      "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:runtime",
+      "sha256": "690a663bb39a5a78551706be7458859f45685210636a1eddbd4edbfd276d2ebd",
+      "byteCount": 2710
+    }
+  ],
+  "files": [
+    {
+      "path": "README.txt",
+      "sha256": "312d7fab543139ac119460a3bbd559e325625d44905007e22ce1d456c0a91020",
+      "byteCount": 306
+    },
+    {
+      "path": "game-state.mjs",
+      "sha256": "363e01c7005a80b5c46165577f729cd8f9f995b18c6af8ec81d2dbc2a10c2e07",
+      "byteCount": 1525
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "c0058b12b3a93b991ce133e5dc6ac75ffccb6e67b8425fa67fabc753cb278ce6",
+      "byteCount": 10273
+    },
+    {
+      "path": "index.html",
+      "sha256": "f4be3974bad52ef769f519d3224affaa87afbf7da0c91cc506e35401084c2973",
+      "byteCount": 1544
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "3ecf05946257021cb1473098cccb59c2ffda446ca16097fb02ef40d0a039cd67",
+      "byteCount": 2147
+    },
+    {
+      "path": "products/0/embers/effect.json",
+      "sha256": "6f8309ca7e9d606af9a531b04e8b83f802aa1e96e3674d9ab185bf5d80501de1",
+      "byteCount": 11221
+    },
+    {
+      "path": "products/0/embers/model.web.glb",
+      "sha256": "402e44a0bdea8a3d6f9799ccb7ad1ec193bbb19c520179b121aa3527908101f6",
+      "byteCount": 1968
+    },
+    {
+      "path": "products/0/embers/model.web.glb.webstage.json",
+      "sha256": "023c13e3cf0e0b037a271543373a7c5d9cd6dccc86b404c8a1ce2fdcf874a954",
+      "byteCount": 537
+    },
+    {
+      "path": "products/0/embers/three-validation.json",
+      "sha256": "946524bfbe627239e33f61733ef538c8c875b178a17e82269d7bb745855e288b",
+      "byteCount": 1533
+    },
+    {
+      "path": "products/0/lantern/model.web.glb",
+      "sha256": "d36d490665a33b4bdd0b2f796436e8eca4c2844643f26ea78cfb0233af226db0",
+      "byteCount": 476000
+    },
+    {
+      "path": "products/0/lantern/model.web.glb.webstage.json",
+      "sha256": "f3b7ecc0ebfeccf8e150a15c72ece1236674d938dee6d71ca400904edc96ef93",
+      "byteCount": 547
+    },
+    {
+      "path": "products/0/lantern/three-validation.json",
+      "sha256": "c21a7f65a4febb22964f90cffe53075c9093ae278d387165c1786a0d2f3c8f1c",
+      "byteCount": 1497
+    },
+    {
+      "path": "products.json",
+      "sha256": "3b4779d26c7402bd0dbf995e6f61f47ec6e1acba38ab9c71cd7610304ccfbebc",
+      "byteCount": 6294
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "91ebebe34c598e0d1c81203657ef78a8808ece11e266dbb7faf2f8867ddf87ad",
+      "byteCount": 2759
+    },
+    {
+      "path": "style.css",
+      "sha256": "2929c53cdf78400c6eb5888090acce854773ab7f524376ad26bd3c2215dc2079",
+      "byteCount": 1621
+    },
+    {
+      "path": "three-lock.json",
+      "sha256": "2f169cee4aa51219a0c72c37fc3c89308e92298446771cb9159892ce7470387f",
+      "byteCount": 675
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "byteCount": 1081
+    },
+    {
+      "path": "vendor/three/build/three.core.js",
+      "sha256": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578",
+      "byteCount": 1474799
+    },
+    {
+      "path": "vendor/three/build/three.module.js",
+      "sha256": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341",
+      "byteCount": 658900
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "sha256": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1",
+      "byteCount": 119861
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "sha256": "7bda2a8ba836b2bcf67cb938d4b9e1bb5d1b1bc616817103ed858c0b58296ce7",
+      "byteCount": 39153
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/SkeletonUtils.js",
+      "sha256": "b1632a703206c3d830de9fcbe515696770d04b71a15ee6b50afa6d2c3298c86f",
+      "byteCount": 11535
+    }
+  ]
+}

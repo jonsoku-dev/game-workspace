@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "effects": [
+    {
+      "event": 0,
+      "license": "effect-0-LICENSE",
+      "notice": "effect-0-NOTICE",
+      "attribution": "pixelfx impacts/hit-spark; Patch and Hugo Duprez (MIT). Spark spray/light pop adapt Sprite Fusion impact by Hugo Duprez. Source a84159688af3ca37a4be05a0d422b94451b2e24e.",
+      "source": {
+        "sheet": {
+          "path": "fx/hit-spark.png",
+          "sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547"
+        },
+        "metadata": {
+          "path": "fx/hit-spark.json",
+          "sha256": "eb3a17b46adeb3a6f5a931047df77dda0cf88966b3fd3a6f5c814b1b3158aef6"
+        },
+        "license": {
+          "path": "fx/LICENSE.txt",
+          "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e"
+        },
+        "notice": {
+          "path": "fx/NOTICE.md",
+          "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b"
+        }
+      }
+    }
+  ]
+}

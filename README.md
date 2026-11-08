@@ -20,3 +20,7 @@
 ## 릴리스 체크아웃과 설치
 
 workspace Git 저장소는 `assets`, `studio`, `examples/forest-inventory-demo`의 검증된 커밋과 작업 이력을 연결한다. [새 체크아웃 설치 및 Godot 인수 절차](RELEASE.md) · [독립 설치 도구](studio/INSTALL.md) · [구조 상자](assets/examples/model-production/README.md) · [기계 딱정벌레](assets/examples/production/clockwork-beetle/README.md).
+
+## 실행 결과
+
+[그래프 작업실](http://127.0.0.1:59763/)에서 등록한 프로젝트를 선택한다. 웹 게임은 [Three.js Woods Alight](http://127.0.0.1:59765/woods-alight/)와 [Phaser Training Clearing](http://127.0.0.1:59765/phaser/)이다. Godot는 [PCK](release/ember-run.pck)로 실행하고, Unity는 [프로젝트](release/unity/)를 라이선스가 있는 Unity 6 에디터에서 열어 검증한다. [HTML 엔진 비교](studio/engines/HTML-ENGINES.md) · [릴리스 증거](release/evidence/receipt.json)

@@ -1,0 +1,18 @@
+[
+  {
+    "source": "products/0/lantern/model.glb",
+    "source_sha256": "982be0ed983df17ccf4ebfec2d3942d69aa9c107522f8965439d79eae571a425",
+    "output": "products/0/lantern/model.mesh.json",
+    "sha256": "bbfc3486cae948a06214cd265e8ee8149ec4c3e9cb0bd93487e33dd9b945703f",
+    "parts": 54,
+    "triangles": 23160
+  },
+  {
+    "source": "products/0/embers/model.glb",
+    "source_sha256": "0116b22d42e7c84311d949862279ba81940123ea03ec02ba275fb008098c6517",
+    "output": "products/0/embers/model.mesh.json",
+    "sha256": "658a4d58d653316c275aac3ec9c04695f0ce3144b574a0fe7be90ac12d4b4c67",
+    "parts": 1,
+    "triangles": 8
+  }
+]

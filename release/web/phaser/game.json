@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "files": {
+    "atlas": "products/0/scout/atlas.png",
+    "metadata": "products/0/scout/action-set.json",
+    "credits": "products/0/scout/credits.json",
+    "effect_0_sheet": "products/0/scout/effect-0.png",
+    "effect_0_metadata": "products/0/scout/effect-0.json",
+    "effect_0_license": "products/0/scout/effect-0-LICENSE",
+    "effect_0_notice": "products/0/scout/effect-0-NOTICE"
+  },
+  "metadata": {
+    "schema_version": 1,
+    "origin": "local-authored-poses",
+    "cell_size": [
+      48,
+      48
+    ],
+    "pivot_px_from_top_left": [
+      24,
+      46
+    ],
+    "actions": {
+      "idle": {
+        "loop": true,
+        "duration_ms": 960,
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 320,
+            "source": {
+              "path": "poses/idle-0.png",
+              "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+            }
+          },
+          {
+            "rect": {
+              "x": 48,
+              "y": 0,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 320,
+            "source": {
+              "path": "poses/idle-1.png",
+              "sha256": "36f185ddbc04090b6ff50ef2455c9f6e29cd8a72a21f41f1eb58242563e26bd0"
+            }
+          },
+          {
+            "rect": {
+              "x": 96,
+              "y": 0,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 320,
+            "source": {
+              "path": "poses/idle-0.png",
+              "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+            }
+          }
+        ]
+      },
+      "walk": {
+        "loop": true,
+        "duration_ms": 480,
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 48,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 130,
+            "source": {
+              "path": "poses/walk-0.png",
+              "sha256": "be734724c811b7b40b0ec7f52c2c48e45cad6d1c88bdbc2e69e478850e9f829e"
+            }
+          },
+          {
+            "rect": {
+              "x": 48,
+              "y": 48,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 110,
+            "source": {
+              "path": "poses/walk-1.png",
+              "sha256": "fc7e7cba9594fce91cc08a4ccd42e5a6a99a35ae80041754e5563f37d8c56d4f"
+            }
+          },
+          {
+            "rect": {
+              "x": 96,
+              "y": 48,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 130,
+            "source": {
+              "path": "poses/walk-2.png",
+              "sha256": "f6d3f52903f176f305c5cc83a6652be227868991404d983623cb314161f4cf8e"
+            }
+          },
+          {
+            "rect": {
+              "x": 144,
+              "y": 48,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 110,
+            "source": {
+              "path": "poses/walk-3.png",
+              "sha256": "21e398f51bb8907820f7a2e91f2b135d782d4d9bca2436569a2d455c23e18018"
+            }
+          }
+        ]
+      },
+      "run": {
+        "loop": true,
+        "duration_ms": 320,
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 96,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 80,
+            "source": {
+              "path": "poses/run-0.png",
+              "sha256": "e06fe1203bfb821d1c00e57864b445e503236d1752726c451813e6d661bc33ee"
+            }
+          },
+          {
+            "rect": {
+              "x": 48,
+              "y": 96,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 80,
+            "source": {
+              "path": "poses/run-1.png",
+              "sha256": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad"
+            }
+          },
+          {
+            "rect": {
+              "x": 96,
+              "y": 96,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 80,
+            "source": {
+              "path": "poses/run-2.png",
+              "sha256": "e7988d4bf02231d569f5f87aa95a6557534c566e6a4c88698e7d0a71687806cd"
+            }
+          },
+          {
+            "rect": {
+              "x": 144,
+              "y": 96,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 80,
+            "source": {
+              "path": "poses/run-3.png",
+              "sha256": "e14da6f0dfdd98c34123000ff456662a015a54bd2966810323e1a3f40f7da0ba"
+            }
+          }
+        ]
+      },
+      "attack": {
+        "loop": false,
+        "duration_ms": 800,
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/attack-0.png",
+              "sha256": "b873cfce0f5ee97b38d86d53d884c1970616e6b7790c0c150ce0e81dba7055fc"
+            }
+          },
+          {
+            "rect": {
+              "x": 48,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/attack-1.png",
+              "sha256": "0f1327d6a8169a76c3f415e9430ee856847bf98a0c94a3bd86bcbbebb022e672"
+            }
+          },
+          {
+            "rect": {
+              "x": 96,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 80,
+            "source": {
+              "path": "poses/attack-1.png",
+              "sha256": "0f1327d6a8169a76c3f415e9430ee856847bf98a0c94a3bd86bcbbebb022e672"
+            }
+          },
+          {
+            "rect": {
+              "x": 144,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 80,
+            "source": {
+              "path": "poses/attack-3.png",
+              "sha256": "ad21e00b1f47986621ab6efcf8d4d0077c49be778ac31b7a55e142ff701b3fd0"
+            }
+          },
+          {
+            "rect": {
+              "x": 192,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 160,
+            "source": {
+              "path": "poses/attack-4.png",
+              "sha256": "719ce0dcac561c908ad6a03024e05921faffe089f5a52ab13b941213156d86ff"
+            }
+          },
+          {
+            "rect": {
+              "x": 240,
+              "y": 144,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 240,
+            "source": {
+              "path": "poses/attack-0.png",
+              "sha256": "b873cfce0f5ee97b38d86d53d884c1970616e6b7790c0c150ce0e81dba7055fc"
+            }
+          }
+        ]
+      },
+      "jump": {
+        "loop": false,
+        "duration_ms": 800,
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 192,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/jump-0.png",
+              "sha256": "bb4c7be5b7dee983c4e6e6251cb4043eb058ae4357a6bde61bbdc75fe294a0c0"
+            }
+          },
+          {
+            "rect": {
+              "x": 48,
+              "y": 192,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/jump-1.png",
+              "sha256": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad"
+            }
+          },
+          {
+            "rect": {
+              "x": 96,
+              "y": 192,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 160,
+            "source": {
+              "path": "poses/jump-2.png",
+              "sha256": "e14da6f0dfdd98c34123000ff456662a015a54bd2966810323e1a3f40f7da0ba"
+            }
+          },
+          {
+            "rect": {
+              "x": 144,
+              "y": 192,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/jump-1.png",
+              "sha256": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad"
+            }
+          },
+          {
+            "rect": {
+              "x": 192,
+              "y": 192,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/jump-0.png",
+              "sha256": "bb4c7be5b7dee983c4e6e6251cb4043eb058ae4357a6bde61bbdc75fe294a0c0"
+            }
+          },
+          {
+            "rect": {
+              "x": 240,
+              "y": 192,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 160,
+            "source": {
+              "path": "poses/jump-5.png",
+              "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+            }
+          }
+        ]
+      },
+      "hurt": {
+        "loop": false,
+        "duration_ms": 640,
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 240,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/hurt-0.png",
+              "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+            }
+          },
+          {
+            "rect": {
+              "x": 48,
+              "y": 240,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 120,
+            "source": {
+              "path": "poses/hurt-1.png",
+              "sha256": "6062a4019749a31408386b3f5877445ff3a2f4eccf18383368be6e938f6cea46"
+            }
+          },
+          {
+            "rect": {
+              "x": 96,
+              "y": 240,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 160,
+            "source": {
+              "path": "poses/hurt-2.png",
+              "sha256": "838cfb7ae0f10e5d8c3706cf9ed0eb24cc7e97ff9c1d8891bf170d6ba696b265"
+            }
+          },
+          {
+            "rect": {
+              "x": 144,
+              "y": 240,
+              "w": 48,
+              "h": 48
+            },
+            "duration_ms": 240,
+            "source": {
+              "path": "poses/hurt-0.png",
+              "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+            }
+          }
+        ]
+      }
+    },
+    "events": [
+      {
+        "sheet": "effect-0.png",
+        "metadata": "effect-0.json",
+        "license": "effect-0-LICENSE",
+        "notice": "effect-0-NOTICE",
+        "pivot_px_from_top_left": [
+          44,
+          64
+        ],
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 136,
+              "y": 0,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 272,
+              "y": 0,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 0,
+              "y": 80,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 136,
+              "y": 80,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 272,
+              "y": 80,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 0,
+              "y": 160,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 136,
+              "y": 160,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 272,
+              "y": 160,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 0,
+              "y": 240,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 136,
+              "y": 240,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 272,
+              "y": 240,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 0,
+              "y": 320,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          },
+          {
+            "rect": {
+              "x": 136,
+              "y": 320,
+              "w": 136,
+              "h": 80
+            },
+            "duration_ms": 40
+          }
+        ],
+        "duration_ms": 560,
+        "source": {
+          "sheet": {
+            "path": "fx/hit-spark.png",
+            "sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547"
+          },
+          "metadata": {
+            "path": "fx/hit-spark.json",
+            "sha256": "eb3a17b46adeb3a6f5a931047df77dda0cf88966b3fd3a6f5c814b1b3158aef6"
+          },
+          "license": {
+            "path": "fx/LICENSE.txt",
+            "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e"
+          },
+          "notice": {
+            "path": "fx/NOTICE.md",
+            "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b"
+          }
+        },
+        "action": "attack",
+        "frame": 3,
+        "start_ms": 320,
+        "at_px": [
+          46,
+          25
+        ],
+        "effect_anchor_px": [
+          44,
+          44
+        ]
+      }
+    ],
+    "preview": {
+      "timing": "GIF centiseconds rounded; exact milliseconds in metadata",
+      "effects": "composited; newest contact replaces prior instance",
+      "scope": "one action traversal plus initial effect tail; loops retrigger within that window",
+      "visual_review": "pending"
+    }
+  },
+  "runtime_pin": {
+    "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:runtime",
+    "@type": [
+      "Entity",
+      "RuntimeProduct"
+    ],
+    "byteCount": 1574,
+    "path": "builds/six-actions/scene.runtime.json",
+    "sha256": "2c644ef473351d40f970e7cde9238218c91e1278e51ea5fa2228504fe734333a",
+    "wasDerivedFrom": [
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:scene:2e05944aa0aaa7d25f761908372dc36a700a25f9bcf2de345696cf1994028a73",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:6f9097035d0b9f474a7188c7173ce727543f5c0eb7ad1fb1b2d1c20a098d3686",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:79eadb903089c8b4ab2c7f1f2d6e20a64326738f6667bad9170fa0b154ed46d4",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:b388fd6216f9574eb9cf46eea50f9b6d9ceff1c0d73dbef21b94794edf191100",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:dfa5cedc62c3c3983201d33a707d9cc957c452bc6bd8e1b86e5b3196c441c1eb",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:59cfb702a3e5482e7c6d2c86baac9e80655c3ed69ffa572bb72dfe6825910d43",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:40922b1938f9861be54d103f9af20a3a229111d26debe8680ed1e6fb7d54adbb",
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:d28ba5914c62d01ffc519a5f2d3394b0670881165e7bcbdfd1ff04e3dfda438e"
+    ],
+    "wasGeneratedBy": [
+      "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a"
+    ]
+  }
+}

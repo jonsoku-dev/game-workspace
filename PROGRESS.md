@@ -33,3 +33,16 @@ Game Studio 0.4.0 / Model Assets 0.3.0 / Pixel Asset Pipeline 0.3.2. 릴리스 �
 - [UV 도장 구조 상자](assets/examples/model-production/README.md) · 원본 텍스처, 색, UV와 실제 디코더를 검사한다. 배치만 바꾼 실행은 기존 인정 산출물의 해시를 확인하고 기존 파일을 재사용한다.
 - [기계 딱정벌레](assets/examples/production/clockwork-beetle/README.md) · 두 번째 캐릭터의 관절 동작·29프레임을 현지 입력으로 제작한다.
 - [Godot 런타임](studio/engines/godot/README.md) · 실제 조작 루프·완료·재시작과 원본 폴더가 없는 PCK에서의 재생을 검증했다. 공식 4.5.1은 필수 meshopt 압축을 해석하지 못해, 해당 경우에만 그래프에 고정된 raw GLB를 사용한다.
+
+## 멀티 엔진 릴리스
+
+Game Studio 0.5.1은 같은 그래프의 성공 RuntimeProduct와 사용된 파일을 읽어 Godot, Three.js, Phaser 및 Unity 결과를 내보낸다. 외부 파일 사용·산출물 생성·검사는 분리된 관계로 남긴다. [소스 인수](release/evidence/clean-checkout.json) · [독립 작업자 인수](release/evidence/independent-checkout.json) · [웹 브라우저 결과](release/evidence/web-games.json).
+
+| 경로 | 실제 결과 | 확인 범위 |
+| --- | --- | --- |
+| Godot 4.5.1 | [실행 PCK](release/ember-run.pck) · [에디터 프로젝트](release/godot/) | 원본 소스 폴더 없이 이동, 원거리 빗맞음, 320ms 접촉, 3개 수집, 완료·재시작. 24개 불티는 입체 메시. |
+| 웹 3D | [Three.js 게임](http://127.0.0.1:59765/woods-alight/) | r187 GLTFLoader, 로컬 Meshopt 디코더, 입체 파티클. 브라우저 실제 버튼으로 수집·등불 복원·승리·재시작. `release/web/three`는 디코더를 추가하기 전 보존한 실행이다. |
+| 웹 2D | [Phaser 게임](http://127.0.0.1:59765/phaser/) | Phaser 3.90.0의 WebGL 게임. 로컬 스프라이트/효과 원점·타이밍, 거리 판정, 적중 3회·완료·재시작. Phaser와 내장 소스·pixelfx 고지 포함. |
+| Unity 6 | [Unity 프로젝트](release/unity/) · [검증 명령](studio/engines/unity/README.md) | Blender 변환·소스 무결성·독립 C# 상태 로직 실행 검증. 사용자가 정한 이번 범위는 프로젝트와 에디터 검증 명령 제공까지다. 라이선스가 활성화된 에디터의 임포트·플레이는 미검증이다. |
+
+[실제 납품 영수증](release/evidence/receipt.json)에 소스 커밋·버전·파일 지문과 검증 범위를 기록한다. 별도 실행마다 그래프 ID가 달라지므로 신선한 PCK들의 바이트가 동일하다는 주장은 하지 않는다. Unity 에디터 검증, 외부 공개/서명·장기 팀 운영, 최종 사용자 미술 승인은 이 인수에 포함하지 않았다.

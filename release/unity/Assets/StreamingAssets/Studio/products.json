@@ -1,0 +1,1292 @@
+{
+  "products": [
+    {
+      "scene": {
+        "schema_version": 1,
+        "status": "ready",
+        "id": "forest-camp",
+        "brief": {
+          "title": "Lantern Embers",
+          "goal": "Observe a 3D camp lantern with gently rising embers above its cap.",
+          "controls": "Automatically observe the lantern and rising embers; no interactive controls."
+        },
+        "coordinates": {
+          "units": "meters",
+          "up": "+Y",
+          "handedness": "right"
+        },
+        "assets": [
+          {
+            "id": "lantern",
+            "producer": "model-assets",
+            "request": "builds/lantern-embers-final/inputs/lantern.request.json",
+            "files": {
+              "model": "builds/lantern-embers-final/assets/lantern/model.web.glb",
+              "metadata": "builds/lantern-embers-final/assets/lantern/model.json",
+              "validation": "builds/lantern-embers-final/assets/lantern/three-validation.json",
+              "source": "builds/lantern-embers-final/assets/lantern/source.blend",
+              "raw": "builds/lantern-embers-final/assets/lantern/model.glb",
+              "preview": "builds/lantern-embers-final/assets/lantern/preview.png",
+              "review": "builds/lantern-embers-final/assets/lantern/review.png",
+              "receipt": "builds/lantern-embers-final/assets/lantern/model.web.glb.webstage.json"
+            }
+          },
+          {
+            "id": "embers",
+            "producer": "model-assets",
+            "request": "builds/lantern-embers-final/inputs/embers.request.json",
+            "files": {
+              "model": "builds/lantern-embers-final/assets/embers/model.web.glb",
+              "metadata": "builds/lantern-embers-final/assets/embers/model.json",
+              "validation": "builds/lantern-embers-final/assets/embers/three-validation.json",
+              "source": "builds/lantern-embers-final/assets/embers/source.blend",
+              "raw": "builds/lantern-embers-final/assets/embers/model.glb",
+              "preview": "builds/lantern-embers-final/assets/embers/preview.png",
+              "review": "builds/lantern-embers-final/assets/embers/review.png",
+              "receipt": "builds/lantern-embers-final/assets/embers/model.web.glb.webstage.json",
+              "effect": "builds/lantern-embers-final/assets/embers/effect.json"
+            }
+          }
+        ],
+        "nodes": [
+          {
+            "id": "camp-lantern",
+            "asset": "lantern",
+            "position": [
+              1,
+              0,
+              -2
+            ],
+            "rotation_degrees": [
+              0,
+              30,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "id": "camp-embers",
+            "asset": "embers",
+            "parent": "camp-lantern",
+            "position": [
+              0,
+              0.239,
+              0
+            ],
+            "rotation_degrees": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "input_scene": "builds/lantern-embers-final/inputs/scene.json"
+      },
+      "assets": [
+        {
+          "id": "lantern",
+          "mesh": "products/0/lantern/model.mesh.json"
+        },
+        {
+          "id": "embers",
+          "mesh": "products/0/embers/model.mesh.json",
+          "effect": {
+            "schema_version": 1,
+            "kind": "mesh-particles",
+            "units": "meters",
+            "duration_s": 3.2,
+            "particles": [
+              {
+                "offset": [
+                  0.003425168888320247,
+                  0.0011840544537714706,
+                  -0.0017488650756477683
+                ],
+                "drift": [
+                  0.006752704854687481,
+                  0.04098366447175372,
+                  0.0010607214172668946
+                ],
+                "start_s": 0.07027722788082744,
+                "life_s": 1.2303029412474806,
+                "scale": 1.1919971575392927,
+                "spin": [
+                  -0.44341140901589604,
+                  -3.3475299221133707,
+                  -0.3597363292182685
+                ]
+              },
+              {
+                "offset": [
+                  0.0012421291928430556,
+                  0.001025267848784712,
+                  0.00019487003575023685
+                ],
+                "drift": [
+                  0.009002970603352924,
+                  0.051228899599855354,
+                  0.004820927496356969
+                ],
+                "start_s": 0.18307956317434396,
+                "life_s": 1.1575545296492185,
+                "scale": 1.7831023561605042,
+                "spin": [
+                  0.712987862176039,
+                  1.8949525211987446,
+                  0.9679316411045358
+                ]
+              },
+              {
+                "offset": [
+                  0.0020531724963906537,
+                  0.0011440935623835617,
+                  -0.00038184226338479316
+                ],
+                "drift": [
+                  0.009427797153174688,
+                  0.0487975596052605,
+                  0.002225190809341929
+                ],
+                "start_s": 0.31106026660967573,
+                "life_s": 1.1857361243238715,
+                "scale": 1.4740664227130393,
+                "spin": [
+                  1.743312030022393,
+                  1.087316375210042,
+                  -0.42038752581332517
+                ]
+              },
+              {
+                "offset": [
+                  -0.0009676010645502704,
+                  0.0016317469853172827,
+                  -0.0012058752817069261
+                ],
+                "drift": [
+                  -0.008574532967241899,
+                  0.0334550591425287,
+                  -0.0034273052095593853
+                ],
+                "start_s": 0.42038281130204047,
+                "life_s": 1.198604197994936,
+                "scale": 1.038933169603423,
+                "spin": [
+                  -1.7954843079987812,
+                  0.8738627386612539,
+                  2.5653054469801955
+                ]
+              },
+              {
+                "offset": [
+                  -0.0010253329075947768,
+                  0.0015551649995852743,
+                  0.0018429357790405948
+                ],
+                "drift": [
+                  -0.0015243798962430025,
+                  0.04511678450706409,
+                  0.008918536650008411
+                ],
+                "start_s": 0.571010222866714,
+                "life_s": 1.2071272315059027,
+                "scale": 1.78380906670834,
+                "spin": [
+                  1.6571476337361943,
+                  3.942783906431279,
+                  -2.09578881691324
+                ]
+              },
+              {
+                "offset": [
+                  -0.0036039130416433596,
+                  0.00033451951219608467,
+                  -0.001058806433300811
+                ],
+                "drift": [
+                  -0.014021447023665097,
+                  0.05917521347190971,
+                  -0.0064996674657707525
+                ],
+                "start_s": 0.6800437103388369,
+                "life_s": 1.5162233203156432,
+                "scale": 1.0233628016901735,
+                "spin": [
+                  2.476506127454819,
+                  2.246464313215249,
+                  3.78988517655148
+                ]
+              },
+              {
+                "offset": [
+                  0.0013021254497514098,
+                  0.0014980287267687118,
+                  -0.00361937994187772
+                ],
+                "drift": [
+                  0.006288532308387521,
+                  0.03842270424609599,
+                  -0.014584164872321358
+                ],
+                "start_s": 0.9235936050707152,
+                "life_s": 1.4769991583421613,
+                "scale": 1.1933138894810784,
+                "spin": [
+                  -3.392983420829962,
+                  -0.4085063742154018,
+                  -2.4268407371670415
+                ]
+              },
+              {
+                "offset": [
+                  0.0035207986550993085,
+                  0.001057939971230971,
+                  -0.0015610761761893819
+                ],
+                "drift": [
+                  0.0045265878348459245,
+                  0.03259943818144585,
+                  -0.005385323915841689
+                ],
+                "start_s": 1.0052378003817701,
+                "life_s": 1.912842758287777,
+                "scale": 1.2530623532832497,
+                "spin": [
+                  -0.6259871622961359,
+                  4.810440124134333,
+                  -0.4424597762868432
+                ]
+              },
+              {
+                "offset": [
+                  -0.0020240802907290907,
+                  0.001375488680757267,
+                  0.003069744204790373
+                ],
+                "drift": [
+                  -0.013221521517005973,
+                  0.04061653281223759,
+                  0.0069819903007074646
+                ],
+                "start_s": 1.1564960865820966,
+                "life_s": 1.9298196188927972,
+                "scale": 1.6395121495853766,
+                "spin": [
+                  -2.092606571567158,
+                  -2.456961891790484,
+                  -0.7230686963286956
+                ]
+              },
+              {
+                "offset": [
+                  0.00036251647862052777,
+                  0.00021689254083196685,
+                  -0.002646559145076628
+                ],
+                "drift": [
+                  0.003057832898950622,
+                  0.047830871936634226,
+                  -0.013933827961177009
+                ],
+                "start_s": 1.2465669432962334,
+                "life_s": 1.6593552122171378,
+                "scale": 1.83534946613353,
+                "spin": [
+                  -2.0131822129889674,
+                  5.4182164067584715,
+                  -3.371396819479484
+                ]
+              },
+              {
+                "offset": [
+                  -0.0024286057387501074,
+                  0.0009414539456298224,
+                  -0.0009974138064326415
+                ],
+                "drift": [
+                  -0.011601701923256312,
+                  0.04183663341860743,
+                  0.0003966988065699437
+                ],
+                "start_s": 1.4262056230951414,
+                "life_s": 1.103941985504103,
+                "scale": 1.3771768437597662,
+                "spin": [
+                  2.2848076198462834,
+                  -4.297639869226945,
+                  2.939126157865262
+                ]
+              },
+              {
+                "offset": [
+                  0.0008749233421581868,
+                  0.000845100476662692,
+                  0.002914906492598267
+                ],
+                "drift": [
+                  0.00763284592865961,
+                  0.02969939096911975,
+                  0.007200538013181351
+                ],
+                "start_s": 1.5572861324246097,
+                "life_s": 1.5801749333540964,
+                "scale": 1.6890096142291893,
+                "spin": [
+                  0.3130669427183612,
+                  0.6704500774425455,
+                  0.20901355340683825
+                ]
+              },
+              {
+                "offset": [
+                  -0.0010933858042120154,
+                  0.0017269281430550662,
+                  0.0035308425387530038
+                ],
+                "drift": [
+                  0.005222089942709291,
+                  0.04342761399933982,
+                  0.013811925689459091
+                ],
+                "start_s": 1.6999004541000398,
+                "life_s": 1.7733666766944025,
+                "scale": 1.605073551922021,
+                "spin": [
+                  -1.666986603662827,
+                  -2.1642136209580802,
+                  -1.2049586293254073
+                ]
+              },
+              {
+                "offset": [
+                  -0.001248938951483405,
+                  0.0008391189111304807,
+                  0.0036725510166910405
+                ],
+                "drift": [
+                  -0.0007286229804705656,
+                  0.0539442995566185,
+                  0.009848586309540198
+                ],
+                "start_s": 1.7973310551845298,
+                "life_s": 1.6537523320570013,
+                "scale": 1.2554819773048018,
+                "spin": [
+                  -1.7754407709225797,
+                  -4.930943961380175,
+                  -2.2619305912733294
+                ]
+              },
+              {
+                "offset": [
+                  -0.0003099801393813378,
+                  0.0009254456756975254,
+                  0.0035432785752652187
+                ],
+                "drift": [
+                  -0.000647073818740916,
+                  0.03099066797762092,
+                  0.00707436001427654
+                ],
+                "start_s": 1.9412565606760073,
+                "life_s": 1.5421340451210042,
+                "scale": 1.8582843842882122,
+                "spin": [
+                  -1.9258154164070138,
+                  4.210344145713236,
+                  -2.0191793583378104
+                ]
+              },
+              {
+                "offset": [
+                  0.0028852375460057264,
+                  0.0005512931674782075,
+                  -0.0003164412485129786
+                ],
+                "drift": [
+                  0.009382395699372685,
+                  0.03895410459230539,
+                  -0.010487373922689574
+                ],
+                "start_s": 2.0242566931841965,
+                "life_s": 1.9374343870585726,
+                "scale": 1.0903739942635922,
+                "spin": [
+                  1.9061324899829337,
+                  -1.2512989094101918,
+                  1.4355396247604002
+                ]
+              },
+              {
+                "offset": [
+                  -0.0003300712901159748,
+                  0.0003393650806101469,
+                  0.001189898351627792
+                ],
+                "drift": [
+                  -0.010094699359752296,
+                  0.05921432906365996,
+                  0.007452330858909478
+                ],
+                "start_s": 2.249418129097527,
+                "life_s": 1.2826022936836647,
+                "scale": 1.019099907100837,
+                "spin": [
+                  0.8879832436422719,
+                  -4.330179607968464,
+                  1.855120378406669
+                ]
+              },
+              {
+                "offset": [
+                  -0.003067584991981618,
+                  0.0016432560390691792,
+                  0.000607663744593996
+                ],
+                "drift": [
+                  -0.013658862386284677,
+                  0.04689581643100675,
+                  0.0011485920810531825
+                ],
+                "start_s": 2.344301100663513,
+                "life_s": 1.4268591167727622,
+                "scale": 1.1340900238642608,
+                "spin": [
+                  -3.26008730172913,
+                  4.283326078736433,
+                  -2.3512834926271298
+                ]
+              },
+              {
+                "offset": [
+                  -0.0017463051310289705,
+                  0.0017180792978222473,
+                  0.0008682719063656848
+                ],
+                "drift": [
+                  -0.010922905109063531,
+                  0.04138936537424204,
+                  0.0030228376991461425
+                ],
+                "start_s": 2.4500953477407363,
+                "life_s": 1.7512180583135932,
+                "scale": 1.7448025685616415,
+                "spin": [
+                  3.4037203634595405,
+                  -2.2580322811167735,
+                  3.091812888365755
+                ]
+              },
+              {
+                "offset": [
+                  0.003920293807974268,
+                  0.0015479791657680882,
+                  -0.00045941127095638185
+                ],
+                "drift": [
+                  0.007433154307576989,
+                  0.054423835697996296,
+                  -0.006388279367075435
+                ],
+                "start_s": 2.544741875968763,
+                "life_s": 1.4950648780932094,
+                "scale": 1.7241559267815347,
+                "spin": [
+                  2.066232124017648,
+                  0.4211014653841829,
+                  -2.31556795144901
+                ]
+              },
+              {
+                "offset": [
+                  -0.0009797878147321463,
+                  0.0016458798968834773,
+                  0.0006497181771267157
+                ],
+                "drift": [
+                  -0.0065423055962917035,
+                  0.04644804300162518,
+                  0.007921292329501579
+                ],
+                "start_s": 2.7230572169322653,
+                "life_s": 1.3459331300491868,
+                "scale": 1.3152786346902448,
+                "spin": [
+                  1.366004305854001,
+                  -0.6544971926377352,
+                  -2.6150099993474303
+                ]
+              },
+              {
+                "offset": [
+                  0.001187823495058707,
+                  0.0012461357955828138,
+                  -0.002454539268528512
+                ],
+                "drift": [
+                  0.010586351875661782,
+                  0.041112387656088,
+                  -0.004131128818968123
+                ],
+                "start_s": 2.8796606865162953,
+                "life_s": 2.0188345256459854,
+                "scale": 1.9812900736202768,
+                "spin": [
+                  1.2876353724721712,
+                  -0.8371281640712418,
+                  -3.4985547985790726
+                ]
+              },
+              {
+                "offset": [
+                  0.001167319918708523,
+                  6.825695069648919e-05,
+                  -0.0018343365391354039
+                ],
+                "drift": [
+                  0.0024291365304145262,
+                  0.03988770096419972,
+                  -0.006105662563511586
+                ],
+                "start_s": 3.056967545398788,
+                "life_s": 1.840575780508626,
+                "scale": 1.7088048084113308,
+                "spin": [
+                  1.3475691600975725,
+                  -2.7255220664250595,
+                  -2.650768688702878
+                ]
+              },
+              {
+                "offset": [
+                  -0.000952830005521182,
+                  0.0010849966369708148,
+                  -0.0007140338786760808
+                ],
+                "drift": [
+                  -0.007891349636902988,
+                  0.031004050550005414,
+                  -0.00786975600691411
+                ],
+                "start_s": 3.0814452743342957,
+                "life_s": 1.5732325724250826,
+                "scale": 1.1455749420747838,
+                "spin": [
+                  1.1316379188680052,
+                  -2.2855682268113746,
+                  0.9651536356051382
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "runtime_pin": {
+        "@id": "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:runtime",
+        "@type": [
+          "Entity",
+          "RuntimeProduct"
+        ],
+        "byteCount": 2710,
+        "path": "builds/lantern-embers-final/scene.runtime.json",
+        "sha256": "690a663bb39a5a78551706be7458859f45685210636a1eddbd4edbfd276d2ebd",
+        "wasDerivedFrom": [
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:scene:078bab6dcd2ec3bdd7eed6c4a3294784a625c1255188b69238ff73127257af1a",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d11dac8f3d0bf0dcb5998b23cc1bd20f801970374263ec33519e4b7e20eba61c",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:1e9f123908c9352f47db037420433b3d764480d8a7e285b762471c019e587b94",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:cd4531d4e65728d138465dea402e86dcea77cc8158efb5f199af2cd717f114ef",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:c57e18ddcdcf9a077995b12328f9e816776112ff5eb2fb93d5dff16685102828",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:c84d2069e36990c6c2ddcf97de5f52547d7e9b5f5b05868f31a57825938a6c81",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:e3d26e7ccc205c23a5c8c3428e2080134fb896dc3befc9164a0ea7e8e2c5a32c",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:fc0f4053ee37ad9157f8385ca1230ce10077e2dd224e769f71dd569b9cda0013",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:7b2a46a97bb5e6e31ed94bf3d3e0f09e6aa7bc6d6c424efc1e8c91677734e7fc",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ecb9e8bfadb366d80ea8489daaed0cd5d0e0d872e788087d61267b55f8c4d96f",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:fb9bd16223ecd6efdcd467a4695a9a205d7009b7fd41ba5a3b6013cc3c280faf",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:1a8819beac61bdf4accb8fde2bb66d74d64bc9c87c8965f5860e38be3e0ab270",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:e47516f13d5cea4178cff69a9aba66ea2f311f0c3a59c6226397629a08e3e6dd",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:4eb6c2d5498b191f889762d8ed6d17409b05b3da5da5c6a9f13f5bf208d7f251",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:f6da283f8e47fc5082b8fbfb64dd444093eea31cb39142497a91acc51c6c00d4",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:54b52f939e2542ac92da84322ba7c715d804f2d4cd5b3c54772583f76fe81272",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:ee764c5a6f08c48154d0371d32b25cd00d7744443e5a7605aff76cfa288f1cde",
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787:artifact:d31414fb5e4569e8c73c898cf5f0212cd7ac3e89350e37bf2469f305566a6ae8"
+        ],
+        "wasGeneratedBy": [
+          "urn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:136e01d40af54a09b920570c582d6787"
+        ]
+      }
+    },
+    {
+      "scene": {
+        "schema_version": 1,
+        "status": "ready",
+        "id": "scout-actions",
+        "brief": {
+          "title": "Scout action set + local pixelfx hit",
+          "goal": "Observe six authored 48px actions; attack emits the local pixelfx hit spark on contact at 320ms.",
+          "controls": "Read-only playback of the authored attack; the asset preview shows all six actions."
+        },
+        "coordinates": {
+          "units": "meters",
+          "up": "+Y",
+          "handedness": "right"
+        },
+        "assets": [
+          {
+            "id": "scout",
+            "producer": "pixel-action-set",
+            "request": "builds/six-actions/inputs/scout/request.json",
+            "files": {
+              "atlas": "builds/six-actions/assets/scout/atlas.png",
+              "metadata": "builds/six-actions/assets/scout/action-set.json",
+              "preview": "builds/six-actions/assets/scout/preview.gif",
+              "credits": "builds/six-actions/assets/scout/credits.json",
+              "effect_0_sheet": "builds/six-actions/assets/scout/effect-0.png",
+              "effect_0_metadata": "builds/six-actions/assets/scout/effect-0.json",
+              "effect_0_license": "builds/six-actions/assets/scout/effect-0-LICENSE",
+              "effect_0_notice": "builds/six-actions/assets/scout/effect-0-NOTICE"
+            }
+          }
+        ],
+        "nodes": [
+          {
+            "id": "scout-attack",
+            "asset": "scout",
+            "action": "attack",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation_degrees": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "size_m": 1.0
+          }
+        ],
+        "input_scene": "builds/six-actions/inputs/scene.json"
+      },
+      "assets": [
+        {
+          "id": "scout",
+          "atlas": "products/1/scout/atlas.png",
+          "cell_size": [
+            48,
+            48
+          ],
+          "pivot": [
+            24,
+            46
+          ],
+          "clips": [
+            {
+              "name": "idle",
+              "loop": true,
+              "duration_ms": 960,
+              "frames": [
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 320,
+                  "source": {
+                    "path": "poses/idle-0.png",
+                    "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 48,
+                    "y": 0,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 320,
+                  "source": {
+                    "path": "poses/idle-1.png",
+                    "sha256": "36f185ddbc04090b6ff50ef2455c9f6e29cd8a72a21f41f1eb58242563e26bd0"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 96,
+                    "y": 0,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 320,
+                  "source": {
+                    "path": "poses/idle-0.png",
+                    "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "walk",
+              "loop": true,
+              "duration_ms": 480,
+              "frames": [
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 48,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 130,
+                  "source": {
+                    "path": "poses/walk-0.png",
+                    "sha256": "be734724c811b7b40b0ec7f52c2c48e45cad6d1c88bdbc2e69e478850e9f829e"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 48,
+                    "y": 48,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 110,
+                  "source": {
+                    "path": "poses/walk-1.png",
+                    "sha256": "fc7e7cba9594fce91cc08a4ccd42e5a6a99a35ae80041754e5563f37d8c56d4f"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 96,
+                    "y": 48,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 130,
+                  "source": {
+                    "path": "poses/walk-2.png",
+                    "sha256": "f6d3f52903f176f305c5cc83a6652be227868991404d983623cb314161f4cf8e"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 144,
+                    "y": 48,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 110,
+                  "source": {
+                    "path": "poses/walk-3.png",
+                    "sha256": "21e398f51bb8907820f7a2e91f2b135d782d4d9bca2436569a2d455c23e18018"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "run",
+              "loop": true,
+              "duration_ms": 320,
+              "frames": [
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 96,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 80,
+                  "source": {
+                    "path": "poses/run-0.png",
+                    "sha256": "e06fe1203bfb821d1c00e57864b445e503236d1752726c451813e6d661bc33ee"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 48,
+                    "y": 96,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 80,
+                  "source": {
+                    "path": "poses/run-1.png",
+                    "sha256": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 96,
+                    "y": 96,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 80,
+                  "source": {
+                    "path": "poses/run-2.png",
+                    "sha256": "e7988d4bf02231d569f5f87aa95a6557534c566e6a4c88698e7d0a71687806cd"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 144,
+                    "y": 96,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 80,
+                  "source": {
+                    "path": "poses/run-3.png",
+                    "sha256": "e14da6f0dfdd98c34123000ff456662a015a54bd2966810323e1a3f40f7da0ba"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "attack",
+              "loop": false,
+              "duration_ms": 800,
+              "frames": [
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 144,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/attack-0.png",
+                    "sha256": "b873cfce0f5ee97b38d86d53d884c1970616e6b7790c0c150ce0e81dba7055fc"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 48,
+                    "y": 144,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/attack-1.png",
+                    "sha256": "0f1327d6a8169a76c3f415e9430ee856847bf98a0c94a3bd86bcbbebb022e672"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 96,
+                    "y": 144,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 80,
+                  "source": {
+                    "path": "poses/attack-1.png",
+                    "sha256": "0f1327d6a8169a76c3f415e9430ee856847bf98a0c94a3bd86bcbbebb022e672"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 144,
+                    "y": 144,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 80,
+                  "source": {
+                    "path": "poses/attack-3.png",
+                    "sha256": "ad21e00b1f47986621ab6efcf8d4d0077c49be778ac31b7a55e142ff701b3fd0"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 192,
+                    "y": 144,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 160,
+                  "source": {
+                    "path": "poses/attack-4.png",
+                    "sha256": "719ce0dcac561c908ad6a03024e05921faffe089f5a52ab13b941213156d86ff"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 240,
+                    "y": 144,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 240,
+                  "source": {
+                    "path": "poses/attack-0.png",
+                    "sha256": "b873cfce0f5ee97b38d86d53d884c1970616e6b7790c0c150ce0e81dba7055fc"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "jump",
+              "loop": false,
+              "duration_ms": 800,
+              "frames": [
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 192,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/jump-0.png",
+                    "sha256": "bb4c7be5b7dee983c4e6e6251cb4043eb058ae4357a6bde61bbdc75fe294a0c0"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 48,
+                    "y": 192,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/jump-1.png",
+                    "sha256": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 96,
+                    "y": 192,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 160,
+                  "source": {
+                    "path": "poses/jump-2.png",
+                    "sha256": "e14da6f0dfdd98c34123000ff456662a015a54bd2966810323e1a3f40f7da0ba"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 144,
+                    "y": 192,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/jump-1.png",
+                    "sha256": "8a284d691b945930301060454fba5d6abd6f1f10c0763071b5e967b370cb2bad"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 192,
+                    "y": 192,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/jump-0.png",
+                    "sha256": "bb4c7be5b7dee983c4e6e6251cb4043eb058ae4357a6bde61bbdc75fe294a0c0"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 240,
+                    "y": 192,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 160,
+                  "source": {
+                    "path": "poses/jump-5.png",
+                    "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "hurt",
+              "loop": false,
+              "duration_ms": 640,
+              "frames": [
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 240,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/hurt-0.png",
+                    "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 48,
+                    "y": 240,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 120,
+                  "source": {
+                    "path": "poses/hurt-1.png",
+                    "sha256": "6062a4019749a31408386b3f5877445ff3a2f4eccf18383368be6e938f6cea46"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 96,
+                    "y": 240,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 160,
+                  "source": {
+                    "path": "poses/hurt-2.png",
+                    "sha256": "838cfb7ae0f10e5d8c3706cf9ed0eb24cc7e97ff9c1d8891bf170d6ba696b265"
+                  }
+                },
+                {
+                  "rect": {
+                    "x": 144,
+                    "y": 240,
+                    "w": 48,
+                    "h": 48
+                  },
+                  "duration_ms": 240,
+                  "source": {
+                    "path": "poses/hurt-0.png",
+                    "sha256": "bdb123d2820c0fb3bcb432fc34d7e88068cce479c46230bad84773452cab1300"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "sheet": "products/1/scout/effect-0.png",
+              "metadata": "effect-0.json",
+              "license": "effect-0-LICENSE",
+              "notice": "effect-0-NOTICE",
+              "pivot_px_from_top_left": [
+                44,
+                64
+              ],
+              "frames": [
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 136,
+                    "y": 0,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 272,
+                    "y": 0,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 80,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 136,
+                    "y": 80,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 272,
+                    "y": 80,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 160,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 136,
+                    "y": 160,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 272,
+                    "y": 160,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 240,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 136,
+                    "y": 240,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 272,
+                    "y": 240,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 0,
+                    "y": 320,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                },
+                {
+                  "rect": {
+                    "x": 136,
+                    "y": 320,
+                    "w": 136,
+                    "h": 80
+                  },
+                  "duration_ms": 40
+                }
+              ],
+              "duration_ms": 560,
+              "source": {
+                "sheet": {
+                  "path": "fx/hit-spark.png",
+                  "sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547"
+                },
+                "metadata": {
+                  "path": "fx/hit-spark.json",
+                  "sha256": "eb3a17b46adeb3a6f5a931047df77dda0cf88966b3fd3a6f5c814b1b3158aef6"
+                },
+                "license": {
+                  "path": "fx/LICENSE.txt",
+                  "sha256": "0a77565a50c3462831244452f129c38d2adc4fd07897cbeba8adc943f958604e"
+                },
+                "notice": {
+                  "path": "fx/NOTICE.md",
+                  "sha256": "d12932473f98b1a3f0b5820ae23d568b52e39294ba7c2d60c0649a93a808af3b"
+                }
+              },
+              "action": "attack",
+              "frame": 3,
+              "start_ms": 320,
+              "at_px": [
+                46,
+                25
+              ],
+              "effect_anchor_px": [
+                44,
+                44
+              ],
+              "pivot": [
+                44,
+                44
+              ]
+            }
+          ]
+        }
+      ],
+      "runtime_pin": {
+        "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:runtime",
+        "@type": [
+          "Entity",
+          "RuntimeProduct"
+        ],
+        "byteCount": 1574,
+        "path": "builds/six-actions/scene.runtime.json",
+        "sha256": "2c644ef473351d40f970e7cde9238218c91e1278e51ea5fa2228504fe734333a",
+        "wasDerivedFrom": [
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:scene:2e05944aa0aaa7d25f761908372dc36a700a25f9bcf2de345696cf1994028a73",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:6f9097035d0b9f474a7188c7173ce727543f5c0eb7ad1fb1b2d1c20a098d3686",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:79eadb903089c8b4ab2c7f1f2d6e20a64326738f6667bad9170fa0b154ed46d4",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:b388fd6216f9574eb9cf46eea50f9b6d9ceff1c0d73dbef21b94794edf191100",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:dfa5cedc62c3c3983201d33a707d9cc957c452bc6bd8e1b86e5b3196c441c1eb",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:59cfb702a3e5482e7c6d2c86baac9e80655c3ed69ffa572bb72dfe6825910d43",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:40922b1938f9861be54d103f9af20a3a229111d26debe8680ed1e6fb7d54adbb",
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:d28ba5914c62d01ffc519a5f2d3394b0670881165e7bcbdfd1ff04e3dfda438e"
+        ],
+        "wasGeneratedBy": [
+          "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a"
+        ]
+      }
+    }
+  ]
+}

@@ -33,3 +33,16 @@ PYTHON=/absolute/path/to/python3.13
 Unity 에디터 실제 검사에는 기존 라이선스의 실행 파일을 `--unity-editor /path/to/Unity`로 추가한다. 미지정 시 내보내기와 Blender 변환을 검증하고 `unity_editor.status`를 `not_run`으로 기록한다. 다른 HTML 타깃 선택 근거는 [엔진 비교](studio/engines/HTML-ENGINES.md)에 있다.
 
 웹 게임 인수는 웹 프로젝트 둘을 같은 로컬 HTTP 서버로 연 후 `python3 release/game_browser_check.py --three-url http://127.0.0.1:59765/woods-alight/ --phaser-url http://127.0.0.1:59765/phaser/ --out /new/path/browser-proof`로 실행한다. 이 검사는 설정된 로컬 Stagehand MCP와 실제 페이지의 방향·타격·재시작 버튼을 사용한다. visualizer는 별도로 `release/browser_check.py`를 사용한다. Unity 순수 C# 상태 검사는 준비한 `DOTNET` 실행 파일로 진행할 수 있고, Unity 엔진 검증을 대체하지 않는다.
+
+## 현재 실행물
+
+```sh
+python3 -m http.server 59765 --bind 127.0.0.1 --directory release/web
+# 호환 Godot 4.5.1 실행 파일을 지정한다.
+"$GODOT" --main-pack release/ember-run.pck
+# 라이선스가 활성화된 Unity 6 에디터가 준비된 경우
+"$UNITY_EDITOR" -batchmode -nographics -projectPath "$PWD/release/unity" \
+  -executeMethod StudioBatch.Verify -logFile /tmp/studio-unity-verify.log
+```
+
+[Three.js 게임](http://127.0.0.1:59765/woods-alight/) · [Phaser 게임](http://127.0.0.1:59765/phaser/) · [Studio 작업실](http://127.0.0.1:59763/) · [릴리스 영수증](release/evidence/receipt.json).
