@@ -27,31 +27,6 @@
       "@id": "https://game-studio.local/ns/v1#implementation",
       "@type": "@json"
     },
-    "placementOf": {
-      "@id": "https://game-studio.local/ns/v1#placementOf",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "includesProject": {
-      "@id": "https://game-studio.local/ns/v1#includesProject",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "failedWith": {
-      "@id": "https://game-studio.local/ns/v1#failedWith",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "partOf": {
-      "@id": "https://game-studio.local/ns/v1#partOf",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "wasAssociatedWith": {
-      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
-      "@type": "@id",
-      "@container": "@set"
-    },
     "revisionOf": {
       "@id": "https://game-studio.local/ns/v1#revisionOf",
       "@type": "@id",
@@ -67,8 +42,28 @@
       "@type": "@id",
       "@container": "@set"
     },
-    "wasDerivedFrom": {
-      "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "wasAssociatedWith": {
+      "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "includesProject": {
+      "@id": "https://game-studio.local/ns/v1#includesProject",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "failedWith": {
+      "@id": "https://game-studio.local/ns/v1#failedWith",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "observed": {
+      "@id": "https://game-studio.local/ns/v1#observed",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "placementOf": {
+      "@id": "https://game-studio.local/ns/v1#placementOf",
       "@type": "@id",
       "@container": "@set"
     },
@@ -77,8 +72,13 @@
       "@type": "@id",
       "@container": "@set"
     },
-    "observed": {
-      "@id": "https://game-studio.local/ns/v1#observed",
+    "partOf": {
+      "@id": "https://game-studio.local/ns/v1#partOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "wasDerivedFrom": {
+      "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
       "@type": "@id",
       "@container": "@set"
     },
@@ -1921,6 +1921,443 @@
       },
       "wasGeneratedBy": [
         "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:action-set-032:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "독립 복사본의 정찰병 준비 자세·타격 시각 비교",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-positioning-review"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-08T12:35:09.829599+00:00",
+      "references": [],
+      "snapshot": {
+        "workspace_inputs": [
+          {
+            "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:6f9097035d0b9f474a7188c7173ce727543f5c0eb7ad1fb1b2d1c20a098d3686",
+            "byteCount": 12819,
+            "sha256": "0a1638d5f6f9dc20abe0fdc95058b934253e6d3907d2df0d93ab641b4d8b453b"
+          },
+          {
+            "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa",
+            "byteCount": 19068,
+            "sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547"
+          },
+          {
+            "@id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:runtime",
+            "byteCount": 1574,
+            "sha256": "2c644ef473351d40f970e7cde9238218c91e1278e51ea5fa2228504fe734333a"
+          }
+        ]
+      },
+      "status": "complete",
+      "used": [
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:6f9097035d0b9f474a7188c7173ce727543f5c0eb7ad1fb1b2d1c20a098d3686",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa",
+        "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:runtime"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study:artifact:c67a8b779b01f50fefc527b89fb30cc46d92c42326318fb0985fa65cf51693ba",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16180,
+      "path": "release/evidence/attack-timing-comparison.png",
+      "sha256": "897ad7fb90717d2bc9f020d571d26c8631a27ecc62b51f388c596ab50eaa85c1",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study:artifact:ff220d9a40d9d721bff7fda85fec5f21352a7f6d2f2961a146c2ac988553c8e9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1813,
+      "path": "release/evidence/attack-timing-comparison.json",
+      "sha256": "37660b5a723fc97899aa00b2ad45653dc4a8052b5eb95b58b4c5af3368de575c",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "27-frame source action set; one attack pose duration +80ms changed start from 320 to 400 ms. Actor atlas and effect sheet byte hashes matched.",
+        "Actual Phaser test showed 3 hits, win/reset; no external resource requests."
+      ],
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-positioning-review"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study:artifact:c67a8b779b01f50fefc527b89fb30cc46d92c42326318fb0985fa65cf51693ba",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study:artifact:ff220d9a40d9d721bff7fda85fec5f21352a7f6d2f2961a146c2ac988553c8e9"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "27-frame source action set; one attack pose duration +80ms changed start from 320 to 400 ms. Actor atlas and effect sheet byte hashes matched.",
+          "Actual Phaser test showed 3 hits, win/reset; no external resource requests."
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:attack-timing-study:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "한·일 프로젝트 갤러리와 검증된 플레이 결과 연결",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:workstation-redesign"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-08T12:35:09.802574+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:2d1a28ae0585dff87806c30e56e6c13a04c9fac0eef89fc25f9e9655f4cb6ca3",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 21474,
+      "path": "studio/visualizer/app-messages.mjs",
+      "sha256": "6d27559f22cad39c6c1e161842b0ed37cba87844f1fa661942e52de977830a93",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:380c6645f92bcfaddcd22243326c9e7c1c3a8ca9442c3effcfdf5f39d95a802b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 8669,
+      "path": "studio/visualizer/view-messages.mjs",
+      "sha256": "fe120b5a8dce384e6086fe7d06d6390a3f1296ed216facc21fd9f9b177a4c515",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:3f06b0122a5e16aa49ee583e3b921eb8b33da72147a5a83522f3eb35ea585e1b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 22507,
+      "path": "studio/visualizer/style.css",
+      "sha256": "235cd6391788c2e932004355c280a4576cb497689f65f6b036671d5044477379",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:437f6409c78221e1de2b049182b3bae65f1b4bce59134540c916d5a86c6f0836",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 41090,
+      "path": "studio/visualizer/scene-view.mjs",
+      "sha256": "f2f91a8b2de0c706d5e74dd96119309d26e58b4d52e139a890276909f1de73fa",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:6c6a1153ab179db4bdb295964b7f49c63ddb73b1df618b8022a4ec871a24b091",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 47843,
+      "path": "studio/visualizer/app.mjs",
+      "sha256": "47aa9b00bedf27637ffe5cff8e7965d7720407dd45c862af4ecd5a80bb1e74c5",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:8f9a52bcca21e845cc8425364e7a013420ec693429cbd2f1d03673d9d257fdd3",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 7983,
+      "path": "studio/visualizer/index.html",
+      "sha256": "9ee083ac0a2c9562d6e6930d94a94b6c84be9c4b0c2cc98f33f5eacad76c3f1e",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:9f138e097f39461fb730ebb39e3fced6099d39cb56dd01931a9fe81ace3a68f6",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1240,
+      "path": "studio/PRODUCT.md",
+      "sha256": "dcfebf4fa14e462a70b550112f868d21aa6b38e219b7ad4d1d940da93f834ac4",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:b69c3f6119221bf1810347e8174732162a4af9ad88d8a6572ce49575da96f5e3",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 3036,
+      "path": "studio/visualizer/i18n.mjs",
+      "sha256": "ebc4a2f1d16e06b4cd07559d8abb2b500bdc6c13daab7674b1381cff3d1b4f5d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:fa37e302ab6884ae9f1c7e083b71b754aec46753b87fb5d9f177b0e9c9b27cf2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 17720,
+      "path": "studio/tools/visualize.py",
+      "sha256": "6566eda8c1509c7a57554ac1886b8d1c14c51f4a1cc668590edff6f658902430",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench:artifact:fadcb9e0b791086105d7b0feb5b98c4926dae434d4eaa126c401b5ee158387cc",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 3535,
+      "path": "studio/visualizer/shell-i18n.mjs",
+      "sha256": "1a37bd081874f1e634e425da144d34959f01302ed1e7384ac127eb74111101db",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "실제 설치본의 언어 전환·정보량·플레이 연결 확인",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-08T12:35:09.818379+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:0487d81217e828f171a47fbaa08acfdc85b9b514cc02b6af94d2d020ee1ae56a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 314,
+      "path": "release/evidence/bilingual/navigation.json",
+      "sha256": "2fe575278f402be79423cab3185f019903551c368d3785752a880758a4197831",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:206b942a71524cfbd1407abcdef4bea3e724a784492b74fdcbcb94fb0ebfa3c4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1210,
+      "path": "release/evidence/bilingual/receipt.json",
+      "sha256": "88ec844ef3bb88baa3f60a0e1001cc0ac9fd52ccef84418011a7ea4c4fca4a58",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:9426ff47c3b2cb3ceda32eb78d51e99b4623c34893c1be98fe2adb9998bfdbd5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 29712,
+      "path": "release/evidence/bilingual/locale-browser.json",
+      "sha256": "c0bfe2bdf771539a165e3708e638e724fe4e148bdda527dd6b9e118e9578fe43",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:b21fdadbbbcef9fe22cd35d33bfa0037f73080e5c30b406041e58f90d937bc8d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 40998,
+      "path": "release/evidence/bilingual/project-gallery-ja.jpg",
+      "sha256": "9e13490bdc9c716745820eca677a46a098e79b55c8e68c713854bda65e86a34e",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:c104cf895c4c63a031f5c35f3c9ba54d6a68dafe6d0dfdd6849ec33df7e4eb34",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 760,
+      "path": "release/evidence/bilingual/after.json",
+      "sha256": "fced17632089c434983e49d8262ba0cb15404c40e54246f76567000ce5d442fa",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:d1dd1390463b7a39702386c3a299f3895435fd5adff4bc5c988fc8fb633d7ebb",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 61198,
+      "path": "release/evidence/bilingual/workbench-ko.jpg",
+      "sha256": "c8a0587940e298fb572bff1dc91276d8a212d30188c9d05a4ec321edde4f9286",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:f07c0e1cd32619a02526aee48a25b306ec60a23966920720b741e784e41963b9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2058,
+      "path": "release/evidence/bilingual/before.json",
+      "sha256": "293ad429922bb62d07aca3452a7e8bc7a26c0300c9e48fe3fcddee5e52dea085",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Korean and Japanese passed on desktop and narrow viewports; technical detail is collapsed by default.",
+        "Known-use ready exports alone exposed game links. Project tile navigated to Japanese scout with real Phaser export URL.",
+        "71 studio tests and 4 locale tests passed, renderer checks passed."
+      ],
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-artwork-workbench"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:206b942a71524cfbd1407abcdef4bea3e724a784492b74fdcbcb94fb0ebfa3c4",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:9426ff47c3b2cb3ceda32eb78d51e99b4623c34893c1be98fe2adb9998bfdbd5",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:f07c0e1cd32619a02526aee48a25b306ec60a23966920720b741e784e41963b9",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:c104cf895c4c63a031f5c35f3c9ba54d6a68dafe6d0dfdd6849ec33df7e4eb34",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:0487d81217e828f171a47fbaa08acfdc85b9b514cc02b6af94d2d020ee1ae56a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:d1dd1390463b7a39702386c3a299f3895435fd5adff4bc5c988fc8fb633d7ebb",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:artifact:b21fdadbbbcef9fe22cd35d33bfa0037f73080e5c30b406041e58f90d937bc8d"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Korean and Japanese passed on desktop and narrow viewports; technical detail is collapsed by default.",
+          "Known-use ready exports alone exposed game links. Project tile navigated to Japanese scout with real Phaser export URL.",
+          "71 studio tests and 4 locale tests passed, renderer checks passed."
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:bilingual-visual-acceptance:validation"
       ]
     },
     {
@@ -5590,6 +6027,46 @@
       "byteCount": 16434,
       "path": "assets/docs/model-references.md",
       "sha256": "5c420baae6161d26cb40e211fe45d46e46d1333c63071c169dcb23f976302d41"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-positioning-review",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "첨부 레퍼런스와 실제 스튜디오 사용 범위 비교",
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-08T12:35:09.793282+00:00",
+      "references": [
+        "https://github.com/gamedev-skills/awesome-gamedev-agent-skills/blob/19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9/skills/disciplines/create-game-assets/SKILL.md",
+        "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/05ad7c8a5b8aa2aa86bbd3439ae7cf7295cac418/.claude/skills/start/SKILL.md",
+        "https://github.com/aldegad/sprite-gen/blob/35a27e137bfd72440cc856b080913c66f69c772e/docs/curation.md",
+        "https://github.com/thedivergentai/Game-Dev-Agentic-Skills/blob/db004d74c40686ca2f7a35fe067b119a9cda593e/skills/godot-agent-vision/SKILL.md",
+        "https://github.com/patch-gg/pixelfx/tree/a84159688af3ca37a4be05a0d422b94451b2e24e",
+        "https://github.com/0x0funky/agent-sprite-forge/blob/6b3da5c444363378e20f3fce130ebecc22f343dd/skills/video2dsprite/scripts/sprite_set.py"
+      ],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-positioning-review:artifact:142edaf483569fedb4ed799e50135d2e66efa491553f8a8575359be5c45f2918",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10644,
+      "path": "PROGRESS.md",
+      "sha256": "599ce6563755fafac3e42bc44e192853ccb36a0ad885cfafc9aeef2a1cafcbea",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-positioning-review"
+      ]
     },
     {
       "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:sprite-reference",

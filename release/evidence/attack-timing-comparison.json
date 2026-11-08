@@ -1,0 +1,74 @@
+{
+  "scope": "Temporary copy of scout-actions. Only the third attack pose duration was increased by 80 ms; original example unchanged.",
+  "screenshot": "Layout comparison of actual atlas and pixelfx frames at 350 ms; not a gameplay screenshot.",
+  "input": {
+    "modified_frame_zero_based": 2,
+    "old_ms": 80,
+    "new_ms": 160
+  },
+  "before": {
+    "schema_version": 1,
+    "status": "ready",
+    "frame": 3,
+    "start_ms": 320,
+    "atlas_sha256": "0a1638d5f6f9dc20abe0fdc95058b934253e6d3907d2df0d93ab641b4d8b453b",
+    "effect_sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547"
+  },
+  "after": {
+    "schema_version": 1,
+    "status": "ready",
+    "frame": 3,
+    "start_ms": 400,
+    "atlas_sha256": "0a1638d5f6f9dc20abe0fdc95058b934253e6d3907d2df0d93ab641b4d8b453b",
+    "effect_sha256": "555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547"
+  },
+  "phaser_browser": {
+    "version": "3.90.0",
+    "hits": 3,
+    "won": true,
+    "events": [
+      {
+        "start_ms": 400,
+        "observed_ms": 402.0500000238418,
+        "point": {
+          "x": 276,
+          "y": 293
+        },
+        "contact": false
+      },
+      {
+        "start_ms": 400,
+        "observed_ms": 412.7233333333331,
+        "point": {
+          "x": 660,
+          "y": 293
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 400,
+        "observed_ms": 400.01,
+        "point": {
+          "x": 660,
+          "y": 293
+        },
+        "contact": true
+      },
+      {
+        "start_ms": 400,
+        "observed_ms": 416.4100000000001,
+        "point": {
+          "x": 660,
+          "y": 293
+        },
+        "contact": true
+      }
+    ],
+    "reset": true,
+    "external": [],
+    "errors": [],
+    "width": 960,
+    "client": 945,
+    "scroll": 945
+  }
+}

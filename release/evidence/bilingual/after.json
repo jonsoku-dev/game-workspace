@@ -1,0 +1,45 @@
+{
+  "title": "Lantern Embers",
+  "visibleTextBlocks": 21,
+  "visibleCharacters": 195,
+  "visibleText": [
+    "G",
+    "/",
+    "S",
+    "Game Studio",
+    "프로젝트에 연결됨",
+    "읽기 전용",
+    "언어",
+    "프로젝트",
+    "Lantern Embers",
+    "Scout action set + local pixelfx hit",
+    "Workshop Crate · placement revision",
+    "Clockwork beetle",
+    "Lantern Embers",
+    "완료",
+    "게임 열기 ↗",
+    "장면 · 에셋",
+    "인과 그래프",
+    "실제 런타임 장면",
+    "일시정지",
+    "보기 도구",
+    "에셋 보관함"
+  ],
+  "stage": {
+    "w": 1139,
+    "h": 468
+  },
+  "images": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "filePanelOpen": false,
+  "viewport": [
+    1440,
+    900
+  ]
+}

@@ -46,3 +46,15 @@ Game Studio 0.5.1은 같은 그래프의 성공 RuntimeProduct와 사용된 파�
 | Unity 6 | [Unity 프로젝트](release/unity/) · [검증 명령](studio/engines/unity/README.md) | Blender 변환·소스 무결성·독립 C# 상태 로직 실행 검증. 사용자가 정한 이번 범위는 프로젝트와 에디터 검증 명령 제공까지다. 라이선스가 활성화된 에디터의 임포트·플레이는 미검증이다. |
 
 [실제 납품 영수증](release/evidence/receipt.json)에 소스 커밋·버전·파일 지문과 검증 범위를 기록한다. 별도 실행마다 그래프 ID가 달라지므로 신선한 PCK들의 바이트가 동일하다는 주장은 하지 않는다. Unity 에디터 검증, 외부 공개/서명·장기 팀 운영, 최종 사용자 미술 승인은 이 인수에 포함하지 않았다.
+
+## 작업실 0.6.0 · 한국어와 일본어
+
+헤더에서 언어를 바꾸며 실행·선택·재생을 유지한다. `lang=ko`와 `lang=ja`로 공유할 수 있다. 번역 대상은 화면 문구·날짜·검사 안내이고, 기획문·파일명·원본 오류·그래프 데이터는 그대로 보존한다. 첫 화면에는 실제 프로젝트 그림과 장면이 보이고, 에셋을 눌러야 상세가 열린다. 실행 이력·기술 정보·원본 JSON은 기본으로 접혀 있다. 등록한 웹 납품이 선택된 씬 리비전과 연결되어 있으면 별도 루프백 게임으로 열 수 있다.
+
+동일한 등불 프로젝트의 1440×900 첫 화면에서 표시된 텍스트 노드 수는 75→21, 문자 수는 756→195였다. 캔버스는 853×396에서 1139×468로 넓어졌다. 오버플로·언어 전환·동작 선택·실패 안내를 검사했다. [한국어 화면](release/evidence/bilingual/workbench-ko.jpg) · [일본어 프로젝트 갤러리](release/evidence/bilingual/project-gallery-ja.jpg) · [실제 브라우저 검사](release/evidence/bilingual/locale-browser.json).
+
+## 첨부 레퍼런스 대조와 수정 실험
+
+첨부된 세 화면의 원본 여섯 저장소(후속 Agent Sprite Forge 포함)를 대조했다. Claude Code Game Studios의 시작·스토리 실행 경로, Game-Dev-Agentic-Skills의 엔진별 구현·화면 검수, awesome-gamedev-agent-skills의 대표 비주얼/게임 크기 검토는 첫 기획과 인수의 참고가 된다. sprite-gen과 Agent Sprite Forge의 후보 선택·동작 생성/수정, pixelfx의 로컬 효과 저작은 프레임 패킹만으로 해결되지 않는다. 이 스튜디오의 강점은 이미 확보된 재료를 실제 엔진에서 반복 수정·확인하고 출처를 추적하는 과정이다. 원화에서 임의 동작을 생성하는 기능, 처음 한 문장에서 대표 장면의 성공 조건까지 안내하는 흐름, 아트 후보 비교·채택은 별도 과제다.
+
+정찰병 입력의 독립 복사본에서 공격 준비 프레임을 80ms 늘렸다. 0부터 세는 접촉 프레임 3은 그대로 두고 시작 시각은 320→400ms로 이동했다. 캐릭터 아틀라스와 pixelfx 시트의 SHA-256은 각각 이전과 일치했다. 변경본도 실제 Phaser에서 타격 3회·완료·재시작을 통과했다. 원본 게임은 기존 타이밍을 유지한다. [350ms 비교 이미지](release/evidence/attack-timing-comparison.png) · [측정값](release/evidence/attack-timing-comparison.json).

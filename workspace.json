@@ -37,5 +37,15 @@
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:workstation-redesign",
       "observed": "urn:game-studio:ad677040-5ff2-49b8-8f20-06af103e6f7b:run:d2ddc8369af94646a49ceeebb7d7ead2"
     }
+  ],
+  "playtests": [
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:export-ae849277dd964d7daea9328a0d5ea08d",
+      "url": "http://127.0.0.1:59765/woods-alight/"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:export-5ef4d6bd9349450ca911b8a2394b3393",
+      "url": "http://127.0.0.1:59765/phaser/"
+    }
   ]
 }

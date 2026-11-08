@@ -1,0 +1,1147 @@
+{
+  "passed": true,
+  "project": {
+    "id": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f",
+    "name": "scout-actions",
+    "title": "Scout action set + local pixelfx hit",
+    "kind": "2d",
+    "preview": {
+      "path": "builds/six-actions/assets/scout/preview.gif",
+      "sha256": "8a0c65704cc72c5bc3585c4ebf80ec943de627d958ff90419a6db53355ac3d5a"
+    },
+    "run_count": 2
+  },
+  "run": "urn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a",
+  "locales": {
+    "ko": {
+      "chrome": {
+        "lang": "ko",
+        "scene": "장면 · 에셋",
+        "graph": "인과 그래프 610",
+        "search": "그래프 항목 검색",
+        "canvas": "Scout action set + local pixelfx hit. 장면 살펴보기. Space: 일시정지·재생, 좌우 방향키: 회전, 위아래 방향키: 확대·축소, Home: 시점 초기화, 대괄호: 시간 이동.",
+        "picker": "화면 언어",
+        "caption": "동작 미리보기 · 점프 · 기록 유지",
+        "pause": "재생"
+      },
+      "date": "11월 8일 오후 06:41",
+      "artifact_fields": [
+        "제작기",
+        "생성 근거",
+        "배치",
+        "위치",
+        "크기 배율",
+        "회전 (도)",
+        "기록된 동작",
+        "에셋",
+        "파일 경로",
+        "SHA-256",
+        "크기",
+        "현재 동작",
+        "동작 목록",
+        "캐릭터 피벗",
+        "대기",
+        "걷기",
+        "달리기",
+        "공격",
+        "점프",
+        "피격",
+        "동작",
+        "프레임",
+        "시작 (ms)",
+        "위치 (px)",
+        "이펙트 기준점 (px)"
+      ],
+      "graph": {
+        "summary": "산출물effect-0.png파일builds/six-actions/assets/scout/effect-0.png역할효과 1 · 스프라이트 시트SHA-256555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547IDurn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa",
+        "fields": [
+          "파일",
+          "역할",
+          "SHA-256",
+          "ID"
+        ],
+        "kinds": [
+          {
+            "value": "",
+            "label": "모든 종류"
+          },
+          {
+            "value": "Artifact",
+            "label": "산출물"
+          },
+          {
+            "value": "Entity",
+            "label": "항목"
+          },
+          {
+            "value": "Error",
+            "label": "오류"
+          },
+          {
+            "value": "ExecutedRequest",
+            "label": "실행 요청"
+          },
+          {
+            "value": "ExternalWork",
+            "label": "외부 작업"
+          },
+          {
+            "value": "Game",
+            "label": "게임"
+          },
+          {
+            "value": "Plugin",
+            "label": "제작 도구"
+          },
+          {
+            "value": "Project",
+            "label": "프로젝트"
+          },
+          {
+            "value": "RequestRevision",
+            "label": "제작 요청"
+          },
+          {
+            "value": "Run",
+            "label": "실행"
+          },
+          {
+            "value": "RunRevision",
+            "label": "상태 기록"
+          },
+          {
+            "value": "RuntimeProduct",
+            "label": "런타임 장면"
+          },
+          {
+            "value": "ScenePlacement",
+            "label": "씬 배치"
+          },
+          {
+            "value": "SceneRevision",
+            "label": "씬 입력"
+          },
+          {
+            "value": "SourceArtifact",
+            "label": "원본 파일"
+          },
+          {
+            "value": "Validation",
+            "label": "검사"
+          },
+          {
+            "value": "ValidationEvidence",
+            "label": "검사 근거"
+          },
+          {
+            "value": "WorkStep",
+            "label": "제작 단계"
+          },
+          {
+            "value": "Workspace",
+            "label": "워크스페이스"
+          }
+        ],
+        "svg": "effect-0.png의 연결 11개",
+        "nodes": [
+          {
+            "name": "런타임 장면: scene.runtime.json",
+            "tab": "0"
+          },
+          {
+            "name": "씬 배치: scout-attack",
+            "tab": "0"
+          },
+          {
+            "name": "외부 작업: Export phaser",
+            "tab": "0"
+          },
+          {
+            "name": "외부 작업: Export unity",
+            "tab": "0"
+          },
+          {
+            "name": "제작 단계: 제작 단계 · scout",
+            "tab": "0"
+          },
+          {
+            "name": "제작 요청: request.json",
+            "tab": "0"
+          },
+          {
+            "name": "원본 파일: hit-spark.png",
+            "tab": "0"
+          },
+          {
+            "name": "산출물: effect-0.png",
+            "tab": "0"
+          }
+        ],
+        "edges": [
+          "유래한 입력 →",
+          "배치한 에셋 →",
+          "입력으로 사용 →",
+          "입력으로 사용 →",
+          "만든 작업 →",
+          "유래한 입력 →",
+          "유래한 입력 →"
+        ]
+      },
+      "layouts": {
+        "1440-scene": {
+          "width": 1440,
+          "client": 1425,
+          "scroll": 1425,
+          "history": "false"
+        },
+        "1440-graph": {
+          "width": 1440,
+          "client": 1425,
+          "scroll": 1425,
+          "history": "false"
+        },
+        "390-scene": {
+          "width": 390,
+          "client": 375,
+          "scroll": 375,
+          "history": "false"
+        },
+        "390-graph": {
+          "width": 390,
+          "client": 375,
+          "scroll": 375,
+          "history": "false"
+        },
+        "320-scene": {
+          "width": 320,
+          "client": 305,
+          "scroll": 305,
+          "history": "false"
+        },
+        "320-graph": {
+          "width": 320,
+          "client": 305,
+          "scroll": 305,
+          "history": "false"
+        }
+      }
+    },
+    "ja": {
+      "chrome": {
+        "lang": "ja",
+        "scene": "シーン · アセット",
+        "graph": "因果グラフ 610",
+        "search": "グラフ項目を検索",
+        "canvas": "Scout action set + local pixelfx hit. シーンの確認。Space：一時停止・再生、左右キー：回転、上下キー：拡大・縮小、Home：視点をリセット、角括弧：時間を移動。",
+        "picker": "表示言語",
+        "caption": "アクションプレビュー・ジャンプ・記録は変更されません",
+        "pause": "再生"
+      },
+      "date": "11月8日 18:41",
+      "artifact_fields": [
+        "制作ツール",
+        "生成の根拠",
+        "配置",
+        "位置",
+        "拡大率",
+        "回転（度）",
+        "記録されたアクション",
+        "アセット",
+        "ファイルパス",
+        "SHA-256",
+        "サイズ",
+        "現在のアクション",
+        "アクション一覧",
+        "キャラクターピボット",
+        "待機",
+        "歩く",
+        "走る",
+        "攻撃",
+        "ジャンプ",
+        "被弾",
+        "アクション",
+        "フレーム",
+        "開始（ms）",
+        "位置（px）",
+        "エフェクトの基準点（px）"
+      ],
+      "graph": {
+        "summary": "成果物effect-0.pngファイルbuilds/six-actions/assets/scout/effect-0.png役割エフェクト1・スプライトシートSHA-256555252d754bc7658ebe463e1600a2a4a85ebec4d6c6e6ef9616792e4acc6b547IDurn:game-studio:79fd040c-5d1a-4530-9a9c-3526f01f219f:run:42f0837963f843db9c8a6982aab1998a:artifact:09290cac958148e232a0b92633bbfd05e545dd63f8c477ba81976959f406e5aa",
+        "fields": [
+          "ファイル",
+          "役割",
+          "SHA-256",
+          "ID"
+        ],
+        "kinds": [
+          {
+            "value": "",
+            "label": "すべての種類"
+          },
+          {
+            "value": "Artifact",
+            "label": "成果物"
+          },
+          {
+            "value": "Entity",
+            "label": "項目"
+          },
+          {
+            "value": "Error",
+            "label": "エラー"
+          },
+          {
+            "value": "ExecutedRequest",
+            "label": "実行リクエスト"
+          },
+          {
+            "value": "ExternalWork",
+            "label": "外部作業"
+          },
+          {
+            "value": "Game",
+            "label": "ゲーム"
+          },
+          {
+            "value": "Plugin",
+            "label": "制作ツール"
+          },
+          {
+            "value": "Project",
+            "label": "プロジェクト"
+          },
+          {
+            "value": "RequestRevision",
+            "label": "制作リクエスト"
+          },
+          {
+            "value": "Run",
+            "label": "実行"
+          },
+          {
+            "value": "RunRevision",
+            "label": "状態記録"
+          },
+          {
+            "value": "RuntimeProduct",
+            "label": "ランタイムシーン"
+          },
+          {
+            "value": "ScenePlacement",
+            "label": "シーン配置"
+          },
+          {
+            "value": "SceneRevision",
+            "label": "シーン入力"
+          },
+          {
+            "value": "SourceArtifact",
+            "label": "元ファイル"
+          },
+          {
+            "value": "Validation",
+            "label": "検査"
+          },
+          {
+            "value": "ValidationEvidence",
+            "label": "検査の根拠"
+          },
+          {
+            "value": "WorkStep",
+            "label": "制作工程"
+          },
+          {
+            "value": "Workspace",
+            "label": "ワークスペース"
+          }
+        ],
+        "svg": "effect-0.pngの接続11件",
+        "nodes": [
+          {
+            "name": "ランタイムシーン: scene.runtime.json",
+            "tab": "0"
+          },
+          {
+            "name": "制作工程: 制作工程 · scout",
+            "tab": "0"
+          },
+          {
+            "name": "成果物: effect-0.png",
+            "tab": "0"
+          }
+        ],
+        "edges": [
+          "派生元の入力 ↓",
+          "生成した作業 ↓"
+        ]
+      },
+      "layouts": {
+        "1440-scene": {
+          "width": 1440,
+          "client": 1425,
+          "scroll": 1425,
+          "history": "false"
+        },
+        "1440-graph": {
+          "width": 1440,
+          "client": 1425,
+          "scroll": 1425,
+          "history": "false"
+        },
+        "390-scene": {
+          "width": 390,
+          "client": 375,
+          "scroll": 375,
+          "history": "false"
+        },
+        "390-graph": {
+          "width": 390,
+          "client": 375,
+          "scroll": 375,
+          "history": "false"
+        },
+        "320-scene": {
+          "width": 320,
+          "client": 305,
+          "scroll": 305,
+          "history": "false"
+        },
+        "320-graph": {
+          "width": 320,
+          "client": 305,
+          "scroll": 305,
+          "history": "false"
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Picker focus and Tab verified; option change uses Stagehand selectOption. Native macOS option-popup keystrokes are not certified."
+  ],
+  "authored_brief_values": [
+    "Observe six authored 48px actions; attack emits the local pixelfx hit spark on contact at 320ms.",
+    "Read-only playback of the authored attack; the asset preview shows all six actions."
+  ],
+  "browser_errors": {
+    "errors": [],
+    "failed": [],
+    "external": []
+  },
+  "retained_inspection": {
+    "before": {
+      "state": "paused",
+      "node_count": 1,
+      "positions": [
+        {
+          "id": "scout-attack",
+          "asset": "scout",
+          "parent": null,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "world_origin": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "frame_count": 31,
+      "rendered_model_triangles": 0,
+      "model_non_background_pixels": 0,
+      "effects": [
+        {
+          "node": "scout-attack",
+          "kind": "action-contact-effect",
+          "action": "attack",
+          "contact_frame": 3,
+          "start_ms": 320,
+          "at_px": [
+            46,
+            25
+          ],
+          "effect_anchor_px": [
+            44,
+            44
+          ],
+          "original_pivot_px_from_top_left": [
+            44,
+            64
+          ],
+          "frame_index": -1,
+          "observed_frames": [],
+          "frame_changes": 1,
+          "contact_observations": 0,
+          "contact_started_ms": null,
+          "retrigger_policy": "newest contact replaces previous instance; actor loop boundaries preserve active effect",
+          "samples": [],
+          "actor_frame_index": 4,
+          "contribution_pixels": 0,
+          "drawn_triangles": 0,
+          "frame_rect": {
+            "x": 272,
+            "y": 0,
+            "w": 136,
+            "h": 80
+          }
+        }
+      ],
+      "actions": [
+        {
+          "node": "scout-attack",
+          "action": "jump",
+          "authored_action": "attack",
+          "inspection_override": "jump",
+          "frame_index": 0,
+          "observed_frames": [
+            0
+          ],
+          "frame_changes": 1,
+          "pivot_px_from_top_left": [
+            24,
+            46
+          ],
+          "samples": [
+            {
+              "elapsed_ms": 0,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 23594
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 23594
+            }
+          ],
+          "review_playback": "hold final pose; replay after effect tail and 1000ms review gap",
+          "frame_rect": {
+            "x": 0,
+            "y": 192,
+            "w": 48,
+            "h": 48
+          },
+          "elapsed_ms": 100,
+          "contribution_pixels": 23594,
+          "drawn_triangles": 4
+        }
+      ],
+      "review_playback": "Native mesh particles loop at authored duration; historic sprite one-shots replay after a 1000ms hidden inspection gap. No game controls.",
+      "camera": "orthographic-front",
+      "studio_floor": false,
+      "backend": "WebGL",
+      "webgl_version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.3124999999999998,
+          0
+        ],
+        "max": [
+          2.375,
+          1.3541666666666665,
+          0.001
+        ]
+      },
+      "effect_non_background_pixels": 23594,
+      "inspection": {
+        "rotate": false,
+        "zoom": true,
+        "pause": true,
+        "seek": true,
+        "reduced_motion": false,
+        "actions": [
+          "idle",
+          "walk",
+          "run",
+          "attack",
+          "jump",
+          "hurt"
+        ],
+        "action_override": "jump"
+      },
+      "elapsed_ms": 100,
+      "rendered_elapsed_ms": 100,
+      "paused": true,
+      "drawn_scene_triangles": 4
+    },
+    "after": {
+      "state": "paused",
+      "node_count": 1,
+      "positions": [
+        {
+          "id": "scout-attack",
+          "asset": "scout",
+          "parent": null,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation_degrees": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "world_origin": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "frame_count": 44,
+      "rendered_model_triangles": 0,
+      "model_non_background_pixels": 0,
+      "effects": [
+        {
+          "node": "scout-attack",
+          "kind": "action-contact-effect",
+          "action": "attack",
+          "contact_frame": 3,
+          "start_ms": 320,
+          "at_px": [
+            46,
+            25
+          ],
+          "effect_anchor_px": [
+            44,
+            44
+          ],
+          "original_pivot_px_from_top_left": [
+            44,
+            64
+          ],
+          "frame_index": -1,
+          "observed_frames": [],
+          "frame_changes": 1,
+          "contact_observations": 0,
+          "contact_started_ms": null,
+          "retrigger_policy": "newest contact replaces previous instance; actor loop boundaries preserve active effect",
+          "samples": [],
+          "actor_frame_index": 4,
+          "contribution_pixels": 0,
+          "drawn_triangles": 0,
+          "frame_rect": {
+            "x": 272,
+            "y": 0,
+            "w": 136,
+            "h": 80
+          }
+        }
+      ],
+      "actions": [
+        {
+          "node": "scout-attack",
+          "action": "jump",
+          "authored_action": "attack",
+          "inspection_override": "jump",
+          "frame_index": 0,
+          "observed_frames": [
+            0
+          ],
+          "frame_changes": 1,
+          "pivot_px_from_top_left": [
+            24,
+            46
+          ],
+          "samples": [
+            {
+              "elapsed_ms": 0,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 23594
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 23594
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 33319
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 23594
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 33319
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 4398
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 33319
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 2823
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 33319
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 23594
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 33319
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 4398
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 33319
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 2823
+            },
+            {
+              "elapsed_ms": 100,
+              "frame_index": 0,
+              "frame_rect": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+              },
+              "contribution_pixels": 33319
+            }
+          ],
+          "review_playback": "hold final pose; replay after effect tail and 1000ms review gap",
+          "frame_rect": {
+            "x": 0,
+            "y": 192,
+            "w": 48,
+            "h": 48
+          },
+          "elapsed_ms": 100,
+          "contribution_pixels": 33319,
+          "drawn_triangles": 4
+        }
+      ],
+      "review_playback": "Native mesh particles loop at authored duration; historic sprite one-shots replay after a 1000ms hidden inspection gap. No game controls.",
+      "camera": "orthographic-front",
+      "studio_floor": false,
+      "backend": "WebGL",
+      "webgl_version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "bounds": {
+        "min": [
+          -0.5,
+          -0.3124999999999998,
+          0
+        ],
+        "max": [
+          2.375,
+          1.3541666666666665,
+          0.001
+        ]
+      },
+      "effect_non_background_pixels": 33319,
+      "inspection": {
+        "rotate": false,
+        "zoom": true,
+        "pause": true,
+        "seek": true,
+        "reduced_motion": false,
+        "actions": [
+          "idle",
+          "walk",
+          "run",
+          "attack",
+          "jump",
+          "hurt"
+        ],
+        "action_override": "jump"
+      },
+      "elapsed_ms": 100,
+      "rendered_elapsed_ms": 100,
+      "paused": true,
+      "drawn_scene_triangles": 4
+    },
+    "states": [
+      "playing",
+      "playing",
+      "playing",
+      "playing",
+      "playing",
+      "playing",
+      "playing",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused",
+      "paused"
+    ]
+  },
+  "persisted_reload_and_project_switch": true,
+  "url_overrides_storage": true,
+  "korean_persisted_reload": true,
+  "failure": {
+    "ko": {
+      "message": "이 실행은 완료되지 않았어요입력 승인 · 제작을 완료하지 못했습니다. (build_failed) · ValueError",
+      "detail": {
+        "summary": "오류build_failed실패 단계입력 승인오류제작을 완료하지 못했습니다. (build_failed)오류 종류ValueErrorIDurn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:fd79a1d7375a4aab95d83366a0e725a5:error",
+        "fields": [
+          "실패 단계",
+          "오류",
+          "오류 종류",
+          "ID"
+        ],
+        "kinds": [
+          {
+            "value": "",
+            "label": "모든 종류"
+          },
+          {
+            "value": "Artifact",
+            "label": "산출물"
+          },
+          {
+            "value": "Entity",
+            "label": "항목"
+          },
+          {
+            "value": "Error",
+            "label": "오류"
+          },
+          {
+            "value": "ExecutedRequest",
+            "label": "실행 요청"
+          },
+          {
+            "value": "ExternalWork",
+            "label": "외부 작업"
+          },
+          {
+            "value": "Game",
+            "label": "게임"
+          },
+          {
+            "value": "Plugin",
+            "label": "제작 도구"
+          },
+          {
+            "value": "Project",
+            "label": "프로젝트"
+          },
+          {
+            "value": "RequestRevision",
+            "label": "제작 요청"
+          },
+          {
+            "value": "Run",
+            "label": "실행"
+          },
+          {
+            "value": "RunRevision",
+            "label": "상태 기록"
+          },
+          {
+            "value": "RuntimeProduct",
+            "label": "런타임 장면"
+          },
+          {
+            "value": "ScenePlacement",
+            "label": "씬 배치"
+          },
+          {
+            "value": "SceneRevision",
+            "label": "씬 입력"
+          },
+          {
+            "value": "SourceArtifact",
+            "label": "원본 파일"
+          },
+          {
+            "value": "Validation",
+            "label": "검사"
+          },
+          {
+            "value": "ValidationEvidence",
+            "label": "검사 근거"
+          },
+          {
+            "value": "WorkStep",
+            "label": "제작 단계"
+          },
+          {
+            "value": "Workspace",
+            "label": "워크스페이스"
+          }
+        ],
+        "svg": "build_failed의 연결 1개",
+        "nodes": [
+          {
+            "name": "실행: 실행 · fd79a1d7375a4aab95",
+            "tab": "0"
+          },
+          {
+            "name": "오류: build_failed",
+            "tab": "0"
+          }
+        ],
+        "edges": [
+          "발생한 오류 ↓"
+        ]
+      }
+    },
+    "ja": {
+      "message": "この実行は完了していません入力承認 · 制作を完了できませんでした。 (build_failed) · ValueError",
+      "detail": {
+        "summary": "エラーbuild_failed失敗した工程入力承認エラー制作を完了できませんでした。 (build_failed)エラーの種類ValueErrorIDurn:game-studio:f120c418-f699-4c82-9ed4-1a5fd6b76e18:run:fd79a1d7375a4aab95d83366a0e725a5:error",
+        "fields": [
+          "失敗した工程",
+          "エラー",
+          "エラーの種類",
+          "ID"
+        ],
+        "kinds": [
+          {
+            "value": "",
+            "label": "すべての種類"
+          },
+          {
+            "value": "Artifact",
+            "label": "成果物"
+          },
+          {
+            "value": "Entity",
+            "label": "項目"
+          },
+          {
+            "value": "Error",
+            "label": "エラー"
+          },
+          {
+            "value": "ExecutedRequest",
+            "label": "実行リクエスト"
+          },
+          {
+            "value": "ExternalWork",
+            "label": "外部作業"
+          },
+          {
+            "value": "Game",
+            "label": "ゲーム"
+          },
+          {
+            "value": "Plugin",
+            "label": "制作ツール"
+          },
+          {
+            "value": "Project",
+            "label": "プロジェクト"
+          },
+          {
+            "value": "RequestRevision",
+            "label": "制作リクエスト"
+          },
+          {
+            "value": "Run",
+            "label": "実行"
+          },
+          {
+            "value": "RunRevision",
+            "label": "状態記録"
+          },
+          {
+            "value": "RuntimeProduct",
+            "label": "ランタイムシーン"
+          },
+          {
+            "value": "ScenePlacement",
+            "label": "シーン配置"
+          },
+          {
+            "value": "SceneRevision",
+            "label": "シーン入力"
+          },
+          {
+            "value": "SourceArtifact",
+            "label": "元ファイル"
+          },
+          {
+            "value": "Validation",
+            "label": "検査"
+          },
+          {
+            "value": "ValidationEvidence",
+            "label": "検査の根拠"
+          },
+          {
+            "value": "WorkStep",
+            "label": "制作工程"
+          },
+          {
+            "value": "Workspace",
+            "label": "ワークスペース"
+          }
+        ],
+        "svg": "build_failedの接続1件",
+        "nodes": [
+          {
+            "name": "実行: 実行 · fd79a1d7375a4aab95",
+            "tab": "0"
+          },
+          {
+            "name": "エラー: build_failed",
+            "tab": "0"
+          }
+        ],
+        "edges": [
+          "発生したエラー ↓"
+        ]
+      }
+    }
+  },
+  "source_projection_unchanged": true
+}

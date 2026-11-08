@@ -1,0 +1,65 @@
+{
+  "unchanged_state_http": 304,
+  "projects": {
+    "forest-camp": {
+      "state": "playing",
+      "title": "Lantern Embers",
+      "nodes": 2,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "historyOpen": false
+      },
+      "graph": {
+        "svg": true,
+        "selected": "실행 · 136e01d40af54a09b9"
+      }
+    },
+    "scout-actions": {
+      "state": "playing",
+      "title": "Scout action set + local pixelfx hit",
+      "nodes": 1,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "historyOpen": false
+      },
+      "graph": {
+        "svg": true,
+        "selected": "실행 · 42f0837963f843db9c"
+      }
+    },
+    "model-production": {
+      "state": "playing",
+      "title": "Workshop Crate · placement revision",
+      "nodes": 1,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "historyOpen": false
+      },
+      "graph": {
+        "svg": true,
+        "selected": "실행 · 4f5419936050483fa1"
+      }
+    },
+    "clockwork-beetle": {
+      "state": "playing",
+      "title": "Clockwork beetle",
+      "nodes": 1,
+      "mobile": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375,
+        "historyOpen": false
+      },
+      "graph": {
+        "svg": true,
+        "selected": "실행 · d2ddc8369af94646a4"
+      }
+    }
+  }
+}

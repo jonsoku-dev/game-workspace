@@ -1,0 +1,40 @@
+{
+  "version": "0.6.0",
+  "source_commit": "807cbfdb579fcb0b9e7e7d37271322d1276d1304",
+  "languages": [
+    "ko",
+    "ja"
+  ],
+  "locale_order": [
+    "URL",
+    "stored choice for this origin",
+    "browser",
+    "ko"
+  ],
+  "browser": "Installed Game Studio, local Stagehand, 1440 / 390 / 320 px. Both languages preserve selected run, paused time, actor action, asset evidence, raw graph data and open disclosure state.",
+  "first_view": {
+    "before_characters": 756,
+    "after_characters": 195,
+    "before_text_blocks": 75,
+    "after_text_blocks": 21,
+    "before_canvas": {
+      "w": 853,
+      "h": 396
+    },
+    "after_canvas": {
+      "w": 1139,
+      "h": 468
+    },
+    "artifact_inspector_initially_closed": true
+  },
+  "tests": {
+    "studio_python": 71,
+    "core_locale": 4,
+    "renderer_feedback_and_locale_tests": "passed"
+  },
+  "limits": [
+    "Authored titles, brief text, file identifiers and exact raw diagnostics remain in their recorded language.",
+    "Platform-native option pop-up keystrokes were not certified by Stagehand; focus, Tab and selecting the option were checked.",
+    "Playtest URLs are operator-registered local addresses, not persistent hosted services."
+  ]
+}

@@ -107,6 +107,11 @@ def check(base, out):
                 time.sleep(.25)
             if state.get("state") not in ("playing", "paused") or state["errors"] or state["external"]:
                 raise ValueError(f"{name}: {state}")
+            surface = browser.run("""return await page.evaluate(()=>({historyOpen:document.querySelector('#history-details').open,
+                fileOpen:!document.querySelector('#artifact-detail').hidden, projects:document.querySelectorAll('#project-gallery a').length,
+                detailsOpen:document.querySelector('#production-details').open}))""")
+            if surface["historyOpen"] or surface["fileOpen"] or surface["detailsOpen"] or not surface["projects"]:
+                raise ValueError(f"expected scene-first artwork view: {surface}")
             browser.screenshot(out / f"{name}-desktop.jpg")
             if name in ("scout-actions", "clockwork-beetle"):
                 options = browser.run("return await page.evaluate(()=>Array.from(document.querySelector('#scene-action').options,x=>x.value))")
@@ -123,8 +128,8 @@ def check(base, out):
             if name == "forest-camp":
                 browser.screenshot(out / "lineage-desktop.jpg")
             browser.run("await page.setViewportSize({width:390,height:844});await page.locator('#tab-scene').click();return await page.title()")
-            mobile = browser.run("return await page.evaluate(()=>({width:innerWidth,client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,history:document.querySelector('#toggle-history').getAttribute('aria-expanded')}))")
-            if mobile["scroll"] > mobile["client"] or mobile["history"] != "false":
+            mobile = browser.run("return await page.evaluate(()=>({width:innerWidth,client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,historyOpen:document.querySelector('#history-details').open}))")
+            if mobile["scroll"] > mobile["client"] or mobile["historyOpen"]:
                 raise ValueError(f"mobile layout failed: {mobile}")
             if name == "scout-actions":
                 browser.screenshot(out / "scout-mobile.jpg")
