@@ -1,0 +1,19 @@
+{
+  "build": "play/revision-2b",
+  "url": "http://127.0.0.1:53040/ember-alley/",
+  "method": "normal start and first melee button click on final build",
+  "before": {
+    "phase": "playing",
+    "paused": false,
+    "dx": 114.00889999999993,
+    "hp": 55,
+    "depth": -7.567000000000235
+  },
+  "after": {
+    "hits": 1,
+    "hp": 41,
+    "phase": "playing",
+    "icon": "data:,"
+  },
+  "difference_from_full_playtest": "Only icon link and receipt differ; entire gameplay and art byte-identical"
+}

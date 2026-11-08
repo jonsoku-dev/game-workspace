@@ -1,0 +1,3 @@
+PASS chain adjacency / no reuse / backtrack / wrong species / minimum / score / fever / seeded repeat / gravity bounds / collision settling
+PASS endpoint seam / short-chain preservation / local burst / empty burst retry / one-use bonus / rescue badges
+PASS bonus excludes offscreen refill toys at top and bottom

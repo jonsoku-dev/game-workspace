@@ -1,6 +1,9 @@
 import { createFeedback } from "./feedback.mjs";
 import {
   MOVES,
+  DODGE,
+  COUNTER,
+  windupDuration,
   createGame,
   begin,
   tick,
@@ -23,9 +26,13 @@ const ui = Object.fromEntries(
     "pause",
   ].map((id) => [id, document.getElementById(id)]),
 );
+ctx.setTransform(2, 0, 0, 2, 0, 0);
+const attackButton = document.querySelector('[data-key="j"]');
 const feedback = createFeedback({ sound: false });
 const scenery = new Image();
 scenery.src = "./scenery/foundry.webp";
+const furnaceScenery = new Image();
+furnaceScenery.src = "./scenery/furnace-v2.webp";
 let g = createGame(),
   keys = new Set(),
   last = 0,
@@ -34,7 +41,8 @@ let g = createGame(),
   floaters = [],
   banner = { text: "", time: 0 },
   art,
-  images = {};
+  images = {},
+  counterShown = false;
 const W = 960,
   H = 540;
 const artReady = fetch("./art/atlas.json")
@@ -44,14 +52,25 @@ const artReady = fetch("./art/atlas.json")
   })
   .then(async (data) => {
     art = data;
+    for (const key of ["player", "foe", "boss"]) {
+      const spec = art[key];
+      spec.frameWidth *= 2;
+      spec.frameHeight *= 2;
+      spec.pivot = spec.pivot.map((v) => v * 2);
+    }
     for (const [key, path] of Object.entries({
-      player: "player.png",
-      foe: "foe.png",
-      boss: "boss.png",
+      player: "player.v2.png",
+      foe: "foe.v2.png",
+      boss: "boss.v2.png",
     })) {
       const im = new Image();
       im.src = `./art/${path}`;
       await im.decode();
+      if (
+        im.naturalWidth !== art[key].frameWidth * art[key].frames ||
+        im.naturalHeight !== art[key].frameHeight
+      )
+        throw Error(`V2 작화 크기가 맞지 않습니다: ${key}`);
       images[key] = im;
     }
   })
@@ -334,10 +353,11 @@ function background() {
   ctx.fillStyle = glow;
   ctx.fillRect(0, 0, W, H);
   if (scenery.complete && scenery.naturalWidth) {
-    ctx.drawImage(scenery, 0, 0, W, H);
-    if (furnace) {
-      rect(0, 0, W, H, "#c8431718");
-    }
+    const plate =
+      furnace && furnaceScenery.complete && furnaceScenery.naturalWidth
+        ? furnaceScenery
+        : scenery;
+    ctx.drawImage(plate, 0, 0, W, H);
     rect(0, 297, W, 1, "#dbb99030");
   }
   const t = g.time;
@@ -380,7 +400,7 @@ function tells() {
       ctx.stroke();
       text("分 碎", e.targetX, e.targetY + 5, 17, "#ffd0a2", "center");
     } else {
-      const range = e.pattern === "rush" ? 540 : 110;
+      const range = e.pattern === "rush" ? 540 : 114;
       const x = e.face > 0 ? e.x : e.x - range;
       rect(x, e.targetY - 28, range, 56, `#ee594a${alpha}`);
       for (let i = 0; i < range; i += 30)
@@ -393,9 +413,27 @@ function tells() {
           "#ffad7d88",
         );
     }
+    if (e.state === "windup") {
+      const remaining = windupDuration(e) - e.age,
+        perfect = remaining <= DODGE.perfect;
+      rect(e.x - 22, e.y - 106, 44, 3, "#221e22");
+      rect(
+        e.x - 22,
+        e.y - 106,
+        44 * clamp(e.age / windupDuration(e), 0, 1),
+        3,
+        perfect ? "#b9fff0" : "#ee9871",
+      );
+    }
     if (e.state === "windup")
       text(
-        e.pattern === "rush" ? "쇄도" : e.pattern === "slam" ? "분쇄" : "!",
+        windupDuration(e) - e.age <= DODGE.perfect
+          ? "회피!"
+          : e.pattern === "rush"
+            ? "쇄도"
+            : e.pattern === "slam"
+              ? "분쇄"
+              : "!",
         e.x,
         e.y - 112,
         17,
@@ -438,18 +476,17 @@ function sprite(
 ) {
   const im = images[key];
   if (!im) return;
-  const size = key === "boss" ? 144 : key === "foe" ? 72 : 96;
   const spec = art[key];
-  const fw = spec.frameWidth || spec.width || size,
-    fh = spec.frameHeight || spec.height || size;
+  const fw = spec.frameWidth,
+    fh = spec.frameHeight;
   let f = frameIndex(key, state, age);
   f = clamp(f, 0, Math.floor(im.width / fw) - 1);
   ctx.save();
   ctx.globalAlpha = alpha;
   ctx.translate(Math.round(x), Math.round(y));
   ctx.scale(face * scale, scale);
-  ctx.imageSmoothingEnabled = false;
-  if (hit) ctx.filter = "brightness(2.4) sepia(.4)";
+  ctx.imageSmoothingEnabled = true;
+  if (hit) ctx.filter = "brightness(1.4) sepia(.15)";
   ctx.drawImage(
     im,
     f * fw,
@@ -472,12 +509,12 @@ function actors() {
   for (const a of actors) {
     if (a.dead && a.age > 1) continue;
     const scale = a.player
-      ? 1.55
+      ? 0.86
       : a.kind === "boss"
-        ? 1.45
+        ? 0.76
         : a.kind === "elite"
-          ? 1.95
-          : 1.8;
+          ? 1.02
+          : 0.94;
     const deadAlpha = a.dead ? Math.max(0, 1 - a.age) : 1;
     ellipse(
       a.x,
@@ -526,7 +563,7 @@ function actors() {
       if (a.move >= 0) {
         const m = MOVES[a.move];
         if (a.age >= m.active[0] && a.age <= m.active[1])
-          slash(a.x + a.face * 54, a.y - 64, a.face, a.move);
+          slash(a.x, a.y - 58, a.face, a.move, a.age);
       }
     } else {
       const state = a.dead
@@ -568,39 +605,79 @@ function actors() {
     }
   }
 }
-function slash(x, y, face, move) {
+function slash(x, y, face, move, age) {
+  const m = MOVES[move],
+    t = (age - m.active[0]) / (m.active[1] - m.active[0]),
+    r = m.reach;
   ctx.save();
   ctx.translate(x, y);
   ctx.scale(face, 1);
+  ctx.globalAlpha = 0.42 * (1 - t) + 0.16;
+  ctx.fillStyle = move === 3 ? "#ffbe70" : "#f2e0bc";
+  ctx.beginPath();
+  ctx.moveTo(18, move === 3 ? 47 : -31);
+  ctx.quadraticCurveTo(
+    r * 0.65,
+    move === 3 ? -61 : -40,
+    r,
+    move === 3 ? -72 : 6,
+  );
+  ctx.quadraticCurveTo(
+    r * 0.7,
+    move === 3 ? -20 : 25,
+    24,
+    move === 3 ? 48 : 33,
+  );
+  ctx.quadraticCurveTo(
+    r * 0.78,
+    move === 3 ? -4 : 8,
+    r - 9,
+    move === 3 ? -52 : 4,
+  );
+  ctx.quadraticCurveTo(
+    r * 0.62,
+    move === 3 ? -36 : -27,
+    18,
+    move === 3 ? 47 : -31,
+  );
+  ctx.fill();
+  ctx.restore();
+}
+function contactMark(f) {
+  const progress = 1 - f.life / 0.16;
+  ctx.save();
+  ctx.translate(f.x, f.y);
+  ctx.globalAlpha = Math.max(0, 1 - progress);
+  ctx.scale(1 + progress * 0.35, 1 + progress * 0.35);
   poly(
-    move === 3
-      ? [
-          [0, 50],
-          [18, -70],
-          [48, -110],
-          [32, -30],
-          [76, -74],
-          [31, 27],
-        ]
-      : [
-          [0, -42],
-          [92, -24],
-          [120, 4],
-          [78, 33],
-          [19, 44],
-          [74, 16],
-          [94, 1],
-          [65, -12],
-        ],
-    move === 3 ? "#ffd181aa" : "#fff1c6ba",
+    [
+      [0, -17],
+      [4, -5],
+      [17, -9],
+      [8, 0],
+      [21, 8],
+      [5, 6],
+      [0, 20],
+      [-4, 5],
+      [-17, 10],
+      [-8, 0],
+      [-18, -8],
+      [-4, -5],
+    ],
+    f.counter ? "#b5fff1" : "#ffce8b",
   );
   poly(
     [
-      [12, -11],
-      [108, -1],
-      [47, 10],
+      [0, -9],
+      [3, -2],
+      [10, 1],
+      [3, 3],
+      [0, 10],
+      [-2, 3],
+      [-9, 0],
+      [-3, -2],
     ],
-    "#fff7e7",
+    "#fff9e8",
   );
   ctx.restore();
 }
@@ -646,12 +723,40 @@ function hud() {
   );
   rect(201, 481, 145, 37, "#111820dd");
   text("SPACE  회피", 210, 499, 12, p.dashCd > 0 ? "#8e959b" : "#c5e5df");
-  rect(210, 506, 126 * (1 - p.dashCd / 0.72), 3, "#8fbeb6");
+  rect(210, 506, 126 * (1 - p.dashCd / DODGE.cooldown), 3, "#8fbeb6");
+  const ready = p.counterWindow > 0;
+  rect(359, 481, 239, 37, ready ? "#173b3aee" : "#111820dd");
+  text(
+    ready ? "J  반격 · 가드 파괴" : "공격 직전 회피 → J 반격",
+    369,
+    499,
+    12,
+    ready ? "#b9fff0" : "#9baaa9",
+  );
+  rect(369, 506, 218 * (p.counterWindow / COUNTER.window), 3, "#a2edda");
+  if (ready !== counterShown) {
+    counterShown = ready;
+    attackButton.classList.toggle("counter-ready", ready);
+    attackButton.querySelector("b").textContent = ready ? "반격" : "연격";
+    attackButton.setAttribute(
+      "aria-label",
+      ready ? "간파 성공, J로 반격" : "3연속 공격",
+    );
+  }
   const boss = g.enemies.find((e) => e.kind === "boss");
   if (boss && !boss.dead) {
     text("쇠사슬 감독관  /  THE FOREMAN", 480, 80, 13, "#f1bd8e", "center");
     rect(318, 90, 324, 7, "#231f26");
     rect(318, 90, (324 * boss.hp) / boss.maxHp, 7, "#b64e43");
+    const broken = boss.state === "stunned" || boss.z > 0;
+    text(
+      broken ? "가드 붕괴" : "가드 · 회피 반격으로 끊기",
+      480,
+      113,
+      10,
+      broken ? "#b5fff1" : "#c3b6a4",
+      "center",
+    );
   }
   if (banner.time > 0) {
     ctx.save();
@@ -664,24 +769,34 @@ function hud() {
 }
 function processEvents() {
   for (const e of g.events) {
-    if (["hit", "juggle", "hurt"].includes(e.type)) {
+    if (["hit", "juggle", "counter", "hurt"].includes(e.type)) {
       floaters.push({
         text: e.text,
         x: e.x,
-        y: e.y,
+        y: e.y - 23,
         life: 0.7,
         color:
           e.type === "hurt"
             ? "#ff8070"
-            : e.type === "juggle"
-              ? "#ffe095"
-              : "#fff1dc",
+            : e.type === "counter"
+              ? "#b5fff1"
+              : e.type === "juggle"
+                ? "#ffe095"
+                : "#fff1dc",
       });
       if (e.type !== "hurt")
-        for (let i = 0; i < 9; i++)
+        fx.push({
+          kind: "contact",
+          x: e.x,
+          y: e.y,
+          life: 0.16,
+          counter: e.type === "counter",
+        });
+      if (e.type !== "hurt")
+        for (let i = 0; i < 7; i++)
           fx.push({
             x: e.x,
-            y: e.y + 30,
+            y: e.y,
             vx: (i - 4) * 69,
             vy: -80 - (i % 4) * 52,
             life: 0.22 + (i % 3) * 0.06,
@@ -690,6 +805,8 @@ function processEvents() {
     const cues = {
       hit: "hit",
       juggle: "crit",
+      counter: "crit",
+      perfect: "pickup",
       attack: "attack",
       dash: "move",
       hurt: "hurt",
@@ -705,8 +822,21 @@ function processEvents() {
       banner = { text: e.text, time: 2 };
       ui.status.textContent = e.text;
     }
+    if (e.type === "perfect")
+      floaters.push({
+        text: "간파",
+        x: e.x,
+        y: e.y,
+        life: 0.65,
+        color: "#b5fff1",
+      });
+    if (e.type === "perfect")
+      ui.status.textContent =
+        "간파 성공! 1.35초 안에 J. 다음 기본 공격이 감독관의 가드를 깨뜨립니다.";
+    if (e.type === "counter") ui.status.textContent = "반격 명중 · 가드 파괴!";
     if (e.type === "warn" && e.text) ui.status.textContent = e.text;
-    if (e.type === "hurt") ui.status.textContent = `피격. 남은 체력 ${g.player.hp}. 붉은 공격 범위 밖으로 이동하세요.`;
+    if (e.type === "hurt")
+      ui.status.textContent = `피격. 남은 체력 ${g.player.hp}. 붉은 공격 범위 밖으로 이동하세요.`;
   }
   g.events = [];
 }
@@ -731,6 +861,7 @@ function render(dt) {
   processEvents();
   for (const f of fx) {
     f.life -= dt;
+    if (f.kind === "contact") continue;
     f.x += f.vx * dt;
     f.y += f.vy * dt;
     f.vy += 600 * dt;
@@ -752,7 +883,8 @@ function render(dt) {
   tells();
   actors();
   for (const f of fx) {
-    rect(f.x, f.y, 5, 2, "#ffdca5");
+    if (f.kind === "contact") contactMark(f);
+    else rect(f.x, f.y, 4, 1, "#ffdca5");
   }
   for (const f of floaters) text(f.text, f.x, f.y, 20, f.color, "center");
   ctx.restore();

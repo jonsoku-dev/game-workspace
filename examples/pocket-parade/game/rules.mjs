@@ -93,3 +93,28 @@ export function step(tokens, dt) {
     t.y = Math.min(H - R, t.y);
   }
 }
+export const RESCUE_GOAL = 60;
+export function seamFrom(chain, tokens, id) {
+  if (chain.length < 7) return null;
+  const end = tokens.find((token) => token.id === chain.at(-1));
+  return end ? { id, x: end.x, y: end.y } : null;
+}
+export function burstIds(tokens, seam) {
+  return tokens
+    .filter(
+      (token) =>
+        token.y >= 0 &&
+        token.y <= H &&
+        Math.hypot(token.x - seam.x, token.y - seam.y) <= R * 3.6,
+    )
+    .map((token) => token.id);
+}
+export function takeSeam(seams, id) {
+  const seam = seams.find((item) => item.id === id);
+  return seam
+    ? { seam, remaining: seams.filter((item) => item.id !== id) }
+    : null;
+}
+export function stitchedBadges(rescued) {
+  return Math.min(3, Math.floor(rescued / 20));
+}

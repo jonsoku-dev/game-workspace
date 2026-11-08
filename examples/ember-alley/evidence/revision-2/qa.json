@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "kind": "actual-published-browser-QA",
+  "recorded_at": "2026-11-08T23:06:47.507Z",
+  "url": "http://127.0.0.1:53044/ember-alley/",
+  "inputs": {
+    "native": "Visible start/retry, J melee, K launcher, Space dodge, Enter door, pause buttons clicked through Stagehand.",
+    "movement": "Synthetic KeyboardEvent keydown/up used only for held movement and facing via normal application input handlers. Simulation state never mutated.",
+    "precision_dodge_demo": "Waited for a real enemy windup near its final140ms; clicked directional dodge, observed cyan ready cue, turned with a short normal left input and clicked J.",
+    "boss_counter_demo": "Approached through both rooms using normal controls, waited for boss telegraph, dodged near end, followed with J. cover.png shows32counter/guard break in actual dedicated furnace room.",
+    "limits": "No physical keyboard or physical touchscreen proof; the earlier Stagehand keyboard.press wrapper emitted empty key/code, so no native held-key claim."
+  },
+  "first_strike": {
+    "before": {
+      "time": 4.1167,
+      "playerX": 180,
+      "enemyX": 283.6137,
+      "hp": 55,
+      "hits": 0
+    },
+    "contact": {
+      "attackAge": 0.11669999999999983,
+      "enemyHP": 41,
+      "hits": 1,
+      "struck": [
+        "0-0-0"
+      ],
+      "knockback": 176.9873759447387
+    },
+    "after": {
+      "attackAge": 0.334,
+      "enemyHP": 41,
+      "hits": 1
+    },
+    "passed": true,
+    "screenshots": [
+      "first-before.png",
+      "first-contact.png",
+      "first-after.png"
+    ]
+  },
+  "counter_demo": {
+    "earned": {
+      "perfectDodges": 1,
+      "counterWindow": 1.3163000000000005,
+      "hp": 120
+    },
+    "after_one_basic": {
+      "counterHits": 2,
+      "firstEnemyHP": 9,
+      "secondEnemyHP": 23,
+      "explanation": "One counter basic hit two targets once each:41→9 and55→23."
+    },
+    "screenshots": [
+      "counter-ready.png",
+      "counter-contact.png"
+    ]
+  },
+  "boss_counter_run": {
+    "phase": "playing at captured checkpoint, subsequently died while input was unattended",
+    "bossPatternsObserved": [
+      "rush",
+      "slam"
+    ],
+    "perfectDodges": 2,
+    "counterHits": 1,
+    "checkpointBossHP": 40,
+    "screenshots": [
+      "cover.png",
+      "boss-counter.png"
+    ],
+    "runtimeErrors": []
+  },
+  "defeat_and_retry": {
+    "defeat": {
+      "phase": "dead",
+      "hp": 0,
+      "time": 34.61859999999975,
+      "bossHP": 40,
+      "cause": "Player left without inputs between browser tool calls; no HP or phase manipulation."
+    },
+    "retry": {
+      "phase": "playing",
+      "hp": 120,
+      "room": 0,
+      "score": 0,
+      "stats": {
+        "hits": 0,
+        "whiffs": 0,
+        "dashes": 0,
+        "evades": 0,
+        "perfectDodges": 0,
+        "counterHits": 0,
+        "launches": 0,
+        "juggles": 0,
+        "chains": 0,
+        "rooms": 0
+      }
+    },
+    "screenshot": "defeat.png"
+  },
+  "full_clear_separate_run": {
+    "progress": [
+      {
+        "stage": "playing/0/0",
+        "time": 1.8841999999999957,
+        "hp": 120,
+        "stats": {
+          "hits": 0,
+          "whiffs": 0,
+          "dashes": 0,
+          "evades": 0,
+          "perfectDodges": 0,
+          "counterHits": 0,
+          "launches": 0,
+          "juggles": 0,
+          "chains": 0,
+          "rooms": 0
+        }
+      },
+      {
+        "stage": "playing/0/1",
+        "time": 5.718400000000011,
+        "hp": 120,
+        "stats": {
+          "hits": 6,
+          "whiffs": 1,
+          "dashes": 0,
+          "evades": 0,
+          "perfectDodges": 0,
+          "counterHits": 0,
+          "launches": 1,
+          "juggles": 2,
+          "chains": 1,
+          "rooms": 0
+        }
+      },
+      {
+        "stage": "playing/1/0",
+        "time": 11.737899999999959,
+        "hp": 120,
+        "stats": {
+          "hits": 13,
+          "whiffs": 2,
+          "dashes": 0,
+          "evades": 0,
+          "perfectDodges": 0,
+          "counterHits": 0,
+          "launches": 2,
+          "juggles": 5,
+          "chains": 3,
+          "rooms": 1
+        }
+      },
+      {
+        "stage": "playing/1/1",
+        "time": 16.60229999999994,
+        "hp": 120,
+        "stats": {
+          "hits": 19,
+          "whiffs": 3,
+          "dashes": 0,
+          "evades": 0,
+          "perfectDodges": 0,
+          "counterHits": 0,
+          "launches": 3,
+          "juggles": 7,
+          "chains": 5,
+          "rooms": 1
+        }
+      }
+    ],
+    "intermediateCheckpoint": "playing",
+    "final": {
+      "phase": "clear",
+      "hp": 66,
+      "time": 35.70550000000011,
+      "score": 14855,
+      "kills": 7,
+      "stats": {
+        "hits": 32,
+        "whiffs": 6,
+        "dashes": 4,
+        "evades": 4,
+        "perfectDodges": 3,
+        "counterHits": 0,
+        "launches": 5,
+        "juggles": 8,
+        "chains": 8,
+        "rooms": 1
+      }
+    },
+    "note": "Clear run had3perfect dodges and0counter contacts; actual successful counter evidence is from the separate first/boss demonstrations above.",
+    "screenshot": "clear.png",
+    "runtimeErrors": []
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "targets": [
+      {
+        "key": "w",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "key": "a",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "key": "s",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "key": "d",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "key": " ",
+        "width": 44,
+        "height": 59
+      },
+      {
+        "key": "k",
+        "width": 44,
+        "height": 59
+      },
+      {
+        "key": "j",
+        "width": 44,
+        "height": 59
+      },
+      {
+        "key": "enter",
+        "width": 44,
+        "height": 59
+      }
+    ],
+    "firstEnemyHP": 41,
+    "hits": 1,
+    "screenshot": "mobile.png",
+    "physicalTouchVerified": false
+  },
+  "resources": [
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/game.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/combat.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/feedback.mjs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/art/atlas.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/scenery/foundry.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/scenery/furnace-v2.webp",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/art/player.v2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/art/foe.v2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/ember-alley/art/boss.v2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:53044/favicon.ico",
+      "status": 404
+    }
+  ],
+  "errors": {
+    "first": [],
+    "boss": [],
+    "clear": [],
+    "limits": "Page error/unhandledrejection listeners added after navigation and before start. Earlier load-time console warnings are not covered. One favicon404 observed; nine actual runtime resources returned200."
+  },
+  "limits": [
+    "Consecutive real before/contact/after stills supplied; no video recording or continuous animation aesthetic acceptance.",
+    "No audio listening or human artistic acceptance.",
+    "Only evidence/revision-2 outputs were written during this published QA phase."
+  ],
+  "published_source_pins": [
+    {
+      "path": "index.html",
+      "sha256": "d3020825cfe45210c37781abd75f4798ce8ef9ae3427539e321410a20bac30b3",
+      "bytes": 8329,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "combat.mjs",
+      "sha256": "0d548eb9f65f0ff07df030fb4334ddd28518f66979676e108e33f01a4169bdc1",
+      "bytes": 12385,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "076e57814f9db1d9ccb65f1fedf3070ecd0e2a8bbd1453127850c9a479a50177",
+      "bytes": 24718,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "art/atlas.json",
+      "sha256": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+      "bytes": 1546,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "art/player.v2.png",
+      "sha256": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+      "bytes": 552930,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "art/foe.v2.png",
+      "sha256": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+      "bytes": 84447,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "art/boss.v2.png",
+      "sha256": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+      "bytes": 691611,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "scenery/foundry.webp",
+      "sha256": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+      "bytes": 296858,
+      "status": 200,
+      "source_matches_published": true
+    },
+    {
+      "path": "scenery/furnace-v2.webp",
+      "sha256": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048",
+      "bytes": 502234,
+      "status": 200,
+      "source_matches_published": true
+    }
+  ]
+}

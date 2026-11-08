@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "check": "native locator click starts final deployed round",
+      "passed": false
+    }
+  ],
+  "events": [],
+  "error": "native locator click starts final deployed round",
+  "limits": [
+    "Synthetic PointerEvent chains; native locator clicks for start/bonus/replay."
+  ]
+}

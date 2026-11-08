@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "engine": "web",
+  "work_id": "web-2bfed40fbe5945d09682595015fd33e3",
+  "title": "잿불 골목",
+  "genre": "belt-scrolling dungeon brawler",
+  "goal": "폐공장 골목과 제련로의 두 전투를 돌파하고 쇠사슬 감독관을 쓰러뜨린다.",
+  "controls": "방향키/WASD 이동·깊이 회피, J 3연격, K 올려치기, Space 방향 회피. 적의 공격 직전 회피 성공 후 1.35초 안에 J로 가드 파괴 반격. Enter 다음 방, P 일시정지, R 재시작. 모바일 방향패드·전투 버튼.",
+  "index": "play/revision-2b/index.html",
+  "provenance": {
+    "genre.json": {
+      "source": "genre.json",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "sha256": "d2950938b15130f6e2e7b9fe58d9b353a748fd990398ea8d4c704199759c5f80",
+      "byteCount": 482
+    },
+    "combat.mjs": {
+      "source": "game/combat.mjs",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+      "sha256": "0d548eb9f65f0ff07df030fb4334ddd28518f66979676e108e33f01a4169bdc1",
+      "byteCount": 12385
+    },
+    "game.mjs": {
+      "source": "game/game.mjs",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "sha256": "076e57814f9db1d9ccb65f1fedf3070ecd0e2a8bbd1453127850c9a479a50177",
+      "byteCount": 24718
+    },
+    "index.html": {
+      "source": "game/index.html",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "sha256": "9fdbf7642b0176ab399067d8d11c9c2755c074c27e9668aadef590b7393c7d58",
+      "byteCount": 8365
+    },
+    "scenery/foundry.webp": {
+      "source": "game/scenery/foundry.webp",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674",
+      "sha256": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+      "byteCount": 296858
+    },
+    "scenery/furnace-v2.webp": {
+      "source": "game/scenery/furnace-v2.webp",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8",
+      "sha256": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048",
+      "byteCount": 502234
+    },
+    "art/atlas.json": {
+      "source": "game/art/atlas.json",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+      "sha256": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+      "byteCount": 1546
+    },
+    "art/boss.png": {
+      "source": "game/art/boss.png",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb",
+      "sha256": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+      "byteCount": 197914
+    },
+    "art/boss.v2.png": {
+      "source": "game/art/boss.v2.png",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95",
+      "sha256": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+      "byteCount": 691611
+    },
+    "art/foe.png": {
+      "source": "game/art/foe.png",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e",
+      "sha256": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+      "byteCount": 26707
+    },
+    "art/foe.v2.png": {
+      "source": "game/art/foe.v2.png",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a",
+      "sha256": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+      "byteCount": 84447
+    },
+    "art/player.png": {
+      "source": "game/art/player.png",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+      "sha256": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+      "byteCount": 168359
+    },
+    "art/player.v2.png": {
+      "source": "game/art/player.v2.png",
+      "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2",
+      "sha256": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+      "byteCount": 552930
+    },
+    "feedback.mjs": {
+      "source": "studio/engines/web/feedback.mjs",
+      "origin": "installed-runtime",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    }
+  },
+  "files": [
+    {
+      "path": "art/atlas.json",
+      "sha256": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+      "byteCount": 1546
+    },
+    {
+      "path": "art/boss.png",
+      "sha256": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+      "byteCount": 197914
+    },
+    {
+      "path": "art/boss.v2.png",
+      "sha256": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+      "byteCount": 691611
+    },
+    {
+      "path": "art/foe.png",
+      "sha256": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+      "byteCount": 26707
+    },
+    {
+      "path": "art/foe.v2.png",
+      "sha256": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+      "byteCount": 84447
+    },
+    {
+      "path": "art/player.png",
+      "sha256": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+      "byteCount": 168359
+    },
+    {
+      "path": "art/player.v2.png",
+      "sha256": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+      "byteCount": 552930
+    },
+    {
+      "path": "combat.mjs",
+      "sha256": "0d548eb9f65f0ff07df030fb4334ddd28518f66979676e108e33f01a4169bdc1",
+      "byteCount": 12385
+    },
+    {
+      "path": "feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "076e57814f9db1d9ccb65f1fedf3070ecd0e2a8bbd1453127850c9a479a50177",
+      "byteCount": 24718
+    },
+    {
+      "path": "genre.json",
+      "sha256": "d2950938b15130f6e2e7b9fe58d9b353a748fd990398ea8d4c704199759c5f80",
+      "byteCount": 482
+    },
+    {
+      "path": "index.html",
+      "sha256": "9fdbf7642b0176ab399067d8d11c9c2755c074c27e9668aadef590b7393c7d58",
+      "byteCount": 8365
+    },
+    {
+      "path": "scenery/foundry.webp",
+      "sha256": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+      "byteCount": 296858
+    },
+    {
+      "path": "scenery/furnace-v2.webp",
+      "sha256": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048",
+      "byteCount": 502234
+    }
+  ]
+}

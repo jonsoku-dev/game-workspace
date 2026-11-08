@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "engine": "web",
+  "work_id": "web-10cc0ba23d494b9ebd303f055dd28411",
+  "title": "포켓 무리",
+  "genre": "봉제 주머니 연결 액션 퍼즐",
+  "goal": "75초 안에 60친구를 구조하고 20마리마다 바느질 배지를 모으세요. 7마리 연결로 생긴 별 단추를 원하는 순간 눌러 주변 친구도 구하세요.",
+  "controls": "같은 동물 3마리 이상 드래그 후 놓기. 별 단추 클릭·터치로 주변 구조. 방향키로 친구 선택, Space 연결, Enter 확정, Escape 취소. 별 단추는 Tab 후 Enter·Space. 흔들기·일시정지·다시하기, 소리는 기본 꺼짐.",
+  "index": "play/revision-2b/index.html",
+  "provenance": {
+    "genre.json": {
+      "source": "genre.json",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "sha256": "0abc74897f0e6e3d5b65889929a9f49ce01552f7892e1fb204cd8f118e2b59c5",
+      "byteCount": 583
+    },
+    "game.mjs": {
+      "source": "game/game.mjs",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "sha256": "6224674243513606c988a8dca0ff9d0c8e6537839e8fb233072a53ad17570c48",
+      "byteCount": 14066
+    },
+    "index.html": {
+      "source": "game/index.html",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "sha256": "3fd81c4055835f2af403749b08285c0d70c5a936ff719429e9afe475ca8c36e9",
+      "byteCount": 5107
+    },
+    "rules.mjs": {
+      "source": "game/rules.mjs",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:c4b6b5700d17a42924a4a564af5b877f4ec12f59c039717e1474e1f31d52cdbe",
+      "sha256": "ed61e04331fe526d1149b7f4913db1a9b77a3f6e9e9420fd31c15bf5f35d2385",
+      "byteCount": 3206
+    },
+    "style.css": {
+      "source": "game/style.css",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:394c9b01713c38d8a4f2589a54bf2e51a740d7e0040a0bdbd4f8c0554111eed1",
+      "sha256": "f58f556719289c4a5f4ba64e6e9b044c7574311fa1be9f1eae178e2012b180e6",
+      "byteCount": 11994
+    },
+    "art/plush-bear.png": {
+      "source": "game/art/plush-bear.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:ce53b1bf4d5188299b7b9ac32acaba5a6377a3388b8ea7af5ecab55eba27fd27",
+      "sha256": "43fd391bde0e90057e74e62a1aaacf4e378e5dbfff9483ca701572982ec3b33e",
+      "byteCount": 370361
+    },
+    "art/plush-bunny.png": {
+      "source": "game/art/plush-bunny.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:fdf069c9a0dca32e5b1fd14ed69b98b61a2ce5c5dbbb40fc9b2e6603599d9a41",
+      "sha256": "a3751ae0d1ec34d50038b96c756a2fa078ba8937d84efc4de3e4f350cb88a918",
+      "byteCount": 306137
+    },
+    "art/plush-cat.png": {
+      "source": "game/art/plush-cat.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:ae6dd91fe244b6ce254ef8a960756a57733117d9b039a650e2528086d8825184",
+      "sha256": "098446bd17a8cdbe9dd4d38143fcec4041e97665c92dc170a7532ba1abfdd2e9",
+      "byteCount": 377073
+    },
+    "art/plush-frog.png": {
+      "source": "game/art/plush-frog.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:234b55ff8fab92b4e405c8cb911100f3603991a8dd3f01b242780b603df007ff",
+      "sha256": "923c5fde747ee7849896fadff6847bd888132e61852ebac4bf288c7f5545bbaa",
+      "byteCount": 360940
+    },
+    "art/pouch.webp": {
+      "source": "game/art/pouch.webp",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:e91332f4f7841c7566ae2a4a7f5cb9cb632f206872aaf2df0c9237d593cefb89",
+      "sha256": "0d23c46e2ff1f22e4e7a37f69aaca4168c5c2c9049db61fab7daca42adbc55d0",
+      "byteCount": 208824
+    },
+    "art/star-button.png": {
+      "source": "game/art/star-button.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411-inputs:artifact:ba0e01112932164e5feab7680787425fd0f89b0d0a3548afdd99f8f18fc6c734",
+      "sha256": "a1472bab08cf9e4bca2c22ac60b39ea984e6a65ef5991dad1901151b5b771865",
+      "byteCount": 71021
+    },
+    "feedback.mjs": {
+      "source": "studio/engines/web/feedback.mjs",
+      "origin": "installed-runtime",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    }
+  },
+  "files": [
+    {
+      "path": "art/plush-bear.png",
+      "sha256": "43fd391bde0e90057e74e62a1aaacf4e378e5dbfff9483ca701572982ec3b33e",
+      "byteCount": 370361
+    },
+    {
+      "path": "art/plush-bunny.png",
+      "sha256": "a3751ae0d1ec34d50038b96c756a2fa078ba8937d84efc4de3e4f350cb88a918",
+      "byteCount": 306137
+    },
+    {
+      "path": "art/plush-cat.png",
+      "sha256": "098446bd17a8cdbe9dd4d38143fcec4041e97665c92dc170a7532ba1abfdd2e9",
+      "byteCount": 377073
+    },
+    {
+      "path": "art/plush-frog.png",
+      "sha256": "923c5fde747ee7849896fadff6847bd888132e61852ebac4bf288c7f5545bbaa",
+      "byteCount": 360940
+    },
+    {
+      "path": "art/pouch.webp",
+      "sha256": "0d23c46e2ff1f22e4e7a37f69aaca4168c5c2c9049db61fab7daca42adbc55d0",
+      "byteCount": 208824
+    },
+    {
+      "path": "art/star-button.png",
+      "sha256": "a1472bab08cf9e4bca2c22ac60b39ea984e6a65ef5991dad1901151b5b771865",
+      "byteCount": 71021
+    },
+    {
+      "path": "feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "6224674243513606c988a8dca0ff9d0c8e6537839e8fb233072a53ad17570c48",
+      "byteCount": 14066
+    },
+    {
+      "path": "genre.json",
+      "sha256": "0abc74897f0e6e3d5b65889929a9f49ce01552f7892e1fb204cd8f118e2b59c5",
+      "byteCount": 583
+    },
+    {
+      "path": "index.html",
+      "sha256": "3fd81c4055835f2af403749b08285c0d70c5a936ff719429e9afe475ca8c36e9",
+      "byteCount": 5107
+    },
+    {
+      "path": "rules.mjs",
+      "sha256": "ed61e04331fe526d1149b7f4913db1a9b77a3f6e9e9420fd31c15bf5f35d2385",
+      "byteCount": 3206
+    },
+    {
+      "path": "style.css",
+      "sha256": "f58f556719289c4a5f4ba64e6e9b044c7574311fa1be9f1eae178e2012b180e6",
+      "byteCount": 11994
+    }
+  ]
+}

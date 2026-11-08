@@ -1,0 +1,139 @@
+{
+  "walk": {
+    "dimensions": [
+      576,
+      96
+    ],
+    "phases": 6,
+    "uniqueCels": 6,
+    "pivot": [
+      48,
+      85
+    ],
+    "bounds": [
+      [
+        21,
+        7,
+        75,
+        85
+      ],
+      [
+        21,
+        7,
+        74,
+        85
+      ],
+      [
+        23,
+        7,
+        72,
+        85
+      ],
+      [
+        19,
+        7,
+        76,
+        85
+      ],
+      [
+        20,
+        7,
+        75,
+        85
+      ],
+      [
+        23,
+        7,
+        73,
+        85
+      ]
+    ]
+  },
+  "props": {
+    "platform-island.png": {
+      "dimensions": [
+        512,
+        192
+      ],
+      "bounds": [
+        16,
+        25,
+        496,
+        112
+      ],
+      "measuredGrassTop": {
+        "median": 32,
+        "range": [
+          28,
+          32
+        ]
+      }
+    },
+    "ground-strip.png": {
+      "dimensions": [
+        512,
+        128
+      ],
+      "bounds": [
+        0,
+        14,
+        512,
+        120
+      ],
+      "measuredGrassTop": {
+        "median": 16,
+        "range": [
+          15,
+          17
+        ]
+      }
+    },
+    "wind-stump.png": {
+      "dimensions": [
+        192,
+        192
+      ],
+      "bounds": [
+        8,
+        25,
+        184,
+        176
+      ]
+    },
+    "portal.png": {
+      "dimensions": [
+        256,
+        320
+      ],
+      "bounds": [
+        8,
+        88,
+        248,
+        300
+      ]
+    }
+  },
+  "groundSeam": "identical first and last pixel columns; reflected central join",
+  "platformGrassLine": {
+    "medianY": 32,
+    "sourceMedianY": 214,
+    "colliderX": [
+      16,
+      496
+    ],
+    "bladeFringeAboveLine": true
+  },
+  "anchors": {
+    "wind-stump.png": [
+      96,
+      176
+    ],
+    "portal.png": [
+      128,
+      300
+    ],
+    "ground-strip.png": {
+      "top": 16
+    }
+  }
+}

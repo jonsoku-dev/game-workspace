@@ -1,0 +1,12 @@
+{
+  "export": "play/revision-2b",
+  "app": "in-app browser",
+  "input": "native coordinate mouse drag in new round",
+  "species": "개구리",
+  "after": {
+    "rescued": 3,
+    "score": 225,
+    "charge": 3,
+    "goal": 60
+  }
+}

@@ -1,6 +1,8 @@
 export const W = 720,
   H = 840,
   R = 27;
+const RAIL = 18;
+export const WEAK_ARC = Math.PI / 3;
 const initialFoes = () => [
   { id: "a", x: 200, y: 230, r: 42, hp: 68, max: 68, timer: 2, period: 2 },
   { id: "b", x: 520, y: 230, r: 42, hp: 68, max: 68, timer: 3, period: 3 },
@@ -21,7 +23,7 @@ export function createGame() {
         x: 360,
         y: 550,
         name: "노바",
-        color: "#d1abff",
+        color: "#8ce5b4",
         art: "guardian-nova.png",
       },
     ],
@@ -38,22 +40,46 @@ export function createGame() {
     totalHits: 0,
     bounces: 0,
     assists: 0,
+    weakHits: 0,
+    shieldBlocks: 0,
+    lastShot: null,
     events: [],
     last: "구슬을 뒤로 당겨 궤도를 만드세요.",
     result: null,
   };
 }
-function event(g, type, x, y, text) {
+function event(g, type, x, y, text, detail = {}) {
   if (type === "bounce") g.bounces++;
   if (type === "assist") g.assists++;
-  g.events.push({ type, x, y, text });
+  g.events.push({ type, x, y, text, ...detail });
 }
-function damage(g, e, n) {
+function damage(g, e, n, detail = {}) {
   if (e.hp <= 0) return;
   e.hp = Math.max(0, e.hp - n);
   g.combo++;
   g.totalHits++;
-  event(g, "hit", e.x, e.y, `−${n}`);
+  if (detail.kind === "weak") g.weakHits++;
+  if (detail.kind === "guard") g.shieldBlocks++;
+  event(g, "hit", e.x, e.y, `−${n}`, { damage: n, target: e.id, ...detail });
+}
+function impactProfile(foe, nx, ny, shot) {
+  const bank = shot.banks > 0,
+    linked = shot.assists.size > 0;
+  const difference = Math.atan2(
+    Math.sin(Math.atan2(ny, nx) - (foe.weakAngle || 0)),
+    Math.cos(Math.atan2(ny, nx) - (foe.weakAngle || 0)),
+  );
+  const weak = foe.id === "boss" && Math.abs(difference) <= WEAK_ARC;
+  const guard = foe.id === "boss" && !weak;
+  let damage = guard ? 8 : weak ? 52 : 26;
+  damage += bank ? (guard ? 18 : weak ? 16 : 10) : 0;
+  damage += linked ? (guard ? 18 : weak ? 16 : 8) : 0;
+  return {
+    damage: damage * (shot.skill ? 2 : 1),
+    kind: weak ? "weak" : guard ? "guard" : "strike",
+    bank,
+    linked,
+  };
 }
 export function select(g, i) {
   if (g.phase === "aim" && i >= 0 && i < 3) g.selected = i;
@@ -69,6 +95,7 @@ export function launch(g, angle = -90, power = 85, skill = false) {
     vx: Math.cos(a) * speed,
     vy: Math.sin(a) * speed,
     elapsed: 0,
+    banks: 0,
     assists: new Set(),
     contacts: new Set(),
     skill: charged,
@@ -79,30 +106,44 @@ export function launch(g, angle = -90, power = 85, skill = false) {
     ? "성좌 해방 · 충돌 피해 2배"
     : "혜성 발사 · 동료를 스쳐 연계하세요";
   event(g, "attack", h.x, h.y, charged ? "성좌 해방" : "");
-  if (charged) g.foes.forEach((e) => damage(g, e, 28));
+  if (charged) g.foes.forEach((e) => damage(g, e, 28, { kind: "skill" }));
   return true;
 }
 function assist(g, i) {
   const h = g.heroes[i],
     live = g.foes.filter((e) => e.hp > 0);
+  live.sort(
+    (a, b) =>
+      Math.hypot(a.x - h.x, a.y - h.y) - Math.hypot(b.x - h.x, b.y - h.y),
+  );
   event(
     g,
     "assist",
     h.x,
     h.y,
-    ["태양창 · 추적", "달의 샘 · 회복", "별비 · 전체"][i],
+    ["태양창 · 방어 관통", "달의 샘 · 체력 +22", "별비 · 전장 관통"][i],
+    {
+      ally: i,
+      targets: (i === 2 ? live : live.slice(0, 1)).map((e) => ({
+        x: e.x,
+        y: e.y,
+      })),
+    },
   );
   if (i === 1) g.hp = Math.min(g.maxHp, g.hp + 22);
-  if (i === 2) live.forEach((e) => damage(g, e, 18));
+  if (i === 2)
+    live.forEach((e) => damage(g, e, 18, { kind: "assist", ally: i }));
   else {
-    live.sort(
-      (a, b) =>
-        Math.hypot(a.x - h.x, a.y - h.y) - Math.hypot(b.x - h.x, b.y - h.y),
-    );
-    if (live[0]) damage(g, live[0], i === 0 ? 38 : 20);
+    if (live[0])
+      damage(g, live[0], i === 0 ? 38 : 20, { kind: "assist", ally: i });
   }
 }
 function finish(g) {
+  g.lastShot = {
+    banks: g.shot.banks,
+    assists: g.shot.assists.size,
+    hits: g.combo,
+  };
   g.shot = null;
   if (g.foes.every((e) => e.hp <= 0)) {
     if (g.wave === 2) {
@@ -123,18 +164,21 @@ function finish(g) {
         max: 200,
         timer: 2,
         period: 2,
+        weakAngle: Math.PI / 2,
       },
       { id: "d", x: 180, y: 420, r: 38, hp: 52, max: 52, timer: 3, period: 3 },
       { id: "e", x: 540, y: 420, r: 38, hp: 52, max: 52, timer: 3, period: 3 },
     ];
     g.hp = Math.min(g.maxHp, g.hp + 30);
-    g.last = "WAVE 02 · 월식의 심장 출현 · 체력 +30";
+    g.last = "월식의 심장 · 금빛 틈을 노리세요. 벽·연계로 방어 관통";
     event(g, "progress", 360, 240, "월식의 심장");
   } else {
     let hurt = 0;
     g.foes
       .filter((e) => e.hp > 0)
       .forEach((e) => {
+        if (e.id === "boss")
+          e.weakAngle = (e.weakAngle + Math.PI / 2) % (Math.PI * 2);
         e.timer--;
         if (e.timer === 0) {
           hurt += e.id === "boss" ? 38 : 17;
@@ -170,18 +214,20 @@ export function step(g, dt = 1 / 120) {
     h.x += (s.vx * dt) / count;
     h.y += (s.vy * dt) / count;
     for (const axis of ["x", "y"]) {
-      const max = (axis === "x" ? W : H) - R - 18,
-        min = R + 18,
+      const max = (axis === "x" ? W : H) - R - RAIL,
+        min = R + RAIL,
         v = axis === "x" ? "vx" : "vy";
       if (h[axis] < min) {
         h[axis] = min + (min - h[axis]);
         s[v] = Math.abs(s[v]);
-        event(g, "bounce", h.x, h.y, "");
+        s.banks++;
+        event(g, "bounce", h.x, h.y, "", { axis });
       }
       if (h[axis] > max) {
         h[axis] = max - (h[axis] - max);
         s[v] = -Math.abs(s[v]);
-        event(g, "bounce", h.x, h.y, "");
+        s.banks++;
+        event(g, "bounce", h.x, h.y, "", { axis });
       }
     }
     for (const e of g.foes) {
@@ -205,7 +251,15 @@ export function step(g, dt = 1 / 120) {
           s.vx -= 2 * dot * nx;
           s.vy -= 2 * dot * ny;
           if (!s.contacts.has(e.id)) {
-            damage(g, e, s.skill ? 52 : 26);
+            const impact = impactProfile(e, nx, ny, s);
+            damage(g, e, impact.damage, {
+              ...impact,
+              contact: true,
+              nx,
+              ny,
+              contactX: h.x,
+              contactY: h.y,
+            });
             s.contacts.add(e.id);
           }
         }
@@ -237,4 +291,34 @@ export function simulate(g) {
   let n = 0;
   while (g.phase === "flight" && n++ < 1000) step(g);
   return g;
+}
+
+// Predict with the same fixed-step collisions as a real shot, including foes.
+export function previewShot(g, angle, power, skill = false) {
+  const copy = structuredClone(g);
+  copy.events = [];
+  if (!launch(copy, angle, power, skill))
+    return { points: [], impacts: [], assists: [] };
+  const points = [
+      { x: copy.heroes[copy.selected].x, y: copy.heroes[copy.selected].y },
+    ],
+    impacts = [],
+    assists = [];
+  let firstTick = -1;
+  copy.events = [];
+  for (let tick = 0; tick < 576 && copy.phase === "flight"; tick++) {
+    const selected = copy.selected;
+    step(copy);
+    const h = copy.heroes[selected];
+    points.push({ x: h.x, y: h.y });
+    for (const e of copy.events.splice(0)) {
+      if (e.type === "bounce" || (e.type === "hit" && e.contact)) {
+        impacts.push(e);
+        if (firstTick < 0) firstTick = tick;
+      }
+      if (e.type === "assist") assists.push(e);
+    }
+    if (firstTick >= 0 && tick - firstTick >= 26) break;
+  }
+  return { points, impacts, assists };
 }

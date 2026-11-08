@@ -1,0 +1,11 @@
+{
+  "generator": "built-in ImageGen",
+  "prompts": {
+    "pouch": "Portrait 4:5 game background plate, straight overhead macro photograph of a premium handmade Japanese quilted fabric toy pouch lining for a plush collectible puzzle. The entire composition is soft fabric only, cropped flush to board edges. Central 80 percent is uninterrupted, medium-dark muted heather plum felt with subtle visible diagonal quilting stitches and gentle woven texture, not a black void. At the outermost 5 percent edges: deep berry velvet piping, handmade ivory blanket stitches, a few tiny mint/cream gingham patches and golden embroidered seams confined to corners. Soft natural light from top left and tactile real fabric detail. Portrait, vivid but limited vintage haberdashery palette. There will be plush toys over the cloth. Empty now, NO objects, no text, no toys, no stars, no buttons, no interface, no logos. Composition must stay quiet behind small cream, auburn, lavender and green animal portraits.",
+    "star-button": "One original isolated board-game collectible prop on transparent background: a plump golden five-point star-shaped sewing button made of honey-yellow velvet, warm ivory blanket stitches follow its outline. Two dark brown central button holes joined by a single loop of teal embroidery floss, slight perspective bevel, readable as a star with five round tips at 42 by 42 pixels, bright warm highlights and dark caramel sidewall. Same premium handmade plush-toy photographic product styling. Straight overhead, centered, fills canvas with a 10 percent true transparent margin. No cast shadow beyond its edge, no glow, no text, no other objects, no background."
+  },
+  "outputs": {
+    "pouch-master.png": "game/art/pouch.webp",
+    "star-button-master.png": "game/art/star-button.png"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "generator": "built-in imagegen",
+  "transparent_background": false,
+  "prompt": "Use case: stylized-concept. Asset type: original painted battle arena background for a premium fantasy marble-combat arcade game, intended 6:7 portrait rectangle, no UI. Primary request: a beautifully crafted overhead view looking straight down at an ancient celestial temple battle board made of deep lapis blue stone, dark blue lacquered obsidian and worn polished midnight marble, with elaborate but restrained gilded corner reliefs. Composition: full-bleed near portrait 6:7 canvas; intricate sculpted gold sun and crescent motifs, shallow carved architectural corners and tiny ivory inlay ornaments clustered at outer edges and corners only; a broad clear empty play field across the central 75 percent, with softly irregular blue stone tiles and extremely subtle off-center geometric marquetry, a faint worn celestial circle shifted toward upper left rather than a radial glow. Luxurious hand-painted fantasy environment concept art with believable artisanal craftsmanship, fine engraved gold, chips in lacquer and luminous blue mineral veins, beautiful material variation. Mood: quiet sacred astronomy sanctum, deep dark lapis and ink blue center, warm antique gold at edges, faint cyan reflected light, refined painterly texture. Absolutely top-down orthographic flat plane; no perspective vanishing point. Readability crucial: center must stay dark, calm, low contrast with very subtle texture for bright moving units and a white dotted aiming line. Center is NOT a void or a simple flat gradient: have actual shallow carved stone seams and off-center marquetry but very muted. No characters, no marbles, no enemies, no tokens, no HUD, no panels, no text, no lettering, no runes resembling lettering, no numbers, no grids, no floating particles. Distinct original high-end fantasy illustration, not a stock geometric wallpaper.",
+  "original": "sanctum-original.png",
+  "runtime": "../../game/art/sanctum.webp",
+  "processing": "Proportional near-6:7 source normalized to 1080x1260 with Lanczos; WebP quality 86 method 6; no repainting or compositing.",
+  "original_dimensions": [
+    1161,
+    1354
+  ],
+  "output_dimensions": [
+    1080,
+    1260
+  ],
+  "output_bytes": 158250,
+  "sha256": "7eff68e7666ea7fef3be6d429b94a4c7883e262d4d00c3133a65faeaa59d84ae"
+}

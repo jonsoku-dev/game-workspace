@@ -15,7 +15,9 @@
         <div class="brand">
           ✧ <span>별잎 고원<small>STARLEAF HIGHLANDS</small></span>
         </div>
-        <div class="region">새벽숲 / 01 <span>바람이 머무는 길</span></div>
+        <div class="region">
+          <span id="distance">01 / 03</span> <span>바람이 머무는 길</span>
+        </div>
         <button id="sound" aria-pressed="false">♫ 소리 켜기</button
         ><button id="pause">Ⅱ 쉬기</button>
       </header>
@@ -27,7 +29,7 @@
           aria-label="숲의 고원. 화살표 이동, Space 점프, J 공격, K 별꽃 마법"
         ></canvas>
         <div class="hud">
-          <div class="portrait">✿</div>
+          <div class="portrait" aria-hidden="true"></div>
           <div>
             <b id="level">LV. 1 <span>견습 별지기</span></b>
             <div class="health">
@@ -38,15 +40,12 @@
           </div>
         </div>
         <aside class="quest">
-          <small>STORY QUEST</small><b>별잎을 바람에 돌려줘</b
+          <small>루나의 부탁</small><b>바람꽃의 약속</b
           ><span id="quest">별잎 되찾기 0 / 3</span
-          ><span id="spell">레벨 2 · 별꽃 마법 잠김</span>
+          ><span id="spell">두 마리 처치 → 별꽃 개방</span>
         </aside>
         <div id="toast" role="status" aria-live="polite">
-          별지기 루나: 말썽꾸러기에게 별잎을 되찾아 줘!
-        </div>
-        <div class="location">
-          ✧ 새벽숲의 입구 <span id="distance">01 / 03</span>
+          별잎 세 장을 찾아 바람꽃을 깨워 주세요.
         </div>
         <div id="modal" hidden>
           <div>
@@ -65,8 +64,8 @@
           ><span>↑ <em>기류 / 문</em></span>
         </div>
         <div class="skills">
-          <button data-key="j">J <b>별가지 휘두르기</b></button
-          ><button data-key="k" id="magic">K <b>별꽃 · LV.2</b></button>
+          <button data-key="j">J <b>별가지</b></button
+          ><button data-key="k" id="magic">K <b>별꽃 발사</b></button>
         </div>
       </footer>
       <nav class="touch" aria-label="터치 조작">
@@ -83,7 +82,7 @@
         </div>
       </nav>
       <p class="note">
-        세 장의 별잎, 한 번의 작은 모험. <span>P 쉬기 · R 처음부터</span>
+        <span>P 쉬기 · R 처음부터</span>
       </p>
     </main>
     <script type="module" src="./game.mjs"></script>

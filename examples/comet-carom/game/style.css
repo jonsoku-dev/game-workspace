@@ -708,3 +708,110 @@ footer {
     font-size: 29px;
   }
 }
+
+/* The portrait and mechanics stay readable over the painted sanctum. */
+.battle {
+  border-color: #9e835b;
+  box-shadow:
+    0 28px 100px #000a,
+    0 0 45px #416a8b21;
+}
+.battle-top {
+  background: linear-gradient(110deg, #1c263a, #111728);
+  border-bottom-color: #755f47;
+}
+.shield-readout {
+  padding: 11px 20px;
+  background: #111c30;
+  border-bottom: 1px solid #695d48;
+  color: #e4c892;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.shield-readout small {
+  display: block;
+  color: #9eafc4;
+  font-size: 9px;
+}
+.trajectory {
+  color: #a7efe4;
+  font-size: 10px;
+  line-height: 1.6;
+  border-left: 2px solid #83d5c5;
+  padding-left: 9px;
+  margin: 0 0 15px;
+  min-height: 16px;
+}
+.hero.selected {
+  box-shadow:
+    inset 3px 0 var(--gold),
+    0 0 22px #a97c3025;
+}
+.hero img {
+  width: 65px;
+  height: 65px;
+}
+@media (max-width: 690px) {
+  main {
+    gap: 15px;
+    padding-top: 17px;
+  }
+  .intro {
+    display: block;
+  }
+  .intro h1 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .intro h1 span {
+    display: inline;
+    margin-left: 14px;
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  .intro .pull-hint {
+    display: none;
+  }
+  .guardian-card {
+    display: flex;
+    width: 100%;
+    height: 82px;
+    margin: 14px 0 0;
+  }
+  .guardian-art {
+    width: 82px;
+    height: 82px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+  }
+  .guardian-caption {
+    flex: 1;
+    min-width: 0;
+    padding: 9px 12px;
+  }
+  .guardian-caption > p:first-child {
+    font-size: 8px;
+    margin: 0 0 4px;
+  }
+  .guardian-caption h2 {
+    font-size: 20px;
+  }
+  .guardian-caption h2 span {
+    font-size: 11px;
+  }
+  .guardian-caption > p:last-child {
+    font-size: 9px;
+    margin: 5px 0 0;
+  }
+  .shield-readout {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+  .shield-readout small {
+    font-size: 8px;
+  }
+  .hero img {
+    width: 54px;
+    height: 54px;
+  }
+}

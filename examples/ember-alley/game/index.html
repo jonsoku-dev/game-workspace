@@ -6,6 +6,7 @@
   /><meta name="theme-color" content="#11151b" /><title>
     잿불 골목 · EMBER ALLEY
   </title>
+  <link rel="icon" href="data:," />
   <style>
     * {
       box-sizing: border-box;
@@ -55,6 +56,11 @@
       letter-spacing: 4px;
       margin-bottom: 5px;
     }
+    button.counter-ready {
+      border-color: #b5fff1;
+      background: #214b47;
+      box-shadow: 0 0 15px #8de0c340;
+    }
     .edition {
       font-size: 11px;
       color: #8d989f;
@@ -74,7 +80,7 @@
       display: block;
       aspect-ratio: 16/9;
       background: #171b22;
-      image-rendering: pixelated;
+      image-rendering: auto;
     }
     .overlay {
       position: absolute;
@@ -288,18 +294,18 @@
       <canvas
         id="game"
         tabindex="0"
-        width="960"
-        height="540"
+        width="1920"
+        height="1080"
         role="img"
         aria-label="잿불 골목 전투 화면. 방향키 이동, J 연격, K 올려치기, Space 회피."
       ></canvas>
       <div id="overlay" class="overlay">
         <div class="card">
           <span id="kicker" class="kicker">BELT-SCROLLING DUNGEON BRAWLER</span>
-          <h2 id="heading">철의 밤을<br />맨손으로 찢다.</h2>
+          <h2 id="heading">철의 밤을<br />칼끝으로 찢다.</h2>
           <p id="description">
-            폐공장의 문이 닫혔다. 남은 것은 잿불과 마지막 일격.<br />앞뒤로
-            자리를 틀어 예고 공격을 피하고, 올려친 적을 공중에서 끝내라.
+            폐공장의 문이 닫혔다. 남은 것은 잿불과 마지막 일격.<br />공격 직전에
+            회피해 빈틈을 읽고, 반격으로 감독관의 가드를 깨뜨려라.
           </p>
           <button class="big" id="start">골목 진입 ↗</button>
         </div>
@@ -318,7 +324,7 @@
         <b>R</b> 처음부터
       </div>
       <div>
-        붉은 바닥 = 적 공격 범위<br />올려치기 3.8초 · 회피 0.72초 재사용
+        붉은 바닥 = 적 공격 범위<br />올려치기 3.8초 · 회피 1.05초 재사용
       </div>
     </div>
     <div class="controls" aria-label="터치 전투 조작">
@@ -338,7 +344,7 @@
   </main>
   <footer class="footer">
     <span>ORIGINAL INK • TWO ROOMS • NO EXTERNAL ASSETS</span
-    ><span>타격 중 입력해 다음 연격을 예약하세요.</span>
+    ><span>공격 직전 회피 → 청록빛 반격 → J로 가드 파괴.</span>
   </footer>
   <script type="module" src="./game.mjs"></script>
 </html>

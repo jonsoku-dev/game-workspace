@@ -1,5 +1,13 @@
 import { createFeedback } from "./feedback.mjs";
-import { platforms, progression, portalOpen, landing } from "./rules.mjs";
+import {
+  platforms,
+  progression,
+  portalOpen,
+  landing,
+  createSpell,
+  advanceSpell,
+  windBloom,
+} from "./rules.mjs";
 const canvas = document.querySelector("canvas"),
   c = canvas.getContext("2d"),
   $ = (s) => document.querySelector(s);
@@ -9,12 +17,28 @@ const feedback = createFeedback({ sound: false }),
 const scenery = new Image();
 scenery.src = "./scenery/canopy.webp";
 const art = {};
+const terrainArt = {};
+for (const name of [
+  "platform-island",
+  "ground-strip",
+  "wind-stump",
+  "portal",
+]) {
+  terrainArt[name] = new Image();
+  terrainArt[name].src = `./scenery/${name}.png`;
+}
+art.walk = new Image();
+art.walk.src = "./art/walk-cycle.png";
 for (const name of ["player", "creature"]) {
   art[name] = new Image();
   art[name].src = `./art/${name}.png`;
 }
 let p,
   enemies,
+  spells = [],
+  impacts = [],
+  levelGlow = 0,
+  shake = 0,
   kills,
   charged,
   mode,
@@ -49,12 +73,17 @@ function reset() {
     magic: 0,
     inv: 0,
   };
+  spells = [];
+  impacts = [];
+  levelGlow = 0;
+  shake = 0;
   enemies = [
     { x: 570, y: 450, home: 570, platform: 1 },
     { x: 1010, y: 340, home: 1010, platform: 2 },
     { x: 1390, y: 445, home: 1390, platform: 3 },
     { x: 1830, y: 330, home: 1830, platform: 4 },
   ].map((e, i) => ({
+    id: `creature-${i}`,
     ...e,
     hp: 3,
     max: 3,
@@ -71,7 +100,7 @@ function reset() {
   texts = [];
   $("#modal").hidden = true;
   $("#pause").textContent = "Ⅱ 쉬기";
-  toast("별지기 루나: 별잎 세 장을 찾아 고원의 문으로 와 줘!");
+  toast("루나의 부탁 · 별잎 세 장을 찾아 바람꽃을 깨워 줘.");
   hud();
 }
 function hud() {
@@ -87,8 +116,8 @@ function hud() {
   $("#spell").textContent = charged
     ? "✧ 고원의 문 열림"
     : q.spell
-      ? "✿ K 별꽃으로 문을 깨우기"
-      : "레벨 2 · 별꽃 마법 잠김";
+      ? "K · 별꽃을 바람꽃에 맞히기"
+      : "두 마리 처치 → 별꽃 개방";
   $("#magic").style.background = q.spell ? "#f7e2a7" : "#e5e8d9";
   $("#distance").textContent =
     `0${Math.min(3, 1 + Math.floor(p.x / 920))} / 03`;
@@ -107,12 +136,15 @@ function burst(x, y, color, n = 18) {
 function float(t, x, y, color = "#fff8c9") {
   texts.push({ t, x, y, life: 1.3, color });
 }
-function hurt(e, damage) {
+function hurt(e, damage, direction = p.dir) {
   if (e.hp <= 0) return;
   e.hp -= damage;
   e.hit = 0.25;
-  e.x += p.dir * 14;
-  cue("hit");
+  e.x += direction * 14;
+  e.state = "rest";
+  e.timer = 0.32;
+  shake = damage > 1 ? 0.12 : 0.06;
+  cue(damage > 1 ? "crit" : "hit");
   burst(e.x, e.y - 35, "#ffdd79", 10);
   float(`−${damage}`, e.x, e.y - 75);
   if (e.hp <= 0) {
@@ -122,12 +154,12 @@ function hurt(e, damage) {
     cue("pickup");
     if (kills === 2) {
       p.hp = Math.min(100, p.hp + 35);
-      p.magic = 1.4;
-      toast("LEVEL UP! 별꽃 마법 개방 · K로 원거리 공격 / 문 깨우기");
+      levelGlow = 2.4;
+      toast("레벨 2 · 별꽃 개방! K를 눌러 전방으로 꽃을 날려 보세요.");
       cue("win");
       burst(p.x, p.y - 50, "#fff2a2", 55);
     } else if (kills === 3)
-      toast("별잎 세 장을 모았다! 오른쪽 고원 문에서 K → ↑");
+      toast("별잎을 다 모았어요. 오른쪽 바람꽃에 별꽃을 맞혀 주세요.");
     hud();
   }
 }
@@ -138,33 +170,27 @@ function attack(magic = false) {
     cue("denied");
     return;
   }
-  p.cool = magic ? 0.65 : 0.35;
-  p.attack = magic ? 0.45 : 0.22;
-  p.magic = magic ? 0.55 : 0;
+  p.cool = magic ? 1.05 : 0.35;
+  p.attack = magic ? 0.42 : 0.22;
+  p.magic = magic ? 0.42 : 0;
   cue(magic ? "progress" : "attack");
+  if (magic) {
+    spells.push(createSpell(p.x + p.dir * 32, p.y - 50, p.dir, true));
+    return;
+  }
+  let hit = false;
   for (const e of enemies) {
     if (
       e.hp > 0 &&
-      Math.abs(e.y - p.y) < 95 &&
-      Math.abs(e.x - p.x) < (magic ? 300 : 105) &&
-      (e.x - p.x) * p.dir > -25
-    )
-      hurt(e, magic ? 3 : 1);
-  }
-  if (magic) {
-    burst(p.x + p.dir * 70, p.y - 50, "#fff5ac", 25);
-    if (Math.abs(p.x - 2570) < 220) {
-      if (kills >= 3) {
-        charged = true;
-        cue("finish");
-        toast("고원의 문이 깨어났어요. ↑로 별지기에게 돌아가기");
-      } else {
-        cue("denied");
-        toast("문에 별잎 세 장이 필요해요.");
-      }
-      hud();
+      Math.abs(e.y - p.y) < 70 &&
+      Math.abs(e.x - p.x) < 100 &&
+      (e.x - p.x) * p.dir > -20
+    ) {
+      hurt(e, 1);
+      hit = true;
     }
   }
+  if (!hit) cue("miss");
 }
 function end(win) {
   mode = win ? "win" : "lose";
@@ -245,6 +271,8 @@ function update(dt) {
     pressed.clear();
     return;
   }
+  levelGlow = Math.max(0, levelGlow - dt);
+  shake = Math.max(0, shake - dt);
   p.cool = Math.max(0, p.cool - dt);
   p.attack = Math.max(0, p.attack - dt);
   p.magic = Math.max(0, p.magic - dt);
@@ -255,7 +283,7 @@ function update(dt) {
   let move = (has("d", "arrowright") ? 1 : 0) - (has("a", "arrowleft") ? 1 : 0);
   if (move) {
     p.dir = move;
-    p.x += move * 230 * dt;
+    p.x += move * 230 * dt * (p.magic > 0.24 ? 0.25 : 1);
     if (p.ground) {
       stepClock += dt;
       if (stepClock > 0.23) {
@@ -312,7 +340,7 @@ function update(dt) {
       toast(
         kills < 3
           ? "별잎 세 장과 별꽃 마법이 필요해요."
-          : "K 별꽃 마법으로 문을 먼저 깨워 주세요.",
+          : "문 왼쪽의 바람꽃에 별꽃을 맞혀 주세요.",
       );
     }
   }
@@ -356,6 +384,38 @@ function update(dt) {
       e.timer = 1;
     }
   }
+  const targets = enemies
+    .filter((e) => e.hp > 0)
+    .map((e) => ({ id: e.id, x: e.x, y: e.y - 40, radius: 30 }));
+  if (!charged) targets.push(windBloom);
+  spells = spells
+    .map((spell) => {
+      const next = advanceSpell(spell, dt, targets);
+      if (next.hit) {
+        impacts.push({ x: next.x, y: next.y, life: 0.45 });
+        burst(next.x, next.y, "#fff0ae", 24);
+        if (next.hit === "bloom") {
+          if (kills >= 3) {
+            charged = true;
+            cue("finish");
+            levelGlow = 1.5;
+            toast("바람꽃이 피었어요 · 열린 문에서 ↑");
+          } else {
+            cue("denied");
+            toast("바람꽃을 깨우려면 별잎 세 장이 필요해요.");
+          }
+        } else {
+          const enemy = enemies.find((e) => e.id === next.hit);
+          hurt(enemy, 3, next.dir);
+        }
+        next.life = 0;
+      }
+      return next;
+    })
+    .filter((spell) => spell.life > 0);
+  impacts = impacts
+    .map((impact) => ({ ...impact, life: impact.life - dt }))
+    .filter((impact) => impact.life > 0);
   camera +=
     (Math.max(0, Math.min(1600, p.x - 420)) - camera) * Math.min(1, dt * 6);
   for (const a of particles) {
@@ -500,6 +560,23 @@ function terrain() {
     const x = pf.x - camera,
       y = pf.y;
     if (x > 1250 || x + pf.w < 0) continue;
+    const image = terrainArt[pf.y === 575 ? "ground-strip" : "platform-island"];
+    if (image.complete && image.naturalWidth) {
+      if (pf.y === 575) {
+        for (let tx = pf.x; tx < pf.x + pf.w; tx += 512)
+          c.drawImage(image, tx - camera, pf.y - 16, 512, 128);
+      } else {
+        const scale = pf.w / 480;
+        c.drawImage(
+          image,
+          x - 16 * scale,
+          y - 32 * scale,
+          512 * scale,
+          192 * scale,
+        );
+      }
+      continue;
+    }
     c.beginPath();
     c.moveTo(x, y);
     c.lineTo(x + pf.w, y);
@@ -527,6 +604,9 @@ function terrain() {
   }
   for (const x of [800, 1580, 2010]) {
     const sx = x - camera;
+    const stump = terrainArt["wind-stump"];
+    if (stump.complete && stump.naturalWidth)
+      c.drawImage(stump, sx - 72, 575 - 132, 144, 144);
     for (let i = 0; i < 7; i++) {
       let yy = 565 - ((time * 115 + i * 39) % 250);
       c.globalAlpha = 0.35;
@@ -537,9 +617,8 @@ function terrain() {
       c.stroke();
       c.globalAlpha = 1;
     }
-    text("↑ 바람길", sx, 605, 13, "#faffdd");
   }
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < (terrainArt["ground-strip"].naturalWidth ? 0 : 40); i++) {
     let x = i * 83 - camera;
     const y = 574;
     for (let j = 0; j < 3; j++)
@@ -559,37 +638,63 @@ function terrain() {
 }
 function portal() {
   const x = 2570 - camera;
-  ellipse(x, 575, 95, 16, "#668c6244", null);
-  c.save();
-  c.translate(x, 485);
-  c.beginPath();
-  c.moveTo(-68, 90);
-  c.lineTo(-68, -5);
-  c.bezierCurveTo(-68, -110, 68, -110, 68, -5);
-  c.lineTo(68, 90);
-  path("#c9ba8a", "#839a70", 5);
-  c.beginPath();
-  c.moveTo(-47, 87);
-  c.lineTo(-47, -3);
-  c.bezierCurveTo(-47, -77, 47, -77, 47, -3);
-  c.lineTo(47, 87);
-  const g = c.createLinearGradient(0, -80, 0, 90);
-  g.addColorStop(0, charged ? "#a9e5db" : "#668c79");
-  g.addColorStop(1, charged ? "#fff7b6" : "#a2ba8b");
-  path(g, "#ecdfac", 3);
-  for (let i = 0; i < 8; i++) {
-    leaf(-70 + (i % 2) * 140, -50 + Math.floor(i / 2) * 35, 20, "#94b96b");
+  if (charged) {
+    const glow = c.createRadialGradient(x, 465, 10, x, 465, 140);
+    glow.addColorStop(0, "#fffac5dd");
+    glow.addColorStop(1, "#d7f7cb00");
+    c.fillStyle = glow;
+    c.fillRect(x - 150, 320, 300, 260);
   }
-  text(charged ? "✧" : "✿", 0, 10, 44, charged ? "#fff7c6" : "#cfdfb8");
-  text(
-    charged ? "↑ 별지기에게" : "별잎 3 + 별꽃",
-    0,
-    56,
-    13,
-    charged ? "#477e71" : "#eef4cf",
+  const image = terrainArt.portal;
+  if (image.complete && image.naturalWidth)
+    c.drawImage(image, x - 128, 575 - 300, 256, 320);
+  else {
+    ellipse(x, 480, 70, 95, charged ? "#ddf5c3" : "#82a594", "#b3c58d");
+  }
+  if (!charged) {
+    c.fillStyle = "#29493677";
+    c.beginPath();
+    c.ellipse(x, 468, 46, 82, 0, 0, Math.PI * 2);
+    c.fill();
+  }
+  text(charged ? "↑ 들어가기" : "", x, 597, 15, "#f7f4d6");
+  const bx = windBloom.x - camera,
+    by = windBloom.y;
+  line(bx, 575, bx, by, "#6d9960", 5);
+  for (let i = 0; i < 5; i++) {
+    const angle = (i * Math.PI * 2) / 5 + Math.sin(time) * 0.08;
+    const reach = charged ? 20 : 9;
+    ellipse(
+      bx + Math.cos(angle) * reach,
+      by + Math.sin(angle) * reach,
+      charged ? 14 : 8,
+      charged ? 9 : 12,
+      charged ? "#ffecc0" : "#9bad79",
+      "#6b8b60",
+    );
+  }
+  ellipse(
+    bx,
+    by,
+    charged ? 9 : 5,
+    charged ? 9 : 9,
+    charged ? "#fff7b4" : "#a1bb85",
+    null,
   );
-  c.restore();
-  text("별지기의 문", x, 355, 22);
+  if (progression(kills).spell && !charged) {
+    text(
+      kills >= 3 ? "별꽃으로 깨우기" : "별잎 3장이 필요해요",
+      bx,
+      by - 45,
+      13,
+      "#fff8d3",
+    );
+    c.strokeStyle = "#f6ebbe";
+    c.lineWidth = 1.5;
+    c.beginPath();
+    c.arc(bx, by, 35 + Math.sin(time * 3) * 3, 0, Math.PI * 2);
+    c.stroke();
+  }
 }
 function sprite(img, frame, size, x, y, w, h, dir = 1) {
   if (!img.complete || !img.naturalWidth) return false;
@@ -633,7 +738,13 @@ function player() {
           : has("a", "d", "arrowleft", "arrowright")
             ? 1 + (Math.floor(time * 9) % 2)
             : 0;
-  if (!sprite(art.player, frame, 96, x, p.y + bob, 110, 110, p.dir)) {
+  const walking = frame === 1 || frame === 2;
+  const sheet =
+    walking && art.walk.complete && art.walk.naturalWidth
+      ? art.walk
+      : art.player;
+  if (sheet === art.walk) frame = Math.floor(time * 10) % 6;
+  if (!sprite(sheet, frame, 96, x, p.y + bob, 110, 110, p.dir)) {
     ellipse(x, p.y - 55, 26, 30, "#ffe2ac", "#775f4a");
     ellipse(x, p.y - 72, 35, 22, "#b98258", "#775f4a");
     ellipse(x, p.y - 21, 23, 22, "#aac27a", "#5c8059");
@@ -641,7 +752,7 @@ function player() {
     ellipse(x + 9, p.y - 57, 3, 5, "#4c5141", null);
   }
   c.globalAlpha = 1;
-  if (p.attack > 0) {
+  if (p.attack > 0 && p.magic <= 0) {
     c.save();
     c.translate(x, p.y - 45);
     c.scale(p.dir, 1);
@@ -668,7 +779,6 @@ function player() {
       );
     }
   }
-  text("나래", x, p.y - 116, 13);
 }
 function creature(e) {
   if (e.hp <= 0) return;
@@ -694,33 +804,83 @@ function creature(e) {
     ellipse(x - 10, e.y - 25, 3, 4, "#5c644c", null);
     ellipse(x + 10, e.y - 25, 3, 4, "#5c644c", null);
   }
+  if (e.hp === e.max && Math.abs(e.x - p.x) > 180) return;
   c.fillStyle = "#6c8868";
   c.fillRect(x - 24, e.y - 85, 48, 5);
   c.fillStyle = "#f4bd7b";
   c.fillRect(x - 24, e.y - 85, (e.hp / e.max) * 48, 5);
-  text("잎도둑 밤톨", x, e.y - 97, 11);
 }
 function draw() {
   c.clearRect(0, 0, W, H);
   background();
+  c.save();
+  if (shake > 0 && !feedback.reducedMotion)
+    c.translate(
+      Math.sin(time * 170) * shake * 28,
+      Math.cos(time * 150) * shake * 18,
+    );
   terrain();
   portal();
-  const nx = 220 - camera;
-  line(nx, 575, nx, 492, "#997d57", 7);
-  c.save();
-  c.translate(nx, 510);
-  c.rotate(-0.06);
-  c.fillStyle = "#e4cb91";
-  c.strokeStyle = "#9c8f64";
-  c.lineWidth = 2;
-  c.beginPath();
-  c.roundRect(-65, -25, 130, 46, 5);
-  c.fill();
-  c.stroke();
-  text("고원으로 →", 0, 3, 17);
-  c.restore();
   for (const e of enemies) creature(e);
   player();
+  for (const spell of spells) {
+    c.save();
+    c.globalAlpha = Math.min(1, spell.life * 4);
+    const x = spell.x - camera,
+      y = spell.y;
+    if (spell.phase === "travel") {
+      const trail = c.createLinearGradient(x - spell.dir * 95, y, x, y);
+      trail.addColorStop(0, "#fff6ba00");
+      trail.addColorStop(1, "#fff6bac0");
+      c.fillStyle = trail;
+      c.beginPath();
+      c.ellipse(x - spell.dir * 40, y, 55, 8, 0, 0, Math.PI * 2);
+      c.fill();
+    }
+    c.save();
+    c.translate(x, y);
+    c.rotate(time * 7);
+    const size = spell.phase === "cast" ? 9 + spell.age * 65 : 18;
+    for (let i = 0; i < 5; i++) {
+      c.rotate((Math.PI * 2) / 5);
+      ellipse(size, 0, size * 0.7, size * 0.4, "#fff1af", "#e6cd7c");
+    }
+    ellipse(0, 0, 8, 8, "#fffce1", null);
+    c.restore();
+    c.restore();
+  }
+  for (const impact of impacts) {
+    c.strokeStyle = `rgba(255,247,199,${impact.life / 0.45})`;
+    c.lineWidth = 5;
+    c.beginPath();
+    c.arc(
+      impact.x - camera,
+      impact.y,
+      (0.45 - impact.life) * 150 + 15,
+      0,
+      Math.PI * 2,
+    );
+    c.stroke();
+  }
+  if (levelGlow > 0) {
+    const x = p.x - camera,
+      y = p.y - 60;
+    c.save();
+    c.globalAlpha = Math.min(1, levelGlow);
+    for (let i = 0; i < 7; i++) {
+      const a = (i * Math.PI * 2) / 7 + time * 0.6;
+      line(
+        x + Math.cos(a) * 55,
+        y + Math.sin(a) * 55,
+        x + Math.cos(a) * 95,
+        y + Math.sin(a) * 95,
+        "#fff4bd",
+        3,
+      );
+    }
+    text("별꽃의 수호자", x, y - 95, 23, "#fff4bd");
+    c.restore();
+  }
   for (const a of particles) {
     c.globalAlpha = Math.min(1, a.life * 2);
     ellipse(a.x - camera, a.y, 3, 3, a.color, null);
@@ -731,11 +891,7 @@ function draw() {
     text(t.t, t.x - camera, t.y, 18, t.color);
   }
   c.globalAlpha = 1;
-  for (let i = 0; i < 7; i++) {
-    const x = i * 430 - camera * 1.2;
-    leaf(x, 660, 85, "#729d65");
-    leaf(x + 90, 685, 100, "#85ad6f");
-  }
+  c.restore();
   if (mode === "pause") {
     c.fillStyle = "#264f4577";
     c.fillRect(0, 0, W, H);

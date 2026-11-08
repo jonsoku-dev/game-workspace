@@ -1,38 +1,66 @@
 <!doctype html>
 <html lang="ko">
-  <meta charset="utf-8" /><meta
-    name="viewport"
-    content="width=device-width,initial-scale=1"
-  /><title>포켓 무리 · 작은 친구들의 큰 연결</title
-  ><link rel="icon" href="art/plush-frog.png" /><link
-    rel="stylesheet"
-    href="style.css"
-  />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>포켓 무리 · 한 땀씩, 친구 구조</title>
+    <link rel="icon" href="art/plush-frog.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
     <main>
       <header>
         <a class="brand" href="#"
-          >POCKET PARADE <span>작은 친구들의 큰 연결</span></a
+          >POCKET PARADE <span>HAND-STITCHED LITTLE FRIENDS</span></a
         ><button id="sound" aria-pressed="false">소리 꺼짐</button>
       </header>
       <section class="intro">
-        <p class="eyebrow">A LITTLE PILE OF HAPPINESS</p>
+        <p class="eyebrow">작은 주머니 구조대 · 01</p>
         <h1>포켓 <em>무리</em><span>✦</span></h1>
-        <p>꼬물꼬물, 같은 친구끼리 쭈욱!</p>
+        <p class="intro-copy">
+          한 땀, 두 땀.<br />친구들을 포근하게 꺼내주세요.
+        </p>
+        <div class="friends" aria-hidden="true">
+          <img src="art/plush-bunny.png" alt="" /><img
+            src="art/plush-bear.png"
+            alt=""
+          /><img src="art/plush-cat.png" alt="" /><img
+            src="art/plush-frog.png"
+            alt=""
+          />
+        </div>
+        <p class="rule-note">
+          <b>같은 친구를 3마리부터 쭈욱.</b><br />7마리를 이으면, 마지막 자리에
+          별 단추!<br />남겨뒀다가 눌러 주변 친구를 함께 구해요.
+        </p>
       </section>
       <section class="game-shell" aria-label="포켓 무리 게임">
-        <div class="stats">
+        <div class="mission">
           <div>
-            <small>모은 점수</small><strong id="score">0</strong
-            ><span>/ 6,000</span>
+            <span class="eyebrow">오늘의 바느질</span>
+            <h2><strong id="rescued">0</strong><span> / 60 친구 구조</span></h2>
           </div>
           <div class="time">
             <small>남은 시간</small><strong id="time">75</strong><span>초</span>
           </div>
         </div>
+        <progress
+          id="rescue-progress"
+          max="60"
+          value="0"
+          aria-label="60친구 구조 목표"
+        ></progress>
+        <div class="mission-detail">
+          <span id="mission-label">75초 안에 친구 60마리를 꺼내주세요</span>
+          <div class="badges" aria-label="20마리마다 바느질 배지">
+            <span class="stitch-badge" aria-label="20친구 배지">20</span
+            ><span class="stitch-badge" aria-label="40친구 배지">40</span
+            ><span class="stitch-badge" aria-label="60친구 배지">60</span>
+          </div>
+        </div>
         <div class="fever-row">
-          <span id="fever-label">✦ 피버를 모아요</span
-          ><span>연결할수록 두 배!</span>
+          <span id="fever-label">바느질 충전 0 / 24</span
+          ><span id="fever-caption">가득 채우면 8초간 점수 두 배</span>
         </div>
         <progress
           id="fever"
@@ -43,7 +71,7 @@
         <div
           id="board"
           role="group"
-          aria-label="동물 주머니. 방향키 이동, Space 연결, Enter 확정."
+          aria-label="동물 주머니. 방향키 이동, Space 연결, Enter 확정. 별 단추는 Tab으로 이동해 Enter."
           tabindex="0"
         >
           <svg id="thread" viewBox="0 0 420 510" aria-hidden="true">
@@ -51,36 +79,46 @@
           </svg>
           <div id="tokens"></div>
           <div id="particles" aria-hidden="true"></div>
+          <div id="seams" aria-label="모아둔 별 단추"></div>
           <div class="overlay" id="overlay">
-            <div class="badge">함께 모이면 더 귀여워</div>
-            <h2>친구들을 이어주세요</h2>
+            <div class="badge">한 땀씩, 모두 함께</div>
+            <div class="welcome-friends" aria-hidden="true">
+              <img src="art/plush-bunny.png" alt="" /><img
+                src="art/plush-frog.png"
+                alt=""
+              />
+            </div>
+            <h2>60친구를 구해주세요</h2>
             <p>
-              같은 동물을 <b>3마리 이상</b> 쭈욱!<br />7마리부터 주변 친구도
-              함께 톡.
+              같은 친구를 <b>3마리 이상</b> 이어주세요.<br /><b
+                >7마리 연결 → 별 단추</b
+              >를 남겨두고<br />원하는 순간 톡! 주변 친구도 함께.
             </p>
             <button id="start" class="primary" disabled>친구들 오는 중…</button
-            ><small>75초 · 목표 6,000점</small>
+            ><small>75초 · 20마리마다 바느질 배지</small>
           </div>
           <div id="chain-label" aria-hidden="true"></div>
         </div>
+        <p id="bonus-hint">7마리를 이으면 끝자리에 별 단추가 생겨요</p>
         <div class="under">
-          <p id="status" role="status">주머니를 열어 친구들을 만나세요.</p>
-          <div>
+          <p id="status" role="status">준비됐나요? 작은 친구들이 기다려요.</p>
+          <div class="tools">
             <button id="shake">↝ 흔들기</button
-            ><button id="pause">Ⅱ 잠깐 쉬기</button>
+            ><span class="score-tag"><strong id="score">0</strong> 점</span
+            ><button id="pause">Ⅱ 쉬기</button>
           </div>
         </div>
       </section>
       <footer>
-        <b>같은 친구 3마리부터</b><span>드래그 → 놓으면 톡!</span>
         <details>
-          <summary>키보드로 놀기</summary>
+          <summary>키보드로 함께 놀기</summary>
           <p>
-            게임판에서 방향키로 친구를 선택하고 Space로 이어요. Enter로 터뜨리고
-            Escape로 취소해요. 연결 중에는 친구들이 잠깐 기다려요.
+            방향키로 친구를 고르고 Space로 이어요. Enter로 구조하고 Escape로
+            취소해요. 별 단추는 Tab으로 이동해 Space 또는 Enter로 눌러요. 연결
+            중에는 친구들이 기다려요.
           </p>
         </details>
-        <p>토끼 · 곰 · 고양이 · 개구리 / 나만의 작은 주머니</p>
+        <p>부드러운 친구들, 작은 구조 이야기.</p>
       </footer>
     </main>
     <script type="module" src="game.mjs"></script>

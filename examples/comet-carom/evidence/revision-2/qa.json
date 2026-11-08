@@ -1,0 +1,2227 @@
+{
+  "url": "http://127.0.0.1:53044/comet-carom/",
+  "passed": true,
+  "shots": [
+    {
+      "before": {
+        "turn": 2,
+        "wave": 1,
+        "selected": 1
+      },
+      "input": {
+        "angle": -127,
+        "skill": false
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 81.20967054137643,
+            "y": 670,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 273.24105802828313,
+            "y": 764.9279348074143,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 550,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 1,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 2,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 16,
+            "max": 80,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 2,
+        "wave": 1,
+        "charge": 1,
+        "phase": "flight",
+        "shot": {
+          "elapsed": 0.6666666666666667
+        },
+        "combo": 4,
+        "totalHits": 5,
+        "bounces": 1,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 1,
+          "hits": 1
+        },
+        "events": [],
+        "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 81.20967054137643,
+            "y": 670,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 550,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 16,
+            "max": 80,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 146,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 4,
+        "totalHits": 5,
+        "bounces": 2,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 1,
+          "hits": 4
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −34",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 3,
+        "wave": 1,
+        "selected": 2
+      },
+      "input": {
+        "angle": -117,
+        "skill": false
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 81.20967054137643,
+            "y": 670,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 90.50057857813488,
+            "y": 531.9717882084993,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 4,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 0,
+            "max": 80,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 168,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "flight",
+        "shot": {
+          "elapsed": 0.6250000000000002
+        },
+        "combo": 3,
+        "totalHits": 8,
+        "bounces": 2,
+        "assists": 3,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 1,
+          "hits": 4
+        },
+        "events": [],
+        "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 81.20967054137643,
+            "y": 670,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 230.72072972325535,
+            "y": 589.4027707300394,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 0,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 0,
+            "max": 80,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 151,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 4,
+        "totalHits": 9,
+        "bounces": 4,
+        "assists": 4,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 2,
+          "assists": 2,
+          "hits": 4
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −17",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 4,
+        "wave": 1,
+        "selected": 0
+      },
+      "input": {
+        "angle": -45,
+        "skill": true
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 469.89552389978536,
+            "y": 281.43239317947825,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 230.72072972325535,
+            "y": 589.4027707300394,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 200,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 5,
+        "wave": 2,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 3,
+        "totalHits": 12,
+        "bounces": 4,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 0,
+          "assists": 1,
+          "hits": 3
+        },
+        "events": [],
+        "last": "월식의 심장 · 금빛 틈을 노리세요. 벽·연계로 방어 관통",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 469.89552389978536,
+            "y": 281.43239317947825,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 230.72072972325535,
+            "y": 589.4027707300394,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 200,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 5,
+        "wave": 2,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 3,
+        "totalHits": 12,
+        "bounces": 4,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 0,
+          "assists": 1,
+          "hits": 3
+        },
+        "events": [],
+        "last": "월식의 심장 · 금빛 틈을 노리세요. 벽·연계로 방어 관통",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 5,
+        "wave": 2,
+        "selected": 1
+      },
+      "input": {
+        "angle": -24,
+        "skill": false
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 469.89552389978536,
+            "y": 281.43239317947825,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 60.898315742018575,
+            "y": 448.1009611885311,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 230.72072972325535,
+            "y": 589.4027707300394,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 192,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 16,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 5,
+        "wave": 2,
+        "charge": 1,
+        "phase": "flight",
+        "shot": {
+          "elapsed": 0.6666666666666667
+        },
+        "combo": 2,
+        "totalHits": 14,
+        "bounces": 6,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 1,
+        "lastShot": {
+          "banks": 0,
+          "assists": 1,
+          "hits": 3
+        },
+        "events": [],
+        "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 469.89552389978536,
+            "y": 281.43239317947825,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 230.72072972325535,
+            "y": 589.4027707300394,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 192,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 16,
+            "max": 52,
+            "timer": 2,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 2,
+            "period": 3
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 6,
+        "wave": 2,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 14,
+        "bounces": 6,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 1,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 2
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 6,
+        "wave": 2,
+        "selected": 2
+      },
+      "input": {
+        "angle": -69,
+        "skill": false
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 469.89552389978536,
+            "y": 281.43239317947825,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 226.30906210580753,
+            "y": 652.924670326253,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 184,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 16,
+            "max": 52,
+            "timer": 2,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 2,
+            "period": 3
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 6,
+        "wave": 2,
+        "charge": 2,
+        "phase": "flight",
+        "shot": {
+          "elapsed": 0.7
+        },
+        "combo": 1,
+        "totalHits": 15,
+        "bounces": 6,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 2,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 2
+        },
+        "events": [],
+        "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 469.89552389978536,
+            "y": 281.43239317947825,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 80.47634954588844,
+            "y": 482.1211231907615,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 184,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 4.71238898038469
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 16,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 7,
+        "wave": 2,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 15,
+        "bounces": 7,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 2,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 1
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −38",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 7,
+        "wave": 2,
+        "selected": 0
+      },
+      "input": {
+        "angle": -162,
+        "skill": true
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 640.2949626178718,
+            "y": 193.15096607587907,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 80.47634954588844,
+            "y": 482.1211231907615,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 140,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 4.71238898038469
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 7,
+        "wave": 2,
+        "charge": 0,
+        "phase": "flight",
+        "shot": {
+          "elapsed": 0.6333333333333335
+        },
+        "combo": 5,
+        "totalHits": 20,
+        "bounces": 9,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 3,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 1
+        },
+        "events": [],
+        "last": "성좌 해방 · 충돌 피해 2배",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 605.592954543066,
+            "y": 210.48889499034217,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 80.47634954588844,
+            "y": 482.1211231907615,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 88,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 0
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 8,
+        "wave": 2,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 6,
+        "totalHits": 21,
+        "bounces": 10,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 4,
+        "lastShot": {
+          "banks": 3,
+          "assists": 0,
+          "hits": 6
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 8,
+        "wave": 2,
+        "selected": 1
+      },
+      "input": {
+        "angle": -115,
+        "skill": false
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 605.592954543066,
+            "y": 210.48889499034217,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 504.97292621653486,
+            "y": 608.4671064540472,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 80.47634954588844,
+            "y": 482.1211231907615,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 80,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 0
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 8,
+        "wave": 2,
+        "charge": 1,
+        "phase": "flight",
+        "shot": {
+          "elapsed": 0.7
+        },
+        "combo": 1,
+        "totalHits": 22,
+        "bounces": 10,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 3,
+          "assists": 0,
+          "hits": 6
+        },
+        "events": [],
+        "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 605.592954543066,
+            "y": 210.48889499034217,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 80.47634954588844,
+            "y": 482.1211231907615,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 80,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 9,
+        "wave": 2,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 22,
+        "bounces": 12,
+        "assists": 5,
+        "weakHits": 0,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 1
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −38",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 9,
+        "wave": 2,
+        "selected": 2
+      },
+      "input": {
+        "angle": -40,
+        "skill": false
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 605.592954543066,
+            "y": 210.48889499034217,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 53.633200769326265,
+            "y": 521.0778693830753,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 28,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 9,
+        "wave": 2,
+        "charge": 2,
+        "phase": "flight",
+        "shot": {
+          "elapsed": 0.6666666666666667
+        },
+        "combo": 1,
+        "totalHits": 23,
+        "bounces": 12,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 1
+        },
+        "events": [],
+        "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+        "result": null
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 605.592954543066,
+            "y": 210.48889499034217,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 404.12881717640533,
+            "y": 734.2881011744661,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 28,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 10,
+        "wave": 2,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 23,
+        "bounces": 14,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 1
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null
+      }
+    },
+    {
+      "before": {
+        "turn": 10,
+        "wave": 2,
+        "selected": 0
+      },
+      "input": {
+        "angle": 172,
+        "skill": true
+      },
+      "during": {
+        "heroes": [
+          {
+            "x": 595.5252291775265,
+            "y": 211.90382151676945,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 404.12881717640533,
+            "y": 734.2881011744661,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 0,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 10,
+        "wave": 2,
+        "charge": 0,
+        "phase": "won",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 24,
+        "bounces": 14,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 1
+        },
+        "events": [],
+        "last": "월식이 걷혔습니다",
+        "result": "월식이 걷혔습니다"
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 595.5252291775265,
+            "y": 211.90382151676945,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 404.12881717640533,
+            "y": 734.2881011744661,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 0,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 10,
+        "wave": 2,
+        "charge": 0,
+        "phase": "won",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 24,
+        "bounces": 14,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 1
+        },
+        "events": [],
+        "last": "월식이 걷혔습니다",
+        "result": "월식이 걷혔습니다"
+      }
+    }
+  ],
+  "initial": {
+    "title": "혜성 궤도 · COMET CAROM",
+    "portraitLoaded": true,
+    "bodyWidth": 1425,
+    "width": 1440
+  },
+  "mobileAim": {
+    "width": 390,
+    "bodyWidth": 375,
+    "portraitVisible": true,
+    "preview": "첫 반사 · 벽 → 관통 준비",
+    "angle": "0",
+    "power": "100"
+  },
+  "mobileDuring": {
+    "heroes": [
+      {
+        "x": 560.7430502880674,
+        "y": 670,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 2,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 3,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 60,
+        "max": 80,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "flight",
+    "shot": {
+      "elapsed": 0.366666666666667
+    },
+    "combo": 1,
+    "totalHits": 1,
+    "bounces": 0,
+    "assists": 1,
+    "weakHits": 0,
+    "shieldBlocks": 0,
+    "lastShot": null,
+    "events": [],
+    "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+    "result": null
+  },
+  "mobileBank": {
+    "heroes": [
+      {
+        "x": 412.1164743392884,
+        "y": 670,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 2,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 3,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 60,
+        "max": 80,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "flight",
+    "shot": {
+      "elapsed": 0.9999999999999989
+    },
+    "combo": 1,
+    "totalHits": 1,
+    "bounces": 1,
+    "assists": 1,
+    "weakHits": 0,
+    "shieldBlocks": 0,
+    "lastShot": null,
+    "events": [],
+    "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+    "result": null
+  },
+  "mobileNextTurn": {
+    "heroes": [
+      {
+        "x": 81.20967054137643,
+        "y": 670,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 1,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 2,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 60,
+        "max": 80,
+        "timer": 1,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 1,
+    "turn": 2,
+    "wave": 1,
+    "charge": 1,
+    "phase": "aim",
+    "shot": null,
+    "combo": 1,
+    "totalHits": 1,
+    "bounces": 1,
+    "assists": 1,
+    "weakHits": 0,
+    "shieldBlocks": 0,
+    "lastShot": {
+      "banks": 1,
+      "assists": 1,
+      "hits": 1
+    },
+    "events": [],
+    "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+    "result": null
+  },
+  "bossShown": {
+    "heroes": [
+      {
+        "x": 469.89552389978536,
+        "y": 281.43239317947825,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 118.98020152146938,
+        "y": 352.3856748086487,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 230.72072972325535,
+        "y": 589.4027707300394,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "boss",
+        "x": 360,
+        "y": 245,
+        "r": 72,
+        "hp": 200,
+        "max": 200,
+        "timer": 2,
+        "period": 2,
+        "weakAngle": 1.5707963267948966
+      },
+      {
+        "id": "d",
+        "x": 180,
+        "y": 420,
+        "r": 38,
+        "hp": 52,
+        "max": 52,
+        "timer": 3,
+        "period": 3
+      },
+      {
+        "id": "e",
+        "x": 540,
+        "y": 420,
+        "r": 38,
+        "hp": 52,
+        "max": 52,
+        "timer": 3,
+        "period": 3
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 1,
+    "turn": 5,
+    "wave": 2,
+    "charge": 1,
+    "phase": "aim",
+    "shot": null,
+    "combo": 3,
+    "totalHits": 12,
+    "bounces": 4,
+    "assists": 5,
+    "weakHits": 0,
+    "shieldBlocks": 0,
+    "lastShot": {
+      "banks": 0,
+      "assists": 1,
+      "hits": 3
+    },
+    "events": [],
+    "last": "월식의 심장 · 금빛 틈을 노리세요. 벽·연계로 방어 관통",
+    "result": null
+  },
+  "weakShot": {
+    "before": {
+      "heroes": [
+        {
+          "x": 605.592954543066,
+          "y": 210.48889499034217,
+          "name": "솔",
+          "color": "#ffc777",
+          "art": "guardian-sun.png"
+        },
+        {
+          "x": 671.69320795906,
+          "y": 536.3297028481383,
+          "name": "루나",
+          "color": "#87e9ff",
+          "art": "guardian-moon.png"
+        },
+        {
+          "x": 80.47634954588844,
+          "y": 482.1211231907615,
+          "name": "노바",
+          "color": "#8ce5b4",
+          "art": "guardian-nova.png"
+        }
+      ],
+      "foes": [
+        {
+          "id": "boss",
+          "x": 360,
+          "y": 245,
+          "r": 72,
+          "hp": 80,
+          "max": 200,
+          "timer": 2,
+          "period": 2,
+          "weakAngle": 1.5707963267948966
+        },
+        {
+          "id": "d",
+          "x": 180,
+          "y": 420,
+          "r": 38,
+          "hp": 0,
+          "max": 52,
+          "timer": 1,
+          "period": 3
+        },
+        {
+          "id": "e",
+          "x": 540,
+          "y": 420,
+          "r": 38,
+          "hp": 0,
+          "max": 52,
+          "timer": 1,
+          "period": 3
+        }
+      ],
+      "hp": 104,
+      "maxHp": 180,
+      "selected": 2,
+      "turn": 9,
+      "wave": 2,
+      "charge": 2,
+      "phase": "aim",
+      "shot": null,
+      "combo": 1,
+      "totalHits": 22,
+      "bounces": 12,
+      "assists": 5,
+      "weakHits": 0,
+      "shieldBlocks": 5,
+      "lastShot": {
+        "banks": 2,
+        "assists": 0,
+        "hits": 1
+      },
+      "events": [],
+      "last": "적의 반격 · 파티 체력 −38",
+      "result": null
+    },
+    "input": {
+      "angle": -40,
+      "skill": false
+    },
+    "during": {
+      "heroes": [
+        {
+          "x": 605.592954543066,
+          "y": 210.48889499034217,
+          "name": "솔",
+          "color": "#ffc777",
+          "art": "guardian-sun.png"
+        },
+        {
+          "x": 671.69320795906,
+          "y": 536.3297028481383,
+          "name": "루나",
+          "color": "#87e9ff",
+          "art": "guardian-moon.png"
+        },
+        {
+          "x": 53.633200769326265,
+          "y": 521.0778693830753,
+          "name": "노바",
+          "color": "#8ce5b4",
+          "art": "guardian-nova.png"
+        }
+      ],
+      "foes": [
+        {
+          "id": "boss",
+          "x": 360,
+          "y": 245,
+          "r": 72,
+          "hp": 28,
+          "max": 200,
+          "timer": 2,
+          "period": 2,
+          "weakAngle": 1.5707963267948966
+        },
+        {
+          "id": "d",
+          "x": 180,
+          "y": 420,
+          "r": 38,
+          "hp": 0,
+          "max": 52,
+          "timer": 1,
+          "period": 3
+        },
+        {
+          "id": "e",
+          "x": 540,
+          "y": 420,
+          "r": 38,
+          "hp": 0,
+          "max": 52,
+          "timer": 1,
+          "period": 3
+        }
+      ],
+      "hp": 104,
+      "maxHp": 180,
+      "selected": 2,
+      "turn": 9,
+      "wave": 2,
+      "charge": 2,
+      "phase": "flight",
+      "shot": {
+        "elapsed": 0.6666666666666667
+      },
+      "combo": 1,
+      "totalHits": 23,
+      "bounces": 12,
+      "assists": 5,
+      "weakHits": 1,
+      "shieldBlocks": 5,
+      "lastShot": {
+        "banks": 2,
+        "assists": 0,
+        "hits": 1
+      },
+      "events": [],
+      "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+      "result": null
+    },
+    "after": {
+      "heroes": [
+        {
+          "x": 605.592954543066,
+          "y": 210.48889499034217,
+          "name": "솔",
+          "color": "#ffc777",
+          "art": "guardian-sun.png"
+        },
+        {
+          "x": 671.69320795906,
+          "y": 536.3297028481383,
+          "name": "루나",
+          "color": "#87e9ff",
+          "art": "guardian-moon.png"
+        },
+        {
+          "x": 404.12881717640533,
+          "y": 734.2881011744661,
+          "name": "노바",
+          "color": "#8ce5b4",
+          "art": "guardian-nova.png"
+        }
+      ],
+      "foes": [
+        {
+          "id": "boss",
+          "x": 360,
+          "y": 245,
+          "r": 72,
+          "hp": 28,
+          "max": 200,
+          "timer": 1,
+          "period": 2,
+          "weakAngle": 3.141592653589793
+        },
+        {
+          "id": "d",
+          "x": 180,
+          "y": 420,
+          "r": 38,
+          "hp": 0,
+          "max": 52,
+          "timer": 1,
+          "period": 3
+        },
+        {
+          "id": "e",
+          "x": 540,
+          "y": 420,
+          "r": 38,
+          "hp": 0,
+          "max": 52,
+          "timer": 1,
+          "period": 3
+        }
+      ],
+      "hp": 104,
+      "maxHp": 180,
+      "selected": 0,
+      "turn": 10,
+      "wave": 2,
+      "charge": 3,
+      "phase": "aim",
+      "shot": null,
+      "combo": 1,
+      "totalHits": 23,
+      "bounces": 14,
+      "assists": 5,
+      "weakHits": 1,
+      "shieldBlocks": 5,
+      "lastShot": {
+        "banks": 2,
+        "assists": 0,
+        "hits": 1
+      },
+      "events": [],
+      "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+      "result": null
+    }
+  },
+  "final": {
+    "heroes": [
+      {
+        "x": 595.5252291775265,
+        "y": 211.90382151676945,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 671.69320795906,
+        "y": 536.3297028481383,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 404.12881717640533,
+        "y": 734.2881011744661,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "boss",
+        "x": 360,
+        "y": 245,
+        "r": 72,
+        "hp": 0,
+        "max": 200,
+        "timer": 1,
+        "period": 2,
+        "weakAngle": 3.141592653589793
+      },
+      {
+        "id": "d",
+        "x": 180,
+        "y": 420,
+        "r": 38,
+        "hp": 0,
+        "max": 52,
+        "timer": 1,
+        "period": 3
+      },
+      {
+        "id": "e",
+        "x": 540,
+        "y": 420,
+        "r": 38,
+        "hp": 0,
+        "max": 52,
+        "timer": 1,
+        "period": 3
+      }
+    ],
+    "hp": 104,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 10,
+    "wave": 2,
+    "charge": 0,
+    "phase": "won",
+    "shot": null,
+    "combo": 1,
+    "totalHits": 24,
+    "bounces": 14,
+    "assists": 5,
+    "weakHits": 1,
+    "shieldBlocks": 5,
+    "lastShot": {
+      "banks": 0,
+      "assists": 0,
+      "hits": 1
+    },
+    "events": [],
+    "last": "월식이 걷혔습니다",
+    "result": "월식이 걷혔습니다"
+  },
+  "errors": {
+    "runtime": [],
+    "resources": []
+  },
+  "warnings": [
+    {
+      "url": "http://127.0.0.1:53044/favicon.ico",
+      "status": 404
+    }
+  ],
+  "limits": [
+    "Physical pointer drag is verified separately by primary CUA, not this run.",
+    "No audio listening or physical touch hardware.",
+    "Error listeners attached after navigation; early load errors additionally constrained by successful game flow and loaded art.",
+    "No game state injection; snapshot reads and UI-only scroll/error instrumentation.",
+    "Browser implicit favicon request returned404; all observed game resources loaded successfully."
+  ]
+}

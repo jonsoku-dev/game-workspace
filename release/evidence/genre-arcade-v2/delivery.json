@@ -1,0 +1,106 @@
+{
+  "ember-alley": {
+    "url": "http://127.0.0.1:53040/ember-alley/",
+    "build": "play/revision-2b",
+    "work_id": "web-2bfed40fbe5945d09682595015fd33e3",
+    "matched_files": {
+      "art/atlas.json": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+      "art/boss.png": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+      "art/boss.v2.png": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+      "art/foe.png": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+      "art/foe.v2.png": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+      "art/player.png": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+      "art/player.v2.png": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+      "combat.mjs": "0d548eb9f65f0ff07df030fb4334ddd28518f66979676e108e33f01a4169bdc1",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "076e57814f9db1d9ccb65f1fedf3070ecd0e2a8bbd1453127850c9a479a50177",
+      "genre.json": "d2950938b15130f6e2e7b9fe58d9b353a748fd990398ea8d4c704199759c5f80",
+      "index.html": "9fdbf7642b0176ab399067d8d11c9c2755c074c27e9668aadef590b7393c7d58",
+      "scenery/foundry.webp": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+      "scenery/furnace-v2.webp": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048"
+    },
+    "verified": [
+      "First melee on final public build: enemy HP 55 to 41 once. In the full browser playtest, a precision dodge enabled a 32-damage counter, with separate boss clear and defeat/retry observations",
+      "Rules cover startup/active/recovery, single target damage, misses, guard break, cooldown, expiry, retry and clear; exact input methods recorded separately"
+    ],
+    "prior_work_id": "web-1a927129c16f4ef9ad9fd98fc55c7144"
+  },
+  "star-canopy": {
+    "url": "http://127.0.0.1:53040/star-canopy/",
+    "build": "play/revision-2",
+    "work_id": "web-4d23ca6c18dd472a9cd171a3a1e81ce3",
+    "matched_files": {
+      "art/atlas.json": "712025424824e24217e58f9c912522e74f8ca91509da0e0816f25dbd3876f5da",
+      "art/creature.png": "3df79f475c50621fe1d299ae9bd95165998216174b28607b2558038700a7837c",
+      "art/player.png": "9dd8d4685a4ae2decab0c4eedf68233200654bc4d5ef550bb587395203866dc3",
+      "art/walk-cycle.png": "68a44f03c6fd243a25c436492ceea37bd1a98fd78afe082aa3249a20b4b8dac1",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "63e0e304d3dc433ee107dbc516cd1bb0cf4bbd08cdae3daf93e93364c5deff10",
+      "genre.json": "50af3a1083e85fcda567bca7a4171833dd57adea6c8933bbe338197308b31003",
+      "index.html": "c717b0c1a3919f3a8f8f63d65c64ab058dc341732e56b0d70ce9fd5d840ec365",
+      "rules.mjs": "45d96e1df2b61874ebb857496adab54127e47f38a9288e017407a03548bef849",
+      "scenery/canopy.webp": "c3d59042053780f97a842b08a5ec8148489e8baee42a5777508c027d1ceb0f29",
+      "scenery/ground-strip.png": "900b89937941a07f86ee27b8e00741d2340441bfef474e138f2874927beea893",
+      "scenery/platform-island.png": "bd187cbd86e47c8a0ddf5ba806aee8272a8cda9c403ba4589b5cba0390b11b93",
+      "scenery/portal.png": "470d8c145314d96c61e9699c698aca889d85ddba0415eba37ed40cca074babac",
+      "scenery/wind-stump.png": "19120abc827c0918ef768fb25a63097369c04050bf6e04d6e5a91f59b1494c26",
+      "style.css": "2fbbbdce63d046f0f8b7d2b47780d3815ba5defafca5ec2291cc22691ed00c3e"
+    },
+    "verified": [
+      "Collected three leaves; a bloom missed by aim/height stays closed, projectile contact opens the portal; quest victory observed with 60 HP and restart restores level 1",
+      "Six distinct walk cells; two stride poses observed in game. Painted ground and platform contact inspected. Desktop and 390px browser checks passed"
+    ],
+    "prior_work_id": "web-80964a720c2940499a533a346a84d25b"
+  },
+  "pocket-parade": {
+    "url": "http://127.0.0.1:53040/pocket-parade/",
+    "build": "play/revision-2b",
+    "work_id": "web-10cc0ba23d494b9ebd303f055dd28411",
+    "matched_files": {
+      "art/plush-bear.png": "43fd391bde0e90057e74e62a1aaacf4e378e5dbfff9483ca701572982ec3b33e",
+      "art/plush-bunny.png": "a3751ae0d1ec34d50038b96c756a2fa078ba8937d84efc4de3e4f350cb88a918",
+      "art/plush-cat.png": "098446bd17a8cdbe9dd4d38143fcec4041e97665c92dc170a7532ba1abfdd2e9",
+      "art/plush-frog.png": "923c5fde747ee7849896fadff6847bd888132e61852ebac4bf288c7f5545bbaa",
+      "art/pouch.webp": "0d23c46e2ff1f22e4e7a37f69aaca4168c5c2c9049db61fab7daca42adbc55d0",
+      "art/star-button.png": "a1472bab08cf9e4bca2c22ac60b39ea984e6a65ef5991dad1901151b5b771865",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "6224674243513606c988a8dca0ff9d0c8e6537839e8fb233072a53ad17570c48",
+      "genre.json": "0abc74897f0e6e3d5b65889929a9f49ce01552f7892e1fb204cd8f118e2b59c5",
+      "index.html": "3fd81c4055835f2af403749b08285c0d70c5a936ff719429e9afe475ca8c36e9",
+      "rules.mjs": "ed61e04331fe526d1149b7f4913db1a9b77a3f6e9e9420fd31c15bf5f35d2385",
+      "style.css": "f58f556719289c4a5f4ba64e6e9b044c7574311fa1be9f1eae178e2012b180e6"
+    },
+    "verified": [
+      "Seven-toy connection left a star button; delayed click rescued nearby toys, refilled the board and earned progress",
+      "Desktop in-app mouse drag rescued three frogs for 225 points; verifier used synthesized longer chains and normal control clicks; see project QA for timing and restart",
+      "Natural 75-second round ended with 61 rescues, all three badges, fever and win; normal restart reset state. Burst excludes offscreen toys, with 390px layout verified"
+    ],
+    "prior_work_id": "web-518006ea5bb54c8a9472830d4259afa2"
+  },
+  "comet-carom": {
+    "url": "http://127.0.0.1:53040/comet-carom/",
+    "build": "play/revision-2b",
+    "work_id": "web-63ccd83bd7474a179e410e20fe8fd068",
+    "matched_files": {
+      "art/boss-orb.png": "bf5c3ad0bd7f7f444a9160ad0599628c6367f899940ebbc73d30fa0df6c7a0f2",
+      "art/foe-orb.png": "cb60eba508a9f7d69c4cb2c0a55d2e9b620805fe58fc8b48d73ea5d85a1577b6",
+      "art/guardian-moon.png": "ccf4289dac74fe022fc0c714430b139b69194d55820cfe62165f3df36bdd3837",
+      "art/guardian-nova.png": "af9509d34df573222e2fc063cbb6daa810df9db783e954a422b428ba652d4e53",
+      "art/guardian-sun.png": "2722e6af28239f3b6ef3817397adb7f34dc3018b68429dc107b7456f489cd215",
+      "art/guardians.webp": "1e8c0610a0fb79c2dce5c81313c546c1d6c4575c418f0b0c4b0ef6c68a8b18f1",
+      "art/sanctum.webp": "7eff68e7666ea7fef3be6d429b94a4c7883e262d4d00c3133a65faeaa59d84ae",
+      "combat.mjs": "03c6aca69980ae8cafcbb9cbb794af8738d6fa5c1c86e0429cfdd4b9c5aa049c",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "1c9fce1fe2d231ef18a8e0f4b887839cccdbc8e63e1c8c33e223b3b4505c5dc6",
+      "genre.json": "9d6f2f004176caca59789cfcd3c97fd20769f5fc74b2333114418b4e1e26ee2a",
+      "index.html": "14b8881a52ba782692a7f60af26549353c38575ca846a3b8bec914fa54326be1",
+      "style.css": "c6894364b255570d63eb4ac2a112e6f6968fffc0dd21337764de4965eaf57258"
+    },
+    "verified": [
+      "Actual mobile first shot: bank and ally assist; boss guard and a 52-damage weak-point hit; normal 10-turn victory with 104 HP on the first revision-2 export",
+      "Corrected HTML export changes favicon link only; same gameplay bytes. In-app mouse drag at 2 degrees, 92 percent power yielded one bank and one assist then turn two",
+      "225 sampled aim previews matched simulation ticks; device frame cost not measured"
+    ],
+    "prior_work_id": "web-f4064ba20ad0495cb60462409b76b3a7"
+  }
+}

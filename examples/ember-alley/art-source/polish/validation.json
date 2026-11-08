@@ -1,0 +1,718 @@
+{
+  "player": {
+    "file": "player.v2.png",
+    "frameWidth": 192,
+    "frameHeight": 192,
+    "frames": 24,
+    "pivot": [
+      96,
+      176
+    ],
+    "sourceScale": 0.39,
+    "uniqueCels": 24,
+    "uniqueSilhouettes": 24,
+    "clipping": "pass",
+    "groundAndCenterAlignment": "pass",
+    "bounds": [
+      {
+        "frame": 0,
+        "sourceBounds": [
+          35,
+          17,
+          259,
+          342
+        ],
+        "packedBounds": [
+          52,
+          49,
+          139,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 1,
+        "sourceBounds": [
+          396,
+          16,
+          614,
+          340
+        ],
+        "packedBounds": [
+          53,
+          50,
+          138,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 2,
+        "sourceBounds": [
+          745,
+          23,
+          1013,
+          340
+        ],
+        "packedBounds": [
+          43,
+          52,
+          148,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 3,
+        "sourceBounds": [
+          1091,
+          19,
+          1330,
+          335
+        ],
+        "packedBounds": [
+          49,
+          53,
+          142,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 4,
+        "sourceBounds": [
+          20,
+          378,
+          308,
+          692
+        ],
+        "packedBounds": [
+          40,
+          54,
+          152,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 5,
+        "sourceBounds": [
+          378,
+          376,
+          598,
+          695
+        ],
+        "packedBounds": [
+          53,
+          52,
+          139,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 6,
+        "sourceBounds": [
+          690,
+          381,
+          946,
+          689
+        ],
+        "packedBounds": [
+          46,
+          56,
+          146,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 7,
+        "sourceBounds": [
+          999,
+          407,
+          1444,
+          691
+        ],
+        "packedBounds": [
+          9,
+          65,
+          183,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 8,
+        "sourceBounds": [
+          33,
+          745,
+          302,
+          1069
+        ],
+        "packedBounds": [
+          43,
+          50,
+          148,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 9,
+        "sourceBounds": [
+          329,
+          726,
+          617,
+          1069
+        ],
+        "packedBounds": [
+          40,
+          42,
+          152,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 10,
+        "sourceBounds": [
+          685,
+          760,
+          1035,
+          1068
+        ],
+        "packedBounds": [
+          28,
+          56,
+          164,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 11,
+        "sourceBounds": [
+          1083,
+          745,
+          1364,
+          1064
+        ],
+        "packedBounds": [
+          41,
+          52,
+          151,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 12,
+        "sourceBounds": [
+          11,
+          67,
+          351,
+          330
+        ],
+        "packedBounds": [
+          29,
+          73,
+          162,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 13,
+        "sourceBounds": [
+          389,
+          14,
+          727,
+          330
+        ],
+        "packedBounds": [
+          30,
+          53,
+          162,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 14,
+        "sourceBounds": [
+          737,
+          61,
+          1094,
+          331
+        ],
+        "packedBounds": [
+          26,
+          71,
+          165,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 15,
+        "sourceBounds": [
+          1112,
+          104,
+          1418,
+          332
+        ],
+        "packedBounds": [
+          36,
+          87,
+          155,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 16,
+        "sourceBounds": [
+          36,
+          346,
+          340,
+          736
+        ],
+        "packedBounds": [
+          36,
+          24,
+          155,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 17,
+        "sourceBounds": [
+          394,
+          373,
+          646,
+          659
+        ],
+        "packedBounds": [
+          47,
+          50,
+          145,
+          162
+        ],
+        "airborneLift": 14
+      },
+      {
+        "frame": 18,
+        "sourceBounds": [
+          697,
+          447,
+          1013,
+          680
+        ],
+        "packedBounds": [
+          34,
+          85,
+          157,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 19,
+        "sourceBounds": [
+          1062,
+          450,
+          1437,
+          680
+        ],
+        "packedBounds": [
+          23,
+          86,
+          169,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 20,
+        "sourceBounds": [
+          24,
+          759,
+          329,
+          1062
+        ],
+        "packedBounds": [
+          36,
+          58,
+          155,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 21,
+        "sourceBounds": [
+          380,
+          795,
+          630,
+          1063
+        ],
+        "packedBounds": [
+          47,
+          71,
+          145,
+          176
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 22,
+        "sourceBounds": [
+          717,
+          705,
+          1037,
+          1020
+        ],
+        "packedBounds": [
+          33,
+          39,
+          158,
+          162
+        ],
+        "airborneLift": 14
+      },
+      {
+        "frame": 23,
+        "sourceBounds": [
+          1082,
+          729,
+          1427,
+          1057
+        ],
+        "packedBounds": [
+          28,
+          34,
+          163,
+          162
+        ],
+        "airborneLift": 14
+      }
+    ],
+    "sha256": [
+      "ec1955bc15480b6116d240d2602a30d37d488b965d4c3af0a199d8370cb3998b",
+      "73c451a313ee12950062e2609f07bbc5487453480abbefc2230fd75fd52ca42c",
+      "242e4ecf01f6e3398e3d4694c52f9a819b1609fa059df0ef05987f35345ac8ec",
+      "7d7eabe9b9fdac1ff648511137d5af279ed54c7100faae1cf2e4628838a02bcf",
+      "c1ceb66e738de3865da635fa5de1410f4020a5ed488ccded210e3a3b1c3611d5",
+      "86130892409a3bda3c37aa4b9eeb40de8e80fb552bbbc04c02a802a6eaea72e1",
+      "db9fcee65460584158fbb77cd326703a339bee53183478d2578f8e8010cae7c3",
+      "31223a9d73b50e5650c900eb158d0dad24504942cdae81923a1bad717882e704",
+      "477fc1851f85dba60f59b2fc0b9c194179b147446bda8504bf60b6f739156e36",
+      "0be811b90435140d29fd51d32a05fec67f14e012ebc2da58fbfefba632c5e014",
+      "99127166a6b8d83ffe949639cd27be960d49cbdaa6e613330a7287073aa664bc",
+      "f08e2cae711085f57bc1b613d40a066d6582184f16f693005b6598b97eb8a269",
+      "cfd98c906f873cd0d5ab68f63a2b3305805e606c0f6b51ee56fe8cbe2d79c1d8",
+      "b1e9bf0568c416c177f9b9df6ec43dce7a69a5f46cac81abade315b2db00018e",
+      "843656b895643c312ff18d3ca4108739fa87c523e4f597c4242d660c353e2fe8",
+      "1bd944f6c3a17ea72d5f7168e11485934a401f15829659c09a3045181e17bae2",
+      "abf93a72a71232324e1c9176ef0a66f7102a18cf94c5bfec89712d81761d7178",
+      "6de66653d0202a165db5212fc50b0c31ff2ea06025ba24157d7aa286d2ab594d",
+      "3750f2d2fdb5d613cf48e028216ab769265883385162fc6fd0c2a26180e57462",
+      "3a9fc420798e63699dbd95ef1476bb57eb7fe5b2ec3e9068bd950391d068bb3b",
+      "9c163751bec8d1236784b16543800b296de5bcac1672b58ee9d072ceee076abe",
+      "f76ffe4d40941e9302a03b1e638d8559f47e0e850fa14b72a9b422c0212848a8",
+      "9dc2bcea193fcde30e38688e9b653c3902abad8f73d5eb7606fb7818b01225a4",
+      "fd5f6012a250fac052dbc846de0b2bfcbbb411f2a8037c8fe27762d8c1d0102a"
+    ]
+  },
+  "foe": {
+    "file": "foe.v2.png",
+    "frameWidth": 144,
+    "frameHeight": 144,
+    "frames": 6,
+    "pivot": [
+      72,
+      134
+    ],
+    "sourceScale": 0.188,
+    "uniqueCels": 6,
+    "uniqueSilhouettes": 6,
+    "clipping": "pass",
+    "groundAndCenterAlignment": "pass",
+    "bounds": [
+      {
+        "frame": 0,
+        "sourceBounds": [
+          24,
+          33,
+          399,
+          484
+        ],
+        "packedBounds": [
+          37,
+          49,
+          107,
+          134
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 1,
+        "sourceBounds": [
+          520,
+          27,
+          972,
+          484
+        ],
+        "packedBounds": [
+          29,
+          48,
+          114,
+          134
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 2,
+        "sourceBounds": [
+          1089,
+          10,
+          1467,
+          484
+        ],
+        "packedBounds": [
+          36,
+          45,
+          107,
+          134
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 3,
+        "sourceBounds": [
+          24,
+          529,
+          361,
+          992
+        ],
+        "packedBounds": [
+          40,
+          47,
+          103,
+          134
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 4,
+        "sourceBounds": [
+          410,
+          587,
+          1114,
+          986
+        ],
+        "packedBounds": [
+          6,
+          59,
+          138,
+          134
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 5,
+        "sourceBounds": [
+          1125,
+          538,
+          1504,
+          996
+        ],
+        "packedBounds": [
+          36,
+          48,
+          107,
+          134
+        ],
+        "airborneLift": 0
+      }
+    ],
+    "sha256": [
+      "b970604c6dc9d10a55f4b10260dce5bd20b575a065c31b1d22131a382e9305f4",
+      "34b2618e1add2b2e227275ee3800191e455fb410955909c55bfb03fa2dd96697",
+      "59581f7ecc164b4262b24b7cc66a5941ee9bcfb6f4849b710d8d287e127d9e3e",
+      "48de046df6cbb98589efbb2e1d12abbfd2894871dbfde833ad24082253b63fcd",
+      "b26c67d89230a90a79e2561b942e92a7d033068a9ff641dd48deebc854ce3f6f",
+      "5494a1fd4f2cc16074f2b59800097f7c7ec15b6e93eaba2fc8d74c168739cdda"
+    ]
+  },
+  "boss": {
+    "file": "boss.v2.png",
+    "frameWidth": 288,
+    "frameHeight": 288,
+    "frames": 8,
+    "pivot": [
+      144,
+      260
+    ],
+    "sourceScale": 0.58,
+    "uniqueCels": 8,
+    "uniqueSilhouettes": 8,
+    "clipping": "pass",
+    "groundAndCenterAlignment": "pass",
+    "bounds": [
+      {
+        "frame": 0,
+        "sourceBounds": [
+          16,
+          60,
+          427,
+          371
+        ],
+        "packedBounds": [
+          25,
+          80,
+          263,
+          260
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 1,
+        "sourceBounds": [
+          461,
+          41,
+          859,
+          372
+        ],
+        "packedBounds": [
+          28,
+          68,
+          259,
+          260
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 2,
+        "sourceBounds": [
+          878,
+          58,
+          1322,
+          376
+        ],
+        "packedBounds": [
+          15,
+          76,
+          273,
+          260
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 3,
+        "sourceBounds": [
+          1361,
+          49,
+          1767,
+          371
+        ],
+        "packedBounds": [
+          26,
+          73,
+          261,
+          260
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 4,
+        "sourceBounds": [
+          32,
+          420,
+          397,
+          850
+        ],
+        "packedBounds": [
+          38,
+          11,
+          250,
+          260
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 5,
+        "sourceBounds": [
+          427,
+          572,
+          893,
+          851
+        ],
+        "packedBounds": [
+          9,
+          98,
+          279,
+          260
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 6,
+        "sourceBounds": [
+          914,
+          535,
+          1312,
+          845
+        ],
+        "packedBounds": [
+          28,
+          80,
+          259,
+          260
+        ],
+        "airborneLift": 0
+      },
+      {
+        "frame": 7,
+        "sourceBounds": [
+          1336,
+          526,
+          1762,
+          850
+        ],
+        "packedBounds": [
+          20,
+          72,
+          267,
+          260
+        ],
+        "airborneLift": 0
+      }
+    ],
+    "sha256": [
+      "4541b1b4bf8a846fc4a04c00dd1313984ccb6399bfd1e3c52ef592f64558d643",
+      "ae02dae3fd9d63787592f98d08a0a9573eb0e0f2dbb3b192fccae745941fe4b6",
+      "f111112c4e896bd637e69891eac61963d00be91882d478a3c568e154ebf64c91",
+      "882a9a8c5adfc47b56e1cc61e962ee6f179277e6cab7d866c11c30a588733e92",
+      "e92e74f685b4628df96a235db9498da5e5246d8abffe083da9bc3fe1d955564b",
+      "f4ed431647244ca3991395d77f9103193b3324cf3f139814d2c058c7aebe8bfe",
+      "0cbacd47e96fb4b849706371b5456f79bcbd7fc3a17738d145c8348adc581791",
+      "e668e9ebab8120b4bc0ea731adb777bdc74181e860b129e7bfe84dc2e01bd7d3"
+    ]
+  },
+  "furnace": {
+    "file": "scenery/furnace-v2.webp",
+    "size": [
+      1920,
+      1080
+    ],
+    "originalSize": [
+      1672,
+      941
+    ],
+    "alpha": "opaque environment",
+    "source": "polish/furnace-source.png"
+  }
+}

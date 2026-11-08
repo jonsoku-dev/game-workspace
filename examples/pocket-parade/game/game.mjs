@@ -9,6 +9,11 @@ import {
   findMove,
   step,
   seeded,
+  RESCUE_GOAL,
+  seamFrom,
+  burstIds,
+  takeSeam,
+  stitchedBadges,
 } from "./rules.mjs";
 const $ = (s) => document.querySelector(s),
   board = $("#board"),
@@ -32,7 +37,10 @@ let tokens = [],
   accumulator = 0,
   focusId = null,
   shakeWait = 0,
-  pops = 0;
+  pops = 0,
+  rescued = 0,
+  seams = [],
+  nextSeamId = 0;
 function cue(name) {
   feedback.emit(name);
 }
@@ -45,7 +53,10 @@ function spawn(initial = false) {
     row = Math.floor(id / 7);
   const t = {
     id,
-    kind: initial && row === 6 && column < 4 ? 0 : Math.floor(random() * 4),
+    kind:
+      initial && ((row === 6 && column < 5) || (row === 7 && column < 2))
+        ? 0
+        : Math.floor(random() * 4),
     x: 35 + column * 57 + (row % 2 ? 8 : 0),
     y: initial ? H - 35 - row * 49 : -R - (id % 7) * 30,
     vx: (random() - 0.5) * 20,
@@ -70,14 +81,35 @@ function spawn(initial = false) {
   return t;
 }
 function hud() {
+  $("#rescued").textContent = Math.min(rescued, RESCUE_GOAL);
+  $("#rescue-progress").value = Math.min(rescued, RESCUE_GOAL);
+  $("#mission-label").textContent =
+    rescued >= RESCUE_GOAL
+      ? "구조 완료! 더 많은 친구를 모아봐요"
+      : `친구 ${RESCUE_GOAL - rescued}마리만 더 꺼내주세요`;
+  document.querySelectorAll(".stitch-badge").forEach((badge, index) => {
+    const earned = index < stitchedBadges(rescued);
+    badge.classList.toggle("earned", earned);
+    badge.setAttribute(
+      "aria-label",
+      `${(index + 1) * 20}친구 배지 ${earned ? "획득" : "미획득"}`,
+    );
+  });
+  $("#bonus-hint").textContent = seams.length
+    ? `별 단추 ${seams.length}개 · 눌러서 주변 친구 구조`
+    : "7마리를 이으면 끝자리에 별 단추가 생겨요";
   $("#score").textContent = score.toLocaleString("ko-KR");
   $("#time").textContent = Math.ceil(remaining);
   $("#fever").value = feverLeft > 0 ? feverLeft * 3 : charge;
   $("#fever-label").textContent =
     feverLeft > 0
       ? `✦ FEVER! ${Math.ceil(feverLeft)}초 · 점수 두 배`
-      : "✦ 피버를 모아요";
+      : `바느질 충전 ${Math.min(charge, 24)} / 24`;
+  $("#fever-caption").textContent =
+    feverLeft > 0 ? "지금 모든 연결 점수 ×2" : "가득 채우면 8초간 점수 두 배";
   $(".game-shell").classList.toggle("fevering", feverLeft > 0);
+  board.classList.toggle("paused", phase === "paused");
+  for (const seam of seams) seam.el.disabled = phase !== "playing";
   $("#shake").disabled = phase !== "playing" || shakeWait > 0;
   $("#pause").disabled = phase === "ready" || phase === "ended";
 }
@@ -85,7 +117,9 @@ function render() {
   for (const t of tokens) {
     t.el.style.left = `${((t.x - R) / W) * 100}%`;
     t.el.style.top = `${((t.y - R) / H) * 100}%`;
-    t.el.classList.toggle("selected", chain.includes(t.id));
+    const index = chain.indexOf(t.id);
+    t.el.classList.toggle("selected", index >= 0);
+    t.el.style.setProperty("--lean", `${index % 2 ? 9 : -9}deg`);
     t.el.setAttribute("aria-pressed", String(chain.includes(t.id)));
   }
   line.setAttribute(
@@ -102,7 +136,7 @@ function render() {
   label.textContent =
     chain.length < 3
       ? `${chain.length} / 3 · 조금 더!`
-      : `${chain.length} 연결 · +${points(chain.length, feverLeft > 0).toLocaleString()}${chain.length >= 7 ? " · 보너스!" : ""}`;
+      : `${chain.length} 연결 · +${points(chain.length, feverLeft > 0).toLocaleString()}${chain.length >= 7 ? " · 별 단추 준비!" : ""}`;
 }
 function begin() {
   tokens = [];
@@ -114,6 +148,13 @@ function begin() {
   feverLeft = 0;
   shakeWait = 0;
   pops = 0;
+  rescued = 0;
+  seams = [];
+  nextSeamId = 0;
+  $("#seams").replaceChildren();
+  $("#particles").replaceChildren();
+  focusId = null;
+  accumulator = 0;
   phase = "playing";
   nextId = 0;
   held = false;
@@ -121,7 +162,7 @@ function begin() {
   for (let i = 0; i < 240; i++) step(tokens, 1 / 120);
   overlay.hidden = true;
   $("#pause").textContent = "Ⅱ 잠깐 쉬기";
-  say("같은 친구를 3마리 이상 이어요.");
+  say("75초 안에 60친구 구조! 같은 동물을 3마리부터 이어요.");
   cue("restart");
   hud();
   render();
@@ -133,10 +174,11 @@ function end() {
   held = false;
   render();
   overlay.hidden = false;
-  overlay.innerHTML = `<div class="badge">${score >= 6000 ? "목표 달성! 친구들이 반겨요" : "오늘도 함께라서 즐거웠어"}</div><h2>${score >= 6000 ? "주머니가 행복으로 가득!" : "다음엔 더 길게 이어봐요"}</h2><p><b>${score.toLocaleString()}점</b> · ${pops}번 연결<br>목표 6,000점 · ${Math.round((score / 6000) * 100)}% 달성</p><button class="primary" id="again">한 번 더 놀기 ↻</button><small>새로운 친구 배치로 다시 시작해요</small>`;
+  const complete = rescued >= RESCUE_GOAL;
+  overlay.innerHTML = `<div class="badge">${stitchedBadges(rescued)}개의 바느질 배지</div><h2>${complete ? "모두 포근하게 구했어요!" : "조금 더 이어볼까요?"}</h2><p><b>${rescued} / ${RESCUE_GOAL} 친구 구조</b><br>${score.toLocaleString()}점 · ${pops}번 연결</p><button class="primary" id="again">새 주머니 열기 ↻</button><small>별 단추는 남겨뒀다가 원하는 때 눌러요</small>`;
   $("#again").onclick = begin;
   $("#again").focus();
-  cue(score >= 6000 ? "win" : "progress");
+  cue(complete ? "win" : "progress");
   hud();
 }
 function add(t) {
@@ -160,42 +202,97 @@ function release() {
     render();
     return;
   }
-  const n = chain.length,
-    selected = tokens.filter((t) => chain.includes(t.id)),
-    removed = new Set(chain),
-    gain = points(n, feverLeft > 0);
-  if (n >= 7) {
-    const center = selected[Math.floor(n / 2)];
-    for (const t of tokens)
-      if (Math.hypot(t.x - center.x, t.y - center.y) < R * 2.8)
-        removed.add(t.id);
-  }
-  for (const t of tokens.filter((t) => removed.has(t.id))) {
-    t.el.remove();
-    const p = document.createElement("span");
-    p.className = "spark";
-    p.textContent = ["✦", "♡", "✧"][t.id % 3];
-    p.style.cssText = `left:${(t.x / W) * 100}%;top:${(t.y / H) * 100}%;color:${["#de8c92", "#94bfa8", "#cfb16f"][t.id % 3]};--dx:${(random() - 0.5) * 100}px`;
-    $("#particles").append(p);
-    setTimeout(() => p.remove(), 750);
-  }
-  tokens = tokens.filter((t) => !removed.has(t.id));
-  score += gain + (removed.size - n) * 75;
+  const n = chain.length;
+  const seam = seamFrom(chain, tokens, nextSeamId);
+  const gain = points(n, feverLeft > 0);
+  removeToys(new Set(chain));
+  score += gain;
+  rescued += n;
   pops++;
   charge += n;
   if (charge >= 24 && feverLeft <= 0) {
     charge = 0;
     feverLeft = 8;
     cue("win");
-  } else cue(n >= 7 ? "win" : "pickup");
-  say(
-    `${n}마리 연결! +${gain.toLocaleString()}점${n >= 7 ? ` · 보너스 ${removed.size - n}마리 톡!` : ""}`,
-  );
+  } else cue(seam ? "progress" : "pickup");
   chain = [];
+  if (seam) {
+    nextSeamId++;
+    addSeam(seam);
+  }
+  say(
+    `${n}친구 구조 · +${gain.toLocaleString()}점${seam ? " · 끝자리에 별 단추! 원하는 때 눌러요" : ""}`,
+  );
   while (tokens.length < COUNT) spawn();
   hud();
   render();
 }
+function removeToys(ids) {
+  for (const t of tokens.filter((t) => ids.has(t.id))) {
+    t.el.remove();
+    const ghost = t.el.cloneNode(true);
+    ghost.removeAttribute("data-id");
+    ghost.removeAttribute("aria-label");
+    ghost.tabIndex = -1;
+    ghost.className = "token pop-toy";
+    $("#particles").append(ghost);
+    setTimeout(() => ghost.remove(), 420);
+    const p = document.createElement("span");
+    p.className = "spark";
+    p.textContent = ["✦", "♡", "✧"][t.id % 3];
+    p.style.cssText = `left:${(t.x / W) * 100}%;top:${(t.y / H) * 100}%;--dx:${(random() - 0.5) * 100}px`;
+    $("#particles").append(p);
+    setTimeout(() => p.remove(), 750);
+  }
+  tokens = tokens.filter((t) => !ids.has(t.id));
+}
+function addSeam(seam) {
+  const el = document.createElement("button");
+  el.className = "seam-button";
+  const img = document.createElement("img");
+  img.src = "art/star-button.png";
+  img.alt = "";
+  el.append(img);
+  el.style.left = `${(seam.x / W) * 100}%`;
+  el.style.top = `${(seam.y / H) * 100}%`;
+  el.setAttribute(
+    "aria-label",
+    "별 단추: 주변 친구 꺼내기. Enter 또는 Space로 사용",
+  );
+  el.addEventListener("pointerdown", (event) => event.stopPropagation());
+  el.addEventListener("keydown", (event) => event.stopPropagation());
+  el.onclick = () => useSeam(seam.id);
+  seam.el = el;
+  seams.push(seam);
+  $("#seams").append(el);
+}
+function useSeam(id) {
+  if (phase !== "playing") return;
+  const selected = takeSeam(seams, id);
+  if (!selected) return;
+  const ids = burstIds(tokens, selected.seam);
+  if (!ids.length) {
+    say("단추 주변이 비었어요. 친구가 내려오면 눌러요.");
+    return;
+  }
+  const hadFocus = document.activeElement === selected.seam.el;
+  selected.seam.el.remove();
+  seams = selected.remaining;
+  held = false;
+  chain = [];
+  removeToys(new Set(ids));
+  rescued += ids.length;
+  score += ids.length * 75 * (feverLeft > 0 ? 2 : 1);
+  while (tokens.length < COUNT) spawn();
+  board.classList.add("bursting");
+  setTimeout(() => board.classList.remove("bursting"), 450);
+  say(`별 단추 톡! ${ids.length}친구를 함께 구했어요.`);
+  cue("win");
+  if (hadFocus) board.focus();
+  hud();
+  render();
+}
+
 function point(e) {
   const rect = board.getBoundingClientRect();
   return {
@@ -294,6 +391,7 @@ function pause() {
     phase === "paused" ? "쉬는 중 · 시간도 기다려요." : "다시 친구들을 이어요!",
   );
   cue(phase === "paused" ? "pause" : "resume");
+  hud();
   render();
 }
 $("#pause").onclick = pause;
@@ -374,5 +472,8 @@ window.pocket = {
     tokens: tokens.map(({ id, kind, x, y }) => ({ id, kind, x, y })),
     move: findMove(tokens),
     pops,
+    rescued,
+    badges: stitchedBadges(rescued),
+    seams: seams.map(({ id, x, y }) => ({ id, x, y })),
   }),
 };

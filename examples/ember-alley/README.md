@@ -5,12 +5,14 @@
 `game/index.html`이 실행 진입점입니다. 모든 런타임 자원은 `game/` 내부 상대 경로이며 네트워크 라이브러리나 계정이 필요하지 않습니다. `./feedback.mjs`는 Studio 게시기가 결과에 주입하는 공용 피드백 모듈이며 원본 게임 폴더에는 중복 저장하지 않습니다. 소리는 처음에 꺼져 있으며 버튼으로 선택합니다. 시스템의 동작 줄이기를 따르면 화면 흔들림과 잔상을 생략합니다.
 
 ```sh
-python3 studio/tools/web_game.py --project examples/ember-alley --out /tmp/ember-alley-play
-python3 -m http.server 53021 --bind 127.0.0.1 --directory /tmp/ember-alley-play
+python3 studio/tools/web_game.py --project examples/ember-alley --out play/local-test
+python3 -m http.server 53021 --bind 127.0.0.1 --directory examples/ember-alley/play/local-test
 node examples/ember-alley/tools/combat.test.mjs
 ```
 
-방향키/WASD로 이동합니다. 위아래는 지면의 깊이축이므로 같은 가로 위치여도 공격선에서 벗어나면 맞지 않습니다. J 공격 중 다시 J를 누르면 다음 연격을 예약하며 세 번째 타격은 더 강하고 넓습니다. K는 3.8초마다 적을 띄웁니다. 공중의 적을 J로 맞히면 추가 피해와 체공 연장이 발생합니다. Space는 입력 방향으로 회피하고 짧게 무적이 됩니다. 재사용 시간은 0.72초입니다.
+방향키/WASD로 이동합니다. 위아래는 지면의 깊이축이므로 같은 가로 위치여도 공격선에서 벗어나면 맞지 않습니다. J 공격 중 다시 J를 누르면 다음 연격을 예약하며 세 번째 타격은 더 강하고 넓습니다. K는 3.8초마다 적을 띄웁니다. 공중의 적을 J로 맞히면 추가 피해와 체공 연장이 발생합니다. Space는 입력 방향으로 회피하고 짧게 무적이 됩니다. 재사용 시간은 1.05초입니다.
+
+적의 예고가 끝나기 직전 대시해 첫 140ms에 공격을 피하면 1.35초 동안 다음 기본 검격이 반격으로 바뀝니다. 반격은 피해 18을 추가하고 감독관의 방어를 깨뜨립니다.
 
 각 방에는 두 차례 적이 나타납니다. 첫 방을 정리하면 오른쪽 문이 열립니다. 문 가까이에서 Enter로 제련로에 들어가며 체력을 28 회복합니다. 감독관은 깊이가 좁은 쇄도와 목표 지점의 넓은 분쇄를 번갈아 예고합니다. 일반 타격은 감독관의 공격 예고를 취소하지 않으므로 예고 범위를 벗어나야 합니다. 패배 후 재도전 또는 R로 처음부터 시작합니다. P는 일시정지입니다. 화면 아래 버튼은 포인터 캡처를 사용하는 터치 조작입니다.
 

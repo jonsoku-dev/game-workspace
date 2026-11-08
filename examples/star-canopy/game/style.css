@@ -384,3 +384,48 @@ button:disabled {
     scroll-behavior: auto;
   }
 }
+
+.portrait {
+  background: #ead9a5 url("./art/player.png") left center / 432px 54px no-repeat;
+}
+.quest {
+  max-width: 248px;
+  gap: 7px;
+}
+.quest small {
+  letter-spacing: 1px;
+}
+.region > #distance {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+#toast {
+  bottom: 24px;
+  font-size: 12px;
+  max-width: 78%;
+}
+.note {
+  min-height: 14px;
+}
+@media (max-width: 760px) {
+  .quest {
+    padding: 11px 14px;
+  }
+  #toast {
+    bottom: 14px;
+    font-size: 10px;
+    max-width: 90%;
+  }
+  .hud {
+    transform: scale(0.62);
+  }
+  .quest {
+    transform: scale(0.62);
+  }
+  footer {
+    display: none;
+  }
+  .touch {
+    margin-top: 9px;
+  }
+}

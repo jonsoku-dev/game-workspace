@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>혜성 궤도 · COMET CAROM</title>
+    <link rel="icon" type="image/png" href="art/guardian-sun.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <a href="../">✧ ORBIT ARCHIVE</a><span>턴제 슬링샷 RPG</span>
+      <a href="../">✧ ORBIT ARCHIVE</a><span>반사 · 연계 · 방벽 격파</span>
       <nav>
         <button id="fx" aria-pressed="true">연출 ON</button
         ><button id="sound" aria-pressed="false">소리 OFF</button
@@ -33,7 +34,7 @@
           </div>
         </div>
         <p class="pull-hint">
-          수호자를 뒤로 당겼다 놓으세요.<br />벽에 튕기고, 동료와 이어집니다.
+          벽에 별을 새기고,<br />월식의 틈으로 파고드세요.
         </p>
       </section>
       <section class="battle" aria-label="혜성 궤도 전투">
@@ -45,6 +46,10 @@
           <div class="turn">
             <small>YOUR TURN</small><strong id="turn">01</strong>
           </div>
+        </div>
+        <div class="shield-readout">
+          <span id="shieldNote">벽을 먼저 맞히면 +10 · 동료를 스치면 +8</span
+          ><small id="setup">금빛 틈 ×2 · 반사·연계로 방어 관통</small>
         </div>
         <div class="canvas-wrap">
           <canvas
@@ -97,6 +102,9 @@
           <p id="status" role="status" aria-live="polite">
             구슬을 뒤로 당겨 궤도를 만드세요.
           </p>
+          <p id="trajectory" class="trajectory" aria-live="polite">
+            첫 충돌을 계산하고 있습니다.
+          </p>
           <div class="inputs">
             <label
               >각도 <output id="angleValue">−90°</output
@@ -120,8 +128,9 @@
         </div>
         <div class="notes">
           <p>
-            동료마다 한 발에 한 번 연계합니다.<br />적 위의 숫자는 반격까지 남은
-            턴입니다.
+            보스의 금빛 틈은 매 턴 90° 회전합니다.<br />정면 방어 8 · 약점 52 ·
+            벽·연계마다 관통 +18<br />동료 연계탄은 방벽을 관통합니다. 적의
+            숫자는 반격까지 남은 턴입니다.
           </p>
           <div>
             <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> 수호자 <kbd>←</kbd

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "url": "http://127.0.0.1:53044/star-canopy/",
+  "method": "Live final compiled V2. Separate Stagehand tab, actual normal arrow keys and visible touch/skill buttons. No game-state or position injection. Canvas screenshots inspected directly. Browser canvas readback used only to count distinct frames in the already served walk image.",
+  "checks": [
+    {
+      "name": "painted-stage",
+      "status": "pass",
+      "evidence": "cover.png",
+      "observed": "Final illustrated ground/islands/wind stumps, player/creature and forest plate visible together. Player feet visually meet illustrated grass surface on raised platforms and ground; no visible floating or sinking in inspected captures."
+    },
+    {
+      "name": "melee-level-up",
+      "status": "pass",
+      "observed": "Jumped to first platform and defeated first enemy with Attack: LV1 HP75 EXP35/70. Used updraft to second upper platform and defeated second enemy with Attack: LV2 HP85 EXP70/70 and spell unlocked."
+    },
+    {
+      "name": "height-miss-and-travel",
+      "status": "pass",
+      "evidence": "magic.png",
+      "observed": "From upper platform, cast right toward lower third enemy. Flower visibly traveled across empty air above enemy, then expired. Leaves remained2/3."
+    },
+    {
+      "name": "direction-miss",
+      "status": "pass",
+      "observed": "Moved onto third platform, faced left and cast away from right-side enemy. Leaves remained2/3."
+    },
+    {
+      "name": "projectile-hit",
+      "status": "pass",
+      "evidence": "magic-impact.png",
+      "observed": "Faced right and cast at third enemy at same height. Actual traveling projectile contact showed impact ring/particles, enemy disappeared, +35EXP and leaves3/3. Player HP60 after enemy retaliation."
+    },
+    {
+      "name": "bloom-contact-gate",
+      "status": "pass",
+      "evidence": "bloom-impact.png",
+      "observed": "At final portal with3 leaves, ArrowUp was denied with message to hit left-side bloom. Faced left and cast. At120ms during casting, HUD still requested bloom hit. After500ms more and actual projectile contact, HUD changed to 고원의 문 열림, bloom visibly flowered and portal glowed."
+    },
+    {
+      "name": "quest-victory",
+      "status": "pass",
+      "evidence": "victory.png",
+      "observed": "ArrowUp after bloom contact produced 고원에 별이 피었어요 completion with LV2 HP60."
+    },
+    {
+      "name": "restart",
+      "status": "pass",
+      "observed": "Clicked normal restart after victory. HUD reset LV1 HP100 EXP0/70 and leaves0/3, spell locked."
+    },
+    {
+      "name": "mobile-and-portrait",
+      "status": "pass",
+      "evidence": "mobile.png",
+      "viewport": [390, 844],
+      "observed": "Character portrait, health, quest, stage and seven touch buttons visible. document.scrollWidth did not exceed viewport width. Duplicate skill footer is hidden on mobile."
+    },
+    {
+      "name": "six-frame-walking",
+      "status": "pass",
+      "evidence": ["walk-a.png", "walk-b.png"],
+      "observed": "Actual ArrowRight movement produced distinct painted stride poses and position changes in two captures. Served walk-cycle.png decoded576x96; pixel readback counted6 distinct96x96 cells."
+    },
+    {
+      "name": "browser-errors",
+      "status": "pass",
+      "observed": "Captured pageerror and console.error lists were empty during initial final-page load and final restart/mobile/walk interval. All required modules and all required art assets reported HTTP200 in browser Resource Timing."
+    }
+  ],
+  "limitations": [
+    "No source, graph, release or previous revision evidence was changed in this QA packet.",
+    "Artwork cohesion and contact are agent visual observations, not human creative approval or a numerical pixel-perfect contact measurement.",
+    "The six-cell atlas is verified distinct; only two live stride poses were captured rather than frame-by-frame video of an entire walk cycle.",
+    "Audio listening, V2 defeat and V2 drop-through were not repeated. Existing prior evidence and source self-checks cover defeat/drop, separately from this V2 quest playthrough.",
+    "Stagehand's letter/Space key bridge limitation remains, so Jump/Attack/Spell used actual visible buttons; arrow keys controlled movement and portal interaction."
+  ]
+}

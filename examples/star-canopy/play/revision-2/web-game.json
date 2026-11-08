@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "engine": "web",
+  "work_id": "web-4d23ca6c18dd472a9cd171a3a1e81ce3",
+  "title": "별잎 고원",
+  "genre": "횡스크롤 플랫폼 액션 RPG",
+  "goal": "별잎 세 장을 되찾아 레벨 2 별꽃을 개방하고, 날아가는 별꽃으로 바람꽃을 깨워 고원의 문을 연다.",
+  "controls": "←/→ 또는 A/D 이동, Space 점프, ↓/S 발판 내려가기, ↑/W 상승기류·문. J 근접 별가지, K 방향성 별꽃 발사(레벨 2). 별꽃은 바라보는 방향과 높이로 날아가 첫 대상에 명중한다. P 쉬기, R 재도전. 터치 버튼 지원.",
+  "index": "play/revision-2/index.html",
+  "provenance": {
+    "genre.json": {
+      "source": "genre.json",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "sha256": "50af3a1083e85fcda567bca7a4171833dd57adea6c8933bbe338197308b31003",
+      "byteCount": 540
+    },
+    "game.mjs": {
+      "source": "game/game.mjs",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "sha256": "63e0e304d3dc433ee107dbc516cd1bb0cf4bbd08cdae3daf93e93364c5deff10",
+      "byteCount": 25289
+    },
+    "index.html": {
+      "source": "game/index.html",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "sha256": "c717b0c1a3919f3a8f8f63d65c64ab058dc341732e56b0d70ce9fd5d840ec365",
+      "byteCount": 3261
+    },
+    "rules.mjs": {
+      "source": "game/rules.mjs",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:c4b6b5700d17a42924a4a564af5b877f4ec12f59c039717e1474e1f31d52cdbe",
+      "sha256": "45d96e1df2b61874ebb857496adab54127e47f38a9288e017407a03548bef849",
+      "byteCount": 1664
+    },
+    "style.css": {
+      "source": "game/style.css",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:394c9b01713c38d8a4f2589a54bf2e51a740d7e0040a0bdbd4f8c0554111eed1",
+      "sha256": "2fbbbdce63d046f0f8b7d2b47780d3815ba5defafca5ec2291cc22691ed00c3e",
+      "byteCount": 6763
+    },
+    "scenery/canopy.webp": {
+      "source": "game/scenery/canopy.webp",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:ec2ad346b4bacdb8223b1e4064358bd6cf73715b01b67d8f0d2b203c6f40e9ed",
+      "sha256": "c3d59042053780f97a842b08a5ec8148489e8baee42a5777508c027d1ceb0f29",
+      "byteCount": 205188
+    },
+    "scenery/ground-strip.png": {
+      "source": "game/scenery/ground-strip.png",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:f7c05bfbaa80304939130a19ff177117b24685506875781407ea7acc545e0002",
+      "sha256": "900b89937941a07f86ee27b8e00741d2340441bfef474e138f2874927beea893",
+      "byteCount": 122077
+    },
+    "scenery/platform-island.png": {
+      "source": "game/scenery/platform-island.png",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:d61bd278cfbc4b2212f75a1aeacb5993614b6b792c0ceb9406dd573bdef49ac3",
+      "sha256": "bd187cbd86e47c8a0ddf5ba806aee8272a8cda9c403ba4589b5cba0390b11b93",
+      "byteCount": 86177
+    },
+    "scenery/portal.png": {
+      "source": "game/scenery/portal.png",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:648a9c6590fa7a163f4783c20954866318e8fd2ae626df266e0911f8acba4262",
+      "sha256": "470d8c145314d96c61e9699c698aca889d85ddba0415eba37ed40cca074babac",
+      "byteCount": 90135
+    },
+    "scenery/wind-stump.png": {
+      "source": "game/scenery/wind-stump.png",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:02bd3845f73e575f7a886a189e79a7cb04f4cb7bdadde722fa7c1cc6ff79c0bc",
+      "sha256": "19120abc827c0918ef768fb25a63097369c04050bf6e04d6e5a91f59b1494c26",
+      "byteCount": 45198
+    },
+    "art/atlas.json": {
+      "source": "game/art/atlas.json",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+      "sha256": "712025424824e24217e58f9c912522e74f8ca91509da0e0816f25dbd3876f5da",
+      "byteCount": 872
+    },
+    "art/creature.png": {
+      "source": "game/art/creature.png",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:0d1a7272cbb25901c59071f50fa0bc392dde3976a476155fc14e60ec3dda3c3b",
+      "sha256": "3df79f475c50621fe1d299ae9bd95165998216174b28607b2558038700a7837c",
+      "byteCount": 28787
+    },
+    "art/player.png": {
+      "source": "game/art/player.png",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+      "sha256": "9dd8d4685a4ae2decab0c4eedf68233200654bc4d5ef550bb587395203866dc3",
+      "byteCount": 90327
+    },
+    "art/walk-cycle.png": {
+      "source": "game/art/walk-cycle.png",
+      "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3-inputs:artifact:25b438a86857e5e462af048cf82a55176ef87c61abb8cb0ae8e6706a41237817",
+      "sha256": "68a44f03c6fd243a25c436492ceea37bd1a98fd78afe082aa3249a20b4b8dac1",
+      "byteCount": 55285
+    },
+    "feedback.mjs": {
+      "source": "studio/engines/web/feedback.mjs",
+      "origin": "installed-runtime",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    }
+  },
+  "files": [
+    {
+      "path": "art/atlas.json",
+      "sha256": "712025424824e24217e58f9c912522e74f8ca91509da0e0816f25dbd3876f5da",
+      "byteCount": 872
+    },
+    {
+      "path": "art/creature.png",
+      "sha256": "3df79f475c50621fe1d299ae9bd95165998216174b28607b2558038700a7837c",
+      "byteCount": 28787
+    },
+    {
+      "path": "art/player.png",
+      "sha256": "9dd8d4685a4ae2decab0c4eedf68233200654bc4d5ef550bb587395203866dc3",
+      "byteCount": 90327
+    },
+    {
+      "path": "art/walk-cycle.png",
+      "sha256": "68a44f03c6fd243a25c436492ceea37bd1a98fd78afe082aa3249a20b4b8dac1",
+      "byteCount": 55285
+    },
+    {
+      "path": "feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "63e0e304d3dc433ee107dbc516cd1bb0cf4bbd08cdae3daf93e93364c5deff10",
+      "byteCount": 25289
+    },
+    {
+      "path": "genre.json",
+      "sha256": "50af3a1083e85fcda567bca7a4171833dd57adea6c8933bbe338197308b31003",
+      "byteCount": 540
+    },
+    {
+      "path": "index.html",
+      "sha256": "c717b0c1a3919f3a8f8f63d65c64ab058dc341732e56b0d70ce9fd5d840ec365",
+      "byteCount": 3261
+    },
+    {
+      "path": "rules.mjs",
+      "sha256": "45d96e1df2b61874ebb857496adab54127e47f38a9288e017407a03548bef849",
+      "byteCount": 1664
+    },
+    {
+      "path": "scenery/canopy.webp",
+      "sha256": "c3d59042053780f97a842b08a5ec8148489e8baee42a5777508c027d1ceb0f29",
+      "byteCount": 205188
+    },
+    {
+      "path": "scenery/ground-strip.png",
+      "sha256": "900b89937941a07f86ee27b8e00741d2340441bfef474e138f2874927beea893",
+      "byteCount": 122077
+    },
+    {
+      "path": "scenery/platform-island.png",
+      "sha256": "bd187cbd86e47c8a0ddf5ba806aee8272a8cda9c403ba4589b5cba0390b11b93",
+      "byteCount": 86177
+    },
+    {
+      "path": "scenery/portal.png",
+      "sha256": "470d8c145314d96c61e9699c698aca889d85ddba0415eba37ed40cca074babac",
+      "byteCount": 90135
+    },
+    {
+      "path": "scenery/wind-stump.png",
+      "sha256": "19120abc827c0918ef768fb25a63097369c04050bf6e04d6e5a91f59b1494c26",
+      "byteCount": 45198
+    },
+    {
+      "path": "style.css",
+      "sha256": "2fbbbdce63d046f0f8b7d2b47780d3815ba5defafca5ec2291cc22691ed00c3e",
+      "byteCount": 6763
+    }
+  ]
+}

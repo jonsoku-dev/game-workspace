@@ -37,10 +37,38 @@ export const MOVES = [
     launch: true,
   },
 ];
+export const DODGE = {
+  duration: 0.23,
+  cooldown: 1.05,
+  invulnerable: 0.18,
+  perfect: 0.14,
+};
+export const COUNTER = { window: 1.35, damage: 18, stun: 0.65 };
+export const windupDuration = (e) =>
+  e.kind === "boss" ? 0.95 : e.kind === "elite" ? 0.72 : 0.66;
+export const hurtRadius = (e) => (e.kind === "boss" ? 40 : e.kind ? 22 : 14);
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 export function inStrike(a, b, move) {
   const dx = (b.x - a.x) * a.face;
-  return dx >= -12 && dx <= move.reach && Math.abs(b.y - a.y) <= move.depth;
+  return (
+    dx >= -12 &&
+    dx - hurtRadius(b) <= move.reach &&
+    Math.abs(b.y - a.y) <= move.depth
+  );
+}
+export function strikeContact(a, b, move) {
+  return {
+    x:
+      a.x + a.face * clamp((b.x - a.x) * a.face - hurtRadius(b), 0, move.reach),
+    y: b.y - (b.z || 0) - (b.kind === "boss" ? 94 : 58),
+  };
+}
+function enemyConnects(e, p) {
+  return e.pattern === "slam"
+    ? Math.hypot((p.x - e.targetX) / 1.1, (p.y - e.targetY) * 1.5) < 92
+    : e.pattern === "rush"
+      ? Math.abs(p.x - e.x) < 70 && Math.abs(p.y - e.targetY) < 27
+      : inStrike(e, p, { reach: 100, depth: 28 });
 }
 export function createGame() {
   return {
@@ -72,6 +100,11 @@ export function createGame() {
       cd: 0,
       dash: 0,
       dashCd: 0,
+      dodgeWindow: 0,
+      dodgeOrigin: null,
+      dodgeThreats: [],
+      counterWindow: 0,
+      counterAttack: false,
       invuln: 0,
       hurt: 0,
       walk: 0,
@@ -81,6 +114,8 @@ export function createGame() {
       whiffs: 0,
       dashes: 0,
       evades: 0,
+      perfectDodges: 0,
+      counterHits: 0,
       launches: 0,
       juggles: 0,
       chains: 0,
@@ -120,6 +155,7 @@ export function spawnWave(g) {
     age: 0,
     cooldown: 0.7 + id * 0.45,
     hit: 0,
+    knockback: 0,
     z: 0,
     vz: 0,
     stun: 0,
@@ -153,6 +189,8 @@ export function attack(g, special = false) {
   p.age = 0;
   p.queue = false;
   p.struck = [];
+  p.counterAttack = !special && p.counterWindow > 0;
+  if (p.counterAttack) p.counterWindow = 0;
   if (special) {
     p.cd = 3.8;
     g.stats.launches++;
@@ -166,9 +204,15 @@ export function dash(g, dx = 0, dy = 0) {
   const len = Math.hypot(dx, dy) || 1;
   p.dashX = dx / len || (!dy ? p.face : 0);
   p.dashY = dy / len;
-  p.dash = 0.23;
-  p.dashCd = 0.72;
-  p.invuln = 0.3;
+  p.dash = DODGE.duration;
+  p.dashCd = DODGE.cooldown;
+  p.invuln = Math.max(p.invuln, DODGE.invulnerable);
+  p.dodgeWindow = DODGE.perfect;
+  p.dodgeOrigin = { x: p.x, y: p.y };
+  p.dodgeThreats = g.enemies
+    .filter((e) => !e.dead && e.state === "windup")
+    .map((e) => e.id);
+  p.counterAttack = false;
   p.move = -1;
   p.queue = false;
   g.stats.dashes++;
@@ -191,10 +235,12 @@ export function nextRoom(g) {
 function hurtPlayer(g, e, damage) {
   const p = g.player;
   if (p.invuln > 0) {
-    g.stats.evades++;
+    if (p.dash > 0) g.stats.evades++;
     return;
   }
   p.hp = Math.max(0, p.hp - damage);
+  p.counterWindow = 0;
+  p.counterAttack = false;
   p.hurt = 0.3;
   p.invuln = 0.85;
   p.move = -1;
@@ -212,11 +258,19 @@ function hurtPlayer(g, e, damage) {
 function hitEnemy(g, e, m) {
   const p = g.player,
     air = e.z > 8,
-    damage = m.damage + (air ? 9 : 0);
+    counter = p.counterAttack,
+    damage = m.damage + (air ? 9 : 0) + (counter ? COUNTER.damage : 0),
+    contact = strikeContact(p, e, m);
   e.hp = Math.max(0, e.hp - damage);
   e.hit = 0.19;
-  e.stun = m.launch ? 0.75 : e.kind === "boss" ? 0 : 0.36;
-  e.x = clamp(e.x + p.face * m.push * (e.kind === "boss" ? 0.3 : 1), 45, 930);
+  e.stun = counter
+    ? COUNTER.stun
+    : m.launch
+      ? 0.75
+      : e.kind === "boss"
+        ? 0
+        : 0.36;
+  e.knockback = p.face * m.push * (e.kind === "boss" ? 0.3 : 1) * 12;
   if (e.kind !== "boss" || m.launch) e.face = -p.face;
   if (m.launch) {
     e.vz = 340;
@@ -225,7 +279,7 @@ function hitEnemy(g, e, m) {
     e.vz = e.kind === "boss" ? Math.min(e.vz, 0) : 220;
     g.stats.juggles++;
   }
-  if (e.kind !== "boss" || m.launch || air) {
+  if (e.kind !== "boss" || m.launch || air || counter) {
     e.state = "stunned";
     e.age = 0;
   }
@@ -233,15 +287,16 @@ function hitEnemy(g, e, m) {
   g.comboTime = 2.3;
   g.best = Math.max(g.best, g.combo);
   g.stats.hits++;
+  if (counter) g.stats.counterHits++;
   g.score += damage * 10 + g.combo * 25;
-  g.shake = m.launch || p.move === 2 ? 10 : 5;
-  g.hitstop = p.move === 2 ? 0.08 : 0.045;
+  g.shake = counter || m.launch || p.move === 2 ? 9 : 4;
+  g.hitstop = counter ? 0.075 : p.move === 2 ? 0.07 : 0.045;
   event(
     g,
-    air ? "juggle" : "hit",
-    `${damage}${air ? " 공중" : ""}`,
-    e.x,
-    e.y - e.z - 95,
+    counter ? "counter" : air ? "juggle" : "hit",
+    `${damage}${counter ? " 반격" : air ? " 공중" : ""}`,
+    contact.x,
+    contact.y,
   );
   if (e.hp === 0) {
     e.dead = true;
@@ -262,14 +317,22 @@ export function tick(g, dt, input = {}) {
   g.time += dt;
   g.shake = Math.max(0, g.shake - dt * 38);
   const p = g.player;
-  for (const k of ["cd", "dashCd", "invuln", "hurt", "chainWindow"])
+  for (const k of [
+    "cd",
+    "dashCd",
+    "invuln",
+    "hurt",
+    "chainWindow",
+    "dodgeWindow",
+    "counterWindow",
+  ])
     p[k] = Math.max(0, p[k] - dt);
   g.comboTime -= dt;
   if (g.comboTime <= 0) g.combo = 0;
   const dx = (input.right ? 1 : 0) - (input.left ? 1 : 0),
     dy = (input.down ? 1 : 0) - (input.up ? 1 : 0);
   if (p.dash > 0) {
-    p.dash -= dt;
+    p.dash = Math.max(0, p.dash - dt);
     p.x += p.dashX * 650 * dt;
     p.y += p.dashY * 480 * dt;
   } else if (p.move >= 0) {
@@ -304,6 +367,11 @@ export function tick(g, dt, input = {}) {
   p.y = clamp(p.y, 318, 465);
   for (const e of g.enemies) {
     e.age += dt;
+    if (e.knockback) {
+      e.x = clamp(e.x + e.knockback * dt, 45, 930);
+      e.knockback *= Math.exp(-12 * dt);
+      if (Math.abs(e.knockback) < 0.5) e.knockback = 0;
+    }
     e.hit = Math.max(0, e.hit - dt);
     e.cooldown = Math.max(0, e.cooldown - dt);
     e.stun = Math.max(0, e.stun - dt);
@@ -351,8 +419,7 @@ export function tick(g, dt, input = {}) {
         );
       }
     } else if (e.state === "windup") {
-      const windup =
-        e.kind === "boss" ? 0.95 : e.kind === "elite" ? 0.72 : 0.66;
+      const windup = windupDuration(e);
       if (e.age >= windup) {
         e.state = "strike";
         e.age = 0;
@@ -362,12 +429,19 @@ export function tick(g, dt, input = {}) {
     } else if (e.state === "strike") {
       if (e.pattern === "rush") e.x = clamp(e.x + e.face * 680 * dt, 55, 925);
       if (!e.hasHit) {
-        let connects =
-          e.pattern === "slam"
-            ? Math.hypot((p.x - e.targetX) / 1.1, (p.y - e.targetY) * 1.5) < 92
-            : e.pattern === "rush"
-              ? Math.abs(p.x - e.x) < 70 && Math.abs(p.y - e.targetY) < 27
-              : inStrike(e, p, { reach: 100, depth: 28 });
+        const perfect =
+          p.dodgeWindow > 0 &&
+          p.dodgeThreats.includes(e.id) &&
+          enemyConnects(e, p.dodgeOrigin);
+        if (perfect) {
+          p.dodgeWindow = 0;
+          p.counterWindow = COUNTER.window;
+          g.stats.perfectDodges++;
+          g.stats.evades++;
+          e.hasHit = true;
+          event(g, "perfect", "간파 · J 반격 준비", p.x, p.y - 100);
+        }
+        const connects = !e.hasHit && enemyConnects(e, p);
         if (connects) {
           e.hasHit = true;
           hurtPlayer(

@@ -1,0 +1,163 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "check": "native locator click starts final deployed round",
+      "passed": true
+    },
+    {
+      "check": "seven-toy chain creates one persistent seam at endpoint",
+      "passed": true
+    },
+    {
+      "check": "long chain rescues only selected toys and scores seven squared times25",
+      "passed": true
+    },
+    {
+      "check": "bonus persists for2.2seconds while player waits and board settles",
+      "passed": true
+    },
+    {
+      "check": "native bonus click spends stored button and rescues nearby toys",
+      "passed": true
+    },
+    {
+      "check": "bonus burst refills64 toys",
+      "passed": true
+    },
+    {
+      "check": "normal chain accumulation activates fever without state injection",
+      "passed": true
+    },
+    {
+      "check": "player-input route reaches60rescues and all3 stitched badges",
+      "passed": true
+    },
+    {
+      "check": "visible mission badges and actual quilt background agree with live rules",
+      "passed": true
+    },
+    {
+      "check": "390px board fits viewport and all plush imagery decodes",
+      "passed": true
+    },
+    {
+      "check": "natural75second round ends after successful rescue route",
+      "passed": true
+    }
+  ],
+  "events": [
+    {
+      "event": "first7",
+      "selected": 7,
+      "score": 1225,
+      "rescued": 7,
+      "seams": [
+        {
+          "id": 0,
+          "x": 183.7962629109448,
+          "y": 159.88686215381426
+        }
+      ]
+    },
+    {
+      "event": "bonus-click",
+      "score": 1900,
+      "rescued": 16
+    },
+    {
+      "event": "short-chain",
+      "rescued": 19,
+      "charge": 10,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 22,
+      "charge": 13,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 25,
+      "charge": 16,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 28,
+      "charge": 19,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 31,
+      "charge": 22,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 34,
+      "charge": 0,
+      "fever": 8
+    },
+    {
+      "event": "short-chain",
+      "rescued": 37,
+      "charge": 3,
+      "fever": 7.715799999999999
+    },
+    {
+      "event": "short-chain",
+      "rescued": 40,
+      "charge": 6,
+      "fever": 7.432499999999996
+    },
+    {
+      "event": "short-chain",
+      "rescued": 43,
+      "charge": 9,
+      "fever": 7.1490999999999945
+    },
+    {
+      "event": "short-chain",
+      "rescued": 46,
+      "charge": 12,
+      "fever": 6.865799999999991
+    },
+    {
+      "event": "short-chain",
+      "rescued": 49,
+      "charge": 15,
+      "fever": 6.599199999999989
+    },
+    {
+      "event": "short-chain",
+      "rescued": 52,
+      "charge": 18,
+      "fever": 6.315699999999985
+    },
+    {
+      "event": "short-chain",
+      "rescued": 55,
+      "charge": 21,
+      "fever": 6.032499999999984
+    },
+    {
+      "event": "short-chain",
+      "rescued": 58,
+      "charge": 24,
+      "fever": 5.749399999999983
+    },
+    {
+      "event": "short-chain",
+      "rescued": 61,
+      "charge": 27,
+      "fever": 5.46579999999998
+    }
+  ],
+  "error": "Expecting value: line 1 column 1 (char 0)",
+  "limits": [
+    "Synthetic PointerEvent chains; native locator clicks for start/bonus/replay."
+  ]
+}

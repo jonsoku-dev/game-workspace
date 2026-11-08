@@ -1,1 +1,7 @@
-{"schema_version":1,"title":"혜성 궤도","genre":"turn-based slingshot ricochet RPG","goal":"수호자의 궤도를 조준하고 벽 반사와 동료 연계를 이용해 잔영 무리와 월식의 심장을 격파한다.","controls":"수호자 또는 1·2·3 선택. 구슬을 뒤로 당겼다 놓아 발사. ←→ 조준, ↑↓ 위력, Space 발사. 각도·위력 입력과 발사 버튼 지원. 충전 후 S 필살기, R 재도전."}
+{
+  "schema_version": 1,
+  "title": "혜성 궤도",
+  "genre": "turn-based slingshot ricochet RPG",
+  "goal": "회전하는 월식 방벽의 금빛 약점을 노리고 벽 반사·동료 연계로 관통을 준비해 성소를 되찾는다.",
+  "controls": "수호자 또는 1·2·3 선택. 뒤로 당겼다 놓아 발사. ←→ 각도, ↑↓ 위력, Space 발사. 슬라이더·발사 버튼 지원. 조준선은 첫 적·벽 충돌과 반사를 예측한다. 충전 후 S 필살기, R 재도전."
+}

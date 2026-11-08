@@ -1,0 +1,46 @@
+[
+  {
+    "game": "ember-alley",
+    "command": "node examples/ember-alley/tools/combat.test.mjs",
+    "exit_code": 0,
+    "tests": [
+      "PASS depth/facing, startup/active/single hit, 3-chain, launcher/juggle/cooldown, dash/iframes/depth, death/retry, room doors/clear, boss telegraph",
+      "PASS boss normal-hit armor retains tell, special breaks armor",
+      "PASS full command-driven clear with both boss patterns and natural idle defeat",
+      "PASS V2 first-J exact55→41, front/depth/reach misses, contact locations, precision dodge, boss guard counter, consume/whiff/expiry, early/empty dodge, cooldown/restart",
+      "PASS recoil continuity, guarded windup counter interrupt, special preserves next-basic opportunity"
+    ],
+    "test_sha256": "187fdb0be1559701f3b5d89c3ff399d82641c19d3d1d8cd559cca5647ec829e7"
+  },
+  {
+    "game": "star-canopy",
+    "command": "node examples/star-canopy/tools/test-rules.mjs",
+    "exit_code": 0,
+    "tests": [
+      "PASS level unlock, three-leaf gate, charged portal, one-way platform/drop",
+      "PASS cast windup, directional travel, nearest hit, height/direction misses and actual bloom contact"
+    ],
+    "test_sha256": "5ee8bc55789a759d489ac77e5c1872f88fc57a6beca17e241697ad685b519d45"
+  },
+  {
+    "game": "pocket-parade",
+    "command": "node examples/pocket-parade/tools/verify.mjs",
+    "exit_code": 0,
+    "tests": [
+      "PASS chain adjacency / no reuse / backtrack / wrong species / minimum / score / fever / seeded repeat / gravity bounds / collision settling",
+      "PASS endpoint seam / short-chain preservation / local burst / empty burst retry / one-use bonus / rescue badges",
+      "PASS bonus excludes offscreen refill toys at top and bottom"
+    ],
+    "test_sha256": "c0ee8c4ca3db5236899344cf7df5112c0d16a45f49bc049a3546191e6b0c6570"
+  },
+  {
+    "game": "comet-carom",
+    "command": "node examples/comet-carom/tests/self-check.mjs",
+    "exit_code": 0,
+    "tests": [
+      "PASS deterministic simulation, bounded wall reflection, no tunneling, one-shot ally assists, AoE assist, enemy countdown, charged damage, normal-rule win and loss",
+      "PASS V2 exact normal26/bank36, guard8/weak52, prepared44, rotating shield, non-mutating same-physics enemy/wall/corner preview"
+    ],
+    "test_sha256": "a9411d931b02451b000b64f750a7cdfca07a39e04a9035b141f915d9d33d89ee"
+  }
+]

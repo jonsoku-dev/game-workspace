@@ -1,4 +1,14 @@
-import { createGame, select, launch, step, W, H, R } from "./combat.mjs";
+import {
+  createGame,
+  select,
+  launch,
+  step,
+  previewShot,
+  WEAK_ARC,
+  W,
+  H,
+  R,
+} from "./combat.mjs";
 import { createFeedback } from "./feedback.mjs";
 const $ = (s) => document.querySelector(s),
   canvas = $("#arena"),
@@ -15,7 +25,13 @@ let game = createGame(),
   last = 0,
   acc = 0,
   clock = 0,
-  hitFlash = 0;
+  hitFlash = 0,
+  impacts = [],
+  beams = [],
+  kick = 0,
+  hitStop = 0,
+  cachedAim = null,
+  aimKey = "";
 const guardianCopy = [
   {
     name: "솔",
@@ -45,10 +61,12 @@ for (const name of [
   "guardian-nova.png",
   "foe-orb.png",
   "boss-orb.png",
+  "sanctum.webp",
 ]) {
   const im = new Image();
   im.src = `art/${name}`;
   images[name] = im;
+  if (name === "sanctum.webp") im.onload = background;
 }
 const bg = document.createElement("canvas");
 bg.width = W;
@@ -76,62 +94,35 @@ function circle(c, x, y, r, fill, stroke, width = 1) {
   }
 }
 function background() {
-  const grad = b.createRadialGradient(360, 380, 10, 360, 390, 600);
-  grad.addColorStop(0, "#21334b");
-  grad.addColorStop(0.6, "#111e36");
-  grad.addColorStop(1, "#070f22");
+  const grad = b.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, "#080d25");
+  grad.addColorStop(0.48, "#23364b");
+  grad.addColorStop(1, "#08162c");
   b.fillStyle = grad;
   b.fillRect(0, 0, W, H);
-  for (let i = 0; i < 16; i++) {
-    const a = (i * Math.PI) / 8;
-    const c = i % 2 ? "#547f9450" : "#c5aa6b45";
-    line(b, 360, 380, 360 + 680 * Math.cos(a), 380 + 680 * Math.sin(a), c);
-    b.beginPath();
-    b.moveTo(360 + 120 * Math.cos(a), 380 + 120 * Math.sin(a));
-    b.lineTo(360 + 450 * Math.cos(a + 0.095), 380 + 450 * Math.sin(a + 0.095));
-    b.lineTo(360 + 450 * Math.cos(a - 0.095), 380 + 450 * Math.sin(a - 0.095));
-    b.closePath();
-    b.fillStyle = i % 2 ? "#2d66822c" : "#6c536e24";
-    b.fill();
-    b.strokeStyle = c;
-    b.stroke();
-  }
-  for (const r of [120, 205, 290, 380, 470]) {
-    circle(b, 360, 380, r, null, "#64818e35");
-    for (let i = 0; i < 12; i++) {
-      const a = (i * Math.PI) / 6,
-        x = 360 + r * Math.cos(a),
-        y = 380 + r * Math.sin(a);
-      circle(b, x, y, 3, "#8caaad66");
-    }
-  }
-  for (let y = 40; y < H; y += 70)
-    for (let x = 35; x < W; x += 70) {
-      const n = (x * 17 + y * 29) % 23;
-      circle(b, x + n, y - n, n % 3 === 0 ? 1.4 : 0.7, "#b9dce180");
-    }
-  b.strokeStyle = "#b9a277";
+  const scene = images["sanctum.webp"];
+  if (scene?.complete && scene.naturalWidth) b.drawImage(scene, 0, 0, W, H);
+  const veil = b.createLinearGradient(0, 0, 0, H);
+  veil.addColorStop(0, "#07122233");
+  veil.addColorStop(0.5, "#0712220a");
+  veil.addColorStop(1, "#07122255");
+  b.fillStyle = veil;
+  b.fillRect(0, 0, W, H);
+  b.strokeStyle = "#edce8ba8";
   b.lineWidth = 2;
   b.strokeRect(18, 18, W - 36, H - 36);
-  b.strokeStyle = "#35546d";
-  b.lineWidth = 8;
-  b.strokeRect(9, 9, W - 18, H - 18);
-  b.strokeStyle = "#6590a2";
+  b.strokeStyle = "#8ae3ea55";
   b.lineWidth = 1;
-  b.strokeRect(29, 29, W - 58, H - 58);
+  b.strokeRect(25, 25, W - 50, H - 50);
   for (const [x, y] of [
     [18, 18],
     [W - 18, 18],
     [18, H - 18],
     [W - 18, H - 18],
   ]) {
-    circle(b, x, y, 12, "#18263d", "#d3b478");
-    circle(b, x, y, 5, "#afd6d3");
+    circle(b, x, y, 9, "#0c1c2d", "#f2d092", 2);
+    circle(b, x, y, 3, "#9dffff");
   }
-  b.fillStyle = "#8197aa44";
-  b.textAlign = "center";
-  b.font = "11px Georgia";
-  b.fillText("✧  THE CELESTIAL SANCTUM  ✧", 360, 74);
 }
 background();
 function updateUI() {
@@ -155,6 +146,20 @@ function updateUI() {
   }
   $("#guardianRole").textContent =
     g.phase === "flight" ? "궤도를 잇는 중" : "이번 궤도의 수호자";
+  const boss = g.foes.find((e) => e.id === "boss" && e.hp > 0);
+  const direction = boss
+    ? ["오른쪽 →", "아래 ↓", "왼쪽 ←", "위 ↑"][
+        Math.round(boss.weakAngle / (Math.PI / 2)) % 4
+      ]
+    : "";
+  $("#shieldNote").textContent = boss
+    ? `월식 방벽 · 약점 ${direction} · 다음 턴 90° 회전`
+    : "벽을 먼저 맞히면 +10 · 동료를 스치면 +8";
+  $("#setup").textContent = g.shot
+    ? `${g.shot.banks ? "반사 준비 ✓" : "반사 미준비"} / ${g.shot.assists.size ? "연계 준비 ✓" : "연계 미준비"}`
+    : g.lastShot
+      ? `지난 궤도 · 반사 ${g.lastShot.banks}회 / 연계 ${g.lastShot.assists}회`
+      : "금빛 틈 ×2 · 반사·연계로 방어 관통";
   $("#hp").textContent = `${g.hp} / ${g.maxHp}`;
   $("#health").value = g.hp;
   $("#turn").textContent = String(g.turn).padStart(2, "0");
@@ -193,9 +198,18 @@ function updateUI() {
 }
 function cues() {
   for (const e of game.events.splice(0)) {
-    if (e.type === "hit") {
-      feedback.emit("hit", { combo: game.combo });
-      hitFlash = 0.12;
+    const hit = e.type === "hit",
+      weak = e.kind === "weak",
+      guard = e.kind === "guard";
+    if (hit) {
+      feedback.emit(weak ? "crit" : guard ? "denied" : "hit", {
+        combo: game.combo,
+      });
+      if (fx) {
+        hitFlash = weak ? 0.18 : 0.07;
+        kick = weak ? 8 : guard ? 2 : 4;
+        hitStop = weak ? 0.065 : 0.025;
+      }
     } else
       feedback.emit(
         e.type === "assist"
@@ -206,26 +220,64 @@ function cues() {
               ? "step"
               : e.type,
       );
+    const color = weak
+      ? "#ffe28e"
+      : guard
+        ? "#8aafe1"
+        : e.kind === "assist"
+          ? game.heroes[e.ally].color
+          : e.type === "hurt"
+            ? "#ff829c"
+            : game.heroes[game.selected].color;
     if (e.text) {
-      labels.push({ ...e, life: e.type === "assist" ? 1.7 : 1.15 });
-      $("#log").textContent = e.text;
+      const prefix = weak ? "약점! " : guard ? "방어 " : e.bank ? "반사! " : "";
+      labels.push({
+        ...e,
+        text: prefix + e.text,
+        color,
+        life: e.type === "assist" ? 1.7 : 1.15,
+      });
+      $("#log").textContent = prefix + e.text;
     }
     if (fx) {
-      const color =
-        e.type === "hit"
-          ? "#ffd38a"
-          : e.type === "hurt"
-            ? "#ef9397"
-            : "#96f3f0";
-      for (let i = 0; i < 16; i++) {
-        const a = (i * Math.PI) / 8;
+      impacts.push({
+        x: e.contactX ?? e.x,
+        y: e.contactY ?? e.y,
+        life: 1,
+        color,
+        kind: e.type === "assist" ? "assist" : e.kind || e.type,
+      });
+      if (e.type === "assist")
+        for (const target of e.targets)
+          beams.push({
+            x: e.x,
+            y: e.y,
+            tx: target.x,
+            ty: target.y,
+            life: 0.48,
+            color: game.heroes[e.ally].color,
+            ally: e.ally,
+          });
+      if (e.type === "enemy")
+        beams.push({
+          x: e.x,
+          y: e.y,
+          tx: 360,
+          ty: 740,
+          life: 0.65,
+          color: "#ff7196",
+          ally: -1,
+        });
+      for (let i = 0; i < (weak ? 28 : hit ? 16 : 8); i++) {
+        const a = i * 2.39996;
         particles.push({
           x: e.x,
           y: e.y,
-          vx: Math.cos(a) * (45 + i * 7),
-          vy: Math.sin(a) * (45 + i * 7),
-          life: 0.5 + i * 0.02,
+          vx: Math.cos(a) * (65 + i * 7),
+          vy: Math.sin(a) * (65 + i * 7),
+          life: 0.45 + i * 0.015,
           color,
+          shard: hit,
         });
       }
     }
@@ -255,61 +307,117 @@ function portrait(name, x, y, r, tint) {
   ctx.restore();
 }
 function aim() {
-  const h = game.heroes[game.selected];
-  let x = h.x,
-    y = h.y,
-    dx = Math.cos((angle * Math.PI) / 180),
-    dy = Math.sin((angle * Math.PI) / 180),
-    remain = 210 + power * 4.6;
-  ctx.save();
-  ctx.strokeStyle = "#b5f5eb";
-  ctx.lineWidth = 2;
-  ctx.setLineDash([7, 8]);
-  ctx.beginPath();
-  ctx.moveTo(x, y);
-  for (let i = 0; i < 4 && remain > 0; i++) {
-    const tx = dx > 0 ? (W - 45 - x) / dx : dx < 0 ? (45 - x) / dx : Infinity,
-      ty = dy > 0 ? (H - 45 - y) / dy : dy < 0 ? (45 - y) / dy : Infinity,
-      d = Math.min(tx, ty, remain);
-    x += dx * d;
-    y += dy * d;
-    ctx.lineTo(x, y);
-    remain -= d;
-    if (tx <= ty) dx = -dx;
-    else dy = -dy;
+  const key = `${game.turn}:${game.selected}:${angle}:${power}:${skill}`;
+  if (key !== aimKey) {
+    cachedAim = previewShot(game, angle, power, skill);
+    aimKey = key;
   }
+  const route = cachedAim,
+    h = game.heroes[game.selected];
+  ctx.save();
+  ctx.strokeStyle = "#befff2";
+  ctx.lineWidth = 2.3;
+  ctx.setLineDash([5, 7]);
+  ctx.beginPath();
+  route.points.forEach((p, i) =>
+    i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y),
+  );
   ctx.stroke();
   ctx.setLineDash([]);
+  const first = route.impacts[0];
+  if (first) {
+    const x = first.contactX ?? first.x,
+      y = first.contactY ?? first.y;
+    circle(
+      ctx,
+      x,
+      y,
+      12,
+      null,
+      first.kind === "weak" ? "#ffe28e" : "#a7fff2",
+      2,
+    );
+  }
+  for (const assist of route.assists)
+    circle(
+      ctx,
+      assist.x,
+      assist.y,
+      R + 9,
+      null,
+      game.heroes[assist.ally].color,
+      2,
+    );
   const a = (angle * Math.PI) / 180,
-    ax = h.x + Math.cos(a) * 90,
-    ay = h.y + Math.sin(a) * 90;
+    ax = h.x + Math.cos(a) * 70,
+    ay = h.y + Math.sin(a) * 70;
   ctx.beginPath();
-  ctx.moveTo(ax, ay);
-  ctx.lineTo(ax - Math.cos(a - 0.45) * 20, ay - Math.sin(a - 0.45) * 20);
-  ctx.moveTo(ax, ay);
-  ctx.lineTo(ax - Math.cos(a + 0.45) * 20, ay - Math.sin(a + 0.45) * 20);
+  ctx.moveTo(ax - Math.cos(a - 0.5) * 15, ay - Math.sin(a - 0.5) * 15);
+  ctx.lineTo(ax, ay);
+  ctx.lineTo(ax - Math.cos(a + 0.5) * 15, ay - Math.sin(a + 0.5) * 15);
   ctx.stroke();
   if (drag) {
-    line(ctx, h.x, h.y, drag.x, drag.y, "#edc58699", 5);
+    line(ctx, h.x, h.y, drag.x, drag.y, "#edc58699", 4);
     circle(ctx, drag.x, drag.y, 9, null, "#f4c77c");
   }
   ctx.restore();
+  const note = first
+    ? first.type === "bounce"
+      ? "첫 반사 · 벽 → 관통 준비"
+      : first.kind === "weak"
+        ? "첫 충돌 · 보스 약점"
+        : first.kind === "guard"
+          ? "첫 충돌 · 보스 방어면"
+          : "첫 충돌 · 잔영"
+    : "이번 위력으로는 충돌하지 않습니다";
+  if ($("#trajectory").textContent !== note)
+    $("#trajectory").textContent = note;
 }
 function draw(dt) {
   clock += dt;
+  ctx.fillStyle = "#071021";
+  ctx.fillRect(0, 0, W, H);
+  ctx.save();
+  if (fx && kick > 0) {
+    ctx.translate(
+      Math.sin(clock * 73) * kick,
+      Math.cos(clock * 87) * kick * 0.7,
+    );
+    kick = Math.max(0, kick - dt * 35);
+  }
   ctx.drawImage(bg, 0, 0);
   if (game.phase === "aim") aim();
   if (fx) {
-    trail.forEach((p, i) =>
-      circle(
+    const tint = game.heroes[game.selected].color;
+    ctx.save();
+    ctx.lineCap = "round";
+    for (let i = 1; i < trail.length; i++) {
+      const strength = i / trail.length;
+      line(
         ctx,
-        p.x,
-        p.y,
-        ((R * i) / trail.length) * 0.6,
-        `rgba(148,231,242,${(i / trail.length) * 0.2})`,
-      ),
-    );
+        trail[i - 1].x,
+        trail[i - 1].y,
+        trail[i].x,
+        trail[i].y,
+        `${tint}${Math.round(strength * 90)
+          .toString(16)
+          .padStart(2, "0")}`,
+        R * strength * 0.8,
+      );
+    }
+    for (let i = 1; i < trail.length; i += 2)
+      line(
+        ctx,
+        trail[i - 1].x,
+        trail[i - 1].y,
+        trail[i].x,
+        trail[i].y,
+        "#eaffff99",
+        2,
+      );
+    ctx.restore();
   }
+
   for (const e of game.foes) {
     if (e.hp <= 0) continue;
     const boss = e.id === "boss";
@@ -331,9 +439,48 @@ function draw(dt) {
     ctx.font = "bold 16px system-ui";
     ctx.fillText(e.timer, e.x + e.r * 0.7, e.y - e.r * 0.7 + 6);
     if (boss) {
+      ctx.save();
+      ctx.lineCap = "round";
+      ctx.lineWidth = 9;
+      ctx.beginPath();
+      ctx.arc(
+        e.x,
+        e.y,
+        e.r + 14,
+        e.weakAngle + WEAK_ARC,
+        e.weakAngle + Math.PI * 2 - WEAK_ARC,
+      );
+      ctx.strokeStyle = "#a780d6cc";
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(
+        e.x,
+        e.y,
+        e.r + 14,
+        e.weakAngle - WEAK_ARC,
+        e.weakAngle + WEAK_ARC,
+      );
+      ctx.strokeStyle = "#ffe29b";
+      ctx.shadowColor = "#ffc95c";
+      ctx.shadowBlur = 14;
+      ctx.stroke();
+      ctx.restore();
+      const gx = e.x + Math.cos(e.weakAngle) * (e.r + 34),
+        gy = e.y + Math.sin(e.weakAngle) * (e.r + 34);
+      ctx.font = "bold 13px system-ui";
+      ctx.fillStyle = "#ffe4a4";
+      ctx.fillText("약점", gx, gy + 5);
       ctx.font = "11px system-ui";
       ctx.fillStyle = "#e9c8db";
-      ctx.fillText("월식의 심장", e.x, e.y - e.r - 21);
+      ctx.fillText("월식의 심장", e.x, e.y - e.r - 38);
+    } else {
+      ctx.font = "11px system-ui";
+      ctx.fillStyle = "#ddc8ef";
+      ctx.fillText(
+        e.id === "c" ? "중앙 파수꾼" : "수정 잔영",
+        e.x,
+        e.y - e.r - 18,
+      );
     }
   }
   game.heroes.forEach((h, i) => {
@@ -342,14 +489,14 @@ function draw(dt) {
         ctx,
         h.x,
         h.y,
-        R + 12 + Math.sin(clock * 3) * 2,
+        R + 12 + (fx ? Math.sin(clock * 3) * 2 : 0),
         null,
         h.color,
         1.5,
       );
       ctx.save();
       ctx.translate(h.x, h.y);
-      ctx.rotate(clock * 0.3);
+      ctx.rotate(fx ? clock * 0.3 : 0);
       for (let k = 0; k < 4; k++) {
         ctx.rotate(Math.PI / 2);
         line(ctx, R + 17, 0, R + 24, 0, h.color, 3);
@@ -362,22 +509,73 @@ function draw(dt) {
     ctx.textAlign = "center";
     ctx.fillText(h.name, h.x, h.y + R + 23);
   });
+  beams = beams.filter((e) => e.life > 0);
+  for (const beam of beams) {
+    beam.life -= dt;
+    ctx.save();
+    ctx.globalAlpha = Math.max(0, beam.life * 2);
+    ctx.shadowColor = beam.color;
+    ctx.shadowBlur = 18;
+    line(
+      ctx,
+      beam.x,
+      beam.y,
+      beam.tx,
+      beam.ty,
+      beam.color,
+      beam.ally === 0 ? 6 : 3,
+    );
+    line(ctx, beam.x, beam.y, beam.tx, beam.ty, "#efffff", 1.5);
+    ctx.restore();
+  }
+  impacts = impacts.filter((e) => e.life > 0);
+  for (const impact of impacts) {
+    impact.life -= dt * 2;
+    ctx.save();
+    ctx.globalAlpha = Math.max(0, impact.life);
+    circle(
+      ctx,
+      impact.x,
+      impact.y,
+      12 + (1 - impact.life) * (impact.kind === "weak" ? 90 : 50),
+      null,
+      impact.color,
+      impact.kind === "guard" ? 5 : 2,
+    );
+    if (impact.kind === "assist")
+      circle(
+        ctx,
+        impact.x,
+        impact.y,
+        20 + (1 - impact.life) * 85,
+        null,
+        impact.color,
+        1,
+      );
+    ctx.restore();
+  }
   particles = particles.filter((p) => p.life > 0);
   for (const p of particles) {
     p.life -= dt;
     p.x += p.vx * dt;
     p.y += p.vy * dt;
     ctx.globalAlpha = Math.max(0, p.life);
-    circle(ctx, p.x, p.y, 2.5, p.color);
+    if (p.shard) {
+      ctx.fillStyle = p.color;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(clock * 4);
+      ctx.fillRect(-1.5, -6, 3, 12);
+      ctx.restore();
+    } else circle(ctx, p.x, p.y, 2.5, p.color);
   }
   ctx.globalAlpha = 1;
   labels = labels.filter((p) => p.life > 0);
   for (const p of labels) {
     p.life -= dt;
-    p.y -= dt * 25;
+    if (fx) p.y -= dt * 25;
     ctx.globalAlpha = Math.min(1, p.life * 3);
-    ctx.fillStyle =
-      p.type === "hit" ? "#ffe1aa" : p.type === "hurt" ? "#ffb0bb" : "#b7ffef";
+    ctx.fillStyle = p.color;
     ctx.font = `bold ${p.type === "hit" ? 28 : 18}px system-ui`;
     ctx.textAlign = "center";
     ctx.shadowColor = "#071020";
@@ -391,17 +589,19 @@ function draw(dt) {
     ctx.fillStyle = `rgba(255,220,170,${Math.max(0, hitFlash)})`;
     ctx.fillRect(0, 0, W, H);
   }
+  ctx.restore();
 }
 function frame(t) {
   const dt = Math.min(0.05, (t - last) / 1000 || 0);
   last = t;
-  acc += dt;
+  if (hitStop > 0) hitStop = Math.max(0, hitStop - dt);
+  else acc += dt;
   while (acc >= 1 / 120) {
     if (game.phase === "flight") {
       step(game);
       const h = game.heroes[game.selected];
       trail.push({ x: h.x, y: h.y });
-      if (trail.length > 22) trail.shift();
+      if (trail.length > 42) trail.shift();
     } else trail = [];
     acc -= 1 / 120;
   }
@@ -424,6 +624,11 @@ function reset() {
   particles = [];
   labels = [];
   trail = [];
+  impacts = [];
+  beams = [];
+  kick = 0;
+  hitStop = 0;
+  aimKey = "";
   feedback.emit("restart");
   updateUI();
 }
@@ -505,6 +710,10 @@ $("#fx").onclick = () => {
   if (!fx) {
     particles = [];
     labels = [];
+    impacts = [];
+    beams = [];
+    kick = 0;
+    hitStop = 0;
   }
 };
 document.addEventListener("keydown", (e) => {

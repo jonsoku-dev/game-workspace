@@ -1,0 +1,194 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:53044/pocket-parade-fixed/",
+  "input_method": "Official configured Stagehand independent session. Start, stored bonus and restart use native locator clicks. Toy-chain drags are simulated DOM PointerEvent down/move/up through deployed production handlers; pointer capture is temporarily stubbed for those synthetic events only. Read-only snapshots select legal paths. No score, timer, rescue, badge or fever state was injected.",
+  "checks": [
+    {
+      "check": "native locator click starts final deployed round",
+      "passed": true
+    },
+    {
+      "check": "seven-toy chain creates one persistent seam at endpoint",
+      "passed": true
+    },
+    {
+      "check": "long chain rescues only selected toys and scores seven squared times25",
+      "passed": true
+    },
+    {
+      "check": "bonus persists for2.2seconds while player waits and board settles",
+      "passed": true
+    },
+    {
+      "check": "native bonus click spends stored button and rescues nearby toys",
+      "passed": true
+    },
+    {
+      "check": "bonus burst refills64 toys",
+      "passed": true
+    },
+    {
+      "check": "normal chain accumulation activates fever without state injection",
+      "passed": true
+    },
+    {
+      "check": "player-input route reaches60rescues and all3 stitched badges",
+      "passed": true
+    },
+    {
+      "check": "visible mission badges and actual quilt background agree with live rules",
+      "passed": true
+    },
+    {
+      "check": "390px board fits viewport and all plush imagery decodes",
+      "passed": true
+    },
+    {
+      "check": "natural75second round ends after successful rescue route",
+      "passed": true
+    },
+    {
+      "check": "win overlay shows successful rescue outcome",
+      "passed": true
+    },
+    {
+      "check": "native replay click clears rescue badges score bonuses and refills fresh64",
+      "passed": true
+    },
+    {
+      "check": "no observed runtime errors or failed resources",
+      "passed": true
+    }
+  ],
+  "events": [
+    {
+      "event": "first7",
+      "selected": 7,
+      "score": 1225,
+      "rescued": 7,
+      "seams": [
+        {
+          "id": 0,
+          "x": 183.83051434474913,
+          "y": 159.86842867072647
+        }
+      ]
+    },
+    {
+      "event": "bonus-click",
+      "score": 1900,
+      "rescued": 16
+    },
+    {
+      "event": "short-chain",
+      "rescued": 19,
+      "charge": 10,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 22,
+      "charge": 13,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 25,
+      "charge": 16,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 28,
+      "charge": 19,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 31,
+      "charge": 22,
+      "fever": 0
+    },
+    {
+      "event": "short-chain",
+      "rescued": 34,
+      "charge": 0,
+      "fever": 8
+    },
+    {
+      "event": "short-chain",
+      "rescued": 37,
+      "charge": 3,
+      "fever": 7.716599999999998
+    },
+    {
+      "event": "short-chain",
+      "rescued": 40,
+      "charge": 6,
+      "fever": 7.416599999999996
+    },
+    {
+      "event": "short-chain",
+      "rescued": 43,
+      "charge": 9,
+      "fever": 7.133399999999993
+    },
+    {
+      "event": "short-chain",
+      "rescued": 46,
+      "charge": 12,
+      "fever": 6.8331999999999935
+    },
+    {
+      "event": "short-chain",
+      "rescued": 49,
+      "charge": 15,
+      "fever": 6.53389999999999
+    },
+    {
+      "event": "short-chain",
+      "rescued": 52,
+      "charge": 18,
+      "fever": 6.249899999999988
+    },
+    {
+      "event": "short-chain",
+      "rescued": 55,
+      "charge": 21,
+      "fever": 5.966599999999989
+    },
+    {
+      "event": "short-chain",
+      "rescued": 58,
+      "charge": 24,
+      "fever": 5.683199999999987
+    },
+    {
+      "event": "short-chain",
+      "rescued": 61,
+      "charge": 27,
+      "fever": 5.400499999999983
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "scroll": 390,
+    "board": 338,
+    "plush": true
+  },
+  "health": {
+    "errors": [],
+    "failed": []
+  },
+  "limits": [
+    "No physical touch-device test.",
+    "Held physical mouse drag is unavailable through this Stagehand facade; synthetic chain input is explicitly separated from native bonus/start/replay clicks.",
+    "Hardware keyboard activation was not exercised.",
+    "Automated read-only path selection does not establish human difficulty or a comparative numeric quality score."
+  ],
+  "visual_review": {
+    "desktop": "Reviewed final1280px gameplay and persistent bonus captures. Actual quilt texture, four distinct plush species, golden star button, goal and fever are legible.",
+    "mobile": "Reviewed390px capture. Mission captions and badges fit, no horizontal overflow, active fever and plush board remain readable.",
+    "outcome": "Reviewed natural-win overlay capture.61/60rescues,3badges and new-pouch restart button are visible."
+  }
+}
