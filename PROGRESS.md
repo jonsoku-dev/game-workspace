@@ -58,3 +58,5 @@ Game Studio 0.5.1은 같은 그래프의 성공 RuntimeProduct와 사용된 파�
 첨부된 세 화면의 원본 여섯 저장소(후속 Agent Sprite Forge 포함)를 대조했다. Claude Code Game Studios의 시작·스토리 실행 경로, Game-Dev-Agentic-Skills의 엔진별 구현·화면 검수, awesome-gamedev-agent-skills의 대표 비주얼/게임 크기 검토는 첫 기획과 인수의 참고가 된다. sprite-gen과 Agent Sprite Forge의 후보 선택·동작 생성/수정, pixelfx의 로컬 효과 저작은 프레임 패킹만으로 해결되지 않는다. 이 스튜디오의 강점은 이미 확보된 재료를 실제 엔진에서 반복 수정·확인하고 출처를 추적하는 과정이다. 원화에서 임의 동작을 생성하는 기능, 처음 한 문장에서 대표 장면의 성공 조건까지 안내하는 흐름, 아트 후보 비교·채택은 별도 과제다.
 
 정찰병 입력의 독립 복사본에서 공격 준비 프레임을 80ms 늘렸다. 0부터 세는 접촉 프레임 3은 그대로 두고 시작 시각은 320→400ms로 이동했다. 캐릭터 아틀라스와 pixelfx 시트의 SHA-256은 각각 이전과 일치했다. 변경본도 실제 Phaser에서 타격 3회·완료·재시작을 통과했다. 원본 게임은 기존 타이밍을 유지한다. [350ms 비교 이미지](release/evidence/attack-timing-comparison.png) · [측정값](release/evidence/attack-timing-comparison.json).
+
+0.6.1에서는 실행이 없는 홈에서 그림 타일과 제품 사용 안내가 첫 화면에 온다. 설치본의 한·일 전체 흐름을 다시 검증했다. [일본어 시작 화면](release/evidence/bilingual/entry-ja.jpg) · [설치본 검사](release/evidence/bilingual/0.6.1-browser.json)

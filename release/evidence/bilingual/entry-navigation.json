@@ -1,0 +1,15 @@
+{
+  "home": {
+    "home": true,
+    "title": "プロジェクトを選択",
+    "posters": 4,
+    "loaded": true
+  },
+  "opened_scene": {
+    "href": "http://127.0.0.1:59765/phaser/",
+    "hidden": false,
+    "lang": "ja",
+    "state": "playing"
+  },
+  "linked_export": "export-5ef4d6bd9349450ca911b8a2394b3393"
+}
