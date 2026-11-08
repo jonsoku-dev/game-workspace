@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "url": "http://127.0.0.1:53040/star-canopy/",
+  "method": "Independent Stagehand tab, actual normal keyboard arrows and visible touch Jump button. No game state injection.",
+  "checks": {
+    "desktop": {
+      "viewport": [1440, 1000],
+      "evidence": "cover.png",
+      "result": "pass",
+      "observed": "Game-first cover visibly contains final painterly chibi character, expressive moss creatures and illustrated forest plate."
+    },
+    "mobile": {
+      "viewport": [390, 844],
+      "evidence": "mobile-final.png",
+      "result": "pass",
+      "horizontalOverflow": false,
+      "observed": "HUD, quest, game canvas, attack/spell and all seven touch controls remain visible without horizontal scrolling."
+    },
+    "dropThrough": {
+      "result": "pass",
+      "before": "platform-before-drop.png",
+      "after": "platform-after-drop.png",
+      "observed": "After actual Jump landed on first elevated platform, ArrowDown dropped the player through it to ground. No state or position injection."
+    },
+    "resources": {
+      "result": "pass",
+      "observed": "Browser Resource Timing reported HTTP200 for game.mjs, rules.mjs, feedback.mjs, art/player.png (90327 decoded bytes), art/creature.png (28787), scenery/canopy.webp (205188)."
+    },
+    "errors": {
+      "result": "pass",
+      "observed": "Final installed-page reload and mobile capture returned zero captured pageerror or console.error events."
+    }
+  },
+  "limitations": [
+    "These final-art checks cover appearance, resources, mobile layout and actual platform drop. Full quest win/defeat/retry are separately documented in gameplay.json from the earlier normal-controls playthrough.",
+    "Audio listening and human creative approval are not claimed."
+  ]
+}

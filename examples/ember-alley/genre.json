@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "title": "잿불 골목",
+  "genre": "belt-scrolling dungeon brawler",
+  "goal": "폐공장 골목과 제련로의 두 전투를 돌파하고 쇠사슬 감독관을 쓰러뜨린다.",
+  "controls": "방향키/WASD 이동·깊이 회피, J 연속 3연격, K 잿불 올려치기, Space 회피 대시, Enter 다음 방, P 일시정지, R 재시작. 모바일 방향패드와 전투 버튼."
+}

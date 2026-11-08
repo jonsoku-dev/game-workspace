@@ -1,0 +1,33 @@
+{
+  "checks": [
+    "real start and 64 gravity bodies: playing / 64",
+    "synthetic mouse rejects mixed / short chain",
+    "reachable same-species chain exists",
+    "synthetic mouse backtracks one step: path=[0, 1, 8], chain=[0, 1]",
+    "synthetic mouse chain pops and scores",
+    "gravity refill returns 64 bodies",
+    "pause stops round timer",
+    "synthesized keyboard focus / Space / Enter completes chain",
+    "390px responsive no horizontal overflow",
+    "all plush artwork loaded",
+    "synthesized touch pointer path uses real handlers",
+    "no observed runtime errors or failed resource requests",
+    "real browser screenshots saved"
+  ],
+  "input_evidence": "synthetic mouse, touch and keyboard events through real handlers; physical CUA checks belong to parent evidence",
+  "preview": "http://127.0.0.1:53033/?qa=health-final",
+  "prior_full_run": {
+    "checks": [
+      "natural 75 second round ends at remaining=0",
+      "replay resets timer score and board"
+    ],
+    "evidence": "round-end.png",
+    "limit": "Full run completed gameplay assertions, then failed only automatic favicon.ico HTTP404. Final rerun passed after linking existing frog PNG as icon. Timer and mechanics unchanged between runs."
+  },
+  "source_sha256": {
+    "game/game.mjs": "5531616bcdd95aab69519b9f6a89470a0b7b2571708efd025fe5b7f25d17a881",
+    "game/index.html": "8c097f76f87d38d75acb50f677f0ef4cd1771530ebb8e737eee13a99a34fbfb0",
+    "game/rules.mjs": "d174e9c06eef549c77932d446293e8f88fd4d0c31a56fb243502ff226038b39c",
+    "game/style.css": "94bc394bf7fb5767bbb307acb39e50fc9aade57ed31a37fc3c1fb45c0709238a"
+  }
+}

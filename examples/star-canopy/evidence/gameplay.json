@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "method": "Stagehand normal controls, live local HTTP game, no game-state injection",
+  "url": "http://127.0.0.1:53022/",
+  "viewport": { "width": 740, "height": 850 },
+  "checks": [
+    {
+      "name": "platform-jump",
+      "result": "pass",
+      "observed": "Touch Jump from ground at x about 518 landed on first raised platform."
+    },
+    {
+      "name": "melee-retaliation-xp",
+      "result": "pass",
+      "observed": "First creature defeated through Attack button. HUD HP75, LV1, EXP35/70."
+    },
+    {
+      "name": "updraft-platform",
+      "result": "pass",
+      "observed": "Held ArrowUp at first wind column, then ArrowRight to upper second platform."
+    },
+    {
+      "name": "level-unlock",
+      "result": "pass",
+      "observed": "Second creature defeated. HUD LV2, HP85, EXP70/70 and new spell unlocked."
+    },
+    {
+      "name": "new-power",
+      "result": "pass",
+      "observed": "New spell button defeated third creature at range. Quest leaves3/3."
+    },
+    {
+      "name": "portal-gate",
+      "result": "pass",
+      "observed": "ArrowUp at final portal refused entry with message to cast K first, despite leaves3/3. Spell then ArrowUp completed quest."
+    },
+    {
+      "name": "win",
+      "result": "pass",
+      "observed": "Completion title 고원에 별이 피었어요.",
+      "evidence": "mobile-win.png"
+    },
+    {
+      "name": "defeat",
+      "result": "pass",
+      "observed": "After restart, standing on first enemy platform without attacking resulted in HP0 and title 잠깐, 숨을 골라요.",
+      "evidence": "mobile-defeat.png"
+    },
+    {
+      "name": "restart",
+      "result": "pass",
+      "observed": "Restart after defeat restored LV1, HP100, EXP0/70, leaves0/3 and locked spell."
+    }
+  ],
+  "limitations": [
+    "Keyboard letters/Space are emitted as empty key values by this Stagehand bridge; jump, attack, and spell used actual visible touch buttons instead.",
+    "Human art approval and listening verification are not claimed.",
+    "Drop-through physics is verified by focused rules self-check; live drop-through check is pending.",
+    "Screenshots precede final character art polish."
+  ]
+}

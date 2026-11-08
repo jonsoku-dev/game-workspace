@@ -1,0 +1,8 @@
+{
+  "producer": "imagegen built-in",
+  "purpose": "original game environment",
+  "prompt": "Production environment background painting for an original Korean 2D belt-scrolling arcade brawler, panoramic landscape 16:9. An atmospheric furnace alley at night, clearly side-on game stage viewed from across an industrial lane. Top 57 percent is hand-painted high-end cel animation background: massive iron archways, distant foundry chimneys with rising heat, blue-black girders and pipes, small flickering amber windows with depth, a strong amber furnace glow far to right. Bottom 43 percent a broad EMPTY combat floor, perspective paving slabs in cool desaturated blue/slate, few subdued warm reflections. Highly specific crafted anime-game environment, dramatic indigo vs copper palette, beautiful lit edges, painted material variation and long perspective. Keep playfield readable with low contrast floor and an open central silhouette region. All exits/doors visually believable but no major foreground obstacles, no characters, sprites, UI, lettering, numbers, watermarks, logos or signage. Not a mockup: an environment painting actually usable edge-to-edge as game art. Original scenery, no franchise references.",
+  "source_file": "exec-264ff247-5b75-4e93-9673-ec554a0fdd72.png",
+  "output": "game/scenery/foundry.webp",
+  "master": "environment-original.png"
+}

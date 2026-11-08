@@ -1,0 +1,8 @@
+{
+  "producer": "imagegen built-in",
+  "purpose": "original game environment",
+  "prompt": "Original high-production storybook environment painting used as the distant background of a colorful Korean side-scrolling forest platform RPG. Widescreen landscape 16:9, side-on camera. A magical terraced forest valley in early morning, mint/emerald foliage in distinctive rounded clusters, a monumental strawberry-pink blossoming tree with atmospheric perspective on the left, sunlit apricot cottages and streaming ribbons of mist in the middle distance, distant blue ridges and pale butter sky. Beautiful richly painted 2D fantasy game storybook style with warm sunlight, gently scalloped foliage, confident varied brush textures, intentional silhouettes. Bottom half has softly receding teal tree trunks, little contrast so game platforms and characters can be drawn on top. A luminous honey-colored mote near a distant canopy, subtle only. No literal ground platforms, no ladders, no characters, no props in front, no HUD, no text, no logos. Deliver the seamless-feeling environment painting only, no frame, no margins. Original design not copied from any existing game.",
+  "source_file": "exec-69c7f7d5-e313-40ac-915f-34d3c195cae7.png",
+  "output": "game/scenery/canopy.webp",
+  "master": "environment-original.png"
+}

@@ -1,0 +1,109 @@
+{
+  "checks": [
+    {
+      "file": "guardian-sun.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        16,
+        17,
+        496,
+        495
+      ],
+      "bytes": 378860
+    },
+    {
+      "file": "guardian-moon.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        16,
+        28,
+        489,
+        483
+      ],
+      "bytes": 383155
+    },
+    {
+      "file": "guardian-nova.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        18,
+        18,
+        492,
+        483
+      ],
+      "bytes": 381176
+    },
+    {
+      "file": "foe-orb.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        31,
+        81,
+        480,
+        458
+      ],
+      "bytes": 178680
+    },
+    {
+      "file": "boss-orb.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        32,
+        16,
+        477,
+        482
+      ],
+      "bytes": 299336
+    }
+  ],
+  "visual_review_sizes": [
+    48,
+    64,
+    100
+  ]
+}

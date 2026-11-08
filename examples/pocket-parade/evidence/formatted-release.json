@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:53040/pocket-parade/",
+  "passed": true,
+  "input_evidence": "Configured official Stagehand MCP in independent browser tab. Start uses browser locator click. Chain uses synthetic PointerEvent mouse down/move/up through actual deployed handlers with pointer capture stubbed only during synthetic dispatch. No physical mouse or touch claim.",
+  "checks": {
+    "start": true,
+    "initial_count": 64,
+    "path": [
+      0,
+      1,
+      8
+    ],
+    "selected": 3,
+    "score_before": 0,
+    "score_after": 225,
+    "pops": 1,
+    "refill_count": 64
+  },
+  "mobile": {
+    "width": 390,
+    "scroll_width": 390,
+    "decoded_images": 64,
+    "failed_resources": []
+  }
+}

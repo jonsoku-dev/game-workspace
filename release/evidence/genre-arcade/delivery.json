@@ -1,0 +1,89 @@
+{
+  "games": {
+    "comet-carom": {
+      "url": "http://127.0.0.1:53040/comet-carom/",
+      "receipt": "examples/comet-carom/play/final/web-game.json",
+      "work_id": "web-f4064ba20ad0495cb60462409b76b3a7",
+      "matched": {
+        "art/boss-orb.png": "bf5c3ad0bd7f7f444a9160ad0599628c6367f899940ebbc73d30fa0df6c7a0f2",
+        "art/foe-orb.png": "cb60eba508a9f7d69c4cb2c0a55d2e9b620805fe58fc8b48d73ea5d85a1577b6",
+        "art/guardian-moon.png": "ccf4289dac74fe022fc0c714430b139b69194d55820cfe62165f3df36bdd3837",
+        "art/guardian-nova.png": "af9509d34df573222e2fc063cbb6daa810df9db783e954a422b428ba652d4e53",
+        "art/guardian-sun.png": "2722e6af28239f3b6ef3817397adb7f34dc3018b68429dc107b7456f489cd215",
+        "art/guardians.webp": "1e8c0610a0fb79c2dce5c81313c546c1d6c4575c418f0b0c4b0ef6c68a8b18f1",
+        "combat.mjs": "b6e267979944df204889b1a190bdb5c5737321c2c3825ec2337417b0fd81709c",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "game.mjs": "652a7471c5e45b4ef8af8f28241ea61400b2b190c3e0d43cdf130e19c0b2f6ed",
+        "genre.json": "e522401cced9cb40b8b6c1144c78e88c2e753e9cc15d3baa822a77de5b4e41c6",
+        "index.html": "62992930dfb4845670f124ff2162fe1a1ef8a0684750a6d88a1458f8e38ead47",
+        "style.css": "a26a3703e5a419e5ca2cd7c13deeb951e25c1319b922f2d24134ac2b5b4e1c11"
+      }
+    },
+    "ember-alley": {
+      "url": "http://127.0.0.1:53040/ember-alley/",
+      "receipt": "examples/ember-alley/play/arcade/web-game.json",
+      "work_id": "web-1a927129c16f4ef9ad9fd98fc55c7144",
+      "matched": {
+        "art/atlas.json": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+        "art/boss.png": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+        "art/foe.png": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+        "art/player.png": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+        "combat.mjs": "64ad542ae717f683e9489429ab4032397d8251333af4f216c0bde5d50d3d2260",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "game.mjs": "434606420b0d3a365fc6d844a74142b9c0779bb3c1846d2ce7f4590a0a30ff46",
+        "genre.json": "5911f6d2f1bb11172f075487976bde447a60f21e66cc88e1cb86337b0ebb70e5",
+        "index.html": "d42f847d36a92ec18841eecbbc36168e51d6ffb51407883fd5518ad3d2799689",
+        "scenery/foundry.webp": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25"
+      }
+    },
+    "pocket-parade": {
+      "url": "http://127.0.0.1:53040/pocket-parade/",
+      "receipt": "examples/pocket-parade/play/final/web-game.json",
+      "work_id": "web-518006ea5bb54c8a9472830d4259afa2",
+      "matched": {
+        "art/plush-bear.png": "43fd391bde0e90057e74e62a1aaacf4e378e5dbfff9483ca701572982ec3b33e",
+        "art/plush-bunny.png": "a3751ae0d1ec34d50038b96c756a2fa078ba8937d84efc4de3e4f350cb88a918",
+        "art/plush-cat.png": "098446bd17a8cdbe9dd4d38143fcec4041e97665c92dc170a7532ba1abfdd2e9",
+        "art/plush-frog.png": "923c5fde747ee7849896fadff6847bd888132e61852ebac4bf288c7f5545bbaa",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "game.mjs": "43a83ee16a27fdc5c36eabb18f0ab3e47f0ce2f93a24d7a5cc0b095624a7fc49",
+        "genre.json": "0f5691b701d798ad92f5d2e7eb32a2e737c089fbf5e35745effc58a3d1b21078",
+        "index.html": "cde2adb949f49253247254f2e4deef55190fca411d178d59e9d5621839a859b9",
+        "rules.mjs": "2a0664d18b21026949f1af1f2114b7c8e7e4e80d90157dd5a5aa5f12659cc7ba",
+        "style.css": "bf3fb5be4a3e3ac6f046f438494d687b3e90cf2307ebae2c276f095716aceec2"
+      }
+    },
+    "star-canopy": {
+      "url": "http://127.0.0.1:53040/star-canopy/",
+      "receipt": "examples/star-canopy/play/arcade/web-game.json",
+      "work_id": "web-80964a720c2940499a533a346a84d25b",
+      "matched": {
+        "art/atlas.json": "712025424824e24217e58f9c912522e74f8ca91509da0e0816f25dbd3876f5da",
+        "art/creature.png": "3df79f475c50621fe1d299ae9bd95165998216174b28607b2558038700a7837c",
+        "art/player.png": "9dd8d4685a4ae2decab0c4eedf68233200654bc4d5ef550bb587395203866dc3",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "game.mjs": "2bfc734ec79d681d1645dc5603f4ffcef78642120fc22788fdfbf1511ac9edb9",
+        "genre.json": "baad2326e3bd9c653d1e015de75acb1c7e103f3be027b70547018c401c6b37ef",
+        "index.html": "156e89f54791e77335931e68573713f9585e5117d04a6d9264e2bcec4e9ee9ee",
+        "rules.mjs": "d4f55830f4fc6931e5c4d0185d137bde9000c9397e49893f986fdd838471e9c4",
+        "scenery/canopy.webp": "c3d59042053780f97a842b08a5ec8148489e8baee42a5777508c027d1ceb0f29",
+        "style.css": "14fb71de38cf6ef36b4e06e33d53c3a64a105524201011d7c7b21ee0d20ca1f3"
+      }
+    }
+  },
+  "http_files_verified": 42,
+  "studio_suite": {
+    "ran": 137,
+    "skipped": 1,
+    "failed": 0
+  },
+  "isolated_install_suite_rerun": {
+    "ran": 7,
+    "skipped": 0,
+    "failed": 0
+  },
+  "limits": [
+    "No hardware touchscreen or speaker listening assessment",
+    "Commercial art direction and player acceptance remain open"
+  ]
+}

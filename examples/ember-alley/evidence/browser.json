@@ -1,0 +1,274 @@
+{
+  "kind": "browser-runtime-evidence",
+  "recorded_at": "2026-11-08T22:26:38.112Z",
+  "origin": "http://127.0.0.1:53021",
+  "preview": "isolated /tmp/ember-alley-preview with Studio feedback injected; source game/runtime hashes match",
+  "input": {
+    "battle": "native visible button clicks (melee, launcher, dash, door, retry, pause)",
+    "movement": "synthetic KeyboardEvent keydown/up dispatched through normal keyboard handlers; no simulation state mutation",
+    "keyboard_driver_gap": "Stagehand keyboard.press and locator.press emit trusted events with empty key/code; native physical keyboard delivery unverified",
+    "touch_gap": "390px viewport native button clicks verified; physical touch and sustained native pointer hold unverified"
+  },
+  "final_art_clear": {
+    "progress": {
+      "logs": [
+        {
+          "stage": "playing/0/0",
+          "time": 0.017400000000000006,
+          "hp": 120,
+          "stats": {
+            "hits": 0,
+            "whiffs": 0,
+            "dashes": 0,
+            "evades": 0,
+            "launches": 0,
+            "juggles": 0,
+            "chains": 0,
+            "rooms": 0
+          }
+        },
+        {
+          "stage": "playing/0/1",
+          "time": 4.585000000000005,
+          "hp": 120,
+          "stats": {
+            "hits": 6,
+            "whiffs": 2,
+            "dashes": 0,
+            "evades": 0,
+            "launches": 1,
+            "juggles": 2,
+            "chains": 2,
+            "rooms": 0
+          }
+        },
+        {
+          "stage": "playing/1/0",
+          "time": 10.81879999999999,
+          "hp": 120,
+          "stats": {
+            "hits": 13,
+            "whiffs": 6,
+            "dashes": 0,
+            "evades": 0,
+            "launches": 2,
+            "juggles": 3,
+            "chains": 5,
+            "rooms": 1
+          }
+        },
+        {
+          "stage": "playing/1/1",
+          "time": 15.570899999999968,
+          "hp": 120,
+          "stats": {
+            "hits": 19,
+            "whiffs": 8,
+            "dashes": 0,
+            "evades": 0,
+            "launches": 3,
+            "juggles": 3,
+            "chains": 7,
+            "rooms": 1
+          }
+        }
+      ],
+      "patterns": [
+        "rush",
+        "slam"
+      ],
+      "state": {
+        "phase": "playing",
+        "room": 1,
+        "wave": 1,
+        "time": 19.157199999999857,
+        "kills": 6,
+        "score": 9135,
+        "combo": 1,
+        "comboTime": 1.9494999999999998,
+        "best": 13,
+        "hitstop": 0,
+        "shake": 0,
+        "enemies": [
+          {
+            "id": "1-1-0",
+            "kind": "boss",
+            "x": 420.97760000000113,
+            "y": 392.3617439999998,
+            "face": 1,
+            "hp": 232,
+            "maxHp": 250,
+            "state": "windup",
+            "age": 0,
+            "cooldown": 0,
+            "hit": 0,
+            "z": 0,
+            "vz": 0,
+            "stun": 0,
+            "attackNo": 2,
+            "dead": false,
+            "targetX": 507.50719108216964,
+            "pattern": "slam",
+            "targetY": 399.9600581001462,
+            "hasHit": false,
+            "startX": 719.5928000000007
+          }
+        ],
+        "door": false,
+        "player": {
+          "x": 507.50719108216964,
+          "y": 399.9600581001462,
+          "hp": 120,
+          "maxHp": 120,
+          "face": -1,
+          "move": 2,
+          "age": 0.11710000000000219,
+          "queue": true,
+          "chain": 2,
+          "chainWindow": 0.12289999999999777,
+          "cd": 1.4153000000000031,
+          "dash": -0.0024000000000014565,
+          "dashCd": 0,
+          "invuln": 0,
+          "hurt": 0,
+          "walk": 7.417500000000013,
+          "struck": [],
+          "dashX": 0,
+          "dashY": 1
+        },
+        "stats": {
+          "hits": 20,
+          "whiffs": 9,
+          "dashes": 1,
+          "evades": 0,
+          "launches": 4,
+          "juggles": 3,
+          "chains": 8,
+          "rooms": 1
+        },
+        "paused": true
+      },
+      "input": "Native visible battle/door buttons; synthetic held movement KeyboardEvents through normal handlers. No model mutation."
+    },
+    "state": {
+      "phase": "clear",
+      "room": 1,
+      "wave": 1,
+      "time": 27.69429999999969,
+      "kills": 7,
+      "score": 14810,
+      "combo": 3,
+      "comboTime": 1.6166999999999985,
+      "best": 13,
+      "hitstop": 0,
+      "shake": 0,
+      "enemies": [
+        {
+          "id": "1-1-0",
+          "kind": "boss",
+          "x": 727.9920000000042,
+          "y": 379.6834079999997,
+          "face": -1,
+          "hp": 0,
+          "maxHp": 250,
+          "state": "dead",
+          "age": 0.7000000000000073,
+          "cooldown": 0,
+          "hit": 0,
+          "z": 0,
+          "vz": 0,
+          "stun": 0,
+          "attackNo": 4,
+          "dead": true,
+          "targetX": 611.1508995699699,
+          "pattern": "slam",
+          "targetY": 393.41742003880944,
+          "hasHit": true,
+          "startX": 714.8040000000043
+        }
+      ],
+      "door": false,
+      "player": {
+        "x": 636.1872830914183,
+        "y": 357.17003872247244,
+        "hp": 66,
+        "maxHp": 120,
+        "face": 1,
+        "move": -1,
+        "age": 0.48169999999999735,
+        "queue": false,
+        "chain": 0,
+        "chainWindow": 0,
+        "cd": 0,
+        "dash": -0.0037999999999956367,
+        "dashCd": 0,
+        "invuln": 0,
+        "hurt": 0,
+        "walk": 10.233500000000006,
+        "struck": [
+          "1-1-0"
+        ],
+        "dashX": 0,
+        "dashY": -1
+      },
+      "stats": {
+        "hits": 33,
+        "whiffs": 10,
+        "dashes": 4,
+        "evades": 0,
+        "launches": 5,
+        "juggles": 3,
+        "chains": 11,
+        "rooms": 1
+      },
+      "paused": false
+    }
+  },
+  "defeat_retry": {
+    "natural_no_input": {
+      "phase": "dead",
+      "hp": 0,
+      "simulation_seconds": 24.8837
+    },
+    "native_retry": {
+      "phase": "playing",
+      "hp": 120,
+      "room": 0,
+      "score": 0
+    },
+    "pause_button": true
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "minDirectionalTarget": [
+      44,
+      44
+    ],
+    "minBattleTarget": [
+      44,
+      59
+    ],
+    "nativeDashRegistered": true,
+    "nativeLauncherRegistered": true
+  },
+  "resources": {
+    "all_eight_runtime_resources_http_status": 200
+  },
+  "screenshots": [
+    "cover.png",
+    "final-art-play.png",
+    "boss.png",
+    "clear.png",
+    "defeat.png",
+    "mobile.png"
+  ],
+  "limits": [
+    "defeat.png and mobile.png captured before final painted cast refresh; final-art-play.png, cover.png, boss.png and clear.png use refreshed painted cast.",
+    "Continuous subjective animation acceptance and audio listening are unverified.",
+    "No browser-console collector was available; source syntax and successful runtime/resource loading checked."
+  ]
+}

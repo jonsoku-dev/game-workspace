@@ -1,0 +1,23 @@
+{
+  "generator": "built-in imagegen",
+  "transparent_background": true,
+  "processing": "Crop transparent extent, proportional Lanczos fit to 480x480, center in 512x512 RGBA. No repainting.",
+  "assets": [
+    {
+      "file": "plush-bunny.png",
+      "prompt": "Pocket Parade game sprite: ONE round small handmade cream bunny plush head/body, front view, peach-pink long floppy ears fitting compact rounded silhouette, tiny embroidered smiling mouth, very large glossy dark brown bead eyes with white catchlights, apricot blush, one tiny stitched strawberry patch on cheek, charming joyful original character. Soft wool felt and delicate visible embroidery, warm painterly toy illustration, sophisticated children's picture book finish, bright gentle shading. Entire character isolated centered with generous empty transparent margin. No floor, no backdrop, no shadow outside character, no text, no other objects. Must read clearly at 64px. Square transparent PNG."
+    },
+    {
+      "file": "plush-bear.png",
+      "prompt": "Pocket Parade game sprite: ONE round small handmade honey caramel bear plush head/body front view, two small circular ears, oatmeal muzzle, large glossy espresso bead eyes with crisp catchlights, tiny embroidered sideways smile, rosy cheeks, asymmetric tiny teal fabric repair patch on upper forehead with visible stitching. Charming bashful original character, soft wool felt fibers and embroidered seams, warm painterly toy illustration with sophisticated children's picture book finish. Entire character isolated centered in square with transparent margins. No floor, background, outside shadow, text or other objects. Distinctive soft round silhouette and face must read at 64px. Transparent PNG."
+    },
+    {
+      "file": "plush-cat.png",
+      "prompt": "Pocket Parade game sprite: ONE round handmade dusty lilac and ivory patchwork cat plush head/body, front view with small triangular ears, ivory asymmetrical face patch around right eye, two dark-plum glossy bead eyes with bright catchlights, tiny salmon embroidered triangular nose, small contented w-shaped stitched mouth, three little stitched whiskers per cheek, rose blush. Playful original character. Soft felt textile texture and careful hand seams, warm painterly children's picture book toy illustration. Entire character centered compact circle silhouette in square transparent margins. No floor, background, text, outside shadow or other objects. Clear expressive face at 64px. Transparent PNG."
+    },
+    {
+      "file": "plush-frog.png",
+      "prompt": "Pocket Parade game sprite: ONE very round handmade mint green frog plush head/body front view, two rounded eye bumps at top, glossy dark emerald bead eyes and crisp catchlights, cheerful little wide embroidered smile, peachy cheek circles, pale yellow belly bib with three tiny stitched stars. Endearing optimistic original character. Soft felt wool textile with tiny seam and embroidered detail, warm painterly sophisticated picture book toy illustration. Entire character centered in square with transparent margins. No floor, no background, no text, no external shadow, no objects. Distinctive frog shape and face readable at 64px. Transparent PNG."
+    }
+  ]
+}

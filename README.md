@@ -1,5 +1,11 @@
 # Game workspace
 
+## 네 가지 장르 플레이
+
+[플레이 아케이드](http://127.0.0.1:53040/)에서 잿불 골목의 띄우기 연계, 별잎 고원의 발판 사냥과 마법 해금, 포켓 무리의 봉제 동물 연결, 혜성 궤도의 벽 반사와 동료 연계를 플레이할 수 있다. 각 카드의 이미지는 실제 플레이 화면에서 잘랐다.
+
+서버를 다시 열 때는 workspace 루트에서 `python3 -m http.server 53040 --bind 127.0.0.1 --directory release/genre-arcade`를 실행한다. 각 게임의 `examples/<게임>/art-source/`에 원화와 제작 근거가 있다. 아케이드에서 연결하는 게임 폴더의 `web-game.json`에는 설치된 Studio로 내보낸 파일별 해시가 있다.
+
 [솔바람 정찰대 · 실제 Rive 플레이어](http://127.0.0.1:8876/?v=2feafcf7)에서 한 장의 캐릭터 원화를 손 흔들기·걷기·달리기·환호로 전환할 수 있다. [다운로드할 .riv](examples/rive-character/build/rive/character.riv) · [제작과 관절 수정 기록](examples/rive-character/README.md)
 
 [라일락 우편배달부 · 프레임별 작화 플레이어](http://127.0.0.1:52991/player.html)는 같은 기준 원화를 보고 걷기·인사·점프 등의 윤곽을 동작별로 그린 사례다. 각 PNG 또는 유지 시간을 개별 수정할 수 있다. [레퍼런스 재대조와 재현 방법](examples/storybook-cels/README.md)

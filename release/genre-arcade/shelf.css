@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #241f19; background: #f4f0e6; font-family: "Instrument Sans", "Apple SD Gothic Neo", system-ui, sans-serif; }
+main { max-width: 1450px; margin: auto; padding: clamp(24px,5vw,76px); }
+header { border-top: 4px solid currentColor; padding-top: 14px; margin-bottom: clamp(24px,4vw,60px); }
+.studio { font-size: .76rem; font-weight: 750; letter-spacing: .12em; margin: 0; }
+h1 { font-family: "Bricolage Grotesque", "Apple SD Gothic Neo", system-ui, sans-serif; font-size: clamp(3rem,7vw,7rem); letter-spacing: -.075em; line-height: 1.1; margin: .46em 0 0; }
+nav { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(14px,2vw,28px); }
+.game { color: inherit; text-decoration: none; display: flex; flex-direction: column; border-top: 1px solid #30281f; border-bottom: 1px solid #30281f; }
+.picture { overflow: hidden; margin-top: 9px; aspect-ratio: 16/9; background-color: var(--color); }
+.ember { --color: #242234; }
+.canopy { --color: #93bab3; }
+.pocket { --color: #d8bcae; }
+.comet { --color: #15283f; }
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.copy { padding: 17px 0 20px; flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+.genre { font-size: .82rem; font-weight: 650; color: #5e5145; }
+h2 { font-size: clamp(1.55rem,2.3vw,2.5rem); letter-spacing: -.055em; margin: .15em 0; }
+.copy p { line-height: 1.6; margin: .3em 0 1.5em; word-break: keep-all; }
+.play { display: inline-flex; align-items: center; gap: .65em; margin-top: auto; font-weight: 700; font-size: .92rem; }
+.game:hover .play, .game:focus-visible .play { text-decoration: underline; text-underline-offset: 4px; }
+.game:focus-visible { outline: 3px solid #176b63; outline-offset: 4px; }
+@media (max-width: 800px) { nav { grid-template-columns: 1fr; } .game { display: grid; grid-template-columns: minmax(120px,.9fr) 1fr; gap: 16px; } .picture { margin: 9px 0; } .copy { padding: 12px 0; } .copy p { margin-bottom: .65em; } }
+@media (max-width: 480px) { main { padding: 20px; } nav { gap: 22px; } .game { display: flex; gap: 0; } .picture { aspect-ratio: 16/9; margin-bottom: 0; } .copy { padding: 12px 0 18px; } }

@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:53040/comet-carom/",
+  "export": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-5ffd510cfe2e4eaea43893bd6165c2ca",
+  "input": "in-app browser coordinate mouse drag",
+  "before": {
+    "guardian": "솔",
+    "turn": 1
+  },
+  "after": {
+    "angle": -87,
+    "power": 80,
+    "hits": 4,
+    "turn": 2,
+    "guardian": "루나",
+    "charge": 1
+  },
+  "device": "desktop browser mouse interaction; no hardware touch test"
+}

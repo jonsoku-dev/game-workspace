@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>포켓 무리 · 작은 친구들의 큰 연결</title
+  ><link rel="icon" href="art/plush-frog.png" /><link
+    rel="stylesheet"
+    href="style.css"
+  />
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="#"
+          >POCKET PARADE <span>작은 친구들의 큰 연결</span></a
+        ><button id="sound" aria-pressed="false">소리 꺼짐</button>
+      </header>
+      <section class="intro">
+        <p class="eyebrow">A LITTLE PILE OF HAPPINESS</p>
+        <h1>포켓 <em>무리</em><span>✦</span></h1>
+        <p>꼬물꼬물, 같은 친구끼리 쭈욱!</p>
+      </section>
+      <section class="game-shell" aria-label="포켓 무리 게임">
+        <div class="stats">
+          <div>
+            <small>모은 점수</small><strong id="score">0</strong
+            ><span>/ 6,000</span>
+          </div>
+          <div class="time">
+            <small>남은 시간</small><strong id="time">75</strong><span>초</span>
+          </div>
+        </div>
+        <div class="fever-row">
+          <span id="fever-label">✦ 피버를 모아요</span
+          ><span>연결할수록 두 배!</span>
+        </div>
+        <progress
+          id="fever"
+          max="24"
+          value="0"
+          aria-label="피버 충전"
+        ></progress>
+        <div
+          id="board"
+          role="group"
+          aria-label="동물 주머니. 방향키 이동, Space 연결, Enter 확정."
+          tabindex="0"
+        >
+          <svg id="thread" viewBox="0 0 420 510" aria-hidden="true">
+            <polyline />
+          </svg>
+          <div id="tokens"></div>
+          <div id="particles" aria-hidden="true"></div>
+          <div class="overlay" id="overlay">
+            <div class="badge">함께 모이면 더 귀여워</div>
+            <h2>친구들을 이어주세요</h2>
+            <p>
+              같은 동물을 <b>3마리 이상</b> 쭈욱!<br />7마리부터 주변 친구도
+              함께 톡.
+            </p>
+            <button id="start" class="primary" disabled>친구들 오는 중…</button
+            ><small>75초 · 목표 6,000점</small>
+          </div>
+          <div id="chain-label" aria-hidden="true"></div>
+        </div>
+        <div class="under">
+          <p id="status" role="status">주머니를 열어 친구들을 만나세요.</p>
+          <div>
+            <button id="shake">↝ 흔들기</button
+            ><button id="pause">Ⅱ 잠깐 쉬기</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <b>같은 친구 3마리부터</b><span>드래그 → 놓으면 톡!</span>
+        <details>
+          <summary>키보드로 놀기</summary>
+          <p>
+            게임판에서 방향키로 친구를 선택하고 Space로 이어요. Enter로 터뜨리고
+            Escape로 취소해요. 연결 중에는 친구들이 잠깐 기다려요.
+          </p>
+        </details>
+        <p>토끼 · 곰 · 고양이 · 개구리 / 나만의 작은 주머니</p>
+      </footer>
+    </main>
+    <script type="module" src="game.mjs"></script>
+  </body>
+</html>

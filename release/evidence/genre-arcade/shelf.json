@@ -1,0 +1,56 @@
+[
+  {
+    "width": 1280,
+    "client": 1265,
+    "scroll": 1265,
+    "games": [
+      {
+        "title": "잿불 골목",
+        "url": "ember-alley/",
+        "width": 800
+      },
+      {
+        "title": "별잎 고원",
+        "url": "star-canopy/",
+        "width": 800
+      },
+      {
+        "title": "포켓 무리",
+        "url": "pocket-parade/",
+        "width": 800
+      },
+      {
+        "title": "혜성 궤도",
+        "url": "comet-carom/",
+        "width": 800
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "client": 375,
+    "scroll": 375,
+    "games": [
+      {
+        "title": "잿불 골목",
+        "url": "ember-alley/",
+        "width": 800
+      },
+      {
+        "title": "별잎 고원",
+        "url": "star-canopy/",
+        "width": 800
+      },
+      {
+        "title": "포켓 무리",
+        "url": "pocket-parade/",
+        "width": 800
+      },
+      {
+        "title": "혜성 궤도",
+        "url": "comet-carom/",
+        "width": 800
+      }
+    ]
+  }
+]

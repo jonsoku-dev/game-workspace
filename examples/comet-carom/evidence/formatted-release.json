@@ -1,0 +1,229 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:53040/comet-carom/",
+  "initial": {
+    "title": "혜성 궤도 · COMET CAROM",
+    "name": "솔 태양창",
+    "ability": "동료가 스치면 가까운 적에게 38 피해",
+    "artLoaded": true,
+    "state": {
+      "heroes": [
+        {
+          "x": 190,
+          "y": 670,
+          "name": "솔",
+          "color": "#ffc777",
+          "art": "guardian-sun.png"
+        },
+        {
+          "x": 530,
+          "y": 670,
+          "name": "루나",
+          "color": "#87e9ff",
+          "art": "guardian-moon.png"
+        },
+        {
+          "x": 360,
+          "y": 550,
+          "name": "노바",
+          "color": "#d1abff",
+          "art": "guardian-nova.png"
+        }
+      ],
+      "foes": [
+        {
+          "id": "a",
+          "x": 200,
+          "y": 230,
+          "r": 42,
+          "hp": 68,
+          "max": 68,
+          "timer": 2,
+          "period": 2
+        },
+        {
+          "id": "b",
+          "x": 520,
+          "y": 230,
+          "r": 42,
+          "hp": 68,
+          "max": 68,
+          "timer": 3,
+          "period": 3
+        },
+        {
+          "id": "c",
+          "x": 360,
+          "y": 390,
+          "r": 46,
+          "hp": 80,
+          "max": 80,
+          "timer": 2,
+          "period": 2
+        }
+      ],
+      "hp": 180,
+      "maxHp": 180,
+      "selected": 0,
+      "turn": 1,
+      "wave": 1,
+      "charge": 0,
+      "phase": "aim",
+      "shot": null,
+      "combo": 0,
+      "totalHits": 0,
+      "bounces": 0,
+      "assists": 0,
+      "events": [],
+      "last": "구슬을 뒤로 당겨 궤도를 만드세요.",
+      "result": null
+    }
+  },
+  "firstHit": {
+    "heroes": [
+      {
+        "x": 136.53900540438576,
+        "y": 471.8051352839565,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#d1abff",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 42,
+        "max": 68,
+        "timer": 2,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 3,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 80,
+        "max": 80,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "flight",
+    "shot": {
+      "elapsed": 0.7249999999999999
+    },
+    "combo": 1,
+    "totalHits": 1,
+    "bounces": 0,
+    "assists": 0,
+    "events": [],
+    "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+    "result": null
+  },
+  "nextTurn": {
+    "heroes": [
+      {
+        "x": 74.67639928423755,
+        "y": 723.1561233816102,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#d1abff",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 42,
+        "max": 68,
+        "timer": 1,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 2,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 80,
+        "max": 80,
+        "timer": 1,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 1,
+    "turn": 2,
+    "wave": 1,
+    "charge": 1,
+    "phase": "aim",
+    "shot": null,
+    "combo": 1,
+    "totalHits": 1,
+    "bounces": 2,
+    "assists": 0,
+    "events": [],
+    "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+    "result": null
+  },
+  "scope": "One normal button shot on formatted final release; no state injection, source changes, or existing evidence changes."
+}

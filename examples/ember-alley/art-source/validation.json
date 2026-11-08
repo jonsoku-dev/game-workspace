@@ -1,0 +1,614 @@
+{
+  "player": {
+    "size": [
+      2304,
+      96
+    ],
+    "frames": 24,
+    "uniqueCels": 24,
+    "sharedSourceScale": 0.195,
+    "groundLine": 88,
+    "edgeClipping": "pass",
+    "source": "built-in image_gen original illustrated cels",
+    "bounds": [
+      {
+        "frame": 0,
+        "sourceBounds": [
+          35,
+          17,
+          259,
+          342
+        ],
+        "packedBounds": [
+          26,
+          25,
+          70,
+          88
+        ]
+      },
+      {
+        "frame": 1,
+        "sourceBounds": [
+          396,
+          16,
+          614,
+          340
+        ],
+        "packedBounds": [
+          26,
+          25,
+          69,
+          88
+        ]
+      },
+      {
+        "frame": 2,
+        "sourceBounds": [
+          745,
+          23,
+          1013,
+          340
+        ],
+        "packedBounds": [
+          22,
+          26,
+          74,
+          88
+        ]
+      },
+      {
+        "frame": 3,
+        "sourceBounds": [
+          1091,
+          19,
+          1330,
+          335
+        ],
+        "packedBounds": [
+          24,
+          26,
+          71,
+          88
+        ]
+      },
+      {
+        "frame": 4,
+        "sourceBounds": [
+          20,
+          378,
+          308,
+          692
+        ],
+        "packedBounds": [
+          20,
+          27,
+          76,
+          88
+        ]
+      },
+      {
+        "frame": 5,
+        "sourceBounds": [
+          378,
+          376,
+          598,
+          695
+        ],
+        "packedBounds": [
+          26,
+          26,
+          69,
+          88
+        ]
+      },
+      {
+        "frame": 6,
+        "sourceBounds": [
+          690,
+          381,
+          946,
+          689
+        ],
+        "packedBounds": [
+          23,
+          28,
+          73,
+          88
+        ]
+      },
+      {
+        "frame": 7,
+        "sourceBounds": [
+          999,
+          407,
+          1444,
+          691
+        ],
+        "packedBounds": [
+          4,
+          33,
+          91,
+          88
+        ]
+      },
+      {
+        "frame": 8,
+        "sourceBounds": [
+          33,
+          745,
+          302,
+          1069
+        ],
+        "packedBounds": [
+          22,
+          25,
+          74,
+          88
+        ]
+      },
+      {
+        "frame": 9,
+        "sourceBounds": [
+          329,
+          726,
+          617,
+          1069
+        ],
+        "packedBounds": [
+          20,
+          21,
+          76,
+          88
+        ]
+      },
+      {
+        "frame": 10,
+        "sourceBounds": [
+          685,
+          760,
+          1035,
+          1068
+        ],
+        "packedBounds": [
+          14,
+          28,
+          82,
+          88
+        ]
+      },
+      {
+        "frame": 11,
+        "sourceBounds": [
+          1083,
+          745,
+          1364,
+          1064
+        ],
+        "packedBounds": [
+          20,
+          26,
+          75,
+          88
+        ]
+      },
+      {
+        "frame": 12,
+        "sourceBounds": [
+          11,
+          67,
+          351,
+          330
+        ],
+        "packedBounds": [
+          15,
+          37,
+          81,
+          88
+        ]
+      },
+      {
+        "frame": 13,
+        "sourceBounds": [
+          389,
+          14,
+          727,
+          330
+        ],
+        "packedBounds": [
+          15,
+          26,
+          81,
+          88
+        ]
+      },
+      {
+        "frame": 14,
+        "sourceBounds": [
+          737,
+          61,
+          1094,
+          331
+        ],
+        "packedBounds": [
+          13,
+          35,
+          83,
+          88
+        ]
+      },
+      {
+        "frame": 15,
+        "sourceBounds": [
+          1112,
+          104,
+          1418,
+          332
+        ],
+        "packedBounds": [
+          18,
+          44,
+          78,
+          88
+        ]
+      },
+      {
+        "frame": 16,
+        "sourceBounds": [
+          36,
+          346,
+          340,
+          736
+        ],
+        "packedBounds": [
+          18,
+          12,
+          77,
+          88
+        ]
+      },
+      {
+        "frame": 17,
+        "sourceBounds": [
+          394,
+          373,
+          646,
+          659
+        ],
+        "packedBounds": [
+          23,
+          25,
+          72,
+          81
+        ]
+      },
+      {
+        "frame": 18,
+        "sourceBounds": [
+          697,
+          447,
+          1013,
+          680
+        ],
+        "packedBounds": [
+          17,
+          43,
+          79,
+          88
+        ]
+      },
+      {
+        "frame": 19,
+        "sourceBounds": [
+          1062,
+          450,
+          1437,
+          680
+        ],
+        "packedBounds": [
+          11,
+          43,
+          84,
+          88
+        ]
+      },
+      {
+        "frame": 20,
+        "sourceBounds": [
+          24,
+          759,
+          329,
+          1062
+        ],
+        "packedBounds": [
+          18,
+          29,
+          77,
+          88
+        ]
+      },
+      {
+        "frame": 21,
+        "sourceBounds": [
+          380,
+          795,
+          630,
+          1063
+        ],
+        "packedBounds": [
+          23,
+          36,
+          72,
+          88
+        ]
+      },
+      {
+        "frame": 22,
+        "sourceBounds": [
+          717,
+          705,
+          1037,
+          1020
+        ],
+        "packedBounds": [
+          17,
+          20,
+          79,
+          81
+        ]
+      },
+      {
+        "frame": 23,
+        "sourceBounds": [
+          1082,
+          729,
+          1427,
+          1057
+        ],
+        "packedBounds": [
+          14,
+          17,
+          81,
+          81
+        ]
+      }
+    ]
+  },
+  "foe": {
+    "size": [
+      432,
+      72
+    ],
+    "frames": 6,
+    "uniqueCels": 6,
+    "sharedSourceScale": 0.094,
+    "groundLine": 67,
+    "edgeClipping": "pass",
+    "source": "built-in image_gen original illustrated cels",
+    "bounds": [
+      {
+        "frame": 0,
+        "sourceBounds": [
+          24,
+          33,
+          399,
+          484
+        ],
+        "packedBounds": [
+          18,
+          25,
+          53,
+          67
+        ]
+      },
+      {
+        "frame": 1,
+        "sourceBounds": [
+          520,
+          27,
+          972,
+          484
+        ],
+        "packedBounds": [
+          15,
+          24,
+          57,
+          67
+        ]
+      },
+      {
+        "frame": 2,
+        "sourceBounds": [
+          1089,
+          10,
+          1467,
+          484
+        ],
+        "packedBounds": [
+          18,
+          22,
+          54,
+          67
+        ]
+      },
+      {
+        "frame": 3,
+        "sourceBounds": [
+          24,
+          529,
+          361,
+          992
+        ],
+        "packedBounds": [
+          20,
+          23,
+          52,
+          67
+        ]
+      },
+      {
+        "frame": 4,
+        "sourceBounds": [
+          410,
+          587,
+          1114,
+          986
+        ],
+        "packedBounds": [
+          3,
+          29,
+          69,
+          67
+        ]
+      },
+      {
+        "frame": 5,
+        "sourceBounds": [
+          1125,
+          538,
+          1504,
+          996
+        ],
+        "packedBounds": [
+          18,
+          24,
+          54,
+          67
+        ]
+      }
+    ]
+  },
+  "boss": {
+    "size": [
+      1152,
+      144
+    ],
+    "frames": 8,
+    "uniqueCels": 8,
+    "sharedSourceScale": 0.29,
+    "groundLine": 130,
+    "edgeClipping": "pass",
+    "source": "built-in image_gen original illustrated cels",
+    "bounds": [
+      {
+        "frame": 0,
+        "sourceBounds": [
+          16,
+          60,
+          427,
+          371
+        ],
+        "packedBounds": [
+          12,
+          40,
+          131,
+          130
+        ]
+      },
+      {
+        "frame": 1,
+        "sourceBounds": [
+          461,
+          41,
+          859,
+          372
+        ],
+        "packedBounds": [
+          14,
+          34,
+          129,
+          130
+        ]
+      },
+      {
+        "frame": 2,
+        "sourceBounds": [
+          878,
+          58,
+          1322,
+          376
+        ],
+        "packedBounds": [
+          7,
+          38,
+          136,
+          130
+        ]
+      },
+      {
+        "frame": 3,
+        "sourceBounds": [
+          1361,
+          49,
+          1767,
+          371
+        ],
+        "packedBounds": [
+          13,
+          37,
+          131,
+          130
+        ]
+      },
+      {
+        "frame": 4,
+        "sourceBounds": [
+          32,
+          420,
+          397,
+          850
+        ],
+        "packedBounds": [
+          19,
+          5,
+          125,
+          130
+        ]
+      },
+      {
+        "frame": 5,
+        "sourceBounds": [
+          427,
+          572,
+          893,
+          851
+        ],
+        "packedBounds": [
+          4,
+          49,
+          139,
+          130
+        ]
+      },
+      {
+        "frame": 6,
+        "sourceBounds": [
+          914,
+          535,
+          1312,
+          845
+        ],
+        "packedBounds": [
+          14,
+          40,
+          129,
+          130
+        ]
+      },
+      {
+        "frame": 7,
+        "sourceBounds": [
+          1336,
+          526,
+          1762,
+          850
+        ],
+        "packedBounds": [
+          10,
+          36,
+          134,
+          130
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+PASS deterministic simulation, bounded wall reflection, no tunneling, one-shot ally assists, AoE assist, enemy countdown, charged damage, normal-rule win and loss

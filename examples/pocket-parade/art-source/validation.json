@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "file": "plush-bunny.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        16,
+        17,
+        494,
+        492
+      ],
+      "bytes": 306137
+    },
+    {
+      "file": "plush-bear.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        16,
+        18,
+        493,
+        493
+      ],
+      "bytes": 370361
+    },
+    {
+      "file": "plush-cat.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        27,
+        16,
+        476,
+        480
+      ],
+      "bytes": 377073
+    },
+    {
+      "file": "plush-frog.png",
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_corners": true,
+      "bounds": [
+        16,
+        16,
+        496,
+        487
+      ],
+      "bytes": 360940
+    }
+  ],
+  "visual_review_sizes": [
+    48,
+    64,
+    100
+  ]
+}

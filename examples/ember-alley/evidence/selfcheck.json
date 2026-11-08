@@ -1,0 +1,31 @@
+{
+  "kind": "source-unit-evidence",
+  "recorded_at": "2026-11-08T22:20:33.148139+00:00",
+  "command": "node examples/ember-alley/tools/combat.test.mjs",
+  "exit_code": 0,
+  "output": "PASS depth/facing, startup/active/single hit, 3-chain, launcher/juggle/cooldown, dash/iframes/depth, death/retry, room doors/clear, boss telegraph\nPASS boss normal-hit armor retains tell, special breaks armor\nPASS full command-driven clear with both boss patterns and natural idle defeat\n",
+  "source_hashes": {
+    "game/combat.mjs": "64ad542ae717f683e9489429ab4032397d8251333af4f216c0bde5d50d3d2260",
+    "game/game.mjs": "434606420b0d3a365fc6d844a74142b9c0779bb3c1846d2ce7f4590a0a30ff46",
+    "game/index.html": "d42f847d36a92ec18841eecbbc36168e51d6ffb51407883fd5518ad3d2799689",
+    "tools/combat.test.mjs": "faa5df2e6c0dbbeb1f5c51286d772cf8a082e08af1983ba503a97fad583f9fec",
+    "genre.json": "5911f6d2f1bb11172f075487976bde447a60f21e66cc88e1cb86337b0ebb70e5"
+  },
+  "checks": [
+    "facing and ground-depth strike window",
+    "startup no damage, active one-hit-per-target",
+    "three queued melee contacts",
+    "launcher cooldown and juggle",
+    "dash travel, cooldown, invulnerability",
+    "death and fresh retry state",
+    "room door proximity and final clear",
+    "boss warning without early damage",
+    "boss normal-hit armor and launcher break",
+    "command-driven complete clear with both actual boss patterns",
+    "natural defeat from no input"
+  ],
+  "limitations": [
+    "Source simulation tests do not prove browser rendering or subjective art quality.",
+    "Browser evidence recorded separately and must be linked in project graph."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "generator": "built-in imagegen",
+  "transparent_background": true,
+  "processing": "Crop transparent extent, proportional Lanczos fit to 480x480, center in 512x512 RGBA. No repainting.",
+  "assets": [
+    {
+      "file": "guardian-sun.png",
+      "prompt": "Comet Carom premium arcade game sprite. ONE original cosmic solar guardian, compact circular armored marble portrait front view. Deep amber glowing glass core framing heroic stylized feline face with fierce ivory eyes, sun-gold faceted cheek armor, a small sculpted crown-like solar crest, copper engraved rays around circular rim, tiny turquoise jewel. Hand-painted fantasy enamel badge, strong graphic shapes, restrained luminous highlights, jewel-like polished finish. All armor integrated with compact orb silhouette. Entire isolated orb centered on transparent square with empty margin. No background, floor, text, detached particles or shadows. Must look gorgeous and legible at 64px, not a generic colored ball, no existing franchise."
+    },
+    {
+      "file": "guardian-moon.png",
+      "prompt": "Comet Carom premium arcade game sprite. ONE original cosmic lunar guardian, compact circular armored marble portrait front view. Midnight indigo glass orb framing serene brave owl-like mask face with large luminous pale cyan almond eyes, silver crescent brow crest, faceted pearl cheek armor and three symmetrical cobalt feather grooves along circular silver rim. Hand-painted sophisticated fantasy enamel badge, graphic strong silhouette, jewel polished finish, cool dramatic lighting. All crest armor stays compact with orb. Entire isolated orb centered on transparent square empty margin. No background, floor, text, detached particles or external shadow. Beautiful legible heroic face at 64px. Not generic colored ball, no existing franchise."
+    },
+    {
+      "file": "guardian-nova.png",
+      "prompt": "Comet Carom premium arcade game sprite. ONE original cosmic nova guardian, compact circular armored marble portrait front view. Rich emerald and petrol teal glass orb framing brave dragon-like stylized mask face with bright gold almond eyes, small angular bronze V brow crest, jade faceted armor cheek plates, elegant brass geometric circular rim, small coral heart-shaped central jewel. Hand-painted fantasy enamel badge, sophisticated original heroic character, bold readable graphic shapes, jewel polished finish, dramatic cool green and warm brass. Entire isolated compact orb centered on transparent square empty margin. No backdrop, floor, text, detached particles or shadows. Legible at 64px, not a generic colored ball, no existing franchise."
+    },
+    {
+      "file": "foe-orb.png",
+      "prompt": "Comet Carom premium arcade game enemy sprite. ONE original cosmic void wisp enemy, compact circular obsidian-purple orb with recognizable mischievous angular masked face. Bright coral-pink slanted glowing eyes, tiny pointed ivory grin, dark faceted amethyst armor rim with small swept-back angular side fins, subtle magenta cracks. Hand-painted fantasy enamel badge, polished sophisticated finish, strong clean readable graphic shapes. Enemy silhouette contrasts with heroic circular guardians yet stays compact. Entire isolated orb centered on transparent square with generous margins. No backdrop, floor, text, detached particles or shadow. Character face legible at 64px, no franchise."
+    },
+    {
+      "file": "boss-orb.png",
+      "prompt": "Comet Carom premium arcade game boss sprite. ONE original formidable cosmic eclipse emperor, compact circular obsidian orb portrait front view. Black cherry glass core, ominous ivory angular mask face with two glowing hot coral eyes, elaborate dark bronze faceted crown connected to circular armored rim, three short broad crown peaks, central pale gold eclipse sigil, symmetrical garnet armor facets. Sophisticated hand-painted fantasy enamel badge, beautifully rendered polished finish, clear face and bold broad silhouette. Entire isolated compact boss orb centered on transparent square generous empty margins. No backdrop, floor, text, detached particles or external shadow. Readable at 80px, no franchise."
+    }
+  ]
+}

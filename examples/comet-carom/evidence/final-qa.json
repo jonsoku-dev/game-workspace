@@ -1,0 +1,360 @@
+{
+  "url": "http://127.0.0.1:53040/comet-carom/",
+  "initial": {
+    "title": "혜성 궤도 · COMET CAROM",
+    "state": {
+      "heroes": [
+        {
+          "x": 190,
+          "y": 670,
+          "name": "솔",
+          "color": "#ffc777",
+          "art": "guardian-sun.png"
+        },
+        {
+          "x": 530,
+          "y": 670,
+          "name": "루나",
+          "color": "#87e9ff",
+          "art": "guardian-moon.png"
+        },
+        {
+          "x": 360,
+          "y": 550,
+          "name": "노바",
+          "color": "#d1abff",
+          "art": "guardian-nova.png"
+        }
+      ],
+      "foes": [
+        {
+          "id": "a",
+          "x": 200,
+          "y": 230,
+          "r": 42,
+          "hp": 68,
+          "max": 68,
+          "timer": 2,
+          "period": 2
+        },
+        {
+          "id": "b",
+          "x": 520,
+          "y": 230,
+          "r": 42,
+          "hp": 68,
+          "max": 68,
+          "timer": 3,
+          "period": 3
+        },
+        {
+          "id": "c",
+          "x": 360,
+          "y": 390,
+          "r": 46,
+          "hp": 80,
+          "max": 80,
+          "timer": 2,
+          "period": 2
+        }
+      ],
+      "hp": 180,
+      "maxHp": 180,
+      "selected": 0,
+      "turn": 1,
+      "wave": 1,
+      "charge": 0,
+      "phase": "aim",
+      "shot": null,
+      "combo": 0,
+      "totalHits": 0,
+      "bounces": 0,
+      "assists": 0,
+      "events": [],
+      "last": "구슬을 뒤로 당겨 궤도를 만드세요.",
+      "result": null
+    },
+    "portrait": {
+      "loaded": true,
+      "width": 1400,
+      "alt": "황금빛 태양의 수호자 솔"
+    },
+    "bodyWidth": 1440,
+    "viewport": 1440
+  },
+  "portraits": [
+    {
+      "selected": 1,
+      "name": "루나 달의 샘",
+      "ability": "동료가 스치면 체력 +22, 추적탄 20",
+      "alt": "은빛 달의 수호자 루나",
+      "transform": "matrix(1, 0, 0, 1, -228, 0)",
+      "portraitRect": {
+        "x": 69,
+        "y": 300.375,
+        "width": 228,
+        "height": 228,
+        "top": 300.375,
+        "right": 297,
+        "bottom": 528.375,
+        "left": 69
+      }
+    },
+    {
+      "selected": 2,
+      "name": "노바 별비",
+      "ability": "동료가 스치면 모든 적에게 18 피해",
+      "alt": "초록빛 별의 수호자 노바",
+      "transform": "matrix(1, 0, 0, 1, -456, 0)",
+      "portraitRect": {
+        "x": 69,
+        "y": 300.375,
+        "width": 228,
+        "height": 228,
+        "top": 300.375,
+        "right": 297,
+        "bottom": 528.375,
+        "left": 69
+      }
+    },
+    {
+      "selected": 0,
+      "name": "솔 태양창",
+      "ability": "동료가 스치면 가까운 적에게 38 피해",
+      "alt": "황금빛 태양의 수호자 솔",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "portraitRect": {
+        "x": 69,
+        "y": 300.375,
+        "width": 228,
+        "height": 228,
+        "top": 300.375,
+        "right": 297,
+        "bottom": 528.375,
+        "left": 69
+      }
+    }
+  ],
+  "firstHit": {
+    "heroes": [
+      {
+        "x": 93.549541916203,
+        "y": 611.9069943722362,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#d1abff",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 42,
+        "max": 68,
+        "timer": 2,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 3,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 80,
+        "max": 80,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "flight",
+    "shot": {
+      "elapsed": 1.0749999999999986
+    },
+    "combo": 1,
+    "totalHits": 1,
+    "bounces": 0,
+    "assists": 0,
+    "events": [],
+    "last": "혜성 발사 · 동료를 스쳐 연계하세요",
+    "result": null
+  },
+  "settled": {
+    "heroes": [
+      {
+        "x": 74.67639928423755,
+        "y": 723.1561233816102,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#d1abff",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 42,
+        "max": 68,
+        "timer": 1,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 2,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 80,
+        "max": 80,
+        "timer": 1,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 1,
+    "turn": 2,
+    "wave": 1,
+    "charge": 1,
+    "phase": "aim",
+    "shot": null,
+    "combo": 1,
+    "totalHits": 1,
+    "bounces": 2,
+    "assists": 0,
+    "events": [],
+    "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+    "result": null
+  },
+  "responsive": [
+    {
+      "viewport": 1024,
+      "bodyWidth": 1009,
+      "portraitVisible": true,
+      "portrait": {
+        "x": 657.5,
+        "y": 117,
+        "width": 110,
+        "height": 110,
+        "top": 117,
+        "right": 767.5,
+        "bottom": 227,
+        "left": 657.5
+      },
+      "canvas": {
+        "x": 43.5,
+        "y": 336,
+        "width": 554,
+        "height": 646.328125,
+        "top": 336,
+        "right": 597.5,
+        "bottom": 982.328125,
+        "left": 43.5
+      },
+      "fire": true
+    },
+    {
+      "viewport": 390,
+      "bodyWidth": 375,
+      "portraitVisible": false,
+      "portrait": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "canvas": {
+        "x": 15,
+        "y": 229.59375,
+        "width": 345,
+        "height": 402.5,
+        "top": 229.59375,
+        "right": 360,
+        "bottom": 632.09375,
+        "left": 15
+      },
+      "fire": true
+    }
+  ],
+  "verified": [
+    "local guardian illustration loaded",
+    "all three normal-click portrait/name/ability transitions",
+    "normal fire button shot hit enemy",
+    "wall reflection during actual shot",
+    "turn advanced after actual shot",
+    "1024px and 390px no horizontal overflow",
+    "desktop and mobile screenshots"
+  ],
+  "unverified": [
+    "physical pointer drag owned by primary CUA",
+    "audio listening",
+    "native touch hardware",
+    "full boss replay on final build",
+    "console error monitoring was not attached"
+  ],
+  "passed": true,
+  "screenshots": [
+    "cover.png",
+    "first-hit.png",
+    "final-mobile.png"
+  ]
+}

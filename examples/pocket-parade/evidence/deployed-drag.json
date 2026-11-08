@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:53040/pocket-parade/",
+  "export": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-02ff35e71b7f45fba8556d696efd7621",
+  "input": "in-app browser coordinate mouse drag",
+  "before": {
+    "score": 0
+  },
+  "after": {
+    "score": 400,
+    "chain": 4,
+    "fever": 4,
+    "status": "4마리 연결! +400점"
+  },
+  "device": "desktop browser mouse interaction; no hardware touch test"
+}
