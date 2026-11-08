@@ -123,8 +123,8 @@ def check(base, out):
             if name == "forest-camp":
                 browser.screenshot(out / "lineage-desktop.jpg")
             browser.run("await page.setViewportSize({width:390,height:844});await page.locator('#tab-scene').click();return await page.title()")
-            mobile = browser.run("return await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,history:document.querySelector('#toggle-history').getAttribute('aria-expanded')}))")
-            if mobile["scroll"] != mobile["width"] or mobile["history"] != "false":
+            mobile = browser.run("return await page.evaluate(()=>({width:innerWidth,client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,history:document.querySelector('#toggle-history').getAttribute('aria-expanded')}))")
+            if mobile["scroll"] > mobile["client"] or mobile["history"] != "false":
                 raise ValueError(f"mobile layout failed: {mobile}")
             if name == "scout-actions":
                 browser.screenshot(out / "scout-mobile.jpg")

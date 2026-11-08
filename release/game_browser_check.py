@@ -24,8 +24,8 @@ def click(browser, selector):
 
 def resources(browser):
     check = browser.run("""return await page.evaluate(()=>({external:performance.getEntriesByType('resource').filter(r=>new URL(r.name).origin!==location.origin).map(r=>r.name),
-       errors:performance.getEntriesByType('resource').filter(r=>r.responseStatus>=400).map(r=>r.name),width:innerWidth,scroll:document.documentElement.scrollWidth}))""")
-    if check["external"] or check["errors"] or check["width"] != check["scroll"]:
+       errors:performance.getEntriesByType('resource').filter(r=>r.responseStatus>=400).map(r=>r.name),width:innerWidth,client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}))""")
+    if check["external"] or check["errors"] or check["scroll"] > check["client"]:
         raise RuntimeError(check)
     return check
 
