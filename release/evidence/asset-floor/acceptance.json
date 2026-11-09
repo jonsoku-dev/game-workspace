@@ -1,0 +1,162 @@
+{
+  "version": "0.15.0",
+  "installed": {
+    "pluginId": "game-studio@game-studio",
+    "name": "game-studio",
+    "marketplaceName": "game-studio",
+    "version": "0.15.0",
+    "installed": true,
+    "enabled": true,
+    "source": {
+      "source": "local",
+      "path": "/Users/jongseoklee/.local/share/codex-local-plugins/game-studio/0.15.0"
+    },
+    "marketplaceSource": {
+      "sourceType": "local",
+      "source": "/Users/jongseoklee/.local/share/codex-local-plugins/game-studio/0.15.0"
+    },
+    "installPolicy": "AVAILABLE",
+    "authPolicy": "ON_INSTALL"
+  },
+  "installed_byte_matches": 188,
+  "regressions": {
+    "cardboard": {
+      "identical_input_sha256": "9fd430c466ad96c16b9cbb7a6a614af6db677c1ebaa182240ccb49b0062c4af1",
+      "before_0141": "published",
+      "after_0150": {
+        "status": "failed",
+        "artistic_acceptance": "pending",
+        "reference": "resonance-knight-v1",
+        "report": "checks/asset-review-1c2daa676ae34d1da198f40e40a0b86f/report.json",
+        "board": "checks/asset-review-1c2daa676ae34d1da198f40e40a0b86f/review.html",
+        "art_direction": "checks/asset-review-1c2daa676ae34d1da198f40e40a0b86f/art-direction.md",
+        "findings": [
+          {
+            "asset": "game/motion/blade.json",
+            "code": "pose-coverage",
+            "repair": "실제 사용하는 서로 다른 포즈를 최소 14개 제작하세요 (player). 기본 플레이어/파수꾼의 활성 포즈는 14/11개입니다."
+          },
+          {
+            "asset": "game/motion/blade.json",
+            "code": "gait-move",
+            "repair": "move에 팔다리 형태가 다른 보행 포즈 4개를 제작하세요. 색상·위치 변경만으로는 충족되지 않습니다."
+          },
+          {
+            "asset": "game/motion/blade.json",
+            "code": "phase-windup",
+            "repair": "windup에 준비·회복을 구분할 수 있는 포즈 2개를 제작하세요."
+          },
+          {
+            "asset": "game/motion/blade.json",
+            "code": "phase-heavy",
+            "repair": "heavy에 준비·회복을 구분할 수 있는 포즈 2개를 제작하세요."
+          },
+          {
+            "asset": "game/motion/blade.json",
+            "code": "phase-recover",
+            "repair": "recover에 준비·회복을 구분할 수 있는 포즈 2개를 제작하세요."
+          },
+          {
+            "asset": "game/motion/blade.json",
+            "code": "action-silhouettes",
+            "repair": "대기·준비·발동·후속·회복·피격·회피·점프의 몸과 무기 형태가 서로 구분되도록 제작하세요."
+          }
+        ],
+        "activity": "urn:game-studio:e4807e0d-51db-4ffa-8faf-ab70f2b7eb62:work:asset-review-1c2daa676ae34d1da198f40e40a0b86f"
+      },
+      "repaired_sha256": "2c4f13d7f090109af1a9840a2e7435a9f3f7c4abdf5fb887e49447e4560571e6",
+      "repair": {
+        "status": "passed",
+        "artistic_acceptance": "pending",
+        "reference": "resonance-knight-v1",
+        "report": "checks/asset-review-4e7e4216efaf4e29860ecfb899212dbc/report.json",
+        "board": "checks/asset-review-4e7e4216efaf4e29860ecfb899212dbc/review.html",
+        "art_direction": "checks/asset-review-4e7e4216efaf4e29860ecfb899212dbc/art-direction.md",
+        "findings": [],
+        "activity": "urn:game-studio:e4807e0d-51db-4ffa-8faf-ab70f2b7eb62:work:asset-review-4e7e4216efaf4e29860ecfb899212dbc"
+      },
+      "rejected_asset": "game/motion/blade.webp"
+    },
+    "color-swap": {
+      "identical_input_sha256": "d2aab6344b58c5c68b1004aadf1ad3b07a88e661193bf7221aaf1f1e48f2fd0e",
+      "before_0141": "published",
+      "after_0150": {
+        "status": "failed",
+        "artistic_acceptance": "pending",
+        "reference": "resonance-knight-v1",
+        "report": "checks/asset-review-87810cf326e14827bbac559bad9b5b89/report.json",
+        "board": "checks/asset-review-87810cf326e14827bbac559bad9b5b89/review.html",
+        "art_direction": "checks/asset-review-87810cf326e14827bbac559bad9b5b89/art-direction.md",
+        "findings": [
+          {
+            "asset": "game/fx/custom-0.webp",
+            "code": "effect-geometry",
+            "repair": "4개 이상의 서로 다른 painted skill 형태를 시간 순서대로 그리세요. 한 형태의 색상·크기·위치 변경만으로는 충족되지 않습니다."
+          }
+        ],
+        "activity": "urn:game-studio:21d2802a-f029-45c9-8e10-c28be148c7f9:work:asset-review-87810cf326e14827bbac559bad9b5b89"
+      },
+      "repaired_sha256": "829280cc6417604f7a07bb8dd025e1eb9fc87f82167f23c7c584d7efc03feb02",
+      "repair": {
+        "status": "passed",
+        "artistic_acceptance": "pending",
+        "reference": "resonance-knight-v1",
+        "report": "checks/asset-review-58d8ef13c6414762a6ae4455d330333c/report.json",
+        "board": "checks/asset-review-58d8ef13c6414762a6ae4455d330333c/review.html",
+        "art_direction": "checks/asset-review-58d8ef13c6414762a6ae4455d330333c/art-direction.md",
+        "findings": [],
+        "activity": "urn:game-studio:21d2802a-f029-45c9-8e10-c28be148c7f9:work:asset-review-58d8ef13c6414762a6ae4455d330333c"
+      },
+      "rejected_asset": "game/fx/custom-0.webp"
+    }
+  },
+  "real_game": {
+    "name": "빙정 종탑",
+    "quality": {
+      "status": "passed",
+      "artistic_acceptance": "pending",
+      "reference": "resonance-knight-v1",
+      "report": "checks/asset-review-1c0a250ba1474becb0c548ccf08589e5/report.json",
+      "board": "checks/asset-review-1c0a250ba1474becb0c548ccf08589e5/review.html",
+      "art_direction": "checks/asset-review-1c0a250ba1474becb0c548ccf08589e5/art-direction.md",
+      "findings": [],
+      "activity": "urn:game-studio:ebf13eb3-9f43-426e-9c10-f5e8e7a8ed8c:work:asset-review-1c0a250ba1474becb0c548ccf08589e5"
+    },
+    "runtime": {
+      "hit": "3",
+      "miss": "1",
+      "hp": "218",
+      "errors": []
+    },
+    "board": {
+      "paused": "442 ms / 975 ms",
+      "stable": "442 ms / 975 ms",
+      "result": {
+        "labels": [
+          "현재 프로젝트",
+          "공명기사 기준"
+        ],
+        "verdict": "기술 기준 통과 · 시각 검토 필요",
+        "scrollWidth": 390,
+        "view": 390,
+        "signatures": 18,
+        "status": [
+          "move · 380ms 원화 노출 주기",
+          "move · 380ms 원화 노출 주기"
+        ]
+      },
+      "errors": []
+    }
+  },
+  "existing_revision": "verified",
+  "tests": {
+    "python_run": 240,
+    "passed": 239,
+    "skipped": 1,
+    "node_combat_fx": 6
+  },
+  "limits": [
+    "Technical tests cannot approve illustration quality or fun.",
+    "The floor covers Game Studio class combat, not unrelated 3D assets or games."
+  ]
+}

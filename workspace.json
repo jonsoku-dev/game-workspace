@@ -17,7 +17,8 @@
     "examples/pocket-parade",
     "examples/comet-carom",
     "examples/resonance-choir",
-    "examples/resonance-foundry"
+    "examples/resonance-foundry",
+    "examples/glass-falcon"
   ],
   "links": [
     {
@@ -907,6 +908,10 @@
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-combat-0141",
       "observed": "urn:game-studio:40f13950-1b1a-4d0a-a865-a1ececee126f:work:installed-combat-0141"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:combat-asset-floor-0150",
+      "observed": "urn:game-studio:ebf13eb3-9f43-426e-9c10-f5e8e7a8ed8c:work:installed-art-review-play"
     }
   ],
   "playtests": [
