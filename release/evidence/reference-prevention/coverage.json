@@ -1,0 +1,154 @@
+{
+  "plugin": "0.13.1",
+  "userAttached": {
+    "images": 16,
+    "historicalZip": 1
+  },
+  "projectEvidence": {
+    "coverage_complete": false,
+    "behavior_verified": false,
+    "recorded": true,
+    "report": "checks/reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05.json",
+    "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05",
+    "counts": {
+      "sources": 17,
+      "matched": 17,
+      "deferred": 0,
+      "pending": 0,
+      "unavailable": 2
+    },
+    "findings": [],
+    "unavailable": [
+      {
+        "name": "Game_Feel_Playbook_KR.pdf",
+        "reason": "참조 대화에 다운로드 링크만 있고 로컬 원본이 없다. 수록 범위는 이미지 7장과 대화 본문까지다."
+      },
+      {
+        "name": "Game_Feel_Playbook_KR.docx",
+        "reason": "같은 가이드의 편집본이다. 원래 바이트와 전문은 확인할 수 없다."
+      }
+    ]
+  },
+  "installedReferenceIndex": {
+    "coverage_complete": false,
+    "behavior_verified": false,
+    "recorded": true,
+    "report": "checks/reference-review-37a23b85-cb02-410a-90b3-bee4ecb20b65.json",
+    "activity": "urn:game-studio:cd410e43-2c90-41fc-a052-428019cf1bb1:work:reference-review-37a23b85-cb02-410a-90b3-bee4ecb20b65",
+    "counts": {
+      "sources": 17,
+      "matched": 17,
+      "deferred": 0,
+      "pending": 0,
+      "unavailable": 2
+    },
+    "findings": [],
+    "unavailable": [
+      {
+        "name": "Game_Feel_Playbook_KR.pdf",
+        "reason": "참조 대화에 다운로드 링크만 있고 로컬 원본이 없다. 수록 범위는 이미지 7장과 대화 본문까지다."
+      },
+      {
+        "name": "Game_Feel_Playbook_KR.docx",
+        "reason": "같은 가이드의 편집본이다. 원래 바이트와 전문은 확인할 수 없다."
+      }
+    ]
+  },
+  "deliberateOmissionAndStaleAnchor": {
+    "coverage_complete": false,
+    "behavior_verified": false,
+    "recorded": true,
+    "report": "checks/reference-review-72bf0340-4063-4e9d-afda-47d0213545c8.json",
+    "activity": "urn:game-studio:cd410e43-2c90-41fc-a052-428019cf1bb1:work:reference-review-72bf0340-4063-4e9d-afda-47d0213545c8",
+    "counts": {
+      "sources": 17,
+      "matched": 15,
+      "deferred": 0,
+      "pending": 0,
+      "unavailable": 2
+    },
+    "findings": [
+      {
+        "path": "guide-6254/IMG_6254.jpeg",
+        "code": "stale_evidence",
+        "action": "Restore or replace missing, unsafe or changed evidence and rerun review",
+        "evidence_path": "PLAYBOOK.md"
+      },
+      {
+        "path": "social2/2-사진-2.jpg",
+        "code": "unmapped",
+        "action": "Add this source to the map and apply it with evidence or defer with a reason"
+      }
+    ],
+    "unavailable": [
+      {
+        "name": "Game_Feel_Playbook_KR.pdf",
+        "reason": "참조 대화에 다운로드 링크만 있고 로컬 원본이 없다. 수록 범위는 이미지 7장과 대화 본문까지다."
+      },
+      {
+        "name": "Game_Feel_Playbook_KR.docx",
+        "reason": "같은 가이드의 편집본이다. 원래 바이트와 전문은 확인할 수 없다."
+      }
+    ]
+  },
+  "freshStarter": {
+    "initial": {
+      "coverage_complete": true,
+      "behavior_verified": false,
+      "recorded": true,
+      "report": "checks/reference-review-95cf0b50-f3a3-48ec-b9bc-7fdc379cb1ef.json",
+      "activity": "urn:game-studio:7508b1ef-50c7-4ba0-a275-0eff4d3e70b9:work:reference-review-95cf0b50-f3a3-48ec-b9bc-7fdc379cb1ef",
+      "counts": {
+        "sources": 1,
+        "matched": 1,
+        "deferred": 0,
+        "pending": 0,
+        "unavailable": 0
+      },
+      "findings": [],
+      "unavailable": []
+    },
+    "changedSource": {
+      "coverage_complete": false,
+      "behavior_verified": false,
+      "recorded": true,
+      "report": "checks/reference-review-b3abc92e-016e-47a3-a855-0bbd78de1965.json",
+      "activity": "urn:game-studio:7508b1ef-50c7-4ba0-a275-0eff4d3e70b9:work:reference-review-b3abc92e-016e-47a3-a855-0bbd78de1965",
+      "counts": {
+        "sources": 1,
+        "matched": 0,
+        "deferred": 0,
+        "pending": 0,
+        "unavailable": 0
+      },
+      "findings": [
+        {
+          "path": "signal.txt",
+          "code": "source_changed",
+          "action": "Review the current source and update its digest, decision and evidence"
+        }
+      ],
+      "unavailable": []
+    },
+    "reviewedAgain": {
+      "coverage_complete": true,
+      "behavior_verified": false,
+      "recorded": true,
+      "report": "checks/reference-review-b5081472-adb6-4a8b-9ff0-9c738229f54a.json",
+      "activity": "urn:game-studio:7508b1ef-50c7-4ba0-a275-0eff4d3e70b9:work:reference-review-b5081472-adb6-4a8b-9ff0-9c738229f54a",
+      "counts": {
+        "sources": 1,
+        "matched": 1,
+        "deferred": 0,
+        "pending": 0,
+        "unavailable": 0
+      },
+      "findings": [],
+      "unavailable": []
+    }
+  },
+  "limits": [
+    "Evidence pins prove source coverage of the selected files at review time. Runtime evidence is reported separately.",
+    "PDF and DOCX in the referenced conversation are generated downloads, not among the 17 available user attachments. Their full contents are unavailable."
+  ]
+}

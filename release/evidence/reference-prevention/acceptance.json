@@ -1,0 +1,90 @@
+{
+  "plugin": "game-studio",
+  "version": "0.13.1",
+  "installed": true,
+  "enabled": true,
+  "suite": {
+    "ran": 210,
+    "failed": 0,
+    "skipped": 0,
+    "isolated_offline_install": true
+  },
+  "referenceInventory": {
+    "sources": 17,
+    "matched": 17,
+    "deferred": 0,
+    "pending": 0,
+    "unavailable": 2
+  },
+  "availableReferencesMatched": 17,
+  "combinedScopeComplete": false,
+  "unavailable": [
+    "Game_Feel_Playbook_KR.pdf",
+    "Game_Feel_Playbook_KR.docx"
+  ],
+  "actualHistory": {
+    "old_rectangles_overlap": {
+      "found": true,
+      "count": 1,
+      "visible": true,
+      "enabled": true,
+      "rect": {
+        "x": 20,
+        "y": 333.77,
+        "width": 99.27,
+        "height": 11
+      },
+      "viewport_width": 390,
+      "other": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 8,
+          "y": 143.39,
+          "width": 374,
+          "height": 210.38
+        }
+      },
+      "matched": false
+    },
+    "corrected_rectangles_separate": {
+      "found": true,
+      "count": 1,
+      "visible": true,
+      "enabled": true,
+      "rect": {
+        "x": 8,
+        "y": 353.77,
+        "width": 374,
+        "height": 40.8
+      },
+      "viewport_width": 390,
+      "other": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 8,
+          "y": 143.39,
+          "width": 374,
+          "height": 210.38
+        }
+      },
+      "matched": true
+    },
+    "bugfix_report": "checks/web-revision-031d095e319f4bb88c131cd22e88d1d1.json"
+  },
+  "controlledCases": [
+    "disabled_control",
+    "attempt_to_click_disabled",
+    "overflow",
+    "hidden_override"
+  ],
+  "limits": [
+    "실행 근거는 기술 검사와 로컬 브라우저에 한정된다. 자료 지도는 지정한 근거의 파일 일치를 확인한다.",
+    "원본 39페이지 문서, 실기기 터치·스피커 청취와 사용자 미술 승인은 확인하지 않았다."
+  ]
+}

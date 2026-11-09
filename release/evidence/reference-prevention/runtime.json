@@ -1,0 +1,365 @@
+{
+  "plugin": "0.13.1",
+  "installedFiles": {
+    ".codex-plugin/plugin.json": "2950ca7995f2590ae170c326193ccc6f3e368279fc8df3ec9402860c6e05f75f",
+    ".agents/skills/game-studio/SKILL.md": "cdb956446e98a2cbc53605f307f0155003cf53f458a4de86b52357ee0c91601f",
+    "REFERENCES.md": "51fe94bb4178e05e739a0244028991e6824039b74f8543f296e028db6c1b3000",
+    "reference-materials.json": "4397b43aef87b977591a3464a082a88efa557c81f2ed3749e66174e717fb4a44",
+    "PLAYBOOK.md": "a4ec691f439e379f1de829d0b986222caa21755a0fb8b87d23ca0d59a628be82",
+    "tools/web_revision.py": "339f76adcec6d2d56122f443e40ae7869fd6d7b10a557701f78d4a68dc81227e",
+    "tools/web_regression.py": "d678d91a894c931fb7e37321a00a829b20c94bd93de13cebbba134f4f513c32b",
+    "tools/reference_review.py": "8b9da851a8416910a14cbf54366bf618f78182162ae59614ebfd4d7644a87110",
+    "tools/web_game.py": "13ed46cd93a153f58909f22b2e66135532423ed9f2cc27fefd150e2d80fd0006",
+    "starter/checks/web-health.json": "d55aad3d8ff95eb1d16e4b3865dd5dbea05c99ff7a48d17e3c6509dfc45a5216",
+    "starter/campaign/checks/first-play.json": "1f91f9756b29d39f2d95effa1243ed68cb8ac32ec46b8341428363f203e6233a",
+    "starter/campaign/game/game.mjs": "97633da98f49419f63d49f0cbd9743f1cd248a04a9f75138e271c327c80619c2"
+  },
+  "initialization": "urn:game-studio:7508b1ef-50c7-4ba0-a275-0eff4d3e70b9:work:campaign-0add9b6f42934023ada0349b487fd05d",
+  "starter_health": [
+    {
+      "step": 0,
+      "action": "expect_page",
+      "check": "fits_viewport",
+      "observed": {
+        "matched": true,
+        "viewport_width": 390,
+        "scroll_width": 390
+      }
+    },
+    {
+      "step": 1,
+      "action": "expect_page",
+      "check": "respects_hidden",
+      "observed": {
+        "matched": true,
+        "viewport_width": 390,
+        "scroll_width": 390
+      }
+    }
+  ],
+  "starter_route": [
+    {
+      "step": 0,
+      "action": "expect_page",
+      "check": "fits_viewport",
+      "observed": {
+        "matched": true,
+        "viewport_width": 390,
+        "scroll_width": 390
+      }
+    },
+    {
+      "step": 1,
+      "action": "expect_control",
+      "selector": "[data-symbol=triangle]",
+      "state": "disabled",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": false,
+        "rect": {
+          "x": 255,
+          "y": 688.09,
+          "width": 96,
+          "height": 56.5
+        },
+        "matched": true
+      }
+    },
+    {
+      "step": 2,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 3,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 4,
+      "action": "expect_control",
+      "selector": "#next",
+      "state": "enabled",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 39,
+          "y": 589.49,
+          "width": 143.26,
+          "height": 48
+        },
+        "matched": true
+      }
+    },
+    {
+      "step": 5,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 6,
+      "action": "expect_control",
+      "selector": "#next",
+      "state": "hidden",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": false,
+        "enabled": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "matched": true
+      }
+    },
+    {
+      "step": 7,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 8,
+      "action": "expect_control",
+      "selector": "#answer [data-cue=denied]",
+      "state": "visible",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 39,
+          "y": 356.99,
+          "width": 58,
+          "height": 64
+        },
+        "matched": true
+      }
+    },
+    {
+      "step": 9,
+      "action": "expect_control",
+      "selector": "#retry",
+      "state": "enabled",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 39,
+          "y": 589.89,
+          "width": 147.45,
+          "height": 48
+        },
+        "matched": true
+      }
+    },
+    {
+      "step": 10,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 11,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 12,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 13,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 14,
+      "action": "expect_control",
+      "selector": "#answer [data-cue=finish]",
+      "state": "visible",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 179,
+          "y": 356.99,
+          "width": 58,
+          "height": 64
+        },
+        "matched": true
+      }
+    },
+    {
+      "step": 15,
+      "action": "expect_text",
+      "selector": "#status",
+      "contains": "공방 작업 완료",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 39,
+          "y": 517.49,
+          "width": 312,
+          "height": 54.4
+        },
+        "matched": true,
+        "text": "공방 작업 완료! 두 장치를 모두 복구했습니다."
+      }
+    }
+  ],
+  "controlledNegativeCases": {
+    "disabled_control": [
+      {
+        "category": "assertion",
+        "fault": "control_state_mismatch",
+        "step": 0,
+        "instruction": "Compare the expected control state with observed visibility and enabled state; inspect hidden/display rules or disabled attributes and the preceding screen transition.",
+        "action": "expect_control",
+        "selector": "[data-symbol=triangle]",
+        "expected_state": "enabled",
+        "observed": {
+          "found": true,
+          "count": 1,
+          "visible": true,
+          "enabled": false,
+          "rect": {
+            "x": 753.66,
+            "y": 682.2,
+            "width": 203.34,
+            "height": 56.5
+          },
+          "matched": false
+        }
+      }
+    ],
+    "attempt_to_click_disabled": [
+      {
+        "category": "action",
+        "fault": "control_disabled",
+        "step": 0,
+        "instruction": "Inspect the disabled state and the preceding prerequisite action before enabling this control.",
+        "action": "click",
+        "selector": "[data-symbol=triangle]"
+      }
+    ],
+    "overflow": [
+      {
+        "category": "assertion",
+        "fault": "fits_viewport",
+        "step": 0,
+        "instruction": "Inspect the reported overflowing element at this viewport width for fixed widths, min-width, padding and unbroken content; rerun at the same width.",
+        "action": "expect_page",
+        "check": "fits_viewport",
+        "viewport_width": 390,
+        "scroll_width": 690,
+        "selector": "html:nth-of-type(1) > body:nth-of-type(1)"
+      }
+    ],
+    "hidden_override": [
+      {
+        "category": "assertion",
+        "fault": "respects_hidden",
+        "step": 0,
+        "instruction": "Inspect the reported [hidden] element and CSS display overrides; preserve its hidden state before rerunning the check.",
+        "action": "expect_page",
+        "check": "respects_hidden",
+        "viewport_width": 390,
+        "scroll_width": 690,
+        "selector": "#retry"
+      }
+    ]
+  },
+  "real_ember_overlap": {
+    "diagnosis": "checks/web-revision-46ea174b5793438c990d0c3fd1d4e2a9.json",
+    "revision_report": "checks/web-revision-031d095e319f4bb88c131cd22e88d1d1.json",
+    "revision_activity": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1",
+    "before": [
+      {
+        "category": "assertion",
+        "fault": "layout_overlap",
+        "step": 2,
+        "instruction": "Compare both recorded rectangles; inspect their shared layout, absolute positioning, spacing and wrapping at this viewport width to separate the controls.",
+        "action": "expect_layout",
+        "selector": ".status",
+        "relation": "separate",
+        "other": "canvas",
+        "observed": {
+          "found": true,
+          "count": 1,
+          "visible": true,
+          "enabled": true,
+          "rect": {
+            "x": 20,
+            "y": 333.77,
+            "width": 99.27,
+            "height": 11
+          },
+          "viewport_width": 390,
+          "other": {
+            "found": true,
+            "count": 1,
+            "visible": true,
+            "enabled": true,
+            "rect": {
+              "x": 8,
+              "y": 143.39,
+              "width": 374,
+              "height": 210.38
+            }
+          },
+          "matched": false
+        }
+      }
+    ],
+    "after": {
+      "step": 2,
+      "action": "expect_layout",
+      "selector": ".status",
+      "relation": "separate",
+      "other": "canvas",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 8,
+          "y": 353.77,
+          "width": 374,
+          "height": 40.8
+        },
+        "viewport_width": 390,
+        "other": {
+          "found": true,
+          "count": 1,
+          "visible": true,
+          "enabled": true,
+          "rect": {
+            "x": 8,
+            "y": 143.39,
+            "width": 374,
+            "height": 210.38
+          }
+        },
+        "matched": true
+      }
+    }
+  },
+  "scope": "Actual loopback browser, one real previous game layout defect, controlled starter issues, local source coverage. No hardware touch, visual approval or audio listening."
+}

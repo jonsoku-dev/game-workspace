@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "viewport": {"width":390,"height":844},
+  "steps": [
+    {"expect_control":{"selector":"#start","state":"enabled"}},
+    {"click":"#start"},
+    {"expect_layout":{"selector":".status","relation":"separate","other":"canvas"}}
+  ]
+}

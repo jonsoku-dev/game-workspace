@@ -32,18 +32,13 @@
       "@type": "@id",
       "@container": "@set"
     },
-    "dependsOn": {
-      "@id": "https://game-studio.local/ns/v1#dependsOn",
+    "wasDerivedFrom": {
+      "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
       "@type": "@id",
       "@container": "@set"
     },
-    "includesProject": {
-      "@id": "https://game-studio.local/ns/v1#includesProject",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "revisionOf": {
-      "@id": "https://game-studio.local/ns/v1#revisionOf",
+    "used": {
+      "@id": "http://www.w3.org/ns/prov#used",
       "@type": "@id",
       "@container": "@set"
     },
@@ -52,8 +47,8 @@
       "@type": "@id",
       "@container": "@set"
     },
-    "wasDerivedFrom": {
-      "@id": "http://www.w3.org/ns/prov#wasDerivedFrom",
+    "observed": {
+      "@id": "https://game-studio.local/ns/v1#observed",
       "@type": "@id",
       "@container": "@set"
     },
@@ -62,18 +57,23 @@
       "@type": "@id",
       "@container": "@set"
     },
-    "observed": {
-      "@id": "https://game-studio.local/ns/v1#observed",
-      "@type": "@id",
-      "@container": "@set"
-    },
     "wasAssociatedWith": {
       "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
       "@type": "@id",
       "@container": "@set"
     },
-    "used": {
-      "@id": "http://www.w3.org/ns/prov#used",
+    "revisionOf": {
+      "@id": "https://game-studio.local/ns/v1#revisionOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "dependsOn": {
+      "@id": "https://game-studio.local/ns/v1#dependsOn",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "includesProject": {
+      "@id": "https://game-studio.local/ns/v1#includesProject",
       "@type": "@id",
       "@container": "@set"
     },
@@ -3770,6 +3770,590 @@
       ]
     },
     {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Publish static web game",
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:09:45.204279+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-game"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Observe static web game inputs",
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:09:45.172785+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-game"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1333,
+      "path": "game/progression.mjs",
+      "sha256": "3c34d535458bccd692829c82d28b31a31b616d25b1e05393e2e6a13a6cc90a6d"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 502234,
+      "path": "game/scenery/furnace-v2.webp",
+      "sha256": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1174,
+      "path": "genre.json",
+      "sha256": "a0dd0293d07002110d06269fd15c60495d792c05c8e89dc082a7fe5e6b01238a"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 552930,
+      "path": "game/art/player.v2.png",
+      "sha256": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 9065,
+      "path": "game/index.html",
+      "sha256": "6400ba442b7d18d64193da639c29b6929d04771c4c9dfca51de31413cf335f23"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 369568,
+      "path": "game/scenery/lift.webp",
+      "sha256": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 26707,
+      "path": "game/art/foe.png",
+      "sha256": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 31406,
+      "path": "game/game.mjs",
+      "sha256": "f835fb9b707c2bbe0fe733f384db5936591f96570cb0fc4368c5bbae58dfd988"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 296858,
+      "path": "game/scenery/foundry.webp",
+      "sha256": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1546,
+      "path": "game/art/atlas.json",
+      "sha256": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 691611,
+      "path": "game/art/boss.v2.png",
+      "sha256": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 15578,
+      "path": "game/art/warden-shield.webp",
+      "sha256": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 84447,
+      "path": "game/art/foe.v2.png",
+      "sha256": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16101,
+      "path": "game/combat.mjs",
+      "sha256": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 168359,
+      "path": "game/art/player.png",
+      "sha256": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 197914,
+      "path": "game/art/boss.png",
+      "sha256": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:1515167f6525c23f1ea81adc01b5a21919ece2970f62c2ecec1376d4638f1d28",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 168359,
+      "path": "play/prevention-verified/art/player.png",
+      "sha256": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:23520d1e8f4b434fb8cd8b882fda241bb4fd750dc14eb5ada518d62f7cbd039a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 691611,
+      "path": "play/prevention-verified/art/boss.v2.png",
+      "sha256": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:2402fc1999bd0805512d911d28565927075c835464c40ccba2f808575cae3029",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1546,
+      "path": "play/prevention-verified/art/atlas.json",
+      "sha256": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:32dc7d8f8c98f10edea8c41a75b96a818b10afbcc694195a8e989550cc486e10",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 369568,
+      "path": "play/prevention-verified/scenery/lift.webp",
+      "sha256": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:531ed4bad5d983b3e11ecc6e8fb40a30fae80e8f55ae249d8d97937d47b77d4a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 296858,
+      "path": "play/prevention-verified/scenery/foundry.webp",
+      "sha256": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:5ff8bf737a9fc87b66934eb3fadf47f8429cb9d90f7dc741cfe392f757da8de8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 502234,
+      "path": "play/prevention-verified/scenery/furnace-v2.webp",
+      "sha256": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:7b8fba5946cf311d83e64d9d7ff40620c282e4bfcd3a36fab831f820a05798b6",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 84447,
+      "path": "play/prevention-verified/art/foe.v2.png",
+      "sha256": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:7c1afd328454b3f1ee1bdd8ef97aca334bcf51b75d754caf0ab17e44248d3d47",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2425,
+      "path": "play/prevention-verified/campaign.mjs",
+      "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:94f1589508920a18ea8273f01434dbd1823145557f4c67f1b3696a58b25618c7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6973,
+      "path": "play/prevention-verified/feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:b671d633a3b244e318c4582c6ce6184d625a2eaa9b94aace3c595527c0323a59",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 197914,
+      "path": "play/prevention-verified/art/boss.png",
+      "sha256": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:cac726d3588a804e5741f43622eaa3d8a6a3a1132d95f413ed9c87ab3e54d744",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 26707,
+      "path": "play/prevention-verified/art/foe.png",
+      "sha256": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:cc6e82b7587d464376d3d5ba064057c89322b8d1351d854b32f2dbe2427d8edd",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1174,
+      "path": "play/prevention-verified/genre.json",
+      "sha256": "a0dd0293d07002110d06269fd15c60495d792c05c8e89dc082a7fe5e6b01238a",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:cd5f4aa4daa2d2eead720d6bdf6dcac0638ef19b96c10852e87c8292e85f98ae",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10592,
+      "path": "play/prevention-verified/web-game.json",
+      "sha256": "2e4cd1e878c97ce3a0bca2942f87ba94b711750fc9fae5f41641cb7d2f89ab27",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:d5fbd60356bd7fafd4a922de9e384a2d9f1ade3b5628851bdf7bb365a4d21fe0",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 15578,
+      "path": "play/prevention-verified/art/warden-shield.webp",
+      "sha256": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:d9ec9077d8c53747e8bca3917e47db55e8c9acb90b363b2bef26ef71ee29b331",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 9065,
+      "path": "play/prevention-verified/index.html",
+      "sha256": "6400ba442b7d18d64193da639c29b6929d04771c4c9dfca51de31413cf335f23",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:dcf65639b619c5638162d06b91dbcce1e2546b801710dfb3af300e15dccaab75",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1333,
+      "path": "play/prevention-verified/progression.mjs",
+      "sha256": "3c34d535458bccd692829c82d28b31a31b616d25b1e05393e2e6a13a6cc90a6d",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:dd95a1c954d92dcf91a725a94a44aa4ac7a7834f8bdd9892f76341d34e5b3a08",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16101,
+      "path": "play/prevention-verified/combat.mjs",
+      "sha256": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:e038c37f78f9eb97e20bacfb793fed2be5d37a99ed6597ef4dad8bf6af5e41d0",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 552930,
+      "path": "play/prevention-verified/art/player.v2.png",
+      "sha256": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:ec0b86b52e06a67465544f84b0faae28d32cc7f368d3ff40a174f17bf97c99d0",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 31406,
+      "path": "play/prevention-verified/game.mjs",
+      "sha256": "f835fb9b707c2bbe0fe733f384db5936591f96570cb0fc4368c5bbae58dfd988",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Source bytes verified against observed graph hashes",
+        "Static payload copied without executing project source"
+      ],
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:2402fc1999bd0805512d911d28565927075c835464c40ccba2f808575cae3029",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:b671d633a3b244e318c4582c6ce6184d625a2eaa9b94aace3c595527c0323a59",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:23520d1e8f4b434fb8cd8b882fda241bb4fd750dc14eb5ada518d62f7cbd039a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:cac726d3588a804e5741f43622eaa3d8a6a3a1132d95f413ed9c87ab3e54d744",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:7b8fba5946cf311d83e64d9d7ff40620c282e4bfcd3a36fab831f820a05798b6",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:1515167f6525c23f1ea81adc01b5a21919ece2970f62c2ecec1376d4638f1d28",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:e038c37f78f9eb97e20bacfb793fed2be5d37a99ed6597ef4dad8bf6af5e41d0",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:d5fbd60356bd7fafd4a922de9e384a2d9f1ade3b5628851bdf7bb365a4d21fe0",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:7c1afd328454b3f1ee1bdd8ef97aca334bcf51b75d754caf0ab17e44248d3d47",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:dd95a1c954d92dcf91a725a94a44aa4ac7a7834f8bdd9892f76341d34e5b3a08",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:94f1589508920a18ea8273f01434dbd1823145557f4c67f1b3696a58b25618c7",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:ec0b86b52e06a67465544f84b0faae28d32cc7f368d3ff40a174f17bf97c99d0",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:cc6e82b7587d464376d3d5ba064057c89322b8d1351d854b32f2dbe2427d8edd",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:d9ec9077d8c53747e8bca3917e47db55e8c9acb90b363b2bef26ef71ee29b331",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:dcf65639b619c5638162d06b91dbcce1e2546b801710dfb3af300e15dccaab75",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:531ed4bad5d983b3e11ecc6e8fb40a30fae80e8f55ae249d8d97937d47b77d4a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:5ff8bf737a9fc87b66934eb3fadf47f8429cb9d90f7dc741cfe392f757da8de8",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:32dc7d8f8c98f10edea8c41a75b96a818b10afbcc694195a8e989550cc486e10",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:cd5f4aa4daa2d2eead720d6bdf6dcac0638ef19b96c10852e87c8292e85f98ae"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Source bytes verified against observed graph hashes",
+          "Static payload copied without executing project source"
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:validation"
+      ]
+    },
+    {
       "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-9720f1b781d84e3d90cab5cff0e0882d",
       "@type": [
         "Activity",
@@ -4927,6 +5511,763 @@
       ]
     },
     {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Publish static web game",
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:05:43.641692+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-game"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Observe static web game inputs",
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:05:43.608836+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-game"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1333,
+      "path": "game/progression.mjs",
+      "sha256": "3c34d535458bccd692829c82d28b31a31b616d25b1e05393e2e6a13a6cc90a6d"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 502234,
+      "path": "game/scenery/furnace-v2.webp",
+      "sha256": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1174,
+      "path": "genre.json",
+      "sha256": "a0dd0293d07002110d06269fd15c60495d792c05c8e89dc082a7fe5e6b01238a"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 552930,
+      "path": "game/art/player.v2.png",
+      "sha256": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 9065,
+      "path": "game/index.html",
+      "sha256": "6400ba442b7d18d64193da639c29b6929d04771c4c9dfca51de31413cf335f23"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 369568,
+      "path": "game/scenery/lift.webp",
+      "sha256": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 26707,
+      "path": "game/art/foe.png",
+      "sha256": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 31406,
+      "path": "game/game.mjs",
+      "sha256": "f835fb9b707c2bbe0fe733f384db5936591f96570cb0fc4368c5bbae58dfd988"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 296858,
+      "path": "game/scenery/foundry.webp",
+      "sha256": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1546,
+      "path": "game/art/atlas.json",
+      "sha256": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 691611,
+      "path": "game/art/boss.v2.png",
+      "sha256": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 15578,
+      "path": "game/art/warden-shield.webp",
+      "sha256": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 84447,
+      "path": "game/art/foe.v2.png",
+      "sha256": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16101,
+      "path": "game/combat.mjs",
+      "sha256": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 168359,
+      "path": "game/art/player.png",
+      "sha256": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 197914,
+      "path": "game/art/boss.png",
+      "sha256": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:1840e1dac2f0d2c16d4ba1fdf25b846959a4ba5322c22f16dd249c4655e8b086",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2425,
+      "path": "play/prevention-release/campaign.mjs",
+      "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:1a5aafd38c9d320dfb47bcf7c83fc878163b6be41a06ae57ae93ecdf33867b18",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 9065,
+      "path": "play/prevention-release/index.html",
+      "sha256": "6400ba442b7d18d64193da639c29b6929d04771c4c9dfca51de31413cf335f23",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:2ea9c35458de8923f20b1b232347768c21a0f892a7e5c18c6cbbb40bb185f8a2",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1546,
+      "path": "play/prevention-release/art/atlas.json",
+      "sha256": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9fd0f169f5e1f7dc7edb0b7a3faffd15da0ab0ace3c47beb3c372dbdd6e670d4"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:40ab0e4a41915764b725b94b8f006da19644895db58199637d29c3814c1568ad",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1333,
+      "path": "play/prevention-release/progression.mjs",
+      "sha256": "3c34d535458bccd692829c82d28b31a31b616d25b1e05393e2e6a13a6cc90a6d",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:0ccdf61887be02381a48ecf73477b079e2a560235f071e4a2c9ff27f62688a20"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:5f40719630c311cb96325fd6ec2e13fe5af7e71e004b9fb5408d564f0290b92c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 84447,
+      "path": "play/prevention-release/art/foe.v2.png",
+      "sha256": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:d1d895307eb8bfbfccb4d1ef19da8fdac274b96001922e461307a98de22a0d7a"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:70b28fa56d3baf951afc65ececf820e324da7fc6794003af24b51ac65905bc06",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 31406,
+      "path": "play/prevention-release/game.mjs",
+      "sha256": "f835fb9b707c2bbe0fe733f384db5936591f96570cb0fc4368c5bbae58dfd988",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:7a12f956a61c0265e459cd3a5e0163f42b378f95d43a5a374b082886b914dc50",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1174,
+      "path": "play/prevention-release/genre.json",
+      "sha256": "a0dd0293d07002110d06269fd15c60495d792c05c8e89dc082a7fe5e6b01238a",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:8b53094fc1d89553f5420d0ae4b4f8d6c00a9c43f612527d118ec0fd52134d25",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 502234,
+      "path": "play/prevention-release/scenery/furnace-v2.webp",
+      "sha256": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:23ed9285a721a0ca0b7a3c34129e142f6c7c799f3c1747ec93294bf56597abc8"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:97a4f489a26259566a1367c4195475992d145712f2abea07502c6a3e0d716324",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 197914,
+      "path": "play/prevention-release/art/boss.png",
+      "sha256": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f6b1d640a6f13278e9690ee4899bfae0b419a38da8cc09987d5e1d5de1191abb"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:9b3adf3081de698d6f940588d9c51a20fbea8688669373cad0c6a61497ca081e",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 691611,
+      "path": "play/prevention-release/art/boss.v2.png",
+      "sha256": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:b31ded3db1a032eb43c5a2af748b822b31b0cb2303e385068f9ea4cf32120a95"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:9e124d6e2a090b3ab9baa0c01602fee74ef61b9c2ffbe8047eb3651c014f7533",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6973,
+      "path": "play/prevention-release/feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:a1a3e9cb4acfff3a83b9afe0304b582ed6c62c20def34a3f552323607472035b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16101,
+      "path": "play/prevention-release/combat.mjs",
+      "sha256": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:b01c3828d94d8ed518d02082b100323e54fd6c5b35e212b72e1e6bbc4fd7229c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 168359,
+      "path": "play/prevention-release/art/player.png",
+      "sha256": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:f08047d5302b3ce2df0a8b3aebf57e9ba299fa9e0708130c076e732f12ea841f"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:c8a92ce488d5c12be5f862977acba85105f68af45d7ff498bb2df3665f3a3bfe",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 296858,
+      "path": "play/prevention-release/scenery/foundry.webp",
+      "sha256": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:9e3583d9d40d87adfc251e145787cedcf73cfddbed805f66e944dc4b7530b674"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:d00cb018f2ab5f84cc3a9a21a7a77a8010f0f091fb16179a72be599c6df47196",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 552930,
+      "path": "play/prevention-release/art/player.v2.png",
+      "sha256": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:6a28e19843910a0efb91ee0f83cdaf1be237afa3b9a04d4582d24d152ac5c8f2"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:d79583cb40fe20904fdf036a729755aed4042484decb51d82aeae33f3d713ebf",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 26707,
+      "path": "play/prevention-release/art/foe.png",
+      "sha256": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:87632ddb86db67bd092a72ae0f0e310f233755479f964c69a225255956191d4e"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:de837ae176c092c3c315c2d1a9540df7fcd8264fbc9f820e20ce4875a8d83e74",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10591,
+      "path": "play/prevention-release/web-game.json",
+      "sha256": "cf917d25efddbb045ad0b6623d7418cdff7cc06629753cd440d635f76529a1f9",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:e07ba0f6353bd7be3f990d946c363c147c5bee77948b4adc83cef29ab187ba94",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 369568,
+      "path": "play/prevention-release/scenery/lift.webp",
+      "sha256": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:73a6dbf8bb86bd400c028423f00435fead7365dcefc802d7e1f5205f57bf2bc9"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:e133e2aa550b3c1f7e9b6dd02f45e419e635bff3d4a210490332569f28e287fc",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 15578,
+      "path": "play/prevention-release/art/warden-shield.webp",
+      "sha256": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f",
+      "wasDerivedFrom": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566-inputs:artifact:c24604d358e7ef9f74c3a9c0ab8325077dce0f50a4a7c17b9f0c54da57f39c08"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Source bytes verified against observed graph hashes",
+        "Static payload copied without executing project source"
+      ],
+      "observed": [],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:2ea9c35458de8923f20b1b232347768c21a0f892a7e5c18c6cbbb40bb185f8a2",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:97a4f489a26259566a1367c4195475992d145712f2abea07502c6a3e0d716324",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:9b3adf3081de698d6f940588d9c51a20fbea8688669373cad0c6a61497ca081e",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:d79583cb40fe20904fdf036a729755aed4042484decb51d82aeae33f3d713ebf",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:5f40719630c311cb96325fd6ec2e13fe5af7e71e004b9fb5408d564f0290b92c",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:b01c3828d94d8ed518d02082b100323e54fd6c5b35e212b72e1e6bbc4fd7229c",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:d00cb018f2ab5f84cc3a9a21a7a77a8010f0f091fb16179a72be599c6df47196",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:e133e2aa550b3c1f7e9b6dd02f45e419e635bff3d4a210490332569f28e287fc",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:1840e1dac2f0d2c16d4ba1fdf25b846959a4ba5322c22f16dd249c4655e8b086",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:a1a3e9cb4acfff3a83b9afe0304b582ed6c62c20def34a3f552323607472035b",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:9e124d6e2a090b3ab9baa0c01602fee74ef61b9c2ffbe8047eb3651c014f7533",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:70b28fa56d3baf951afc65ececf820e324da7fc6794003af24b51ac65905bc06",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:7a12f956a61c0265e459cd3a5e0163f42b378f95d43a5a374b082886b914dc50",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:1a5aafd38c9d320dfb47bcf7c83fc878163b6be41a06ae57ae93ecdf33867b18",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:40ab0e4a41915764b725b94b8f006da19644895db58199637d29c3814c1568ad",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:c8a92ce488d5c12be5f862977acba85105f68af45d7ff498bb2df3665f3a3bfe",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:8b53094fc1d89553f5420d0ae4b4f8d6c00a9c43f612527d118ec0fd52134d25",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:e07ba0f6353bd7be3f990d946c363c147c5bee77948b4adc83cef29ab187ba94",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:de837ae176c092c3c315c2d1a9540df7fcd8264fbc9f820e20ce4875a8d83e74"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Source bytes verified against observed graph hashes",
+          "Static payload copied without executing project source"
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Verify static web game revision",
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:09:47.398917+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-926bf569665540a28cccc718a5669535:artifact:ae0b15ecf73fc55eca2aacff4d61797216472644cbe857e8afe6b2f9050a5eb9",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-92f78113a6254bcaa8382191aae6c096:artifact:cd5f4aa4daa2d2eead720d6bdf6dcac0638ef19b96c10852e87c8292e85f98ae"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-revision"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:artifact:41d0a8ef88407144ff2ac4eca35e0f1e7005078b3a0ca2eada4d7a535eb03b28",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10352,
+      "path": "checks/web-revision-031d095e319f4bb88c131cd22e88d1d1.json",
+      "sha256": "6182879d854416092235cb5b2bbc07e4b807fa70940b530c3be67c1d3ec59633",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 258,
+      "path": "checks/mobile-combat-hud.json",
+      "sha256": "e6e025c29ac7205775b35e6a6d72e57344def1e4d1112f878ceaab5120221b51"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "verified",
+        "Structured check outcomes are pinned in checks/web-revision-031d095e319f4bb88c131cd22e88d1d1.json"
+      ],
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:artifact:41d0a8ef88407144ff2ac4eca35e0f1e7005078b3a0ca2eada4d7a535eb03b28"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "verified",
+          "Structured check outcomes are pinned in checks/web-revision-031d095e319f4bb88c131cd22e88d1d1.json"
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Verify static web game revision",
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:09:41.004386+00:00",
+      "references": [],
+      "status": "error",
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-926bf569665540a28cccc718a5669535:artifact:ae0b15ecf73fc55eca2aacff4d61797216472644cbe857e8afe6b2f9050a5eb9"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-revision"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 258,
+      "path": "checks/mobile-combat-hud.json",
+      "sha256": "e6e025c29ac7205775b35e6a6d72e57344def1e4d1112f878ceaab5120221b51"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:artifact:af3c27dfb8b5978c4407da9ec95bfedf87fe1ff0b70d9dd144d2e4f492d52e2c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6569,
+      "path": "checks/web-revision-46ea174b5793438c990d0c3fd1d4e2a9.json",
+      "sha256": "a51caea2a0205ad70d461e6f76da3c85e0a314c7cac1f985fd50f7c3c2f76855",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "baseline-check",
+        "Structured check outcomes are pinned in checks/web-revision-46ea174b5793438c990d0c3fd1d4e2a9.json"
+      ],
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9"
+      ],
+      "passed": false,
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:artifact:af3c27dfb8b5978c4407da9ec95bfedf87fe1ff0b70d9dd144d2e4f492d52e2c"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "baseline-check",
+          "Structured check outcomes are pinned in checks/web-revision-46ea174b5793438c990d0c3fd1d4e2a9.json"
+        ],
+        "passed": false
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-46ea174b5793438c990d0c3fd1d4e2a9:validation"
+      ]
+    },
+    {
       "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-59e89fc6f87b4051b4f01351cc68295d",
       "@type": [
         "Activity",
@@ -4996,6 +6337,179 @@
       },
       "wasGeneratedBy": [
         "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-59e89fc6f87b4051b4f01351cc68295d:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Verify static web game revision",
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:05:39.172705+00:00",
+      "references": [],
+      "status": "error",
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-926bf569665540a28cccc718a5669535:artifact:ae0b15ecf73fc55eca2aacff4d61797216472644cbe857e8afe6b2f9050a5eb9"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-revision"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:artifact:a664166ea5034de69c2f59704ce5492dc7d07ab26c12a63ef75ebd7660dbb304",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 5912,
+      "path": "checks/web-revision-8598772e54e843869511fb02b5ab106e.json",
+      "sha256": "5cc75d91f4fd604f6f8b23073671a4af9b05946de8d7dccc6ba84572b5ce96a0",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 258,
+      "path": "checks/mobile-combat-hud.json",
+      "sha256": "e6e025c29ac7205775b35e6a6d72e57344def1e4d1112f878ceaab5120221b51"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "baseline-check",
+        "Structured check outcomes are pinned in checks/web-revision-8598772e54e843869511fb02b5ab106e.json"
+      ],
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e"
+      ],
+      "passed": false,
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:artifact:a664166ea5034de69c2f59704ce5492dc7d07ab26c12a63ef75ebd7660dbb304"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "baseline-check",
+          "Structured check outcomes are pinned in checks/web-revision-8598772e54e843869511fb02b5ab106e.json"
+        ],
+        "passed": false
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-8598772e54e843869511fb02b5ab106e:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Verify static web game revision",
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32"
+      ],
+      "recordedAt": "2026-11-09T02:05:45.551470+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-926bf569665540a28cccc718a5669535:artifact:ae0b15ecf73fc55eca2aacff4d61797216472644cbe857e8afe6b2f9050a5eb9",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-d7e75212b0e7492aa178b98ff93b7566:artifact:de837ae176c092c3c315c2d1a9540df7fcd8264fbc9f820e20ce4875a8d83e74"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:agent:studio-web-revision"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 258,
+      "path": "checks/mobile-combat-hud.json",
+      "sha256": "e6e025c29ac7205775b35e6a6d72e57344def1e4d1112f878ceaab5120221b51"
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:artifact:f0d64a0720795c25d6beddd2927026aad5aba3f884c5135271acc0c4f83f5df6",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10404,
+      "path": "checks/web-revision-97b5775ef3414f688bbed9b48392a4d8.json",
+      "sha256": "1a47e66ad9c86152d662c3c8a375609927b8c32e0c4db1376e6d445b5b6723b1",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "verified",
+        "Structured check outcomes are pinned in checks/web-revision-97b5775ef3414f688bbed9b48392a4d8.json"
+      ],
+      "observed": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d"
+      ],
+      "partOf": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:artifact:ae2fe55937cc8eb5f0743a1f029af8376af551343599feeb506cfe666d8d000d",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:artifact:f0d64a0720795c25d6beddd2927026aad5aba3f884c5135271acc0c4f83f5df6"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "verified",
+          "Structured check outcomes are pinned in checks/web-revision-97b5775ef3414f688bbed9b48392a4d8.json"
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-97b5775ef3414f688bbed9b48392a4d8:validation"
       ]
     },
     {
@@ -19587,6 +21101,13 @@
       "label": "studio-engine-export"
     },
     {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:studio-reference-review",
+      "@type": [
+        "Agent"
+      ],
+      "label": "studio-reference-review"
+    },
+    {
       "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:action-set-032",
       "@type": [
         "Activity",
@@ -26710,6 +28231,103 @@
       "sha256": "5c420baae6161d26cb40e211fe45d46e46d1333c63071c169dcb23f976302d41"
     },
     {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "첨부 제작 경로를 설치된 2D 도구로 실행",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:5206beb7bbe772f0aed7fab0b8d32e6775f923ebefb8aea032f394c67d14e26b",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:bf4ed0f19dff90d09de235fe014557268657bea50690fa3a8226e1b369433bb9"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-09T02:12:02.234855+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:3abc3dc06981f835bc7805af9d37200d8755b65a07d93d10a1346745188892ae",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 38990,
+      "path": "release/evidence/reference-prevention/asset-probes.json",
+      "sha256": "618741f11eb70844b876a9d2f965a9614efe46267e30df05738416b6867eec07",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:5206beb7bbe772f0aed7fab0b8d32e6775f923ebefb8aea032f394c67d14e26b",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10070,
+      "path": "assets/docs/references.md",
+      "sha256": "aa462bbaedb5f4329b75854e4d9519c65f24b41a777b53236d4fdff5306b4a31"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:bf4ed0f19dff90d09de235fe014557268657bea50690fa3a8226e1b369433bb9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 9320,
+      "path": "release/REFERENCE-WORKFLOWS.md",
+      "sha256": "9f9dbfb7226de55cfda450069203f5327c7dbe824dba588ee90ea6dae61fb6b7"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Installed pixel-asset ran seven scoped commands. See asset-probes.json for fixtures and failures.",
+        "Historical Rive and 3D evidence identified separately from this run."
+      ],
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:5206beb7bbe772f0aed7fab0b8d32e6775f923ebefb8aea032f394c67d14e26b",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:bf4ed0f19dff90d09de235fe014557268657bea50690fa3a8226e1b369433bb9"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:5206beb7bbe772f0aed7fab0b8d32e6775f923ebefb8aea032f394c67d14e26b",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:bf4ed0f19dff90d09de235fe014557268657bea50690fa3a8226e1b369433bb9",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:artifact:3abc3dc06981f835bc7805af9d37200d8755b65a07d93d10a1346745188892ae"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Installed pixel-asset ran seven scoped commands. See asset-probes.json for fixtures and failures.",
+          "Historical Rive and 3D evidence identified separately from this run."
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions:validation"
+      ]
+    },
+    {
       "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-positioning-review",
       "@type": [
         "Activity",
@@ -26747,6 +28365,135 @@
       "wasDerivedFrom": [],
       "wasGeneratedBy": [
         "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-positioning-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "설치본 자료 누락·상태·배치 실패와 재검토 확인",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:campaign-arcade",
+        "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-09T02:12:02.307789+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:243a6242db5d383c0e8c4692646463e0520553ef2c6ecb52d1725b8b1a81b805",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 5278,
+      "path": "release/evidence/reference-prevention/coverage.json",
+      "sha256": "c0bd90a8e387f737d37531915c96929d412a8782d3b66b53134e7974c56fbdd9",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:a5c722a7bcfc16f14b49a5ef326c19aa3e8bbe02f9d2b072149d2be3b25d367c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 9825,
+      "path": "release/evidence/reference-prevention/runtime.json",
+      "sha256": "f45942faf8b9ba11e66d0165bd772ecec462b838a32f7944fef252fe7649176f",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6428,
+      "path": "README.md",
+      "sha256": "a72ea1b0c20415306ccf65d21712568452fa14c53816b01c7ba6e80d5e1fde70",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:d6aec8219fcce9c8b4f2b5f9e6998bfadcb0be2535457554870a02b9aae96bca",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2054,
+      "path": "release/evidence/reference-prevention/acceptance.json",
+      "sha256": "d8ed48d492a886a9403c6c615e183be65e86273edc7597dd8a230d2ce8fa4371",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Game Studio 0.13.1 installed/enabled and source-file hashes checked; 210 Studio tests passed",
+        "Real baseline HUD overlap vs corrected separation, default layout, seeded hidden CSS fault, and disabled control vs operational error tested",
+        "17 directly supplied originals matched. Two linked book exports remain unavailable.",
+        "Raw source/archive bytes were neither uploaded nor executed by reference intake."
+      ],
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:campaign-arcade"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:a5c722a7bcfc16f14b49a5ef326c19aa3e8bbe02f9d2b072149d2be3b25d367c",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:243a6242db5d383c0e8c4692646463e0520553ef2c6ecb52d1725b8b1a81b805",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:d6aec8219fcce9c8b4f2b5f9e6998bfadcb0be2535457554870a02b9aae96bca",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:artifact:b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Game Studio 0.13.1 installed/enabled and source-file hashes checked; 210 Studio tests passed",
+          "Real baseline HUD overlap vs corrected separation, default layout, seeded hidden CSS fault, and disabled control vs operational error tested",
+          "17 directly supplied originals matched. Two linked book exports remain unavailable.",
+          "Raw source/archive bytes were neither uploaded nor executed by reference intake."
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance:validation"
       ]
     },
     {
@@ -27461,6 +29208,760 @@
       ]
     },
     {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Review local reference coverage",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-09T02:10:15.359942+00:00",
+      "references": [],
+      "status": "error",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:studio-reference-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Observe local reference map and evidence",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:e79fb0ebac050038b88ce234694fa950be4b66e1e9714b1b2b12b9d195503082",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:7b94378cb2809bbdd142d11751622cf5ae6ddb9b2a627e4c3a5bc0bcc3e359fe",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:3a9e5eb6589449809e2209a31ec9fc8ed10cfd050168ac61b9d7ac7d3ead2c9e",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:53789db37a96fc305d24b8b6d0f5e0effe6e45653ab846b4d56c03c76c5a1a62",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:d061f6c0e4371ffb44b9b1915e09549445537dd7acec52d23d9395b3e5a6fe88",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:ffa0f5fdd78a952da7a4ccc0a0af3940084b4ec7d3957d4c9c9ae51370135a90",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:7d5f1b17e6b36d29ad87feb1c162d29ccd417dcc3d0de0fe82c80c3f92815e3f",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:17fab242fe0c3816d6f9de9f7b71743a95d1c81aca72b7710faf929ea55a92a7",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:1433d4554876c9b1e93a785b5bf9190a3a89b5efc4bdcee00a9bc5765d90b955",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:9929bdc0c78288549faeb371f90543a4fedb32e7784c16aa8b8093546f82ef06",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:bcd91207542c43f141912ef08bdb5415fa80284d2cf9d4e823fa7da35e0c712f",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:3abc3dc06981f835bc7805af9d37200d8755b65a07d93d10a1346745188892ae",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:7ae5af510fde10d9d37ef69d7d908d91e2ed0f75bc4d0d75887be282cd841c73",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:8d26eee7ccc24f92a2bbb75c375d7398fb6e8bdf9cddaae6f9eaa3dee1560351",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:3a0d720c280c44eb77f4fcc6db3a2f1a2d1dfa45f13db7ea6daa23d546cc2150",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:a93a3cf6f97ff43947d71d18b3459b634f336b5f7eee3d6506582b7000d4ecb4",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:0e7c457ba389594deb5ff23ca62a06a9404ffcd506921cbd1272aeb42684cc75",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:a15fb9f3f8a62056dddfca11a64a85fca648deb9811b255102b424617c2e7c4c",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:36d42c48ba54a74b560656ce84e5362ecd36c170e735c93ef73379b493c3c5a9",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:52a9b1ef044bc982f128af42cc8c9b5589dcc97352b8029a34239780f8721fb6",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:f0d2884f0f9873d7d73e3e87af44cd565543655e50a89668abbbcd77cc280b57",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:b37f42820a6ab33357ca58ee33a121bcf7b86f8310ed5245bc9f53e0c9fa079f",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:b06ccf16d2add48e3c8298d39b54a8e35c2403677210194fbc33240b9952e0d7"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-09T02:10:15.311762+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:studio-reference-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:0e7c457ba389594deb5ff23ca62a06a9404ffcd506921cbd1272aeb42684cc75",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 12424,
+      "path": "assets/src/pixel_asset_pipeline/rig_draft.py",
+      "sha256": "4917f15c154e3d9f44af52f1b8c596bf533e6c0da1e47852c8208a24cff715ea"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:1433d4554876c9b1e93a785b5bf9190a3a89b5efc4bdcee00a9bc5765d90b955",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6658,
+      "path": "assets/src/pixel_asset_pipeline/cli.py",
+      "sha256": "dc91e16592fc6d0d227307b7869d0ec6274844d36a075b5bf1f10ed67870985d"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:17fab242fe0c3816d6f9de9f7b71743a95d1c81aca72b7710faf929ea55a92a7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16101,
+      "path": "examples/ember-alley/game/combat.mjs",
+      "sha256": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 5315,
+      "path": "studio/starter/campaign/game/game.mjs",
+      "sha256": "97633da98f49419f63d49f0cbd9743f1cd248a04a9f75138e271c327c80619c2"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 25333,
+      "path": "studio/tools/web_revision.py",
+      "sha256": "339f76adcec6d2d56122f443e40ae7869fd6d7b10a557701f78d4a68dc81227e"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:36d42c48ba54a74b560656ce84e5362ecd36c170e735c93ef73379b493c3c5a9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 14242,
+      "path": "studio/tools/character.py",
+      "sha256": "f77b8ddc5fe13cbf2ec2c8c4d45aba4aadafecfc953b09275fd90d975fdb2204"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:3a0d720c280c44eb77f4fcc6db3a2f1a2d1dfa45f13db7ea6daa23d546cc2150",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 22414,
+      "path": "studio/tools/review.py",
+      "sha256": "8c2de6d4d32dc3c7f8c7878485b5ef7918c932072b66f7916dd78a99a7a6380d"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:3a9e5eb6589449809e2209a31ec9fc8ed10cfd050168ac61b9d7ac7d3ead2c9e",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4792,
+      "path": "studio/FEEDBACK.md",
+      "sha256": "acb656aea6f19f442903f668878e14d998b7d7bf1ba4e1559750ac7345e43578"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:3abc3dc06981f835bc7805af9d37200d8755b65a07d93d10a1346745188892ae",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 38990,
+      "path": "release/evidence/reference-prevention/asset-probes.json",
+      "sha256": "618741f11eb70844b876a9d2f965a9614efe46267e30df05738416b6867eec07"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:52a9b1ef044bc982f128af42cc8c9b5589dcc97352b8029a34239780f8721fb6",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10352,
+      "path": "assets/src/pixel_asset_pipeline/character.py",
+      "sha256": "5e57b6be88e5b7d36f0afd6273a83b2574bc95cae2c29ede883c5ff4d9e67a11"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:53789db37a96fc305d24b8b6d0f5e0effe6e45653ab846b4d56c03c76c5a1a62",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6973,
+      "path": "studio/engines/web/feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:7ae5af510fde10d9d37ef69d7d908d91e2ed0f75bc4d0d75887be282cd841c73",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4430,
+      "path": "assets/src/pixel_asset_pipeline/spec.py",
+      "sha256": "3f7e417401494d10a200673a687f7e1f7197674d039a167ad591cbeec2548e7b"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:7b94378cb2809bbdd142d11751622cf5ae6ddb9b2a627e4c3a5bc0bcc3e359fe",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 23737,
+      "path": "studio/REFERENCES.md",
+      "sha256": "51fe94bb4178e05e739a0244028991e6824039b74f8543f296e028db6c1b3000"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:7d5f1b17e6b36d29ad87feb1c162d29ccd417dcc3d0de0fe82c80c3f92815e3f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 11602,
+      "path": "assets/src/pixel_asset_pipeline/effects.py",
+      "sha256": "e20a413fdd2107119f9d9ac5f97ddf75a3b63c23c2a38f2cc00a6e1bf5f4bccc"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:8d26eee7ccc24f92a2bbb75c375d7398fb6e8bdf9cddaae6f9eaa3dee1560351",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 14288,
+      "path": "assets/src/pixel_asset_pipeline/action_set.py",
+      "sha256": "c434c5204ff83c4bf8f2da11a74d0a51ceee655d52876efdb178a0146c7772a6"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:9929bdc0c78288549faeb371f90543a4fedb32e7784c16aa8b8093546f82ef06",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6624,
+      "path": "assets/src/pixel_asset_pipeline/raster.py",
+      "sha256": "88552d82bc33079f13b4b093842581205d94e5aace14c67608bd23040cdf9d0d"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:a15fb9f3f8a62056dddfca11a64a85fca648deb9811b255102b424617c2e7c4c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 8781,
+      "path": "assets/src/pixel_asset_pipeline/effect_clip.py",
+      "sha256": "b97203bc83364818e810c87aef868493fbcceb47f2bf624fd661aac0c3ce845f"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:a93a3cf6f97ff43947d71d18b3459b634f336b5f7eee3d6506582b7000d4ecb4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 7485,
+      "path": "assets/src/pixel_asset_pipeline/snap.py",
+      "sha256": "8cec5a94c285b960ebc91731e5f87aebe4ae301d8ae7eaa030248c9c94602a69"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:b06ccf16d2add48e3c8298d39b54a8e35c2403677210194fbc33240b9952e0d7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1030,
+      "path": "examples/first-strike/identity/validation.json",
+      "sha256": "57b990941d12419d1943b5734e24a67657b93616bfa50c112407a42688a550e8"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:b37f42820a6ab33357ca58ee33a121bcf7b86f8310ed5245bc9f53e0c9fa079f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2483,
+      "path": "studio/starter/identity/LOGO.md",
+      "sha256": "3a1aaadf69a23dd19d84d93ced4511a3f48c2d93010b62469056cb34bce66643"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:bcd91207542c43f141912ef08bdb5415fa80284d2cf9d4e823fa7da35e0c712f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 30240,
+      "path": "studio/tools/scene.py",
+      "sha256": "837524041f221d434e00d322864b68f790c953d1c5d0269c74aca94401cb6a36"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:d061f6c0e4371ffb44b9b1915e09549445537dd7acec52d23d9395b3e5a6fe88",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 22241,
+      "path": "studio/engines/web/phaser/trial.mjs",
+      "sha256": "15df25be1e6deb0e589f2ffe6be05f8a6c3991146b8173e4cc13178c540ee941"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 19330,
+      "path": "studio/PLAYBOOK.md",
+      "sha256": "a4ec691f439e379f1de829d0b986222caa21755a0fb8b87d23ca0d59a628be82"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:e79fb0ebac050038b88ce234694fa950be4b66e1e9714b1b2b12b9d195503082",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 13979,
+      "path": "release/evidence/reference-prevention/reference-map.json",
+      "sha256": "b727908ea116f2d483c73771c018e965f6c974b75b484940df266323ede2e773"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:f0d2884f0f9873d7d73e3e87af44cd565543655e50a89668abbbcd77cc280b57",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 531833,
+      "path": "examples/storybook-cels/evidence/runtime-proof.json",
+      "sha256": "98806041e6d4febec40c920aad1130d7d434942ab1e8b0fd79662cc588cdb596"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations:artifact:ffa0f5fdd78a952da7a4ccc0a0af3940084b4ec7d3957d4c9c9ae51370135a90",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 32797,
+      "path": "examples/star-canopy/game/game.mjs",
+      "sha256": "777eda202fdfc2fc7344e81f7cd7aa8ffad4744b6d298918e461ad63fa6f2118"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05:artifact:27d830cb94f375727f5f1c9316c7ac055874ae0c09ba2d716ab6f5c1ce1f2bfe",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6268,
+      "path": "checks/reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05.json",
+      "sha256": "204110a7948e4783797a11b3fb5273578c58acfad2c98eb52a778227d5fe201d",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Local source coverage only; behavior is not verified"
+      ],
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05-observations"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05"
+      ],
+      "passed": false,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05:artifact:27d830cb94f375727f5f1c9316c7ac055874ae0c09ba2d716ab6f5c1ce1f2bfe"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Local source coverage only; behavior is not verified"
+        ],
+        "passed": false
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Review local reference coverage",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-09T02:05:34.369994+00:00",
+      "references": [],
+      "status": "error",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:studio-reference-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "Observe local reference map and evidence",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:e79fb0ebac050038b88ce234694fa950be4b66e1e9714b1b2b12b9d195503082",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:7b94378cb2809bbdd142d11751622cf5ae6ddb9b2a627e4c3a5bc0bcc3e359fe",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:3a9e5eb6589449809e2209a31ec9fc8ed10cfd050168ac61b9d7ac7d3ead2c9e",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:53789db37a96fc305d24b8b6d0f5e0effe6e45653ab846b4d56c03c76c5a1a62",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:d061f6c0e4371ffb44b9b1915e09549445537dd7acec52d23d9395b3e5a6fe88",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:ffa0f5fdd78a952da7a4ccc0a0af3940084b4ec7d3957d4c9c9ae51370135a90",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:7d5f1b17e6b36d29ad87feb1c162d29ccd417dcc3d0de0fe82c80c3f92815e3f",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:17fab242fe0c3816d6f9de9f7b71743a95d1c81aca72b7710faf929ea55a92a7",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:1433d4554876c9b1e93a785b5bf9190a3a89b5efc4bdcee00a9bc5765d90b955",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:9929bdc0c78288549faeb371f90543a4fedb32e7784c16aa8b8093546f82ef06",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:bcd91207542c43f141912ef08bdb5415fa80284d2cf9d4e823fa7da35e0c712f",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:3abc3dc06981f835bc7805af9d37200d8755b65a07d93d10a1346745188892ae",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:7ae5af510fde10d9d37ef69d7d908d91e2ed0f75bc4d0d75887be282cd841c73",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:8d26eee7ccc24f92a2bbb75c375d7398fb6e8bdf9cddaae6f9eaa3dee1560351",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:3a0d720c280c44eb77f4fcc6db3a2f1a2d1dfa45f13db7ea6daa23d546cc2150",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:a93a3cf6f97ff43947d71d18b3459b634f336b5f7eee3d6506582b7000d4ecb4",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:0e7c457ba389594deb5ff23ca62a06a9404ffcd506921cbd1272aeb42684cc75",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:a15fb9f3f8a62056dddfca11a64a85fca648deb9811b255102b424617c2e7c4c",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:36d42c48ba54a74b560656ce84e5362ecd36c170e735c93ef73379b493c3c5a9",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:52a9b1ef044bc982f128af42cc8c9b5589dcc97352b8029a34239780f8721fb6",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:f0d2884f0f9873d7d73e3e87af44cd565543655e50a89668abbbcd77cc280b57",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:b37f42820a6ab33357ca58ee33a121bcf7b86f8310ed5245bc9f53e0c9fa079f",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:b06ccf16d2add48e3c8298d39b54a8e35c2403677210194fbc33240b9952e0d7"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-09T02:05:34.322511+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:studio-reference-review"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:0e7c457ba389594deb5ff23ca62a06a9404ffcd506921cbd1272aeb42684cc75",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 12424,
+      "path": "assets/src/pixel_asset_pipeline/rig_draft.py",
+      "sha256": "4917f15c154e3d9f44af52f1b8c596bf533e6c0da1e47852c8208a24cff715ea"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:1433d4554876c9b1e93a785b5bf9190a3a89b5efc4bdcee00a9bc5765d90b955",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6658,
+      "path": "assets/src/pixel_asset_pipeline/cli.py",
+      "sha256": "dc91e16592fc6d0d227307b7869d0ec6274844d36a075b5bf1f10ed67870985d"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:17fab242fe0c3816d6f9de9f7b71743a95d1c81aca72b7710faf929ea55a92a7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 16101,
+      "path": "examples/ember-alley/game/combat.mjs",
+      "sha256": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 5315,
+      "path": "studio/starter/campaign/game/game.mjs",
+      "sha256": "97633da98f49419f63d49f0cbd9743f1cd248a04a9f75138e271c327c80619c2"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 23674,
+      "path": "studio/tools/web_revision.py",
+      "sha256": "7fe73225302266d7ea70f316167794c98de60acf166387fd7eff72cb729161dd"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:36d42c48ba54a74b560656ce84e5362ecd36c170e735c93ef73379b493c3c5a9",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 14242,
+      "path": "studio/tools/character.py",
+      "sha256": "f77b8ddc5fe13cbf2ec2c8c4d45aba4aadafecfc953b09275fd90d975fdb2204"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:3a0d720c280c44eb77f4fcc6db3a2f1a2d1dfa45f13db7ea6daa23d546cc2150",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 22414,
+      "path": "studio/tools/review.py",
+      "sha256": "8c2de6d4d32dc3c7f8c7878485b5ef7918c932072b66f7916dd78a99a7a6380d"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:3a9e5eb6589449809e2209a31ec9fc8ed10cfd050168ac61b9d7ac7d3ead2c9e",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4792,
+      "path": "studio/FEEDBACK.md",
+      "sha256": "acb656aea6f19f442903f668878e14d998b7d7bf1ba4e1559750ac7345e43578"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:3abc3dc06981f835bc7805af9d37200d8755b65a07d93d10a1346745188892ae",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 38990,
+      "path": "release/evidence/reference-prevention/asset-probes.json",
+      "sha256": "618741f11eb70844b876a9d2f965a9614efe46267e30df05738416b6867eec07"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:52a9b1ef044bc982f128af42cc8c9b5589dcc97352b8029a34239780f8721fb6",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 10352,
+      "path": "assets/src/pixel_asset_pipeline/character.py",
+      "sha256": "5e57b6be88e5b7d36f0afd6273a83b2574bc95cae2c29ede883c5ff4d9e67a11"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:53789db37a96fc305d24b8b6d0f5e0effe6e45653ab846b4d56c03c76c5a1a62",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6973,
+      "path": "studio/engines/web/feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:7ae5af510fde10d9d37ef69d7d908d91e2ed0f75bc4d0d75887be282cd841c73",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4430,
+      "path": "assets/src/pixel_asset_pipeline/spec.py",
+      "sha256": "3f7e417401494d10a200673a687f7e1f7197674d039a167ad591cbeec2548e7b"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:7b94378cb2809bbdd142d11751622cf5ae6ddb9b2a627e4c3a5bc0bcc3e359fe",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 23737,
+      "path": "studio/REFERENCES.md",
+      "sha256": "51fe94bb4178e05e739a0244028991e6824039b74f8543f296e028db6c1b3000"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:7d5f1b17e6b36d29ad87feb1c162d29ccd417dcc3d0de0fe82c80c3f92815e3f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 11602,
+      "path": "assets/src/pixel_asset_pipeline/effects.py",
+      "sha256": "e20a413fdd2107119f9d9ac5f97ddf75a3b63c23c2a38f2cc00a6e1bf5f4bccc"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:8d26eee7ccc24f92a2bbb75c375d7398fb6e8bdf9cddaae6f9eaa3dee1560351",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 14288,
+      "path": "assets/src/pixel_asset_pipeline/action_set.py",
+      "sha256": "c434c5204ff83c4bf8f2da11a74d0a51ceee655d52876efdb178a0146c7772a6"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:9929bdc0c78288549faeb371f90543a4fedb32e7784c16aa8b8093546f82ef06",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6624,
+      "path": "assets/src/pixel_asset_pipeline/raster.py",
+      "sha256": "88552d82bc33079f13b4b093842581205d94e5aace14c67608bd23040cdf9d0d"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:a15fb9f3f8a62056dddfca11a64a85fca648deb9811b255102b424617c2e7c4c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 8781,
+      "path": "assets/src/pixel_asset_pipeline/effect_clip.py",
+      "sha256": "b97203bc83364818e810c87aef868493fbcceb47f2bf624fd661aac0c3ce845f"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:a93a3cf6f97ff43947d71d18b3459b634f336b5f7eee3d6506582b7000d4ecb4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 7485,
+      "path": "assets/src/pixel_asset_pipeline/snap.py",
+      "sha256": "8cec5a94c285b960ebc91731e5f87aebe4ae301d8ae7eaa030248c9c94602a69"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:b06ccf16d2add48e3c8298d39b54a8e35c2403677210194fbc33240b9952e0d7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1030,
+      "path": "examples/first-strike/identity/validation.json",
+      "sha256": "57b990941d12419d1943b5734e24a67657b93616bfa50c112407a42688a550e8"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:b37f42820a6ab33357ca58ee33a121bcf7b86f8310ed5245bc9f53e0c9fa079f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 2483,
+      "path": "studio/starter/identity/LOGO.md",
+      "sha256": "3a1aaadf69a23dd19d84d93ced4511a3f48c2d93010b62469056cb34bce66643"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:bcd91207542c43f141912ef08bdb5415fa80284d2cf9d4e823fa7da35e0c712f",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 30240,
+      "path": "studio/tools/scene.py",
+      "sha256": "837524041f221d434e00d322864b68f790c953d1c5d0269c74aca94401cb6a36"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:d061f6c0e4371ffb44b9b1915e09549445537dd7acec52d23d9395b3e5a6fe88",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 22241,
+      "path": "studio/engines/web/phaser/trial.mjs",
+      "sha256": "15df25be1e6deb0e589f2ffe6be05f8a6c3991146b8173e4cc13178c540ee941"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 19330,
+      "path": "studio/PLAYBOOK.md",
+      "sha256": "a4ec691f439e379f1de829d0b986222caa21755a0fb8b87d23ca0d59a628be82"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:e79fb0ebac050038b88ce234694fa950be4b66e1e9714b1b2b12b9d195503082",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 13979,
+      "path": "release/evidence/reference-prevention/reference-map.json",
+      "sha256": "b727908ea116f2d483c73771c018e965f6c974b75b484940df266323ede2e773"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:f0d2884f0f9873d7d73e3e87af44cd565543655e50a89668abbbcd77cc280b57",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 531833,
+      "path": "examples/storybook-cels/evidence/runtime-proof.json",
+      "sha256": "98806041e6d4febec40c920aad1130d7d434942ab1e8b0fd79662cc588cdb596"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations:artifact:ffa0f5fdd78a952da7a4ccc0a0af3940084b4ec7d3957d4c9c9ae51370135a90",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 32797,
+      "path": "examples/star-canopy/game/game.mjs",
+      "sha256": "777eda202fdfc2fc7344e81f7cd7aa8ffad4744b6d298918e461ad63fa6f2118"
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916:artifact:96d7292adf3a7a8422c78f5109ce92739eef04aad0be70db41e83b3bfddac202",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 6268,
+      "path": "checks/reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916.json",
+      "sha256": "817a8c98443ed9dc5c387c422a7520fa4f87c329cf26157ca6790ebdc00a231c",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "Local source coverage only; behavior is not verified"
+      ],
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916-observations"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916"
+      ],
+      "passed": false,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916:artifact:96d7292adf3a7a8422c78f5109ce92739eef04aad0be70db41e83b3bfddac202"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "Local source coverage only; behavior is not verified"
+        ],
+        "passed": false
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-df75c5fe-f558-4f00-aa01-ec793d0ac916:validation"
+      ]
+    },
+    {
       "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export",
       "@type": [
         "Activity",
@@ -27627,6 +30128,412 @@
       },
       "wasGeneratedBy": [
         "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:rive-character-export:validation"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality",
+      "@type": [
+        "Activity",
+        "ExternalWork"
+      ],
+      "label": "자료 반영 점검·재현 가능한 진단과 설치본 예방 검사",
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:campaign-guide-source",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7"
+      ],
+      "recordedAt": "2026-11-09T02:12:02.261429+00:00",
+      "references": [],
+      "status": "complete",
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:d0f2ab045ec8e52e525a18561530d1187a72408a5100bdd783b1af6ea7c3735a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:833df0dc2a1d299c28d7349ffc4c8997c8f8ef8a428af635e5c2d99bd9ea8528",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:2492d1393a1d73015aff75732b4f0e3b1c2a28a88e9c0066c15e7a8a0ca1fc4c",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:b1154e1ab494e34861101c65992c2301b6f49238408ed7b3f3b8dedf5db42003",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:751a6f757a15ebcb8865058a172db841e770b1d60db884d59291ade114336779",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:169128b6eed434c55d51b79ab6fb9c14af8fad3125ebd37182ae3db0a5e664f5",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:3f8670af4ce8de08e8e1f31fefbf40226c9101e71b9c4520d43af8ae21b72a91",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:079068b5d6d1c31184cad0237fc2c6ace2230211bdc044e02b6a56df308740dc",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:e4fdcc3c2f0f72575004450d5f368b7c45343c2bd32eabd93a1d003f03b36afd",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:4b657d16d44c7d495beb2876e7eacd37a73ff1c2af769d6355065fb56194f6b7"
+      ],
+      "wasAssociatedWith": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:agent:codex"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:079068b5d6d1c31184cad0237fc2c6ace2230211bdc044e02b6a56df308740dc",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 21490,
+      "path": "studio/tools/web_regression.py",
+      "sha256": "d678d91a894c931fb7e37321a00a829b20c94bd93de13cebbba134f4f513c32b",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:079068b5d6d1c31184cad0237fc2c6ace2230211bdc044e02b6a56df308740dc"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:169128b6eed434c55d51b79ab6fb9c14af8fad3125ebd37182ae3db0a5e664f5",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 12344,
+      "path": "studio/tools/web_game.py",
+      "sha256": "13ed46cd93a153f58909f22b2e66135532423ed9f2cc27fefd150e2d80fd0006",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:169128b6eed434c55d51b79ab6fb9c14af8fad3125ebd37182ae3db0a5e664f5"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 5315,
+      "path": "studio/starter/campaign/game/game.mjs",
+      "sha256": "97633da98f49419f63d49f0cbd9743f1cd248a04a9f75138e271c327c80619c2",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 25333,
+      "path": "studio/tools/web_revision.py",
+      "sha256": "339f76adcec6d2d56122f443e40ae7869fd6d7b10a557701f78d4a68dc81227e",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:2492d1393a1d73015aff75732b4f0e3b1c2a28a88e9c0066c15e7a8a0ca1fc4c",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 13469,
+      "path": "studio/INSTALL.md",
+      "sha256": "57900f9f314484015f7379127ca3470d8ac09aa1dcfda1f01f0714179af2644f",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:2492d1393a1d73015aff75732b4f0e3b1c2a28a88e9c0066c15e7a8a0ca1fc4c"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:378dd884c8806a25564aefcb1c78846c14be6b6d3d63c1e1c9d8354128a712ec",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 166,
+      "path": "studio/starter/checks/web-health.json",
+      "sha256": "d55aad3d8ff95eb1d16e4b3865dd5dbea05c99ff7a48d17e3c6509dfc45a5216",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:3f8670af4ce8de08e8e1f31fefbf40226c9101e71b9c4520d43af8ae21b72a91",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4210,
+      "path": "studio/starter/campaign/game/index.html",
+      "sha256": "ff38e3d038bca668904c05a763f1bee5804f69237e430c4d7bf7f1afc2da3e06",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:3f8670af4ce8de08e8e1f31fefbf40226c9101e71b9c4520d43af8ae21b72a91"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:4b657d16d44c7d495beb2876e7eacd37a73ff1c2af769d6355065fb56194f6b7",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 24084,
+      "path": "studio/tests/test_web_regression.py",
+      "sha256": "ff532f5ebdf995a6fdf351aca9509dcc05df8abd964049f876219dc68c4b0ebd",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:4b657d16d44c7d495beb2876e7eacd37a73ff1c2af769d6355065fb56194f6b7"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:6c5555dfa333e6fa3341347563e4f469a074d64c87392376bad8938cc579d512",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 11531,
+      "path": "studio/reference-materials.json",
+      "sha256": "4397b43aef87b977591a3464a082a88efa557c81f2ed3749e66174e717fb4a44",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:751a6f757a15ebcb8865058a172db841e770b1d60db884d59291ade114336779",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 4245,
+      "path": "studio/tools/stage.py",
+      "sha256": "85545fb647802380ec540bed617bb90955b90466b477dd9da0b12b86b6f61254",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:751a6f757a15ebcb8865058a172db841e770b1d60db884d59291ade114336779"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:7b94378cb2809bbdd142d11751622cf5ae6ddb9b2a627e4c3a5bc0bcc3e359fe",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 23737,
+      "path": "studio/REFERENCES.md",
+      "sha256": "51fe94bb4178e05e739a0244028991e6824039b74f8543f296e028db6c1b3000",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:833df0dc2a1d299c28d7349ffc4c8997c8f8ef8a428af635e5c2d99bd9ea8528",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 542,
+      "path": "studio/.codex-plugin/plugin.json",
+      "sha256": "2950ca7995f2590ae170c326193ccc6f3e368279fc8df3ec9402860c6e05f75f",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:833df0dc2a1d299c28d7349ffc4c8997c8f8ef8a428af635e5c2d99bd9ea8528"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:b1154e1ab494e34861101c65992c2301b6f49238408ed7b3f3b8dedf5db42003",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 26167,
+      "path": "studio/README.md",
+      "sha256": "0a6038d8a06ea5b9f71a29ebc47b8861138b1c954b4e2ee416d55386cd9b1752",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:b1154e1ab494e34861101c65992c2301b6f49238408ed7b3f3b8dedf5db42003"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:c69435c5fcd367efc925f997862f560fc77380de9c0b48ef068dd7d39c3c93dd",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 15201,
+      "path": "studio/tests/test_reference_review.py",
+      "sha256": "f3f69069b85a61dfb00c9957ab6f2026134027600244840e6e514eabf928bcb2",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:d0f2ab045ec8e52e525a18561530d1187a72408a5100bdd783b1af6ea7c3735a",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 19212,
+      "path": "studio/.agents/skills/game-studio/SKILL.md",
+      "sha256": "cdb956446e98a2cbc53605f307f0155003cf53f458a4de86b52357ee0c91601f",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:d0f2ab045ec8e52e525a18561530d1187a72408a5100bdd783b1af6ea7c3735a"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 19330,
+      "path": "studio/PLAYBOOK.md",
+      "sha256": "a4ec691f439e379f1de829d0b986222caa21755a0fb8b87d23ca0d59a628be82",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-campaign-plugin:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:e4fdcc3c2f0f72575004450d5f368b7c45343c2bd32eabd93a1d003f03b36afd",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 27103,
+      "path": "studio/tests/test_web_revision.py",
+      "sha256": "ebe0954e2b59efc6eb1e4fe58b2dc3dbba6b73cd6a7a503709c527b386e9ae40",
+      "wasDerivedFrom": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix:artifact:e4fdcc3c2f0f72575004450d5f368b7c45343c2bd32eabd93a1d003f03b36afd"
+      ],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:e79fb0ebac050038b88ce234694fa950be4b66e1e9714b1b2b12b9d195503082",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 13979,
+      "path": "release/evidence/reference-prevention/reference-map.json",
+      "sha256": "b727908ea116f2d483c73771c018e965f6c974b75b484940df266323ede2e773",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:e8e029057fcc1a83476801fc3c101f528601cd79ad0785d2f4426401e6ffcaff",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 18176,
+      "path": "studio/tools/reference_review.py",
+      "sha256": "8b9da851a8416910a14cbf54366bf618f78182162ae59614ebfd4d7644a87110",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:f7fb3211bc5554d30508c6488fab3ee294357e5c5e1198147d5cff403a4ef9f4",
+      "@type": [
+        "Entity",
+        "Artifact"
+      ],
+      "byteCount": 1328,
+      "path": "studio/starter/campaign/checks/first-play.json",
+      "sha256": "1f91f9756b29d39f2d95effa1243ed68cb8ac32ec46b8341428363f203e6233a",
+      "wasDerivedFrom": [],
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:validation",
+      "@type": [
+        "Activity",
+        "Validation"
+      ],
+      "checks": [
+        "New authored attachments can be inventoried and matched to concrete project files; verified anchors do not imply behavior approval",
+        "Automatic 390px health profile and custom control/layout cases supported",
+        "Known reference groups enumerated individually. Original PDF/DOCX contents explicitly unavailable."
+      ],
+      "observed": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-create-revise-fix",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:campaign-guide-source",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-input-executions",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-review-2eba4c19-188f-4ae7-a1d8-db4975a24a05"
+      ],
+      "partOf": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality"
+      ],
+      "passed": true,
+      "used": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:833df0dc2a1d299c28d7349ffc4c8997c8f8ef8a428af635e5c2d99bd9ea8528",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:d0f2ab045ec8e52e525a18561530d1187a72408a5100bdd783b1af6ea7c3735a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:b1154e1ab494e34861101c65992c2301b6f49238408ed7b3f3b8dedf5db42003",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:2492d1393a1d73015aff75732b4f0e3b1c2a28a88e9c0066c15e7a8a0ca1fc4c",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:7b94378cb2809bbdd142d11751622cf5ae6ddb9b2a627e4c3a5bc0bcc3e359fe",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:6c5555dfa333e6fa3341347563e4f469a074d64c87392376bad8938cc579d512",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:db2939bdf952bff4ab598962dcc660e8524e676e9297a4f9b7be26c42f694a5d",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:751a6f757a15ebcb8865058a172db841e770b1d60db884d59291ade114336779",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:e8e029057fcc1a83476801fc3c101f528601cd79ad0785d2f4426401e6ffcaff",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:1f37db98a56c957218b3147efbb3e33a3e7877de399432fef64f524cb3e8b40a",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:079068b5d6d1c31184cad0237fc2c6ace2230211bdc044e02b6a56df308740dc",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:169128b6eed434c55d51b79ab6fb9c14af8fad3125ebd37182ae3db0a5e664f5",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:c69435c5fcd367efc925f997862f560fc77380de9c0b48ef068dd7d39c3c93dd",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:4b657d16d44c7d495beb2876e7eacd37a73ff1c2af769d6355065fb56194f6b7",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:e4fdcc3c2f0f72575004450d5f368b7c45343c2bd32eabd93a1d003f03b36afd",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:1b36ba4a2c71d2b00dd5a6930def7d085e5e3926486b858b06bff1eba5c8a5de",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:3f8670af4ce8de08e8e1f31fefbf40226c9101e71b9c4520d43af8ae21b72a91",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:378dd884c8806a25564aefcb1c78846c14be6b6d3d63c1e1c9d8354128a712ec",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:f7fb3211bc5554d30508c6488fab3ee294357e5c5e1198147d5cff403a4ef9f4",
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:artifact:e79fb0ebac050038b88ce234694fa950be4b66e1e9714b1b2b12b9d195503082"
+      ]
+    },
+    {
+      "@id": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:validation:evidence",
+      "@type": [
+        "Entity",
+        "ValidationEvidence"
+      ],
+      "snapshot": {
+        "checks": [
+          "New authored attachments can be inventoried and matched to concrete project files; verified anchors do not imply behavior approval",
+          "Automatic 390px health profile and custom control/layout cases supported",
+          "Known reference groups enumerated individually. Original PDF/DOCX contents explicitly unavailable."
+        ],
+        "passed": true
+      },
+      "wasGeneratedBy": [
+        "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:source-driven-studio-quality:validation"
       ]
     },
     {

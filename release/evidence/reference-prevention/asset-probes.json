@@ -1,0 +1,1229 @@
+{
+  "schemaVersion": 1,
+  "status": "passed-scoped-installed-local-probes",
+  "recordedAt": "2026-11-09T01:55:35.197017+00:00",
+  "scope": "Read-only source inspection plus installed offline executable fixture probes. No production adoption, art approval, browser, engine, model build or Rive rerun.",
+  "workspaceCommit": "9fca80ad83a8d100ed817b514b7e175a1249663f",
+  "assetRepoCommit": "cd7616bea405146b211e707d1bbc4ba16ff1106f",
+  "installed": {
+    "executable": "/Users/jongseoklee/.local/bin/pixel-asset",
+    "version": "0.8.0",
+    "python": "/Users/jongseoklee/.local/share/uv/tools/pixel-asset-pipeline/bin/python",
+    "sourceRoot": "/Users/jongseoklee/.local/share/uv/tools/pixel-asset-pipeline/lib/python3.13/site-packages/pixel_asset_pipeline",
+    "sourceHashes": {
+      "cli.py": "dc91e16592fc6d0d227307b7869d0ec6274844d36a075b5bf1f10ed67870985d",
+      "snap.py": "8cec5a94c285b960ebc91731e5f87aebe4ae301d8ae7eaa030248c9c94602a69",
+      "rig_draft.py": "4917f15c154e3d9f44af52f1b8c596bf533e6c0da1e47852c8208a24cff715ea",
+      "effect_clip.py": "b97203bc83364818e810c87aef868493fbcceb47f2bf624fd661aac0c3ce845f",
+      "action_set.py": "c434c5204ff83c4bf8f2da11a74d0a51ceee655d52876efdb178a0146c7772a6"
+    }
+  },
+  "temporaryWorkRoot": "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128",
+  "repositoryInputs": [
+    {
+      "path": "assets/examples/production/set/acorn-v2/draft.png",
+      "sha256": "0ea2a05b42510564143229cbc0f78640d93076b00f191d13ec85a559a0066ac1"
+    },
+    {
+      "path": "assets/examples/production/set/requests/acorn-v2.json",
+      "sha256": "d02a16915eee6b455321dbc036514cb8617b3c2bdb7b2086f2cf4329495cc0f4"
+    },
+    {
+      "path": "assets/examples/woodland/style.json",
+      "sha256": "fc8c5bc2b495e39ec74a1223f8d476a2e506b54cf520fa542770316258c24611"
+    },
+    {
+      "path": "assets/examples/production/rig-draft/relaxed-sprite.png",
+      "sha256": "a521184f619366c23bacf3ac6d1adced47446d32a6c56700588096be24f66a26"
+    },
+    {
+      "path": "assets/examples/production/rig-draft/NOTICE.md",
+      "sha256": "31f391e39a283e907cdeba1a28590bb0cc7c0b9d38ce44b2cbe1ae5589e2c8ef"
+    },
+    {
+      "path": "assets/examples/production/rig-draft/LICENSE.txt",
+      "sha256": "67b67608c3cf0c7d05f8e867da725c69f3f2152a819e3dda0d173ffce06b60ad"
+    },
+    {
+      "path": "assets/examples/production/clockwork-beetle/actions.json",
+      "sha256": "c6acd4a01211134377dbe32f61ec21a64b09de4d395d86d00465bc3ab8a837ba"
+    },
+    {
+      "path": "assets/examples/production/clockwork-beetle/README.md",
+      "sha256": "343a7d855ca0a2025bdc1842642469669f829848efe6b3e9f7c981948948d320"
+    }
+  ],
+  "requests": {
+    "rig.json": {
+      "schema_version": 1,
+      "source": "relaxed-sprite.png"
+    },
+    "clip.json": {
+      "schema_version": 1,
+      "source": "local-original-effect.gif",
+      "license": "LICENSE",
+      "notice": "NOTICE",
+      "actor_cell_size": [
+        64,
+        48
+      ],
+      "effect_size": [
+        32,
+        32
+      ],
+      "pivot_px_from_top_left": [
+        16,
+        16
+      ],
+      "background": {
+        "mode": "preserve"
+      },
+      "phases": {
+        "charge": [
+          {
+            "frame": 0,
+            "duration_ms": 83
+          }
+        ],
+        "travel": [
+          {
+            "frame": 2,
+            "duration_ms": 67
+          },
+          {
+            "frame": 1,
+            "duration_ms": 71
+          }
+        ],
+        "impact": [
+          {
+            "frame": 5,
+            "duration_ms": 119
+          }
+        ]
+      }
+    },
+    "snap.json": {
+      "schema_version": 1,
+      "source": "enlarged-control.png",
+      "crop": [
+        0,
+        0,
+        384,
+        384
+      ],
+      "grid_size": [
+        64,
+        64
+      ],
+      "max_colors": 16,
+      "alpha_cutoff": 128
+    },
+    "style.json": {
+      "schema_version": 1,
+      "palette": [
+        "#271625",
+        "#453235",
+        "#6C3A30",
+        "#8B422E",
+        "#AA5233",
+        "#CA7A39",
+        "#AC7242",
+        "#DE9A44",
+        "#EABD7E",
+        "#FADDAE",
+        "#F8C277",
+        "#E89D5B",
+        "#464A30",
+        "#66733F",
+        "#93994D",
+        "#BBB072",
+        "#466465",
+        "#81A291",
+        "#AFBAA2",
+        "#353442",
+        "#4D525E",
+        "#635E76",
+        "#87808B",
+        "#BC945A"
+      ],
+      "style": "Warm woodland adventure pixel art; dark aubergine ink, forest and moss greens, cream parchment, ochre brass, rust leather, warm skin and muted teal-blue accents. Compact readable silhouettes, sparse highlights, no added outline.",
+      "view": "Front-facing three-quarter characters; isolated inventory objects, transparent background."
+    },
+    "effect.json": {
+      "schema_version": 1,
+      "preset": "slash",
+      "size": 32,
+      "palette": [
+        "#64754b",
+        "#e5ad57",
+        "#fff1d0"
+      ],
+      "seed": 17
+    },
+    "actions.json": {
+      "schema_version": 1,
+      "cell_size": [
+        64,
+        48
+      ],
+      "pivot_px_from_top_left": [
+        29,
+        40
+      ],
+      "actions": {
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "path": "poses/idle-00.png",
+              "duration_ms": 180
+            },
+            {
+              "path": "poses/idle-01.png",
+              "duration_ms": 160
+            },
+            {
+              "path": "poses/idle-02.png",
+              "duration_ms": 180
+            },
+            {
+              "path": "poses/idle-03.png",
+              "duration_ms": 160
+            }
+          ]
+        },
+        "walk": {
+          "loop": true,
+          "frames": [
+            {
+              "path": "poses/walk-00.png",
+              "duration_ms": 110
+            },
+            {
+              "path": "poses/walk-01.png",
+              "duration_ms": 110
+            },
+            {
+              "path": "poses/walk-02.png",
+              "duration_ms": 110
+            },
+            {
+              "path": "poses/walk-03.png",
+              "duration_ms": 110
+            },
+            {
+              "path": "poses/walk-04.png",
+              "duration_ms": 110
+            },
+            {
+              "path": "poses/walk-05.png",
+              "duration_ms": 110
+            }
+          ]
+        },
+        "run": {
+          "loop": true,
+          "frames": [
+            {
+              "path": "poses/run-00.png",
+              "duration_ms": 65
+            },
+            {
+              "path": "poses/run-01.png",
+              "duration_ms": 65
+            },
+            {
+              "path": "poses/run-02.png",
+              "duration_ms": 65
+            },
+            {
+              "path": "poses/run-03.png",
+              "duration_ms": 65
+            },
+            {
+              "path": "poses/run-04.png",
+              "duration_ms": 65
+            },
+            {
+              "path": "poses/run-05.png",
+              "duration_ms": 65
+            }
+          ]
+        },
+        "attack": {
+          "loop": false,
+          "frames": [
+            {
+              "path": "poses/attack-00.png",
+              "duration_ms": 130
+            },
+            {
+              "path": "poses/attack-01.png",
+              "duration_ms": 170
+            },
+            {
+              "path": "poses/attack-02.png",
+              "duration_ms": 70
+            },
+            {
+              "path": "poses/attack-03.png",
+              "duration_ms": 110
+            },
+            {
+              "path": "poses/attack-04.png",
+              "duration_ms": 160
+            }
+          ]
+        },
+        "jump": {
+          "loop": false,
+          "frames": [
+            {
+              "path": "poses/jump-00.png",
+              "duration_ms": 130
+            },
+            {
+              "path": "poses/jump-01.png",
+              "duration_ms": 100
+            },
+            {
+              "path": "poses/jump-02.png",
+              "duration_ms": 180
+            },
+            {
+              "path": "poses/jump-03.png",
+              "duration_ms": 100
+            },
+            {
+              "path": "poses/jump-04.png",
+              "duration_ms": 140
+            }
+          ]
+        },
+        "hurt": {
+          "loop": false,
+          "frames": [
+            {
+              "path": "poses/hurt-00.png",
+              "duration_ms": 90
+            },
+            {
+              "path": "poses/hurt-01.png",
+              "duration_ms": 130
+            },
+            {
+              "path": "poses/hurt-02.png",
+              "duration_ms": 180
+            }
+          ]
+        }
+      },
+      "events": [
+        {
+          "action": "attack",
+          "frame": 2,
+          "sheet": "clip/sheet.png",
+          "metadata": "clip/sheet.json",
+          "license": "clip/LICENSE",
+          "notice": "clip/NOTICE",
+          "at_px": [
+            54,
+            26
+          ],
+          "effect_anchor_px": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    "build.json": {
+      "schema_version": 1,
+      "kind": "icon",
+      "size": 24,
+      "prompt": "A compact woodland inventory acorn, tilted slightly clockwise. The upper third is a broad MOSS GREEN cap (#66733F base, #93994D highlight, #464A30 shadow) with a small moss green leaf at its upper right and a short dark brown stem. The lower two thirds are one ochre nut (#CA7A39, #DE9A44, #EABD7E) tapering to a rounded point. Thick selective dark aubergine contour #271625, sparse large pixel clusters, one cream highlight. Keep the cap unmistakably green rather than brown. Approximately 18 pixels wide and 21 pixels tall within a 24 pixel square; isolated front three-quarter game inventory icon. No realistic rib texture or tiny scattered highlights.",
+      "profile": "style.json"
+    }
+  },
+  "derivation": [
+    "Static request copied acorn-v2 request and repointed profile to unchanged temporary style.json; draft bytes copied unchanged.",
+    "Snap input is existing original MIT relaxed-sprite.png enlarged6x nearest to384x384 as controlled known-grid fixture; no blur robustness claimed.",
+    "Original slash effect generated locally by installed effect preset seed17, encoded to a transparent8frame GIF without optimized delta frames; all disposal2, native32px, colors preserved.",
+    "Six-action pose PNG files copied unchanged from existing original clockwork-beetle fixture; contact event added only in temporary request."
+  ],
+  "runs": [
+    {
+      "name": "build",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "build",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/build.json",
+        "--draft",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/draft.png",
+        "--out",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/static"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"schema_version\": 1, \"status\": \"ready\", \"files\": {\"sprite\": \"asset.png\", \"preview\": \"preview.png\", \"metadata\": \"metadata.json\", \"validation\": \"validation.json\", \"source\": \"draft.png\"}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "validate",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "validate",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/build.json",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/static/asset.png"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"passed\": true, \"checks\": {\"size\": true, \"rgba\": true, \"binary_alpha\": true, \"nonempty\": true, \"transparency\": true, \"palette\": true, \"color_limit\": true, \"isolated_ratio\": true, \"clear_edges\": true, \"baseline\": true}, \"metrics\": {\"width\": 24, \"height\": 24, \"mode\": \"RGBA\", \"foreground_pixels\": 243, \"transparent_pixels\": 333, \"semi_alpha_pixels\": 0, \"color_count\": 11, \"colors_outside_palette\": 0, \"isolated_pixels\": 0, \"isolated_ratio\": 0.0, \"edge_pixels\": 0, \"visible_bounds\": [3, 1, 21, 23], \"color_limit\": 12, \"kind\": \"icon\"}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "rig-draft",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "rig-draft",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/rig.json",
+        "--out",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/rig"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"schema_version\": 1, \"status\": \"ready\", \"files\": {\"master\": \"master.png\", \"request\": \"rig-draft.request.json\", \"preview\": \"joint-preview.png\", \"neutral\": \"neutral.png\", \"inspection\": \"inspection.json\", \"torso_mask\": \"torso-mask.png\", \"head_mask\": \"head-mask.png\", \"arm_left_mask\": \"arm_left-mask.png\", \"arm_right_mask\": \"arm_right-mask.png\", \"leg_left_mask\": \"leg_left-mask.png\", \"leg_right_mask\": \"leg_right-mask.png\"}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "snap",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "snap",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/snap.json",
+        "--out",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/snap"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"schema_version\": 1, \"status\": \"ready\", \"files\": {\"asset\": \"asset.png\", \"source_crop\": \"source-crop.png\", \"comparison_native\": \"comparison-native.png\", \"comparison\": \"comparison.png\", \"inspection\": \"inspection.json\"}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "effect",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "effect",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/effect.json",
+        "--out",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/effect"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"schema_version\": 1, \"status\": \"ready\", \"files\": {\"sheet\": \"sheet.png\", \"metadata\": \"sheet.json\", \"preview\": \"preview.gif\", \"effect\": \"effect.json\"}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "effect-clip",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "effect-clip",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/clip.json",
+        "--out",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/clip"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "{\"schema_version\": 1, \"status\": \"ready\", \"files\": {\"sheet\": \"sheet.png\", \"metadata\": \"sheet.json\", \"preview\": \"preview.gif\", \"provenance\": \"effect-clip.json\", \"license\": \"LICENSE\", \"notice\": \"NOTICE\"}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "action-set",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "action-set",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/actions.json",
+        "--out",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/actions"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "{\"schema_version\": 1, \"status\": \"ready\", \"files\": {\"atlas\": \"atlas.png\", \"metadata\": \"action-set.json\", \"preview\": \"preview.gif\", \"credits\": \"credits.json\", \"effect_0_sheet\": \"effect-0.png\", \"effect_0_metadata\": \"effect-0.json\", \"effect_0_license\": \"effect-0-LICENSE\", \"effect_0_notice\": \"effect-0-NOTICE\"}}\n",
+      "stderr": ""
+    },
+    {
+      "name": "unapproved-motion-rejected",
+      "argv": [
+        "/Users/jongseoklee/.local/bin/pixel-asset",
+        "motion",
+        "--request",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/rig/rig-draft.request.json",
+        "--out",
+        "/var/folders/kn/41nhgj9s4rggk2z8pq2qt3bc0000gn/T/reference-asset-probes-lc8ke128/unapproved-motion"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "",
+      "stderr": "{\"schema_version\": 1, \"status\": \"error\", \"error\": \"master requires explicit approved:true\"}\n"
+    }
+  ],
+  "assertions": {
+    "static": {
+      "passed": true,
+      "checks": {
+        "size": true,
+        "rgba": true,
+        "binary_alpha": true,
+        "nonempty": true,
+        "transparency": true,
+        "palette": true,
+        "color_limit": true,
+        "isolated_ratio": true,
+        "clear_edges": true,
+        "baseline": true
+      },
+      "metrics": {
+        "width": 24,
+        "height": 24,
+        "mode": "RGBA",
+        "foreground_pixels": 243,
+        "transparent_pixels": 333,
+        "semi_alpha_pixels": 0,
+        "color_count": 11,
+        "colors_outside_palette": 0,
+        "isolated_pixels": 0,
+        "isolated_ratio": 0.0,
+        "edge_pixels": 0,
+        "visible_bounds": [
+          3,
+          1,
+          21,
+          23
+        ],
+        "color_limit": 12,
+        "kind": "icon"
+      }
+    },
+    "snap": {
+      "inspection": {
+        "schema_version": 1,
+        "technical_status": "passed",
+        "passed": true,
+        "visual_review": "required",
+        "artistic_acceptance": "unverified",
+        "source": {
+          "path": "enlarged-control.png",
+          "sha256": "1ed805867dbc1e5b86dc8cdc9fb6c41f5d15b8188e7c8b8cbd6518689938732d",
+          "size_px": [
+            384,
+            384
+          ],
+          "rgba_color_count": 8,
+          "visible_rgb_color_count": 7,
+          "partial_alpha_pixel_count": 0
+        },
+        "geometry": {
+          "crop_xywh": [
+            0,
+            0,
+            384,
+            384
+          ],
+          "grid_size": [
+            64,
+            64
+          ],
+          "cell_size_source_px": [
+            6.0,
+            6.0
+          ],
+          "sample_position": "floor((2*cell+1)*crop_extent/(2*grid_extent))",
+          "sampling": "cell-centre-nearest-no-interpolation"
+        },
+        "alpha_cutoff": 128,
+        "max_colors": 16,
+        "palette_mode": "median-cut-with-darkest-sample",
+        "palette": [
+          "#242b35",
+          "#42465d",
+          "#493c36",
+          "#4c785f",
+          "#a6b391",
+          "#bd8a65",
+          "#e0b17f"
+        ],
+        "sampled_visible_color_count": 7,
+        "output_visible_color_count": 7,
+        "output_opaque_pixels": 782,
+        "output_transparent_pixels": 3314,
+        "recolored_cells": 0,
+        "output_sha256": "a521184f619366c23bacf3ac6d1adced47446d32a6c56700588096be24f66a26",
+        "comparison": {
+          "left": "source crop (native: centre samples before palette reduction)",
+          "right": "snapped output",
+          "scale": 8,
+          "resampling": "nearest"
+        },
+        "limitations": [
+          "Caller supplies the grid and crop; no automatic grid or anatomy detection.",
+          "No background removal, outline synthesis, or speck deletion.",
+          "Details smaller than a grid cell can be lost; inspect outlines and transparency before rigging.",
+          "Review and approve the new master before setting motion approved:true."
+        ]
+      },
+      "exactOriginalFileHashRestored": true
+    },
+    "rigDraft": {
+      "inspection": {
+        "schema_version": 1,
+        "status": "draft",
+        "approved": false,
+        "visual_review": "required",
+        "artistic_acceptance": "unverified",
+        "anatomical_review": "required",
+        "source": {
+          "path": "relaxed-sprite.png",
+          "sha256": "a521184f619366c23bacf3ac6d1adced47446d32a6c56700588096be24f66a26",
+          "request_sha256": "c7df5c15182d1a7f816c853f40d9fd60c0e73472ce5d6c943850bb86a8da290b",
+          "size_px": [
+            64,
+            64
+          ]
+        },
+        "method": "restricted-frontal-row-separation-six-part-proposal",
+        "supplied_guides": {},
+        "proposed_guides": {
+          "neck_y": 22,
+          "shoulder_y": 24,
+          "hip_y": 44
+        },
+        "geometry": {
+          "bbox_xywh": [
+            18,
+            8,
+            28,
+            51
+          ],
+          "bilateral_iou": 1.0,
+          "arm_separation_rows": [
+            27,
+            39
+          ],
+          "leg_separation_y": 44,
+          "torso_span_x": [
+            26,
+            38
+          ],
+          "center_x": 31
+        },
+        "exact_partition": true,
+        "neutral_exact_visible_reconstruction": true,
+        "parts": [
+          {
+            "id": "torso",
+            "pixel_count": 238,
+            "anchor_px": [
+              31,
+              44
+            ],
+            "mask_sha256": "45b128f5bbe1857eddb362b6b735320527249b462b54200ced76c7936a7fd91c"
+          },
+          {
+            "id": "head",
+            "pixel_count": 234,
+            "anchor_px": [
+              31,
+              22
+            ],
+            "mask_sha256": "ac003dcb4b5990c9d715828dccd7b76a147cdc5785b43fa013b3098a40431f66"
+          },
+          {
+            "id": "arm_left",
+            "pixel_count": 91,
+            "anchor_px": [
+              25,
+              24
+            ],
+            "mask_sha256": "758efdfd2dd18dc2245b2917486aef59ac6d19408683f08205d5d5513797aac3"
+          },
+          {
+            "id": "arm_right",
+            "pixel_count": 91,
+            "anchor_px": [
+              38,
+              24
+            ],
+            "mask_sha256": "79817efbd7dad49f58cb9675293d90f7e523d205b3255eb24e431499b0332a81"
+          },
+          {
+            "id": "leg_left",
+            "pixel_count": 64,
+            "anchor_px": [
+              28,
+              44
+            ],
+            "mask_sha256": "6faace5b24b210b4975c2d7bd2dd656082d3b3ac8d6e849b608c92d3bd627712"
+          },
+          {
+            "id": "leg_right",
+            "pixel_count": 64,
+            "anchor_px": [
+              34,
+              44
+            ],
+            "mask_sha256": "66f3eaa1cd6912f29df0e787685ddc299c627551722e86671921d25999e33184"
+          }
+        ],
+        "limitations": [
+          "Six visible cutout parts only; no 17-bone rig or automatic approval.",
+          "Image-left/image-right labels are not anatomical handedness.",
+          "Bilateral silhouette and row gaps do not prove anatomy; inspect every proposed mask and joint.",
+          "No hidden anatomy, equipment extraction, or replacement pixels are generated.",
+          "Edit masks/joints and explicitly review the master before changing approved:false."
+        ]
+      },
+      "exactNeutralRGBAIndependentCheck": true,
+      "unapprovedMotionRejected": true
+    },
+    "gifRetiming": {
+      "selectedSourceFrames": [
+        0,
+        2,
+        1,
+        5
+      ],
+      "exactDurationMs": [
+        83,
+        67,
+        71,
+        119
+      ],
+      "sumMs": 340,
+      "allSelectedRGBAFramesMatchDecodedSource": true,
+      "sheetSize": [
+        128,
+        32
+      ],
+      "paletteColors": 3,
+      "binaryAlpha": true,
+      "provenance": {
+        "schema_version": 1,
+        "producer": "local-gif-repurpose",
+        "source": {
+          "source": {
+            "path": "local-original-effect.gif",
+            "sha256": "c3435970e2cfd45b6b1b8466d388a6b35d7596f976bfbbb0b8b9d5696f2b9e5c"
+          },
+          "license": {
+            "path": "LICENSE",
+            "sha256": "67b67608c3cf0c7d05f8e867da725c69f3f2152a819e3dda0d173ffce06b60ad"
+          },
+          "notice": {
+            "path": "NOTICE",
+            "sha256": "92f4aeea6900cfaf6ae114a6858d4cfebbe7350e03b1a9bac5dd295bb5c86685"
+          }
+        },
+        "request_sha256": "ba845fd8d7c7e8f86db36c30cc541e11a466c35983de6b3d14fbb9e2cd64d6ba",
+        "source_size": [
+          32,
+          32
+        ],
+        "source_frames": [
+          {
+            "frame": 0,
+            "duration_ms": 40,
+            "disposal": 2
+          },
+          {
+            "frame": 1,
+            "duration_ms": 30,
+            "disposal": 2
+          },
+          {
+            "frame": 2,
+            "duration_ms": 30,
+            "disposal": 2
+          },
+          {
+            "frame": 3,
+            "duration_ms": 40,
+            "disposal": 2
+          },
+          {
+            "frame": 4,
+            "duration_ms": 50,
+            "disposal": 2
+          },
+          {
+            "frame": 5,
+            "duration_ms": 60,
+            "disposal": 2
+          },
+          {
+            "frame": 6,
+            "duration_ms": 70,
+            "disposal": 2
+          },
+          {
+            "frame": 7,
+            "duration_ms": 80,
+            "disposal": 2
+          }
+        ],
+        "background": {
+          "mode": "preserve"
+        },
+        "actor_cell_size": [
+          64,
+          48
+        ],
+        "effect_size": [
+          32,
+          32
+        ],
+        "scale_relative_to_actor": [
+          0.5,
+          0.6666666666666666
+        ],
+        "resampling": "nearest",
+        "selection": [
+          {
+            "phase": "charge",
+            "frame": 0,
+            "duration_ms": 83
+          },
+          {
+            "phase": "travel",
+            "frame": 2,
+            "duration_ms": 67
+          },
+          {
+            "phase": "travel",
+            "frame": 1,
+            "duration_ms": 71
+          },
+          {
+            "phase": "impact",
+            "frame": 5,
+            "duration_ms": 119
+          }
+        ],
+        "pivot_px_from_top_left": [
+          16,
+          16
+        ],
+        "artifacts": {
+          "sheet": {
+            "path": "sheet.png",
+            "sha256": "9dd6ec8c4111016f5ef780e788f855c27811c2178a52ccbdb7cfb6255f01cba8"
+          },
+          "metadata": {
+            "path": "sheet.json",
+            "sha256": "06fed3d138d86a137cf287205d6a42ff8e0b38d10e2a8043c666f2dd1ef70504"
+          },
+          "preview": {
+            "path": "preview.gif",
+            "sha256": "9fc308e6e97d61dd9486dc4709ad502b6f6c696faded3566349fb5396e697b86"
+          },
+          "license": {
+            "path": "LICENSE",
+            "sha256": "67b67608c3cf0c7d05f8e867da725c69f3f2152a819e3dda0d173ffce06b60ad"
+          },
+          "notice": {
+            "path": "NOTICE",
+            "sha256": "92f4aeea6900cfaf6ae114a6858d4cfebbe7350e03b1a9bac5dd295bb5c86685"
+          }
+        },
+        "review": {
+          "status": "pending",
+          "preview": "preview.gif",
+          "limits": "No redraw or semantic matting; exact edge-color removal may retain halos. GIF preview rounds timing; sheet metadata is exact. Engine acceptance is separate."
+        }
+      },
+      "sourceNature": "isolated local original control GIF assembled losslessly from installed slash effect sheet; not a user GIF or external reference asset"
+    },
+    "sixActionsAndContact": {
+      "actions": {
+        "idle": {
+          "frames": 4,
+          "durationMs": 680,
+          "loop": true
+        },
+        "walk": {
+          "frames": 6,
+          "durationMs": 660,
+          "loop": true
+        },
+        "run": {
+          "frames": 6,
+          "durationMs": 390,
+          "loop": true
+        },
+        "attack": {
+          "frames": 5,
+          "durationMs": 640,
+          "loop": false
+        },
+        "jump": {
+          "frames": 5,
+          "durationMs": 650,
+          "loop": false
+        },
+        "hurt": {
+          "frames": 3,
+          "durationMs": 400,
+          "loop": false
+        }
+      },
+      "cellSize": [
+        64,
+        48
+      ],
+      "atlasSize": [
+        384,
+        288
+      ],
+      "pivot": [
+        29,
+        40
+      ],
+      "sourcePoseRGBAExactCount": 29,
+      "atlasBinaryAlpha": true,
+      "atlasVisiblePaletteColors": 10,
+      "contactEvent": {
+        "sheet": "effect-0.png",
+        "metadata": "effect-0.json",
+        "license": "effect-0-LICENSE",
+        "notice": "effect-0-NOTICE",
+        "pivot_px_from_top_left": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 32,
+              "h": 32
+            },
+            "duration_ms": 83
+          },
+          {
+            "rect": {
+              "x": 32,
+              "y": 0,
+              "w": 32,
+              "h": 32
+            },
+            "duration_ms": 67
+          },
+          {
+            "rect": {
+              "x": 64,
+              "y": 0,
+              "w": 32,
+              "h": 32
+            },
+            "duration_ms": 71
+          },
+          {
+            "rect": {
+              "x": 96,
+              "y": 0,
+              "w": 32,
+              "h": 32
+            },
+            "duration_ms": 119
+          }
+        ],
+        "duration_ms": 340,
+        "source": {
+          "sheet": {
+            "path": "clip/sheet.png",
+            "sha256": "9dd6ec8c4111016f5ef780e788f855c27811c2178a52ccbdb7cfb6255f01cba8"
+          },
+          "metadata": {
+            "path": "clip/sheet.json",
+            "sha256": "06fed3d138d86a137cf287205d6a42ff8e0b38d10e2a8043c666f2dd1ef70504"
+          },
+          "license": {
+            "path": "clip/LICENSE",
+            "sha256": "67b67608c3cf0c7d05f8e867da725c69f3f2152a819e3dda0d173ffce06b60ad"
+          },
+          "notice": {
+            "path": "clip/NOTICE",
+            "sha256": "92f4aeea6900cfaf6ae114a6858d4cfebbe7350e03b1a9bac5dd295bb5c86685"
+          }
+        },
+        "action": "attack",
+        "frame": 2,
+        "start_ms": 300,
+        "at_px": [
+          54,
+          26
+        ],
+        "effect_anchor_px": [
+          16,
+          16
+        ]
+      },
+      "copiedEffectPixelsExact": true
+    }
+  },
+  "outputFiles": [
+    {
+      "path": "static/asset.png",
+      "bytes": 442,
+      "sha256": "38f23d505bd60186163fbf41cc313e947d6ccecb9f9eded46fc4e13095fa35cc"
+    },
+    {
+      "path": "static/draft.png",
+      "bytes": 611838,
+      "sha256": "0ea2a05b42510564143229cbc0f78640d93076b00f191d13ec85a559a0066ac1"
+    },
+    {
+      "path": "static/metadata.json",
+      "bytes": 1798,
+      "sha256": "8f494133a6f4a8648d9b47f78e9a41e5218082e34db14dba78bbf97b17c8dc36"
+    },
+    {
+      "path": "static/preview.png",
+      "bytes": 933,
+      "sha256": "efc93e0878f75995fcf485d23d4a1c914aa28f6b817533bfe4c3faddc230b835"
+    },
+    {
+      "path": "static/validation.json",
+      "bytes": 675,
+      "sha256": "7084dd91a893bf3d8551c4d669601e6babc7a755a277f2a2057f3daae5ff0aa7"
+    },
+    {
+      "path": "snap/asset.png",
+      "bytes": 426,
+      "sha256": "a521184f619366c23bacf3ac6d1adced47446d32a6c56700588096be24f66a26"
+    },
+    {
+      "path": "snap/comparison-native.png",
+      "bytes": 529,
+      "sha256": "76df147b8f98f70c11f0dbb4f13a9709b050d25e53bd2539d96ad67210e70605"
+    },
+    {
+      "path": "snap/comparison.png",
+      "bytes": 3534,
+      "sha256": "96457b14841a3ffbdf04ba8627a89abdf5a423168896fc4b255f7ec89b43c0bf"
+    },
+    {
+      "path": "snap/inspection.json",
+      "bytes": 1737,
+      "sha256": "af785e7d175e761122ff2e94bf329bd38e521a12c7b5ff81a01f2ffbebf6d7af"
+    },
+    {
+      "path": "snap/source-crop.png",
+      "bytes": 1628,
+      "sha256": "1ed805867dbc1e5b86dc8cdc9fb6c41f5d15b8188e7c8b8cbd6518689938732d"
+    },
+    {
+      "path": "rig/arm_left-mask.png",
+      "bytes": 126,
+      "sha256": "758efdfd2dd18dc2245b2917486aef59ac6d19408683f08205d5d5513797aac3"
+    },
+    {
+      "path": "rig/arm_right-mask.png",
+      "bytes": 132,
+      "sha256": "79817efbd7dad49f58cb9675293d90f7e523d205b3255eb24e431499b0332a81"
+    },
+    {
+      "path": "rig/head-mask.png",
+      "bytes": 128,
+      "sha256": "ac003dcb4b5990c9d715828dccd7b76a147cdc5785b43fa013b3098a40431f66"
+    },
+    {
+      "path": "rig/inspection.json",
+      "bytes": 2628,
+      "sha256": "c50e8159a463c46fdaa58c1768c4e4db2193e4b556ac901b65c457d464979569"
+    },
+    {
+      "path": "rig/joint-preview.png",
+      "bytes": 15285,
+      "sha256": "2f259d4e7a3f7335d37b9550c71dceb9041d006ae051cfe34704f50ef740df27"
+    },
+    {
+      "path": "rig/leg_left-mask.png",
+      "bytes": 118,
+      "sha256": "6faace5b24b210b4975c2d7bd2dd656082d3b3ac8d6e849b608c92d3bd627712"
+    },
+    {
+      "path": "rig/leg_right-mask.png",
+      "bytes": 108,
+      "sha256": "66f3eaa1cd6912f29df0e787685ddc299c627551722e86671921d25999e33184"
+    },
+    {
+      "path": "rig/master.png",
+      "bytes": 426,
+      "sha256": "a521184f619366c23bacf3ac6d1adced47446d32a6c56700588096be24f66a26"
+    },
+    {
+      "path": "rig/neutral.png",
+      "bytes": 426,
+      "sha256": "a521184f619366c23bacf3ac6d1adced47446d32a6c56700588096be24f66a26"
+    },
+    {
+      "path": "rig/rig-draft.request.json",
+      "bytes": 1435,
+      "sha256": "297340832fdb1ca43feda34e1a7d820bd28537bbaf1e8c91519fdbc2d89bd29d"
+    },
+    {
+      "path": "rig/torso-mask.png",
+      "bytes": 124,
+      "sha256": "45b128f5bbe1857eddb362b6b735320527249b462b54200ced76c7936a7fd91c"
+    },
+    {
+      "path": "effect/effect.json",
+      "bytes": 1482,
+      "sha256": "f3eef508e0d6954dbf314f5795edfecb3335d5ffc32a48be3430a4a489e1f652"
+    },
+    {
+      "path": "effect/preview.gif",
+      "bytes": 16133,
+      "sha256": "437c4a84eb2a2470b39c0e0ba548d22d85eea1a686b693330fb22ae577097734"
+    },
+    {
+      "path": "effect/sheet.json",
+      "bytes": 1138,
+      "sha256": "fa780e1a32c886a73487b672fd954d5e2239e451fa9f0584ec161c610f08b598"
+    },
+    {
+      "path": "effect/sheet.png",
+      "bytes": 589,
+      "sha256": "c7af8becda5d82586331847fbed92a4c71f5f8285e3549790b286a6f5b2be52e"
+    },
+    {
+      "path": "clip/LICENSE",
+      "bytes": 1089,
+      "sha256": "67b67608c3cf0c7d05f8e867da725c69f3f2152a819e3dda0d173ffce06b60ad"
+    },
+    {
+      "path": "clip/NOTICE",
+      "bytes": 218,
+      "sha256": "92f4aeea6900cfaf6ae114a6858d4cfebbe7350e03b1a9bac5dd295bb5c86685"
+    },
+    {
+      "path": "clip/effect-clip.json",
+      "bytes": 2801,
+      "sha256": "86db04d799af47f2a2d659c392c07139b48c6bf3b56f446029d01e0352887ffe"
+    },
+    {
+      "path": "clip/preview.gif",
+      "bytes": 8018,
+      "sha256": "9fc308e6e97d61dd9486dc4709ad502b6f6c696faded3566349fb5396e697b86"
+    },
+    {
+      "path": "clip/sheet.json",
+      "bytes": 1279,
+      "sha256": "06fed3d138d86a137cf287205d6a42ff8e0b38d10e2a8043c666f2dd1ef70504"
+    },
+    {
+      "path": "clip/sheet.png",
+      "bytes": 356,
+      "sha256": "9dd6ec8c4111016f5ef780e788f855c27811c2178a52ccbdb7cfb6255f01cba8"
+    },
+    {
+      "path": "actions/action-set.json",
+      "bytes": 12389,
+      "sha256": "c017e06b3807c27c8c7b045f9360fa70e1e125a11d22b00a56e1f8a2c83698d6"
+    },
+    {
+      "path": "actions/atlas.png",
+      "bytes": 8569,
+      "sha256": "9f6d5b761b85880faca2781b3bf61f255f27df865f156b4e5aa6b467852939a8"
+    },
+    {
+      "path": "actions/credits.json",
+      "bytes": 812,
+      "sha256": "47fe75662e4d4b91f06a61766a95ff45f6a862e3d9c225743a66aa5efa44a85a"
+    },
+    {
+      "path": "actions/effect-0-LICENSE",
+      "bytes": 1089,
+      "sha256": "67b67608c3cf0c7d05f8e867da725c69f3f2152a819e3dda0d173ffce06b60ad"
+    },
+    {
+      "path": "actions/effect-0-NOTICE",
+      "bytes": 218,
+      "sha256": "92f4aeea6900cfaf6ae114a6858d4cfebbe7350e03b1a9bac5dd295bb5c86685"
+    },
+    {
+      "path": "actions/effect-0.json",
+      "bytes": 1282,
+      "sha256": "57c3e2d51b56d5248c7ea4ac883e988ad3fead38e7f0bdecf66a47ea8c7be057"
+    },
+    {
+      "path": "actions/effect-0.png",
+      "bytes": 356,
+      "sha256": "9dd6ec8c4111016f5ef780e788f855c27811c2178a52ccbdb7cfb6255f01cba8"
+    },
+    {
+      "path": "actions/preview.gif",
+      "bytes": 107839,
+      "sha256": "be1b500f71dbe350e4a03ee0af028382a5f8fd1982f2cd893b04d81642b9bb40"
+    }
+  ],
+  "existingEvidenceNotRerun": [
+    {
+      "kind": "3D",
+      "path": "examples/forest-camp/builds/lantern-embers-final/assets/lantern/model.web.glb.webstage.json",
+      "sha256": "f3b7ecc0ebfeccf8e150a15c72ece1236674d938dee6d71ca400904edc96ef93",
+      "reported": {
+        "ok": true,
+        "generator": "@webstage/compiler@1.0.0",
+        "metrics": {
+          "bytes": 476000,
+          "triangles": 23160,
+          "textures": 0,
+          "textureEdge": 0,
+          "drawCalls": 9,
+          "animations": 0,
+          "meshes": 9,
+          "materials": 7
+        },
+        "violations": []
+      },
+      "claim": "Existing compiler receipt read this turn only; Blender/3D generation/render and runtime were NOT rerun."
+    },
+    {
+      "kind": "Rive",
+      "path": "examples/rive-character/evidence/frame-proof.json",
+      "sha256": "a0132f367d36c3561f1ff9595725f4eb4620399569471353d14db70bf9369589",
+      "currentArtifact": "examples/rive-character/build/rive/character.riv",
+      "currentArtifactSHA256": "2feafcf7a4898cafbd3eaf421135941939c1c8ffa1a2e6c5c64e9495fd5f2af2",
+      "currentArtifactMatchesHistoricalEvidence": true,
+      "reported": {
+        "acceptance_scope": "Runtime fidelity only; does not certify motion quality or user acceptance.",
+        "asset_review_status": "candidate-unaccepted",
+        "runtime": {
+          "package": "@rive-app/canvas-advanced",
+          "version": "2.49.4"
+        },
+        "native_size": [
+          96,
+          96
+        ],
+        "sampleCount": 438,
+        "allRecordedSamplesPass": true
+      },
+      "claim": "Current artifact hash matched historical evidence. Rive build, browser and native player NOT rerun."
+    }
+  ],
+  "limitations": [
+    "Synthetic original controls prove installed contract paths only, not arbitrary reference fidelity or user art acceptance.",
+    "Rig-draft remains approved:false and restricted to a separated frontal silhouette; no automatic anatomy or production approval.",
+    "Six actions reused existing authored beetle frames; no fresh motion drawing or motion producer generation was claimed.",
+    "GIF fixture is locally authored, not downloaded user content; complex matte removal, disposal1/3 and external GIF licenses were not exercised here.",
+    "Exact timings are asserted in JSON. GIF preview rounds to centiseconds; live playback, game hit timing, browser responsiveness and engine integration were not observed.",
+    "All raw outputs are in a fresh temporary directory and may be removed by OS cleanup; hashes, exact requests, command lines and asserted metrics remain in this evidence file.",
+    "No image generation, Blender run, network or credits were used. No assets/studio/examples source was modified."
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-46ea174b5793438c990d0c3fd1d4e2a9",
+  "operation": "check",
+  "passed": false,
+  "status": "assertion_failed",
+  "phase": "baseline-check",
+  "changes": [],
+  "checks": {
+    "before": {
+      "passed": false,
+      "status": "assertion_failed",
+      "observations": [
+        {
+          "step": 0,
+          "action": "expect_control",
+          "selector": "#start",
+          "state": "enabled",
+          "observed": {
+            "found": true,
+            "count": 1,
+            "visible": true,
+            "enabled": true,
+            "rect": {
+              "x": 26.7,
+              "y": 283.62,
+              "width": 89.23,
+              "height": 35
+            },
+            "matched": true
+          }
+        },
+        {
+          "step": 1,
+          "action": "click",
+          "completed": true
+        },
+        {
+          "step": 2,
+          "action": "expect_layout",
+          "selector": ".status",
+          "relation": "separate",
+          "other": "canvas",
+          "observed": {
+            "found": true,
+            "count": 1,
+            "visible": true,
+            "enabled": true,
+            "rect": {
+              "x": 20,
+              "y": 333.77,
+              "width": 99.27,
+              "height": 11
+            },
+            "viewport_width": 390,
+            "other": {
+              "found": true,
+              "count": 1,
+              "visible": true,
+              "enabled": true,
+              "rect": {
+                "x": 8,
+                "y": 143.39,
+                "width": 374,
+                "height": 210.38
+              }
+            },
+            "matched": false
+          }
+        }
+      ],
+      "failed_assertion": {
+        "step": 2,
+        "action": "expect_layout",
+        "selector": ".status",
+        "relation": "separate",
+        "other": "canvas",
+        "observed": {
+          "found": true,
+          "count": 1,
+          "visible": true,
+          "enabled": true,
+          "rect": {
+            "x": 20,
+            "y": 333.77,
+            "width": 99.27,
+            "height": 11
+          },
+          "viewport_width": 390,
+          "other": {
+            "found": true,
+            "count": 1,
+            "visible": true,
+            "enabled": true,
+            "rect": {
+              "x": 8,
+              "y": 143.39,
+              "width": 374,
+              "height": 210.38
+            }
+          },
+          "matched": false
+        }
+      },
+      "browser_observed_hashes": {
+        "web-game.json": "e1a5a8c05f8527468c89e294b98eb3bd9bdcd2468c212415a506af20eec4d939",
+        "art/atlas.json": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+        "art/boss.png": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+        "art/boss.v2.png": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+        "art/foe.png": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+        "art/foe.v2.png": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+        "art/player.png": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+        "art/player.v2.png": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+        "art/warden-shield.webp": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f",
+        "campaign.mjs": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635",
+        "combat.mjs": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "game.mjs": "f835fb9b707c2bbe0fe733f384db5936591f96570cb0fc4368c5bbae58dfd988",
+        "genre.json": "a0dd0293d07002110d06269fd15c60495d792c05c8e89dc082a7fe5e6b01238a",
+        "index.html": "e179e5bcbdf7baee7ee0b1b6b89c27bc0f2d188a2c985b2702268782e6d900e0",
+        "progression.mjs": "3c34d535458bccd692829c82d28b31a31b616d25b1e05393e2e6a13a6cc90a6d",
+        "scenery/foundry.webp": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+        "scenery/furnace-v2.webp": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048",
+        "scenery/lift.webp": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad"
+      },
+      "driver": "stagehand-mcp"
+    }
+  },
+  "base": "play/campaign-illustrated",
+  "base_receipt": {
+    "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-926bf569665540a28cccc718a5669535:artifact:ae0b15ecf73fc55eca2aacff4d61797216472644cbe857e8afe6b2f9050a5eb9",
+    "sha256": "e1a5a8c05f8527468c89e294b98eb3bd9bdcd2468c212415a506af20eec4d939",
+    "byteCount": 10593
+  },
+  "plugin": {
+    "version": "0.13.1",
+    "sha256": "2950ca7995f2590ae170c326193ccc6f3e368279fc8df3ec9402860c6e05f75f",
+    "byteCount": 542
+  },
+  "case": {
+    "origin": "project-source",
+    "path": "checks/mobile-combat-hud.json",
+    "sha256": "e6e025c29ac7205775b35e6a6d72e57344def1e4d1112f878ceaab5120221b51",
+    "byteCount": 258
+  },
+  "steps": [
+    {
+      "expect_control": {
+        "selector": "#start",
+        "state": "enabled"
+      }
+    },
+    {
+      "click": "#start"
+    },
+    {
+      "expect_layout": {
+        "selector": ".status",
+        "relation": "separate",
+        "other": "canvas"
+      }
+    }
+  ],
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "case": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  },
+  "next_steps": [
+    {
+      "category": "assertion",
+      "fault": "layout_overlap",
+      "step": 2,
+      "instruction": "Compare both recorded rectangles; inspect their shared layout, absolute positioning, spacing and wrapping at this viewport width to separate the controls.",
+      "action": "expect_layout",
+      "selector": ".status",
+      "relation": "separate",
+      "other": "canvas",
+      "observed": {
+        "found": true,
+        "count": 1,
+        "visible": true,
+        "enabled": true,
+        "rect": {
+          "x": 20,
+          "y": 333.77,
+          "width": 99.27,
+          "height": 11
+        },
+        "viewport_width": 390,
+        "other": {
+          "found": true,
+          "count": 1,
+          "visible": true,
+          "enabled": true,
+          "rect": {
+            "x": 8,
+            "y": 143.39,
+            "width": 374,
+            "height": 210.38
+          }
+        },
+        "matched": false
+      }
+    }
+  ]
+}

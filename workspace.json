@@ -893,6 +893,10 @@
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:campaign-arcade",
       "observed": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:campaign-play"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance",
+      "observed": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1"
     }
   ],
   "playtests": [

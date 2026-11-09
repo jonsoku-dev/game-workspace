@@ -4,7 +4,7 @@
 
 [플레이 아케이드](http://127.0.0.1:53040/)에서 첫 판을 클리어하고 ‘다음’을 선택하면 두 번째 판으로 이어진다. 사슬 승강장의 방패 측면, 달빛 상층숲의 높이가 다른 봉화, 별실 수선실의 단추 위치, 쌍성 관측소의 한 발 두 고리가 각각 새 공략이다. 카드 아래 ‘한 판 버전’으로 직전 게임도 플레이할 수 있다.
 
-Game Studio 0.12.0은 Codex 채팅에서 재미와 아트를 함께 정해 새 게임을 만들고, 기존 게임의 수정판과 버그픽스를 검증한다. `web_game.py`는 새 캠페인 생성·배포, `web_revision.py`는 기준판 비교·수정판 제작·브라우저 회귀 검사를 담당한다. [캠페인 생성](studio/README.md#다음-판이-있는-웹-게임) · [기존 게임 수정과 버그픽스](studio/README.md#웹-게임-수정과-버그픽스) · [연출 가이드북](studio/PLAYBOOK.md)
+Game Studio 0.13.1은 Codex 채팅에서 재미와 아트를 함께 정해 새 게임을 만들고, 기존 게임의 수정판과 버그픽스를 검증한다. `web_game.py`는 새 캠페인 생성·배포, `web_revision.py`는 기준판 비교·수정판 제작·브라우저 회귀 검사를 담당한다. [캠페인 생성](studio/README.md#다음-판이-있는-웹-게임) · [기존 게임 수정과 버그픽스](studio/README.md#웹-게임-수정과-버그픽스) · [연출 가이드북](studio/PLAYBOOK.md) · [자료별 반영 내용](studio/REFERENCES.md) · [자료·예방 검사](studio/README.md#첨부-자료-반영-점검)
 
 서버를 다시 열 때는 workspace 루트에서 `python3 -m http.server 53040 --bind 127.0.0.1 --directory release/genre-arcade`를 실행한다. 각 게임의 `examples/<게임>/art-source/`에 원화와 제작 근거가 있다. 아케이드에서 연결하는 게임 폴더의 `web-game.json`에는 설치된 Studio로 내보낸 파일별 해시가 있다.
 
