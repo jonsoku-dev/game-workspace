@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "size": [
+    512,
+    512
+  ],
+  "pivot_px_from_top_left": [
+    205,
+    440
+  ],
+  "actions": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cel-000.png",
+          "duration_ms": 900
+        },
+        {
+          "path": "cel-001.png",
+          "duration_ms": 900
+        }
+      ]
+    },
+    "move": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cel-002.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-003.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-004.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-005.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "walk": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cel-006.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-007.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-008.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-009.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "cel-002.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-003.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-004.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-005.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "jump": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-010.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-011.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "windup": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-000.png",
+          "duration_ms": 900
+        },
+        {
+          "path": "cel-012.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "heavy": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-000.png",
+          "duration_ms": 900
+        },
+        {
+          "path": "cel-012.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "release": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-013.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "follow": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-014.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "recover": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-015.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "cel-000.png",
+          "duration_ms": 900
+        }
+      ]
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-016.png",
+          "duration_ms": 160
+        }
+      ]
+    },
+    "evade": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-017.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "cel-015.png",
+          "duration_ms": 110
+        }
+      ]
+    },
+    "attack": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "cel-000.png",
+          "duration_ms": 235
+        },
+        {
+          "path": "cel-012.png",
+          "duration_ms": 25
+        },
+        {
+          "path": "cel-013.png",
+          "duration_ms": 220
+        },
+        {
+          "path": "cel-014.png",
+          "duration_ms": 180
+        },
+        {
+          "path": "cel-015.png",
+          "duration_ms": 22
+        },
+        {
+          "path": "cel-000.png",
+          "duration_ms": 178
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "size": [
+    512,
+    512
+  ],
+  "pivot_px_from_top_left": [
+    205,
+    440
+  ],
+  "actions": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "pose-0.png",
+          "duration_ms": 900
+        },
+        {
+          "path": "pose-10.png",
+          "duration_ms": 900
+        }
+      ]
+    },
+    "move": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "pose-6.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-7.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-8.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-9.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "walk": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "pose-12.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-13.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-14.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-15.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "run": {
+      "loop": true,
+      "frames": [
+        {
+          "path": "pose-6.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-7.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-8.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-9.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "jump": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-16.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-17.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "windup": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-0.png",
+          "duration_ms": 900
+        },
+        {
+          "path": "pose-1.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "heavy": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-0.png",
+          "duration_ms": 900
+        },
+        {
+          "path": "pose-1.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "release": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-2.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "follow": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-3.png",
+          "duration_ms": 95
+        }
+      ]
+    },
+    "recover": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-4.png",
+          "duration_ms": 110
+        },
+        {
+          "path": "pose-0.png",
+          "duration_ms": 900
+        }
+      ]
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-5.png",
+          "duration_ms": 160
+        }
+      ]
+    },
+    "evade": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-11.png",
+          "duration_ms": 95
+        },
+        {
+          "path": "pose-4.png",
+          "duration_ms": 110
+        }
+      ]
+    },
+    "attack": {
+      "loop": false,
+      "frames": [
+        {
+          "path": "pose-0.png",
+          "duration_ms": 235
+        },
+        {
+          "path": "pose-1.png",
+          "duration_ms": 25
+        },
+        {
+          "path": "pose-2.png",
+          "duration_ms": 220
+        },
+        {
+          "path": "pose-3.png",
+          "duration_ms": 180
+        },
+        {
+          "path": "pose-4.png",
+          "duration_ms": 22
+        },
+        {
+          "path": "pose-0.png",
+          "duration_ms": 178
+        }
+      ]
+    }
+  }
+}

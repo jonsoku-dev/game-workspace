@@ -1,0 +1,63 @@
+{
+  "frames": [
+    {
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "duration": 65,
+      "rotated": false,
+      "trimmed": false
+    },
+    {
+      "frame": {
+        "x": 576,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "duration": 110,
+      "rotated": false,
+      "trimmed": false
+    },
+    {
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "duration": 140,
+      "rotated": false,
+      "trimmed": false
+    },
+    {
+      "frame": {
+        "x": 960,
+        "y": 0,
+        "w": 192,
+        "h": 192
+      },
+      "duration": 180,
+      "rotated": false,
+      "trimmed": false
+    }
+  ],
+  "meta": {
+    "image": "effect-0.png",
+    "pixelfx": {
+      "frameSize": [
+        192,
+        192
+      ],
+      "frames": 4,
+      "loop": false,
+      "pivot": [
+        96,
+        96
+      ]
+    }
+  }
+}

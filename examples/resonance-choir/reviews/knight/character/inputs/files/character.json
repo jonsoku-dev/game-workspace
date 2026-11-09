@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "frames": "poses.json",
+  "title": "전투 동작 검토",
+  "actions": [
+    "idle",
+    "move",
+    "walk",
+    "run",
+    "jump",
+    "windup",
+    "heavy",
+    "release",
+    "follow",
+    "recover",
+    "hurt",
+    "evade",
+    "attack"
+  ]
+}

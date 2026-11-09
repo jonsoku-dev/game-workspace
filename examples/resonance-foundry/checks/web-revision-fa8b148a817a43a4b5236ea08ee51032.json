@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-fa8b148a817a43a4b5236ea08ee51032",
+  "operation": "check",
+  "passed": true,
+  "status": "passed",
+  "phase": "baseline-check",
+  "changes": [],
+  "checks": {
+    "before": {
+      "passed": true,
+      "status": "passed",
+      "observations": [
+        {
+          "step": 0,
+          "action": "expect_page",
+          "check": "fits_viewport",
+          "observed": {
+            "matched": true,
+            "viewport_width": 390,
+            "scroll_width": 390
+          }
+        },
+        {
+          "step": 1,
+          "action": "expect_page",
+          "check": "respects_hidden",
+          "observed": {
+            "matched": true,
+            "viewport_width": 390,
+            "scroll_width": 390
+          }
+        },
+        {
+          "step": 2,
+          "action": "click",
+          "completed": true
+        },
+        {
+          "step": 3,
+          "action": "expect_text",
+          "selector": "#player-name",
+          "contains": "시계궁수",
+          "observed": {
+            "found": true,
+            "count": 1,
+            "visible": true,
+            "enabled": true,
+            "rect": {
+              "x": 28,
+              "y": 202.99,
+              "width": 34.6,
+              "height": 12
+            },
+            "matched": true,
+            "text": "시계궁수"
+          }
+        },
+        {
+          "step": 4,
+          "action": "click",
+          "completed": true
+        },
+        {
+          "step": 5,
+          "action": "expect_control",
+          "selector": "[data-action=jump]",
+          "state": "visible",
+          "observed": {
+            "found": true,
+            "count": 1,
+            "visible": true,
+            "enabled": true,
+            "rect": {
+              "x": 160,
+              "y": 609.49,
+              "width": 106,
+              "height": 48
+            },
+            "matched": true
+          }
+        },
+        {
+          "step": 6,
+          "action": "click",
+          "completed": true
+        },
+        {
+          "step": 7,
+          "action": "expect_text",
+          "selector": "#combat-score",
+          "contains": "적중 1",
+          "observed": {
+            "found": true,
+            "count": 1,
+            "visible": true,
+            "enabled": true,
+            "rect": {
+              "x": 26,
+              "y": 412.49,
+              "width": 338,
+              "height": 10.5
+            },
+            "matched": true,
+            "text": "적중 1 · 빗나감 0 · 받아치기 0"
+          }
+        },
+        {
+          "step": 8,
+          "action": "expect_page",
+          "check": "fits_viewport",
+          "observed": {
+            "matched": true,
+            "viewport_width": 390,
+            "scroll_width": 390
+          }
+        },
+        {
+          "step": 9,
+          "action": "expect_page",
+          "check": "respects_hidden",
+          "observed": {
+            "matched": true,
+            "viewport_width": 390,
+            "scroll_width": 390
+          }
+        }
+      ],
+      "failed_assertion": null,
+      "browser_observed_hashes": {
+        "web-game.json": "3452c4579921beb663cc285b4ae9bd1b9cce2bd7e3615b31270383bb43aa979b",
+        "art/astral-attack.webp": "0339f515593435a715b96c0afe8698757d10355a7cf00e0e2439408f2c6b9210",
+        "art/astral-idle.webp": "e69e6df80e6e57e6d2486716c12ce001989925516e3399c6827453a6a82b9349",
+        "art/bell-tower.jpg": "a6b92e8325ff410605bc9940f731805b100a765fb8817c34458fdcd182e45d0a",
+        "art/blade-attack.webp": "652da5f14b5816c626f2dfa60aa0507b4c98159826119c51f2480d57bbc9eef9",
+        "art/blade-idle.webp": "e8516bb5d3d3d5cd4a4dd5591a92f21cb055a7505a8a60a62773d391fc054506",
+        "art/brawler-attack.webp": "6039d94f9bded2c8403b8e799909409a012c66164af59ea6883532dbe947997a",
+        "art/brawler-idle.webp": "3e5ad40ea5b9b735c8c915f3f50cf881244563a996557096510b6c5f0136c67d",
+        "art/credits.json": "7ae6635769fb456e605af0d626872ab73d892782721cb37d8703645438c6dba9",
+        "art/job-0-idle.webp": "5f62d6eab637fe9a93dc350ad1cb85de34bfe2aedd4e215aaea968fce0de0b8f",
+        "art/rail-attack.webp": "f183f462f4cb9efd057da7f09a927153feb87fe142c45e11b2f9a909eafe1a38",
+        "art/rail-idle.webp": "f7f75adc19f34b7feccc101c70b0ab91d1d9b45c8ab3cd2e0602922f3f8f80a3",
+        "art/warden-attack.webp": "5c4acedc6d75773ec92f2443a7323c6e4879565e71a0f97bc93924314caf91d3",
+        "art/warden-idle.webp": "9c1c409e958ee2d3226f82be4fb3fed4de3cacdfbca94e84e4af44d35b316b36",
+        "combat-fx.mjs": "405f024def5da55f601ce6a62dbe65bcaf1fd7f7efc2c652855c5b68cca97c0e",
+        "combat-motion.mjs": "d3f5470f888e4686c3b8a9130938f8d85c610f19be587d128ab668b14d5c32a3",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "fx/credits.json": "b55b991339bf28a59dda27d911fdb40122c87cdd31225c240ffdde4bbf5ab1b4",
+        "fx/custom-0.webp": "829280cc6417604f7a07bb8dd025e1eb9fc87f82167f23c7c584d7efc03feb02",
+        "fx/detonation.png": "00b1a9afeb3bdd333e8091a0575e037d8e468514611cd8bf15cf096f2c30568d",
+        "fx/fist-quake.png": "78c89a75f352fde9b6ae45fffccd1d34db263861f1f2ef946e58256f741e412e",
+        "fx/fist-rise.png": "82136af903662ad51169e877b4c89b9c79944f324c660f6ab54c582815a84d8f",
+        "fx/fist.webp": "699963441cb1bc872c54154d6389acc4ff99a40987cdb6b02bfc7b31420e6c5e",
+        "fx/gun-flash.png": "78fec484fd0bc155aa03a84a81024c8c21ddb96254649b745264c0c8bacdf3a8",
+        "fx/gun-plasma.png": "dfae4931d6a19789df37566018d43594dd449562c8da61aa6b343230fd65ddb3",
+        "fx/gun.webp": "2324553802f7ef98c468fe7e1de4de3f7929bb01d22292021efcf2295797a0f3",
+        "fx/impact.png": "58daa9a2abfed09dd4f62eef4672b608ead117ecf215d37433adfe3f86dfbeed",
+        "fx/job-clip-0-credit.json": "dfb89f2c2b5cbc367d42417dbb76b6a82fa38168af79aae5a3721adea95887cf",
+        "fx/job-clip-0.json": "858dc9a596521558cfd1b036172fd29a9e9ceb57be0c4d8427c25f8c139e6ec3",
+        "fx/job-clip-0.png": "4ff5c6ea43aa0626bd079c0a77f9900219be91146ef06ae18b0f8e52bb055e07",
+        "fx/job-impact-0.png": "5f1687050e5c8dea8e74ee524dd7044bbe83475c3a21215e263678c7d1e247ca",
+        "fx/job-impact-1.png": "20f198d32581edf030410e6d9d7b52e185b82eeea2fdc223a318f53bbcd7f62f",
+        "fx/land.png": "91c3c46d3fb68d4dd8962e6d0b7db4f5050a397e7dc88bfc660be7d2077bb636",
+        "fx/manifest.mjs": "928b13b339c9aa3724e1ac2b41726c8ea9d96e538e26e222ffe867f0223df640",
+        "fx/star-rain.png": "8fe167e0475c19514138f31e575e7523bcd324bd3a6d781dbc5e13f3976c2aea",
+        "fx/star-seal.png": "4484fcd709d4c257132b01bbb246e607661cb44cedbc2940ea412a764dbc690b",
+        "fx/star-volley.png": "b1c7922dcd0dbc2ee1f3631322d9052a43df62faa6a7f328a65fd8fde8428d08",
+        "fx/star.webp": "d592081ba4a5c4740fbc47e26575387f216fb2747f30ac7cbbf2ad644336d311",
+        "fx/storm.png": "135bc304684bb639473954a5ea7f7742bebf9540fec13e5b22bfb3359cf1a9ac",
+        "fx/sword-cleave.png": "e446dc371ae2978b4e7e0daf5120e652bb550b6192a56cb22f174d19efed3830",
+        "fx/sword-cut.png": "a94897e30a5c22d1a3701f2a21d5145e5b60c73ace468d54b6f977b736ee5684",
+        "fx/sword-wheel.png": "993702b31a03ee7bf70601598f764317ca5e42e722e60a5020b4688a3e910bf9",
+        "fx/sword.webp": "99d10de5838672cc99be8e2b1bbd732cc484f4091db9f666b6d183078ed048ef",
+        "game.mjs": "8a3505f1ace04c398d7e07aadea12b6eca4df77296faf2bf8813020ec027c498",
+        "genre.json": "c2598ac1488678e83101c6583a48aeffc8d3e32fedb063bb7c4b23df0e33f709",
+        "index.html": "185946fc2fc78cbbb64c8612f1713da7d0d7c2c34b067351eb1c23bada1873eb",
+        "jobs.mjs": "6685a027d3b0eeaf40b0940566b1d1224e9deb126138115898ee36dded35a771",
+        "motif-ms.mjs": "139ac3e4d32aa70e69a71906b6388505bf3dc6f9bfac44c1d69fa56781c9b7bc",
+        "motion/astral.json": "cb1f07ede3cf2523d78a93dfc27333b769d4e075c80de46800ba80a35918af61",
+        "motion/astral.webp": "cf265e7cf3101ca3ae136bcea4ed85033fe4820f7d2d745e612cb774f328a57f",
+        "motion/blade.json": "485337f23956d98ce3554f4edcb3ada9ede76e378ad626f32c5fd81757647078",
+        "motion/blade.webp": "2c4f13d7f090109af1a9840a2e7435a9f3f7c4abdf5fb887e49447e4560571e6",
+        "motion/brawler.json": "c72b7eedc7a18305b0fffee39d9d4a3a091ec6e9639a2d4a257a0eeecf9e3b80",
+        "motion/brawler.webp": "9badccd6651bad82631cfadeecbfe1857a2e9e8d77d790c733922e72afa532f7",
+        "motion/default.mjs": "a7681915a79f3cfe5712ea6a32f22f14d7c2c541ec53e60179624bc8c74568a8",
+        "motion/job-0.json": "4d5913c2f0d72ff58f737734d507374e9f1ea064161bc4223ede26648ae04c27",
+        "motion/job-0.webp": "f975b98a259ac6c1323757275e5f19c31b60737634c175a25ec63359b9cc13ad",
+        "motion/manifest.mjs": "5a3d864cefa7f78e4c6f6ee0106556a496f3f2b3838a54854a9ee03f9afad83c",
+        "motion/rail.json": "d4ecec473ad595e92b79187f6160239f506503c9829d504912a85c9b4bee99da",
+        "motion/rail.webp": "e283cc78885c1a6313d714513f5df5021d6139cf234d9bcfe5801f6dc906cdef",
+        "motion/warden.json": "57b85938860e5dc1fa0f6eb848332c0674170ad9831c5d341bebd98964405897",
+        "motion/warden.webp": "918ceb9332081887e87e17e7f75c2fdeda0cec938b6fd7dec8a96cde094bd1d3",
+        "style.css": "b8f85a25e5926b51fb8749762592594ef02321b5c1d772d0ba4c26e3727798e7",
+        "timing.mjs": "55baaaaca9a3e074a5db5be7d2e0dfa86f311f8eb1077f5651418afba4e39a24"
+      },
+      "driver": "stagehand-mcp"
+    }
+  },
+  "base": "play/first",
+  "base_receipt": {
+    "artifact": "urn:game-studio:40f13950-1b1a-4d0a-a865-a1ececee126f:work:web-d58c8debbe7e47c9b61643cb3e56152c:artifact:a0b1b5076b1b98ab72ef3f28445c4f994d8398a51f8e40cb1ddbe1ddedae604b",
+    "sha256": "3452c4579921beb663cc285b4ae9bd1b9cce2bd7e3615b31270383bb43aa979b",
+    "byteCount": 34226
+  },
+  "plugin": {
+    "version": "0.14.1",
+    "sha256": "0a02b0ff2bdc0816b26507151da542b96861ffc3b9ae28c04f9c7193f667789b",
+    "byteCount": 604
+  },
+  "case": {
+    "origin": "project-source",
+    "path": "checks/mobile-first.json",
+    "sha256": "0f6d9cccf601661bfcae002968f5aeeb9b9f8df32d118c7d2296427bf0151c2e",
+    "byteCount": 502
+  },
+  "steps": [
+    {
+      "expect_page": "fits_viewport"
+    },
+    {
+      "expect_page": "respects_hidden"
+    },
+    {
+      "click": "button[data-job=clock-ranger]"
+    },
+    {
+      "expect_text": {
+        "selector": "#player-name",
+        "contains": "시계궁수"
+      }
+    },
+    {
+      "click": "#start"
+    },
+    {
+      "expect_control": {
+        "selector": "[data-action=jump]",
+        "state": "visible"
+      }
+    },
+    {
+      "click": "[data-action=heavy]"
+    },
+    {
+      "expect_text": {
+        "selector": "#combat-score",
+        "contains": "적중 1"
+      }
+    },
+    {
+      "expect_page": "fits_viewport"
+    },
+    {
+      "expect_page": "respects_hidden"
+    }
+  ],
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "case": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  },
+  "next_steps": []
+}

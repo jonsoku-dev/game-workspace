@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "files": {
+    "cel-008.png": "reviews/knight/character/bundle/cel-008.png",
+    "cel-009.png": "reviews/knight/character/bundle/cel-009.png",
+    "cel-001.png": "reviews/knight/character/bundle/cel-001.png",
+    "cel-015.png": "reviews/knight/character/bundle/cel-015.png",
+    "cel-014.png": "reviews/knight/character/bundle/cel-014.png",
+    "cel-000.png": "reviews/knight/character/bundle/cel-000.png",
+    "cel-016.png": "reviews/knight/character/bundle/cel-016.png",
+    "cel-002.png": "reviews/knight/character/bundle/cel-002.png",
+    "cel-003.png": "reviews/knight/character/bundle/cel-003.png",
+    "cel-017.png": "reviews/knight/character/bundle/cel-017.png",
+    "rive-poses.json": "reviews/knight/character/bundle/rive-poses.json",
+    "cel-013.png": "reviews/knight/character/bundle/cel-013.png",
+    "cel-007.png": "reviews/knight/character/bundle/cel-007.png",
+    "cel-006.png": "reviews/knight/character/bundle/cel-006.png",
+    "cel-012.png": "reviews/knight/character/bundle/cel-012.png",
+    "cel-004.png": "reviews/knight/character/bundle/cel-004.png",
+    "cel-010.png": "reviews/knight/character/bundle/cel-010.png",
+    "cel-011.png": "reviews/knight/character/bundle/cel-011.png",
+    "cel-005.png": "reviews/knight/character/bundle/cel-005.png",
+    "report": "reviews/knight/character/bundle/character.json",
+    "character": "reviews/knight/character/bundle/character.riv",
+    "player": "reviews/knight/character/bundle/player.html",
+    "metadata": "reviews/knight/character/bundle/rive.json"
+  },
+  "out": "reviews/knight/character",
+  "artistic_acceptance": "pending"
+}

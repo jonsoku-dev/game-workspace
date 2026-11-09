@@ -1,0 +1,14 @@
+✔ all motif/move/motion lifecycles snapshot aim and contact exactly once across dt (3.961292ms)
+✔ heavy clips use authored phase duration and real frame durations; light retains motif (0.663ms)
+✔ misses never draw post-contact clips or painted plumes; reduced motion keeps timing (0.215458ms)
+✔ custom loading rejects invalid phase metadata, image geometry, bounds and load failure (0.493458ms)
+✔ all feedback events expire, clear on reset and preserve reduced-motion simulation (0.399291ms)
+✔ changing reduced motion during flight preserves cache, timeline and exactly one contact (0.399542ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 50.869292

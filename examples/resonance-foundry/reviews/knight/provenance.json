@@ -1,0 +1,26 @@
+{
+  "game/motion/job-0.json": {
+    "sha256": "4d5913c2f0d72ff58f737734d507374e9f1ea064161bc4223ede26648ae04c27",
+    "byteCount": 1609
+  },
+  "game/motion/job-0.webp": {
+    "sha256": "f975b98a259ac6c1323757275e5f19c31b60737634c175a25ec63359b9cc13ad",
+    "byteCount": 1459908
+  },
+  "game/jobs.mjs": {
+    "sha256": "6685a027d3b0eeaf40b0940566b1d1224e9deb126138115898ee36dded35a771",
+    "byteCount": 1572
+  },
+  "game/timing.mjs": {
+    "sha256": "55baaaaca9a3e074a5db5be7d2e0dfa86f311f8eb1077f5651418afba4e39a24",
+    "byteCount": 57
+  },
+  "game/fx/job-clip-0.png": {
+    "sha256": "4ff5c6ea43aa0626bd079c0a77f9900219be91146ef06ae18b0f8e52bb055e07",
+    "byteCount": 178501
+  },
+  "game/fx/job-clip-0-credit.json": {
+    "sha256": "dfb89f2c2b5cbc367d42417dbb76b6a82fa38168af79aae5a3721adea95887cf",
+    "byteCount": 2455
+  }
+}

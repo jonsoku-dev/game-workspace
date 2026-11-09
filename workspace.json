@@ -15,7 +15,9 @@
     "examples/ember-alley",
     "examples/star-canopy",
     "examples/pocket-parade",
-    "examples/comet-carom"
+    "examples/comet-carom",
+    "examples/resonance-choir",
+    "examples/resonance-foundry"
   ],
   "links": [
     {
@@ -897,6 +899,14 @@
     {
       "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:reference-prevention-acceptance",
       "observed": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-031d095e319f4bb88c131cd22e88d1d1"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-combat-0141",
+      "observed": "urn:game-studio:614e425d-4212-4bbe-9622-c3bd6eab29c7:work:short-exposure-reproduction"
+    },
+    {
+      "activity": "urn:game-studio:70ce93fd-146f-4560-bcc9-763dab2028e7:work:studio-combat-0141",
+      "observed": "urn:game-studio:40f13950-1b1a-4d0a-a865-a1ececee126f:work:installed-combat-0141"
     }
   ],
   "playtests": [
