@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11181a">
+  <title>브레이크야드 · BREAK YARD</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="yard" id="game" data-status="ready" data-phase="chain" data-round="1">
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="브레이크야드 처음 화면"><span class="brand-mark" aria-hidden="true">B<span>Y</span></span><span><strong>브레이크야드</strong><small>BREAK YARD / INDUSTRIAL ACTION</small></span></a>
+      <div class="toolbar">
+        <button id="sound" class="utility" type="button" aria-pressed="true">소리 켜짐</button>
+        <button id="motion" class="utility" type="button" aria-pressed="false">움직임 줄이기</button>
+        <button id="pause" class="utility" type="button" disabled>일시정지 <kbd>P</kbd></button>
+      </div>
+    </header>
+
+    <section class="console" aria-label="작업 현황">
+      <div class="round-label"><span class="eyebrow">SALVAGE OPERATION</span><strong>작업 <span id="round">01</span><span class="muted"> / 02</span></strong></div>
+      <div class="readout"><span>내구도 <b id="health-value">100</b></span><meter id="health" min="0" max="100" value="100" aria-label="내구도">100</meter></div>
+      <div class="readout heat"><span>공구 열 <b id="heat-value">0%</b></span><meter id="heat" min="0" max="100" value="0" aria-label="공구 열">0</meter></div>
+      <div class="charge-readout"><span>펄스 충전</span><strong id="charges" aria-label="펄스 충전 0 / 3">○ ○ ○</strong></div>
+    </section>
+
+    <section class="arena" aria-label="폐기 기계 작업장">
+      <canvas id="stage" width="960" height="540" tabindex="0" aria-label="브레이크야드 작업장. A D 또는 방향키로 이동, J 체인, K 절삭 및 펄스, L 또는 스페이스로 코어 타격."></canvas>
+      <div class="stage-label" aria-hidden="true"><span class="live-dot"></span> BAY 07 <span class="stage-label-right">HEAVY RECOVERY DIVISION</span></div>
+      <div id="aim-guide" class="aim-guide" hidden><strong id="aim-direction">→ 오른쪽으로 이동</strong><span id="aim-copy">톱 중심을 밝은 이음매에 맞추세요.</span></div>
+      <div id="overlay" class="overlay">
+        <div class="intro-card" id="intro">
+          <p class="eyebrow">TWO MACHINES. ONE BREAK.</p>
+          <h1>고철이 되는 순간까지.</h1>
+          <p class="intro-copy">체인으로 부딪치고, 톱으로 벗겨내고,<br>박자에 맞춰 코어를 부수세요.</p>
+          <ol class="intro-steps">
+            <li><span>01</span><div><strong>두 기계 연결</strong><small><kbd>J</kbd> 두 번 누른 뒤 길게 당기기</small></div></li>
+            <li><span>02</span><div><strong>균열 절삭 · 펄스 3회</strong><small>균열로 이동 → <kbd>K</kbd> 길게 → 신호에 맞춰 톡톡</small></div></li>
+            <li><span>03</span><div><strong>코어 파쇄</strong><small>충전 후 신호에 <kbd>L</kbd> 한 번 · 작업 2곳 완료</small></div></li>
+          </ol>
+          <button id="start" class="primary" type="button" disabled>작업 시작 <span aria-hidden="true">↗</span></button>
+          <p class="intro-foot">이동 <kbd>A</kbd> <kbd>D</kbd> / <kbd>←</kbd> <kbd>→</kbd> · 터치 버튼 지원</p>
+        </div>
+        <div id="result" class="result-card" hidden>
+          <p class="eyebrow" id="result-label">OPERATION PAUSED</p>
+          <h2 id="result-title">잠깐, 공구를 내려놓고.</h2>
+          <p id="result-copy">준비되면 작업을 이어가세요.</p>
+          <button id="continue" class="primary" type="button">계속 작업하기</button>
+          <button id="restart-overlay" class="text-button" type="button">처음부터 다시</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-order" aria-label="현재 목표">
+      <ol class="phase-list" aria-label="작업 순서">
+        <li data-step="chain" class="current"><span>01</span> 연결</li>
+        <li data-step="grind"><span>02</span> 절삭</li>
+        <li data-step="core"><span>03</span> 파쇄</li>
+      </ol>
+      <div class="instruction"><strong id="objective">두 기계를 연결하세요.</strong><span id="hint">J 두 번 → 길게 눌러 당기기</span></div>
+      <div class="timing" id="timing" hidden><span id="timing-text">신호 대기</span><div class="timing-track" aria-hidden="true"><span class="timing-window"></span><i id="timing-cursor"></i></div></div>
+    </section>
+
+    <section class="controls" aria-label="게임 조작">
+      <div class="move-controls" aria-label="이동">
+        <button data-input="left" type="button" class="move-button" aria-label="왼쪽으로 이동, 길게 누르기"><span aria-hidden="true">←</span><kbd>A</kbd></button>
+        <button data-input="right" type="button" class="move-button" aria-label="오른쪽으로 이동, 길게 누르기"><span aria-hidden="true">→</span><kbd>D</kbd></button>
+        <span class="move-caption">이동 / 작업장 터치</span>
+      </div>
+      <div class="action-controls">
+        <button data-input="chain" id="chain" type="button" class="action-button"><span class="action-index">01 <kbd>J</kbd></span><strong>체인 연결</strong><small id="chain-help">두 번 누른 뒤 길게 당기기</small></button>
+        <button data-input="grind" id="grind" type="button" class="action-button"><span class="action-index">02 <kbd>K</kbd></span><strong id="grind-label">톱으로 절삭</strong><small id="grind-help">균열에서 길게 누르기</small></button>
+        <button data-input="impact" id="impact" type="button" class="action-button impact"><span class="action-index">03 <kbd>L</kbd> <kbd>Space</kbd></span><strong>코어 파쇄</strong><small id="impact-help">충전 후 한 번에 파쇄</small></button>
+      </div>
+    </section>
+    <footer class="footer"><span>LINK. CUT. BREAK.</span><div><button id="variant" class="text-button" type="button" aria-pressed="true">접촉 효과</button><a id="lab-link" class="text-button" href="./lab.html">같은 입력 비교 ↗</a><span class="separator">/</span><button id="retry" class="text-button" type="button">다시 시작 <kbd>R</kbd></button></div></footer>
+    <p id="announcer" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <script type="module" src="./game.mjs"></script>
+</body>
+</html>

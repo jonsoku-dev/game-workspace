@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "engine": "web",
+  "work_id": "web-9043726b1723409999c074dd4f26fdf4",
+  "title": "브레이크야드",
+  "genre": "산업 폐기장 액션",
+  "goal": "두 기계를 체인으로 충돌시키고 균열을 절삭해 펄스를 3회 충전한 뒤, 충전된 힘으로 코어를 한 번에 파쇄한다. 2개 작업장을 완료한다.",
+  "controls": "A/D 또는 ←/→ 이동, J 두 번 눌러 체인 연결 후 길게 당기기, K 길게 눌러 절삭 후 신호에 맞춰 3회 펄스 충전, 밝은 신호에 L 또는 Space 한 번으로 충전된 코어 파쇄. P 일시정지, R 처음부터 다시. 화면 버튼 다중 터치 지원.",
+  "contact": true,
+  "index": "play/first/index.html",
+  "provenance": {
+    "genre.json": {
+      "source": "genre.json",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "sha256": "abe23b62b506ae3d023f6a34d96c7b660d14f192116c5de8c6e56e07a93b58a2",
+      "byteCount": 616
+    },
+    "game.mjs": {
+      "source": "game/game.mjs",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "sha256": "8fc58b8a4f386412bccc8bdf409c293bbe4b421e2af2c239e6017e90a4005694",
+      "byteCount": 13943
+    },
+    "index.html": {
+      "source": "game/index.html",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "sha256": "e336a28c1c9fde52c0eb680f7ff059fe8abc67f04b513b530692ac80060dea6d",
+      "byteCount": 6595
+    },
+    "lab.html": {
+      "source": "game/lab.html",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:c66983b268a12f58061228acbc4e9a3b52ff65a8c618a4bb8452758f6175d0e6",
+      "sha256": "95a80aa6cdd6693a300d316aff8c3c1e5fb981114ea2049424988671fbd917bd",
+      "byteCount": 5453
+    },
+    "lab.mjs": {
+      "source": "game/lab.mjs",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:cae00f3df1174de848d2622e2e6fb1be6c9ea363b1531179ade22eb5a52b26a7",
+      "sha256": "970b943a9631be1f62dc72e24910988e7c9deb52f65abeb5a3ad1d1505b18504",
+      "byteCount": 7560
+    },
+    "render.mjs": {
+      "source": "game/render.mjs",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:6b1614419025fe701a5b371050526d8ebfb156316c342e7008914ae92e573a36",
+      "sha256": "1376d640816e7f19cb5dbe65b9365e58a4eed7037ce0450e967bcbb0cc2ce441",
+      "byteCount": 14059
+    },
+    "saw-sound.mjs": {
+      "source": "game/saw-sound.mjs",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:0faa19cc8708a7549f973905afcc8455673dab987524d19e9712235982adb28b",
+      "sha256": "1e6cc8a338ae4a6ef672ebf1326c3253c0638733d3c945beab819fe14e24c906",
+      "byteCount": 4596
+    },
+    "sim.mjs": {
+      "source": "game/sim.mjs",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:7988fc267ffe9917623a82ff5d3048a864c8a8a0e77fbb676b1755408aef05fa",
+      "sha256": "c45bab40fd4b0b505009d73f1a0b7484b029a6d2d2ab1654f0b459df25b6c2ac",
+      "byteCount": 11912
+    },
+    "style.css": {
+      "source": "game/style.css",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:394c9b01713c38d8a4f2589a54bf2e51a740d7e0040a0bdbd4f8c0554111eed1",
+      "sha256": "81f69c81caa8482a45befde42d03a1f17cf216a98453134894c15c6a8c62c29b",
+      "byteCount": 13532
+    },
+    "assets/blade.webp": {
+      "source": "game/assets/blade.webp",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:138cd8faccc5875b76631b29e438ac6e586584b2dcefee4e02228e36ecd77272",
+      "sha256": "d48419e92570a832bfca9b7c14829e8286de62f6c634c54ca8d91fbe3f999502",
+      "byteCount": 24490
+    },
+    "assets/foundry.webp": {
+      "source": "game/assets/foundry.webp",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:762473d2cc6cf69f0babc68922e61bce676233a2c05239dfe4fa1f861d4483f0",
+      "sha256": "dde587b7240184cbe4e12780a28563a3bb01db266434191334a66dabc2fde2ef",
+      "byteCount": 387220
+    },
+    "assets/machine.webp": {
+      "source": "game/assets/machine.webp",
+      "artifact": "urn:game-studio:bb091755-d580-436a-8a5d-a38b9e287404:work:web-9043726b1723409999c074dd4f26fdf4-inputs:artifact:b01dcd7abc5f2b8a5e3b12c84519a8c78b31c1ef24e50fe149177e38ac2c27b2",
+      "sha256": "05074564fb51de9aeeb4915cd8b8c89b9c62e83b91bc865be02459a196668826",
+      "byteCount": 67936
+    },
+    "feedback.mjs": {
+      "source": "studio/engines/web/feedback.mjs",
+      "origin": "installed-runtime",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    "contact.mjs": {
+      "source": "studio/engines/web/contact.mjs",
+      "origin": "installed-runtime",
+      "sha256": "e08bb91683b32c7ce01a3cdc041d8e9c23cb39a6f12a6a38ccea77988fe03826",
+      "byteCount": 5306
+    }
+  },
+  "files": [
+    {
+      "path": "assets/blade.webp",
+      "sha256": "d48419e92570a832bfca9b7c14829e8286de62f6c634c54ca8d91fbe3f999502",
+      "byteCount": 24490
+    },
+    {
+      "path": "assets/foundry.webp",
+      "sha256": "dde587b7240184cbe4e12780a28563a3bb01db266434191334a66dabc2fde2ef",
+      "byteCount": 387220
+    },
+    {
+      "path": "assets/machine.webp",
+      "sha256": "05074564fb51de9aeeb4915cd8b8c89b9c62e83b91bc865be02459a196668826",
+      "byteCount": 67936
+    },
+    {
+      "path": "contact.mjs",
+      "sha256": "e08bb91683b32c7ce01a3cdc041d8e9c23cb39a6f12a6a38ccea77988fe03826",
+      "byteCount": 5306
+    },
+    {
+      "path": "feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "8fc58b8a4f386412bccc8bdf409c293bbe4b421e2af2c239e6017e90a4005694",
+      "byteCount": 13943
+    },
+    {
+      "path": "genre.json",
+      "sha256": "abe23b62b506ae3d023f6a34d96c7b660d14f192116c5de8c6e56e07a93b58a2",
+      "byteCount": 616
+    },
+    {
+      "path": "index.html",
+      "sha256": "e336a28c1c9fde52c0eb680f7ff059fe8abc67f04b513b530692ac80060dea6d",
+      "byteCount": 6595
+    },
+    {
+      "path": "lab.html",
+      "sha256": "95a80aa6cdd6693a300d316aff8c3c1e5fb981114ea2049424988671fbd917bd",
+      "byteCount": 5453
+    },
+    {
+      "path": "lab.mjs",
+      "sha256": "970b943a9631be1f62dc72e24910988e7c9deb52f65abeb5a3ad1d1505b18504",
+      "byteCount": 7560
+    },
+    {
+      "path": "render.mjs",
+      "sha256": "1376d640816e7f19cb5dbe65b9365e58a4eed7037ce0450e967bcbb0cc2ce441",
+      "byteCount": 14059
+    },
+    {
+      "path": "saw-sound.mjs",
+      "sha256": "1e6cc8a338ae4a6ef672ebf1326c3253c0638733d3c945beab819fe14e24c906",
+      "byteCount": 4596
+    },
+    {
+      "path": "sim.mjs",
+      "sha256": "c45bab40fd4b0b505009d73f1a0b7484b029a6d2d2ab1654f0b459df25b6c2ac",
+      "byteCount": 11912
+    },
+    {
+      "path": "style.css",
+      "sha256": "81f69c81caa8482a45befde42d03a1f17cf216a98453134894c15c6a8c62c29b",
+      "byteCount": 13532
+    }
+  ]
+}

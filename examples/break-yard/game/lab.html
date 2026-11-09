@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172b31"><title>브레이크야드 · 접촉 효과 실험</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#14262b;color:#ede4cf}*{box-sizing:border-box}body{margin:0}main{max-width:1440px;margin:auto;padding:24px}a{color:#a6e3cb}header{display:flex;align-items:baseline;justify-content:space-between;gap:20px}h1{font-size:clamp(22px,4vw,36px);margin:12px 0}p{line-height:1.7;color:#c5cec4;margin:8px 0}.eyebrow{font-size:12px;letter-spacing:.16em;color:#f5a543}.controls{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 0;background:#14262bf5}button,select{font:inherit;color:inherit;background:#294247;border:1px solid #70827d;border-radius:6px;min-height:44px;padding:8px 14px;cursor:pointer}button:hover{background:#3b5657}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #f5a543;outline-offset:3px}#timeline{flex:1;min-width:140px;height:44px;accent-color:#f5a543}output{font-variant-numeric:tabular-nums;min-width:100px}label{font-size:14px}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:#1b3237;border:1px solid #425959;border-radius:8px;overflow:hidden}figcaption{padding:14px 16px;font-weight:750}figcaption small{font-weight:400;color:#c5cec4;display:block;margin-top:5px}canvas{display:block;width:100%;height:auto;background:#203b3e}.detail-label{font-size:12px;padding:10px 16px;color:#c5cec4;border-top:1px solid #425959}.detail{aspect-ratio:3/2}section.notes{padding:18px 0}.measurement{background:#1b3237;border-left:3px solid #f5a543;padding:12px 16px;font-variant-numeric:tabular-nums;line-height:1.8}#cue{color:#f5a543;font-weight:700}#events{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}#events button{font-size:13px;padding:6px 10px}footer{border-top:1px solid #425959;padding-top:16px;font-size:13px}@media(max-width:680px){main{padding:12px}header{display:block}.comparison{grid-template-columns:1fr;gap:12px}.controls{gap:7px;padding:8px 0}button,select{padding:8px 10px}.detail{max-height:220px;object-fit:contain}figcaption{padding:10px 12px}#timeline{order:5;flex-basis:70%}}
+</style>
+</head>
+<body>
+<main id="lab" data-ready="false" data-playing="false">
+<header><div><div class="eyebrow">BREAK YARD / CONTACT STUDY</div><h1>불꽃은 어디에서 태어나는가</h1></div><a href="./">직접 플레이 ↗</a></header>
+<p>한 번의 실제 게임 시뮬레이션을 두 화면으로 재생합니다. 입력·접촉·체력·파티클은 같고, <strong>불꽃의 표시 위치만</strong> 바꿉니다.</p>
+<div class="controls" aria-label="동기화 재생 조작">
+<button id="play" type="button" aria-pressed="false">재생</button><button id="rewind" type="button">처음으로</button>
+<label for="speed">속도</label><select id="speed"><option value="1">1×</option><option value="0.25">0.25×</option></select>
+<label for="timeline">시간</label><input id="timeline" type="range" min="0" max="7" step="0.016666667" value="0" aria-label="두 화면 공통 재생 시간"><output id="time" for="timeline">0.00 / 7.00초</output>
+</div>
+<p id="cue" role="status">실험 준비 중</p><nav id="events" aria-label="관찰 시점으로 이동"></nav>
+<div class="comparison" id="comparison">
+<figure><figcaption>A · 기계 기준 고정 발생점<small>fixedFX = true · 파티클을 fixedOrigin으로 평행 이동</small></figcaption><canvas id="ab-fixed" width="960" height="540" aria-label="A 고정 발생점 전체 작업장"></canvas><div class="detail-label">동일 구역 확대 · x 360–600 / y 220–380 · 2×</div><canvas id="detail-fixed" class="detail" width="480" height="320" aria-label="A 고정 발생점 절삭 구역 확대"></canvas></figure>
+<figure><figcaption>B · 실제 접촉 발생점<small>fixedFX = false · 파티클의 실제 origin 사용</small></figcaption><canvas id="ab-contact" width="960" height="540" aria-label="B 실제 접촉 발생점 전체 작업장"></canvas><div class="detail-label">동일 구역 확대 · x 360–600 / y 220–380 · 2×</div><canvas id="detail-contact" class="detail" width="480" height="320" aria-label="B 실제 접촉 발생점 절삭 구역 확대"></canvas></figure>
+</div>
+<section class="notes" aria-labelledby="measurement-title"><h2 id="measurement-title">생성 순간의 좌표 측정</h2><div id="metrics" class="measurement">계산 중</div><p>거리 = 각 불꽃의 origin과 fixedOrigin 사이 유클리드 거리. 좌표와 거리는 게임 월드 단위이며, 화면 픽셀 크기와 무관합니다. 생성 이후 이동한 입자 위치는 이 측정에 섞지 않습니다.</p><p>J 두 번 → J 유지로 회수 → 이음매에서 K 유지로 절삭 → K 해제 → 이음매 밖에서 K 공회전. 플레이와 같은 입력 API만 사용하며 상태나 체력을 강제로 바꾸지 않습니다. 확대 화면도 같은 렌더 결과를 같은 범위로 잘라 보여줍니다.</p></section>
+<footer>이 실험은 발생점 차이를 관찰하는 도구입니다. 수치 차이는 시각적 품질이나 타격감의 우열을 증명하지 않습니다. 화면의 재생은 무음입니다.</footer>
+</main>
+<script type="module" src="./lab.mjs"></script>
+</body></html>
