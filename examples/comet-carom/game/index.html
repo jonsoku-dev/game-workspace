@@ -13,7 +13,7 @@
       <nav>
         <button id="fx" aria-pressed="true">연출 ON</button
         ><button id="sound" aria-pressed="false">소리 OFF</button
-        ><button id="retry">↻ 재도전</button>
+        ><button id="retry">↻ 처음부터</button>
       </nav>
     </header>
     <main>
@@ -38,6 +38,11 @@
         </p>
       </section>
       <section class="battle" aria-label="혜성 궤도 전투">
+        <div class="campaign-heading">
+          <strong id="stageTitle"></strong>
+          <p id="stageObjective"></p>
+          <p id="stageTactic"></p>
+        </div>
         <div class="battle-top">
           <div>
             <small id="wave">WAVE 01 / 02</small>
@@ -51,6 +56,7 @@
           <span id="shieldNote">벽을 먼저 맞히면 +10 · 동료를 스치면 +8</span
           ><small id="setup">금빛 틈 ×2 · 반사·연계로 방어 관통</small>
         </div>
+        <p id="latchStatus" class="latch-status" role="status" hidden></p>
         <div class="canvas-wrap">
           <canvas
             id="arena"
@@ -127,7 +133,7 @@
           <p class="micro">3턴 충전 · 전체 28 피해 + 충돌 피해 2배</p>
         </div>
         <div class="notes">
-          <p>
+          <p id="combatRules">
             보스의 금빛 틈은 매 턴 90° 회전합니다.<br />정면 방어 8 · 약점 52 ·
             벽·연계마다 관통 +18<br />동료 연계탄은 방벽을 관통합니다. 적의
             숫자는 반격까지 남은 턴입니다.
@@ -135,7 +141,7 @@
           <div>
             <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> 수호자 <kbd>←</kbd
             ><kbd>→</kbd> 각도<br /><kbd>↑</kbd><kbd>↓</kbd> 위력
-            <kbd>S</kbd> 필살기 <kbd>R</kbd> 재도전
+            <kbd>S</kbd> 필살기 <kbd>R</kbd> 처음부터
           </div>
         </div>
         <div class="record">

@@ -1,0 +1,10 @@
+await page.locator('#restart').click();const entry=await page.locator('.hud').innerText();
+await page.locator('canvas').click();await page.keyboard.press('ArrowRight',{delay:1300});
+await page.getByRole('button',{name:'별꽃 마법',exact:true}).click();await page.waitForTimeout(1150);
+const groundMiss={quest:await page.locator('#quest').innerText(),message:await page.locator('#toast').innerText()};
+await page.screenshot({path:'/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/star-canopy/evidence/campaign/final-height-denial.png'});
+await page.getByRole('button',{name:'점프',exact:true}).click();await page.waitForTimeout(700);
+await page.getByRole('button',{name:'별꽃 마법',exact:true}).click();await page.waitForTimeout(1100);
+await page.getByRole('button',{name:'별꽃 마법',exact:true}).click();await page.waitForTimeout(800);
+await page.screenshot({path:'/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/star-canopy/evidence/campaign/final-beacon1.png'});await page.locator('#pause').click();
+return {entry,groundMiss,hud:await page.locator('.hud').innerText(),quest:await page.locator('#quest').innerText(),stage:await page.locator('#regionTitle').innerText()};

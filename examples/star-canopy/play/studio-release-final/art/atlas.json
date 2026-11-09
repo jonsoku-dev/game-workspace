@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "facing": "right",
+  "sampling": "nearest",
+  "authoring": "original imagegen painted key-pose cels",
+  "player": {
+    "file": "player.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "frames": 8,
+    "pivot": [
+      48,
+      85
+    ],
+    "states": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        1,
+        2
+      ],
+      "jump": [
+        3
+      ],
+      "attack": [
+        4
+      ],
+      "magic": [
+        5
+      ],
+      "hurt": [
+        6
+      ],
+      "fall": [
+        7
+      ]
+    }
+  },
+  "creature": {
+    "file": "creature.png",
+    "frameWidth": 72,
+    "frameHeight": 72,
+    "frames": 4,
+    "pivot": [
+      36,
+      65
+    ],
+    "states": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        1
+      ],
+      "attack": [
+        2
+      ],
+      "hurt": [
+        3
+      ]
+    }
+  }
+}

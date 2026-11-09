@@ -1,0 +1,31 @@
+{
+  "url": "http://127.0.0.1:53045/star-canopy-final/",
+  "method": "Read-only HTTP bytes; separate from live browser proof",
+  "files": {
+    "game.mjs": {
+      "status": 200,
+      "bytes": 32999,
+      "sha256": "7d5bee63c8f8bc43986566c64cfe70feae6dea6dce295191b9d53d7838e26907"
+    },
+    "rules.mjs": {
+      "status": 200,
+      "bytes": 3035,
+      "sha256": "3bc7254e20125ce06151144565245b18e8a5486320fb046431b1ae32718d8a55"
+    },
+    "campaign.mjs": {
+      "status": 200,
+      "bytes": 2067,
+      "sha256": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635"
+    },
+    "feedback.mjs": {
+      "status": 200,
+      "bytes": 6973,
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33"
+    },
+    "scenery/moon-grove.webp": {
+      "status": 200,
+      "bytes": 234570,
+      "sha256": "3e2d011ed84476d28537c4f207fbea0cc18727bcf0d351aa5405c0b1e1c18b23"
+    }
+  }
+}

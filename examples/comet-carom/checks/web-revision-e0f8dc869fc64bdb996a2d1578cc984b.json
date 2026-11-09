@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-e0f8dc869fc64bdb996a2d1578cc984b",
+  "operation": "diff",
+  "passed": true,
+  "status": "verified",
+  "phase": "verified",
+  "changes": [
+    {
+      "path": "game/game.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "a5400f61e8021dc21fc2ed05bf2b65057759a51819471a6d7d4634bc4dff2e2e",
+        "byteCount": 25207
+      },
+      "to": {
+        "sha256": "cef6e6cb5a5d429e5ea92d33567018fee6307c65da46f20fb2c6672146dbc027",
+        "byteCount": 25323
+      }
+    },
+    {
+      "path": "game/index.html",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "468f00e7bfefb88a29d7663d64756201fa5f5bfd550d923eaf4e11d0153a952a",
+        "byteCount": 6347
+      },
+      "to": {
+        "sha256": "ac692f2b0dbb3dd8ad43de78d97d8ad04618619b3fbf5832e298d16f9239c96d",
+        "byteCount": 6350
+      }
+    },
+    {
+      "path": "campaign.mjs",
+      "origin": "installed-runtime",
+      "kind": "modify",
+      "from": {
+        "sha256": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635",
+        "byteCount": 2067
+      },
+      "to": {
+        "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+        "byteCount": 2425
+      }
+    }
+  ],
+  "checks": {},
+  "base": "play/campaign",
+  "base_receipt": {
+    "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1:artifact:b04920ab1ff079f246e18587236963de1f5bafeee75ab4267b2622a9e28ee60c",
+    "sha256": "8b3d28dd2f9a4e7cdc883cd53a42b9b8dc56b5e7506fd1a2fb36cc060cd42cf6",
+    "byteCount": 9560
+  },
+  "plugin": {
+    "version": "0.12.0",
+    "sha256": "7cdf274cc785ff1e4ea205ed5dd4497ca926f4e1acf207072fbac712f3d2cdff",
+    "byteCount": 508
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "inputs": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  }
+}

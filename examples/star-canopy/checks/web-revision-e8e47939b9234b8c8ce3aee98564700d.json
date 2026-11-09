@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-e8e47939b9234b8c8ce3aee98564700d",
+  "operation": "build",
+  "passed": true,
+  "status": "verified",
+  "phase": "verified",
+  "changes": [
+    {
+      "path": "game/style.css",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "a075204aa6596451fe0ad1d626c2aef87512bf63a4a7809fc2951d7aefdd2658",
+        "byteCount": 7215
+      },
+      "to": {
+        "sha256": "5d3900ae8f0154005d1a50bf294d416c5d5b188f9ec5c9e86462e990996049d6",
+        "byteCount": 7229
+      }
+    }
+  ],
+  "checks": {},
+  "base": "play/studio-release",
+  "base_receipt": {
+    "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-03da65a001e64cafb3f5bd83cbf573ee:artifact:a5f89176d090f0547271863a514d3fb808fcc6b190fd15d62f0797e427b236e8",
+    "sha256": "155ecbab8b34d03b31d07e39cdd4a995c55f4fb4999b5cd7e7f9a5e2845b8b18",
+    "byteCount": 10236
+  },
+  "plugin": {
+    "version": "0.12.0",
+    "sha256": "7cdf274cc785ff1e4ea205ed5dd4497ca926f4e1acf207072fbac712f3d2cdff",
+    "byteCount": 508
+  },
+  "kind": "change",
+  "reason": "완료 화면에는 주 동작 하나만 표시하고 숨긴 보조 초기화 컨트롤이 CSS로 다시 노출되지 않게 한다.",
+  "output": "play/studio-release-final",
+  "new_receipt": {
+    "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-2a1de70021b14d35b0fd647876b58f71:artifact:773a7ba686b04315b42862ba0081fbc103be6d93774fae4ded390a6be4637c39",
+    "sha256": "3a6fec2b84e61f7af13166a5bbdeadafd6c47ea883ffc5f0ee2f040cc25d0369",
+    "byteCount": 10242
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "inputs": {
+      "passed": true
+    },
+    "candidate": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  }
+}

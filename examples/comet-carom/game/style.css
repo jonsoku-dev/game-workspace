@@ -815,3 +815,44 @@ footer {
     height: 54px;
   }
 }
+
+.campaign-heading {
+  padding: 14px 20px;
+  background: #152331;
+  border-bottom: 1px solid #786b4b;
+}
+.campaign-heading strong {
+  color: #f0d08f;
+  font-size: 14px;
+}
+.campaign-heading p {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #bed1dc;
+  margin: 5px 0 0;
+}
+.campaign-heading p:last-child {
+  color: #93bcb6;
+}
+.latch-status {
+  margin: 0;
+  padding: 9px 16px;
+  background: #173a3b;
+  color: #b9ffe4;
+  font-size: 11px;
+  text-align: center;
+}
+.latch-status[hidden] {
+  display: none;
+}
+@media (max-width: 690px) {
+  .campaign-heading {
+    padding: 10px 12px;
+  }
+  .campaign-heading strong {
+    font-size: 12px;
+  }
+  .campaign-heading p {
+    font-size: 9px;
+  }
+}

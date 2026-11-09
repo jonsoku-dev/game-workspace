@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "steps": [
+    {
+      "click": "button[data-symbol=\"circle\"]"
+    },
+    {
+      "click": "button[data-symbol=\"diamond\"]"
+    },
+    {
+      "expect_text": {
+        "selector": "#status",
+        "contains": "중계기 복구 성공"
+      }
+    },
+    {
+      "click": "#next"
+    },
+    {
+      "click": "button[data-symbol=\"diamond\"]"
+    },
+    {
+      "expect_text": {
+        "selector": "#status",
+        "contains": "신호 오류"
+      }
+    },
+    {
+      "click": "#retry"
+    },
+    {
+      "click": "button[data-symbol=\"triangle\"]"
+    },
+    {
+      "click": "button[data-symbol=\"circle\"]"
+    },
+    {
+      "click": "button[data-symbol=\"diamond\"]"
+    },
+    {
+      "expect_text": {
+        "selector": "#status",
+        "contains": "공방 작업 완료"
+      }
+    }
+  ]
+}

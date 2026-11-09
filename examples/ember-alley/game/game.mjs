@@ -1,10 +1,13 @@
+import { loadCampaign } from "./campaign.mjs";
+import { createSession } from "./progression.mjs";
 import { createFeedback } from "./feedback.mjs";
 import {
   MOVES,
   DODGE,
   COUNTER,
   windupDuration,
-  createGame,
+  ventState,
+  shieldClosed,
   begin,
   tick,
   attack,
@@ -12,6 +15,8 @@ import {
   nextRoom,
   clamp,
 } from "./combat.mjs";
+const campaign = await loadCampaign();
+const session = createSession(campaign);
 const canvas = document.querySelector("#game"),
   ctx = canvas.getContext("2d");
 const ui = Object.fromEntries(
@@ -24,6 +29,9 @@ const ui = Object.fromEntries(
     "status",
     "sound",
     "pause",
+    "stageName",
+    "stageObjective",
+    "stageTactic",
   ].map((id) => [id, document.getElementById(id)]),
 );
 ctx.setTransform(2, 0, 0, 2, 0, 0);
@@ -33,7 +41,11 @@ const scenery = new Image();
 scenery.src = "./scenery/foundry.webp";
 const furnaceScenery = new Image();
 furnaceScenery.src = "./scenery/furnace-v2.webp";
-let g = createGame(),
+const shieldArt = new Image();
+shieldArt.src = "./art/warden-shield.webp";
+const liftScenery = new Image();
+liftScenery.src = "./scenery/lift.webp";
+let g = session.game,
   keys = new Set(),
   last = 0,
   paused = false,
@@ -42,7 +54,8 @@ let g = createGame(),
   banner = { text: "", time: 0 },
   art,
   images = {},
-  counterShown = false;
+  counterShown = false,
+  assetsReady = false;
 const W = 960,
   H = 540;
 const artReady = fetch("./art/atlas.json")
@@ -73,6 +86,12 @@ const artReady = fetch("./art/atlas.json")
         throw Error(`V2 작화 크기가 맞지 않습니다: ${key}`);
       images[key] = im;
     }
+    await Promise.all([
+      scenery.decode(),
+      furnaceScenery.decode(),
+      liftScenery.decode(),
+    ]);
+    assetsReady = true;
   })
   .catch((error) => {
     ui.status.textContent = error.message;
@@ -81,29 +100,51 @@ const artReady = fetch("./art/atlas.json")
 function emit(name, details = {}) {
   feedback.emit(name, details);
 }
-function reset() {
-  g = createGame();
-  begin(g);
-  paused = false;
+function clearInput() {
   keys.clear();
+  for (const button of document.querySelectorAll("button.held"))
+    button.classList.remove("held");
+}
+function showStage() {
+  ui.stageName.textContent = `던전 ${campaign.index + 1} · ${campaign.stage.title}`;
+  ui.stageObjective.textContent = campaign.stage.objective;
+  ui.stageTactic.textContent = campaign.stage.tactic;
+}
+showStage();
+ui.heading.textContent = campaign.stage.title;
+ui.description.textContent = `${campaign.stage.objective} ${campaign.stage.tactic}`;
+function enterBattle() {
+  g = session.game;
+  paused = false;
+  clearInput();
   fx = [];
   floaters = [];
-  banner = { text: "第 01 区 · 잿불 골목", time: 2.6 };
+  banner = { text: campaign.stage.title, time: 2.4 };
+  showStage();
   ui.overlay.hidden = true;
   canvas.focus();
   ui.pause.textContent = "일시정지 P";
-  ui.status.textContent =
-    "봉쇄 해제까지 적을 처치하세요. 붉은 예고선은 위아래로 피할 수 있습니다.";
+  ui.status.textContent = campaign.stage.tactic;
   emit("restart");
 }
-ui.start.addEventListener("click", async () => {
-  await artReady;
-  if (!images.player) return;
+function activate() {
   if (paused) {
     togglePause();
     return;
   }
-  reset();
+  const changed =
+    campaign.phase === "between"
+      ? session.advance()
+      : campaign.phase === "failed"
+        ? session.retry()
+        : campaign.phase === "complete"
+          ? session.restart()
+          : session.start();
+  if (changed) enterBattle();
+}
+ui.start.addEventListener("click", async () => {
+  await artReady;
+  if (assetsReady) activate();
 });
 ui.sound.addEventListener("click", () => {
   feedback.setSound(!feedback.sound);
@@ -114,7 +155,7 @@ ui.sound.addEventListener("click", () => {
 function togglePause() {
   if (g.phase !== "playing") return;
   paused = !paused;
-  keys.clear();
+  clearInput();
   ui.overlay.hidden = !paused;
   ui.pause.textContent = paused ? "계속 P" : "일시정지 P";
   if (!paused) canvas.focus();
@@ -128,8 +169,10 @@ function togglePause() {
 }
 ui.pause.addEventListener("click", togglePause);
 function action(key) {
+  if (!assetsReady) return;
   if (key === "r") {
-    reset();
+    session.restart();
+    enterBattle();
     return;
   }
   if (key === "p") {
@@ -147,7 +190,11 @@ function action(key) {
       Number(keys.has("s") || keys.has("arrowdown")) -
         Number(keys.has("w") || keys.has("arrowup")),
     );
-  if (key === "enter") nextRoom(g);
+  if (key === "enter") {
+    if (campaign.phase === "between") {
+      if (session.advance()) enterBattle();
+    } else nextRoom(g);
+  }
 }
 window.addEventListener("keydown", (e) => {
   const key = e.key.toLowerCase();
@@ -160,7 +207,7 @@ window.addEventListener("keydown", (e) => {
 });
 window.addEventListener("keyup", (e) => keys.delete(e.key.toLowerCase()));
 window.addEventListener("blur", () => {
-  keys.clear();
+  clearInput();
   if (g.phase === "playing" && !paused) togglePause();
 });
 for (const button of document.querySelectorAll("[data-key]")) {
@@ -168,10 +215,14 @@ for (const button of document.querySelectorAll("[data-key]")) {
     e.preventDefault();
     button.setPointerCapture(e.pointerId);
     keys.add(button.dataset.key);
+    button.classList.add("held");
     action(button.dataset.key);
   });
   for (const name of ["pointerup", "pointercancel", "lostpointercapture"])
-    button.addEventListener(name, () => keys.delete(button.dataset.key));
+    button.addEventListener(name, () => {
+      keys.delete(button.dataset.key);
+      button.classList.remove("held");
+    });
 }
 function input() {
   return {
@@ -354,9 +405,7 @@ function background() {
   ctx.fillRect(0, 0, W, H);
   if (scenery.complete && scenery.naturalWidth) {
     const plate =
-      furnace && furnaceScenery.complete && furnaceScenery.naturalWidth
-        ? furnaceScenery
-        : scenery;
+      g.dungeon === 1 ? liftScenery : furnace ? furnaceScenery : scenery;
     ctx.drawImage(plate, 0, 0, W, H);
     rect(0, 297, W, 1, "#dbb99030");
   }
@@ -386,11 +435,112 @@ function background() {
     text("ENTER", 913, 326, 11, "#c0eecb", "center");
   }
 }
+function drawVents() {
+  const vent = ventState(g);
+  if (!vent) return;
+  for (const [top, bottom] of [
+    [326, 366],
+    [377, 417],
+    [428, 468],
+  ]) {
+    for (let x = 155; x < 895; x += 28) rect(x, top + 3, 17, 2, "#88a4b744");
+    ctx.strokeStyle = "#8dabb144";
+    ctx.lineWidth = 1;
+    ctx.strokeRect(140, top, 760, bottom - top);
+  }
+  const warn = vent.phase === "warning",
+    active = vent.phase === "active";
+  const color = active ? "#ffb880" : warn ? "#ffda94" : "#a0cfc1";
+  rect(
+    140,
+    vent.top,
+    760,
+    vent.bottom - vent.top,
+    active ? "#ef713e55" : warn ? "#e2a65c25" : "#7aada311",
+  );
+  ctx.strokeStyle = color;
+  ctx.lineWidth = warn || active ? 3 : 1;
+  ctx.setLineDash(warn ? [9, 5] : []);
+  ctx.strokeRect(140, vent.top, 760, vent.bottom - vent.top);
+  ctx.setLineDash([]);
+  text(
+    `${active ? "!!! 분출" : warn ? "△ 증기 예고" : "냉각 · 이동 가능"} · ${vent.name}`,
+    150,
+    vent.top + 15,
+    11,
+    color,
+  );
+  if (active)
+    for (let x = 230; x < 900; x += 150) {
+      const h = feedback.reducedMotion
+        ? 28
+        : 28 + Math.sin(g.stageTime * 15 + x) * 12;
+      poly(
+        [
+          [x - 9, vent.bottom],
+          [x - 5, vent.top - h],
+          [x + 1, vent.top - 9],
+          [x + 8, vent.top - h * 0.7],
+          [x + 13, vent.bottom],
+        ],
+        "#ffd6ac66",
+      );
+    }
+}
+function drawShield(a) {
+  const front = a.x + a.face * 37,
+    y = a.y - a.z - 82;
+  if (shieldClosed(a)) {
+    ctx.save();
+    ctx.translate(front, y);
+    ctx.scale(a.face, 1);
+    const illustrated = shieldArt.complete && shieldArt.naturalWidth > 0;
+    if (illustrated) {
+      if (a.blockFlash > 0) ctx.filter = "brightness(1.55)";
+      ctx.drawImage(shieldArt, -19, -40, 38, 80);
+      ctx.filter = "none";
+    } else {
+      poly(
+        [
+          [-13, -38],
+          [12, -31],
+          [18, 23],
+          [0, 40],
+          [-17, 25],
+        ],
+        a.blockFlash > 0 ? "#b9e8ee" : "#344c61",
+      );
+    }
+    ctx.strokeStyle = a.blockFlash > 0 ? "#d9fbff" : "#adcccf99";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(-13, -38);
+    ctx.lineTo(12, -31);
+    ctx.lineTo(18, 23);
+    ctx.lineTo(0, 40);
+    ctx.lineTo(-17, 25);
+    ctx.closePath();
+    ctx.stroke();
+    if (!illustrated) rect(-2, -25, 4, 48, "#9ecacb");
+    ctx.restore();
+    text("뒤쪽", a.x - a.face * 58, a.y - 10, 11, "#b9edc9", "center");
+  } else if (!a.dead) {
+    text(
+      `방패 개방 ${a.shieldBreak.toFixed(1)}`,
+      a.x,
+      a.y - a.z - 154,
+      12,
+      "#b9edc9",
+      "center",
+    );
+  }
+}
 function tells() {
   for (const e of g.enemies) {
     if (e.dead || !["windup", "strike"].includes(e.state)) continue;
     const strike = e.state === "strike",
       alpha = strike ? "88" : "44";
+    const tellY = e.y - (["boss", "warden"].includes(e.kind) ? 194 : 112);
     if (e.pattern === "slam") {
       ellipse(e.targetX, e.targetY, 102, 65, `#ff593f${alpha}`);
       ctx.strokeStyle = "#ff9c6a";
@@ -416,10 +566,10 @@ function tells() {
     if (e.state === "windup") {
       const remaining = windupDuration(e) - e.age,
         perfect = remaining <= DODGE.perfect;
-      rect(e.x - 22, e.y - 106, 44, 3, "#221e22");
+      rect(e.x - 22, tellY + 6, 44, 3, "#221e22");
       rect(
         e.x - 22,
-        e.y - 106,
+        tellY + 6,
         44 * clamp(e.age / windupDuration(e), 0, 1),
         3,
         perfect ? "#b9fff0" : "#ee9871",
@@ -435,7 +585,7 @@ function tells() {
               ? "분쇄"
               : "!",
         e.x,
-        e.y - 112,
+        tellY,
         17,
         "#ffad75",
         "center",
@@ -510,7 +660,7 @@ function actors() {
     if (a.dead && a.age > 1) continue;
     const scale = a.player
       ? 0.86
-      : a.kind === "boss"
+      : ["boss", "warden"].includes(a.kind)
         ? 0.76
         : a.kind === "elite"
           ? 1.02
@@ -519,7 +669,7 @@ function actors() {
     ellipse(
       a.x,
       a.y + 1,
-      a.player ? 31 : a.kind === "boss" ? 52 : 30,
+      a.player ? 31 : ["boss", "warden"].includes(a.kind) ? 52 : 30,
       9,
       `rgba(0,0,0,${0.38 * deadAlpha})`,
     );
@@ -580,7 +730,7 @@ function actors() {
                   ? "recover"
                   : "idle";
       sprite(
-        a.kind === "boss" ? "boss" : "foe",
+        ["boss", "warden"].includes(a.kind) ? "boss" : "foe",
         state,
         a.x,
         a.y - a.z,
@@ -590,11 +740,13 @@ function actors() {
         a.hit > 0,
         deadAlpha,
       );
+      if (a.kind === "warden") drawShield(a);
       if (!a.dead) {
-        rect(a.x - 28, a.y - 124 - a.z, 56, 4, "#111820");
+        const healthY = a.y - a.z - (a.kind === "warden" ? 176 : 124);
+        rect(a.x - 28, healthY, 56, 4, "#111820");
         rect(
           a.x - 28,
-          a.y - 124 - a.z,
+          healthY,
           (56 * a.hp) / a.maxHp,
           4,
           a.kind === "elite" ? "#e7aa69" : "#d15f50",
@@ -644,6 +796,19 @@ function slash(x, y, face, move, age) {
   ctx.restore();
 }
 function contactMark(f) {
+  if (f.block) {
+    ctx.save();
+    ctx.translate(f.x, f.y);
+    ctx.strokeStyle = "#b1d8ee";
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(-9, -13);
+    ctx.lineTo(8, 0);
+    ctx.lineTo(-9, 13);
+    ctx.stroke();
+    ctx.restore();
+    return;
+  }
   const progress = 1 - f.life / 0.16;
   ctx.save();
   ctx.translate(f.x, f.y);
@@ -689,7 +854,7 @@ function hud() {
   rect(36, 52, (229 * p.hp) / 120, 8, "#e8855b");
   text(`${p.hp} / 120`, 277, 42, 11, "#dad4c5", "right");
   text(
-    `제 ${g.room + 1} 구역 · ${g.door ? "봉쇄 해제" : `${g.wave + 1}차 봉쇄`}`,
+    `${campaign.stage.title} · ${g.dungeon === 0 ? `${g.room + 1}구역 · ` : ""}${g.door ? "봉쇄 해제" : `${g.wave + 1}차 봉쇄`}`,
     480,
     35,
     14,
@@ -727,7 +892,13 @@ function hud() {
   const ready = p.counterWindow > 0;
   rect(359, 481, 239, 37, ready ? "#173b3aee" : "#111820dd");
   text(
-    ready ? "J  반격 · 가드 파괴" : "공격 직전 회피 → J 반격",
+    ready
+      ? g.dungeon === 1
+        ? "J 반격 · 방패는 뒤쪽에서"
+        : "J  반격 · 가드 파괴"
+      : g.dungeon === 1
+        ? "방패 뒤로 / K · 증기 구역 회피"
+        : "공격 직전 회피 → J 반격",
     369,
     499,
     12,
@@ -743,14 +914,31 @@ function hud() {
       ready ? "간파 성공, J로 반격" : "3연속 공격",
     );
   }
-  const boss = g.enemies.find((e) => e.kind === "boss");
+  const boss = g.enemies.find(
+    (e) => e.kind === "boss" || (e.kind === "warden" && g.wave === 1),
+  );
   if (boss && !boss.dead) {
-    text("쇠사슬 감독관  /  THE FOREMAN", 480, 80, 13, "#f1bd8e", "center");
+    text(
+      boss.kind === "warden"
+        ? `${campaign.stage.title} · 방패 수문장`
+        : "쇠사슬 감독관  /  THE FOREMAN",
+      480,
+      80,
+      13,
+      "#f1bd8e",
+      "center",
+    );
     rect(318, 90, 324, 7, "#231f26");
     rect(318, 90, (324 * boss.hp) / boss.maxHp, 7, "#b64e43");
     const broken = boss.state === "stunned" || boss.z > 0;
     text(
-      broken ? "가드 붕괴" : "가드 · 회피 반격으로 끊기",
+      boss.kind === "warden"
+        ? shieldClosed(boss)
+          ? "정면 방패 · 뒤쪽 / K"
+          : "방패 개방 · 연격 기회"
+        : broken
+          ? "가드 붕괴"
+          : "가드 · 회피 반격으로 끊기",
       480,
       113,
       10,
@@ -769,6 +957,29 @@ function hud() {
 }
 function processEvents() {
   for (const e of g.events) {
+    if (e.type === "block") {
+      fx.push({ kind: "contact", block: true, x: e.x, y: e.y, life: 0.12 });
+      floaters.push({
+        text: "방패",
+        x: e.x,
+        y: e.y - 20,
+        life: 0.45,
+        color: "#b1d8ee",
+      });
+      ui.status.textContent =
+        "정면은 막힙니다. 방패 뒤쪽으로 돌아가거나 K 올려치기로 개방하세요.";
+    }
+    if (e.type === "break") {
+      floaters.push({
+        text: e.text,
+        x: e.x,
+        y: e.y,
+        life: 0.8,
+        color: "#b9edc9",
+      });
+      ui.status.textContent = "방패 개방! 연격으로 빈틈을 공략하세요.";
+    }
+    if (e.type === "ventwarn") ui.status.textContent = e.text;
     if (["hit", "juggle", "counter", "hurt"].includes(e.type)) {
       floaters.push({
         text: e.text,
@@ -807,6 +1018,8 @@ function processEvents() {
       juggle: "crit",
       counter: "crit",
       perfect: "pickup",
+      block: "denied",
+      break: "crit",
       attack: "attack",
       dash: "move",
       hurt: "hurt",
@@ -814,7 +1027,7 @@ function processEvents() {
       wave: "progress",
       door: "pickup",
       room: "progress",
-      win: "win",
+      win: g.dungeon === 0 ? "progress" : "win",
       lose: "lose",
     };
     if (cues[e.type]) emit(cues[e.type], { combo: g.combo });
@@ -841,20 +1054,41 @@ function processEvents() {
   g.events = [];
 }
 function endScreen() {
+  if (g.phase === "clear") session.finish();
+  if (g.phase === "dead") session.fail();
   if (!["clear", "dead"].includes(g.phase) || !ui.overlay.hidden) return;
   ui.overlay.hidden = false;
-  ui.kicker.textContent =
-    g.phase === "clear" ? "DISTRICT LIBERATED / CLEAR" : "DOWN / RETRY";
-  ui.heading.innerHTML =
-    g.phase === "clear"
-      ? "골목에 다시<br>새벽이 온다."
-      : "한 번 더,<br>잿불을 일으켜라.";
-  ui.description.textContent = `점수 ${g.score.toLocaleString()} · 최대 ${g.best}연격 · 처치 ${g.kills} · ${Math.floor(g.time)}초. ${g.phase === "clear" ? "두 구역의 봉쇄를 모두 해제했습니다." : "위아래 이동으로 붉은 공격선을 벗어나세요. 회피 중에는 무적입니다."}`;
-  ui.start.textContent = "처음부터 다시 ↗";
-  ui.status.textContent =
-    g.phase === "clear"
-      ? "클리어. 두 구역 봉쇄 해제."
-      : "쓰러졌습니다. 재도전 버튼으로 처음부터 시작합니다.";
+  clearInput();
+  const failed = campaign.phase === "failed",
+    between = campaign.phase === "between";
+  ui.kicker.textContent = failed
+    ? "DOWN / STAGE RETRY"
+    : between
+      ? "DUNGEON CLEAR / CONTINUE"
+      : "CAMPAIGN COMPLETE";
+  ui.heading.textContent = failed
+    ? `${campaign.stage.title} · 다시 도전`
+    : between
+      ? `${campaign.stage.title} 해방`
+      : "모든 사슬이 풀렸다.";
+  const summary = `점수 ${g.score.toLocaleString()} · 최대 ${g.best}연격 · 처치 ${g.kills}. `;
+  ui.description.textContent =
+    summary +
+    (failed
+      ? "현재 던전의 입장 상태로 재도전합니다. " + campaign.stage.tactic
+      : between
+        ? "점수와 전적을 이어 다음 던전으로 계속합니다. 체력 32 회복."
+        : campaign.stage.objective + " 캠페인을 모두 완료했습니다.");
+  ui.start.textContent = failed
+    ? "이 던전 재도전 ↗"
+    : between
+      ? "다음 던전으로 계속 ↗"
+      : "첫 던전부터 다시 ↗";
+  ui.status.textContent = failed
+    ? "쓰러졌습니다. 입장 시점의 점수와 체력으로 이 던전을 재도전합니다."
+    : between
+      ? "던전 완료. 계속 버튼 또는 Enter로 다음 던전으로 이동합니다."
+      : "캠페인 완료. 모든 던전을 돌파했습니다.";
   ui.start.focus();
 }
 function render(dt) {
@@ -880,6 +1114,7 @@ function render(dt) {
       Math.cos(g.time * 143) * g.shake * 0.4,
     );
   background();
+  drawVents();
   tells();
   actors();
   for (const f of fx) {
@@ -910,6 +1145,11 @@ Object.defineProperty(window, "emberState", {
     JSON.parse(
       JSON.stringify({
         ...g,
+        campaign: {
+          index: campaign.index,
+          stage: campaign.stage,
+          phase: campaign.phase,
+        },
         events: undefined,
         particles: undefined,
         floaters: undefined,

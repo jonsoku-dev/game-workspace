@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-0e133ef0d2324d07b4c4d1237e93a119",
+  "operation": "diff",
+  "passed": true,
+  "status": "verified",
+  "phase": "verified",
+  "changes": [
+    {
+      "path": "game/art/mend-pouch.webp",
+      "origin": "project-source",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "557a1932b2129e5a82ef3dcdcecea714522f6727babdcf95df6b99fc66a76266",
+        "byteCount": 186840
+      }
+    },
+    {
+      "path": "game/game.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "6224674243513606c988a8dca0ff9d0c8e6537839e8fb233072a53ad17570c48",
+        "byteCount": 14066
+      },
+      "to": {
+        "sha256": "9b6d412e29adf6f75ca430c0f149f657e9af1ac2985dfc129b66173f1c5156ad",
+        "byteCount": 23449
+      }
+    },
+    {
+      "path": "game/index.html",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "3fd81c4055835f2af403749b08285c0d70c5a936ff719429e9afe475ca8c36e9",
+        "byteCount": 5107
+      },
+      "to": {
+        "sha256": "70185ac0dbfd0acc7c22eaeea2a39ef7a54bb0390fe2e3b7a6882b3fd4f4e194",
+        "byteCount": 5662
+      }
+    },
+    {
+      "path": "game/rules.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "ed61e04331fe526d1149b7f4913db1a9b77a3f6e9e9420fd31c15bf5f35d2385",
+        "byteCount": 3206
+      },
+      "to": {
+        "sha256": "7ce659b9a6485a778e960a499cea07631a8e77b786fbba22e9c74a04760225a5",
+        "byteCount": 5223
+      }
+    },
+    {
+      "path": "game/style.css",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "f58f556719289c4a5f4ba64e6e9b044c7574311fa1be9f1eae178e2012b180e6",
+        "byteCount": 11994
+      },
+      "to": {
+        "sha256": "8ef58638ca7eeedc6cd33c8f26ec83599d8cd63a3216f646d33691fce1b618cc",
+        "byteCount": 16040
+      }
+    },
+    {
+      "path": "genre.json",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "0abc74897f0e6e3d5b65889929a9f49ce01552f7892e1fb204cd8f118e2b59c5",
+        "byteCount": 583
+      },
+      "to": {
+        "sha256": "731bbbbee4ea90fe5a3c69f2d1d1ceb81e9adad8669b85836a9306f8361a8f2b",
+        "byteCount": 1064
+      }
+    },
+    {
+      "path": "campaign.mjs",
+      "origin": "installed-runtime",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+        "byteCount": 2425
+      }
+    }
+  ],
+  "checks": {},
+  "base": "play/revision-2b",
+  "base_receipt": {
+    "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-10cc0ba23d494b9ebd303f055dd28411:artifact:e434ab920f3e8a9a54429c9fa3192398d9243ed151737e00c433760939746dcb",
+    "sha256": "3cd5668cb382f2fb58d151ed08c8bfbfab5a6d32e524f194ea787f3c55d1d82d",
+    "byteCount": 6930
+  },
+  "plugin": {
+    "version": "0.12.0",
+    "sha256": "7cdf274cc785ff1e4ea205ed5dd4497ca926f4e1acf207072fbac712f3d2cdff",
+    "byteCount": 508
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "inputs": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  }
+}

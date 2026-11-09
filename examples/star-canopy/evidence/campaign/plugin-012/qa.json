@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "url": "http://127.0.0.1:53045/star-canopy-release/",
+  "version": "installed game-studio0.12.0 web_revision CLI export, as pinned in served-pins.json",
+  "method": {
+    "browser": "Independent configured official local Stagehand MCP stdio session through studio/tools/playcheck_browser.py MCP().",
+    "inputKind": "Automated timed normal controls: held arrow keys with delay, actual visible Jump/Attack/Spell/result buttons, explicit clickCount2 result input. Not physical human keyboard/touch or native CUA evidence.",
+    "stateInjection": false,
+    "observation": "Read rendered DOM and screenshots only. Actual gameplay modules ran unchanged. UI Pause checked before and after action blocks to handle native-facade focus loss.",
+    "scripts": "JS files in this folder and ../browser-session.py; complete request/response trace actions.jsonl."
+  },
+  "installProof": {
+    "evidence": "served-pins.json",
+    "observed": "Final served campaign.mjs SHA256 exactly equals installed cache/game-studio/game-studio/0.12.0/engines/web/campaign.mjs. Served game.mjs references shared confirmResult. Required runtime and moon art HTTP200."
+  },
+  "checks": [
+    {
+      "name": "first-stage-real-clear",
+      "result": "pass",
+      "evidence": "stage1-clear.png",
+      "observed": "Normal jump/updraft/melee/spell play earned LV2 and3 leaves; actual bloom hit plus portalUp yielded first-stage result."
+    },
+    {
+      "name": "explicit-double-next",
+      "result": "pass",
+      "observed": "Actual visible result button clickCount2 entered moon stage, LV2HP100, beacons0/2. No visible extra advance, stage skip or fresh reset."
+    },
+    {
+      "name": "moon-lower-beacon",
+      "result": "pass",
+      "evidence": "moon-first.png",
+      "observed": "Lower450 platform, ordinary melee cleared guardian; right-facing actual spell lit first beacon. HUD1/2 and first wind route enabled."
+    },
+    {
+      "name": "moon-upper-route",
+      "result": "pass",
+      "evidence": "moon-upper.png",
+      "observed": "Used unlocked wind, changed to upper330 platform, cleared nearby guardian with ordinary spell/melee, faced left toward second280-height beacon."
+    },
+    {
+      "name": "dark-contact-denial",
+      "result": "pass",
+      "evidence": "denial.png",
+      "observed": "Waited for visible dark pulse and cast left. Actual contact left HUD1/2 with dark-pulse denial. Distinct denial display, no golden success burst."
+    },
+    {
+      "name": "bright-contact-success",
+      "result": "pass",
+      "evidence": "cover.png",
+      "observed": "Waited for visible bright pulse and cast left. Actual contact changed beacons2/2, opened final gate. Painted moon stage inspected directly."
+    },
+    {
+      "name": "final-real-win",
+      "result": "pass",
+      "evidence": "win.png",
+      "observed": "Traversed to final gate and used Up. Modal displayed 두 숲에 별길이 이어졌어요 and final campaign completion, HP75."
+    },
+    {
+      "name": "double-result-fresh-restart",
+      "result": "pass",
+      "observed": "Visible final result main button clickCount2 returned stage1LV1HP100EXP0leaves0. No visible duplicate transition or skipped stage."
+    },
+    {
+      "name": "mobile-errors",
+      "result": "pass",
+      "evidence": "mobile.png",
+      "observed": "Final reload390x844 bodywidth390. Portrait/HUD/quest/controls visible. Captured pageerror/console.error=[], browser ResourceTiming HTTP>=400=[]."
+    }
+  ],
+  "recoveredInputAttempts": [
+    "One timed traversal left the third enemy alive (leaves2), so the gate correctly denied progress. The queued attempt to click a still-hidden result button timed out; it did not reset the playing campaign. Returned normally to the third platform and used ordinary melee while hurt made spell-height aim unreliable, obtaining the third leaf. Raw trace retained.",
+    "Focus-loss Pause after some held-key facade calls required explicit visible Continue clicks. No game flag, position, inventory, phase or campaign index was assigned."
+  ],
+  "limits": [
+    "Visible result states verify no extra observed advance/reset; exact internal confirmResult invocation counts were not instrumented. Shared runtime repeat legality is additionally covered by primary's module tests.",
+    "Stage2 defeat/retry, wrong order/direction negative cases, audio listening and physical touch were not repeated in this0.12 winning replay. Earlier separate browser/rules evidence remains distinct.",
+    "Minor cosmetic observed: secondary full-restart button remains visible on final result because existing CSS#fresh display:block overrides hidden. It did not affect verified primary-result flow; no source edits made.",
+    "No game/plugin source, graph, release or prior0.11 QA claims were changed. Final installed0.12 evidence is isolated in this folder."
+  ]
+}

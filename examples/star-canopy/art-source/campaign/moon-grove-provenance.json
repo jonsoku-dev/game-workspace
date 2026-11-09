@@ -1,0 +1,20 @@
+{
+  "producer": "built-in image_gen",
+  "originalDesign": true,
+  "prompt": "Use case: stylized-concept. Create ORIGINAL production environment background painting for second stage of the same charming forest platform RPG as reference, a fresh moonlit HIGH GROVE above the clouds. Wide landscape 16:9, side-on 2D camera, edge-to-edge painting. Keep luxurious hand-painted storybook gouache textures and rounded leafy silhouettes like reference, but nighttime palette of luminous soft indigo, pale turquoise, dusty lavender, moon-silver with small warm apricot highlights. Upper 38 percent: enormous ancient ivory moon behind canopy, immense twisting branches and loose arching leaf crowns, very distant BROKEN CANOPY STAIR carved into a giant trunk at far left and faint ruined tree bridge far behind, tiny pale fireflies and star pollen, quiet magical wonder. Small distant roots and ancient stone ruins give a new height and history. Center and lower60percent: atmospheric receding teal tree silhouettes and layers of silver mist, beautifully painted but low contrast and OPEN, enough negative space for actual platform sprites and moon beacons to be drawn in front. A few distant waterfalls dropping through cloud gaps. No literal horizontal walkable foreground platforms, no ground strip, no giant leaves foreground, no tree trunk blocking center. Upper band has the focal detail, lower area calm. No actors, characters, collectibles, beacon props, UI, text, numbers, signs, borders, watermark. Not a mockup, not a franchise environment, original scene ready as gameplay background.",
+  "reference": "game/scenery/canopy.webp",
+  "sourceFile": "exec-03cc4409-9202-4d21-81b6-12f2113ce570.png",
+  "master": "art-source/campaign/moon-grove-master.png",
+  "masterDimensions": [
+    1672,
+    941
+  ],
+  "output": "game/scenery/moon-grove.webp",
+  "outputDimensions": [
+    1400,
+    788
+  ],
+  "outputSHA256": "3e2d011ed84476d28537c4f207fbea0cc18727bcf0d351aa5405c0b1e1c18b23",
+  "conversion": "RGB, Lanczos resize, WebP quality92 method6",
+  "verification": "Opened final image at game canvas size; no actors or HUD baked in. Offline art inspection only; not runtime evidence."
+}

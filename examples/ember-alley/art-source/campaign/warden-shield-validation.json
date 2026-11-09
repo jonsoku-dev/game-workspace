@@ -1,0 +1,39 @@
+{
+  "runtimeFile": "game/art/warden-shield.webp",
+  "runtimeSize": [
+    76,
+    160
+  ],
+  "runtimeAlphaBounds": [
+    5,
+    2,
+    71,
+    158
+  ],
+  "gameDisplaySize": [
+    38,
+    80
+  ],
+  "displayAlphaBounds": [
+    0,
+    0,
+    38,
+    80
+  ],
+  "sourceSize": [
+    927,
+    1697
+  ],
+  "sourceAlphaBounds": [
+    107,
+    30,
+    802,
+    1672
+  ],
+  "facing": "right; convex outer face and orange grate on right, dark rear rim at left",
+  "realAlpha": "pass",
+  "transparentMargin": "pass",
+  "losslessRoundTrip": "pass",
+  "sha256": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f",
+  "scope": "technical crop/pack only; runtime behavior belongs to primary"
+}

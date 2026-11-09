@@ -1,5 +1,4 @@
 import {
-  createGame,
   select,
   launch,
   step,
@@ -10,10 +9,14 @@ import {
   R,
 } from "./combat.mjs";
 import { createFeedback } from "./feedback.mjs";
+import { loadCampaign } from "./campaign.mjs";
+import { createRun } from "./campaign-flow.mjs";
+const campaign = await loadCampaign();
+const run = createRun(campaign);
 const $ = (s) => document.querySelector(s),
   canvas = $("#arena"),
   ctx = canvas.getContext("2d");
-let game = createGame(),
+let game = run.game,
   angle = -90,
   power = 85,
   skill = false,
@@ -29,7 +32,6 @@ let game = createGame(),
   impacts = [],
   beams = [],
   kick = 0,
-  hitStop = 0,
   cachedAim = null,
   aimKey = "";
 const guardianCopy = [
@@ -62,11 +64,12 @@ for (const name of [
   "foe-orb.png",
   "boss-orb.png",
   "sanctum.webp",
+  "twin-observatory.webp",
 ]) {
   const im = new Image();
   im.src = `art/${name}`;
   images[name] = im;
-  if (name === "sanctum.webp") im.onload = background;
+  if (name.endsWith(".webp")) im.onload = background;
 }
 const bg = document.createElement("canvas");
 bg.width = W;
@@ -100,7 +103,12 @@ function background() {
   grad.addColorStop(1, "#08162c");
   b.fillStyle = grad;
   b.fillRect(0, 0, W, H);
-  const scene = images["sanctum.webp"];
+  const scene =
+    images[
+      game.encounter === "twin-observatory"
+        ? "twin-observatory.webp"
+        : "sanctum.webp"
+    ];
   if (scene?.complete && scene.naturalWidth) b.drawImage(scene, 0, 0, W, H);
   const veil = b.createLinearGradient(0, 0, 0, H);
   veil.addColorStop(0, "#07122233");
@@ -127,6 +135,18 @@ function background() {
 background();
 function updateUI() {
   const g = game;
+  $("#stageTitle").textContent =
+    `${campaign.index + 1}. ${campaign.stage.title}`;
+  $("#stageObjective").textContent = campaign.stage.objective;
+  $("#stageTactic").textContent = campaign.stage.tactic;
+  $("#combatRules").textContent =
+    g.encounter === "twin-observatory"
+      ? "핵 봉인 중 피해 0 · 개방 시 직격 42. 한 발에 고리 하나만 켜면 연결이 끊깁니다. 핵 포격은 두 턴마다 체력 24."
+      : "보스의 금빛 약점은 매 턴 회전합니다. 정면 방어 8 · 약점 52 · 반사·연계로 관통 피해 추가. 적 숫자는 반격까지 남은 턴입니다.";
+  $("#latchStatus").hidden = g.encounter !== "twin-observatory";
+  $("#latchStatus").textContent =
+    g.latches.map((l) => `${l.lit ? "●" : "○"} ${l.name}`).join("  →  ") +
+    (g.aperture ? "  · 핵 개방" : "  · 핵 봉인");
   if (displayedGuardian !== g.selected) {
     const hero = guardianCopy[g.selected];
     $(".guardian-card").style.setProperty("--portrait", g.selected);
@@ -152,19 +172,34 @@ function updateUI() {
         Math.round(boss.weakAngle / (Math.PI / 2)) % 4
       ]
     : "";
-  $("#shieldNote").textContent = boss
-    ? `월식 방벽 · 약점 ${direction} · 다음 턴 90° 회전`
-    : "벽을 먼저 맞히면 +10 · 동료를 스치면 +8";
+  $("#shieldNote").textContent =
+    g.encounter === "twin-observatory"
+      ? g.aperture
+        ? "관측핵 개방 · 이번 발사로 핵을 노리세요"
+        : "두 고리를 한 발에 · 반사/연계를 먼저 준비"
+      : boss
+        ? `월식 방벽 · 약점 ${direction} · 다음 턴 90° 회전`
+        : "벽을 먼저 맞히면 +10 · 동료를 스치면 +8";
   $("#setup").textContent = g.shot
     ? `${g.shot.banks ? "반사 준비 ✓" : "반사 미준비"} / ${g.shot.assists.size ? "연계 준비 ✓" : "연계 미준비"}`
     : g.lastShot
       ? `지난 궤도 · 반사 ${g.lastShot.banks}회 / 연계 ${g.lastShot.assists}회`
-      : "금빛 틈 ×2 · 반사·연계로 방어 관통";
+      : g.encounter === "twin-observatory"
+        ? "한 발에 두 고리 · 핵은 다음 발사까지 개방"
+        : "금빛 틈 ×2 · 반사·연계로 방어 관통";
   $("#hp").textContent = `${g.hp} / ${g.maxHp}`;
   $("#health").value = g.hp;
   $("#turn").textContent = String(g.turn).padStart(2, "0");
-  $("#wave").textContent = `WAVE 0${g.wave} / 02`;
-  $("#waveName").textContent = g.wave === 1 ? "별의 잔영" : "월식의 심장";
+  $("#wave").textContent =
+    g.encounter === "twin-observatory"
+      ? "OBSERVATORY / CORE"
+      : `WAVE 0${g.wave} / 02`;
+  $("#waveName").textContent =
+    g.encounter === "twin-observatory"
+      ? "쌍성 관측핵"
+      : g.wave === 1
+        ? "별의 잔영"
+        : "월식의 심장";
   $("#status").textContent = g.last;
   $("#combo").innerHTML = `${g.combo} <span>HITS</span>`;
   $("#phase").textContent =
@@ -186,21 +221,35 @@ function updateUI() {
     e.setAttribute("aria-pressed", String(g.selected === i));
     e.disabled = g.phase !== "aim";
   });
-  const done = ["won", "lost"].includes(g.phase);
+  const done = campaign.phase !== "playing";
   $("#result").hidden = !done;
   if (done) {
     $("#resultTag").textContent =
-      g.phase === "won" ? "CONSTELLATION RESTORED" : "CONSTELLATION LOST";
+      campaign.phase === "between"
+        ? "관측소로 이어지는 길"
+        : campaign.phase === "failed"
+          ? "현재 단계 재도전"
+          : "두 성좌의 해방";
     $("#resultTitle").textContent = g.result;
     $("#resultDetail").textContent =
-      `${g.turn}턴 · 총 ${g.totalHits}회 명중 · ${g.phase === "won" ? "수호자들이 성소를 되찾았습니다." : "벽과 동료를 이용해 궤도를 다시 설계하세요."}`;
+      campaign.phase === "between"
+        ? "수호자의 체력을 회복하고, 기록과 충전을 이어갑니다."
+        : campaign.phase === "failed"
+          ? `${campaign.stage.title} 진입 때의 체력·충전·배치로 돌아갑니다.`
+          : `${g.totalHits}회 명중 · 두 단계의 궤도를 되찾았습니다.`;
+    $("#again").textContent =
+      campaign.phase === "between"
+        ? "다음 단계로 →"
+        : campaign.phase === "failed"
+          ? "이 단계 다시 도전"
+          : "캠페인 처음부터";
   }
 }
 function cues() {
   for (const e of game.events.splice(0)) {
     const hit = e.type === "hit",
       weak = e.kind === "weak",
-      guard = e.kind === "guard";
+      guard = e.kind === "guard" || e.kind === "sealed";
     if (hit) {
       feedback.emit(weak ? "crit" : guard ? "denied" : "hit", {
         combo: game.combo,
@@ -208,27 +257,35 @@ function cues() {
       if (fx) {
         hitFlash = weak ? 0.18 : 0.07;
         kick = weak ? 8 : guard ? 2 : 4;
-        hitStop = weak ? 0.065 : 0.025;
       }
     } else
       feedback.emit(
-        e.type === "assist"
-          ? "pickup"
-          : e.type === "enemy"
-            ? "attack"
-            : e.type === "bounce"
-              ? "step"
-              : e.type,
+        ["latch", "open"].includes(e.type)
+          ? "progress"
+          : e.type === "chainbreak"
+            ? "denied"
+            : e.type === "assist"
+              ? "pickup"
+              : e.type === "enemy"
+                ? "attack"
+                : e.type === "bounce"
+                  ? "step"
+                  : e.type,
       );
-    const color = weak
-      ? "#ffe28e"
-      : guard
-        ? "#8aafe1"
-        : e.kind === "assist"
-          ? game.heroes[e.ally].color
-          : e.type === "hurt"
-            ? "#ff829c"
-            : game.heroes[game.selected].color;
+    const color =
+      e.type === "open" || e.type === "latch"
+        ? "#a7ffe0"
+        : e.type === "chainbreak"
+          ? "#ffb49e"
+          : weak
+            ? "#ffe28e"
+            : guard
+              ? "#8aafe1"
+              : e.kind === "assist"
+                ? game.heroes[e.ally].color
+                : e.type === "hurt"
+                  ? "#ff829c"
+                  : game.heroes[game.selected].color;
     if (e.text) {
       const prefix = weak ? "약점! " : guard ? "방어 " : e.bank ? "반사! " : "";
       labels.push({
@@ -282,6 +339,7 @@ function cues() {
       }
     }
   }
+  run.settle();
   updateUI();
 }
 function portrait(name, x, y, r, tint) {
@@ -361,15 +419,24 @@ function aim() {
     circle(ctx, drag.x, drag.y, 9, null, "#f4c77c");
   }
   ctx.restore();
-  const note = first
-    ? first.type === "bounce"
-      ? "첫 반사 · 벽 → 관통 준비"
-      : first.kind === "weak"
-        ? "첫 충돌 · 보스 약점"
-        : first.kind === "guard"
-          ? "첫 충돌 · 보스 방어면"
-          : "첫 충돌 · 잔영"
-    : "이번 위력으로는 충돌하지 않습니다";
+  const note =
+    game.encounter === "twin-observatory"
+      ? route.opensCore
+        ? "예측: 한 발로 두 고리 연결 · 핵 개방"
+        : route.latches.length
+          ? "예측: 고리 하나 · 연결이 끊깁니다"
+          : game.aperture
+            ? "핵 노출 중 · 관측핵을 노리세요"
+            : "고리 미점등 · 반사 후 두 고리를 가로지르세요"
+      : first
+        ? first.type === "bounce"
+          ? "첫 반사 · 벽 → 관통 준비"
+          : first.kind === "weak"
+            ? "첫 충돌 · 보스 약점"
+            : first.kind === "guard"
+              ? "첫 충돌 · 보스 방어면"
+              : "첫 충돌 · 잔영"
+        : "이번 위력으로는 충돌하지 않습니다";
   if ($("#trajectory").textContent !== note)
     $("#trajectory").textContent = note;
 }
@@ -418,12 +485,43 @@ function draw(dt) {
     ctx.restore();
   }
 
+  for (const latch of game.latches) {
+    const tint = latch.lit ? "#b5ffe6" : "#83b7cf";
+    circle(
+      ctx,
+      latch.x,
+      latch.y,
+      latch.r + 8,
+      "#071b2bcc",
+      tint,
+      latch.lit ? 4 : 2,
+    );
+    circle(ctx, latch.x, latch.y, latch.r - 4, null, tint, 1);
+    ctx.fillStyle = tint;
+    ctx.textAlign = "center";
+    ctx.font = "bold 22px Georgia";
+    ctx.fillText(latch.lit ? "✦" : "◇", latch.x, latch.y + 8);
+    ctx.font = "12px system-ui";
+    ctx.fillText(latch.name, latch.x, latch.y + latch.r + 26);
+  }
+  if (game.latches.length) {
+    line(
+      ctx,
+      260,
+      320,
+      460,
+      320,
+      game.latches.every((l) => l.lit) ? "#b5ffe6aa" : "#83b7cf33",
+      2,
+    );
+  }
   for (const e of game.foes) {
     if (e.hp <= 0) continue;
-    const boss = e.id === "boss";
+    const boss = e.id === "boss",
+      core = e.id === "core";
     circle(ctx, e.x, e.y, e.r + 10, null, boss ? "#9c7cb76e" : "#c7a4da38");
     portrait(
-      boss ? "boss-orb.png" : "foe-orb.png",
+      boss || core ? "boss-orb.png" : "foe-orb.png",
       e.x,
       e.y,
       e.r,
@@ -438,7 +536,24 @@ function draw(dt) {
     ctx.textAlign = "center";
     ctx.font = "bold 16px system-ui";
     ctx.fillText(e.timer, e.x + e.r * 0.7, e.y - e.r * 0.7 + 6);
-    if (boss) {
+    if (core) {
+      circle(
+        ctx,
+        e.x,
+        e.y,
+        e.r + 15,
+        null,
+        game.aperture ? "#acffe6" : "#77879e",
+        game.aperture ? 3 : 10,
+      );
+      ctx.font = "bold 13px system-ui";
+      ctx.fillStyle = game.aperture ? "#b5ffe6" : "#afbdd1";
+      ctx.fillText(
+        game.aperture ? "관측핵 · 노출" : "관측핵 · 봉인",
+        e.x,
+        e.y - e.r - 26,
+      );
+    } else if (boss) {
       ctx.save();
       ctx.lineCap = "round";
       ctx.lineWidth = 9;
@@ -594,8 +709,7 @@ function draw(dt) {
 function frame(t) {
   const dt = Math.min(0.05, (t - last) / 1000 || 0);
   last = t;
-  if (hitStop > 0) hitStop = Math.max(0, hitStop - dt);
-  else acc += dt;
+  acc += dt;
   while (acc >= 1 / 120) {
     if (game.phase === "flight") {
       step(game);
@@ -616,10 +730,11 @@ function shoot() {
     cues();
   }
 }
-function reset() {
-  game = createGame();
-  angle = -90;
-  power = 85;
+function clearPresentation() {
+  game = run.game;
+  background();
+  angle = game.encounter === "twin-observatory" ? 0 : -90;
+  power = game.encounter === "twin-observatory" ? 100 : 85;
   skill = false;
   particles = [];
   labels = [];
@@ -627,10 +742,21 @@ function reset() {
   impacts = [];
   beams = [];
   kick = 0;
-  hitStop = 0;
   aimKey = "";
   feedback.emit("restart");
   updateUI();
+}
+function reset() {
+  if (run.restart()) clearPresentation();
+}
+function resultAction() {
+  const changed =
+    campaign.phase === "between"
+      ? run.advance()
+      : campaign.phase === "failed"
+        ? run.retry()
+        : run.restart();
+  if (changed) clearPresentation();
 }
 function point(e) {
   const rect = canvas.getBoundingClientRect();
@@ -689,7 +815,7 @@ $("#power").addEventListener("input", (e) => {
 });
 $("#fire").onclick = shoot;
 $("#retry").onclick = reset;
-$("#again").onclick = reset;
+$("#again").onclick = resultAction;
 $("#skill").onclick = () => {
   skill = !skill;
   feedback.emit("select");
@@ -713,7 +839,6 @@ $("#fx").onclick = () => {
     impacts = [];
     beams = [];
     kick = 0;
-    hitStop = 0;
   }
 };
 document.addEventListener("keydown", (e) => {
@@ -740,6 +865,11 @@ Object.defineProperty(window, "cometSnapshot", {
     JSON.parse(
       JSON.stringify({
         ...game,
+        campaign: {
+          index: campaign.index,
+          phase: campaign.phase,
+          stage: campaign.stage,
+        },
         events: [],
         shot: game.shot ? { elapsed: game.shot.elapsed } : null,
       }),

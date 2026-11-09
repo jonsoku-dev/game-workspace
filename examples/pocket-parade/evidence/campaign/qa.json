@@ -1,0 +1,266 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:53045/pocket-parade/",
+  "input_method": "Actual installed0.11.0 campaign runtime. Start/finish/next/tutorial/star/complete/restart use normal native locator clicks. Toy-chain paths use explicitly synthetic DOM PointerEvent down/move/up dispatched through production handlers, with pointer capture temporarily stubbed only during synthetic dispatch. Legal paths are chosen from read-only snapshots. No campaign index, score, progress, timer or other gameplay state is mutated.",
+  "checks": [
+    {
+      "check": "installed runtime starts first rescue round",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [16, 8, 1], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [19, 11, 4], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [24, 23, 22], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [20, 6, 5], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [25, 26, 13], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [33, 18, 12], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [38, 17, 3], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [39, 32, 9], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [31, 30, 10], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [59, 51, 37], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [49, 43, 42], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [46, 45, 44], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [57, 35, 28], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [50, 29, 14], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [36, 56, 0], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [55, 54, 47], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [60, 41, 40], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [65, 71, 15], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [84, 77, 64], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 3: {'selected': 3, 'path': [87, 72, 78], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "first rescue target reached only through player chain handlers",
+      "passed": true
+    },
+    {
+      "check": "first win waits between stages for explicit next button",
+      "passed": true
+    },
+    {
+      "check": "explicit next carries exact score and teaches new stage before timer",
+      "passed": true
+    },
+    {
+      "check": "stage manifest tactic and new mend-pouch art appear in actual build",
+      "passed": true
+    },
+    {
+      "check": "opening permits a genuine misplaced-star comparison",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 7: {'selected': 7, 'path': [30, 23, 22, 16, 15, 21, 14], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "seven toys earn a persistent star in second round",
+      "passed": true
+    },
+    {
+      "check": "wrong-area star rescues toys without mending and gives different feedback",
+      "passed": true
+    },
+    {
+      "check": "star feedback does not shake or brighten entire board",
+      "passed": true
+    },
+    {
+      "check": "safe live board supplies seven ending near first marked seam",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 7: {'selected': 7, 'path': [11, 18, 4, 3, 10, 31, 37], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "long chain itself cannot repair seam",
+      "passed": true
+    },
+    {
+      "check": "earned targeted-star click actually mends first site only",
+      "passed": true
+    },
+    {
+      "check": "localized burst, actual sewn patch and repair thread are visible together",
+      "passed": true
+    },
+    {
+      "check": "390px: no overflow, two real sites, decoded plush and native star controls",
+      "passed": true
+    },
+    {
+      "check": "remaining seam has achievable normal-input seven-chain route",
+      "passed": true
+    },
+    {
+      "check": "atomic legal simulated pointer path selected 7: {'selected': 7, 'path': [49, 36, 58, 65, 53, 47, 40], 'phase': 'playing'}",
+      "passed": true
+    },
+    {
+      "check": "second targeted burst completes real two-site objective",
+      "passed": true
+    },
+    {
+      "check": "new tactical win finishes actual campaign runtime",
+      "passed": true
+    },
+    {
+      "check": "final native restart returns to round1 with fresh score progress and bonuses",
+      "passed": true
+    },
+    {
+      "check": "no observed runtime errors or failed resources",
+      "passed": true
+    }
+  ],
+  "events": [
+    {
+      "event": "rescue-win",
+      "score": 7200,
+      "rescued": 60
+    },
+    {
+      "event": "wrong-star",
+      "score": 8950,
+      "rescued": 14,
+      "status": "거의 닿았어요! 다음 연결의 끝을 솔기 표시 쪽에 더 가까이 놓아요."
+    },
+    {
+      "event": "first-repair",
+      "score": 11500,
+      "sites": [
+        {
+          "id": "left",
+          "x": 96,
+          "y": 330,
+          "mended": true
+        },
+        {
+          "id": "right",
+          "x": 324,
+          "y": 330,
+          "mended": false
+        }
+      ]
+    },
+    {
+      "event": "campaign-complete",
+      "score": 13900,
+      "rescued": 48,
+      "sites": [
+        {
+          "id": "left",
+          "x": 96,
+          "y": 330,
+          "mended": true
+        },
+        {
+          "id": "right",
+          "x": 324,
+          "y": 330,
+          "mended": true
+        }
+      ]
+    }
+  ],
+  "visual": {
+    "patched": 1,
+    "threads": 1,
+    "pulses": 1,
+    "siteLabels": [
+      "왼쪽 터진 솔기 수선 완료",
+      "오른쪽 터진 솔기 미수선. 가까운 별 단추로 수선하세요."
+    ]
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390,
+    "sites": 2,
+    "plush": true,
+    "buttons": true,
+    "background": "url(\"http://127.0.0.1:53045/pocket-parade/art/mend-pouch.webp\")"
+  },
+  "health": {
+    "errors": [],
+    "failed": []
+  },
+  "limits": [
+    "No physical mouse-drag/touch-device/hardware-keyboard acceptance claim.",
+    "Automated legal-path selection does not establish human difficulty.",
+    "Natural timeout/same-stage retry is covered in the source fixture, not repeated in this installed-browser win route."
+  ],
+  "visual_review": {
+    "cover": "Reviewed1280px capture: indigo/mint mend-pouch art, left sewn patch/check, right torn stitch circle, local burst and thread visible.",
+    "mobile": "Reviewed390px capture: both marked sites and status fit without horizontal overflow. Right top status badge label wraps tightly inside inherited25px circle; main board right-site label remains legible.",
+    "complete": "Reviewed two-round completion overlay with total13900score and fresh restart button."
+  },
+  "prior_checker_receipts": [
+    {
+      "file": "lesson-assertion-blocker.json",
+      "explanation": "Literal Korean substring test did not match actual manifest tactic wording; final test compares displayed lesson with actual stage manifest."
+    },
+    {
+      "file": "moving-board-planning-blocker.json",
+      "explanation": "Separated path planning and event dispatch selected fewer toys during a moving board. Planning race inferred; final test selects legal path and dispatches its events in one evaluation without gameplay state injection."
+    }
+  ]
+}

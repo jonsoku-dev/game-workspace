@@ -1,0 +1,20 @@
+{
+  "file": "game/art/mend-pouch.webp",
+  "size": [
+    840,
+    1020
+  ],
+  "mode": "RGB",
+  "bytes": 186840,
+  "sha256": "557a1932b2129e5a82ef3dcdcecea714522f6727babdcf95df6b99fc66a76266",
+  "review_size": [
+    390,
+    474
+  ],
+  "checks": [
+    "WEBP decode",
+    "exact aspect and dimensions",
+    "RGB color",
+    "small-size review image"
+  ]
+}

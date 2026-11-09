@@ -1,3 +1,4 @@
+import { loadCampaign } from "./campaign.mjs";
 import { createFeedback } from "./feedback.mjs";
 import {
   W,
@@ -14,15 +15,22 @@ import {
   burstIds,
   takeSeam,
   stitchedBadges,
+  MEND_SITES,
+  mendHits,
+  stageWon,
+  openingKind,
+  findChain,
+  mendPlan,
 } from "./rules.mjs";
+const campaign = await loadCampaign();
 const $ = (s) => document.querySelector(s),
   board = $("#board"),
   host = $("#tokens"),
   line = $("polyline"),
   overlay = $("#overlay");
 const names = ["토끼", "곰", "고양이", "개구리"],
-  files = ["bunny", "bear", "cat", "frog"],
-  random = seeded(93471);
+  files = ["bunny", "bear", "cat", "frog"];
+let random = seeded(93471);
 const feedback = createFeedback({ sound: false });
 let tokens = [],
   chain = [],
@@ -40,7 +48,10 @@ let tokens = [],
   pops = 0,
   rescued = 0,
   seams = [],
-  nextSeamId = 0;
+  nextSeamId = 0,
+  entryScore = 0,
+  sites = [],
+  assistDelay = 0;
 function cue(name) {
   feedback.emit(name);
 }
@@ -53,10 +64,9 @@ function spawn(initial = false) {
     row = Math.floor(id / 7);
   const t = {
     id,
-    kind:
-      initial && ((row === 6 && column < 5) || (row === 7 && column < 2))
-        ? 0
-        : Math.floor(random() * 4),
+    kind: initial
+      ? openingKind(campaign.index, row, column, Math.floor(random() * 4))
+      : Math.floor(random() * 4),
     x: 35 + column * 57 + (row % 2 ? 8 : 0),
     y: initial ? H - 35 - row * 49 : -R - (id % 7) * 30,
     vx: (random() - 0.5) * 20,
@@ -81,23 +91,52 @@ function spawn(initial = false) {
   return t;
 }
 function hud() {
-  $("#rescued").textContent = Math.min(rescued, RESCUE_GOAL);
-  $("#rescue-progress").value = Math.min(rescued, RESCUE_GOAL);
-  $("#mission-label").textContent =
-    rescued >= RESCUE_GOAL
-      ? "구조 완료! 더 많은 친구를 모아봐요"
+  const repairing = campaign.index === 1;
+  const repaired = sites.filter((site) => site.mended).length;
+  const goal = repairing ? sites.length : RESCUE_GOAL;
+  const progress = repairing ? repaired : rescued;
+  $("#stage-name").textContent =
+    `${String(campaign.index + 1).padStart(2, "0")} · ${campaign.stage.title}`;
+  $("#stage-objective").textContent = campaign.stage.objective;
+  $("#stage-tactic").textContent = campaign.stage.tactic;
+  $("#round-label").textContent = campaign.stage.title;
+  $("#mission-target").textContent = repairing
+    ? " / 2곳 수선"
+    : " / 60 친구 구조";
+  $("#rescued").textContent = Math.min(progress, goal);
+  $("#rescue-progress").max = goal;
+  $("#rescue-progress").value = Math.min(progress, goal);
+  $("#rescue-progress").setAttribute("aria-label", campaign.stage.objective);
+  $("#mission-label").textContent = stageWon(campaign.index, rescued, sites)
+    ? "목표 달성! 지금 마무리하거나 점수를 더 모아도 좋아요"
+    : repairing
+      ? `별 단추로 ${2 - repaired}곳의 터진 솔기를 덮어주세요`
       : `친구 ${RESCUE_GOAL - rescued}마리만 더 꺼내주세요`;
   document.querySelectorAll(".stitch-badge").forEach((badge, index) => {
-    const earned = index < stitchedBadges(rescued);
+    badge.hidden = repairing && index === 2;
+    const earned = repairing
+      ? Boolean(sites[index]?.mended)
+      : index < stitchedBadges(rescued);
+    badge.textContent = repairing
+      ? ["왼쪽", "오른쪽", ""][index]
+      : String((index + 1) * 20);
     badge.classList.toggle("earned", earned);
     badge.setAttribute(
       "aria-label",
-      `${(index + 1) * 20}친구 배지 ${earned ? "획득" : "미획득"}`,
+      `${repairing ? sites[index]?.title || "수선" : (index + 1) * 20 + "친구 배지"} ${earned ? "완료" : "미완료"}`,
     );
   });
-  $("#bonus-hint").textContent = seams.length
-    ? `별 단추 ${seams.length}개 · 눌러서 주변 친구 구조`
-    : "7마리를 이으면 끝자리에 별 단추가 생겨요";
+  $("#bonus-hint").textContent = repairing
+    ? "7마리 연결의 마지막 친구를 솔기 표시 가까이에! 별 단추로 톡."
+    : seams.length
+      ? `별 단추 ${seams.length}개 · 눌러서 주변 친구 구조`
+      : "7마리를 이으면 끝자리에 별 단추가 생겨요";
+  $("#continue").hidden =
+    phase !== "playing" || !stageWon(campaign.index, rescued, sites);
+  $("#continue").textContent = repairing
+    ? "두 솔기 완성 · 수선 마무리 ✓"
+    : "60친구 구조 완료 · 다음 라운드 준비 →";
+  $("#shake").textContent = repairing ? "↝ 실 정리" : "↝ 흔들기";
   $("#score").textContent = score.toLocaleString("ko-KR");
   $("#time").textContent = Math.ceil(remaining);
   $("#fever").value = feverLeft > 0 ? feverLeft * 3 : charge;
@@ -142,8 +181,16 @@ function begin() {
   tokens = [];
   host.replaceChildren();
   chain = [];
-  score = 0;
-  remaining = 75;
+  score = entryScore;
+  remaining = campaign.index === 1 ? 90 : 75;
+  random = seeded(93471 + campaign.index * 1709);
+  sites =
+    campaign.index === 1
+      ? MEND_SITES.map((site) => ({ ...site, mended: false }))
+      : [];
+  assistDelay = 0;
+  board.classList.toggle("repair-room", campaign.index === 1);
+  drawSites();
   charge = 0;
   feverLeft = 0;
   shakeWait = 0;
@@ -162,24 +209,136 @@ function begin() {
   for (let i = 0; i < 240; i++) step(tokens, 1 / 120);
   overlay.hidden = true;
   $("#pause").textContent = "Ⅱ 잠깐 쉬기";
-  say("75초 안에 60친구 구조! 같은 동물을 3마리부터 이어요.");
+  say(
+    campaign.index === 1
+      ? "표시 가까이에 7마리 연결의 끝을 놓고 별 단추를 눌러요."
+      : "75초 안에 60친구 구조! 목표를 채우면 다음 주머니로 갈 수 있어요.",
+  );
+  if (campaign.index === 1) {
+    ensureMendMove();
+    phase = "ready";
+    overlay.hidden = false;
+    overlay.innerHTML =
+      '<div class="badge">두 번째 주머니 · 다른 바느질</div><h2>별실 수선실</h2><p id="lesson"></p><div class="lesson-example">7마리 쭈욱 → 끝자리에 ✦ → 솔기 위에서 톡</div><button class="primary" id="stage-start">수선 시작하기 →</button><small>90초 · 친구 수가 아니라 두 솔기를 수선해요</small>';
+    $("#lesson").textContent = campaign.stage.tactic;
+    $("#stage-start").onclick = () => {
+      phase = "playing";
+      overlay.hidden = true;
+      hud();
+      board.focus();
+    };
+  }
   cue("restart");
   hud();
   render();
   board.focus();
 }
-function end() {
+function showResult(success) {
   phase = "ended";
   chain = [];
   held = false;
   render();
   overlay.hidden = false;
-  const complete = rescued >= RESCUE_GOAL;
-  overlay.innerHTML = `<div class="badge">${stitchedBadges(rescued)}개의 바느질 배지</div><h2>${complete ? "모두 포근하게 구했어요!" : "조금 더 이어볼까요?"}</h2><p><b>${rescued} / ${RESCUE_GOAL} 친구 구조</b><br>${score.toLocaleString()}점 · ${pops}번 연결</p><button class="primary" id="again">새 주머니 열기 ↻</button><small>별 단추는 남겨뒀다가 원하는 때 눌러요</small>`;
-  $("#again").onclick = begin;
-  $("#again").focus();
-  cue(complete ? "win" : "progress");
+  if (!success) {
+    overlay.innerHTML =
+      '<div class="badge">조금만 더, 한 땀씩</div><h2>이 주머니부터 다시 해요</h2><p id="result-detail"></p><button class="primary" id="retry">현재 라운드 다시하기 ↻</button><button id="restart">처음 주머니부터</button>';
+    $("#result-detail").textContent =
+      `${campaign.stage.objective} · 이번 점수 ${score.toLocaleString()}점. 재시도는 이 라운드 진입 점수 ${entryScore.toLocaleString()}점부터예요.`;
+    $("#retry").onclick = () => {
+      if (campaign.retry()) begin();
+    };
+    $("#retry").focus();
+  } else if (campaign.phase === "between") {
+    overlay.innerHTML =
+      '<div class="badge">첫 번째 주머니 완료</div><h2>친구들을 모두 구했어요!</h2><p id="result-detail"></p><button class="primary" id="next">다음 주머니 열기 →</button><button id="restart">처음부터 새로</button><small>다음에는 별 단추의 위치가 중요해져요</small>';
+    $("#result-detail").textContent =
+      `${rescued}친구 구조 · ${score.toLocaleString()}점을 가지고 다음 라운드로 가요.`;
+    $("#next").onclick = () => {
+      if (campaign.advance()) {
+        entryScore = score;
+        begin();
+      }
+    };
+    $("#next").focus();
+  } else {
+    overlay.innerHTML =
+      '<div class="badge">두 주머니의 바느질 완성</div><h2>친구도, 주머니도 포근하게!</h2><p id="result-detail"></p><button class="primary" id="again">처음부터 새 주머니 ↻</button>';
+    $("#result-detail").textContent =
+      `두 솔기 수선 완료 · 총 ${score.toLocaleString()}점. 구조와 수선, 서로 다른 두 바느질을 마쳤어요.`;
+    $("#again").onclick = restart;
+    $("#again").focus();
+  }
+  if ($("#restart")) $("#restart").onclick = restart;
+  cue(success ? "win" : "progress");
   hud();
+}
+function restart() {
+  if (campaign.restart()) {
+    entryScore = 0;
+    begin();
+  }
+}
+function finishRound() {
+  if (phase !== "playing" || !stageWon(campaign.index, rescued, sites)) return;
+  if (campaign.finishStage()) showResult(true);
+}
+function end() {
+  if (stageWon(campaign.index, rescued, sites)) finishRound();
+  else if (campaign.failStage()) showResult(false);
+}
+$("#continue").onclick = finishRound;
+function drawSites() {
+  $("#mend-sites").replaceChildren();
+  $("#mend-thread").replaceChildren();
+  for (const [index, site] of sites.entries()) {
+    const el = document.createElement("div");
+    el.className = "mend-site";
+    el.setAttribute("role", "img");
+    el.style.left = `${(site.x / W) * 100}%`;
+    el.style.top = `${(site.y / H) * 100}%`;
+    el.innerHTML = `<span class="torn-stitch">× ×</span><b>${index + 1} · ${site.title}</b>`;
+    el.setAttribute(
+      "aria-label",
+      `${site.title} 미수선. 가까운 별 단추로 수선하세요.`,
+    );
+    site.el = el;
+    $("#mend-sites").append(el);
+  }
+}
+function ensureMendMove() {
+  if (campaign.index !== 1) return;
+  const plan = mendPlan(tokens, sites);
+  if (!plan) return;
+  for (const token of tokens.filter((token) => plan.ids.includes(token.id))) {
+    token.kind = plan.kind;
+    token.el.querySelector("img").src = `art/plush-${files[token.kind]}.png`;
+    token.el.setAttribute("aria-label", `${names[token.kind]} ${token.id + 1}`);
+    token.el.classList.add("retied");
+    setTimeout(() => token.el.classList.remove("retied"), 900);
+  }
+  say(
+    "실 정리 완료! 솔기 가까이에 같은 친구 7마리를 모았어요. 끝자리를 골라 이어요.",
+  );
+}
+function repairSites(seam, hits) {
+  for (const site of sites.filter((site) => hits.includes(site.id))) {
+    site.mended = true;
+    site.el.classList.add("mended");
+    site.el.setAttribute("aria-label", `${site.title} 수선 완료`);
+    const thread = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "line",
+    );
+    for (const [key, value] of Object.entries({
+      x1: seam.x,
+      y1: seam.y,
+      x2: site.x,
+      y2: site.y,
+    }))
+      thread.setAttribute(key, value);
+    $("#mend-thread").append(thread);
+    setTimeout(() => thread.remove(), 1200);
+  }
 }
 function add(t) {
   if (phase !== "playing") return;
@@ -224,6 +383,7 @@ function release() {
     `${n}친구 구조 · +${gain.toLocaleString()}점${seam ? " · 끝자리에 별 단추! 원하는 때 눌러요" : ""}`,
   );
   while (tokens.length < COUNT) spawn();
+  if (campaign.index === 1) assistDelay = 1.4;
   hud();
   render();
 }
@@ -249,6 +409,10 @@ function removeToys(ids) {
 function addSeam(seam) {
   const el = document.createElement("button");
   el.className = "seam-button";
+  el.style.setProperty(
+    "--reach",
+    `${(board.getBoundingClientRect().width / W) * R * 7.2}px`,
+  );
   const img = document.createElement("img");
   img.src = "art/star-button.png";
   img.alt = "";
@@ -257,7 +421,9 @@ function addSeam(seam) {
   el.style.top = `${(seam.y / H) * 100}%`;
   el.setAttribute(
     "aria-label",
-    "별 단추: 주변 친구 꺼내기. Enter 또는 Space로 사용",
+    campaign.index === 1
+      ? "별 단추: 폭발 범위가 솔기를 덮으면 수선. Enter 또는 Space로 사용"
+      : "별 단추: 주변 친구 꺼내기. Enter 또는 Space로 사용",
   );
   el.addEventListener("pointerdown", (event) => event.stopPropagation());
   el.addEventListener("keydown", (event) => event.stopPropagation());
@@ -271,7 +437,8 @@ function useSeam(id) {
   const selected = takeSeam(seams, id);
   if (!selected) return;
   const ids = burstIds(tokens, selected.seam);
-  if (!ids.length) {
+  const hits = campaign.index === 1 ? mendHits(sites, selected.seam) : [];
+  if (!ids.length && !hits.length) {
     say("단추 주변이 비었어요. 친구가 내려오면 눌러요.");
     return;
   }
@@ -284,10 +451,54 @@ function useSeam(id) {
   rescued += ids.length;
   score += ids.length * 75 * (feverLeft > 0 ? 2 : 1);
   while (tokens.length < COUNT) spawn();
-  board.classList.add("bursting");
-  setTimeout(() => board.classList.remove("bursting"), 450);
-  say(`별 단추 톡! ${ids.length}친구를 함께 구했어요.`);
-  cue("win");
+  const pulse = document.createElement("span");
+  pulse.className = `star-pulse ${hits.length ? "repair-pulse" : campaign.index === 1 ? "miss-pulse" : ""}`;
+  const reach = (board.getBoundingClientRect().width / W) * R * 7.2;
+  pulse.style.cssText = `left:${(selected.seam.x / W) * 100}%;top:${(selected.seam.y / H) * 100}%;width:${reach}px;height:${reach}px`;
+  $("#particles").append(pulse);
+  setTimeout(() => pulse.remove(), 850);
+  if (campaign.index === 1) {
+    repairSites(selected.seam, hits);
+    score += hits.length * 500;
+    if (hits.length) {
+      const complete = stageWon(campaign.index, rescued, sites);
+      say(
+        complete
+          ? "두 솔기 완성! 수선 마무리 버튼으로 마지막 매듭을 지어요."
+          : "한 땀 성공! 솔기가 수선됐어요. 이제 반대쪽 표시로 가요.",
+      );
+      cue(complete ? "win" : "progress");
+    } else {
+      const distance = Math.min(
+        ...sites
+          .filter((site) => !site.mended)
+          .map((site) =>
+            Math.hypot(site.x - selected.seam.x, site.y - selected.seam.y),
+          ),
+      );
+      say(
+        distance < R * 5
+          ? "거의 닿았어요! 다음 연결의 끝을 솔기 표시 쪽에 더 가까이 놓아요."
+          : "친구만 꺼냈어요. 수선하려면 별 단추를 솔기 표시 가까이에 놓아요.",
+      );
+      const nearestSite = sites
+        .filter((site) => !site.mended)
+        .sort(
+          (a, b) =>
+            Math.hypot(a.x - selected.seam.x, a.y - selected.seam.y) -
+            Math.hypot(b.x - selected.seam.x, b.y - selected.seam.y),
+        )[0];
+      if (nearestSite) {
+        nearestSite.el.classList.add("missed");
+        setTimeout(() => nearestSite.el.classList.remove("missed"), 650);
+      }
+      cue("denied");
+    }
+    assistDelay = 1.4;
+  } else {
+    say(`별 단추 톡! ${ids.length}친구를 함께 구했어요.`);
+    cue("win");
+  }
   if (hadFocus) board.focus();
   hud();
   render();
@@ -406,7 +617,12 @@ $("#shake").onclick = () => {
   }
   board.classList.add("shake");
   setTimeout(() => board.classList.remove("shake"), 350);
-  say("살랑살랑! 친구들이 자리를 바꿔요.");
+  if (campaign.index === 1) assistDelay = 1.4;
+  say(
+    campaign.index === 1
+      ? "실 정리 중… 솔기 주변에 긴 연결을 준비해요."
+      : "살랑살랑! 친구들이 자리를 바꿔요.",
+  );
   cue("interact");
   hud();
 };
@@ -417,6 +633,14 @@ $("#sound").onclick = () => {
   cue("menu");
 };
 $("#start").onclick = begin;
+$("#restart-all").onclick = restart;
+globalThis.addEventListener?.("resize", () => {
+  for (const seam of seams)
+    seam.el.style.setProperty(
+      "--reach",
+      `${(board.getBoundingClientRect().width / W) * R * 7.2}px`,
+    );
+});
 document.addEventListener("visibilitychange", () => {
   if (document.hidden && phase === "playing") pause();
 });
@@ -435,6 +659,11 @@ function frame(now) {
         accumulator -= 1 / 120;
       }
     }
+    if (assistDelay > 0) {
+      assistDelay -= dt;
+      if (assistDelay <= 0 && !chain.length && !held) ensureMendMove();
+      else if (assistDelay <= 0) assistDelay = 0.25;
+    }
     if (remaining <= 0) end();
     hud();
     render();
@@ -450,6 +679,7 @@ Promise.all([...host.querySelectorAll("img")].map((img) => img.decode()))
   .then(() => {
     if (phase === "ready") {
       $("#start").disabled = false;
+      $("#restart-all").disabled = false;
       $("#start").innerHTML = "주머니 열기 <span>→</span>";
     }
   })
@@ -464,6 +694,11 @@ Promise.all([...host.querySelectorAll("img")].map((img) => img.decode()))
 window.pocket = {
   snapshot: () => ({
     phase,
+    campaignPhase: campaign.phase,
+    stageIndex: campaign.index,
+    stage: campaign.stage,
+    entryScore,
+    sites: sites.map(({ id, x, y, mended }) => ({ id, x, y, mended })),
     score,
     remaining,
     charge,

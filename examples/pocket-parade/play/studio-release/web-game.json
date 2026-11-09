@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "engine": "web",
+  "work_id": "web-730d53a541d243dfb70e3df3162cae6c",
+  "title": "포켓 무리",
+  "genre": "봉제 주머니 연결 액션 퍼즐",
+  "goal": "1라운드에서 60친구를 구조한 뒤 2라운드 별실 수선실에서 두 솔기를 별 단추로 수선하세요.",
+  "controls": "같은 동물 3마리 이상 드래그 후 놓기. 별 단추 클릭·터치로 주변 구조. 방향키로 친구 선택, Space 연결, Enter 확정, Escape 취소. 별 단추는 Tab 후 Enter·Space. 흔들기·일시정지·다시하기, 소리는 기본 꺼짐.",
+  "stages": [
+    {
+      "id": "rescue",
+      "title": "작은 주머니 구조대",
+      "objective": "75초 안에 60친구 구조",
+      "tactic": "같은 친구를 3마리부터 잇고, 7마리의 별 단추로 함께 구조하세요."
+    },
+    {
+      "id": "mend",
+      "title": "별실 수선실",
+      "objective": "90초 안에 표시된 두 솔기 수선",
+      "tactic": "표시 가까이에서 7마리 연결을 끝내 별 단추를 남기고 터뜨리세요. 친구 수만으로는 수선되지 않아요."
+    }
+  ],
+  "index": "play/studio-release/index.html",
+  "provenance": {
+    "genre.json": {
+      "source": "genre.json",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "sha256": "731bbbbee4ea90fe5a3c69f2d1d1ceb81e9adad8669b85836a9306f8361a8f2b",
+      "byteCount": 1064
+    },
+    "game.mjs": {
+      "source": "game/game.mjs",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "sha256": "9b6d412e29adf6f75ca430c0f149f657e9af1ac2985dfc129b66173f1c5156ad",
+      "byteCount": 23449
+    },
+    "index.html": {
+      "source": "game/index.html",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "sha256": "70185ac0dbfd0acc7c22eaeea2a39ef7a54bb0390fe2e3b7a6882b3fd4f4e194",
+      "byteCount": 5662
+    },
+    "rules.mjs": {
+      "source": "game/rules.mjs",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:c4b6b5700d17a42924a4a564af5b877f4ec12f59c039717e1474e1f31d52cdbe",
+      "sha256": "7ce659b9a6485a778e960a499cea07631a8e77b786fbba22e9c74a04760225a5",
+      "byteCount": 5223
+    },
+    "style.css": {
+      "source": "game/style.css",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:394c9b01713c38d8a4f2589a54bf2e51a740d7e0040a0bdbd4f8c0554111eed1",
+      "sha256": "8ef58638ca7eeedc6cd33c8f26ec83599d8cd63a3216f646d33691fce1b618cc",
+      "byteCount": 16040
+    },
+    "art/mend-pouch.webp": {
+      "source": "game/art/mend-pouch.webp",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:4c7b9c857715f4457e293cdf6a7c5fa7f6f3b711f2bb7c846a0c4f4a245cf33b",
+      "sha256": "557a1932b2129e5a82ef3dcdcecea714522f6727babdcf95df6b99fc66a76266",
+      "byteCount": 186840
+    },
+    "art/plush-bear.png": {
+      "source": "game/art/plush-bear.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:ce53b1bf4d5188299b7b9ac32acaba5a6377a3388b8ea7af5ecab55eba27fd27",
+      "sha256": "43fd391bde0e90057e74e62a1aaacf4e378e5dbfff9483ca701572982ec3b33e",
+      "byteCount": 370361
+    },
+    "art/plush-bunny.png": {
+      "source": "game/art/plush-bunny.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:fdf069c9a0dca32e5b1fd14ed69b98b61a2ce5c5dbbb40fc9b2e6603599d9a41",
+      "sha256": "a3751ae0d1ec34d50038b96c756a2fa078ba8937d84efc4de3e4f350cb88a918",
+      "byteCount": 306137
+    },
+    "art/plush-cat.png": {
+      "source": "game/art/plush-cat.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:ae6dd91fe244b6ce254ef8a960756a57733117d9b039a650e2528086d8825184",
+      "sha256": "098446bd17a8cdbe9dd4d38143fcec4041e97665c92dc170a7532ba1abfdd2e9",
+      "byteCount": 377073
+    },
+    "art/plush-frog.png": {
+      "source": "game/art/plush-frog.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:234b55ff8fab92b4e405c8cb911100f3603991a8dd3f01b242780b603df007ff",
+      "sha256": "923c5fde747ee7849896fadff6847bd888132e61852ebac4bf288c7f5545bbaa",
+      "byteCount": 360940
+    },
+    "art/pouch.webp": {
+      "source": "game/art/pouch.webp",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:e91332f4f7841c7566ae2a4a7f5cb9cb632f206872aaf2df0c9237d593cefb89",
+      "sha256": "0d23c46e2ff1f22e4e7a37f69aaca4168c5c2c9049db61fab7daca42adbc55d0",
+      "byteCount": 208824
+    },
+    "art/star-button.png": {
+      "source": "game/art/star-button.png",
+      "artifact": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-730d53a541d243dfb70e3df3162cae6c-inputs:artifact:ba0e01112932164e5feab7680787425fd0f89b0d0a3548afdd99f8f18fc6c734",
+      "sha256": "a1472bab08cf9e4bca2c22ac60b39ea984e6a65ef5991dad1901151b5b771865",
+      "byteCount": 71021
+    },
+    "feedback.mjs": {
+      "source": "studio/engines/web/feedback.mjs",
+      "origin": "installed-runtime",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    "campaign.mjs": {
+      "source": "studio/engines/web/campaign.mjs",
+      "origin": "installed-runtime",
+      "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "byteCount": 2425
+    }
+  },
+  "files": [
+    {
+      "path": "art/mend-pouch.webp",
+      "sha256": "557a1932b2129e5a82ef3dcdcecea714522f6727babdcf95df6b99fc66a76266",
+      "byteCount": 186840
+    },
+    {
+      "path": "art/plush-bear.png",
+      "sha256": "43fd391bde0e90057e74e62a1aaacf4e378e5dbfff9483ca701572982ec3b33e",
+      "byteCount": 370361
+    },
+    {
+      "path": "art/plush-bunny.png",
+      "sha256": "a3751ae0d1ec34d50038b96c756a2fa078ba8937d84efc4de3e4f350cb88a918",
+      "byteCount": 306137
+    },
+    {
+      "path": "art/plush-cat.png",
+      "sha256": "098446bd17a8cdbe9dd4d38143fcec4041e97665c92dc170a7532ba1abfdd2e9",
+      "byteCount": 377073
+    },
+    {
+      "path": "art/plush-frog.png",
+      "sha256": "923c5fde747ee7849896fadff6847bd888132e61852ebac4bf288c7f5545bbaa",
+      "byteCount": 360940
+    },
+    {
+      "path": "art/pouch.webp",
+      "sha256": "0d23c46e2ff1f22e4e7a37f69aaca4168c5c2c9049db61fab7daca42adbc55d0",
+      "byteCount": 208824
+    },
+    {
+      "path": "art/star-button.png",
+      "sha256": "a1472bab08cf9e4bca2c22ac60b39ea984e6a65ef5991dad1901151b5b771865",
+      "byteCount": 71021
+    },
+    {
+      "path": "campaign.mjs",
+      "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "byteCount": 2425
+    },
+    {
+      "path": "feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "9b6d412e29adf6f75ca430c0f149f657e9af1ac2985dfc129b66173f1c5156ad",
+      "byteCount": 23449
+    },
+    {
+      "path": "genre.json",
+      "sha256": "731bbbbee4ea90fe5a3c69f2d1d1ceb81e9adad8669b85836a9306f8361a8f2b",
+      "byteCount": 1064
+    },
+    {
+      "path": "index.html",
+      "sha256": "70185ac0dbfd0acc7c22eaeea2a39ef7a54bb0390fe2e3b7a6882b3fd4f4e194",
+      "byteCount": 5662
+    },
+    {
+      "path": "rules.mjs",
+      "sha256": "7ce659b9a6485a778e960a499cea07631a8e77b786fbba22e9c74a04760225a5",
+      "byteCount": 5223
+    },
+    {
+      "path": "style.css",
+      "sha256": "8ef58638ca7eeedc6cd33c8f26ec83599d8cd63a3216f646d33691fce1b618cc",
+      "byteCount": 16040
+    }
+  ]
+}

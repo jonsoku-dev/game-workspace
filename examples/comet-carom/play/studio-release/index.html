@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>혜성 궤도 · COMET CAROM</title>
+    <link rel="icon" type="image/png" href="art/guardian-sun.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../">✧ ORBIT ARCHIVE</a><span>반사 · 연계 · 방벽 격파</span>
+      <nav>
+        <button id="fx" aria-pressed="true">연출 ON</button
+        ><button id="sound" aria-pressed="false">소리 OFF</button
+        ><button id="retry">↻ 처음부터</button>
+      </nav>
+    </header>
+    <main>
+      <section class="intro" aria-label="현재 수호자">
+        <h1>혜성 궤도<span>COMET CAROM</span></h1>
+        <div class="guardian-card" style="--portrait: 0">
+          <div class="guardian-art">
+            <img
+              id="guardianPortrait"
+              src="art/guardians.webp"
+              alt="황금빛 태양의 수호자 솔"
+            />
+          </div>
+          <div class="guardian-caption">
+            <p id="guardianRole">이번 궤도의 수호자</p>
+            <h2 id="guardianName">솔 <span>태양창</span></h2>
+            <p id="guardianAbility">동료가 스치면 가까운 적에게 38 피해</p>
+          </div>
+        </div>
+        <p class="pull-hint">
+          벽에 별을 새기고,<br />월식의 틈으로 파고드세요.
+        </p>
+      </section>
+      <section class="battle" aria-label="혜성 궤도 전투">
+        <div class="campaign-heading">
+          <strong id="stageTitle"></strong>
+          <p id="stageObjective"></p>
+          <p id="stageTactic"></p>
+        </div>
+        <div class="battle-top">
+          <div>
+            <small id="wave">WAVE 01 / 02</small>
+            <h2 id="waveName">별의 잔영</h2>
+          </div>
+          <div class="turn">
+            <small>YOUR TURN</small><strong id="turn">01</strong>
+          </div>
+        </div>
+        <div class="shield-readout">
+          <span id="shieldNote">벽을 먼저 맞히면 +10 · 동료를 스치면 +8</span
+          ><small id="setup">금빛 틈 ×2 · 반사·연계로 방어 관통</small>
+        </div>
+        <p id="latchStatus" class="latch-status" role="status" hidden></p>
+        <div class="canvas-wrap">
+          <canvas
+            id="arena"
+            width="720"
+            height="840"
+            tabindex="0"
+            aria-label="전투장. 수호자를 뒤로 당겨 발사. 방향키로 조준과 위력 조절, Space 발사."
+          ></canvas>
+          <div id="result" hidden>
+            <p id="resultTag"></p>
+            <h2 id="resultTitle"></h2>
+            <p id="resultDetail"></p>
+            <button id="again">다시 별을 잇기 ↗</button>
+          </div>
+          <div class="board-caption"><span id="phase">조준하세요</span></div>
+        </div>
+        <div class="health">
+          <div><b>PARTY VITALITY</b><span id="hp">180 / 180</span></div>
+          <progress
+            id="health"
+            max="180"
+            value="180"
+            aria-label="파티 체력"
+          ></progress>
+        </div>
+      </section>
+      <aside>
+        <div class="section-title"><b>수호자 선택</b></div>
+        <div id="heroes" class="heroes">
+          <button data-unit="0" class="hero selected">
+            <img src="art/guardian-sun.png" alt="" /><span
+              ><small>01</small><b>솔 <em>태양창</em></b
+              ><i>연계 · 가까운 적에게 38 피해</i></span
+            ><strong>↗</strong></button
+          ><button data-unit="1" class="hero">
+            <img src="art/guardian-moon.png" alt="" /><span
+              ><small>02</small><b>루나 <em>달의 샘</em></b
+              ><i>연계 · 체력 +22, 추적탄 20</i></span
+            ><strong>↗</strong></button
+          ><button data-unit="2" class="hero">
+            <img src="art/guardian-nova.png" alt="" /><span
+              ><small>03</small><b>노바 <em>별비</em></b
+              ><i>연계 · 모든 적에게 18 피해</i></span
+            ><strong>↗</strong>
+          </button>
+        </div>
+        <div class="command">
+          <div class="section-title"><b>이번 턴의 궤도</b></div>
+          <p id="status" role="status" aria-live="polite">
+            구슬을 뒤로 당겨 궤도를 만드세요.
+          </p>
+          <p id="trajectory" class="trajectory" aria-live="polite">
+            첫 충돌을 계산하고 있습니다.
+          </p>
+          <div class="inputs">
+            <label
+              >각도 <output id="angleValue">−90°</output
+              ><input
+                id="angle"
+                type="range"
+                min="-180"
+                max="180"
+                value="-90" /></label
+            ><label
+              >위력 <output id="powerValue">85%</output
+              ><input id="power" type="range" min="0" max="100" value="85"
+            /></label>
+          </div>
+          <button id="fire" class="primary">
+            궤도 발사 <span>SPACE ↗</span></button
+          ><button id="skill" class="skill" aria-pressed="false">
+            ✧ 성좌 해방 <span id="charge">0 / 3</span>
+          </button>
+          <p class="micro">3턴 충전 · 전체 28 피해 + 충돌 피해 2배</p>
+        </div>
+        <div class="notes">
+          <p id="combatRules">
+            보스의 금빛 틈은 매 턴 90° 회전합니다.<br />정면 방어 8 · 약점 52 ·
+            벽·연계마다 관통 +18<br />동료 연계탄은 방벽을 관통합니다. 적의
+            숫자는 반격까지 남은 턴입니다.
+          </p>
+          <div>
+            <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> 수호자 <kbd>←</kbd
+            ><kbd>→</kbd> 각도<br /><kbd>↑</kbd><kbd>↓</kbd> 위력
+            <kbd>S</kbd> 필살기 <kbd>R</kbd> 처음부터
+          </div>
+        </div>
+        <div class="record">
+          <small>이번 발사</small><b id="combo">0 <span>HITS</span></b>
+          <p id="log">세 수호자가 성소에 도착했습니다.</p>
+        </div>
+      </aside>
+    </main>
+    <footer>혜성 궤도 · 오리지널 코스믹 판타지</footer>
+    <script type="module" src="game.mjs"></script>
+  </body>
+</html>

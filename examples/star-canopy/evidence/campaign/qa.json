@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "scope": "Corrected immutable 0.11.0 game flow; does not certify later 0.12 shared confirmResult packaging.",
+  "url": "http://127.0.0.1:53045/star-canopy-final/",
+  "method": "Configured official local Stagehand MCP instantiated through studio/tools/playcheck_browser.py MCP(), separate stdio session. Normal arrow keys and actual visible Jump/Attack/Spell/Next/Restart buttons only. UI pause used between observations. No gameplay state/position injection; decisions use DOM and screenshots.",
+  "buildPin": "final-build-pin.json",
+  "inputEvidence": "actions.jsonl",
+  "checks": [
+    {
+      "name": "first-quest-clear",
+      "result": "pass",
+      "evidence": "final-stage1-clear.png",
+      "observed": "Actual platform/updraft traversal, melee and spell kills produced3 leaves and L2. Actual bloom contact then Up yielded 고원 너머의 초대 with explicit 다음 구역 · 달빛 상층숲 button."
+    },
+    {
+      "name": "explicit-next-and-retained-growth",
+      "result": "pass",
+      "observed": "Clicked visible Next. Moon stage title/manifest objective appeared; L2 spell retained, HP100 entry baseline restored."
+    },
+    {
+      "name": "wrong-height",
+      "result": "pass",
+      "evidence": "final-height-denial.png",
+      "observed": "Ground-level cast left moon beacons0/2. Jumping onto lower platform and casting right later lit beacon1. Earlier unchanged beacon rules also produced explicit height-denial toast, separately captured in initial attempted-run action9."
+    },
+    {
+      "name": "ordered-traversal",
+      "result": "pass",
+      "evidence": "final-beacon1.png",
+      "observed": "First beacon lit on lower450 platform by rightward actual spell. Its wind column then enabled ascent to upper330 platform. Both guardian positions cleared with normal combat."
+    },
+    {
+      "name": "pulse-denial",
+      "result": "pass",
+      "evidence": "denial.png",
+      "observed": "From upper right stance facing left, waited for a new dark pulse, cast and contacted beacon2. HUD stayed1/2; toast says 달빛이 어두워요. Lavender 맥동 대기 label visible, no golden success ring or success burst."
+    },
+    {
+      "name": "second-height-direction-timing",
+      "result": "pass",
+      "evidence": "cover.png",
+      "observed": "Waited for visible bright pulse and cast left again. Actual contact lit beacon2, HUD2/2 별길 완성 and final gate opened. Moon scene, illustrated grass contact and two lit beacons inspected directly."
+    },
+    {
+      "name": "two-stage-victory",
+      "result": "pass",
+      "evidence": "win.png",
+      "observed": "Traversed to final gate and pressed Up. JOURNEY COMPLETE, 두 숲에 별길이 이어졌어요, HP75 and bothbeacons2/2."
+    },
+    {
+      "name": "fresh-restart",
+      "result": "pass",
+      "observed": "Clicked actual final first-adventure restart. Stage1 title, LV1, HP100, EXP0/70 and leaves0/3 restored."
+    },
+    {
+      "name": "mobile-and-errors",
+      "result": "pass",
+      "evidence": "mobile.png",
+      "observed": "Final reload at390x844: body width390 equals viewport390. Portrait/HUD/quest/touch controls visible. Captured pageerror/console.error empty, Resource Timing entries with HTTP>=400 empty."
+    }
+  ],
+  "separateMethodFailures": [
+    "Shared direct Stagehand MCP returned RPC client is closed. Official independently instantiated MCP succeeded.",
+    "IAB fallback unavailable: Browser is not available: iab. No tab/settings changes.",
+    "Initial session attempted a hidden retry button after player remained alive, then observed an unrequested first-stage return. Causal relationship not established. Investigation.json preserves exact evidence. Defensive legal-transition patch was separately tested and final corrected run did not repeat the reset.",
+    "An overlong PTY JSON command hit canonical line-buffer limit before any navigation (subsequent URL still about:blank). Replaced with short script-file requests to the same official MCP, preserving complete JS input in actions.jsonl."
+  ],
+  "limitations": [
+    "Second-stage retry was not browser-verified: attempted idle loss left the player alive. stage2-failed.png is explicitly not evidence of loss. Stage-entry HP/earned-growth restoration is covered by focused rules tests; first-stage actual defeat was observed separately before this corrected run.",
+    "Wrong order and wrong direction rejection are covered by deterministic focused rules checks, not additional final browser attempts. Actual winning route used required lower-right then upper-left order and height.",
+    "No audio listening, physical touch hardware, human creative approval or final0.12 packaged confirmResult verification is claimed.",
+    "No source, graph, release or other workers' files changed in this QA packet. Only examples/star-canopy/evidence/campaign owned."
+  ]
+}

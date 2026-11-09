@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-59e89fc6f87b4051b4f01351cc68295d",
+  "operation": "build",
+  "passed": true,
+  "status": "verified",
+  "phase": "verified",
+  "changes": [
+    {
+      "path": "game/art/warden-shield.webp",
+      "origin": "project-source",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f",
+        "byteCount": 15578
+      }
+    },
+    {
+      "path": "game/combat.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "0d548eb9f65f0ff07df030fb4334ddd28518f66979676e108e33f01a4169bdc1",
+        "byteCount": 12385
+      },
+      "to": {
+        "sha256": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6",
+        "byteCount": 16101
+      }
+    },
+    {
+      "path": "game/game.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "076e57814f9db1d9ccb65f1fedf3070ecd0e2a8bbd1453127850c9a479a50177",
+        "byteCount": 24718
+      },
+      "to": {
+        "sha256": "f835fb9b707c2bbe0fe733f384db5936591f96570cb0fc4368c5bbae58dfd988",
+        "byteCount": 31406
+      }
+    },
+    {
+      "path": "game/index.html",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "9fdbf7642b0176ab399067d8d11c9c2755c074c27e9668aadef590b7393c7d58",
+        "byteCount": 8365
+      },
+      "to": {
+        "sha256": "6400ba442b7d18d64193da639c29b6929d04771c4c9dfca51de31413cf335f23",
+        "byteCount": 9065
+      }
+    },
+    {
+      "path": "game/progression.mjs",
+      "origin": "project-source",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "3c34d535458bccd692829c82d28b31a31b616d25b1e05393e2e6a13a6cc90a6d",
+        "byteCount": 1333
+      }
+    },
+    {
+      "path": "game/scenery/lift.webp",
+      "origin": "project-source",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad",
+        "byteCount": 369568
+      }
+    },
+    {
+      "path": "genre.json",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "d2950938b15130f6e2e7b9fe58d9b353a748fd990398ea8d4c704199759c5f80",
+        "byteCount": 482
+      },
+      "to": {
+        "sha256": "a0dd0293d07002110d06269fd15c60495d792c05c8e89dc082a7fe5e6b01238a",
+        "byteCount": 1174
+      }
+    },
+    {
+      "path": "campaign.mjs",
+      "origin": "installed-runtime",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+        "byteCount": 2425
+      }
+    }
+  ],
+  "checks": {},
+  "base": "play/revision-2b",
+  "base_receipt": {
+    "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-2bfed40fbe5945d09682595015fd33e3:artifact:e434ab920f3e8a9a54429c9fa3192398d9243ed151737e00c433760939746dcb",
+    "sha256": "ca44f2f181d28abc5b25535f7691a73376f33863609bdbe4bcaca811431f990f",
+    "byteCount": 7888
+  },
+  "plugin": {
+    "version": "0.12.0",
+    "sha256": "7cdf274cc785ff1e4ea205ed5dd4497ca926f4e1acf207072fbac712f3d2cdff",
+    "byteCount": 508
+  },
+  "kind": "change",
+  "reason": "정면 방패를 돌아가는 사슬 승강장 추가 및 모바일 전투 안내 배치",
+  "output": "play/studio-release",
+  "new_receipt": {
+    "artifact": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-ba208bb4d32847c18e1c30a1e7709184:artifact:a5f89176d090f0547271863a514d3fb808fcc6b190fd15d62f0797e427b236e8",
+    "sha256": "afb516035107df5496fb7963e0ea2102288f9688e2c3906d48749f5a07d02283",
+    "byteCount": 10587
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "inputs": {
+      "passed": true
+    },
+    "candidate": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  }
+}

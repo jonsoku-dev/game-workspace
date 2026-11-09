@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "status": "passed",
+  "observations": [
+    {
+      "step": 0,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 1,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 2,
+      "action": "expect_text",
+      "selector": "#status",
+      "contains": "중계기 복구 성공",
+      "observed": {
+        "found": true,
+        "visible": true,
+        "matched": true,
+        "text": "중계기 복구 성공! 계속 버튼을 눌러 다음 장치를 살펴보세요."
+      }
+    },
+    {
+      "step": 3,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 4,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 5,
+      "action": "expect_text",
+      "selector": "#status",
+      "contains": "신호 오류",
+      "observed": {
+        "found": true,
+        "visible": true,
+        "matched": true,
+        "text": "◆ 신호 오류! 1번째 연결이 끊겼습니다. 이 단계에서 다시 시도하세요."
+      }
+    },
+    {
+      "step": 6,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 7,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 8,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 9,
+      "action": "click",
+      "completed": true
+    },
+    {
+      "step": 10,
+      "action": "expect_text",
+      "selector": "#status",
+      "contains": "공방 작업 완료",
+      "observed": {
+        "found": true,
+        "visible": true,
+        "matched": true,
+        "text": "공방 작업 완료! 두 장치를 모두 복구했습니다."
+      }
+    }
+  ],
+  "failed_assertion": null,
+  "browser_observed_hashes": {
+    "web-game.json": "1b2283caa00c2a6624a82367972b00546920f336404aaa9b3e911a04902e9583",
+    "campaign.mjs": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+    "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+    "game.mjs": "ad117a9589c7a2c8e4c8ea71c4780436f9b34b3e82efcd3de954c4e8134772ba",
+    "genre.json": "780ba38e3404cb6ab6e0bfc121e5856bdc2cb54eea3fa7eec3b698eaea088ecf",
+    "index.html": "8cfac05f2fcf74e78513a8fdbe0b3d71a93c36f673cf13dfe0f06250548f145c"
+  },
+  "driver": "stagehand-mcp"
+}

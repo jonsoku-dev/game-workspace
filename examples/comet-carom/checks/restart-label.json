@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "steps": [
+    { "expect_text": { "selector": ".notes > div", "contains": "R 처음부터" } }
+  ]
+}

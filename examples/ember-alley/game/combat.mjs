@@ -45,8 +45,15 @@ export const DODGE = {
 };
 export const COUNTER = { window: 1.35, damage: 18, stun: 0.65 };
 export const windupDuration = (e) =>
-  e.kind === "boss" ? 0.95 : e.kind === "elite" ? 0.72 : 0.66;
-export const hurtRadius = (e) => (e.kind === "boss" ? 40 : e.kind ? 22 : 14);
+  e.kind === "boss"
+    ? 0.95
+    : e.kind === "warden"
+      ? 0.9
+      : e.kind === "elite"
+        ? 0.72
+        : 0.66;
+export const hurtRadius = (e) =>
+  ["boss", "warden"].includes(e.kind) ? 40 : e.kind ? 22 : 14;
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 export function inStrike(a, b, move) {
   const dx = (b.x - a.x) * a.face;
@@ -60,7 +67,7 @@ export function strikeContact(a, b, move) {
   return {
     x:
       a.x + a.face * clamp((b.x - a.x) * a.face - hurtRadius(b), 0, move.reach),
-    y: b.y - (b.z || 0) - (b.kind === "boss" ? 94 : 58),
+    y: b.y - (b.z || 0) - (["boss", "warden"].includes(b.kind) ? 94 : 58),
   };
 }
 function enemyConnects(e, p) {
@@ -70,8 +77,32 @@ function enemyConnects(e, p) {
       ? Math.abs(p.x - e.x) < 70 && Math.abs(p.y - e.targetY) < 27
       : inStrike(e, p, { reach: 100, depth: 28 });
 }
-export function createGame() {
+export const shieldClosed = (e) =>
+  e.kind === "warden" && !e.dead && e.shieldBreak <= 0 && e.z <= 0;
+export const VENT_LANES = [
+  { top: 326, bottom: 366, name: "상단" },
+  { top: 377, bottom: 417, name: "중단" },
+  { top: 428, bottom: 468, name: "하단" },
+];
+export function ventState(g) {
+  if (g.dungeon !== 1) return null;
+  const cycle = Math.floor(g.stageTime / 3.6),
+    age = g.stageTime - cycle * 3.6,
+    lane = [0, 2, 1][cycle % 3];
   return {
+    ...VENT_LANES[lane],
+    cycle,
+    lane,
+    age,
+    phase: age < 0.95 ? "warning" : age < 1.65 ? "active" : "cooling",
+  };
+}
+export function createGame({ dungeon = 0, progress } = {}) {
+  const game = {
+    dungeon,
+    stageTime: 0,
+    ventAnnounced: -1,
+    ventHitCycle: -1,
     phase: "ready",
     room: 0,
     wave: 0,
@@ -120,37 +151,75 @@ export function createGame() {
       juggles: 0,
       chains: 0,
       rooms: 0,
+      blocks: 0,
+      shieldBreaks: 0,
+      ventHits: 0,
     },
   };
+  if (progress) {
+    for (const key of ["score", "kills", "best", "time"])
+      game[key] = progress[key];
+    game.stats = { ...progress.stats };
+    game.player.hp = Math.min(120, progress.player.hp + 32);
+  }
+  return game;
 }
 export function spawnWave(g) {
   const groups =
-    g.room === 0
+    g.dungeon === 1
       ? [
           [
-            ["thug", 650, 354],
-            ["thug", 780, 424],
+            ["warden", 490, 350],
+            ["warden", 755, 432],
           ],
-          [
-            ["thug", 645, 420],
-            ["elite", 815, 358],
-          ],
+          [["warden", 560, 390]],
         ]
-      : [
-          [
-            ["thug", 600, 350],
-            ["thug", 800, 425],
-          ],
-          [["boss", 770, 390]],
-        ];
+      : g.room === 0
+        ? [
+            [
+              ["thug", 650, 354],
+              ["thug", 780, 424],
+            ],
+            [
+              ["thug", 645, 420],
+              ["elite", 815, 358],
+            ],
+          ]
+        : [
+            [
+              ["thug", 600, 350],
+              ["thug", 800, 425],
+            ],
+            [["boss", 770, 390]],
+          ];
   g.enemies = groups[g.wave].map(([kind, x, y], id) => ({
-    id: `${g.room}-${g.wave}-${id}`,
+    id: `${g.dungeon}-${g.room}-${g.wave}-${id}`,
     kind,
     x,
     y,
-    face: -1,
-    hp: kind === "boss" ? 250 : kind === "elite" ? 90 : 55,
-    maxHp: kind === "boss" ? 250 : kind === "elite" ? 90 : 55,
+    face: kind === "warden" && g.wave === 1 ? 1 : -1,
+    hp:
+      kind === "warden"
+        ? g.wave === 1
+          ? 160
+          : 96
+        : kind === "boss"
+          ? 250
+          : kind === "elite"
+            ? 90
+            : 55,
+    maxHp:
+      kind === "warden"
+        ? g.wave === 1
+          ? 160
+          : 96
+        : kind === "boss"
+          ? 250
+          : kind === "elite"
+            ? 90
+            : 55,
+    shieldBreak: 0,
+    blockFlash: 0,
     state: "approach",
     age: 0,
     cooldown: 0.7 + id * 0.45,
@@ -165,9 +234,13 @@ export function spawnWave(g) {
   g.events.push({
     type: "wave",
     text:
-      g.room === 1 && g.wave === 1
-        ? "쇠사슬 감독관"
-        : "구역 봉쇄 · 적을 처치하세요",
+      g.dungeon === 1
+        ? g.wave === 0
+          ? "방패의 뒤로 · 증기 예고를 읽으세요"
+          : "승강장 수문장 · 정면 방패 주의"
+        : g.room === 1 && g.wave === 1
+          ? "쇠사슬 감독관"
+          : "구역 봉쇄 · 적을 처치하세요",
   });
 }
 export function begin(g) {
@@ -220,7 +293,8 @@ export function dash(g, dx = 0, dy = 0) {
   return true;
 }
 export function nextRoom(g) {
-  if (g.phase !== "playing" || !g.door || g.player.x < 820) return false;
+  if (g.phase !== "playing" || g.dungeon !== 0 || !g.door || g.player.x < 820)
+    return false;
   g.room++;
   g.wave = 0;
   g.door = false;
@@ -256,10 +330,30 @@ function hurtPlayer(g, e, damage) {
   }
 }
 function hitEnemy(g, e, m) {
-  const p = g.player,
-    air = e.z > 8,
+  const p = g.player;
+  const shield = shieldClosed(e),
+    flank = (p.x - e.x) * e.face < -8;
+  if (shield && !flank && !m.launch) {
+    e.blockFlash = 0.2;
+    g.stats.blocks++;
+    g.hitstop = 0.025;
+    const contact = strikeContact(p, e, m);
+    event(g, "block", "방패 · 뒤쪽 / K", contact.x, contact.y);
+    return;
+  }
+  if (shield) {
+    e.shieldBreak = 2.6;
+    g.stats.shieldBreaks++;
+    g.score += 100;
+    event(g, "break", "방패 개방!", e.x, e.y - 110);
+  }
+  const air = e.z > 8,
     counter = p.counterAttack,
-    damage = m.damage + (air ? 9 : 0) + (counter ? COUNTER.damage : 0),
+    damage =
+      m.damage +
+      (air ? 9 : 0) +
+      (counter ? COUNTER.damage : 0) +
+      (shield && flank ? 6 : 0),
     contact = strikeContact(p, e, m);
   e.hp = Math.max(0, e.hp - damage);
   e.hit = 0.19;
@@ -267,16 +361,19 @@ function hitEnemy(g, e, m) {
     ? COUNTER.stun
     : m.launch
       ? 0.75
-      : e.kind === "boss"
-        ? 0
-        : 0.36;
-  e.knockback = p.face * m.push * (e.kind === "boss" ? 0.3 : 1) * 12;
-  if (e.kind !== "boss" || m.launch) e.face = -p.face;
+      : e.kind === "warden"
+        ? 0.36
+        : e.kind === "boss"
+          ? 0
+          : 0.36;
+  e.knockback =
+    p.face * m.push * (["boss", "warden"].includes(e.kind) ? 0.3 : 1) * 12;
+  if (e.kind !== "warden" && (e.kind !== "boss" || m.launch)) e.face = -p.face;
   if (m.launch) {
     e.vz = 340;
     e.z = Math.max(e.z, 3);
   } else if (air) {
-    e.vz = e.kind === "boss" ? Math.min(e.vz, 0) : 220;
+    e.vz = ["boss", "warden"].includes(e.kind) ? Math.min(e.vz, 0) : 220;
     g.stats.juggles++;
   }
   if (e.kind !== "boss" || m.launch || air || counter) {
@@ -315,6 +412,7 @@ export function tick(g, dt, input = {}) {
     return;
   }
   g.time += dt;
+  g.stageTime += dt;
   g.shake = Math.max(0, g.shake - dt * 38);
   const p = g.player;
   for (const k of [
@@ -373,6 +471,8 @@ export function tick(g, dt, input = {}) {
       if (Math.abs(e.knockback) < 0.5) e.knockback = 0;
     }
     e.hit = Math.max(0, e.hit - dt);
+    e.shieldBreak = Math.max(0, (e.shieldBreak || 0) - dt);
+    e.blockFlash = Math.max(0, (e.blockFlash || 0) - dt);
     e.cooldown = Math.max(0, e.cooldown - dt);
     e.stun = Math.max(0, e.stun - dt);
     if (e.z > 0 || e.vz > 0) {
@@ -390,13 +490,16 @@ export function tick(g, dt, input = {}) {
     if (e.state === "approach") {
       const ex = p.x - e.x,
         ey = p.y - e.y;
-      e.face = ex >= 0 ? 1 : -1;
+      if (e.kind !== "warden") e.face = ex >= 0 ? 1 : -1;
       const speed = e.kind === "boss" ? 72 : e.kind === "elite" ? 104 : 89;
-      if (Math.abs(ex) > 67) e.x += Math.sign(ex) * speed * dt;
-      if (Math.abs(ey) > 8) e.y += Math.sign(ey) * speed * 0.66 * dt;
+      if (e.kind !== "warden") {
+        if (Math.abs(ex) > 67) e.x += Math.sign(ex) * speed * dt;
+        if (Math.abs(ey) > 8) e.y += Math.sign(ey) * speed * 0.66 * dt;
+      }
       if (
         e.cooldown <= 0 &&
-        Math.abs(ex) < (e.kind === "boss" ? 235 : 105) &&
+        Math.abs(ex) <
+          (e.kind === "warden" ? 190 : e.kind === "boss" ? 235 : 105) &&
         Math.abs(ey) < 48
       ) {
         e.state = "windup";
@@ -404,7 +507,13 @@ export function tick(g, dt, input = {}) {
         e.targetX = p.x;
         e.attackNo++;
         e.pattern =
-          e.kind === "boss" ? (e.attackNo % 2 ? "rush" : "slam") : "punch";
+          e.kind === "warden"
+            ? "slam"
+            : e.kind === "boss"
+              ? e.attackNo % 2
+                ? "rush"
+                : "slam"
+              : "punch";
         e.targetY = e.pattern === "slam" ? p.y : e.y;
         event(
           g,
@@ -447,7 +556,13 @@ export function tick(g, dt, input = {}) {
           hurtPlayer(
             g,
             e,
-            e.kind === "boss" ? 27 : e.kind === "elite" ? 18 : 12,
+            e.kind === "boss"
+              ? 27
+              : e.kind === "warden"
+                ? 20
+                : e.kind === "elite"
+                  ? 18
+                  : 12,
           );
         }
       }
@@ -464,6 +579,33 @@ export function tick(g, dt, input = {}) {
       e.cooldown = 0.5;
     }
   }
+  const vent = ventState(g);
+  if (vent) {
+    if (g.ventAnnounced !== vent.cycle) {
+      g.ventAnnounced = vent.cycle;
+      event(
+        g,
+        "ventwarn",
+        `${vent.name} 증기 예고 · 표시된 깊이에서 벗어나세요`,
+        480,
+        300,
+      );
+    }
+    if (
+      vent.phase === "active" &&
+      p.x >= 140 &&
+      p.x <= 900 &&
+      p.y >= vent.top &&
+      p.y <= vent.bottom &&
+      g.ventHitCycle !== vent.cycle &&
+      p.invuln <= 0
+    ) {
+      g.ventHitCycle = vent.cycle;
+      g.stats.ventHits++;
+      hurtPlayer(g, { face: 0 }, 16);
+    }
+  }
+  if (g.phase !== "playing") return;
   if (
     g.enemies.length &&
     g.enemies.every((e) => e.dead) &&
@@ -472,14 +614,20 @@ export function tick(g, dt, input = {}) {
     if (g.wave === 0) {
       g.wave = 1;
       spawnWave(g);
-    } else if (g.room === 0) {
+    } else if (g.dungeon === 0 && g.room === 0) {
       if (!g.door) {
         g.door = true;
         event(g, "door", "봉쇄 해제 · 오른쪽 문으로 이동", 840, 310);
       }
     } else {
       g.phase = "clear";
-      event(g, "win", "골목에 다시 새벽이 온다", 480, 250);
+      event(
+        g,
+        "win",
+        g.dungeon === 1 ? "승강장이 열린다" : "골목에 다시 새벽이 온다",
+        480,
+        250,
+      );
     }
   }
 }

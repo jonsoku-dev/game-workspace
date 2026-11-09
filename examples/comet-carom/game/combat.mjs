@@ -27,6 +27,9 @@ export function createGame() {
         art: "guardian-nova.png",
       },
     ],
+    encounter: "sanctum",
+    latches: [],
+    aperture: 0,
     foes: initialFoes(),
     hp: 180,
     maxHp: 180,
@@ -55,12 +58,20 @@ function event(g, type, x, y, text, detail = {}) {
 }
 function damage(g, e, n, detail = {}) {
   if (e.hp <= 0) return;
+  if (e.id === "core" && g.aperture <= 0) {
+    n = 0;
+    detail = { ...detail, kind: "sealed" };
+  }
   e.hp = Math.max(0, e.hp - n);
   g.combo++;
   g.totalHits++;
   if (detail.kind === "weak") g.weakHits++;
-  if (detail.kind === "guard") g.shieldBlocks++;
-  event(g, "hit", e.x, e.y, `−${n}`, { damage: n, target: e.id, ...detail });
+  if (detail.kind === "guard" || detail.kind === "sealed") g.shieldBlocks++;
+  event(g, "hit", e.x, e.y, n === 0 ? "핵 봉인" : `−${n}`, {
+    ...detail,
+    damage: n,
+    target: e.id,
+  });
 }
 function impactProfile(foe, nx, ny, shot) {
   const bank = shot.banks > 0,
@@ -71,7 +82,7 @@ function impactProfile(foe, nx, ny, shot) {
   );
   const weak = foe.id === "boss" && Math.abs(difference) <= WEAK_ARC;
   const guard = foe.id === "boss" && !weak;
-  let damage = guard ? 8 : weak ? 52 : 26;
+  let damage = foe.id === "core" ? 42 : guard ? 8 : weak ? 52 : 26;
   damage += bank ? (guard ? 18 : weak ? 16 : 10) : 0;
   damage += linked ? (guard ? 18 : weak ? 16 : 8) : 0;
   return {
@@ -100,6 +111,7 @@ export function launch(g, angle = -90, power = 85, skill = false) {
     contacts: new Set(),
     skill: charged,
   };
+  for (const latch of g.latches) latch.lit = false;
   g.phase = "flight";
   g.combo = 0;
   g.last = charged
@@ -143,12 +155,16 @@ function finish(g) {
     banks: g.shot.banks,
     assists: g.shot.assists.size,
     hits: g.combo,
+    latches: g.latches.filter((latch) => latch.lit).length,
   };
   g.shot = null;
   if (g.foes.every((e) => e.hp <= 0)) {
-    if (g.wave === 2) {
+    if (g.wave === 2 || g.encounter === "twin-observatory") {
       g.phase = "won";
-      g.result = "월식이 걷혔습니다";
+      g.result =
+        g.encounter === "twin-observatory"
+          ? "쌍성의 궤도가 이어졌습니다"
+          : "월식이 걷혔습니다";
       g.last = g.result;
       event(g, "win", 360, 330, "궤도 수복");
       return;
@@ -181,7 +197,7 @@ function finish(g) {
           e.weakAngle = (e.weakAngle + Math.PI / 2) % (Math.PI * 2);
         e.timer--;
         if (e.timer === 0) {
-          hurt += e.id === "boss" ? 38 : 17;
+          hurt += e.id === "core" ? 24 : e.id === "boss" ? 38 : 17;
           e.timer = e.period;
           event(g, "enemy", e.x, e.y, "잔영 포격");
         }
@@ -198,6 +214,21 @@ function finish(g) {
       event(g, "lose", 360, 330, "다시 별을 잇다");
       return;
     }
+  }
+  if (
+    g.encounter === "twin-observatory" &&
+    g.aperture === 0 &&
+    g.latches.some((l) => l.lit)
+  ) {
+    g.last = "연결 끊김 · 두 고리를 같은 한 발로 이어야 합니다";
+    event(g, "chainbreak", 360, 320, "연결 끊김 · 한 발에 두 고리");
+  }
+  if (g.aperture > 0) {
+    g.aperture--;
+    if (g.phase !== "lost")
+      g.last = g.aperture
+        ? "쌍성 동기화 · 다음 발사까지 관측핵이 열립니다"
+        : "노출 종료 · 한 발에 두 고리를 다시 켜세요";
   }
   g.turn++;
   g.charge = Math.min(3, g.charge + 1);
@@ -228,6 +259,27 @@ export function step(g, dt = 1 / 120) {
         s[v] = -Math.abs(s[v]);
         s.banks++;
         event(g, "bounce", h.x, h.y, "", { axis });
+      }
+    }
+    for (const latch of g.latches) {
+      if (
+        !latch.lit &&
+        (s.banks > 0 || s.assists.size > 0) &&
+        Math.hypot(h.x - latch.x, h.y - latch.y) <= R + latch.r
+      ) {
+        latch.lit = true;
+        event(
+          g,
+          "latch",
+          latch.x,
+          latch.y,
+          `${g.latches.filter((item) => item.lit).length === 1 ? "첫 고리" : "둘째 고리"} · ${latch.name}`,
+          { latch: latch.id },
+        );
+        if (g.latches.every((item) => item.lit)) {
+          g.aperture = 2;
+          event(g, "open", 360, 180, "쌍성 동기화 · 핵 노출");
+        }
       }
     }
     for (const e of g.foes) {
@@ -303,7 +355,8 @@ export function previewShot(g, angle, power, skill = false) {
       { x: copy.heroes[copy.selected].x, y: copy.heroes[copy.selected].y },
     ],
     impacts = [],
-    assists = [];
+    assists = [],
+    latches = [];
   let firstTick = -1;
   copy.events = [];
   for (let tick = 0; tick < 576 && copy.phase === "flight"; tick++) {
@@ -317,8 +370,48 @@ export function previewShot(g, angle, power, skill = false) {
         if (firstTick < 0) firstTick = tick;
       }
       if (e.type === "assist") assists.push(e);
+      if (e.type === "latch") latches.push(e);
     }
-    if (firstTick >= 0 && tick - firstTick >= 26) break;
+    if (
+      firstTick >= 0 &&
+      tick - firstTick >= 26 &&
+      g.encounter !== "twin-observatory"
+    )
+      break;
   }
-  return { points, impacts, assists };
+  return { points, impacts, assists, latches, opensCore: latches.length === 2 };
+}
+
+export function enterStage(previous, id) {
+  if (id === "sanctum") return createGame();
+  if (id !== "twin-observatory") throw new Error(`Unknown encounter: ${id}`);
+  const g = structuredClone(previous);
+  Object.assign(g, {
+    encounter: id,
+    wave: 1,
+    turn: 1,
+    hp: g.maxHp,
+    selected: 1,
+    phase: "aim",
+    shot: null,
+    combo: 0,
+    result: null,
+    aperture: 0,
+    events: [],
+    lastShot: null,
+    last: "벽 반사로 두 고리를 한 발에 켜세요 · 관측핵은 다음 발사까지 노출됩니다",
+  });
+  [
+    [180, 650],
+    [540, 320],
+    [360, 500],
+  ].forEach(([x, y], i) => Object.assign(g.heroes[i], { x, y }));
+  g.latches = [
+    { id: "dawn", name: "새벽 고리", x: 260, y: 320, r: 32, lit: false },
+    { id: "dusk", name: "저녁 고리", x: 460, y: 320, r: 32, lit: false },
+  ];
+  g.foes = [
+    { id: "core", x: 360, y: 160, r: 63, hp: 84, max: 84, timer: 2, period: 2 },
+  ];
+  return g;
 }

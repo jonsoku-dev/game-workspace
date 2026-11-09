@@ -1,0 +1,26 @@
+{
+  "installed": "game-studio 0.11.0",
+  "init_project": "new temporary project",
+  "verification": "Fresh CLI init and export using enabled plugin files; real in-app browser inputs",
+  "observed": [
+    "Stage 1 ○ then ◆ reaches between, waiting for explicit continue",
+    "Stage 2 displays ◆ ○ ▲. Leading ◆ fails; retry stays on stage 2",
+    "After retry ▲ ○ ◆ completes both devices"
+  ],
+  "installed_files_checked": [
+    ".agents/skills/game-studio/SKILL.md",
+    "PLAYBOOK.md",
+    "engines/web/campaign.mjs",
+    "tools/web_game.py",
+    "starter/campaign/game/game.mjs"
+  ],
+  "limits": [
+    "No audio listening or hardware touch assessment"
+  ],
+  "studio_suite": {
+    "ran": 145,
+    "skipped": 0,
+    "failed": 0,
+    "offline_install_fixture": "prepared wheelhouse and npm cache enabled"
+  }
+}

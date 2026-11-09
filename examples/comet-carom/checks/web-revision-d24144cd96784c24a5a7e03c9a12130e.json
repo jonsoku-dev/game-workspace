@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-d24144cd96784c24a5a7e03c9a12130e",
+  "operation": "build",
+  "passed": true,
+  "status": "verified",
+  "phase": "verified",
+  "changes": [
+    {
+      "path": "game/game.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "a5400f61e8021dc21fc2ed05bf2b65057759a51819471a6d7d4634bc4dff2e2e",
+        "byteCount": 25207
+      },
+      "to": {
+        "sha256": "cef6e6cb5a5d429e5ea92d33567018fee6307c65da46f20fb2c6672146dbc027",
+        "byteCount": 25323
+      }
+    },
+    {
+      "path": "game/index.html",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "468f00e7bfefb88a29d7663d64756201fa5f5bfd550d923eaf4e11d0153a952a",
+        "byteCount": 6347
+      },
+      "to": {
+        "sha256": "ac692f2b0dbb3dd8ad43de78d97d8ad04618619b3fbf5832e298d16f9239c96d",
+        "byteCount": 6350
+      }
+    },
+    {
+      "path": "campaign.mjs",
+      "origin": "installed-runtime",
+      "kind": "modify",
+      "from": {
+        "sha256": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635",
+        "byteCount": 2067
+      },
+      "to": {
+        "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+        "byteCount": 2425
+      }
+    }
+  ],
+  "checks": {
+    "before": {
+      "passed": false,
+      "status": "assertion_failed",
+      "observations": [
+        {
+          "step": 0,
+          "action": "expect_text",
+          "selector": ".notes > div",
+          "contains": "R 처음부터",
+          "observed": {
+            "found": true,
+            "visible": true,
+            "matched": false,
+            "text": "123 수호자 ←→ 각도\n↑↓ 위력 S 필살기 R 재도전"
+          }
+        }
+      ],
+      "failed_assertion": {
+        "step": 0,
+        "action": "expect_text",
+        "selector": ".notes > div",
+        "contains": "R 처음부터",
+        "observed": {
+          "found": true,
+          "visible": true,
+          "matched": false,
+          "text": "123 수호자 ←→ 각도\n↑↓ 위력 S 필살기 R 재도전"
+        }
+      },
+      "browser_observed_hashes": {
+        "web-game.json": "8b3d28dd2f9a4e7cdc883cd53a42b9b8dc56b5e7506fd1a2fb36cc060cd42cf6",
+        "art/boss-orb.png": "bf5c3ad0bd7f7f444a9160ad0599628c6367f899940ebbc73d30fa0df6c7a0f2",
+        "art/foe-orb.png": "cb60eba508a9f7d69c4cb2c0a55d2e9b620805fe58fc8b48d73ea5d85a1577b6",
+        "art/guardian-moon.png": "ccf4289dac74fe022fc0c714430b139b69194d55820cfe62165f3df36bdd3837",
+        "art/guardian-nova.png": "af9509d34df573222e2fc063cbb6daa810df9db783e954a422b428ba652d4e53",
+        "art/guardian-sun.png": "2722e6af28239f3b6ef3817397adb7f34dc3018b68429dc107b7456f489cd215",
+        "art/guardians.webp": "1e8c0610a0fb79c2dce5c81313c546c1d6c4575c418f0b0c4b0ef6c68a8b18f1",
+        "art/sanctum.webp": "7eff68e7666ea7fef3be6d429b94a4c7883e262d4d00c3133a65faeaa59d84ae",
+        "art/twin-observatory.webp": "fc9cac64e7df8531d4055649d9a20d83f10957126c9a0fd948ebd2dc1f9c1ce1",
+        "campaign-flow.mjs": "4e8562baa50786b338bf1fb4422624543817174590f099f4277ab4e33a3fcc17",
+        "campaign.mjs": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635",
+        "combat.mjs": "c68ae15061059fd2f72a52ec9b387cb0ae89edb5848125063e02b03132409949",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "game.mjs": "a5400f61e8021dc21fc2ed05bf2b65057759a51819471a6d7d4634bc4dff2e2e",
+        "genre.json": "bf68209a199d38d83157ba770b6d50d6f0e7a1b7cf8868bfce34d379fbd03acf",
+        "index.html": "468f00e7bfefb88a29d7663d64756201fa5f5bfd550d923eaf4e11d0153a952a",
+        "style.css": "b47edbf05da6a12d9f25dcfe787a33fe1ef5e7efb52065ee47b691688bbd452d"
+      },
+      "driver": "stagehand-mcp"
+    },
+    "after": {
+      "passed": true,
+      "status": "passed",
+      "observations": [
+        {
+          "step": 0,
+          "action": "expect_text",
+          "selector": ".notes > div",
+          "contains": "R 처음부터",
+          "observed": {
+            "found": true,
+            "visible": true,
+            "matched": true,
+            "text": "123 수호자 ←→ 각도\n↑↓ 위력 S 필살기 R 처음부터"
+          }
+        }
+      ],
+      "failed_assertion": null,
+      "browser_observed_hashes": {
+        "web-game.json": "8cc4b881b30d1cbdeb175aeb28619883fe9f9c5608e6fdb54ab7c211445badfc",
+        "art/boss-orb.png": "bf5c3ad0bd7f7f444a9160ad0599628c6367f899940ebbc73d30fa0df6c7a0f2",
+        "art/foe-orb.png": "cb60eba508a9f7d69c4cb2c0a55d2e9b620805fe58fc8b48d73ea5d85a1577b6",
+        "art/guardian-moon.png": "ccf4289dac74fe022fc0c714430b139b69194d55820cfe62165f3df36bdd3837",
+        "art/guardian-nova.png": "af9509d34df573222e2fc063cbb6daa810df9db783e954a422b428ba652d4e53",
+        "art/guardian-sun.png": "2722e6af28239f3b6ef3817397adb7f34dc3018b68429dc107b7456f489cd215",
+        "art/guardians.webp": "1e8c0610a0fb79c2dce5c81313c546c1d6c4575c418f0b0c4b0ef6c68a8b18f1",
+        "art/sanctum.webp": "7eff68e7666ea7fef3be6d429b94a4c7883e262d4d00c3133a65faeaa59d84ae",
+        "art/twin-observatory.webp": "fc9cac64e7df8531d4055649d9a20d83f10957126c9a0fd948ebd2dc1f9c1ce1",
+        "campaign-flow.mjs": "4e8562baa50786b338bf1fb4422624543817174590f099f4277ab4e33a3fcc17",
+        "campaign.mjs": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+        "combat.mjs": "c68ae15061059fd2f72a52ec9b387cb0ae89edb5848125063e02b03132409949",
+        "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+        "game.mjs": "cef6e6cb5a5d429e5ea92d33567018fee6307c65da46f20fb2c6672146dbc027",
+        "genre.json": "bf68209a199d38d83157ba770b6d50d6f0e7a1b7cf8868bfce34d379fbd03acf",
+        "index.html": "ac692f2b0dbb3dd8ad43de78d97d8ad04618619b3fbf5832e298d16f9239c96d",
+        "style.css": "b47edbf05da6a12d9f25dcfe787a33fe1ef5e7efb52065ee47b691688bbd452d"
+      },
+      "driver": "stagehand-mcp"
+    }
+  },
+  "base": "play/campaign",
+  "base_receipt": {
+    "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1:artifact:b04920ab1ff079f246e18587236963de1f5bafeee75ab4267b2622a9e28ee60c",
+    "sha256": "8b3d28dd2f9a4e7cdc883cd53a42b9b8dc56b5e7506fd1a2fb36cc060cd42cf6",
+    "byteCount": 9560
+  },
+  "plugin": {
+    "version": "0.12.0",
+    "sha256": "7cdf274cc785ff1e4ea205ed5dd4497ca926f4e1acf207072fbac712f3d2cdff",
+    "byteCount": 508
+  },
+  "kind": "bugfix",
+  "reason": "R 키가 전체 캠페인을 다시 시작하지만 이전판은 현재 판 재도전으로 안내했다. 두 번째 판 단서도 그 판의 두 고리 공략을 설명한다.",
+  "output": "play/studio-release",
+  "case": {
+    "path": "checks/restart-label.json",
+    "sha256": "dcdb7243c4e906734a58fed14be37951463b5e8236988130f7f6942764da4c6b",
+    "byteCount": 128
+  },
+  "new_receipt": {
+    "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-5ec7c311847d4df98c719f7f78c4d5f4:artifact:a5f89176d090f0547271863a514d3fb808fcc6b190fd15d62f0797e427b236e8",
+    "sha256": "8cc4b881b30d1cbdeb175aeb28619883fe9f9c5608e6fdb54ab7c211445badfc",
+    "byteCount": 9566
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "inputs": {
+      "passed": true
+    },
+    "candidate": {
+      "passed": true
+    },
+    "case": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  }
+}

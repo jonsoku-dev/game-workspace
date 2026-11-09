@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:53045/star-canopy-release/",
+  "method": "Read-only final HTTP byte pins; actual browser flow documented separately",
+  "files": {
+    "game.mjs": {
+      "status": 200,
+      "bytes": 32797,
+      "sha256": "777eda202fdfc2fc7344e81f7cd7aa8ffad4744b6d298918e461ad63fa6f2118",
+      "containsConfirmResult": true
+    },
+    "campaign.mjs": {
+      "status": 200,
+      "bytes": 2425,
+      "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "containsConfirmResult": true
+    },
+    "rules.mjs": {
+      "status": 200,
+      "bytes": 2896,
+      "sha256": "636da4e13a6c52b2300d5c788f5934be66f244d1c6dec55370ef5a87a05f50fd"
+    },
+    "feedback.mjs": {
+      "status": 200,
+      "bytes": 6973,
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33"
+    },
+    "scenery/moon-grove.webp": {
+      "status": 200,
+      "bytes": 234570,
+      "sha256": "3e2d011ed84476d28537c4f207fbea0cc18727bcf0d351aa5405c0b1e1c18b23"
+    }
+  },
+  "installedCampaign": {
+    "path": "/Users/jongseoklee/.codex/plugins/cache/game-studio/game-studio/0.12.0/engines/web/campaign.mjs",
+    "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+    "matchesServed": true
+  }
+}

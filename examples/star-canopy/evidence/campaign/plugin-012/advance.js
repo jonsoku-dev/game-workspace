@@ -1,0 +1,5 @@
+async function resume(){await page.bringToFront();if((await page.locator('#pause').innerText()).includes('계속'))await page.locator('#pause').click();}
+await resume();await page.keyboard.press('ArrowRight',{delay:5300});await resume();await page.keyboard.press('ArrowLeft',{delay:35});await resume();await page.getByRole('button',{name:'별꽃 마법',exact:true}).click();await page.waitForTimeout(1200);await resume();await page.keyboard.press('ArrowUp',{delay:40});
+const modal=await page.locator('#modal').isVisible();
+if(modal){await page.screenshot({path:'/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/star-canopy/evidence/campaign/plugin-012/stage1-clear.png'});await page.locator('#restart').click({clickCount:2});await page.waitForTimeout(250);}
+const result={modal,stage:await page.locator('#regionTitle').innerText(),hud:await page.locator('.hud').innerText(),quest:await page.locator('#quest').innerText(),spell:await page.locator('#spell').innerText()};if((await page.locator('#pause').innerText()).includes('쉬기'))await page.locator('#pause').click();return result;

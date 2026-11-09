@@ -16,7 +16,8 @@
           ✧ <span>별잎 고원<small>STARLEAF HIGHLANDS</small></span>
         </div>
         <div class="region">
-          <span id="distance">01 / 03</span> <span>바람이 머무는 길</span>
+          <span id="distance">01 / 03</span>
+          <span id="regionTitle">바람이 머무는 길</span>
         </div>
         <button id="sound" aria-pressed="false">♫ 소리 켜기</button
         ><button id="pause">Ⅱ 쉬기</button>
@@ -24,6 +25,7 @@
       <section class="stage" aria-label="별잎 고원 게임">
         <canvas
           id="field"
+          tabindex="0"
           width="1200"
           height="680"
           aria-label="숲의 고원. 화살표 이동, Space 점프, J 공격, K 별꽃 마법"
@@ -40,19 +42,29 @@
           </div>
         </div>
         <aside class="quest">
-          <small>루나의 부탁</small><b>바람꽃의 약속</b
+          <small>루나의 부탁</small><b id="questTitle">바람꽃의 약속</b
+          ><span id="stageObjective"></span
           ><span id="quest">별잎 되찾기 0 / 3</span
-          ><span id="spell">두 마리 처치 → 별꽃 개방</span>
+          ><span id="spell">두 마리 처치 → 별꽃 개방</span
+          ><span id="pulseStatus" role="status" aria-live="polite"></span>
         </aside>
         <div id="toast" role="status" aria-live="polite">
           별잎 세 장을 찾아 바람꽃을 깨워 주세요.
         </div>
-        <div id="modal" hidden>
+        <div
+          id="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="ending"
+          aria-describedby="endingText"
+          hidden
+        >
           <div>
             <small id="endingTag"></small>
             <h1 id="ending"></h1>
             <p id="endingText"></p>
-            <button id="restart">다시 모험하기 ↗</button>
+            <button id="restart">다시 모험하기 ↗</button
+            ><button id="fresh">첫 구역부터 다시</button>
           </div>
         </div>
       </section>
@@ -82,7 +94,7 @@
         </div>
       </nav>
       <p class="note">
-        <span>P 쉬기 · R 처음부터</span>
+        <span>P 쉬기 · R 첫 구역부터</span>
       </p>
     </main>
     <script type="module" src="./game.mjs"></script>

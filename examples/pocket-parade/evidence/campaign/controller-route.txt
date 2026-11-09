@@ -1,0 +1,1 @@
+PASS production input handlers with DOM fixture and real shared campaign controller: rescue -> explicit next -> seam burst -> timed failure -> same-stage fair retry -> two-site win -> fresh restart. Fixture clock/DOM are not browser evidence.

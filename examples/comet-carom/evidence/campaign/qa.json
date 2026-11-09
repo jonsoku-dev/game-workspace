@@ -1,0 +1,6272 @@
+{
+  "url": "http://127.0.0.1:53045/comet-carom/",
+  "passed": true,
+  "stage1": [
+    {
+      "input": {
+        "unit": 0,
+        "angle": -89,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 190,
+            "y": 670,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 530,
+            "y": 670,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 550,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 68,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 68,
+            "max": 68,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 80,
+            "max": 80,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 1,
+        "wave": 1,
+        "charge": 0,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 0,
+        "bounces": 0,
+        "assists": 0,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": null,
+        "events": [],
+        "last": "구슬을 뒤로 당겨 궤도를 만드세요.",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 135.37902549150436,
+            "y": 587.7660548336141,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 530,
+            "y": 670,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 550,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 42,
+            "max": 68,
+            "timer": 1,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 68,
+            "max": 68,
+            "timer": 2,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 80,
+            "max": 80,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 2,
+        "wave": 1,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 1,
+        "bounces": 1,
+        "assists": 0,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": -127,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 135.37902549150436,
+            "y": 587.7660548336141,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 530,
+            "y": 670,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 550,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 42,
+            "max": 68,
+            "timer": 1,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 68,
+            "max": 68,
+            "timer": 2,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 80,
+            "max": 80,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 2,
+        "wave": 1,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 1,
+        "bounces": 1,
+        "assists": 0,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 135.37902549150436,
+            "y": 587.7660548336141,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 550,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 24,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 0,
+            "max": 80,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 163,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 5,
+        "totalHits": 6,
+        "bounces": 2,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 2,
+          "hits": 5,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −17",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 2,
+        "angle": -117,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 135.37902549150436,
+            "y": 587.7660548336141,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 550,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 24,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 1,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 0,
+            "max": 80,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 163,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 5,
+        "totalHits": 6,
+        "bounces": 2,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 2,
+          "hits": 5,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −17",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 135.37902549150436,
+            "y": 587.7660548336141,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 531.0760160265916,
+            "y": 567.2726117922199,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 0,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 0,
+            "max": 80,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 146,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 7,
+        "bounces": 3,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −17",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": -43,
+        "power": 100,
+        "skill": true
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 135.37902549150436,
+            "y": 587.7660548336141,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 531.0760160265916,
+            "y": 567.2726117922199,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "a",
+            "x": 200,
+            "y": 230,
+            "r": 42,
+            "hp": 0,
+            "max": 68,
+            "timer": 2,
+            "period": 2
+          },
+          {
+            "id": "b",
+            "x": 520,
+            "y": 230,
+            "r": 42,
+            "hp": 50,
+            "max": 68,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "c",
+            "x": 360,
+            "y": 390,
+            "r": 46,
+            "hp": 0,
+            "max": 80,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 146,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 7,
+        "bounces": 3,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −17",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 465.92558636546806,
+            "y": 279.4091390791052,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 531.0760160265916,
+            "y": 567.2726117922199,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 200,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          }
+        ],
+        "hp": 176,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 5,
+        "wave": 2,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 9,
+        "bounces": 3,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 2,
+          "latches": 0
+        },
+        "events": [],
+        "last": "월식의 심장 · 금빛 틈을 노리세요. 벽·연계로 방어 관통",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": -24,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 465.92558636546806,
+            "y": 279.4091390791052,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 118.98020152146938,
+            "y": 352.3856748086487,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 531.0760160265916,
+            "y": 567.2726117922199,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 200,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 52,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          }
+        ],
+        "hp": 176,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 5,
+        "wave": 2,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 9,
+        "bounces": 3,
+        "assists": 2,
+        "weakHits": 0,
+        "shieldBlocks": 0,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 2,
+          "latches": 0
+        },
+        "events": [],
+        "last": "월식의 심장 · 금빛 틈을 노리세요. 벽·연계로 방어 관통",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 465.92558636546806,
+            "y": 279.4091390791052,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 531.0760160265916,
+            "y": 567.2726117922199,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 174,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 34,
+            "max": 52,
+            "timer": 2,
+            "period": 3
+          }
+        ],
+        "hp": 176,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 6,
+        "wave": 2,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 5,
+        "totalHits": 14,
+        "bounces": 5,
+        "assists": 3,
+        "weakHits": 0,
+        "shieldBlocks": 1,
+        "lastShot": {
+          "banks": 2,
+          "assists": 1,
+          "hits": 5,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 2,
+        "angle": -118,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 465.92558636546806,
+            "y": 279.4091390791052,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 531.0760160265916,
+            "y": 567.2726117922199,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 174,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 34,
+            "max": 52,
+            "timer": 2,
+            "period": 3
+          }
+        ],
+        "hp": 176,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 6,
+        "wave": 2,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 5,
+        "totalHits": 14,
+        "bounces": 5,
+        "assists": 3,
+        "weakHits": 0,
+        "shieldBlocks": 1,
+        "lastShot": {
+          "banks": 2,
+          "assists": 1,
+          "hits": 5,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 465.92558636546806,
+            "y": 279.4091390791052,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 566.8348407605571,
+            "y": 539.7784239154015,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 148,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 4.71238898038469
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 14,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 7,
+        "wave": 2,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 16,
+        "bounces": 7,
+        "assists": 4,
+        "weakHits": 0,
+        "shieldBlocks": 2,
+        "lastShot": {
+          "banks": 2,
+          "assists": 1,
+          "hits": 2,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −38",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": -162,
+        "power": 100,
+        "skill": true
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 465.92558636546806,
+            "y": 279.4091390791052,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 566.8348407605571,
+            "y": 539.7784239154015,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 148,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 4.71238898038469
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 14,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 7,
+        "wave": 2,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 16,
+        "bounces": 7,
+        "assists": 4,
+        "weakHits": 0,
+        "shieldBlocks": 2,
+        "lastShot": {
+          "banks": 2,
+          "assists": 1,
+          "hits": 2,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −38",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 208.3250703698223,
+            "y": 604.9319107865026,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 566.8348407605571,
+            "y": 539.7784239154015,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 104,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 0
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 8,
+        "wave": 2,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 3,
+        "totalHits": 19,
+        "bounces": 9,
+        "assists": 4,
+        "weakHits": 0,
+        "shieldBlocks": 3,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 3,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": -115,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 208.3250703698223,
+            "y": 604.9319107865026,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 529.1570177249592,
+            "y": 615.3212456090032,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 566.8348407605571,
+            "y": 539.7784239154015,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 104,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 0
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 142,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 8,
+        "wave": 2,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 3,
+        "totalHits": 19,
+        "bounces": 9,
+        "assists": 4,
+        "weakHits": 0,
+        "shieldBlocks": 3,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 3,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 208.3250703698223,
+            "y": 604.9319107865026,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 566.8348407605571,
+            "y": 539.7784239154015,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 96,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 9,
+        "wave": 2,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 20,
+        "bounces": 11,
+        "assists": 4,
+        "weakHits": 0,
+        "shieldBlocks": 4,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −38",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 2,
+        "angle": -125,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 208.3250703698223,
+            "y": 604.9319107865026,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 566.8348407605571,
+            "y": 539.7784239154015,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 96,
+            "max": 200,
+            "timer": 2,
+            "period": 2,
+            "weakAngle": 1.5707963267948966
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 9,
+        "wave": 2,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 20,
+        "bounces": 11,
+        "assists": 4,
+        "weakHits": 0,
+        "shieldBlocks": 4,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −38",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 208.3250703698223,
+            "y": 604.9319107865026,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 460.1374293187374,
+            "y": 599.2052870973364,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 44,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 10,
+        "wave": 2,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 21,
+        "bounces": 13,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 4,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": -67,
+        "power": 100,
+        "skill": true
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 208.3250703698223,
+            "y": 604.9319107865026,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 460.1374293187374,
+            "y": 599.2052870973364,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 44,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 10,
+        "wave": 2,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 21,
+        "bounces": 13,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 4,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 0,
+          "phase": "playing",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 320.33702709854344,
+            "y": 341.3875779592025,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 671.69320795906,
+            "y": 536.3297028481383,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 460.1374293187374,
+            "y": 599.2052870973364,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "sanctum",
+        "latches": [],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "boss",
+            "x": 360,
+            "y": 245,
+            "r": 72,
+            "hp": 0,
+            "max": 200,
+            "timer": 1,
+            "period": 2,
+            "weakAngle": 3.141592653589793
+          },
+          {
+            "id": "d",
+            "x": 180,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 3,
+            "period": 3
+          },
+          {
+            "id": "e",
+            "x": 540,
+            "y": 420,
+            "r": 38,
+            "hp": 0,
+            "max": 52,
+            "timer": 1,
+            "period": 3
+          }
+        ],
+        "hp": 104,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 10,
+        "wave": 2,
+        "charge": 0,
+        "phase": "won",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 23,
+        "bounces": 13,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 2,
+          "latches": 0
+        },
+        "events": [],
+        "last": "월식이 걷혔습니다",
+        "result": "월식이 걷혔습니다",
+        "campaign": {
+          "index": 0,
+          "phase": "between",
+          "stage": {
+            "id": "sanctum",
+            "title": "월식의 성소",
+            "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+            "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+          }
+        }
+      }
+    }
+  ],
+  "misses": [
+    {
+      "input": {
+        "unit": 2,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 650,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 244.74739070770417,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 2,
+        "wave": 1,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 14,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 1
+        },
+        "events": [],
+        "last": "연결 끊김 · 두 고리를 같은 한 발로 이어야 합니다",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 650,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 244.74739070770417,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963033,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 15,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 650,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 244.74739070770417,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963033,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 15,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 244.74739070770417,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963033,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 16,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 244.74739070770417,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963033,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 16,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114008,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963033,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 132,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 5,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 16,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 2,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114008,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963033,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 132,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 5,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 16,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114008,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000034,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 132,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 6,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 17,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114008,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000034,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 132,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 6,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 17,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114008,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000034,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 108,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 7,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 18,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114008,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000034,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 108,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 7,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 18,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000034,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 108,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 8,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 19,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 2,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000034,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 108,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 8,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 19,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963031,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 84,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 9,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 20,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963031,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 84,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 9,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 20,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963031,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 84,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 10,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 21,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963031,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 84,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 10,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 21,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114007,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963031,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 60,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 11,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 22,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 2,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114007,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963031,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 60,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 11,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 22,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114007,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000057,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 60,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 12,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 23,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114007,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000057,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 60,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 12,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 23,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114007,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000057,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 36,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 13,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 24,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114007,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000057,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 36,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 13,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 24,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000057,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 36,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 14,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 25,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 2,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500.00000000000057,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 36,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 14,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 25,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963028,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 12,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 15,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 26,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 649.9999999999999,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963028,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 12,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 15,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 26,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적의 반격 · 파티 체력 −24",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963028,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 12,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 16,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 27,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": 90,
+        "power": 0,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 669.1998528849027,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963028,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 12,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 16,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 27,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "적이 기운을 모읍니다 · 다음 궤도를 선택하세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 601.9736217963035,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 626.162450435874,
+            "y": 582.7737689114007,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 751.9736217963028,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 0,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 16,
+        "wave": 1,
+        "charge": 3,
+        "phase": "lost",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 28,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 0,
+          "hits": 0,
+          "latches": 0
+        },
+        "events": [],
+        "last": "궤도가 흩어졌습니다",
+        "result": "궤도가 흩어졌습니다",
+        "campaign": {
+          "index": 1,
+          "phase": "failed",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    }
+  ],
+  "stage2": [
+    {
+      "input": {
+        "unit": 1,
+        "angle": 0,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 650,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 540,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 1,
+        "wave": 1,
+        "charge": 0,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 13,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": null,
+        "events": [],
+        "last": "벽 반사로 두 고리를 한 발에 켜세요 · 관측핵은 다음 발사까지 노출됩니다",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 650,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 358.7903294586212,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          }
+        ],
+        "aperture": 1,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 2,
+        "wave": 1,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 15,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 0,
+          "latches": 2
+        },
+        "events": [],
+        "last": "쌍성 동기화 · 다음 발사까지 관측핵이 열립니다",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": -70,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 180,
+            "y": 650,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 358.7903294586212,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          }
+        ],
+        "aperture": 1,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 84,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 180,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 2,
+        "wave": 1,
+        "charge": 1,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 23,
+        "bounces": 15,
+        "assists": 4,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 0,
+          "latches": 2
+        },
+        "events": [],
+        "last": "쌍성 동기화 · 다음 발사까지 관측핵이 열립니다",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 85.63528801906195,
+            "y": 746.1518797232202,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 358.7903294586212,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 14,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 25,
+        "bounces": 16,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 1,
+          "hits": 2,
+          "latches": 1
+        },
+        "events": [],
+        "last": "노출 종료 · 한 발에 두 고리를 다시 켜세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 1,
+        "angle": 180,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 85.63528801906195,
+            "y": 746.1518797232202,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 358.7903294586212,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 0,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 14,
+            "max": 84,
+            "timer": 2,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 1,
+        "turn": 3,
+        "wave": 1,
+        "charge": 2,
+        "phase": "aim",
+        "shot": null,
+        "combo": 2,
+        "totalHits": 25,
+        "bounces": 16,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 1,
+          "assists": 1,
+          "hits": 2,
+          "latches": 1
+        },
+        "events": [],
+        "last": "노출 종료 · 한 발에 두 고리를 다시 켜세요",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 85.63528801906195,
+            "y": 746.1518797232202,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 539.9999999999977,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          }
+        ],
+        "aperture": 1,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 14,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 2,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 25,
+        "bounces": 18,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 0,
+          "latches": 2
+        },
+        "events": [],
+        "last": "쌍성 동기화 · 다음 발사까지 관측핵이 열립니다",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    },
+    {
+      "input": {
+        "unit": 0,
+        "angle": -65,
+        "power": 100,
+        "skill": false
+      },
+      "before": {
+        "heroes": [
+          {
+            "x": 85.63528801906195,
+            "y": 746.1518797232202,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 539.9999999999977,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": true
+          }
+        ],
+        "aperture": 1,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 14,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "aim",
+        "shot": null,
+        "combo": 0,
+        "totalHits": 25,
+        "bounces": 18,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 2,
+          "assists": 0,
+          "hits": 0,
+          "latches": 2
+        },
+        "events": [],
+        "last": "쌍성 동기화 · 다음 발사까지 관측핵이 열립니다",
+        "result": null,
+        "campaign": {
+          "index": 1,
+          "phase": "playing",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      },
+      "after": {
+        "heroes": [
+          {
+            "x": 319.87219624911756,
+            "y": 243.65357022866064,
+            "name": "솔",
+            "color": "#ffc777",
+            "art": "guardian-sun.png"
+          },
+          {
+            "x": 539.9999999999977,
+            "y": 320,
+            "name": "루나",
+            "color": "#87e9ff",
+            "art": "guardian-moon.png"
+          },
+          {
+            "x": 360,
+            "y": 500,
+            "name": "노바",
+            "color": "#8ce5b4",
+            "art": "guardian-nova.png"
+          }
+        ],
+        "encounter": "twin-observatory",
+        "latches": [
+          {
+            "id": "dawn",
+            "name": "새벽 고리",
+            "x": 260,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          },
+          {
+            "id": "dusk",
+            "name": "저녁 고리",
+            "x": 460,
+            "y": 320,
+            "r": 32,
+            "lit": false
+          }
+        ],
+        "aperture": 1,
+        "foes": [
+          {
+            "id": "core",
+            "x": 360,
+            "y": 160,
+            "r": 63,
+            "hp": 0,
+            "max": 84,
+            "timer": 1,
+            "period": 2
+          }
+        ],
+        "hp": 156,
+        "maxHp": 180,
+        "selected": 0,
+        "turn": 4,
+        "wave": 1,
+        "charge": 3,
+        "phase": "won",
+        "shot": null,
+        "combo": 1,
+        "totalHits": 26,
+        "bounces": 18,
+        "assists": 5,
+        "weakHits": 1,
+        "shieldBlocks": 5,
+        "lastShot": {
+          "banks": 0,
+          "assists": 0,
+          "hits": 1,
+          "latches": 0
+        },
+        "events": [],
+        "last": "쌍성의 궤도가 이어졌습니다",
+        "result": "쌍성의 궤도가 이어졌습니다",
+        "campaign": {
+          "index": 1,
+          "phase": "complete",
+          "stage": {
+            "id": "twin-observatory",
+            "title": "쌍성 관측소",
+            "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+            "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+          }
+        }
+      }
+    }
+  ],
+  "initial": {
+    "heroes": [
+      {
+        "x": 190,
+        "y": 670,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "encounter": "sanctum",
+    "latches": [],
+    "aperture": 0,
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 2,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 3,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 80,
+        "max": 80,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "aim",
+    "shot": null,
+    "combo": 0,
+    "totalHits": 0,
+    "bounces": 0,
+    "assists": 0,
+    "weakHits": 0,
+    "shieldBlocks": 0,
+    "lastShot": null,
+    "events": [],
+    "last": "구슬을 뒤로 당겨 궤도를 만드세요.",
+    "result": null,
+    "campaign": {
+      "index": 0,
+      "phase": "playing",
+      "stage": {
+        "id": "sanctum",
+        "title": "월식의 성소",
+        "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+        "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+      }
+    }
+  },
+  "continueLabel": {
+    "text": "다음 단계로 →"
+  },
+  "entry": {
+    "heroes": [
+      {
+        "x": 180,
+        "y": 650,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 540,
+        "y": 320,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 500,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "encounter": "twin-observatory",
+    "latches": [
+      {
+        "id": "dawn",
+        "name": "새벽 고리",
+        "x": 260,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      },
+      {
+        "id": "dusk",
+        "name": "저녁 고리",
+        "x": 460,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      }
+    ],
+    "aperture": 0,
+    "foes": [
+      {
+        "id": "core",
+        "x": 360,
+        "y": 160,
+        "r": 63,
+        "hp": 84,
+        "max": 84,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 1,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "aim",
+    "shot": null,
+    "combo": 0,
+    "totalHits": 23,
+    "bounces": 13,
+    "assists": 4,
+    "weakHits": 1,
+    "shieldBlocks": 5,
+    "lastShot": null,
+    "events": [],
+    "last": "벽 반사로 두 고리를 한 발에 켜세요 · 관측핵은 다음 발사까지 노출됩니다",
+    "result": null,
+    "campaign": {
+      "index": 1,
+      "phase": "playing",
+      "stage": {
+        "id": "twin-observatory",
+        "title": "쌍성 관측소",
+        "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+        "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+      }
+    }
+  },
+  "mobile": {
+    "bodyWidth": 390,
+    "width": 390,
+    "portraitVisible": true,
+    "stage": "2. 쌍성 관측소",
+    "preview": "예측: 한 발로 두 고리 연결 · 핵 개방"
+  },
+  "chainBreak": {
+    "input": {
+      "unit": 1,
+      "angle": -176,
+      "power": 100,
+      "skill": false
+    },
+    "before": {
+      "heroes": [
+        {
+          "x": 180,
+          "y": 650,
+          "name": "솔",
+          "color": "#ffc777",
+          "art": "guardian-sun.png"
+        },
+        {
+          "x": 540,
+          "y": 320,
+          "name": "루나",
+          "color": "#87e9ff",
+          "art": "guardian-moon.png"
+        },
+        {
+          "x": 360,
+          "y": 500,
+          "name": "노바",
+          "color": "#8ce5b4",
+          "art": "guardian-nova.png"
+        }
+      ],
+      "encounter": "twin-observatory",
+      "latches": [
+        {
+          "id": "dawn",
+          "name": "새벽 고리",
+          "x": 260,
+          "y": 320,
+          "r": 32,
+          "lit": false
+        },
+        {
+          "id": "dusk",
+          "name": "저녁 고리",
+          "x": 460,
+          "y": 320,
+          "r": 32,
+          "lit": false
+        }
+      ],
+      "aperture": 0,
+      "foes": [
+        {
+          "id": "core",
+          "x": 360,
+          "y": 160,
+          "r": 63,
+          "hp": 84,
+          "max": 84,
+          "timer": 2,
+          "period": 2
+        }
+      ],
+      "hp": 180,
+      "maxHp": 180,
+      "selected": 1,
+      "turn": 1,
+      "wave": 1,
+      "charge": 0,
+      "phase": "aim",
+      "shot": null,
+      "combo": 0,
+      "totalHits": 23,
+      "bounces": 13,
+      "assists": 4,
+      "weakHits": 1,
+      "shieldBlocks": 5,
+      "lastShot": null,
+      "events": [],
+      "last": "벽 반사로 두 고리를 한 발에 켜세요 · 관측핵은 다음 발사까지 노출됩니다",
+      "result": null,
+      "campaign": {
+        "index": 1,
+        "phase": "playing",
+        "stage": {
+          "id": "twin-observatory",
+          "title": "쌍성 관측소",
+          "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+          "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+        }
+      }
+    },
+    "after": {
+      "heroes": [
+        {
+          "x": 180,
+          "y": 650,
+          "name": "솔",
+          "color": "#ffc777",
+          "art": "guardian-sun.png"
+        },
+        {
+          "x": 626.162450435874,
+          "y": 244.74739070770417,
+          "name": "루나",
+          "color": "#87e9ff",
+          "art": "guardian-moon.png"
+        },
+        {
+          "x": 360,
+          "y": 500,
+          "name": "노바",
+          "color": "#8ce5b4",
+          "art": "guardian-nova.png"
+        }
+      ],
+      "encounter": "twin-observatory",
+      "latches": [
+        {
+          "id": "dawn",
+          "name": "새벽 고리",
+          "x": 260,
+          "y": 320,
+          "r": 32,
+          "lit": true
+        },
+        {
+          "id": "dusk",
+          "name": "저녁 고리",
+          "x": 460,
+          "y": 320,
+          "r": 32,
+          "lit": false
+        }
+      ],
+      "aperture": 0,
+      "foes": [
+        {
+          "id": "core",
+          "x": 360,
+          "y": 160,
+          "r": 63,
+          "hp": 84,
+          "max": 84,
+          "timer": 1,
+          "period": 2
+        }
+      ],
+      "hp": 180,
+      "maxHp": 180,
+      "selected": 2,
+      "turn": 2,
+      "wave": 1,
+      "charge": 1,
+      "phase": "aim",
+      "shot": null,
+      "combo": 0,
+      "totalHits": 23,
+      "bounces": 14,
+      "assists": 4,
+      "weakHits": 1,
+      "shieldBlocks": 5,
+      "lastShot": {
+        "banks": 1,
+        "assists": 0,
+        "hits": 0,
+        "latches": 1
+      },
+      "events": [],
+      "last": "연결 끊김 · 두 고리를 같은 한 발로 이어야 합니다",
+      "result": null,
+      "campaign": {
+        "index": 1,
+        "phase": "playing",
+        "stage": {
+          "id": "twin-observatory",
+          "title": "쌍성 관측소",
+          "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+          "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+        }
+      }
+    }
+  },
+  "failed": {
+    "heroes": [
+      {
+        "x": 180,
+        "y": 601.9736217963035,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 626.162450435874,
+        "y": 582.7737689114007,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 751.9736217963028,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "encounter": "twin-observatory",
+    "latches": [
+      {
+        "id": "dawn",
+        "name": "새벽 고리",
+        "x": 260,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      },
+      {
+        "id": "dusk",
+        "name": "저녁 고리",
+        "x": 460,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      }
+    ],
+    "aperture": 0,
+    "foes": [
+      {
+        "id": "core",
+        "x": 360,
+        "y": 160,
+        "r": 63,
+        "hp": 84,
+        "max": 84,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 0,
+    "maxHp": 180,
+    "selected": 1,
+    "turn": 16,
+    "wave": 1,
+    "charge": 3,
+    "phase": "lost",
+    "shot": null,
+    "combo": 0,
+    "totalHits": 23,
+    "bounces": 28,
+    "assists": 4,
+    "weakHits": 1,
+    "shieldBlocks": 5,
+    "lastShot": {
+      "banks": 1,
+      "assists": 0,
+      "hits": 0,
+      "latches": 0
+    },
+    "events": [],
+    "last": "궤도가 흩어졌습니다",
+    "result": "궤도가 흩어졌습니다",
+    "campaign": {
+      "index": 1,
+      "phase": "failed",
+      "stage": {
+        "id": "twin-observatory",
+        "title": "쌍성 관측소",
+        "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+        "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+      }
+    }
+  },
+  "restored": {
+    "heroes": [
+      {
+        "x": 180,
+        "y": 650,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 540,
+        "y": 320,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 500,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "encounter": "twin-observatory",
+    "latches": [
+      {
+        "id": "dawn",
+        "name": "새벽 고리",
+        "x": 260,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      },
+      {
+        "id": "dusk",
+        "name": "저녁 고리",
+        "x": 460,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      }
+    ],
+    "aperture": 0,
+    "foes": [
+      {
+        "id": "core",
+        "x": 360,
+        "y": 160,
+        "r": 63,
+        "hp": 84,
+        "max": 84,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 1,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "aim",
+    "shot": null,
+    "combo": 0,
+    "totalHits": 23,
+    "bounces": 13,
+    "assists": 4,
+    "weakHits": 1,
+    "shieldBlocks": 5,
+    "lastShot": null,
+    "events": [],
+    "last": "벽 반사로 두 고리를 한 발에 켜세요 · 관측핵은 다음 발사까지 노출됩니다",
+    "result": null,
+    "campaign": {
+      "index": 1,
+      "phase": "playing",
+      "stage": {
+        "id": "twin-observatory",
+        "title": "쌍성 관측소",
+        "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+        "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+      }
+    }
+  },
+  "complete": {
+    "heroes": [
+      {
+        "x": 319.87219624911756,
+        "y": 243.65357022866064,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 539.9999999999977,
+        "y": 320,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 500,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "encounter": "twin-observatory",
+    "latches": [
+      {
+        "id": "dawn",
+        "name": "새벽 고리",
+        "x": 260,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      },
+      {
+        "id": "dusk",
+        "name": "저녁 고리",
+        "x": 460,
+        "y": 320,
+        "r": 32,
+        "lit": false
+      }
+    ],
+    "aperture": 1,
+    "foes": [
+      {
+        "id": "core",
+        "x": 360,
+        "y": 160,
+        "r": 63,
+        "hp": 0,
+        "max": 84,
+        "timer": 1,
+        "period": 2
+      }
+    ],
+    "hp": 156,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 4,
+    "wave": 1,
+    "charge": 3,
+    "phase": "won",
+    "shot": null,
+    "combo": 1,
+    "totalHits": 26,
+    "bounces": 18,
+    "assists": 5,
+    "weakHits": 1,
+    "shieldBlocks": 5,
+    "lastShot": {
+      "banks": 0,
+      "assists": 0,
+      "hits": 1,
+      "latches": 0
+    },
+    "events": [],
+    "last": "쌍성의 궤도가 이어졌습니다",
+    "result": "쌍성의 궤도가 이어졌습니다",
+    "campaign": {
+      "index": 1,
+      "phase": "complete",
+      "stage": {
+        "id": "twin-observatory",
+        "title": "쌍성 관측소",
+        "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+        "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+      }
+    }
+  },
+  "restart": {
+    "heroes": [
+      {
+        "x": 190,
+        "y": 670,
+        "name": "솔",
+        "color": "#ffc777",
+        "art": "guardian-sun.png"
+      },
+      {
+        "x": 530,
+        "y": 670,
+        "name": "루나",
+        "color": "#87e9ff",
+        "art": "guardian-moon.png"
+      },
+      {
+        "x": 360,
+        "y": 550,
+        "name": "노바",
+        "color": "#8ce5b4",
+        "art": "guardian-nova.png"
+      }
+    ],
+    "encounter": "sanctum",
+    "latches": [],
+    "aperture": 0,
+    "foes": [
+      {
+        "id": "a",
+        "x": 200,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 2,
+        "period": 2
+      },
+      {
+        "id": "b",
+        "x": 520,
+        "y": 230,
+        "r": 42,
+        "hp": 68,
+        "max": 68,
+        "timer": 3,
+        "period": 3
+      },
+      {
+        "id": "c",
+        "x": 360,
+        "y": 390,
+        "r": 46,
+        "hp": 80,
+        "max": 80,
+        "timer": 2,
+        "period": 2
+      }
+    ],
+    "hp": 180,
+    "maxHp": 180,
+    "selected": 0,
+    "turn": 1,
+    "wave": 1,
+    "charge": 0,
+    "phase": "aim",
+    "shot": null,
+    "combo": 0,
+    "totalHits": 0,
+    "bounces": 0,
+    "assists": 0,
+    "weakHits": 0,
+    "shieldBlocks": 0,
+    "lastShot": null,
+    "events": [],
+    "last": "구슬을 뒤로 당겨 궤도를 만드세요.",
+    "result": null,
+    "campaign": {
+      "index": 0,
+      "phase": "playing",
+      "stage": {
+        "id": "sanctum",
+        "title": "월식의 성소",
+        "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+        "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+      }
+    }
+  },
+  "errors": {
+    "runtime": [],
+    "resources": []
+  },
+  "limits": [
+    "Normal buttons/range keyboard inputs only; no physical pointer drag or touch hardware.",
+    "No audio listening.",
+    "Runtime error listeners attached after navigation; successful campaign flow additionally constrains initial load failures.",
+    "No game-state injection. Only read-only snapshots plus UI scroll and error-listener instrumentation."
+  ],
+  "testedBuild": {
+    "url": "http://127.0.0.1:53045/comet-carom/",
+    "files": {
+      "index.html": "468f00e7bfefb88a29d7663d64756201fa5f5bfd550d923eaf4e11d0153a952a",
+      "game.mjs": "a5400f61e8021dc21fc2ed05bf2b65057759a51819471a6d7d4634bc4dff2e2e",
+      "combat.mjs": "c68ae15061059fd2f72a52ec9b387cb0ae89edb5848125063e02b03132409949",
+      "campaign-flow.mjs": "4e8562baa50786b338bf1fb4422624543817174590f099f4277ab4e33a3fcc17",
+      "campaign.mjs": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635",
+      "genre.json": "bf68209a199d38d83157ba770b6d50d6f0e7a1b7cf8868bfce34d379fbd03acf"
+    },
+    "unchangedDuringRun": true,
+    "label": "installed campaign build before approved R/hint copy corrections"
+  },
+  "postRunSourceCorrections": [
+    "Keyboard legend R 재도전 -> R 처음부터",
+    "Observatory initial setup hint replaces old boss weak-spot text.",
+    "No game rules changed; corrected export requires primary UI validation."
+  ]
+}

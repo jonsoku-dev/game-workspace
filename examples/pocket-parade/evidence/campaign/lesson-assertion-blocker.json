@@ -1,0 +1,115 @@
+{
+  "passed": false,
+  "url": "http://127.0.0.1:53045/pocket-parade/",
+  "error": "stage manifest tactic and new mend-pouch art appear in actual build",
+  "checks": [
+    {
+      "check": "installed runtime starts first rescue round",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "legal simulated pointer path selected 3",
+      "passed": true
+    },
+    {
+      "check": "first rescue target reached only through player chain handlers",
+      "passed": true
+    },
+    {
+      "check": "first win waits between stages for explicit next button",
+      "passed": true
+    },
+    {
+      "check": "explicit next carries exact score and teaches new stage before timer",
+      "passed": true
+    },
+    {
+      "check": "stage manifest tactic and new mend-pouch art appear in actual build",
+      "passed": false
+    }
+  ],
+  "events": [
+    {
+      "event": "rescue-win",
+      "score": 7200,
+      "rescued": 60
+    }
+  ],
+  "input_method": "Native locator clicks and explicitly simulated pointer-chain handlers; no direct state mutation."
+}

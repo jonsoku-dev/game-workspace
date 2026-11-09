@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>별잎 고원 · Starleaf Highlands</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">
+          ✧ <span>별잎 고원<small>STARLEAF HIGHLANDS</small></span>
+        </div>
+        <div class="region">
+          <span id="distance">01 / 03</span>
+          <span id="regionTitle">바람이 머무는 길</span>
+        </div>
+        <button id="sound" aria-pressed="false">♫ 소리 켜기</button
+        ><button id="pause">Ⅱ 쉬기</button>
+      </header>
+      <section class="stage" aria-label="별잎 고원 게임">
+        <canvas
+          id="field"
+          tabindex="0"
+          width="1200"
+          height="680"
+          aria-label="숲의 고원. 화살표 이동, Space 점프, J 공격, K 별꽃 마법"
+        ></canvas>
+        <div class="hud">
+          <div class="portrait" aria-hidden="true"></div>
+          <div>
+            <b id="level">LV. 1 <span>견습 별지기</span></b>
+            <div class="health">
+              <i id="hpbar"></i><span id="health">HP 100 / 100</span>
+            </div>
+            <div class="xp"><i id="xpbar"></i></div>
+            <small id="xp">EXP 0 / 70</small>
+          </div>
+        </div>
+        <aside class="quest">
+          <small>루나의 부탁</small><b id="questTitle">바람꽃의 약속</b
+          ><span id="stageObjective"></span
+          ><span id="quest">별잎 되찾기 0 / 3</span
+          ><span id="spell">두 마리 처치 → 별꽃 개방</span
+          ><span id="pulseStatus" role="status" aria-live="polite"></span>
+        </aside>
+        <div id="toast" role="status" aria-live="polite">
+          별잎 세 장을 찾아 바람꽃을 깨워 주세요.
+        </div>
+        <div
+          id="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="ending"
+          aria-describedby="endingText"
+          hidden
+        >
+          <div>
+            <small id="endingTag"></small>
+            <h1 id="ending"></h1>
+            <p id="endingText"></p>
+            <button id="restart">다시 모험하기 ↗</button
+            ><button id="fresh">첫 구역부터 다시</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="keys">
+          <span>← → <em>이동</em></span
+          ><span>SPACE <em>점프</em></span
+          ><span>↓ <em>내려가기</em></span
+          ><span>↑ <em>기류 / 문</em></span>
+        </div>
+        <div class="skills">
+          <button data-key="j">J <b>별가지</b></button
+          ><button data-key="k" id="magic">K <b>별꽃 발사</b></button>
+        </div>
+      </footer>
+      <nav class="touch" aria-label="터치 조작">
+        <div>
+          <button data-key="a" aria-label="왼쪽">◀</button
+          ><button data-key="d" aria-label="오른쪽">▶</button
+          ><button data-key="s" aria-label="발판 내려가기">↓</button
+          ><button data-key="w" aria-label="기류와 문">↑</button>
+        </div>
+        <div>
+          <button data-key=" " aria-label="점프">점프</button
+          ><button data-key="j" aria-label="공격">공격</button
+          ><button data-key="k" aria-label="별꽃 마법">✿</button>
+        </div>
+      </nav>
+      <p class="note">
+        <span>P 쉬기 · R 첫 구역부터</span>
+      </p>
+    </main>
+    <script type="module" src="./game.mjs"></script>
+  </body>
+</html>

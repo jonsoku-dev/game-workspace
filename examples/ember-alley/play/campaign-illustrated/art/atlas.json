@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "facing": "right",
+  "sampling": "nearest",
+  "authoring": "original image_gen hand-painted cels; reproducible alpha-component pack in art-source/pack_cast.py",
+  "player": {
+    "file": "player.png",
+    "frameWidth": 96,
+    "frameHeight": 96,
+    "frames": 24,
+    "pivot": [
+      48,
+      88
+    ],
+    "states": {
+      "idle": [
+        0,
+        1
+      ],
+      "walk": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "attack1": [
+        6,
+        7,
+        8
+      ],
+      "attack2": [
+        9,
+        10,
+        11
+      ],
+      "attack3": [
+        12,
+        13,
+        14
+      ],
+      "launcher": [
+        15,
+        16,
+        17
+      ],
+      "dash": [
+        18,
+        19
+      ],
+      "hurt": [
+        20,
+        21
+      ],
+      "jump": [
+        22,
+        23
+      ]
+    }
+  },
+  "foe": {
+    "file": "foe.png",
+    "frameWidth": 72,
+    "frameHeight": 72,
+    "frames": 6,
+    "pivot": [
+      36,
+      67
+    ],
+    "states": {
+      "idle": [
+        0
+      ],
+      "walk": [
+        1,
+        2
+      ],
+      "attack": [
+        3,
+        4
+      ],
+      "hurt": [
+        5
+      ]
+    }
+  },
+  "boss": {
+    "file": "boss.png",
+    "frameWidth": 144,
+    "frameHeight": 144,
+    "frames": 8,
+    "pivot": [
+      72,
+      130
+    ],
+    "states": {
+      "idle": [
+        0,
+        1
+      ],
+      "walk": [
+        2,
+        3
+      ],
+      "attack": [
+        4,
+        5,
+        6
+      ],
+      "hurt": [
+        7
+      ]
+    }
+  }
+}

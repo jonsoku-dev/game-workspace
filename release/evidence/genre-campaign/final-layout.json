@@ -1,0 +1,26 @@
+{
+  "method": "Stagehand on public 390px game pages. For Star only, toggle the existing button hidden property for a focused CSS check and restore it; the actual full campaign is recorded separately.",
+  "ember-alley": {
+    "viewport": 390,
+    "width": 390,
+    "canvasBottom": 353.765625,
+    "statusTop": 353.765625,
+    "display": "static"
+  },
+  "pocket-parade": {
+    "viewport": 390,
+    "width": 390,
+    "badgeWhiteSpace": "nowrap"
+  },
+  "comet-carom": {
+    "hint": "123 수호자 ←→ 각도\n↑↓ 위력 S 필살기 R 처음부터",
+    "viewport": 390,
+    "width": 390
+  },
+  "star-canopy": {
+    "isolatedHiddenStyle": "none",
+    "offeredStyle": "block",
+    "viewport": 390,
+    "width": 390
+  }
+}

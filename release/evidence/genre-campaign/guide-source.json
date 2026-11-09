@@ -1,0 +1,56 @@
+{
+  "reference": "chatgpt-conversation://6af112c6-8390-83ee-9c6e-99842bdffa9e",
+  "title": "게임 연출 가이드북 만들기",
+  "inputs": [
+    {
+      "name": "IMG_6252.jpeg",
+      "sha256": "eb2a4ca723841a7dcdad7a1ac18d06d378472cb87085152903fef8c2da086ccd",
+      "bytes": 240116
+    },
+    {
+      "name": "IMG_6254.jpeg",
+      "sha256": "710615e23bf66db20a5590d6451e5bd21cdcd5080f1e73e24add9bc6236d664a",
+      "bytes": 224735
+    },
+    {
+      "name": "IMG_6253.jpeg",
+      "sha256": "fb350434f8f16689cf4ba75f8c2303de2e50111822c338dcca835ac3a03499a1",
+      "bytes": 198703
+    },
+    {
+      "name": "IMG_6256.jpeg",
+      "sha256": "957c9d975aeaa68aff71dc33cd5daa108d3dd5520be346dd5c19b03d977bf8bc",
+      "bytes": 164263
+    },
+    {
+      "name": "IMG_6257.jpeg",
+      "sha256": "e06bafaf579e81c0e7598ff6d80643e833aa1a12666eb3873c0f04eb1827b715",
+      "bytes": 173855
+    },
+    {
+      "name": "IMG_6258.jpeg",
+      "sha256": "e4e40bae2c070193d57550ef0431d2b1217f3933cb4f8e692b4a41dd4025ab2f",
+      "bytes": 196022
+    },
+    {
+      "name": "IMG_6255.jpeg",
+      "sha256": "bbb19b642d0799759945f216dc7e438635c44b050eea4bb797a10fd76bcf2c4a",
+      "bytes": 166421
+    }
+  ],
+  "available": [
+    "대화 본문 1턴",
+    "JPEG 7장"
+  ],
+  "unavailable": [
+    "Game_Feel_Playbook_KR.pdf",
+    "Game_Feel_Playbook_KR.docx"
+  ],
+  "source_reported": {
+    "pages": 39,
+    "techniques": 280,
+    "categories": 20,
+    "recipes": 20
+  },
+  "packaged_scope": "22개 카드, 스튜디오 제작·튜닝 절차, 네 캠페인 적용 레시피"
+}

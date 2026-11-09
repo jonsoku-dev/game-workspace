@@ -1,0 +1,13 @@
+{
+  "generator": "built-in imagegen",
+  "transparent_background": false,
+  "prompt": "Use case: stylized-concept. Original tactile top-down game board background, portrait aspect 420:510 (about 14:17), full bleed. A charming artisan's patchwork mending pouch interior with deep indigo denim and wool-felt central padded work surface, beautifully hand-crafted mint green and pale seafoam gingham corner patches and narrow border, warm ivory blanket-stitch edging, small tasteful tufts and fabric grain. Different from berry pink: cool rich inky indigo, mint and soft cream palette. Corners have asymmetrical overlapping scalloped mint fabric patches, a tiny rolled mint measuring tape only at upper edge, a small antique-brass scissors charm tucked almost entirely into an outer corner seam. Very tiny embroidered leaf sprigs at borders only. The large central eighty percent is empty broad quiet indigo felt with subtle woven texture and very low contrast irregular cloth seams; premium painted children's picture book material detail, cozy soft studio illumination, round softly padded edges. No characters, no toys, no buttons, no stars, no gold-star shapes, no target marks, no target circles, no pin holes, no stitching holes in the center, no dotted patterns, no HUD, no controls, no labels, no lettering, no text. Any border embroidery must remain at outermost edge. Flat orthographic overhead view with no perspective. Readable playfield for bright round plush characters and gold stars that will be added in game. Entire scene designed as crafted repair kit but free of clutter or standalone center props.",
+  "master": "mend-pouch-master.png",
+  "master_size": [
+    1138,
+    1382
+  ],
+  "processing": "mend-pouch-process.py",
+  "processing_description": "Lanczos size normalization, WebP quality86 method6; no repainting or compositing. Reproduce with python3 examples/pocket-parade/art-source/campaign/mend-pouch-process.py",
+  "runtime": "game/art/mend-pouch.webp"
+}

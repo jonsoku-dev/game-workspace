@@ -13,6 +13,12 @@ import {
   burstIds,
   takeSeam,
   stitchedBadges,
+  MEND_SITES,
+  mendHits,
+  stageWon,
+  openingKind,
+  findChain,
+  mendPlan,
 } from "../game/rules.mjs";
 const ts = [
   { id: 1, kind: 0, x: 30, y: 100 },
@@ -133,3 +139,65 @@ assert.deepEqual(
   "below-board toys are not rescued",
 );
 console.log("PASS bonus excludes offscreen refill toys at top and bottom");
+
+const sites = MEND_SITES.map((site) => ({ ...site, mended: false }));
+assert.equal(
+  stageWon(1, 999, sites),
+  false,
+  "brute rescue count never wins repair round",
+);
+assert.deepEqual(mendHits(sites, { x: 96, y: 330 }), ["left"]);
+assert.deepEqual(
+  mendHits(sites, { x: 210, y: 330 }),
+  [],
+  "middle burst misses both separate seams",
+);
+assert.deepEqual(
+  mendHits(sites, { x: 96 + R * 3.6, y: 330 }),
+  ["left"],
+  "repair includes actual burst boundary",
+);
+assert.deepEqual(
+  mendHits(sites, { x: 96 + R * 3.6 + 1, y: 330 }),
+  [],
+  "near miss cannot repair",
+);
+sites[0].mended = true;
+assert.deepEqual(
+  mendHits(sites, { x: 96, y: 330 }),
+  [],
+  "repeated burst cannot count old patch again",
+);
+assert.equal(stageWon(1, 1, sites), false);
+sites[1].mended = true;
+assert.equal(
+  stageWon(1, 1, sites),
+  true,
+  "only marked patches decide round2 victory",
+);
+const tangled = Array.from({ length: 7 }, (_, id) => ({
+  id,
+  x: 40 + id * 40,
+  y: 330,
+  kind: id % 2,
+}));
+const plan = mendPlan(tangled, MEND_SITES);
+assert.equal(
+  plan.ids.length,
+  7,
+  "safe assist prepares connected seven near unresolved seam",
+);
+for (const token of tangled)
+  if (plan.ids.includes(token.id)) token.kind = plan.kind;
+assert.equal(findChain(tangled, 7, MEND_SITES[0]).length, 7);
+assert.equal(
+  mendPlan(tangled, [{ ...MEND_SITES[0], mended: false }]),
+  null,
+  "already playable board is preserved",
+);
+assert.equal(new Set(plan.ids).size, 7);
+assert.equal(openingKind(1, 3, 0, 3), 1);
+assert.equal(openingKind(1, 3, 6, 3), 2);
+console.log(
+  "PASS true two-site tactic / burst boundary / near miss / no repeated patch / safe assist / playable opening",
+);

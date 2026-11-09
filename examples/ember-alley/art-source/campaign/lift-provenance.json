@@ -1,0 +1,20 @@
+{
+  "producer": "built-in image_gen",
+  "originalDesign": true,
+  "prompt": "Use case: stylized-concept. Create ORIGINAL wide 16:9 game stage background for second area of same hand-painted arcade brawler as reference. Entirely NEW setting: a colossal CHAINED FOUNDRY FREIGHT LIFT rising through a vertical industrial shaft, not the previous molten furnace room. Edge to edge high production anime hand-painted environment, tactile painted blue-black riveted steel, crimson pressure cylinders, warm copper edge lights and smoky dramatic depth. Upper57percent: immense vertical chains at far sides connected to lift carriage and distant overhead gears, towering stacked red steel pressure machinery and pistons, central open shaft with distant orange-lit industrial levels receding behind, side exhaust vents visibly hot red, jets of white steam confined to side walls, little suspended sparks, danger visually legible. A high crossbeam and subtle diagonal hazard stripes along back rail, no writing. Lower43percent MUST be broad totally EMPTY unobstructed muted cool charcoal/slate steel deck for 2D belt-scrolling combat, no machinery or chains or debris crossing lane, only restrained horizontal plate seams and subtle warm edge reflections, playable floor boundary at57percent height. Side-on camera with slight belt-scroller floor perspective like reference. Lift floor feels massive and heavy; top background depth dramatic but actor silhouette region clear and calm. No central molten ladle, no river of lava, no giant foreground vents. No characters, actors, props to fight, UI, HUD, signage, letters, numbers, logos or watermark. Production scenery plate ready for gameplay, original art not franchise.",
+  "reference": "game/scenery/furnace-v2.webp",
+  "sourceFile": "exec-ec0a96dc-41c0-4721-9fb2-8e39c637ed52.png",
+  "master": "art-source/campaign/lift-master.png",
+  "masterDimensions": [
+    1672,
+    941
+  ],
+  "output": "game/scenery/lift.webp",
+  "outputDimensions": [
+    1920,
+    1080
+  ],
+  "outputSHA256": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad",
+  "conversion": "RGB, Lanczos resize, WebP quality92 method6",
+  "verification": "Opened final image at game canvas size; no actors or HUD baked in. Offline art inspection only; not runtime evidence."
+}

@@ -1,0 +1,167 @@
+{
+  "ember-alley": {
+    "build": "play/studio-release",
+    "url": "http://127.0.0.1:53040/ember-alley/",
+    "work_id": "web-ba208bb4d32847c18e1c30a1e7709184",
+    "stages": [
+      {
+        "id": "ember-alley",
+        "title": "잿불 골목",
+        "objective": "두 구역을 해방하고 쇠사슬 감독관을 쓰러뜨린다.",
+        "tactic": "붉은 예고를 깊이축으로 피하고, 간파 반격과 공중 연격으로 감독관의 가드를 끊는다."
+      },
+      {
+        "id": "chain-lift",
+        "title": "사슬 승강장",
+        "objective": "증기 승강장을 지나 방패 수문장을 모두 쓰러뜨린다.",
+        "tactic": "예고된 증기 구역에서 벗어나 방패의 뒤로 돌아가거나 K 올려치기로 개방한다. 정면 연타는 방패에 막힌다."
+      }
+    ],
+    "verified": [
+      "Original boss cleared into explicit continue; second-stage frontal guard vs flank/launcher and vent phases verified in rules and observed in browser. See qa.json for exact route."
+    ],
+    "matched": {
+      "art/atlas.json": "686606a4bd0847ea5a0cb0c63f212475224c6f9b1c38468b63e855f2dab84bdc",
+      "art/boss.png": "d7245ac3b785231e53a13ed45939641987ca41e6d0a74bef32faebb4a43379a2",
+      "art/boss.v2.png": "ac17e54a0cb8a97a7ffb7cc6204045bfd4a3914ae61d77d29c3704c1b4fcc559",
+      "art/foe.png": "d7cd0c604157c67643b966eaedcf57fc10c942a065cb244911dbc26a00911302",
+      "art/foe.v2.png": "5a0fbb7c5a126c33d56a7473bad3c05acddaada4c449045531b6f12366ae6adc",
+      "art/player.png": "d1d3a7983156d36f9864bbacc147a396cad92c1194c77e9c5498b3967ef19785",
+      "art/player.v2.png": "e02b5507645c32dabb1805819190e26ad7b6fd8ce9dfdbc1363f105e37c21225",
+      "art/warden-shield.webp": "40466fd408de9754b5feae9ba64114def1cb046cdfccc1f1b0b8f0c779754d1f",
+      "campaign.mjs": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "combat.mjs": "c3191fd626326c35405043a75be885f16c6ed9d26c0a12f0a9e92ce743a4eaa6",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "f835fb9b707c2bbe0fe733f384db5936591f96570cb0fc4368c5bbae58dfd988",
+      "genre.json": "a0dd0293d07002110d06269fd15c60495d792c05c8e89dc082a7fe5e6b01238a",
+      "index.html": "6400ba442b7d18d64193da639c29b6929d04771c4c9dfca51de31413cf335f23",
+      "progression.mjs": "3c34d535458bccd692829c82d28b31a31b616d25b1e05393e2e6a13a6cc90a6d",
+      "scenery/foundry.webp": "a5fe4002fa6adf36af5ce2e16967c994627b00c14c6bbd3ef93dbc929a23dc25",
+      "scenery/furnace-v2.webp": "9914aeaaad0cc118854fff35907bc01594639d2cc1ff1f371ee7403053213048",
+      "scenery/lift.webp": "ca71b925ca383dfbdf3bbdec06c50536c974706081b494565c5ac6064b16a1ad"
+    },
+    "revision": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-59e89fc6f87b4051b4f01351cc68295d"
+  },
+  "star-canopy": {
+    "build": "play/studio-release-final",
+    "url": "http://127.0.0.1:53040/star-canopy/",
+    "work_id": "web-2a1de70021b14d35b0fd647876b58f71",
+    "stages": [
+      {
+        "id": "starleaf-meadow",
+        "title": "별잎 고원",
+        "objective": "별잎 세 장과 바람꽃을 되찾아 고원의 문을 연다.",
+        "tactic": "두 마리 처치로 별꽃 개방 · 같은 높이에서 바람꽃에 발사."
+      },
+      {
+        "id": "moonlit-grove",
+        "title": "달빛 상층숲",
+        "objective": "아래·위 봉화를 순서대로 밝히고 별길의 문에 도착한다.",
+        "tactic": "아래 발판에서 오른쪽으로 첫 봉화 → 열린 바람길 ↑ → 위 발판 오른편에서 왼쪽으로, 둘째 봉화가 밝을 때 별꽃을 맞힌다."
+      }
+    ],
+    "verified": [
+      "Level 2 ability remains after explicit continue. A ground cast cannot light the elevated beacon. Sequence, direction and pulse gate the final portal; see QA for browser and rules coverage."
+    ],
+    "matched": {
+      "art/atlas.json": "712025424824e24217e58f9c912522e74f8ca91509da0e0816f25dbd3876f5da",
+      "art/creature.png": "3df79f475c50621fe1d299ae9bd95165998216174b28607b2558038700a7837c",
+      "art/player.png": "9dd8d4685a4ae2decab0c4eedf68233200654bc4d5ef550bb587395203866dc3",
+      "art/walk-cycle.png": "68a44f03c6fd243a25c436492ceea37bd1a98fd78afe082aa3249a20b4b8dac1",
+      "campaign.mjs": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "777eda202fdfc2fc7344e81f7cd7aa8ffad4744b6d298918e461ad63fa6f2118",
+      "genre.json": "ca66353ed0af63884a97d1f02a3c92a56ef41ce0c50945a1a41834aec15466ed",
+      "index.html": "2436762ea38ed010b5269620aa3a75a34d5c8afaf0f210e8a9fab60ffc8ffa2c",
+      "rules.mjs": "636da4e13a6c52b2300d5c788f5934be66f244d1c6dec55370ef5a87a05f50fd",
+      "scenery/canopy.webp": "c3d59042053780f97a842b08a5ec8148489e8baee42a5777508c027d1ceb0f29",
+      "scenery/ground-strip.png": "900b89937941a07f86ee27b8e00741d2340441bfef474e138f2874927beea893",
+      "scenery/moon-grove.webp": "3e2d011ed84476d28537c4f207fbea0cc18727bcf0d351aa5405c0b1e1c18b23",
+      "scenery/platform-island.png": "bd187cbd86e47c8a0ddf5ba806aee8272a8cda9c403ba4589b5cba0390b11b93",
+      "scenery/portal.png": "470d8c145314d96c61e9699c698aca889d85ddba0415eba37ed40cca074babac",
+      "scenery/wind-stump.png": "19120abc827c0918ef768fb25a63097369c04050bf6e04d6e5a91f59b1494c26",
+      "style.css": "5d3900ae8f0154005d1a50bf294d416c5d5b188f9ec5c9e86462e990996049d6"
+    },
+    "revision": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-revision-e8e47939b9234b8c8ce3aee98564700d"
+  },
+  "pocket-parade": {
+    "build": "play/studio-release",
+    "url": "http://127.0.0.1:53040/pocket-parade/",
+    "work_id": "web-730d53a541d243dfb70e3df3162cae6c",
+    "stages": [
+      {
+        "id": "rescue",
+        "title": "작은 주머니 구조대",
+        "objective": "75초 안에 60친구 구조",
+        "tactic": "같은 친구를 3마리부터 잇고, 7마리의 별 단추로 함께 구조하세요."
+      },
+      {
+        "id": "mend",
+        "title": "별실 수선실",
+        "objective": "90초 안에 표시된 두 솔기 수선",
+        "tactic": "표시 가까이에서 7마리 연결을 끝내 별 단추를 남기고 터뜨리세요. 친구 수만으로는 수선되지 않아요."
+      }
+    ],
+    "verified": [
+      "Stage 1 rescue score and explicit advance; stage 2 placement changes the repair result. Retry restores entry score; see browser QA and handler tests for precise coverage."
+    ],
+    "matched": {
+      "art/mend-pouch.webp": "557a1932b2129e5a82ef3dcdcecea714522f6727babdcf95df6b99fc66a76266",
+      "art/plush-bear.png": "43fd391bde0e90057e74e62a1aaacf4e378e5dbfff9483ca701572982ec3b33e",
+      "art/plush-bunny.png": "a3751ae0d1ec34d50038b96c756a2fa078ba8937d84efc4de3e4f350cb88a918",
+      "art/plush-cat.png": "098446bd17a8cdbe9dd4d38143fcec4041e97665c92dc170a7532ba1abfdd2e9",
+      "art/plush-frog.png": "923c5fde747ee7849896fadff6847bd888132e61852ebac4bf288c7f5545bbaa",
+      "art/pouch.webp": "0d23c46e2ff1f22e4e7a37f69aaca4168c5c2c9049db61fab7daca42adbc55d0",
+      "art/star-button.png": "a1472bab08cf9e4bca2c22ac60b39ea984e6a65ef5991dad1901151b5b771865",
+      "campaign.mjs": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "9b6d412e29adf6f75ca430c0f149f657e9af1ac2985dfc129b66173f1c5156ad",
+      "genre.json": "731bbbbee4ea90fe5a3c69f2d1d1ceb81e9adad8669b85836a9306f8361a8f2b",
+      "index.html": "70185ac0dbfd0acc7c22eaeea2a39ef7a54bb0390fe2e3b7a6882b3fd4f4e194",
+      "rules.mjs": "7ce659b9a6485a778e960a499cea07631a8e77b786fbba22e9c74a04760225a5",
+      "style.css": "8ef58638ca7eeedc6cd33c8f26ec83599d8cd63a3216f646d33691fce1b618cc"
+    },
+    "revision": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-revision-1b3f8913c09242b9acbe2641949de2d6"
+  },
+  "comet-carom": {
+    "build": "play/studio-release",
+    "url": "http://127.0.0.1:53040/comet-carom/",
+    "work_id": "web-5ec7c311847d4df98c719f7f78c4d5f4",
+    "stages": [
+      {
+        "id": "sanctum",
+        "title": "월식의 성소",
+        "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+        "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+      },
+      {
+        "id": "twin-observatory",
+        "title": "쌍성 관측소",
+        "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+        "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+      }
+    ],
+    "verified": [
+      "Explicit transition after original boss; second stage requires two latches in a single shot and then core damage. Preview and opted-out FX retain physics. See QA for normal win and retry route."
+    ],
+    "matched": {
+      "art/boss-orb.png": "bf5c3ad0bd7f7f444a9160ad0599628c6367f899940ebbc73d30fa0df6c7a0f2",
+      "art/foe-orb.png": "cb60eba508a9f7d69c4cb2c0a55d2e9b620805fe58fc8b48d73ea5d85a1577b6",
+      "art/guardian-moon.png": "ccf4289dac74fe022fc0c714430b139b69194d55820cfe62165f3df36bdd3837",
+      "art/guardian-nova.png": "af9509d34df573222e2fc063cbb6daa810df9db783e954a422b428ba652d4e53",
+      "art/guardian-sun.png": "2722e6af28239f3b6ef3817397adb7f34dc3018b68429dc107b7456f489cd215",
+      "art/guardians.webp": "1e8c0610a0fb79c2dce5c81313c546c1d6c4575c418f0b0c4b0ef6c68a8b18f1",
+      "art/sanctum.webp": "7eff68e7666ea7fef3be6d429b94a4c7883e262d4d00c3133a65faeaa59d84ae",
+      "art/twin-observatory.webp": "fc9cac64e7df8531d4055649d9a20d83f10957126c9a0fd948ebd2dc1f9c1ce1",
+      "campaign-flow.mjs": "4e8562baa50786b338bf1fb4422624543817174590f099f4277ab4e33a3fcc17",
+      "campaign.mjs": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+      "combat.mjs": "c68ae15061059fd2f72a52ec9b387cb0ae89edb5848125063e02b03132409949",
+      "feedback.mjs": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "game.mjs": "cef6e6cb5a5d429e5ea92d33567018fee6307c65da46f20fb2c6672146dbc027",
+      "genre.json": "bf68209a199d38d83157ba770b6d50d6f0e7a1b7cf8868bfce34d379fbd03acf",
+      "index.html": "ac692f2b0dbb3dd8ad43de78d97d8ad04618619b3fbf5832e298d16f9239c96d",
+      "style.css": "b47edbf05da6a12d9f25dcfe787a33fe1ef5e7efb52065ee47b691688bbd452d"
+    },
+    "revision": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-revision-d24144cd96784c24a5a7e03c9a12130e"
+  }
+}

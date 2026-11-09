@@ -118,3 +118,62 @@ export function takeSeam(seams, id) {
 export function stitchedBadges(rescued) {
   return Math.min(3, Math.floor(rescued / 20));
 }
+export const MEND_SITES = [
+  { id: "left", title: "왼쪽 터진 솔기", x: 96, y: 330 },
+  { id: "right", title: "오른쪽 터진 솔기", x: 324, y: 330 },
+];
+export function mendHits(sites, seam) {
+  return sites
+    .filter(
+      (site) =>
+        !site.mended && Math.hypot(site.x - seam.x, site.y - seam.y) <= R * 3.6,
+    )
+    .map((site) => site.id);
+}
+export function stageWon(index, rescued, sites) {
+  return index === 0
+    ? rescued >= RESCUE_GOAL
+    : sites.length > 0 && sites.every((site) => site.mended);
+}
+export function openingKind(index, row, column, rolled) {
+  if (index === 1) {
+    if (((row === 3 || row === 4) && column < 3) || (row === 2 && column === 0))
+      return 1;
+    if (((row === 3 || row === 4) && column > 3) || (row === 2 && column === 6))
+      return 2;
+  } else if ((row === 6 && column < 5) || (row === 7 && column < 2)) return 0;
+  return rolled;
+}
+export function findChain(tokens, minimum, site = null, sameKind = true) {
+  const visible = tokens.filter((token) => token.y >= 0 && token.y <= H);
+  function walk(path) {
+    if (path.length === minimum)
+      return [...path].reverse().map((token) => token.id);
+    const last = path.at(-1);
+    for (const token of visible) {
+      if (
+        path.includes(token) ||
+        (sameKind && token.kind !== last.kind) ||
+        Math.hypot(token.x - last.x, token.y - last.y) > LINK
+      )
+        continue;
+      const found = walk([...path, token]);
+      if (found) return found;
+    }
+    return null;
+  }
+  for (const end of visible) {
+    if (site && Math.hypot(end.x - site.x, end.y - site.y) > R * 3.6) continue;
+    const found = walk([end]);
+    if (found) return found;
+  }
+  return [];
+}
+export function mendPlan(tokens, sites) {
+  const site = sites.find((site) => !site.mended);
+  if (!site || findChain(tokens, 7, site).length) return null;
+  const ids = findChain(tokens, 7, site, false);
+  return ids.length
+    ? { ids, kind: tokens.find((token) => token.id === ids.at(-1)).kind }
+    : null;
+}

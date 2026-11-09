@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "engine": "web",
+  "work_id": "web-b3c275fa35d14d02a01639d588014ec1",
+  "title": "혜성 궤도",
+  "genre": "turn-based slingshot ricochet RPG",
+  "goal": "월식의 방벽을 무너뜨린 뒤 쌍성 관측소의 두 고리를 한 발로 이어 관측핵을 해방한다.",
+  "controls": "수호자 또는 1·2·3 선택. 뒤로 당겼다 놓아 발사. ←→ 각도, ↑↓ 위력, Space 발사. 슬라이더·발사 버튼 지원. 조준선은 첫 적·벽 충돌과 반사를 예측한다. 충전 후 S 필살기, 실패 시 현재 단계 재도전 버튼. R 캠페인 처음부터.",
+  "stages": [
+    {
+      "id": "sanctum",
+      "title": "월식의 성소",
+      "objective": "잔영과 월식의 심장을 격파해 관측소로 향한다.",
+      "tactic": "금빛 약점은 턴마다 회전한다. 벽 반사·동료 연계로 방어를 관통한다."
+    },
+    {
+      "id": "twin-observatory",
+      "title": "쌍성 관측소",
+      "objective": "같은 발사로 두 고리를 켠 뒤 열린 관측핵을 격파한다.",
+      "tactic": "벽이나 동료를 먼저 거친 한 발로 두 고리를 잇는다. 핵은 다음 발사까지 열린다. 루나의 가로 반사를 활용한다."
+    }
+  ],
+  "index": "play/campaign/index.html",
+  "provenance": {
+    "genre.json": {
+      "source": "genre.json",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:5c309165b92e2ab8f577a1f39e03726d340dec13001448f1a29b99162ff8a236",
+      "sha256": "bf68209a199d38d83157ba770b6d50d6f0e7a1b7cf8868bfce34d379fbd03acf",
+      "byteCount": 1175
+    },
+    "campaign-flow.mjs": {
+      "source": "game/campaign-flow.mjs",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:b1efe51a8cde2516c13b5cb6b09983a963a9448ad80803aa00cb27d8d1809bd5",
+      "sha256": "4e8562baa50786b338bf1fb4422624543817174590f099f4277ab4e33a3fcc17",
+      "byteCount": 967
+    },
+    "combat.mjs": {
+      "source": "game/combat.mjs",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:e53326a24b4bfc4ae2c3def8661a23e18b28930ff83fde1859a3919ef046e503",
+      "sha256": "c68ae15061059fd2f72a52ec9b387cb0ae89edb5848125063e02b03132409949",
+      "byteCount": 12035
+    },
+    "game.mjs": {
+      "source": "game/game.mjs",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:957778787768a4de68d74f0dd1487d34aa6adff79f58067ae7af57f35174879a",
+      "sha256": "a5400f61e8021dc21fc2ed05bf2b65057759a51819471a6d7d4634bc4dff2e2e",
+      "byteCount": 25207
+    },
+    "index.html": {
+      "source": "game/index.html",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:71d423cdbbaacc03581144a790aae049e246b352dfaea37b7cc6ed0eabd257f5",
+      "sha256": "468f00e7bfefb88a29d7663d64756201fa5f5bfd550d923eaf4e11d0153a952a",
+      "byteCount": 6347
+    },
+    "style.css": {
+      "source": "game/style.css",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:394c9b01713c38d8a4f2589a54bf2e51a740d7e0040a0bdbd4f8c0554111eed1",
+      "sha256": "b47edbf05da6a12d9f25dcfe787a33fe1ef5e7efb52065ee47b691688bbd452d",
+      "byteCount": 14300
+    },
+    "art/boss-orb.png": {
+      "source": "game/art/boss-orb.png",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:84a56720601a91743618ff7bf8baf88be24092d8549b8095321fc6579e0ea812",
+      "sha256": "bf5c3ad0bd7f7f444a9160ad0599628c6367f899940ebbc73d30fa0df6c7a0f2",
+      "byteCount": 299336
+    },
+    "art/foe-orb.png": {
+      "source": "game/art/foe-orb.png",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:5adfe577eb57eed8db74a75e65fa12feb7caa32bd76b019c6486080a818fc227",
+      "sha256": "cb60eba508a9f7d69c4cb2c0a55d2e9b620805fe58fc8b48d73ea5d85a1577b6",
+      "byteCount": 178680
+    },
+    "art/guardian-moon.png": {
+      "source": "game/art/guardian-moon.png",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:6f678b3fca4503e4eec433c1e4eb21d26637c82c6128b9421623c0582b52a05c",
+      "sha256": "ccf4289dac74fe022fc0c714430b139b69194d55820cfe62165f3df36bdd3837",
+      "byteCount": 383155
+    },
+    "art/guardian-nova.png": {
+      "source": "game/art/guardian-nova.png",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:1d02ca8aaefb89c8a4e4ac160b3e4764534b46f7d5ef0bbc3abf7d3cc7332542",
+      "sha256": "af9509d34df573222e2fc063cbb6daa810df9db783e954a422b428ba652d4e53",
+      "byteCount": 381176
+    },
+    "art/guardian-sun.png": {
+      "source": "game/art/guardian-sun.png",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:b9d1de897fcb955d75681555756a2cb5f6141e465b6c2d5b3be43b97a6f63f2f",
+      "sha256": "2722e6af28239f3b6ef3817397adb7f34dc3018b68429dc107b7456f489cd215",
+      "byteCount": 378860
+    },
+    "art/guardians.webp": {
+      "source": "game/art/guardians.webp",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:eebc9b54a57c6b62e1e56e68a5b19d39b8293077e65fdfc9cd0141314ce28e95",
+      "sha256": "1e8c0610a0fb79c2dce5c81313c546c1d6c4575c418f0b0c4b0ef6c68a8b18f1",
+      "byteCount": 315340
+    },
+    "art/sanctum.webp": {
+      "source": "game/art/sanctum.webp",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:410570bb55890f92c0513d67813c7aa5d971141a7f506ffa27311fae09f4cbe4",
+      "sha256": "7eff68e7666ea7fef3be6d429b94a4c7883e262d4d00c3133a65faeaa59d84ae",
+      "byteCount": 158250
+    },
+    "art/twin-observatory.webp": {
+      "source": "game/art/twin-observatory.webp",
+      "artifact": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-b3c275fa35d14d02a01639d588014ec1-inputs:artifact:0e2cb62eb399479c61819828df00bca8fdc55a19b560e40000fd100f505e4f91",
+      "sha256": "fc9cac64e7df8531d4055649d9a20d83f10957126c9a0fd948ebd2dc1f9c1ce1",
+      "byteCount": 171480
+    },
+    "feedback.mjs": {
+      "source": "studio/engines/web/feedback.mjs",
+      "origin": "installed-runtime",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    "campaign.mjs": {
+      "source": "studio/engines/web/campaign.mjs",
+      "origin": "installed-runtime",
+      "sha256": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635",
+      "byteCount": 2067
+    }
+  },
+  "files": [
+    {
+      "path": "art/boss-orb.png",
+      "sha256": "bf5c3ad0bd7f7f444a9160ad0599628c6367f899940ebbc73d30fa0df6c7a0f2",
+      "byteCount": 299336
+    },
+    {
+      "path": "art/foe-orb.png",
+      "sha256": "cb60eba508a9f7d69c4cb2c0a55d2e9b620805fe58fc8b48d73ea5d85a1577b6",
+      "byteCount": 178680
+    },
+    {
+      "path": "art/guardian-moon.png",
+      "sha256": "ccf4289dac74fe022fc0c714430b139b69194d55820cfe62165f3df36bdd3837",
+      "byteCount": 383155
+    },
+    {
+      "path": "art/guardian-nova.png",
+      "sha256": "af9509d34df573222e2fc063cbb6daa810df9db783e954a422b428ba652d4e53",
+      "byteCount": 381176
+    },
+    {
+      "path": "art/guardian-sun.png",
+      "sha256": "2722e6af28239f3b6ef3817397adb7f34dc3018b68429dc107b7456f489cd215",
+      "byteCount": 378860
+    },
+    {
+      "path": "art/guardians.webp",
+      "sha256": "1e8c0610a0fb79c2dce5c81313c546c1d6c4575c418f0b0c4b0ef6c68a8b18f1",
+      "byteCount": 315340
+    },
+    {
+      "path": "art/sanctum.webp",
+      "sha256": "7eff68e7666ea7fef3be6d429b94a4c7883e262d4d00c3133a65faeaa59d84ae",
+      "byteCount": 158250
+    },
+    {
+      "path": "art/twin-observatory.webp",
+      "sha256": "fc9cac64e7df8531d4055649d9a20d83f10957126c9a0fd948ebd2dc1f9c1ce1",
+      "byteCount": 171480
+    },
+    {
+      "path": "campaign-flow.mjs",
+      "sha256": "4e8562baa50786b338bf1fb4422624543817174590f099f4277ab4e33a3fcc17",
+      "byteCount": 967
+    },
+    {
+      "path": "campaign.mjs",
+      "sha256": "81f31ec653215df9436486390ac68c1114a2b00eaf9cb4a43063c0512a376635",
+      "byteCount": 2067
+    },
+    {
+      "path": "combat.mjs",
+      "sha256": "c68ae15061059fd2f72a52ec9b387cb0ae89edb5848125063e02b03132409949",
+      "byteCount": 12035
+    },
+    {
+      "path": "feedback.mjs",
+      "sha256": "b09b2f1677dc391609a64233a922e88c535d19f28f1de70b067cdd7d81d52c33",
+      "byteCount": 6973
+    },
+    {
+      "path": "game.mjs",
+      "sha256": "a5400f61e8021dc21fc2ed05bf2b65057759a51819471a6d7d4634bc4dff2e2e",
+      "byteCount": 25207
+    },
+    {
+      "path": "genre.json",
+      "sha256": "bf68209a199d38d83157ba770b6d50d6f0e7a1b7cf8868bfce34d379fbd03acf",
+      "byteCount": 1175
+    },
+    {
+      "path": "index.html",
+      "sha256": "468f00e7bfefb88a29d7663d64756201fa5f5bfd550d923eaf4e11d0153a952a",
+      "byteCount": 6347
+    },
+    {
+      "path": "style.css",
+      "sha256": "b47edbf05da6a12d9f25dcfe787a33fe1ef5e7efb52065ee47b691688bbd452d",
+      "byteCount": 14300
+    }
+  ]
+}

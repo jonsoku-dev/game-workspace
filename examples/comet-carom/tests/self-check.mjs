@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import {
   createGame,
+  enterStage,
   launch,
   step,
   simulate,
@@ -176,4 +177,196 @@ const cornerPreview = previewShot(corner, cornerAngle, 100);
 assert(cornerPreview.impacts.filter((e) => e.type === "bounce").length >= 2);
 console.log(
   "PASS V2 exact normal26/bank36, guard8/weak52, prepared44, rotating shield, non-mutating same-physics enemy/wall/corner preview",
+);
+
+// Use the installed plugin implementation and manifest, not a campaign fixture.
+const { readFileSync } = await import("node:fs");
+const { createCampaign } =
+  await import("../../../studio/engines/web/campaign.mjs");
+const { createRun } = await import("../game/campaign-flow.mjs");
+const manifest = JSON.parse(
+  readFileSync(new URL("../genre.json", import.meta.url), "utf8"),
+);
+const campaign = createCampaign(manifest.stages),
+  run = createRun(campaign);
+assert.equal(run.advance(), false);
+const campaignRoute = [];
+for (let i = 0; i < 20 && campaign.phase === "playing"; i++) {
+  const g = run.game,
+    h = g.heroes[g.selected],
+    e = g.foes.find((e) => e.hp > 0);
+  const angle = Math.round((Math.atan2(e.y - h.y, e.x - h.x) * 180) / Math.PI);
+  campaignRoute.push({
+    stage: campaign.stage.id,
+    unit: g.selected,
+    angle,
+    power: 100,
+    skill: g.charge >= 3,
+  });
+  launch(g, angle, 100, g.charge >= 3);
+  simulate(g);
+  run.settle();
+}
+assert.equal(campaign.phase, "between");
+assert.equal(campaign.index, 0);
+const carried = {
+  hits: run.game.totalHits,
+  charge: run.game.charge,
+  assists: run.game.assists,
+};
+assert(run.advance());
+assert.equal(campaign.stage.id, "twin-observatory");
+const entry = structuredClone(run.game);
+assert.equal(entry.totalHits, carried.hits);
+assert.equal(entry.charge, carried.charge);
+assert.equal(entry.assists, carried.assists);
+assert.equal(entry.hp, entry.maxHp);
+const sealed = structuredClone(entry);
+launch(sealed, -138, 100, true);
+simulate(sealed);
+assert.equal(sealed.foes[0].hp, 84);
+assert(sealed.events.some((e) => e.kind === "sealed" && e.damage === 0));
+const broken = structuredClone(entry);
+launch(broken, -176, 100);
+simulate(broken);
+assert.equal(broken.lastShot.latches, 1);
+assert.equal(broken.aperture, 0);
+assert(broken.events.some((e) => e.type === "chainbreak"));
+const predicted = previewShot(entry, 0, 100);
+assert(predicted.opensCore);
+assert.equal(predicted.latches.length, 2);
+assert.deepEqual(run.game, entry);
+const opened = structuredClone(entry);
+launch(opened, 0, 100);
+simulate(opened);
+assert.equal(opened.aperture, 1);
+assert.equal(opened.lastShot.latches, 2);
+assert.deepEqual(
+  opened.events.filter((e) => e.type === "latch").map((e) => e.latch),
+  predicted.latches.map((e) => e.latch),
+);
+assert.equal(opened.foes[0].hp, 84); // Latches open a window, not automatic damage.
+const expired = structuredClone(opened);
+select(expired, 2);
+launch(expired, 90, 0);
+simulate(expired);
+assert.equal(expired.aperture, 0);
+// Lose with bounded real inputs, then restore exactly the stage entry snapshot.
+for (let i = 0; i < 30 && run.game.phase === "aim"; i++) {
+  launch(run.game, 90, 0);
+  simulate(run.game);
+  run.settle();
+}
+assert.equal(campaign.phase, "failed");
+assert(run.retry());
+assert.deepEqual(run.game, entry);
+assert.equal(run.retry(), false);
+for (let i = 0; i < 8 && campaign.phase === "playing"; i++) {
+  const g = run.game;
+  let angle;
+  if (!g.aperture) {
+    select(g, 1);
+    angle = g.heroes[1].x < 360 ? 180 : 0;
+  } else {
+    select(g, 0);
+    const h = g.heroes[0],
+      e = g.foes[0];
+    angle = Math.round((Math.atan2(e.y - h.y, e.x - h.x) * 180) / Math.PI);
+  }
+  campaignRoute.push({
+    stage: campaign.stage.id,
+    unit: g.selected,
+    angle,
+    power: 100,
+    skill: false,
+  });
+  launch(g, angle, 100, false);
+  simulate(g);
+  run.settle();
+}
+assert.equal(campaign.phase, "complete");
+assert.equal(run.game.phase, "won");
+assert.equal(run.advance(), false);
+assert.equal(
+  campaignRoute.filter((s) => s.stage === "twin-observatory").length,
+  4,
+);
+assert(run.restart());
+assert.equal(campaign.index, 0);
+assert.deepEqual(run.game, createGame());
+console.log(
+  "PASS installed campaign: genuine whole-degree two-stage clear, one-node chain break, sealed core, expiry, carried counters, real-loss checkpoint retry, complete/restart",
+);
+console.log("NORMAL_ROUTE " + JSON.stringify(campaignRoute));
+
+// Exercise the actual render entrypoint and cue consumer under identical RAF times.
+// DOM, sound and drawing are inert; actual impacts still drive the cosmetic branches.
+const { runInNewContext } = await import("node:vm");
+const renderer = readFileSync(
+  new URL("../game/game.mjs", import.meta.url),
+  "utf8",
+);
+const actualFrame = renderer.slice(
+  renderer.indexOf("function frame(t)"),
+  renderer.indexOf("function shoot()"),
+);
+const actualCues = renderer.slice(
+  renderer.indexOf("function cues()"),
+  renderer.indexOf("function portrait("),
+);
+function frameTrace(mode) {
+  const game = createGame();
+  launch(game, -90, 100);
+  const context = {
+    game,
+    step,
+    last: 0,
+    acc: 0,
+    fx: mode !== "off",
+    hitStop: 0,
+    hitFlash: 0,
+    kick: 0,
+    trail: [],
+    particles: [],
+    labels: [],
+    impacts: [],
+    beams: [],
+    feedback: { emit() {} },
+    $: () => ({ textContent: "" }),
+    run: { settle() {} },
+    updateUI() {},
+    draw() {},
+    requestAnimationFrame() {},
+  };
+  runInNewContext(
+    actualCues + actualFrame + "globalThis.testFrame=frame;",
+    context,
+  );
+  const samples = [];
+  for (let i = 0; i <= 360; i++) {
+    if (mode === "toggle") context.fx = i < 45 || i > 90;
+    context.testFrame((i * 1000) / 60);
+    samples.push(
+      JSON.parse(
+        JSON.stringify({
+          heroes: game.heroes,
+          foes: game.foes,
+          hp: game.hp,
+          turn: game.turn,
+          phase: game.phase,
+          elapsed: game.shot?.elapsed ?? null,
+          totalHits: game.totalHits,
+        }),
+      ),
+    );
+  }
+  assert(samples.some((s) => s.totalHits > 0 && s.phase === "flight"));
+  assert.equal(samples.at(-1).phase, "aim");
+  return samples;
+}
+const effectsOn = frameTrace("on");
+assert.deepEqual(frameTrace("off"), effectsOn);
+assert.deepEqual(frameTrace("toggle"), effectsOn);
+console.log(
+  "PASS actual RAF/cue path: FX on/off/mid-flight toggle have identical per-frame position, elapsed, damage and next-turn timing",
 );

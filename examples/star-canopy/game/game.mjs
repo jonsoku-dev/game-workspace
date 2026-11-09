@@ -1,6 +1,14 @@
+import { loadCampaign } from "./campaign.mjs";
+const campaign = await loadCampaign();
 import { createFeedback } from "./feedback.mjs";
 import {
-  platforms,
+  platforms as forestPlatforms,
+  moonPlatforms,
+  moonBeacons,
+  beaconWindow,
+  beaconResponse,
+  stageBaseline,
+  missedHeight,
   progression,
   portalOpen,
   landing,
@@ -33,6 +41,12 @@ for (const name of ["player", "creature"]) {
   art[name] = new Image();
   art[name].src = `./art/${name}.png`;
 }
+let platforms = forestPlatforms,
+  litBeacons = 0,
+  stageTime = 0,
+  entryKills = 0;
+let visualTime = 0,
+  pulseWasOpen = true;
 let p,
   enemies,
   spells = [],
@@ -59,13 +73,24 @@ function toast(t) {
   $("#toast").textContent = t;
   toastTime = 4;
 }
-function reset() {
+function enterStage() {
+  const baseline = stageBaseline(campaign.index, entryKills);
+  platforms = campaign.index === 0 ? forestPlatforms : moonPlatforms;
+  scenery.src =
+    campaign.index === 0
+      ? "./scenery/canopy.webp"
+      : "./scenery/moon-grove.webp";
+  litBeacons = 0;
+  stageTime = 0;
+  pulseWasOpen = true;
+  keys.clear();
+  pressed.clear();
   p = {
     x: 150,
     y: 575,
     vy: 0,
     dir: 1,
-    hp: 100,
+    hp: baseline.hp,
     ground: true,
     drop: 0,
     attack: 0,
@@ -77,12 +102,19 @@ function reset() {
   impacts = [];
   levelGlow = 0;
   shake = 0;
-  enemies = [
-    { x: 570, y: 450, home: 570, platform: 1 },
-    { x: 1010, y: 340, home: 1010, platform: 2 },
-    { x: 1390, y: 445, home: 1390, platform: 3 },
-    { x: 1830, y: 330, home: 1830, platform: 4 },
-  ].map((e, i) => ({
+  enemies = (
+    campaign.index === 0
+      ? [
+          { x: 570, y: 450, home: 570, platform: 1 },
+          { x: 1010, y: 340, home: 1010, platform: 2 },
+          { x: 1390, y: 445, home: 1390, platform: 3 },
+          { x: 1830, y: 330, home: 1830, platform: 4 },
+        ]
+      : [
+          { x: 520, y: 450, home: 520, platform: 1 },
+          { x: 1100, y: 330, home: 1100, platform: 2 },
+        ]
+  ).map((e, i) => ({
     id: `creature-${i}`,
     ...e,
     hp: 3,
@@ -92,7 +124,7 @@ function reset() {
     dir: -1,
     hit: 0,
   }));
-  kills = 0;
+  kills = baseline.kills;
   charged = false;
   mode = "play";
   camera = 0;
@@ -100,8 +132,30 @@ function reset() {
   texts = [];
   $("#modal").hidden = true;
   $("#pause").textContent = "Ⅱ 쉬기";
-  toast("루나의 부탁 · 별잎 세 장을 찾아 바람꽃을 깨워 줘.");
+  $("#questTitle").textContent = campaign.stage.title;
+  $("#regionTitle").textContent = campaign.stage.title;
+  $("#stageObjective").textContent = campaign.stage.objective;
+  canvas.setAttribute(
+    "aria-label",
+    `${campaign.stage.title}. ${campaign.stage.objective} ${campaign.stage.tactic} 화살표 이동, Space 점프, J 공격, K 별꽃.`,
+  );
+  canvas.focus({ preventScroll: true });
+  toast(campaign.stage.tactic);
   hud();
+}
+function restartCampaign() {
+  if (!campaign.restart()) return false;
+  entryKills = 0;
+  enterStage();
+  return true;
+}
+function continueCampaign() {
+  const action = campaign.confirmResult();
+  if (!action) return false;
+  if (action === "advance") entryKills = kills;
+  if (action === "restart") entryKills = 0;
+  enterStage();
+  return true;
 }
 function hud() {
   const q = progression(kills);
@@ -112,17 +166,35 @@ function hud() {
   $("#xpbar").style.width = `${q.level === 1 ? (q.xp / 70) * 100 : 100}%`;
   $("#xp").textContent =
     q.level === 1 ? `EXP ${q.xp} / 70` : "EXP 70 / 70 · 별꽃 개화";
-  $("#quest").textContent = `별잎 되찾기 ${q.leaves} / 3`;
-  $("#spell").textContent = charged
-    ? "✧ 고원의 문 열림"
-    : q.spell
-      ? "K · 별꽃을 바람꽃에 맞히기"
-      : "두 마리 처치 → 별꽃 개방";
+  $("#quest").textContent =
+    campaign.index === 0
+      ? `별잎 되찾기 ${q.leaves} / 3`
+      : `달빛 봉화 ${litBeacons} / 2 · ${litBeacons === 0 ? "첫 봉화 →" : litBeacons === 1 ? "둘째 봉화 ←" : "별길 완성"}`;
+  $("#spell").textContent =
+    campaign.index === 1
+      ? charged
+        ? "✧ 별길의 문 열림"
+        : litBeacons === 0
+          ? "아래 발판에서 오른쪽으로 K"
+          : "위 발판 오른편에서 왼쪽으로 K · 밝을 때"
+      : charged
+        ? "✧ 고원의 문 열림"
+        : q.spell
+          ? "K · 별꽃을 바람꽃에 맞히기"
+          : "두 마리 처치 → 별꽃 개방";
   $("#magic").style.background = q.spell ? "#f7e2a7" : "#e5e8d9";
-  $("#distance").textContent =
-    `0${Math.min(3, 1 + Math.floor(p.x / 920))} / 03`;
+  $("#distance").textContent = `구역 ${campaign.index + 1} / 2`;
+  const pulseText =
+    campaign.index === 1 && litBeacons === 1
+      ? beaconWindow(stageTime)
+        ? "둘째 봉화: 밝음 · 지금 명중"
+        : "둘째 봉화: 어두움 · 다음 빛을 기다리기"
+      : "";
+  if ($("#pulseStatus").textContent !== pulseText)
+    $("#pulseStatus").textContent = pulseText;
 }
 function burst(x, y, color, n = 18) {
+  if (feedback.reducedMotion) return;
   for (let i = 0; i < n; i++)
     particles.push({
       x,
@@ -150,15 +222,20 @@ function hurt(e, damage, direction = p.dir) {
   if (e.hp <= 0) {
     kills++;
     burst(e.x, e.y - 40, "#c9ee86", 28);
-    float("+35 EXP · 별잎 +1", e.x, e.y - 95, "#fff7b5");
+    float(
+      campaign.index === 0 ? "+35 EXP · 별잎 +1" : "길 확보",
+      e.x,
+      e.y - 95,
+      "#fff7b5",
+    );
     cue("pickup");
-    if (kills === 2) {
+    if (campaign.index === 0 && kills === 2) {
       p.hp = Math.min(100, p.hp + 35);
       levelGlow = 2.4;
       toast("레벨 2 · 별꽃 개방! K를 눌러 전방으로 꽃을 날려 보세요.");
       cue("win");
       burst(p.x, p.y - 50, "#fff2a2", 55);
-    } else if (kills === 3)
+    } else if (campaign.index === 0 && kills === 3)
       toast("별잎을 다 모았어요. 오른쪽 바람꽃에 별꽃을 맞혀 주세요.");
     hud();
   }
@@ -193,15 +270,35 @@ function attack(magic = false) {
   if (!hit) cue("miss");
 }
 function end(win) {
+  if (!(win ? campaign.finishStage() : campaign.failStage())) return;
   mode = win ? "win" : "lose";
-  cue(win ? "finish" : "lose");
-  $("#endingTag").textContent = win ? "QUEST COMPLETE" : "TRY AGAIN";
-  $("#ending").textContent = win ? "고원에 별이 피었어요" : "잠깐, 숨을 골라요";
-  $("#endingText").innerHTML = win
-    ? "별잎을 되찾고 별꽃의 수호자가 되었습니다.<br>루나와 함께 다음 계절에도 다시 만나요."
-    : "숲의 친구들은 공격 전에 몸을 붉게 부풀려요.<br>점프로 피한 뒤 별가지를 휘둘러 보세요.";
+  cue(win ? (campaign.phase === "between" ? "win" : "finish") : "lose");
+  $("#endingTag").textContent = win
+    ? campaign.phase === "between"
+      ? "STAGE CLEAR"
+      : "JOURNEY COMPLETE"
+    : "TRY AGAIN";
+  $("#ending").textContent = win
+    ? campaign.phase === "between"
+      ? "고원 너머의 초대"
+      : "두 숲에 별길이 이어졌어요"
+    : "잠깐, 숨을 골라요";
+  $("#endingText").textContent = win
+    ? campaign.phase === "between"
+      ? "별꽃의 힘을 간직한 채 달빛 상층숲으로 향합니다."
+      : "높이와 방향, 달의 맥동을 읽어 별길을 완성했습니다."
+    : "현재 구역 진입 상태로 재도전합니다. 봉화는 높이와 방향을 읽고 맞혀 주세요.";
+  $("#restart").textContent =
+    campaign.phase === "between"
+      ? "다음 구역 · 달빛 상층숲 →"
+      : campaign.phase === "failed"
+        ? "이 구역 재도전 ↗"
+        : "첫 모험부터 다시";
+  $("#fresh").hidden = campaign.phase === "complete";
   $("#modal").hidden = false;
+  $("#restart").focus();
   keys.clear();
+  pressed.clear();
 }
 function togglePause() {
   if (!["play", "pause"].includes(mode)) return;
@@ -223,8 +320,7 @@ addEventListener("keydown", (e) => {
     e.preventDefault();
   if (e.repeat) return;
   if (e.key.toLowerCase() === "r") {
-    reset();
-    cue("restart");
+    if (restartCampaign()) cue("restart");
     return;
   }
   if (e.key.toLowerCase() === "p") {
@@ -260,19 +356,27 @@ $("#sound").onclick = () => {
 };
 $("#pause").onclick = togglePause;
 $("#restart").onclick = () => {
-  reset();
-  cue("restart");
+  if (continueCampaign()) cue("restart");
+};
+$("#fresh").onclick = () => {
+  if (restartCampaign()) cue("restart");
 };
 const has = (...ks) => ks.some((k) => keys.has(k)),
   tap = (...ks) => ks.some((k) => pressed.has(k));
 function update(dt) {
   time += dt;
+  visualTime = feedback.reducedMotion ? 0 : time;
   if (mode !== "play") {
     pressed.clear();
     return;
   }
   levelGlow = Math.max(0, levelGlow - dt);
   shake = Math.max(0, shake - dt);
+  stageTime += dt;
+  const pulseOpen = beaconWindow(stageTime);
+  if (campaign.index === 1 && litBeacons === 1 && pulseOpen && !pulseWasOpen)
+    cue("select");
+  pulseWasOpen = pulseOpen;
   p.cool = Math.max(0, p.cool - dt);
   p.attack = Math.max(0, p.attack - dt);
   p.magic = Math.max(0, p.magic - dt);
@@ -305,7 +409,14 @@ function update(dt) {
     p.ground = false;
     cue("move");
   }
-  const inDraft = [800, 1580, 2010].some((x) => Math.abs(p.x - x) < 53);
+  const draftXs =
+    campaign.index === 0
+      ? [800, 1580, 2010]
+      : [
+          ...(litBeacons >= 1 ? [800] : []),
+          ...(litBeacons >= 2 ? [1660, 2080] : []),
+        ];
+  const inDraft = draftXs.some((x) => Math.abs(p.x - x) < 53);
   if (has("w", "arrowup") && inDraft) {
     p.vy = -370;
     p.ground = false;
@@ -323,7 +434,7 @@ function update(dt) {
   }
   p.ground = false;
   if (p.vy >= 0) {
-    const floor = landing(old, p.y, p.x, p.drop > 0);
+    const floor = landing(old, p.y, p.x, p.drop > 0, platforms);
     if (floor) {
       if (p.vy > 250) cue("land");
       p.y = floor.y;
@@ -334,13 +445,17 @@ function update(dt) {
   if (has("j") || tap("j")) attack();
   if (has("k") || tap("k")) attack(true);
   if (tap("w", "arrowup") && Math.abs(p.x - 2570) < 100) {
-    if (portalOpen(kills, charged)) end(true);
-    else {
+    if (campaign.index === 0 ? portalOpen(kills, charged) : litBeacons === 2) {
+      end(true);
+      return;
+    } else {
       cue("denied");
       toast(
-        kills < 3
-          ? "별잎 세 장과 별꽃 마법이 필요해요."
-          : "문 왼쪽의 바람꽃에 별꽃을 맞혀 주세요.",
+        campaign.index === 1
+          ? "높이와 방향을 맞춰 두 봉화를 순서대로 깨워 주세요."
+          : kills < 3
+            ? "별잎 세 장과 별꽃 마법이 필요해요."
+            : "문 왼쪽의 바람꽃에 별꽃을 맞혀 주세요.",
       );
     }
   }
@@ -387,14 +502,57 @@ function update(dt) {
   const targets = enemies
     .filter((e) => e.hp > 0)
     .map((e) => ({ id: e.id, x: e.x, y: e.y - 40, radius: 30 }));
-  if (!charged) targets.push(windBloom);
+  if (campaign.index === 0 && !charged) targets.push(windBloom);
+  if (campaign.index === 1) targets.push(...moonBeacons.slice(litBeacons));
   spells = spells
     .map((spell) => {
       const next = advanceSpell(spell, dt, targets);
       if (next.hit) {
-        impacts.push({ x: next.x, y: next.y, life: 0.45 });
-        burst(next.x, next.y, "#fff0ae", 24);
-        if (next.hit === "bloom") {
+        const beaconHit = next.hit.startsWith("beacon-");
+        if (!beaconHit) {
+          impacts.push({ x: next.x, y: next.y, life: 0.45 });
+          burst(next.x, next.y, "#fff0ae", 24);
+        }
+        if (beaconHit) {
+          const result = beaconResponse(
+            litBeacons,
+            next.hit,
+            next.dir,
+            stageTime,
+          );
+          litBeacons = result.lit;
+          charged = litBeacons === 2;
+          if (result.reason === "lit") {
+            impacts.push({ x: next.x, y: next.y, life: 0.45 });
+            burst(next.x, next.y, "#fff0ae", 24);
+            cue(charged ? "crit" : "progress");
+            levelGlow = 1;
+            toast(
+              charged
+                ? "둘째 봉화 점등 · 별길의 문으로 →"
+                : "첫 봉화 점등! 오른쪽 바람길 ↑, 위 발판에서 왼쪽으로 별꽃을 쏘세요.",
+            );
+          } else {
+            cue("denied");
+            float(
+              result.reason === "pulse"
+                ? "맥동 대기"
+                : result.reason === "direction"
+                  ? "방향 확인"
+                  : "순서 확인",
+              next.x,
+              next.y - 25,
+              "#d6cce9",
+            );
+            toast(
+              result.reason === "pulse"
+                ? "달빛이 어두워요. 봉화의 밝은 맥동에 맞혀 주세요."
+                : result.reason === "direction"
+                  ? "봉화의 화살표 방향에서 별꽃을 보내 주세요."
+                  : "첫 봉화를 먼저 밝혀 주세요.",
+            );
+          }
+        } else if (next.hit === "bloom") {
           if (kills >= 3) {
             charged = true;
             cue("finish");
@@ -409,6 +567,13 @@ function update(dt) {
           hurt(enemy, 3, next.dir);
         }
         next.life = 0;
+      }
+      if (next.life <= 0 && !next.hit) {
+        const target = campaign.index === 1 ? moonBeacons[litBeacons] : null;
+        if (missedHeight(next, target)) {
+          cue("denied");
+          toast("높이가 달라요 · 봉화와 같은 발판에서 별꽃을 보내 주세요.");
+        } else cue("miss");
       }
       return next;
     })
@@ -514,10 +679,16 @@ function mushroom(x, y, s = 1) {
 }
 function background() {
   if (scenery.complete && scenery.naturalWidth) {
-    c.drawImage(scenery, -camera * 0.1, 0, 1400, 680);
+    c.drawImage(
+      scenery,
+      -camera * (feedback.reducedMotion ? 0 : 0.1),
+      0,
+      1400,
+      680,
+    );
     for (let i = 0; i < 14; i++)
       leaf(
-        (i * 137 - time * 10 - camera * 0.3 + 3000) % 1300,
+        (i * 137 - visualTime * 10 - camera * 0.3 + 3000) % 1300,
         130 + rand(i + 3) * 400 + Math.sin(time + i) * 20,
         4,
         "#e2efa9",
@@ -545,7 +716,7 @@ function background() {
   c.fillRect(0, 400, W, 180);
   for (let i = 0; i < 8; i++) tree(i * 430 - 100, 590, 1.25, 0.6);
   for (let i = 0; i < 24; i++) {
-    let x = (i * 137 - time * (8 + rand(i) * 9) - camera * 0.45) % 1300;
+    let x = (i * 137 - visualTime * (8 + rand(i) * 9) - camera * 0.45) % 1300;
     if (x < 0) x += 1300;
     leaf(
       x,
@@ -602,14 +773,20 @@ function terrain() {
       ellipse(x + j + 10, y + 45, 5, 8, "#99bc6d", null);
     }
   }
-  for (const x of [800, 1580, 2010]) {
+  for (const x of campaign.index === 0
+    ? [800, 1580, 2010]
+    : [800, 1660, 2080]) {
     const sx = x - camera;
     const stump = terrainArt["wind-stump"];
     if (stump.complete && stump.naturalWidth)
       c.drawImage(stump, sx - 72, 575 - 132, 144, 144);
     for (let i = 0; i < 7; i++) {
-      let yy = 565 - ((time * 115 + i * 39) % 250);
-      c.globalAlpha = 0.35;
+      let yy = 565 - ((visualTime * 115 + i * 39) % 250);
+      c.globalAlpha =
+        campaign.index === 1 &&
+        ((x === 800 && litBeacons < 1) || (x !== 800 && litBeacons < 2))
+          ? 0.06
+          : 0.35;
       c.strokeStyle = "#f3ffe4";
       c.lineWidth = 3;
       c.beginPath();
@@ -658,11 +835,55 @@ function portal() {
     c.fill();
   }
   text(charged ? "↑ 들어가기" : "", x, 597, 15, "#f7f4d6");
+  if (campaign.index === 1) {
+    for (let i = 0; i < moonBeacons.length; i++) {
+      const b = moonBeacons[i],
+        bx = b.x - camera,
+        lit = i < litBeacons,
+        ready = i === 0 || beaconWindow(stageTime);
+      line(bx, b.y + 50, bx, b.y, "#72879b", 6);
+      const glow = c.createRadialGradient(bx, b.y, 2, bx, b.y, 65);
+      glow.addColorStop(
+        0,
+        lit ? "#c8fcece0" : ready ? "#e7d9ffb0" : "#485a7844",
+      );
+      glow.addColorStop(1, "#a8d9ec00");
+      c.fillStyle = glow;
+      c.fillRect(bx - 65, b.y - 65, 130, 130);
+      for (let petal = 0; petal < 5; petal++) {
+        const a = (petal * Math.PI * 2) / 5 + visualTime * 0.3;
+        ellipse(
+          bx + Math.cos(a) * 17,
+          b.y + Math.sin(a) * 17,
+          12,
+          8,
+          lit ? "#b9ffe3" : ready ? "#e4d3fc" : "#69708c",
+          "#7b8baa",
+        );
+      }
+      text(lit ? "✧" : i === 0 ? "1 →" : "← 2", bx, b.y - 42, 18, "#f4edff");
+      if (i === 1 && !lit) {
+        c.strokeStyle = ready ? "#e5dcff" : "#748097";
+        c.lineWidth = 4;
+        c.beginPath();
+        c.arc(
+          bx,
+          b.y,
+          36,
+          -Math.PI / 2,
+          -Math.PI / 2 + (Math.PI * 2 * (stageTime % 4)) / 4,
+        );
+        c.stroke();
+        text(ready ? "지금" : "기다리기", bx, b.y + 66, 12, "#e3e9ff");
+      }
+    }
+    return;
+  }
   const bx = windBloom.x - camera,
     by = windBloom.y;
   line(bx, 575, bx, by, "#6d9960", 5);
   for (let i = 0; i < 5; i++) {
-    const angle = (i * Math.PI * 2) / 5 + Math.sin(time) * 0.08;
+    const angle = (i * Math.PI * 2) / 5 + Math.sin(visualTime) * 0.08;
     const reach = charged ? 20 : 9;
     ellipse(
       bx + Math.cos(angle) * reach,
@@ -692,7 +913,7 @@ function portal() {
     c.strokeStyle = "#f6ebbe";
     c.lineWidth = 1.5;
     c.beginPath();
-    c.arc(bx, by, 35 + Math.sin(time * 3) * 3, 0, Math.PI * 2);
+    c.arc(bx, by, 35 + Math.sin(visualTime * 3) * 3, 0, Math.PI * 2);
     c.stroke();
   }
 }
@@ -783,7 +1004,7 @@ function player() {
 function creature(e) {
   if (e.hp <= 0) return;
   let x = e.x - camera,
-    bob = Math.sin(time * 5 + e.home) * 3;
+    bob = Math.sin(visualTime * 5 + e.home) * 3;
   ellipse(x, e.y + 3, 29, 6, "#335f4c33", null);
   if (e.state === "tell") {
     ellipse(x, e.y - 35, 44, 38, "#ff947744", null);
@@ -839,7 +1060,7 @@ function draw() {
     }
     c.save();
     c.translate(x, y);
-    c.rotate(time * 7);
+    c.rotate(visualTime * 7);
     const size = spell.phase === "cast" ? 9 + spell.age * 65 : 18;
     for (let i = 0; i < 5; i++) {
       c.rotate((Math.PI * 2) / 5);
@@ -856,7 +1077,7 @@ function draw() {
     c.arc(
       impact.x - camera,
       impact.y,
-      (0.45 - impact.life) * 150 + 15,
+      feedback.reducedMotion ? 28 : (0.45 - impact.life) * 150 + 15,
       0,
       Math.PI * 2,
     );
@@ -868,7 +1089,7 @@ function draw() {
     c.save();
     c.globalAlpha = Math.min(1, levelGlow);
     for (let i = 0; i < 7; i++) {
-      const a = (i * Math.PI * 2) / 7 + time * 0.6;
+      const a = (i * Math.PI * 2) / 7 + visualTime * 0.6;
       line(
         x + Math.cos(a) * 55,
         y + Math.sin(a) * 55,
@@ -906,5 +1127,5 @@ function loop(t) {
   draw();
   requestAnimationFrame(loop);
 }
-reset();
+enterStage();
 requestAnimationFrame(loop);

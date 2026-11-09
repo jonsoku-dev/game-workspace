@@ -1,0 +1,13 @@
+{
+  "generator": "built-in imagegen",
+  "transparent_background": false,
+  "prompt": "Use case: stylized-concept. Original premium hand-painted fantasy marble-combat battle arena background, strictly overhead orthographic flat view, portrait 6:7. Twin Observatory: an ancient paired celestial observatory floor in very deep teal, desaturated celadon stone, patinated oxidized brass and dark green-blue glass tiles. At the upper-left perimeter a partial brass and celadon astrolabe architecture; a distinct matching partial astrolabe at lower-right perimeter, forming a quiet diagonal twin theme. The two instruments are architectural reliefs anchored beyond outer corners, intricately machined interlocking brass arcs, delicate astronomical etched dots and jewel bearings confined to perimeter. Other corners feature small elegant celadon carved fan reliefs and green-patina brass rail borders. Large central eighty percent is calm empty low-contrast dark teal polished stone with genuinely painted craft detail, subtle broad worn rectangular stone seams, slight cloudy mineral grain and muted inlaid diagonal lines, no prominent center circles. Hand-painted environment concept art with believable aged craftsmanship, high-end restrained jewel palette, elegant atmospheric material depth and exquisite carved edge detail. Different from gold/lapis sun temple: teal/celadon patinated brass paired observatory. Center must remain dark and quiet for runtime latch, core, enemies, moving heroic marbles and a dotted white aiming line. No units, no tokens, no latches, no core objects, no enemies, no characters, no HUD, no lettering, no text, no numbers, no control panels, no central highlights, no radial gradient. Entire board full bleed, perimeter ornament only, no perspective vanishing point.",
+  "master": "twin-observatory-master.png",
+  "master_size": [
+    1161,
+    1354
+  ],
+  "processing": "twin-observatory-process.py",
+  "processing_description": "Lanczos size normalization, WebP quality86 method6; no repainting or compositing. Reproduce with python3 examples/comet-carom/art-source/campaign/twin-observatory-process.py",
+  "runtime": "game/art/twin-observatory.webp"
+}

@@ -1,0 +1,5 @@
+async function resume(){await page.bringToFront();if((await page.locator('#pause').innerText()).includes('계속'))await page.locator('#pause').click();}
+await resume();await page.keyboard.press('ArrowUp',{delay:1000});await resume();await page.keyboard.press('ArrowRight',{delay:700});await resume();await page.waitForTimeout(400);
+for(let i=0;i<3;i++){await resume();await page.getByRole('button',{name:'공격',exact:true}).click();await page.waitForTimeout(370);}
+if((await page.locator('#level').innerText()).includes('1')){await resume();await page.keyboard.press('ArrowLeft',{delay:30});for(let i=0;i<3;i++){await resume();await page.getByRole('button',{name:'공격',exact:true}).click();await page.waitForTimeout(370);}}
+await page.screenshot({path:'/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/star-canopy/evidence/campaign/plugin-012/upper.png'});if((await page.locator('#pause').innerText()).includes('쉬기'))await page.locator('#pause').click();return {hud:await page.locator('.hud').innerText(),quest:await page.locator('#quest').innerText(),paused:await page.locator('#pause').innerText()};

@@ -1,0 +1,31 @@
+{
+  "status": "read-only diagnosis; not a confirmed app-level reproduction",
+  "transport": "Repository studio/tools/playcheck_browser.py MCP(), independent configured local Stagehand stdio process. Shared direct MCP run was unavailable with RPC client is closed. Independent process closed and focus released.",
+  "verified": [
+    "Actual stage1 quest clear, explicit Next button shown.",
+    "Actual Next click entered moon-grove with LV2 retained and HP100.",
+    "Ground cast produced explicit height denial and left both beacons unlit.",
+    "Lower-platform rightward cast lit beacon1; HUD1/2 and moon backdrop visible."
+  ],
+  "boundary": {
+    "before": "actions.jsonl entry12 returned moon-grove, LV2HP50, beacons1/2, failed=false.",
+    "after": "entry13 only clicked Pause, held ArrowRight1300ms, ArrowUp850ms, ArrowRight950ms, waited350ms, clicked visible Spell, waited1000ms, took screenshot and clicked Pause. Returned stage1LV1HP100.",
+    "explicitFreshOrR": false,
+    "priorHazard": "entry11 tried #restart while modal was hidden during an attempted defeat test. Stagehand returned element not rendered after10000ms. A delayed native click or stale activation is plausible but not proven."
+  },
+  "sourceFinding": "game/game.mjs continueCampaign() falls through to restartCampaign() for any phase except between/failed. A stale hidden Next activation during playing therefore causes a full fresh restart.",
+  "proposedFix": "Only call restartCampaign() from continueCampaign() when phase is complete; return false in other invalid phases. Keep explicit Fresh/R full restart.",
+  "screenFileMtimesUtc": {
+    "stage1-clear.png": "2026-11-09T00:59:15.067845+00:00",
+    "denial.png": "2026-11-09T00:59:36.831012+00:00",
+    "beacon1.png": "2026-11-09T01:00:03.658807+00:00",
+    "stage2-failed.png": "2026-11-09T01:01:00.932496+00:00",
+    "upper.png": "2026-11-09T01:02:12.906974+00:00"
+  },
+  "evidenceCaveats": [
+    "stage2-failed.png is an attempted-failure screenshot, not a real failure. It visibly shows active moon gameplayHP50, so stage2 retry has NOT been browser-verified.",
+    "upper.png shows unexpected stage1 return, not upper beacon success.",
+    "No second beacon, campaign final win, fresh restart or audio listening pass is claimed yet.",
+    "No gameplay state injection or source changes were performed during this QA packet."
+  ]
+}

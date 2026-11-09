@@ -70,6 +70,24 @@
       margin: auto;
       padding: 0 20px;
     }
+    .campaign-brief {
+      padding: 4px 0 14px;
+      line-height: 1.65;
+      color: #bac6c9;
+      font-size: 12px;
+    }
+    .campaign-brief strong {
+      color: #f0be8d;
+      margin-right: 14px;
+    }
+    .campaign-brief p {
+      margin: 3px 0 0;
+      color: #a5b9b8;
+    }
+    button.held {
+      background: #536a72;
+      transform: translateY(1px);
+    }
     .stage {
       position: relative;
       border: 1px solid #4b4e50;
@@ -271,7 +289,11 @@
         font-size: 9px;
       }
       .status {
-        font-size: 9px;
+        position: static;
+        min-height: 2.5em;
+        padding: 5px 8px;
+        font-size: 11px;
+        line-height: 1.4;
       }
       .top-actions button {
         font-size: 10px;
@@ -290,6 +312,10 @@
     </div>
   </header>
   <main class="shell">
+    <div class="campaign-brief">
+      <strong id="stageName">던전 준비</strong><span id="stageObjective"></span>
+      <p id="stageTactic"></p>
+    </div>
     <div class="stage">
       <canvas
         id="game"
@@ -320,8 +346,8 @@
         · <b>K</b> 올려치기 후 J로 공중 추격
       </div>
       <div>
-        <b>SPACE</b> 방향 회피 · <b>ENTER</b> 문 통과<br /><b>P</b> 일시정지 ·
-        <b>R</b> 처음부터
+        <b>SPACE</b> 방향 회피 · <b>ENTER</b> 문 / 던전 계속<br /><b>P</b>
+        일시정지 · <b>R</b> 첫 던전부터
       </div>
       <div>
         붉은 바닥 = 적 공격 범위<br />올려치기 3.8초 · 회피 1.05초 재사용
@@ -338,12 +364,14 @@
         <button data-key=" " aria-label="회피 대시"><b>회피</b>SPACE</button
         ><button data-key="k" aria-label="올려치기"><b>승천</b>K</button
         ><button data-key="j" aria-label="3연속 공격"><b>연격</b>J</button
-        ><button data-key="enter" aria-label="다음 방"><b>문</b>ENTER</button>
+        ><button data-key="enter" aria-label="문 또는 다음 던전으로 계속">
+          <b>계속</b>ENTER
+        </button>
       </div>
     </div>
   </main>
   <footer class="footer">
-    <span>ORIGINAL INK • TWO ROOMS • NO EXTERNAL ASSETS</span
+    <span>ORIGINAL INK • TWO DUNGEONS • NO EXTERNAL ASSETS</span
     ><span>공격 직전 회피 → 청록빛 반격 → J로 가드 파괴.</span>
   </footer>
   <script type="module" src="./game.mjs"></script>

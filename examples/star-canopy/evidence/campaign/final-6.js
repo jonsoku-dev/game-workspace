@@ -1,0 +1,11 @@
+await page.bringToFront();await page.locator('#pause').click();
+for(let i=0;i<100&&(await page.locator('#pulseStatus').innerText()).includes('어두움');i++)await page.waitForTimeout(50);
+for(let i=0;i<100&&(await page.locator('#pulseStatus').innerText()).includes('밝음');i++)await page.waitForTimeout(50);
+await page.getByRole('button',{name:'별꽃 마법',exact:true}).click();await page.waitForTimeout(500);
+const denial={quest:await page.locator('#quest').innerText(),message:await page.locator('#toast').innerText()};
+await page.screenshot({path:'/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/star-canopy/evidence/campaign/denial.png'});
+for(let i=0;i<100&&(await page.locator('#pulseStatus').innerText()).includes('어두움');i++)await page.waitForTimeout(50);
+await page.getByRole('button',{name:'별꽃 마법',exact:true}).click();await page.waitForTimeout(650);
+const success={quest:await page.locator('#quest').innerText(),message:await page.locator('#toast').innerText()};
+await page.setViewportSize({width:1440,height:1000});if((await page.locator('#pause').innerText()).includes('계속'))await page.locator('#pause').click();
+await page.screenshot({path:'/Users/jongseoklee/Documents/ChatGPT/game-workspace/examples/star-canopy/evidence/campaign/cover.png'});await page.locator('#pause').click();return {denial,success,hud:await page.locator('.hud').innerText()};

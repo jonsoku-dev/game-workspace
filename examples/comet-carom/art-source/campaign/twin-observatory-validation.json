@@ -1,0 +1,20 @@
+{
+  "file": "game/art/twin-observatory.webp",
+  "size": [
+    1080,
+    1260
+  ],
+  "mode": "RGB",
+  "bytes": 171480,
+  "sha256": "fc9cac64e7df8531d4055649d9a20d83f10957126c9a0fd948ebd2dc1f9c1ce1",
+  "review_size": [
+    390,
+    455
+  ],
+  "checks": [
+    "WEBP decode",
+    "exact aspect and dimensions",
+    "RGB color",
+    "small-size review image"
+  ]
+}

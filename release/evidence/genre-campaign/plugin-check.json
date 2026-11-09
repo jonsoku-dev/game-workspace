@@ -1,0 +1,62 @@
+{
+  "version": "0.12.0",
+  "marketplace": "game-studio",
+  "enabled": true,
+  "source_and_installed_sha256": {
+    ".agents/skills/game-studio/SKILL.md": "e073d110365b31d11c30bc690b41c4f20328733bb999a568f57edd011b44cc69",
+    "PLAYBOOK.md": "951ff8e6f9c6c4402f12e2d531b5725148a3c8a3c6c07be86826f777a3d9c992",
+    "engines/web/campaign.mjs": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+    "tools/web_game.py": "dd54eadffdeaaae9ec52082a12951fd877464346fcaeec9b26f9ba023897dc22",
+    "tools/web_revision.py": "9e2d5a9a68209957e2716a152f04ac410c1b01fea61737f298c2d2bf3b65f417",
+    "tools/web_regression.py": "973952fc0e1b7fdd31e83f50babe5b95ca744457bd4a69c2776577496e1af137",
+    "tools/playcheck_browser.py": "35391e9e2ae84a16a5cf71bcac6d721ee86c30656dbb7800b9f98a02dfa4298e",
+    ".codex-plugin/plugin.json": "7cdf274cc785ff1e4ea205ed5dd4497ca926f4e1acf207072fbac712f3d2cdff"
+  },
+  "created_starter": "urn:game-studio:41557b36-84b9-4b51-ad70-e3b3edcbf99e:work:campaign-1aaeb3f74e2546418aa6e4229c1cfdc3",
+  "revision_commands": {
+    "ember-alley": {
+      "activity": "urn:game-studio:10282868-358e-44c3-8697-9b2626715f32:work:web-revision-59e89fc6f87b4051b4f01351cc68295d",
+      "report": "checks/web-revision-59e89fc6f87b4051b4f01351cc68295d.json",
+      "kind": "change",
+      "changes": 8,
+      "passed": true
+    },
+    "star-canopy": {
+      "activity": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-revision-e7d860b0ab8a42098cabc34364c8aa20",
+      "report": "checks/web-revision-e7d860b0ab8a42098cabc34364c8aa20.json",
+      "kind": "change",
+      "changes": 7,
+      "passed": true
+    },
+    "pocket-parade": {
+      "activity": "urn:game-studio:b700824c-9331-48d7-89c3-92bb154694e9:work:web-revision-1b3f8913c09242b9acbe2641949de2d6",
+      "report": "checks/web-revision-1b3f8913c09242b9acbe2641949de2d6.json",
+      "kind": "change",
+      "changes": 7,
+      "passed": true
+    },
+    "comet-carom": {
+      "activity": "urn:game-studio:b81f36a0-1442-49ae-ac65-58fa697b7293:work:web-revision-d24144cd96784c24a5a7e03c9a12130e",
+      "report": "checks/web-revision-d24144cd96784c24a5a7e03c9a12130e.json",
+      "kind": "bugfix",
+      "changes": 3,
+      "passed": true
+    }
+  },
+  "real_bugfix": {
+    "baseline": "123 수호자 ←→ 각도\n↑↓ 위력 S 필살기 R 재도전",
+    "expect": "R 처음부터",
+    "candidate": "123 수호자 ←→ 각도\n↑↓ 위력 S 필살기 R 처음부터"
+  },
+  "tests": {
+    "studio": 166,
+    "failed": 0,
+    "skipped": 0,
+    "includes_offline_install": true
+  },
+  "verification_scope": {
+    "full_campaign_runs": "Full controls on 0.11 campaign builds; 0.12 installs preserve those stage rules and introduce guarded result confirmation. Revision reports, focused final checks and additional Star 0.12 full play are separate evidence.",
+    "bugfix_comparison": "Actual Stagehand assertion executed on both sealed exports by 0.12.0.",
+    "limits": "No human play quality score, output-device listening or hardware touch assessment."
+  }
+}

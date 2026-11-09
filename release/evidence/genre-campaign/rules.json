@@ -1,0 +1,60 @@
+[
+  {
+    "cmd": "node examples/ember-alley/tools/combat.test.mjs",
+    "exit_code": 0,
+    "checks": [
+      "PASS depth/facing, startup/active/single hit, 3-chain, launcher/juggle/cooldown, dash/iframes/depth, death/retry, room doors/clear, boss telegraph",
+      "PASS boss normal-hit armor retains tell, special breaks armor",
+      "PASS full command-driven clear with both boss patterns and natural idle defeat",
+      "PASS V2 first-J exact55→41, front/depth/reach misses, contact locations, precision dodge, boss guard counter, consume/whiff/expiry, early/empty dodge, cooldown/restart",
+      "PASS recoil continuity, guarded windup counter interrupt, special preserves next-basic opportunity"
+    ]
+  },
+  {
+    "cmd": "node examples/ember-alley/tools/campaign.test.mjs",
+    "exit_code": 0,
+    "checks": [
+      "PASS shield front block vs rear/launcher reward, distinct contact events, timed shield recovery",
+      "PASS warning→active→cooling vents, once-per-cycle damage, alternating lanes, ordinary directional escape",
+      "PASS real plugin campaign + normal-rule two-dungeon clear, deliberate continue, carry progress, rear-only strategy, stage-local retry baseline, no farming/skip, final fresh restart"
+    ]
+  },
+  {
+    "cmd": "node examples/star-canopy/tools/test-rules.mjs",
+    "exit_code": 0,
+    "checks": [
+      "PASS level unlock, three-leaf gate, charged portal, one-way platform/drop",
+      "PASS cast windup, directional travel, nearest hit, height/direction misses and actual bloom contact",
+      "PASS moon layout, ground miss, aligned casts, beacon order/direction/pulse, stage-entry retry and full restart baselines",
+      "PASS distinct height-miss classification"
+    ]
+  },
+  {
+    "cmd": "node examples/comet-carom/tests/self-check.mjs",
+    "exit_code": 0,
+    "checks": [
+      "PASS deterministic simulation, bounded wall reflection, no tunneling, one-shot ally assists, AoE assist, enemy countdown, charged damage, normal-rule win and loss",
+      "PASS V2 exact normal26/bank36, guard8/weak52, prepared44, rotating shield, non-mutating same-physics enemy/wall/corner preview",
+      "PASS installed campaign: genuine whole-degree two-stage clear, one-node chain break, sealed core, expiry, carried counters, real-loss checkpoint retry, complete/restart",
+      "NORMAL_ROUTE [{\"stage\":\"sanctum\",\"unit\":0,\"angle\":-89,\"power\":100,\"skill\":false},{\"stage\":\"sanctum\",\"unit\":1,\"angle\":-127,\"power\":100,\"skill\":false},{\"stage\":\"sanctum\",\"unit\":2,\"angle\":-117,\"power\":100,\"skill\":false},{\"stage\":\"sanctum\",\"unit\":0,\"angle\":-43,\"power\":100,\"skill\":true},{\"stage\":\"sanctum\",\"unit\":1,\"angle\":-24,\"power\":100,\"skill\":false},{\"stage\":\"sanctum\",\"unit\":2,\"angle\":-118,\"power\":100,\"skill\":false},{\"stage\":\"sanctum\",\"unit\":0,\"angle\":-162,\"power\":100,\"skill\":true},{\"stage\":\"sanctum\",\"unit\":1,\"angle\":-115,\"power\":100,\"skill\":false},{\"stage\":\"sanctum\",\"unit\":2,\"angle\":-125,\"power\":100,\"skill\":false},{\"stage\":\"sanctum\",\"unit\":0,\"angle\":-67,\"power\":100,\"skill\":true},{\"stage\":\"twin-observatory\",\"unit\":1,\"angle\":0,\"power\":100,\"skill\":false},{\"stage\":\"twin-observatory\",\"unit\":0,\"angle\":-70,\"power\":100,\"skill\":false},{\"stage\":\"twin-observatory\",\"unit\":1,\"angle\":180,\"power\":100,\"skill\":false},{\"stage\":\"twin-observatory\",\"unit\":0,\"angle\":-65,\"power\":100,\"skill\":false}]",
+      "PASS actual RAF/cue path: FX on/off/mid-flight toggle have identical per-frame position, elapsed, damage and next-turn timing"
+    ]
+  },
+  {
+    "cmd": "node examples/pocket-parade/tools/verify.mjs",
+    "exit_code": 0,
+    "checks": [
+      "PASS chain adjacency / no reuse / backtrack / wrong species / minimum / score / fever / seeded repeat / gravity bounds / collision settling",
+      "PASS endpoint seam / short-chain preservation / local burst / empty burst retry / one-use bonus / rescue badges",
+      "PASS bonus excludes offscreen refill toys at top and bottom",
+      "PASS true two-site tactic / burst boundary / near miss / no repeated patch / safe assist / playable opening"
+    ]
+  },
+  {
+    "cmd": "node examples/pocket-parade/tools/campaign-route.mjs",
+    "exit_code": 0,
+    "checks": [
+      "PASS production input handlers with DOM fixture and real shared campaign controller: rescue -> explicit next -> seam burst -> timed failure -> same-stage fair retry -> two-site win -> fresh restart. Fixture clock/DOM are not browser evidence."
+    ]
+  }
+]

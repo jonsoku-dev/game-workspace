@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "web-revision-ac13ac5599d1403496a83d3b42741d49",
+  "operation": "diff",
+  "passed": true,
+  "status": "verified",
+  "phase": "verified",
+  "changes": [
+    {
+      "path": "game/game.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "63e0e304d3dc433ee107dbc516cd1bb0cf4bbd08cdae3daf93e93364c5deff10",
+        "byteCount": 25289
+      },
+      "to": {
+        "sha256": "777eda202fdfc2fc7344e81f7cd7aa8ffad4744b6d298918e461ad63fa6f2118",
+        "byteCount": 32797
+      }
+    },
+    {
+      "path": "game/index.html",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "c717b0c1a3919f3a8f8f63d65c64ab058dc341732e56b0d70ce9fd5d840ec365",
+        "byteCount": 3261
+      },
+      "to": {
+        "sha256": "2436762ea38ed010b5269620aa3a75a34d5c8afaf0f210e8a9fab60ffc8ffa2c",
+        "byteCount": 3669
+      }
+    },
+    {
+      "path": "game/rules.mjs",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "45d96e1df2b61874ebb857496adab54127e47f38a9288e017407a03548bef849",
+        "byteCount": 1664
+      },
+      "to": {
+        "sha256": "636da4e13a6c52b2300d5c788f5934be66f244d1c6dec55370ef5a87a05f50fd",
+        "byteCount": 2896
+      }
+    },
+    {
+      "path": "game/scenery/moon-grove.webp",
+      "origin": "project-source",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "3e2d011ed84476d28537c4f207fbea0cc18727bcf0d351aa5405c0b1e1c18b23",
+        "byteCount": 234570
+      }
+    },
+    {
+      "path": "game/style.css",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "2fbbbdce63d046f0f8b7d2b47780d3815ba5defafca5ec2291cc22691ed00c3e",
+        "byteCount": 6763
+      },
+      "to": {
+        "sha256": "a075204aa6596451fe0ad1d626c2aef87512bf63a4a7809fc2951d7aefdd2658",
+        "byteCount": 7215
+      }
+    },
+    {
+      "path": "genre.json",
+      "origin": "project-source",
+      "kind": "modify",
+      "from": {
+        "sha256": "50af3a1083e85fcda567bca7a4171833dd57adea6c8933bbe338197308b31003",
+        "byteCount": 540
+      },
+      "to": {
+        "sha256": "ca66353ed0af63884a97d1f02a3c92a56ef41ce0c50945a1a41834aec15466ed",
+        "byteCount": 1296
+      }
+    },
+    {
+      "path": "campaign.mjs",
+      "origin": "installed-runtime",
+      "kind": "add",
+      "from": null,
+      "to": {
+        "sha256": "013b0c95392a35d80cb88e9538fc13639b5611388e5621fc2a01fea5d06fa8fb",
+        "byteCount": 2425
+      }
+    }
+  ],
+  "checks": {},
+  "base": "play/revision-2",
+  "base_receipt": {
+    "artifact": "urn:game-studio:d5d12e0b-a956-4acd-b4c9-0bb5c2c68abe:work:web-4d23ca6c18dd472a9cd171a3a1e81ce3:artifact:18f667731a1327a0bef170c9c0f06b3f9b4ddeb7e065d979405f080cf815510e",
+    "sha256": "34d78373d0a4ad978322f4b9aacbdc0dd117e6166beb39163d10bdcf0f63af5f",
+    "byteCount": 8539
+  },
+  "plugin": {
+    "version": "0.12.0",
+    "sha256": "7cdf274cc785ff1e4ea205ed5dd4497ca926f4e1acf207072fbac712f3d2cdff",
+    "byteCount": 508
+  },
+  "pin_checks": {
+    "baseline": {
+      "passed": true
+    },
+    "inputs": {
+      "passed": true
+    },
+    "plugin": {
+      "passed": true
+    }
+  }
+}
