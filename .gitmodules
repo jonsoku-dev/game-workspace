@@ -1,9 +1,9 @@
 [submodule "assets"]
 	path = assets
-	url = ./assets
+	url = ../game-workspace-assets.git
 [submodule "studio"]
 	path = studio
-	url = ./studio
+	url = ../game-workspace-studio.git
 [submodule "inventory-demo"]
 	path = examples/forest-inventory-demo
-	url = ./examples/forest-inventory-demo
+	url = ../game-workspace-forest-inventory-demo.git
